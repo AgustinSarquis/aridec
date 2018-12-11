@@ -1,0 +1,46 @@
+-Cita: Austin2006
+-doi: 10.1007/s10021-005-0039-0
+-AutorEntrada: Agustín Sarquis
+
+-InfoSitio:
+  -Nombre: Río Mayo, Chubut, Argentina
+  -TipoEcosistema: Estepa
+  -Clima: Semi árido
+  -ppma: 155 mm
+  -Tº media:
+    -Enero: 15ºC
+    -Julio: 1ºC
+  -Altitud: 500 msnm
+  -TipoSuelo: Aridisol
+  -TexturaSuelo: Gruesa con alto contenido de grava
+  -CoberturaVegetal: Discontinua, con 25% de pastos y 13% de arbustos
+  -PPNA: 56 g.m-2.a-1
+  -Coordenadas:
+    -Latitud: 45º41’S
+    -Longitud: 70º16’W
+
+-InfoExperimento:
+  -Descripción: Se midió la descomposición de broza con un tratamiento de inhibición de la nitrificación.
+  -Tratamiento: nitrificación
+  -TiempoCosecha:
+    -Tiempo: 2.5
+    -Unidades: años
+  -InfoMaterial:
+    -Especie: Stipa speciosa
+    -TipoPlanta: pasto
+    -Tejido: hojas recientemente senescidas
+
+-Variables:
+  -V1:
+    -Nombre: Tiempo
+    -Unidades: años
+  -V2:
+    -Nombre: OM_C
+    -Unidades: "Porcentaje de materia orgánica remanente"
+    -Descripción: "El porcentaje de materia orgánica remanente en la broza luego de su cosecha sin tratamiento de inhibición de la nitrificación"
+    -Nitrificación: "Sin inhibición (control)"
+  -V3:
+    -Nombre: OM_I
+    -Unidades: "Porcentaje de materia orgánica remanente"
+    -Descripción: "El porcentaje de materia orgánica remanente en la broza luego de su cosecha con tratamiento de inhibición de la nitrificación"
+    -Nitrificación: "Con inhibición"
