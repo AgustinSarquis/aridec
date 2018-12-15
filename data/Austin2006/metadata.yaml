@@ -12,6 +12,7 @@ SiteInfo:
   Tº:
     Value: 8
     Units: ºC
+  RainySeason: winter
   Altitude:
     Value: 500
     Units: masl
@@ -31,8 +32,17 @@ SiteInfo:
 
 ExperimentInfo:
   Description: "They measured litter decomposition with a nitrification inhibition treatment"
+  LitterBagInfo:
+    Material: fiberglass
+    MeshSize:
+      Value: 2
+      Units: mm
+    Position: bare soil
   Treatment: nitrification
-  HarvestTime:
+  StartingDate:
+    Month: april
+    Season: autumn
+  SamplingTime:
     Time: 2.5
     Units: years
   LitterInfo:
