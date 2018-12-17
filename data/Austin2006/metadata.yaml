@@ -27,8 +27,8 @@ SiteInfo:
     Value: 56
     Units: g.m-2.y-1
   Coordinates:
-    Latitude: 45º41’S #Change coordinate to decimal values
-    Longitude: 70º16’W
+    Latitude: -45.683333
+    Longitude: -70.266667
 
 ExperimentInfo:
   Description: "They measured litter decomposition with a nitrification inhibition treatment"
@@ -38,7 +38,7 @@ ExperimentInfo:
       Value: 2
       Units: mm
     Position: bare soil
-  Treatment: nitrification
+  Treatment: nitrification inhibition
   StartingDate:
     Month: april
     Season: autumn
@@ -58,9 +58,9 @@ Variables:
     Name: OM_C
     Units: "Remaining organic matter percentage"
     Description: "Litter organic matter percentage remaining at harvest time without any nitrification inhibition treatment"
-    Nitrification: "Not inhibited (control)"
+    Nitrification: "Not inhibited"
   V3:
     Name: OM_I
     Units: "Remaining organic matter percentage"
     Description: "Litter organic matter percentage remaining at harvest time with a nitrification inhibition treatment"
-    Nitrification: "Inhibited"
+    Nitrification: "Nitrapyrin (inhibited)"
