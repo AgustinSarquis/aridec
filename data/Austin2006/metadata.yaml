@@ -9,9 +9,9 @@ SiteInfo:
   MAP:
     Value: 155
     Units: mm
-  Tº:
+  MAT:
     Value: 8
-    Units: ºC
+    Units: Celcius
   RainySeason: winter
   Altitude:
     Value: 500
@@ -22,12 +22,12 @@ SiteInfo:
     GrassCover: 25
     ShrubCover: 13
     BareSoil: 62
-    Units: %
+    Units: percentage
   ANPP:
     Value: 56
     Units: g.m-2.y-1
   Coordinates:
-    Latitude: 45º41’S
+    Latitude: 45º41’S #Change coordinate to decimal values
     Longitude: 70º16’W
 
 ExperimentInfo:
