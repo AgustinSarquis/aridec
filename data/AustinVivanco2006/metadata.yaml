@@ -48,7 +48,7 @@ ExperimentInfo:
       Species: Stipa speciosa, Poa ligularis, Stipa humilis
       PlantType: grass
       Tissue: recently senesced leaves
- Experiment2:
+  Experiment2:
    Description: "They added labile C and N as substrates to stimulate biotic activity"
    LitterBagInfo:
      Material: fiberglass
@@ -57,10 +57,9 @@ ExperimentInfo:
        Units: mm
      Position: bare soil
    Treatment: labile C and inorganic N addition
-   StartingDate:
-   SamplingTime:
-     Time: 1.5
-     Units: years
+   Duration:
+     Time: 18
+     Units: months
    LitterInfo:
      Species: Stipa speciosa, Poa ligularis, Stipa humilis
      PlantType: grass
@@ -74,37 +73,37 @@ Variables:
     Name: TR
     Units: "Remaining organic matter percentage"
     Description: "Litter organic matter percentage remaining at harvest time with total solar radiation and without biocide application"
-    LightAttenuation: "Aclar filter (95% of solar radiation)"
+    LightAttenuation: Aclar filter
     BiocideApplication: "None"
   V3:
     Name: UVBB
     Units: "Remaining organic matter percentage"
     Description: "Litter organic matter percentage remaining at harvest time with UV-B solar radiation blocked and without biocide application"
-    LightAttenuation: "Mylar filter (radiation below 310 nm blocked)"
+    LightAttenuation: Mylar filter
     BiocideApplication: "None"
   V4:
     Name: TB
     Units: "Remaining organic matter percentage"
     Description: "Litter organic matter percentage remaining at harvest time with total solar radiation blocked and without biocide application"
-    LightAttenuation: "Mylar filter with paint (90% of solar radiation blocked)"
+    LightAttenuation: Mylar filter with paint
     BiocideApplication: "None"
   V5:
     Name: TR_B
     Units: "Remaining organic matter percentage"
     Description: "Litter organic matter percentage remaining at harvest time with total solar radiation and biocide application"
-    LightAttenuation: "Aclar filter (95% of solar radiation)"
+    LightAttenuation: Aclar filter
     BiocideApplication: "Captan and Agri-micina solution plus naphtalene pellets"
   V6:
     Name: UVBB_B
     Units: "Remaining organic matter percentage"
     Description: "Litter organic matter percentage remaining at harvest time with UV-B solar radiation blocked and biocide application"
-    LightAttenuation: "Mylar filter (radiation below 310 nm blocked)"
+    LightAttenuation: Mylar filter
     BiocideApplication: "Captan and Agri-micina solution plus naphtalene pellets"
   V7:
     Name: TB_B
     Units: "Remaining organic matter percentage"
     Description: "Litter organic matter percentage remaining at harvest time with total solar radiation blocked and biocide application"
-    LightAttenuation: "Mylar filter with paint (90% of solar radiation blocked)"
+    LightAttenuation: Mylar filter with paint
     BiocideApplication: "Captan and Agri-micina solution plus naphtalene pellets"
   V8:
     Name: NOA

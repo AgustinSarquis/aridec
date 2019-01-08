@@ -43,8 +43,8 @@ ExperimentInfo:
     Month: april
     Season: autumn
   SamplingTime:
-    Time: 2.5
-    Units: years
+    Time: 30
+    Units: months
   LitterInfo:
     Species: Stipa speciosa
     PlantType: grass
