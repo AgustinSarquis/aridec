@@ -1,0 +1,619 @@
+CitationKey: Poca2014
+EntryAuthor: Agustín Sarquis
+
+SiteInfo:
+  Name: Pampa de Achala, Córdoba, Argentina
+  EcosystemType: mountain grassland
+  Climate: mesic
+  MAP:
+    Value: 900
+    Units: mm
+  MAT:
+    Value: 8.4
+    Units: Celcius
+  RainySeason: summer
+  Altitude:
+    Value: 2200
+    Units: masl
+  SoilType: molisol
+  SoilTexture: fine
+  Coordinates:
+    Latitude: -31.57
+    Longitude: -64.83
+
+ExperimentInfo:
+  Description: "Leaf litter from 24 herbaceous species from a highland grassland were used in a common garden decomposition experiment with two retrieval dates"
+  LitterBagInfo:
+    Material: nylon mesh
+    MeshSize:
+      Value: 0.3
+      Units: mm
+    Position: decomposition bed
+  StartingDate:
+    Month: december
+    Season: summer
+  Duration:
+    Time: 6.5
+    Units: months
+  LitterInfo:
+   LitterType1:
+    Species: Bidens andicola
+    LifeForm: forb
+    Tissue: recently senesced leaves
+    Celulose:
+      Value: 20.7
+      Units: percentage
+    Hemicelulose:
+      Value: 0.0
+      Units: percentage
+    Lignin:
+      Value: 18.6
+      Units: percentage
+    Nitrogen:
+      Value: 2.1
+      Units: percentage
+    SLA:
+      Value: 20
+      Units: mm2.mg-1
+  LitterType2:
+   Species: Eryngium agavifolium
+   LifeForm: forb
+   Tissue: recently senesced leaves
+   Celulose:
+     Value: 37.5
+     Units: percentage
+   Hemicelulose:
+     Value: 2.7
+     Units: percentage
+   Lignin:
+     Value: 9.2
+     Units: percentage
+   Nitrogen:
+     Value: 0.8
+     Units: percentage
+   SLA:
+     Value: 6
+     Units: mm2.mg-1
+  LitterType3:
+   Species: Eryngium nudicale
+   LifeForm: forb
+   Tissue: recently senesced leaves
+   Celulose:
+     Value: 28.5
+     Units: percentage
+   Hemicelulose:
+     Value: 0.0
+     Units: percentage
+   Lignin:
+     Value: 8.9
+     Units: percentage
+   Nitrogen:
+     Value: 1.2
+     Units: percentage
+   SLA:
+     Value: 7
+     Units: mm2.mg-1
+  LitterType4:
+   Species: Glandularia dissecta
+   LifeForm: forb
+   Tissue: recently senesced leaves
+   Celulose:
+     Value: 21.6
+     Units: percentage
+   Hemicelulose:
+     Value: 0.0
+     Units: percentage
+   Lignin:
+     Value: 18.8
+     Units: percentage
+   Nitrogen:
+     Value: 1.6
+     Units: percentage
+   SLA:
+     Value: 20
+     Units: mm2.mg-1
+  LitterType5:
+   Species: Grindelia globularifolia
+   LifeForm: forb
+   Tissue: recently senesced leaves
+   Celulose:
+     Value: 20.9
+     Units: percentage
+   Hemicelulose:
+     Value: 0.0
+     Units: percentage
+   Lignin:
+     Value: 10.7
+     Units: percentage
+   Nitrogen:
+     Value: 1.2
+     Units: percentage
+   SLA:
+     Value: 9
+     Units: mm2.mg-1
+  LitterType6:
+   Species: Lachemilla pinnata
+   LifeForm: forb
+   Tissue: recently senesced leaves
+   Celulose:
+     Value: 28.4
+     Units: percentage
+   Hemicelulose:
+     Value: 3.8
+     Units: percentage
+   Lignin:
+     Value: 9.9
+     Units: percentage
+   Nitrogen:
+     Value: 1.1
+     Units: percentage
+   SLA:
+     Value: 14
+     Units: mm2.mg-1
+  LitterType7:
+   Species: Plantago argentina
+   LifeForm: forb
+   Tissue: recently senesced leaves
+   Celulose:
+     Value: 28.9
+     Units: percentage
+   Hemicelulose:
+     Value: 0.0
+     Units: percentage
+   Lignin:
+     Value: 19.2
+     Units: percentage
+   Nitrogen:
+     Value: 1.0
+     Units: percentage
+   SLA:
+     Value: 7
+     Units: mm2.mg-1
+  LitterType8:
+   Species: Bromus catharticus
+   LifeForm: graminoid
+   Tissue: recently senesced leaves
+   Celulose:
+     Value: 44.9
+     Units: percentage
+   Hemicelulose:
+     Value: 20.9
+     Units: percentage
+   Lignin:
+     Value: 5.3
+     Units: percentage
+   Nitrogen:
+     Value: 0.7
+     Units: percentage
+   SLA:
+     Value: 18
+     Units: mm2.mg-1
+  LitterType9:
+   Species: Carex fuscula
+   LifeForm: graminoid
+   Tissue: recently senesced leaves
+   Celulose:
+     Value: 31.3
+     Units: percentage
+   Hemicelulose:
+     Value: 25.1
+     Units: percentage
+   Lignin:
+     Value: 9.8
+     Units: percentage
+   Nitrogen:
+     Value: 0.8
+     Units: percentage
+   SLA:
+     Value: 18
+     Units: mm2.mg-1
+  LitterType10:
+   Species: Chascolytrum subaristatum
+   LifeForm: graminoid
+   Tissue: recently senesced leaves
+   Celulose:
+     Value: 42.3
+     Units: percentage
+   Hemicelulose:
+     Value: 22.3
+     Units: percentage
+   Lignin:
+     Value: 6.1
+     Units: percentage
+   Nitrogen:
+     Value: 0.8
+     Units: percentage
+   SLA:
+     Value: 12
+     Units: mm2.mg-1
+  LitterType11:
+   Species: Eleocharis pseudoalbibracteata
+   LifeForm: graminoid
+   Tissue: recently senesced leaves
+   Celulose:
+     Value: 38.5
+     Units: percentage
+   Hemicelulose:
+     Value: 18.1
+     Units: percentage
+   Lignin:
+     Value: 8.4
+     Units: percentage
+   Nitrogen:
+     Value: 1.4
+     Units: percentage
+   SLA:
+     Value: 27
+     Units: mm2.mg-1
+  LitterType12:
+   Species: Eragrostis lugens
+   LifeForm: graminoid
+   Tissue: recently senesced leaves
+   Celulose:
+     Value: 34.7
+     Units: percentage
+   Hemicelulose:
+     Value: 25.0
+     Units: percentage
+   Lignin:
+     Value: 5.3
+     Units: percentage
+   Nitrogen:
+     Value: 1.0
+     Units: percentage
+   SLA:
+     Value: 8
+     Units: mm2.mg-1
+  LitterType13:
+   Species: Festuca dissitiflora
+   LifeForm: graminoid
+   Tissue: recently senesced leaves
+   Celulose:
+     Value: 38.4
+     Units: percentage
+   Hemicelulose:
+     Value: 24.4
+     Units: percentage
+   Lignin:
+     Value: 4.4
+     Units: percentage
+   Nitrogen:
+     Value: 0.7
+     Units: percentage
+   SLA:
+     Value: 12
+     Units: mm2.mg-1
+  LitterType14:
+   Species: Juncus pallescens
+   LifeForm: graminoid
+   Tissue: recently senesced leaves
+   Celulose:
+     Value: 37.1
+     Units: percentage
+   Hemicelulose:
+     Value: 19.6
+     Units: percentage
+   Lignin:
+     Value: 10.2
+     Units: percentage
+   Nitrogen:
+     Value: 1.6
+     Units: percentage
+   SLA:
+     Value: 7
+     Units: mm2.mg-1
+  LitterType15:
+   Species: Juncus uruguensis
+   LifeForm: graminoid
+   Tissue: recently senesced leaves
+   Celulose:
+     Value: 35.4
+     Units: percentage
+   Hemicelulose:
+     Value: 29.5
+     Units: percentage
+   Lignin:
+     Value: 6.7
+     Units: percentage
+   Nitrogen:
+     Value: 1.4
+     Units: percentage
+   SLA:
+     Value: 8
+     Units: mm2.mg-1
+  LitterType16:
+   Species: Muhlenbergia peruviana
+   LifeForm: graminoid
+   Tissue: recently senesced leaves
+   Celulose:
+     Value: 33.5
+     Units: percentage
+   Hemicelulose:
+     Value: 34.4
+     Units: percentage
+   Lignin:
+     Value: 4.7
+     Units: percentage
+   Nitrogen:
+     Value: 0.9
+     Units: percentage
+   SLA:
+     Value: 14
+     Units: mm2.mg-1
+  LitterType17:
+   Species: Poa hubbardiana
+   LifeForm: graminoid
+   Tissue: recently senesced leaves
+   Celulose:
+     Value: 42.5
+     Units: percentage
+   Hemicelulose:
+     Value: 23.5
+     Units: percentage
+   Lignin:
+     Value: 5.2
+     Units: percentage
+   Nitrogen:
+     Value: 0.6
+     Units: percentage
+   SLA:
+     Value: 21
+     Units: mm2.mg-1
+  LitterType18:
+   Species: Sisyrinchium unguiculatum
+   LifeForm: graminoid
+   Tissue: recently senesced leaves
+   Celulose:
+     Value: 35.4
+     Units: percentage
+   Hemicelulose:
+     Value: 5.6
+     Units: percentage
+   Lignin:
+     Value: 11.8
+     Units: percentage
+   Nitrogen:
+     Value: 1.2
+     Units: percentage
+   SLA:
+     Value: 9
+     Units: mm2.mg-1
+  LitterType19:
+   Species: Sorghastrum pellitum
+   LifeForm: graminoid
+   Tissue: recently senesced leaves
+   Celulose:
+     Value: 37.9
+     Units: percentage
+   Hemicelulose:
+     Value: 19.8
+     Units: percentage
+   Lignin:
+     Value: 7.6
+     Units: percentage
+   Nitrogen:
+     Value: 0.8
+     Units: percentage
+   SLA:
+     Value: 7
+     Units: mm2.mg-1
+  LitterType20:
+   Species: Sporobolus indicus
+   LifeForm: graminoid
+   Tissue: recently senesced leaves
+   Celulose:
+     Value: 34.7
+     Units: percentage
+   Hemicelulose:
+     Value: 31.8
+     Units: percentage
+   Lignin:
+     Value: 3.8
+     Units: percentage
+   Nitrogen:
+     Value: 1.2
+     Units: percentage
+   SLA:
+     Value: 10
+     Units: mm2.mg-1
+  LitterType21:
+   Species: Deyeuxia hieronymi
+   LifeForm: bunchgrass
+   Tissue: recently senesced leaves
+   Celulose:
+     Value: 39.7
+     Units: percentage
+   Hemicelulose:
+     Value: 26.9
+     Units: percentage
+   Lignin:
+     Value: 7.2
+     Units: percentage
+   Nitrogen:
+     Value: 0.5
+     Units: percentage
+   SLA:
+     Value: 10
+     Units: mm2.mg-1
+  LitterType22:
+   Species: Festuca lilloi
+   LifeForm: bunchgrass
+   Tissue: recently senesced leaves
+   Celulose:
+     Value: 47.9
+     Units: percentage
+   Hemicelulose:
+     Value: 18.8
+     Units: percentage
+   Lignin:
+     Value: 7.7
+     Units: percentage
+   Nitrogen:
+     Value: 0.5
+     Units: percentage
+   SLA:
+     Value: 6
+     Units: mm2.mg-1
+  LitterType23:
+   Species: Nassella nidulans
+   LifeForm: bunchgrass
+   Tissue: recently senesced leaves
+   Celulose:
+     Value: 41.0
+     Units: percentage
+   Hemicelulose:
+     Value: 20.5
+     Units: percentage
+   Lignin:
+     Value: 6.5
+     Units: percentage
+   Nitrogen:
+     Value: 0.7
+     Units: percentage
+   SLA:
+     Value: 12
+     Units: mm2.mg-1
+  LitterType24:
+   Species: Poa stuckertii
+   LifeForm: bunchgrass
+   Tissue: recently senesced leaves
+   Celulose:
+     Value: 44.4
+     Units: percentage
+   Hemicelulose:
+     Value: 23.8
+     Units: percentage
+   Lignin:
+     Value: 7.7
+     Units: percentage
+   Nitrogen:
+     Value: 0.4
+     Units: percentage
+   SLA:
+     Value: 6
+     Units: mm2.mg-1
+
+Variables:
+  V1:
+    Name: Time
+    Units: days
+  V2:
+    Name: Ban
+    Units: "Mass remaining"
+    Description: "B. andicola leaf litter mass percentage remaining at harvest time"
+    Litter: LitterType1
+  V3:
+    Name: Eag
+    Units: "Mass remaining"
+    Description: "E. agavifolium leaf litter mass percentage remaining at harvest time"
+    Litter: LitterType2
+  V4:
+    Name: Enu
+    Units: "Mass remaining"
+    Description: "E. nudicale leaf litter mass percentage remaining at harvest time"
+    Litter: LitterType3
+  V5:
+    Name: Gdi
+    Units: "Mass remaining"
+    Description: "G. dissecta leaf litter mass percentage remaining at harvest time"
+    Litter: LitterType4
+  V6:
+    Name: Ggl
+    Units: "Mass remaining"
+    Description: "G. globularifolia leaf litter mass percentage remaining at harvest time"
+    Litter: LitterType5
+  V7:
+    Name: Lpi
+    Units: "Mass remaining"
+    Description: "L. pinnata leaf litter mass percentage remaining at harvest time"
+    Litter: LitterType6
+  V8:
+    Name: Par
+    Units: "Mass remaining"
+    Description: "P. argentina leaf litter mass percentage remaining at harvest time"
+    Litter: LitterType7
+  V9:
+    Name: Bca
+    Units: "Mass remaining"
+    Description: "B. catharticus leaf litter mass percentage remaining at harvest time"
+    Litter: LitterType8
+  V10:
+    Name: Cfu
+    Units: "Mass remaining"
+    Description: "C. fuscula leaf litter mass percentage remaining at harvest time"
+    Litter: LitterType9
+  V11:
+    Name: Csu
+    Units: "Mass remaining"
+    Description: "C. subaristatum leaf litter mass percentage remaining at harvest time"
+    Litter: LitterType10
+  V12:
+    Name: Eps
+    Units: "Mass remaining"
+    Description: "E. pseudoalbibracteata leaf litter mass percentage remaining at harvest time"
+    Litter: LitterType11
+  V13:
+    Name: Elu
+    Units: "Mass remaining"
+    Description: "E. lugens leaf litter mass percentage remaining at harvest time"
+    Litter: LitterType12
+  V14:
+    Name: Fdi
+    Units: "Mass remaining"
+    Description: "F. dissitiflora leaf litter mass percentage remaining at harvest time"
+    Litter: LitterType13
+  V15:
+    Name: Jpa
+    Units: "Mass remaining"
+    Description: "J. pallescens leaf litter mass percentage remaining at harvest time"
+    Litter: LitterType14
+  V16:
+    Name: Jur
+    Units: "Mass remaining"
+    Description: "J. uruguensis leaf litter mass percentage remaining at harvest time"
+    Litter: LitterType15
+  V17:
+    Name: Mpe
+    Units: "Mass remaining"
+    Description: "M. peruviana leaf litter mass percentage remaining at harvest time"
+    Litter: LitterType16
+  V18:
+    Name: Phu
+    Units: "Mass remaining"
+    Description: "P. hubbardiana leaf litter mass percentage remaining at harvest time"
+    Litter: LitterType17
+  V19:
+    Name: Sun
+    Units: "Mass remaining"
+    Description: "S. unguiculatum leaf litter mass percentage remaining at harvest time"
+    Litter: LitterType18
+  V20:
+    Name: Spe
+    Units: "Mass remaining"
+    Description: "S. pellitum leaf litter mass percentage remaining at harvest time"
+    Litter: LitterType19
+  V21:
+    Name: Sin
+    Units: "Mass remaining"
+    Description: "S. indicus leaf litter mass percentage remaining at harvest time"
+    Litter: LitterType20
+  V22:
+    Name: Dhi
+    Units: "Mass remaining"
+    Description: "D. hieronymi leaf litter mass percentage remaining at harvest time"
+    Litter: LitterType21
+  V23:
+    Name: Fli
+    Units: "Mass remaining"
+    Description: "F. lilloi leaf litter mass percentage remaining at harvest time"
+    Litter: LitterType22
+  V24:
+    Name: Nni
+    Units: "Mass remaining"
+    Description: "N. nidulans leaf litter mass percentage remaining at harvest time"
+    Litter: LitterType23
+  V25:
+    Name: Pst
+    Units: "Mass remaining"
+    Description: "P. stuckertii leaf litter mass percentage remaining at harvest time"
+    Litter: LitterType24

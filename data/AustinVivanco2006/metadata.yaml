@@ -46,7 +46,7 @@ ExperimentInfo:
       Units: years
     LitterInfo:
       Species: Stipa speciosa, Poa ligularis, Stipa humilis
-      PlantType: grass
+      LifeForm: bunchgrass
       Tissue: recently senesced leaves
   Experiment2:
    Description: "They added labile C and N as substrates to stimulate biotic activity"
@@ -62,7 +62,7 @@ ExperimentInfo:
      Units: months
    LitterInfo:
      Species: Stipa speciosa, Poa ligularis, Stipa humilis
-     PlantType: grass
+     LifeForm: bunchgrass
      Tissue: recently senesced leaves
 
 Variables:

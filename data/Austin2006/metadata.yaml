@@ -47,7 +47,7 @@ ExperimentInfo:
     Units: months
   LitterInfo:
     Species: Stipa speciosa
-    PlantType: grass
+    LifeForm: bunchgrass
     Tissue: recently senesced leaves
 
 Variables:

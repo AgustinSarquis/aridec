@@ -1,0 +1,61 @@
+CitationKey: Gallo2006
+doi: 10.1016/j.apsoil.2005.12.006
+EntryAuthor: Agustín Sarquis
+
+SiteInfo:
+  Name: Albuquerque, New Mexico, USA
+  EcosystemType:
+  Climate:
+  MAP:
+    Value:
+    Units: mm
+  MAT:
+    Value:
+    Units: Celcius
+  RainySeason:
+  Altitude:
+    Value:
+    Units: masl
+  SoilType:
+  SoilTexture:
+  PlantCover:
+    GrassCover:
+    ShrubCover:
+    BareSoil:
+    Units: percentage
+  ANPP:
+    Value:
+    Units: g.m-2.y-1
+  Coordinates:
+    Latitude:
+    Longitude:
+
+ExperimentInfo:
+  Description:
+  LitterBagInfo:
+    Material:
+    MeshSize:
+      Value:
+      Units: mm
+    Position:
+  Treatment:
+  StartingDate:
+    Month:
+    Season:
+  Duration:
+    Time:
+    Units: months
+  LitterInfo:
+   Species:
+   PlantType:
+   Tissue:
+
+Variables:
+  V1:
+    Name: Time
+    Units:
+  V2:
+    Name:
+    Units:
+    Description:
+    Treatment (modify):
