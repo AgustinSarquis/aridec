@@ -9,7 +9,7 @@ SiteInfo:
     Value: 900
     Units: mm
   MAT:
-    Value: 8.4
+    Value: 8
     Units: Celcius
   RainySeason: summer
   Altitude:
@@ -39,11 +39,11 @@ ExperimentInfo:
    LitterType1:
     Species: Bidens andicola
     LifeForm: forb
-    Tissue: recently senesced leaves
-    Celulose:
+    Material: recently senesced leaves
+    cellulose:
       Value: 20.7
       Units: percentage
-    Hemicelulose:
+    Hemicellulose:
       Value: 0.0
       Units: percentage
     Lignin:
@@ -58,11 +58,11 @@ ExperimentInfo:
   LitterType2:
    Species: Eryngium agavifolium
    LifeForm: forb
-   Tissue: recently senesced leaves
-   Celulose:
+   Material: recently senesced leaves
+   cellulose:
      Value: 37.5
      Units: percentage
-   Hemicelulose:
+   Hemicellulose:
      Value: 2.7
      Units: percentage
    Lignin:
@@ -77,11 +77,11 @@ ExperimentInfo:
   LitterType3:
    Species: Eryngium nudicale
    LifeForm: forb
-   Tissue: recently senesced leaves
-   Celulose:
+   Material: recently senesced leaves
+   cellulose:
      Value: 28.5
      Units: percentage
-   Hemicelulose:
+   Hemicellulose:
      Value: 0.0
      Units: percentage
    Lignin:
@@ -96,11 +96,11 @@ ExperimentInfo:
   LitterType4:
    Species: Glandularia dissecta
    LifeForm: forb
-   Tissue: recently senesced leaves
-   Celulose:
+   Material: recently senesced leaves
+   cellulose:
      Value: 21.6
      Units: percentage
-   Hemicelulose:
+   Hemicellulose:
      Value: 0.0
      Units: percentage
    Lignin:
@@ -115,11 +115,11 @@ ExperimentInfo:
   LitterType5:
    Species: Grindelia globularifolia
    LifeForm: forb
-   Tissue: recently senesced leaves
-   Celulose:
+   Material: recently senesced leaves
+   cellulose:
      Value: 20.9
      Units: percentage
-   Hemicelulose:
+   Hemicellulose:
      Value: 0.0
      Units: percentage
    Lignin:
@@ -134,11 +134,11 @@ ExperimentInfo:
   LitterType6:
    Species: Lachemilla pinnata
    LifeForm: forb
-   Tissue: recently senesced leaves
-   Celulose:
+   Material: recently senesced leaves
+   cellulose:
      Value: 28.4
      Units: percentage
-   Hemicelulose:
+   Hemicellulose:
      Value: 3.8
      Units: percentage
    Lignin:
@@ -153,11 +153,11 @@ ExperimentInfo:
   LitterType7:
    Species: Plantago argentina
    LifeForm: forb
-   Tissue: recently senesced leaves
-   Celulose:
+   Material: recently senesced leaves
+   cellulose:
      Value: 28.9
      Units: percentage
-   Hemicelulose:
+   Hemicellulose:
      Value: 0.0
      Units: percentage
    Lignin:
@@ -172,11 +172,11 @@ ExperimentInfo:
   LitterType8:
    Species: Bromus catharticus
    LifeForm: graminoid
-   Tissue: recently senesced leaves
-   Celulose:
+   Material: recently senesced leaves
+   cellulose:
      Value: 44.9
      Units: percentage
-   Hemicelulose:
+   Hemicellulose:
      Value: 20.9
      Units: percentage
    Lignin:
@@ -191,11 +191,11 @@ ExperimentInfo:
   LitterType9:
    Species: Carex fuscula
    LifeForm: graminoid
-   Tissue: recently senesced leaves
-   Celulose:
+   Material: recently senesced leaves
+   cellulose:
      Value: 31.3
      Units: percentage
-   Hemicelulose:
+   Hemicellulose:
      Value: 25.1
      Units: percentage
    Lignin:
@@ -210,11 +210,11 @@ ExperimentInfo:
   LitterType10:
    Species: Chascolytrum subaristatum
    LifeForm: graminoid
-   Tissue: recently senesced leaves
-   Celulose:
+   Material: recently senesced leaves
+   cellulose:
      Value: 42.3
      Units: percentage
-   Hemicelulose:
+   Hemicellulose:
      Value: 22.3
      Units: percentage
    Lignin:
@@ -229,11 +229,11 @@ ExperimentInfo:
   LitterType11:
    Species: Eleocharis pseudoalbibracteata
    LifeForm: graminoid
-   Tissue: recently senesced leaves
-   Celulose:
+   Material: recently senesced leaves
+   cellulose:
      Value: 38.5
      Units: percentage
-   Hemicelulose:
+   Hemicellulose:
      Value: 18.1
      Units: percentage
    Lignin:
@@ -248,11 +248,11 @@ ExperimentInfo:
   LitterType12:
    Species: Eragrostis lugens
    LifeForm: graminoid
-   Tissue: recently senesced leaves
-   Celulose:
+   Material: recently senesced leaves
+   cellulose:
      Value: 34.7
      Units: percentage
-   Hemicelulose:
+   Hemicellulose:
      Value: 25.0
      Units: percentage
    Lignin:
@@ -267,11 +267,11 @@ ExperimentInfo:
   LitterType13:
    Species: Festuca dissitiflora
    LifeForm: graminoid
-   Tissue: recently senesced leaves
-   Celulose:
+   Material: recently senesced leaves
+   cellulose:
      Value: 38.4
      Units: percentage
-   Hemicelulose:
+   Hemicellulose:
      Value: 24.4
      Units: percentage
    Lignin:
@@ -286,11 +286,11 @@ ExperimentInfo:
   LitterType14:
    Species: Juncus pallescens
    LifeForm: graminoid
-   Tissue: recently senesced leaves
-   Celulose:
+   Material: recently senesced leaves
+   cellulose:
      Value: 37.1
      Units: percentage
-   Hemicelulose:
+   Hemicellulose:
      Value: 19.6
      Units: percentage
    Lignin:
@@ -305,11 +305,11 @@ ExperimentInfo:
   LitterType15:
    Species: Juncus uruguensis
    LifeForm: graminoid
-   Tissue: recently senesced leaves
-   Celulose:
+   Material: recently senesced leaves
+   cellulose:
      Value: 35.4
      Units: percentage
-   Hemicelulose:
+   Hemicellulose:
      Value: 29.5
      Units: percentage
    Lignin:
@@ -324,11 +324,11 @@ ExperimentInfo:
   LitterType16:
    Species: Muhlenbergia peruviana
    LifeForm: graminoid
-   Tissue: recently senesced leaves
-   Celulose:
+   Material: recently senesced leaves
+   cellulose:
      Value: 33.5
      Units: percentage
-   Hemicelulose:
+   Hemicellulose:
      Value: 34.4
      Units: percentage
    Lignin:
@@ -343,11 +343,11 @@ ExperimentInfo:
   LitterType17:
    Species: Poa hubbardiana
    LifeForm: graminoid
-   Tissue: recently senesced leaves
-   Celulose:
+   Material: recently senesced leaves
+   cellulose:
      Value: 42.5
      Units: percentage
-   Hemicelulose:
+   Hemicellulose:
      Value: 23.5
      Units: percentage
    Lignin:
@@ -362,11 +362,11 @@ ExperimentInfo:
   LitterType18:
    Species: Sisyrinchium unguiculatum
    LifeForm: graminoid
-   Tissue: recently senesced leaves
-   Celulose:
+   Material: recently senesced leaves
+   cellulose:
      Value: 35.4
      Units: percentage
-   Hemicelulose:
+   Hemicellulose:
      Value: 5.6
      Units: percentage
    Lignin:
@@ -381,11 +381,11 @@ ExperimentInfo:
   LitterType19:
    Species: Sorghastrum pellitum
    LifeForm: graminoid
-   Tissue: recently senesced leaves
-   Celulose:
+   Material: recently senesced leaves
+   cellulose:
      Value: 37.9
      Units: percentage
-   Hemicelulose:
+   Hemicellulose:
      Value: 19.8
      Units: percentage
    Lignin:
@@ -400,11 +400,11 @@ ExperimentInfo:
   LitterType20:
    Species: Sporobolus indicus
    LifeForm: graminoid
-   Tissue: recently senesced leaves
-   Celulose:
+   Material: recently senesced leaves
+   cellulose:
      Value: 34.7
      Units: percentage
-   Hemicelulose:
+   Hemicellulose:
      Value: 31.8
      Units: percentage
    Lignin:
@@ -419,11 +419,11 @@ ExperimentInfo:
   LitterType21:
    Species: Deyeuxia hieronymi
    LifeForm: bunchgrass
-   Tissue: recently senesced leaves
-   Celulose:
+   Material: recently senesced leaves
+   cellulose:
      Value: 39.7
      Units: percentage
-   Hemicelulose:
+   Hemicellulose:
      Value: 26.9
      Units: percentage
    Lignin:
@@ -438,11 +438,11 @@ ExperimentInfo:
   LitterType22:
    Species: Festuca lilloi
    LifeForm: bunchgrass
-   Tissue: recently senesced leaves
-   Celulose:
+   Material: recently senesced leaves
+   cellulose:
      Value: 47.9
      Units: percentage
-   Hemicelulose:
+   Hemicellulose:
      Value: 18.8
      Units: percentage
    Lignin:
@@ -457,11 +457,11 @@ ExperimentInfo:
   LitterType23:
    Species: Nassella nidulans
    LifeForm: bunchgrass
-   Tissue: recently senesced leaves
-   Celulose:
+   Material: recently senesced leaves
+   cellulose:
      Value: 41.0
      Units: percentage
-   Hemicelulose:
+   Hemicellulose:
      Value: 20.5
      Units: percentage
    Lignin:
@@ -476,11 +476,11 @@ ExperimentInfo:
   LitterType24:
    Species: Poa stuckertii
    LifeForm: bunchgrass
-   Tissue: recently senesced leaves
-   Celulose:
+   Material: recently senesced leaves
+   cellulose:
      Value: 44.4
      Units: percentage
-   Hemicelulose:
+   Hemicellulose:
      Value: 23.8
      Units: percentage
    Lignin:

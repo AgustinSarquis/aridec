@@ -19,7 +19,7 @@ SiteInfo:
   SoilType: Aridisol
   SoilTexture: Coarse
   PlantCover:
-    GrassCover: 25
+    BunchgrassCover: 25
     ShrubCover: 13
     BareSoil: 62
     Units: percentage
@@ -48,7 +48,7 @@ ExperimentInfo:
   LitterInfo:
     Species: Stipa speciosa
     LifeForm: bunchgrass
-    Tissue: recently senesced leaves
+    Material: recently senesced leaves
 
 Variables:
   V1:

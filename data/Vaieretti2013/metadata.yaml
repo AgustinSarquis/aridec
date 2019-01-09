@@ -1,0 +1,156 @@
+CitationKey: Vaieretti2013
+doi: 10.1007/s11104-013-1831-9
+EntryAuthor: Agustín Sarquis
+
+SiteInfo:
+  Name: Pampa de Achala, Córdoba, Argentina
+  EcosystemType: mountain grassland
+  Climate: mesic
+  MAP:
+    Value: 900
+    Units: mm
+  MAT:
+    Value: 8
+    Units: Celcius
+  RainySeason: summer
+  Altitude:
+    Value: 2200
+    Units: masl
+  SoilType: molisol
+  SoilTexture: fine
+  PlantCover:
+    PatchType1:
+      Name: Lawn
+      BunchgrassCover: 2.7
+      ForbCover: 44.1
+      GraminoidCover: 53.2
+      Units: percentage
+    PatchType2:
+      Name: Open Tussock grassland
+      BunchgrassCover: 58
+      ForbCover: 19
+      GraminoidCover: 23
+      Units: percentage
+    PatchType3:
+      Name: Closed Tussock grassland
+      BunchgrassCover: 92.3
+      ForbCover: 5.4
+      GraminoidCover: 2.3
+      Units: percentage
+  Coordinates:
+    Latitude: -31.57
+    Longitude: -64.83
+
+ExperimentInfo:
+ Experiment1:
+  Description: "Leaf litter from three different vegetation patches was used in a common garden decomposition experiment with two sampling dates"
+  LitterBagInfo:
+    Material: nylon mesh
+    MeshSize:
+      Value: 0.3
+      Units: mm
+    Position: decomposition bed
+  StartingDate:
+    Month: january
+    Season: summer
+  Duration:
+    Time: 6.5
+    Units: months
+  LitterInfo:
+   LitterType1:
+    LifeForm: forb, graminoid
+    Material: recently senesced leaves
+    Carbon:
+      Value:
+      Units:
+    Nitrogen:
+      Value:
+      Units:
+    Phosphorus:
+      Value:
+      Units:
+    Lignin:
+      Value:
+      Units:
+    Cellulose:
+      Value:
+      Units:
+    Hemicellulose:
+      Value:
+      Units:
+    C:N:
+      Value:
+      Units:
+    Lignin:N:
+      Value:
+      Units:
+    LHC:
+      Value:
+      Units:
+   LitterType2:
+    LifeForm: bunchgrass, forb, graminoid
+    Material: recently senesced leaves
+   LitterType3:
+    Species: Festuca lilloi, Poa stuckertii, Deyeuxia hieronymi
+    LifeForm: bunchgrass
+    Material: recently senesced leaves
+ Experiment2:
+  Description: "Leaf litter from three distinct vegetation patches and faeces were incubated in situ with two sampling dates"
+  LitterBagInfo:
+    Material: nylon mesh
+    MeshSize:
+      Value: 0.3
+      Units: mm
+    Position: soil surface
+  StartingDate:
+    Month: january
+    Season: summer
+  Duration:
+    Time: 6.5
+    Units: months
+  LitterInfo:
+   LitterType1:
+    LifeForm: forb, graminoid
+    Material: recently senesced leaves
+   LitterType2:
+    LifeForm: bunchgrass, forb, graminoid
+    Material: recently senesced leaves
+   LitterType3:
+    Species: Festuca lilloi, Poa stuckertii, Deyeuxia hieronymi
+    LifeForm: bunchgrass
+    Material: recently senesced leaves
+   LitterType4:
+    Material: cattle faeces
+ Experiment3:
+  Description: "Muhlenbergia peruviana and Poa stuckertii leaf litter were incubated in each of three distinct vegetation patches with two sampling dates"
+  LitterBagInfo:
+    Material: nylon mesh
+    MeshSize:
+      Value: 0.3
+      Units: mm
+    Position: soil surface
+  StartingDate:
+    Month: january
+    Season: summer
+  Duration:
+    Time: 6.5
+    Units: months
+  LitterInfo:
+   LitterType1:
+    Species: Muhlenbergia peruviana
+    LifeForm: graminoid
+    Material: recently senesced leaves
+   LitterType2:
+    Species: Poa stuckertii
+    LifeForm: bunchgrass
+    Material: recently senesced leaves
+
+Variables:
+  V1:
+    Name: Time
+    Units: days
+  V2:
+    Name:
+    Units:
+    Description:
+    Litter:

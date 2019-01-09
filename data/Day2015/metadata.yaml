@@ -39,15 +39,15 @@ ExperimentInfo:
     LitterType1:
      Species: Cynodon dactylon
      LifeForm: graminoid
-     Tissue: recently senesced leaves
+     Material: recently senesced leaves
     LitterType2:
-      Species: Larrea tridentata
-      LifeForm: shrub
-      Tissue: recently senesced leaves
+     Species: Larrea tridentata
+     LifeForm: shrub
+     Material: recently senesced leaves
     LitterType3:
-      Species: Larrea tridentata
-      LifeForm: shrub
-      Tissue: recently senesced terminal shoots
+     Species: Larrea tridentata
+     LifeForm: shrub
+     Material: recently senesced terminal shoots
 
 Variables:
   V1:

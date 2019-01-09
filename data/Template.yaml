@@ -48,7 +48,7 @@ ExperimentInfo:
   LitterInfo:
    Species:
    LifeForm:
-   Tissue:
+   Material:
 
 Variables:
   V1:
