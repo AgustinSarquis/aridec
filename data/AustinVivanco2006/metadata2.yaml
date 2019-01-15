@@ -43,7 +43,29 @@ ExperimentInfo:
        Hight: 6
        Units: cm
       Position: bare soil
-    Treatment: light attenuation x biocide application
+    FilterInfo:
+      FilterType1:
+        Name: Aclar
+        Wavelenght:
+          Value: 280
+          Units: nm
+        Transmitance:
+          Value: 95
+          Units: percentage
+      FilterType2:
+        Name: Mylar
+        Wavelenght:
+          Value: 315
+          Units: nm
+      FilterType3:
+        Name: Mylar with paint
+        Wavelenght:
+          Value: 700
+          Units: nm
+        Transmitance:
+          Value: 10
+          Units: percentage
+    Treatment: light attenuation and biocide application
     Duration:
       Time: 18
       Units: months
@@ -59,12 +81,12 @@ ExperimentInfo:
    LitterBagInfo:
      Material: fiberglass
      MeshSize:
-       Value: 2
-       Units: mm
+      Value: 2
+      Units: mm
      Dimentions:
-       Width: 10
-       Lenght: 20
-       Units: cm
+      Width: 10
+      Lenght: 20
+      Units: cm
      Position: bare soil
    Treatment: labile C and inorganic N addition
    Duration:
@@ -86,37 +108,37 @@ Variables:
     Name: TR
     Units: "Remaining organic matter percentage"
     Description: "Litter organic matter percentage remaining at harvest time with total solar radiation and without biocide application"
-    LightAttenuation: Aclar filter
+    FilterType: FilterType1
     BiocideApplication: "None"
   V3:
     Name: UVBB
     Units: "Remaining organic matter percentage"
     Description: "Litter organic matter percentage remaining at harvest time with UV-B solar radiation blocked and without biocide application"
-    LightAttenuation: Mylar filter
+    FilterType: FilterType2
     BiocideApplication: "None"
   V4:
     Name: TB
     Units: "Remaining organic matter percentage"
     Description: "Litter organic matter percentage remaining at harvest time with total solar radiation blocked and without biocide application"
-    LightAttenuation: Mylar filter with paint
+    FilterType: FilterType3
     BiocideApplication: "None"
   V5:
     Name: TR_B
     Units: "Remaining organic matter percentage"
     Description: "Litter organic matter percentage remaining at harvest time with total solar radiation and biocide application"
-    LightAttenuation: Aclar filter
+    FilterType: FilterType1
     BiocideApplication: "Captan and Agri-micina solution plus naphtalene pellets"
   V6:
     Name: UVBB_B
     Units: "Remaining organic matter percentage"
     Description: "Litter organic matter percentage remaining at harvest time with UV-B solar radiation blocked and biocide application"
-    LightAttenuation: Mylar filter
+    FilterType: FilterType2
     BiocideApplication: "Captan and Agri-micina solution plus naphtalene pellets"
   V7:
     Name: TB_B
     Units: "Remaining organic matter percentage"
     Description: "Litter organic matter percentage remaining at harvest time with total solar radiation blocked and biocide application"
-    LightAttenuation: Mylar filter with paint
+    FilterType: FilterType3
     BiocideApplication: "Captan and Agri-micina solution plus naphtalene pellets"
   V8:
     Name: NOA
