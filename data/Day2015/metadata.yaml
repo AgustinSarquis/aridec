@@ -5,13 +5,12 @@ EntryAuthor: Agustín Sarquis
 SiteInfo:
   Name: Phoenix, Arizona, USA
   EcosystemType: Desert
-  Climate: Arid
   MAP:
     Value: 195
     Units: mm
   MAT:
     Value: 22.5
-    Units: Celcius
+    Units: Celsius
   RainySeason: summer
   Altitude:
     Value: 400
@@ -21,13 +20,63 @@ SiteInfo:
     Longitude: -111.8
 
 ExperimentInfo:
-  Description: "They used a light attenuation treatment (control, UV blocked, UV-B blocked and total blocked) to assess mass loss"
-  LitterBagInfo:
-    Material: bolting cloth
-    MeshSize:
-      Value: 0.153
-      Units: mm
-    Position: bare soil
+ LitterInfo:
+  LitterType1:
+   Species: Cynodon dactylon
+   LifeForm: graminoid
+   Material: recently senesced leaves
+   Amount:
+     Value: 2
+     Units: g
+  LitterType2:
+   Species: Larrea tridentata
+   LifeForm: shrub
+   Material: recently senesced leaves
+   Amount:
+     Value: 6
+     Units: g
+  LitterType3:
+   Species: Larrea tridentata
+   LifeForm: shrub
+   Material: recently senesced terminal shoots
+   Amount:
+     Value: 4
+     Units: g
+ Description: "They used a light attenuation treatment (control, UV blocked, UV-B blocked and total blocked) to assess mass loss"
+ LitterBagInfo:
+  Material: bolting cloth
+  MeshSize:
+   Value: 0.153
+   Units: mm
+  Dimentions:
+   Width: 10
+   Lenght: 10
+   Units: cm
+  Position: bare soil
+ FilterInfo:
+   FilterType1:
+     Name: Aclar
+     Wavelenght:
+      Value: 280
+      Units: nm
+     Transmitance:
+      Value: 80
+      Units: percentage
+   FilterType2:
+     Name: Mylar
+     Wavelenght:
+      Value: 315
+      Units: nm
+   FilterType3:
+     Name: Courtgard
+     Wavelenght:
+      Value: 400
+      Units: nm
+   FilterType4:
+     Name: Mylar with paint
+     Wavelenght:
+      Value: 700
+      Units: nm
   Treatment: light attenuation
   StartingDate:
     Month: december
@@ -35,19 +84,6 @@ ExperimentInfo:
   Duration:
     Time: 14
     Units: months
-  LitterInfo:
-    LitterType1:
-     Species: Cynodon dactylon
-     LifeForm: graminoid
-     Material: recently senesced leaves
-    LitterType2:
-     Species: Larrea tridentata
-     LifeForm: shrub
-     Material: recently senesced leaves
-    LitterType3:
-     Species: Larrea tridentata
-     LifeForm: shrub
-     Material: recently senesced terminal shoots
 
 Variables:
   V1:
@@ -57,59 +93,71 @@ Variables:
     Name: CDTR
     Units: "Mass remaining"
     Description: "C. dactylon litter mass percentage remaining at harvest time under total solar radiation"
-    LightAttenuation: Aclar filter
+    FilterType: FilterType1
+    LitterType: LitterType1
   V3:
     Name: CDUVB
     Units: "Mass remaining"
     Description: "C. dactylon litter mass percentage remaining at harvest time with UV-B radiation blocked"
-    LightAttenuation: Mylar filter
+    FilterType: FilterType2
+    LitterType: LitterType1
   V4:
     Name: CDUV
     Units: "Mass remaining"
     Description: "C. dactylon litter mass percentage remaining at harvest time with total UV radiation blocked"
-    LightAttenuation: Courtgard filter
+    FilterType: FilterType3
+    LitterType: LitterType1
   V5:
     Name: CDTB
     Units: "Mass remaining"
     Description: "C. dactylon litter mass percentage remaining at harvest time with total solar radiation blocked"
-    LightAttenuation: Mylar filter with paint
+    FilterType: FilterType4
+    LitterType: LitterType1
   V6:
     Name: LTLTR
     Units: "Mass remaining"
     Description: "L. tridentata leaf litter mass percentage remaining at harvest time under total solar radiation"
-    LightAttenuation: Aclar filter
+    FilterType: FilterType1
+    LitterType: LitterType2
   V7:
     Name: LTLUVB
     Units: "Mass remaining"
     Description: "L. tridentata leaf litter mass percentage remaining at harvest time with UV-B radiation blocked"
-    LightAttenuation: Mylar filter
+    FilterType: FilterType2
+    LitterType: LitterType2
   V8:
     Name: LTLUV
     Units: "Mass remaining"
     Description: "L. tridentata leaf litter mass percentage remaining at harvest time with total UV radiation blocked"
-    LightAttenuation: Courtgard filter
+    FilterType: FilterType3
+    LitterType: LitterType2
   V9:
     Name: LTLTB
     Units: "Mass remaining"
     Description: "L. tridentata leaf litter mass percentage remaining at harvest time with total solar radiation blocked"
-    LightAttenuation: Mylar filter with paint
+    FilterType: FilterType4
+    LitterType: LitterType2
   V10:
     Name: LTSTR
     Units: "Mass remaining"
     Description: "L. tridentata shoot litter mass percentage remaining at harvest time under total solar radiation"
-    LightAttenuation: Aclar filter
+    FilterType: FilterType1
+    LitterType: LitterType3
   V11:
     Name: LTSUVB
     Units: "Mass remaining"
     Description: "L. tridentata shoot litter mass percentage remaining at harvest time with UV-B radiation blocked"
-    LightAttenuation: Mylar filter
+    FilterType: FilterType2
+    LitterType: LitterType3
   V12:
     Name: LTSUV
     Units: "Mass remaining"
     Description: "L. tridentata shoot litter mass percentage remaining at harvest time with total UV radiation blocked"
-    LightAttenuation: Courtgard filter
+    FilterType: FilterType3
+    LitterType: LitterType3
   V13:
     Name: LTSTB
     Units: "Mass remaining"
     Description: "L. tridentata shoot litter mass percentage remaining at harvest time with total solar radiation blocked"
-    LightAttenuation: Mylar filter with paint
+    FilterType: FilterType4
+    LitterType: LitterType3

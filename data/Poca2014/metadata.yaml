@@ -4,13 +4,12 @@ EntryAuthor: Agustín Sarquis
 SiteInfo:
   Name: Pampa de Achala, Córdoba, Argentina
   EcosystemType: mountain grassland
-  Climate: mesic
   MAP:
     Value: 900
     Units: mm
   MAT:
     Value: 8
-    Units: Celcius
+    Units: Celsius
   RainySeason: summer
   Altitude:
     Value: 2200
@@ -55,6 +54,9 @@ ExperimentInfo:
     SLA:
       Value: 20
       Units: mm2.mg-1
+    Amount:
+      Value: 1
+      Units: g
   LitterType2:
    Species: Eryngium agavifolium
    LifeForm: forb
@@ -74,6 +76,9 @@ ExperimentInfo:
    SLA:
      Value: 6
      Units: mm2.mg-1
+   Amount:
+      Value: 1
+      Units: g
   LitterType3:
    Species: Eryngium nudicale
    LifeForm: forb
@@ -91,8 +96,11 @@ ExperimentInfo:
      Value: 1.2
      Units: percentage
    SLA:
-     Value: 7
-     Units: mm2.mg-1
+    Value: 7
+    Units: mm2.mg-1
+   Amount:
+    Value: 1
+    Units: g
   LitterType4:
    Species: Glandularia dissecta
    LifeForm: forb
@@ -112,6 +120,9 @@ ExperimentInfo:
    SLA:
      Value: 20
      Units: mm2.mg-1
+   Amount:
+    Value: 1
+    Units: g
   LitterType5:
    Species: Grindelia globularifolia
    LifeForm: forb
@@ -131,6 +142,9 @@ ExperimentInfo:
    SLA:
      Value: 9
      Units: mm2.mg-1
+   Amount:
+    Value: 1
+    Units: g
   LitterType6:
    Species: Lachemilla pinnata
    LifeForm: forb
@@ -150,6 +164,9 @@ ExperimentInfo:
    SLA:
      Value: 14
      Units: mm2.mg-1
+   Amount:
+    Value: 1
+    Units: g
   LitterType7:
    Species: Plantago argentina
    LifeForm: forb
@@ -169,6 +186,9 @@ ExperimentInfo:
    SLA:
      Value: 7
      Units: mm2.mg-1
+   Amount:
+    Value: 1
+    Units: g
   LitterType8:
    Species: Bromus catharticus
    LifeForm: graminoid
@@ -188,6 +208,9 @@ ExperimentInfo:
    SLA:
      Value: 18
      Units: mm2.mg-1
+   Amount:
+    Value: 1
+    Units: g
   LitterType9:
    Species: Carex fuscula
    LifeForm: graminoid
@@ -207,6 +230,9 @@ ExperimentInfo:
    SLA:
      Value: 18
      Units: mm2.mg-1
+   Amount:
+    Value: 1
+    Units: g
   LitterType10:
    Species: Chascolytrum subaristatum
    LifeForm: graminoid
@@ -226,6 +252,9 @@ ExperimentInfo:
    SLA:
      Value: 12
      Units: mm2.mg-1
+   Amount:
+    Value: 1
+    Units: g
   LitterType11:
    Species: Eleocharis pseudoalbibracteata
    LifeForm: graminoid
@@ -245,6 +274,9 @@ ExperimentInfo:
    SLA:
      Value: 27
      Units: mm2.mg-1
+   Amount:
+    Value: 1
+    Units: g
   LitterType12:
    Species: Eragrostis lugens
    LifeForm: graminoid
@@ -264,6 +296,9 @@ ExperimentInfo:
    SLA:
      Value: 8
      Units: mm2.mg-1
+   Amount:
+    Value: 1
+    Units: g
   LitterType13:
    Species: Festuca dissitiflora
    LifeForm: graminoid
@@ -283,6 +318,9 @@ ExperimentInfo:
    SLA:
      Value: 12
      Units: mm2.mg-1
+   Amount:
+    Value: 1
+    Units: g
   LitterType14:
    Species: Juncus pallescens
    LifeForm: graminoid
@@ -302,6 +340,9 @@ ExperimentInfo:
    SLA:
      Value: 7
      Units: mm2.mg-1
+   Amount:
+    Value: 1
+    Units: g
   LitterType15:
    Species: Juncus uruguensis
    LifeForm: graminoid
@@ -321,6 +362,9 @@ ExperimentInfo:
    SLA:
      Value: 8
      Units: mm2.mg-1
+   Amount:
+    Value: 1
+    Units: g
   LitterType16:
    Species: Muhlenbergia peruviana
    LifeForm: graminoid
@@ -340,6 +384,9 @@ ExperimentInfo:
    SLA:
      Value: 14
      Units: mm2.mg-1
+   Amount:
+    Value: 1
+    Units: g
   LitterType17:
    Species: Poa hubbardiana
    LifeForm: graminoid
@@ -359,6 +406,9 @@ ExperimentInfo:
    SLA:
      Value: 21
      Units: mm2.mg-1
+   Amount:
+    Value: 1
+    Units: g
   LitterType18:
    Species: Sisyrinchium unguiculatum
    LifeForm: graminoid
@@ -378,6 +428,9 @@ ExperimentInfo:
    SLA:
      Value: 9
      Units: mm2.mg-1
+   Amount:
+    Value: 1
+    Units: g
   LitterType19:
    Species: Sorghastrum pellitum
    LifeForm: graminoid
@@ -397,6 +450,9 @@ ExperimentInfo:
    SLA:
      Value: 7
      Units: mm2.mg-1
+   Amount:
+    Value: 1
+    Units: g
   LitterType20:
    Species: Sporobolus indicus
    LifeForm: graminoid
@@ -416,6 +472,9 @@ ExperimentInfo:
    SLA:
      Value: 10
      Units: mm2.mg-1
+   Amount:
+    Value: 1
+    Units: g
   LitterType21:
    Species: Deyeuxia hieronymi
    LifeForm: bunchgrass
@@ -435,6 +494,9 @@ ExperimentInfo:
    SLA:
      Value: 10
      Units: mm2.mg-1
+   Amount:
+    Value: 1
+    Units: g
   LitterType22:
    Species: Festuca lilloi
    LifeForm: bunchgrass
@@ -454,6 +516,9 @@ ExperimentInfo:
    SLA:
      Value: 6
      Units: mm2.mg-1
+   Amount:
+    Value: 1
+    Units: g
   LitterType23:
    Species: Nassella nidulans
    LifeForm: bunchgrass
@@ -473,6 +538,9 @@ ExperimentInfo:
    SLA:
      Value: 12
      Units: mm2.mg-1
+   Amount:
+    Value: 1
+    Units: g
   LitterType24:
    Species: Poa stuckertii
    LifeForm: bunchgrass
@@ -492,6 +560,9 @@ ExperimentInfo:
    SLA:
      Value: 6
      Units: mm2.mg-1
+   Amount:
+    Value: 1
+    Units: g
 
 Variables:
   V1:

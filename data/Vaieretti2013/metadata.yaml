@@ -5,13 +5,12 @@ EntryAuthor: Agustín Sarquis
 SiteInfo:
   Name: Pampa de Achala, Córdoba, Argentina
   EcosystemType: mountain grassland
-  Climate: mesic
   MAP:
     Value: 900
     Units: mm
   MAT:
     Value: 8
-    Units: Celcius
+    Units: Celsius
   RainySeason: summer
   Altitude:
     Value: 2200

@@ -5,13 +5,12 @@ EntryAuthor: Agustín Sarquis
 SiteInfo:
   Name: Río Mayo, Chubut, Argentina
   EcosystemType: Steppe
-  Climate: Semi-arid
   MAP:
     Value: 155
     Units: mm
   MAT:
     Value: 8
-    Units: Celcius
+    Units: Celsius
   RainySeason: winter
   Altitude:
     Value: 500
@@ -31,25 +30,35 @@ SiteInfo:
     Longitude: -70.266667
 
 ExperimentInfo:
+ LitterInfo:
+  LitterType1:
+   Species: Stipa speciosa
+   LifeForm: bunchgrass
+   Material: recently senesced leaves
+   Amount:
+     Value: 1
+     Units: g
+ Experiment1:
   Description: "They measured litter decomposition with a nitrification inhibition treatment"
   LitterBagInfo:
     Material: fiberglass
     MeshSize:
       Value: 2
       Units: mm
+    Dimentions:
+      Width: 10
+      Lenght: 10
+      Units: cm
     Position: bare soil
   Treatment: nitrification inhibition
   StartingDate:
     Month: april
     Season: autumn
-  SamplingTime:
+  Duration:
     Time: 30
     Units: months
-  LitterInfo:
-    Species: Stipa speciosa
-    LifeForm: bunchgrass
-    Material: recently senesced leaves
-
+  LitterType: LitterType1
+  
 Variables:
   V1:
     Name: Time
