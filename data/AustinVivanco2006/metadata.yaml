@@ -80,8 +80,7 @@ ExperimentInfo:
     Duration:
       Time: 18
       Units: months
-    LitterType: LitterType1
-  Experiment2:
+ Experiment2:
    Description: "They added labile C and N as substrates to stimulate biotic activity"
    LitterBagInfo:
      Material: fiberglass
@@ -97,7 +96,6 @@ ExperimentInfo:
    Duration:
      Time: 18
      Units: months
-   LitterType: LitterType1
 
 Variables:
   V1:
@@ -105,57 +103,67 @@ Variables:
     Units: years
   V2:
     Name: TR
-    Units: "Remaining organic matter percentage"
+    Units: Organic matter remaining
     Description: "Litter organic matter percentage remaining at harvest time with total solar radiation and without biocide application"
     FilterType: FilterType1
+    LitterType: LitterType1
     BiocideApplication: "None"
   V3:
     Name: UVBB
-    Units: "Remaining organic matter percentage"
+    Units: Organic matter remaining
     Description: "Litter organic matter percentage remaining at harvest time with UV-B solar radiation blocked and without biocide application"
     FilterType: FilterType2
+    LitterType: LitterType1
     BiocideApplication: "None"
   V4:
     Name: TB
-    Units: "Remaining organic matter percentage"
+    Units: Organic matter remaining
     Description: "Litter organic matter percentage remaining at harvest time with total solar radiation blocked and without biocide application"
     FilterType: FilterType3
+    LitterType: LitterType1
     BiocideApplication: "None"
   V5:
     Name: TR_B
-    Units: "Remaining organic matter percentage"
+    Units: Organic matter remaining
     Description: "Litter organic matter percentage remaining at harvest time with total solar radiation and biocide application"
     FilterType: FilterType1
+    LitterType: LitterType1
     BiocideApplication: "Captan and Agri-micina solution plus naphtalene pellets"
   V6:
     Name: UVBB_B
-    Units: "Remaining organic matter percentage"
+    Units: Organic matter remaining
     Description: "Litter organic matter percentage remaining at harvest time with UV-B solar radiation blocked and biocide application"
     FilterType: FilterType2
+    LitterType: LitterType1
     BiocideApplication: "Captan and Agri-micina solution plus naphtalene pellets"
   V7:
     Name: TB_B
-    Units: "Remaining organic matter percentage"
+    Units: Organic matter remaining
     Description: "Litter organic matter percentage remaining at harvest time with total solar radiation blocked and biocide application"
     FilterType: FilterType3
+    LitterType: LitterType1
     BiocideApplication: "Captan and Agri-micina solution plus naphtalene pellets"
   V8:
     Name: NOA
-    Units: "Remaining organic matter percentage"
+    Units: Organic matter remaining
     Description: "Litter organic matter percentage remaining at harvest time without any substrate addition"
+    LitterType: LitterType1
     SubstrateAddition: "None"
   V9:
     Name: CA
-    Units: "Remaining organic matter percentage"
+    Units: Organic matter remaining
     Description: "Litter organic matter percentage remaining at harvest time with labile C addition"
+    LitterType: LitterType1
     SubstrateAddition: "Glucose and cornstarch"
   V10:
     Name: NA
-    Units: "Remaining organic matter percentage"
+    Units: Organic matter remaining
     Description: "Litter organic matter percentage remaining at harvest time with inorganic N addition"
+    LitterType: LitterType1
     SubstrateAddition: "Ammonium nitrate"
   V11:
     Name: CNA
-    Units: "Remaining organic matter percentage"
+    Units: Organic matter remaining
     Description: "Litter organic matter percentage remaining at harvest time with labile C and inorganic N addition"
+    LitterType: LitterType1
     SubstrateAddition: "Glucose and cornstarch plus ammonium nitrate"

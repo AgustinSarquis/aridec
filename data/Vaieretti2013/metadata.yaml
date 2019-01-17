@@ -41,6 +41,164 @@ SiteInfo:
     Longitude: -64.83
 
 ExperimentInfo:
+ LitterInfo:
+   LitterType1:
+    PatchType: PatchType1
+    LifeForm:
+      -forb
+      -graminoid
+    Material: recently senesced leaves
+    Carbon:
+      Value: 45.7
+      Units: percentage
+    Nitrogen:
+      Value: 1.3
+      Units: percentage
+    Phosphorus:
+      Value: 0.06
+      Units: percentage
+    Lignin:
+      Value: 9.2
+      Units: percentage
+    Cellulose:
+      Value: 33.8
+      Units: percentage
+    Hemicellulose:
+      Value: 22.8
+      Units: percentage
+    C:N:
+      Value: 35.7
+      Units: unitless
+    Lignin:N:
+      Value: 7.1
+      Units: unitless
+    LHC:
+      Value: 65.8
+      Units: percentage
+    Amount:
+      Value: 3
+      Units: g
+   LitterType2:
+    PatchType: PatchType2
+    LifeForm:
+      -bunchgrass
+      -forb
+      -graminoid
+    Material: recently senesced leaves
+    Carbon:
+      Value: 46
+      Units: percentage
+    Nitrogen:
+      Value: 0.9
+      Units: percentage
+    Phosphorus:
+      Value: 0.05
+      Units: percentage
+    Lignin:
+      Value: 6.9
+      Units: percentage
+    Cellulose:
+      Value: 37.5
+      Units: percentage
+    Hemicellulose:
+      Value: 27.7
+      Units: percentage
+    C:N:
+      Value: 50.8
+      Units: unitless
+    Lignin:N:
+      Value: 7.5
+      Units: unitless
+    LHC:
+      Value: 72.1
+      Units: percentage
+    Amount:
+      Value: 3
+      Units: g
+   LitterType3:
+    PatchType: PatchType3
+    Species:
+      -Festuca lilloi
+      -Poa stuckertii
+      -Deyeuxia hieronymi
+    LifeForm: bunchgrass
+    Material: recently senesced leaves
+    Carbon:
+      Value: 46.7
+      Units: percentage
+    Nitrogen:
+      Value: 1
+      Units: percentage
+    Phosphorus:
+      Value: 0.06
+      Units: percentage
+    Lignin:
+      Value: 8.2
+      Units: percentage
+    Cellulose:
+      Value: 39.1
+      Units: percentage
+    Hemicellulose:
+      Value: 27.3
+      Units: percentage
+    C:N:
+      Value: 49.5
+      Units: unitless
+    Lignin:N:
+      Value: 8.5
+      Units: unitless
+    LHC:
+      Value: 74.5
+      Units: percentage
+    Amount:
+      Value: 3
+      Units: g
+   LitterType4:
+    Material: cattle faeces
+    Carbon:
+      Value: 43.3
+      Units: percentage
+    Nitrogen:
+      Value: 1.3
+      Units: percentage
+    Phosphorus:
+      Value: 0.16
+      Units: percentage
+    Lignin:
+      Value: 14.5
+      Units: percentage
+    Cellulose:
+      Value: 32.6
+      Units: percentage
+    Hemicellulose:
+      Value: 18.3
+      Units: percentage
+    C:N:
+      Value: 32.8
+      Units: percentage
+    Lignin:N:
+      Value: 10.9
+      Units: percentage
+    LHC:
+      Value: 65.4
+      Units: percentage
+    Amount:
+      Value: 3
+      Units: g
+   LitterType5:
+    Species: Muhlenbergia peruviana
+    LifeForm: graminoid
+    Material: recently senesced leaves
+    Amount:
+     Value: 3
+     Units: g
+   LitterType6:
+    Species: Poa stuckertii
+    LifeForm: bunchgrass
+    Material: recently senesced leaves
+    Amount:
+     Value: 3
+     Units: g
  Experiment1:
   Description: "Leaf litter from three different vegetation patches was used in a common garden decomposition experiment with two sampling dates"
   LitterBagInfo:
@@ -48,51 +206,13 @@ ExperimentInfo:
     MeshSize:
       Value: 0.3
       Units: mm
-    Position: decomposition bed
+      Position: decomposition bed covered in litter
   StartingDate:
     Month: january
     Season: summer
   Duration:
     Time: 6.5
     Units: months
-  LitterInfo:
-   LitterType1:
-    LifeForm: forb, graminoid
-    Material: recently senesced leaves
-    Carbon:
-      Value:
-      Units:
-    Nitrogen:
-      Value:
-      Units:
-    Phosphorus:
-      Value:
-      Units:
-    Lignin:
-      Value:
-      Units:
-    Cellulose:
-      Value:
-      Units:
-    Hemicellulose:
-      Value:
-      Units:
-    C:N:
-      Value:
-      Units:
-    Lignin:N:
-      Value:
-      Units:
-    LHC:
-      Value:
-      Units:
-   LitterType2:
-    LifeForm: bunchgrass, forb, graminoid
-    Material: recently senesced leaves
-   LitterType3:
-    Species: Festuca lilloi, Poa stuckertii, Deyeuxia hieronymi
-    LifeForm: bunchgrass
-    Material: recently senesced leaves
  Experiment2:
   Description: "Leaf litter from three distinct vegetation patches and faeces were incubated in situ with two sampling dates"
   LitterBagInfo:
@@ -107,19 +227,6 @@ ExperimentInfo:
   Duration:
     Time: 6.5
     Units: months
-  LitterInfo:
-   LitterType1:
-    LifeForm: forb, graminoid
-    Material: recently senesced leaves
-   LitterType2:
-    LifeForm: bunchgrass, forb, graminoid
-    Material: recently senesced leaves
-   LitterType3:
-    Species: Festuca lilloi, Poa stuckertii, Deyeuxia hieronymi
-    LifeForm: bunchgrass
-    Material: recently senesced leaves
-   LitterType4:
-    Material: cattle faeces
  Experiment3:
   Description: "Muhlenbergia peruviana and Poa stuckertii leaf litter were incubated in each of three distinct vegetation patches with two sampling dates"
   LitterBagInfo:
@@ -134,22 +241,95 @@ ExperimentInfo:
   Duration:
     Time: 6.5
     Units: months
-  LitterInfo:
-   LitterType1:
-    Species: Muhlenbergia peruviana
-    LifeForm: graminoid
-    Material: recently senesced leaves
-   LitterType2:
-    Species: Poa stuckertii
-    LifeForm: bunchgrass
-    Material: recently senesced leaves
 
 Variables:
   V1:
     Name: Time
     Units: days
   V2:
-    Name:
-    Units:
-    Description:
-    Litter:
+    Name: CGL
+    Units: Mass remaining
+    Description: "Percentage of dry weight remaining of litter belonging to lawns incubated in a common garden"
+    LitterType: LitterType1
+  V3:
+    Name: CGOTG
+    Units: Mass remaining
+    Description: "Percentage of dry weight remaining of litter belonging to open tussock grasslands incubated in a common garden"
+    LitterType: LitterType2
+  V4:
+    Name: CGCTG
+    Units: Mass remaining
+    Description: "Percentage of dry weight remaining of litter belonging to closed tussock grasslands incubated in a common garden"
+    LitterType: LitterType3
+  V5:
+    Name: LL
+    Units: Mass remaining
+    Description: "Percentage of dry weight remaining of litter belonging to lawns incubated in situ"
+    LitterType: LitterType1
+    PatchType: PatchType1
+  V6:
+    Name: LF
+    Units: Mass remaining
+    Description: "Percentage of dry weight remaining of faeces incubated in lawns"
+    LitterType: LitterType4
+    PatchType: PatchType1
+  V7:
+    Name: OTGL
+    Units: Mass remaining
+    Description: "Percentage of dry weight remaining of litter belonging to open tussock grasslands incubated in situ"
+    LitterType: LitterType2
+    PatchType: PatchType2
+  V8:
+    Name: OTGF
+    Units: Mass remaining
+    Description: "Percentage of dry weight remaining of faeces incubated in open tussock grasslands"
+    LitterType: LitterType4
+    PatchType: PatchType2
+  V9:
+    Name: CTGL
+    Units: Mass remaining
+    Description: "Percentage of dry weight remaining of litter belonging to closed tussock grasslands incubated in situ"
+    LitterType: LitterType3
+    PatchType: PatchType3
+  V10:
+    Name: CTGF
+    Units: Mass remaining
+    Description: "Percentage of dry weight remaining of faeces incubated in closed tussock grasslands"
+    LitterType: LitterType4
+    PatchType: PatchType3
+  V11:
+    Name: LMp
+    Units: Mass remaining
+    Description: "Percentage of dry weight remaining of M. peruviana incubated in lawns"
+    LitterType: LitterType5
+    PatchType: PatchType1
+  V12:
+    Name: LPs
+    Units: Mass remaining
+    Description: "Percentage of dry weight remaining of P. stuckertii incubated in lawns"
+    LitterType: LitterType6
+    PatchType: PatchType1
+  V13:
+    Name: OTGMp
+    Units: Mass remaining
+    Description: "Percentage of dry weight remaining of M. peruviana incubated in open tussock grasslands"
+    LitterType: LitterType5
+    PatchType: PatchType2
+  V14:
+    Name: OTGPs
+    Units: Mass remaining
+    Description: "Percentage of dry weight remaining of P. stuckertii incubated in open tussock grasslands"
+    LitterType: LitterType6
+    PatchType: PatchType2
+  V15:
+    Name: CTGMp
+    Units: Mass remaining
+    Description: "Percentage of dry weight remaining of M. peruviana incubated in closed tussock grasslands"
+    LitterType: LitterType5
+    PatchType: PatchType3
+  V16:
+    Name: CTGPs
+    Units: Mass remaining
+    Description: "Percentage of dry weight remaining of P. stuckertii incubated in closed tussock grasslands"
+    LitterType: LitterType6
+    PatchType: PatchType3

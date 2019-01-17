@@ -77,11 +77,11 @@ ExperimentInfo:
      Wavelenght:
       Value: 700
       Units: nm
-  Treatment: light attenuation
-  StartingDate:
+ Treatment: light attenuation
+ StartingDate:
     Month: december
     Season: autumn
-  Duration:
+ Duration:
     Time: 14
     Units: months
 

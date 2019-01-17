@@ -21,548 +21,549 @@ SiteInfo:
     Longitude: -64.83
 
 ExperimentInfo:
+ LitterInfo:
+  LitterType1:
+   Species: Bidens andicola
+   LifeForm: forb
+   Material: recently senesced leaves
+   cellulose:
+     Value: 20.7
+     Units: percentage
+   Hemicellulose:
+     Value: 0.0
+     Units: percentage
+   Lignin:
+     Value: 18.6
+     Units: percentage
+   Nitrogen:
+     Value: 2.1
+     Units: percentage
+   SLA:
+     Value: 20
+     Units: mm2.mg-1
+   Amount:
+     Value: 1
+     Units: g
+ LitterType2:
+  Species: Eryngium agavifolium
+  LifeForm: forb
+  Material: recently senesced leaves
+  cellulose:
+    Value: 37.5
+    Units: percentage
+  Hemicellulose:
+    Value: 2.7
+    Units: percentage
+  Lignin:
+    Value: 9.2
+    Units: percentage
+  Nitrogen:
+    Value: 0.8
+    Units: percentage
+  SLA:
+    Value: 6
+    Units: mm2.mg-1
+  Amount:
+     Value: 1
+     Units: g
+ LitterType3:
+  Species: Eryngium nudicale
+  LifeForm: forb
+  Material: recently senesced leaves
+  cellulose:
+    Value: 28.5
+    Units: percentage
+  Hemicellulose:
+    Value: 0.0
+    Units: percentage
+  Lignin:
+    Value: 8.9
+    Units: percentage
+  Nitrogen:
+    Value: 1.2
+    Units: percentage
+  SLA:
+   Value: 7
+   Units: mm2.mg-1
+  Amount:
+   Value: 1
+   Units: g
+ LitterType4:
+  Species: Glandularia dissecta
+  LifeForm: forb
+  Material: recently senesced leaves
+  cellulose:
+    Value: 21.6
+    Units: percentage
+  Hemicellulose:
+    Value: 0.0
+    Units: percentage
+  Lignin:
+    Value: 18.8
+    Units: percentage
+  Nitrogen:
+    Value: 1.6
+    Units: percentage
+  SLA:
+    Value: 20
+    Units: mm2.mg-1
+  Amount:
+   Value: 1
+   Units: g
+ LitterType5:
+  Species: Grindelia globularifolia
+  LifeForm: forb
+  Material: recently senesced leaves
+  cellulose:
+    Value: 20.9
+    Units: percentage
+  Hemicellulose:
+    Value: 0.0
+    Units: percentage
+  Lignin:
+    Value: 10.7
+    Units: percentage
+  Nitrogen:
+    Value: 1.2
+    Units: percentage
+  SLA:
+    Value: 9
+    Units: mm2.mg-1
+  Amount:
+   Value: 1
+   Units: g
+ LitterType6:
+  Species: Lachemilla pinnata
+  LifeForm: forb
+  Material: recently senesced leaves
+  cellulose:
+    Value: 28.4
+    Units: percentage
+  Hemicellulose:
+    Value: 3.8
+    Units: percentage
+  Lignin:
+    Value: 9.9
+    Units: percentage
+  Nitrogen:
+    Value: 1.1
+    Units: percentage
+  SLA:
+    Value: 14
+    Units: mm2.mg-1
+  Amount:
+   Value: 1
+   Units: g
+ LitterType7:
+  Species: Plantago argentina
+  LifeForm: forb
+  Material: recently senesced leaves
+  cellulose:
+    Value: 28.9
+    Units: percentage
+  Hemicellulose:
+    Value: 0.0
+    Units: percentage
+  Lignin:
+    Value: 19.2
+    Units: percentage
+  Nitrogen:
+    Value: 1.0
+    Units: percentage
+  SLA:
+    Value: 7
+    Units: mm2.mg-1
+  Amount:
+   Value: 1
+   Units: g
+ LitterType8:
+  Species: Bromus catharticus
+  LifeForm: graminoid
+  Material: recently senesced leaves
+  cellulose:
+    Value: 44.9
+    Units: percentage
+  Hemicellulose:
+    Value: 20.9
+    Units: percentage
+  Lignin:
+    Value: 5.3
+    Units: percentage
+  Nitrogen:
+    Value: 0.7
+    Units: percentage
+  SLA:
+    Value: 18
+    Units: mm2.mg-1
+  Amount:
+   Value: 1
+   Units: g
+ LitterType9:
+  Species: Carex fuscula
+  LifeForm: graminoid
+  Material: recently senesced leaves
+  cellulose:
+    Value: 31.3
+    Units: percentage
+  Hemicellulose:
+    Value: 25.1
+    Units: percentage
+  Lignin:
+    Value: 9.8
+    Units: percentage
+  Nitrogen:
+    Value: 0.8
+    Units: percentage
+  SLA:
+    Value: 18
+    Units: mm2.mg-1
+  Amount:
+   Value: 1
+   Units: g
+ LitterType10:
+  Species: Chascolytrum subaristatum
+  LifeForm: graminoid
+  Material: recently senesced leaves
+  cellulose:
+    Value: 42.3
+    Units: percentage
+  Hemicellulose:
+    Value: 22.3
+    Units: percentage
+  Lignin:
+    Value: 6.1
+    Units: percentage
+  Nitrogen:
+    Value: 0.8
+    Units: percentage
+  SLA:
+    Value: 12
+    Units: mm2.mg-1
+  Amount:
+   Value: 1
+   Units: g
+ LitterType11:
+  Species: Eleocharis pseudoalbibracteata
+  LifeForm: graminoid
+  Material: recently senesced leaves
+  cellulose:
+    Value: 38.5
+    Units: percentage
+  Hemicellulose:
+    Value: 18.1
+    Units: percentage
+  Lignin:
+    Value: 8.4
+    Units: percentage
+  Nitrogen:
+    Value: 1.4
+    Units: percentage
+  SLA:
+    Value: 27
+    Units: mm2.mg-1
+  Amount:
+   Value: 1
+   Units: g
+ LitterType12:
+  Species: Eragrostis lugens
+  LifeForm: graminoid
+  Material: recently senesced leaves
+  cellulose:
+    Value: 34.7
+    Units: percentage
+  Hemicellulose:
+    Value: 25.0
+    Units: percentage
+  Lignin:
+    Value: 5.3
+    Units: percentage
+  Nitrogen:
+    Value: 1.0
+    Units: percentage
+  SLA:
+    Value: 8
+    Units: mm2.mg-1
+  Amount:
+   Value: 1
+   Units: g
+ LitterType13:
+  Species: Festuca dissitiflora
+  LifeForm: graminoid
+  Material: recently senesced leaves
+  cellulose:
+    Value: 38.4
+    Units: percentage
+  Hemicellulose:
+    Value: 24.4
+    Units: percentage
+  Lignin:
+    Value: 4.4
+    Units: percentage
+  Nitrogen:
+    Value: 0.7
+    Units: percentage
+  SLA:
+    Value: 12
+    Units: mm2.mg-1
+  Amount:
+   Value: 1
+   Units: g
+ LitterType14:
+  Species: Juncus pallescens
+  LifeForm: graminoid
+  Material: recently senesced leaves
+  cellulose:
+    Value: 37.1
+    Units: percentage
+  Hemicellulose:
+    Value: 19.6
+    Units: percentage
+  Lignin:
+    Value: 10.2
+    Units: percentage
+  Nitrogen:
+    Value: 1.6
+    Units: percentage
+  SLA:
+    Value: 7
+    Units: mm2.mg-1
+  Amount:
+   Value: 1
+   Units: g
+ LitterType15:
+  Species: Juncus uruguensis
+  LifeForm: graminoid
+  Material: recently senesced leaves
+  cellulose:
+    Value: 35.4
+    Units: percentage
+  Hemicellulose:
+    Value: 29.5
+    Units: percentage
+  Lignin:
+    Value: 6.7
+    Units: percentage
+  Nitrogen:
+    Value: 1.4
+    Units: percentage
+  SLA:
+    Value: 8
+    Units: mm2.mg-1
+  Amount:
+   Value: 1
+   Units: g
+ LitterType16:
+  Species: Muhlenbergia peruviana
+  LifeForm: graminoid
+  Material: recently senesced leaves
+  cellulose:
+    Value: 33.5
+    Units: percentage
+  Hemicellulose:
+    Value: 34.4
+    Units: percentage
+  Lignin:
+    Value: 4.7
+    Units: percentage
+  Nitrogen:
+    Value: 0.9
+    Units: percentage
+  SLA:
+    Value: 14
+    Units: mm2.mg-1
+  Amount:
+   Value: 1
+   Units: g
+ LitterType17:
+  Species: Poa hubbardiana
+  LifeForm: graminoid
+  Material: recently senesced leaves
+  cellulose:
+    Value: 42.5
+    Units: percentage
+  Hemicellulose:
+    Value: 23.5
+    Units: percentage
+  Lignin:
+    Value: 5.2
+    Units: percentage
+  Nitrogen:
+    Value: 0.6
+    Units: percentage
+  SLA:
+    Value: 21
+    Units: mm2.mg-1
+  Amount:
+   Value: 1
+   Units: g
+ LitterType18:
+  Species: Sisyrinchium unguiculatum
+  LifeForm: graminoid
+  Material: recently senesced leaves
+  cellulose:
+    Value: 35.4
+    Units: percentage
+  Hemicellulose:
+    Value: 5.6
+    Units: percentage
+  Lignin:
+    Value: 11.8
+    Units: percentage
+  Nitrogen:
+    Value: 1.2
+    Units: percentage
+  SLA:
+    Value: 9
+    Units: mm2.mg-1
+  Amount:
+   Value: 1
+   Units: g
+ LitterType19:
+  Species: Sorghastrum pellitum
+  LifeForm: graminoid
+  Material: recently senesced leaves
+  cellulose:
+    Value: 37.9
+    Units: percentage
+  Hemicellulose:
+    Value: 19.8
+    Units: percentage
+  Lignin:
+    Value: 7.6
+    Units: percentage
+  Nitrogen:
+    Value: 0.8
+    Units: percentage
+  SLA:
+    Value: 7
+    Units: mm2.mg-1
+  Amount:
+   Value: 1
+   Units: g
+ LitterType20:
+  Species: Sporobolus indicus
+  LifeForm: graminoid
+  Material: recently senesced leaves
+  cellulose:
+    Value: 34.7
+    Units: percentage
+  Hemicellulose:
+    Value: 31.8
+    Units: percentage
+  Lignin:
+    Value: 3.8
+    Units: percentage
+  Nitrogen:
+    Value: 1.2
+    Units: percentage
+  SLA:
+    Value: 10
+    Units: mm2.mg-1
+  Amount:
+   Value: 1
+   Units: g
+ LitterType21:
+  Species: Deyeuxia hieronymi
+  LifeForm: bunchgrass
+  Material: recently senesced leaves
+  cellulose:
+    Value: 39.7
+    Units: percentage
+  Hemicellulose:
+    Value: 26.9
+    Units: percentage
+  Lignin:
+    Value: 7.2
+    Units: percentage
+  Nitrogen:
+    Value: 0.5
+    Units: percentage
+  SLA:
+    Value: 10
+    Units: mm2.mg-1
+  Amount:
+   Value: 1
+   Units: g
+ LitterType22:
+  Species: Festuca lilloi
+  LifeForm: bunchgrass
+  Material: recently senesced leaves
+  cellulose:
+    Value: 47.9
+    Units: percentage
+  Hemicellulose:
+    Value: 18.8
+    Units: percentage
+  Lignin:
+    Value: 7.7
+    Units: percentage
+  Nitrogen:
+    Value: 0.5
+    Units: percentage
+  SLA:
+    Value: 6
+    Units: mm2.mg-1
+  Amount:
+   Value: 1
+   Units: g
+ LitterType23:
+  Species: Nassella nidulans
+  LifeForm: bunchgrass
+  Material: recently senesced leaves
+  cellulose:
+    Value: 41.0
+    Units: percentage
+  Hemicellulose:
+    Value: 20.5
+    Units: percentage
+  Lignin:
+    Value: 6.5
+    Units: percentage
+  Nitrogen:
+    Value: 0.7
+    Units: percentage
+  SLA:
+    Value: 12
+    Units: mm2.mg-1
+  Amount:
+   Value: 1
+   Units: g
+ LitterType24:
+  Species: Poa stuckertii
+  LifeForm: bunchgrass
+  Material: recently senesced leaves
+  cellulose:
+    Value: 44.4
+    Units: percentage
+  Hemicellulose:
+    Value: 23.8
+    Units: percentage
+  Lignin:
+    Value: 7.7
+    Units: percentage
+  Nitrogen:
+    Value: 0.4
+    Units: percentage
+  SLA:
+    Value: 6
+    Units: mm2.mg-1
+  Amount:
+   Value: 1
+   Units: g
+ Experiment1:
   Description: "Leaf litter from 24 herbaceous species from a highland grassland were used in a common garden decomposition experiment with two retrieval dates"
   LitterBagInfo:
     Material: nylon mesh
     MeshSize:
       Value: 0.3
       Units: mm
-    Position: decomposition bed
+    Position: decomposition bed covered in litter
   StartingDate:
     Month: december
     Season: summer
   Duration:
     Time: 6.5
     Units: months
-  LitterInfo:
-   LitterType1:
-    Species: Bidens andicola
-    LifeForm: forb
-    Material: recently senesced leaves
-    cellulose:
-      Value: 20.7
-      Units: percentage
-    Hemicellulose:
-      Value: 0.0
-      Units: percentage
-    Lignin:
-      Value: 18.6
-      Units: percentage
-    Nitrogen:
-      Value: 2.1
-      Units: percentage
-    SLA:
-      Value: 20
-      Units: mm2.mg-1
-    Amount:
-      Value: 1
-      Units: g
-  LitterType2:
-   Species: Eryngium agavifolium
-   LifeForm: forb
-   Material: recently senesced leaves
-   cellulose:
-     Value: 37.5
-     Units: percentage
-   Hemicellulose:
-     Value: 2.7
-     Units: percentage
-   Lignin:
-     Value: 9.2
-     Units: percentage
-   Nitrogen:
-     Value: 0.8
-     Units: percentage
-   SLA:
-     Value: 6
-     Units: mm2.mg-1
-   Amount:
-      Value: 1
-      Units: g
-  LitterType3:
-   Species: Eryngium nudicale
-   LifeForm: forb
-   Material: recently senesced leaves
-   cellulose:
-     Value: 28.5
-     Units: percentage
-   Hemicellulose:
-     Value: 0.0
-     Units: percentage
-   Lignin:
-     Value: 8.9
-     Units: percentage
-   Nitrogen:
-     Value: 1.2
-     Units: percentage
-   SLA:
-    Value: 7
-    Units: mm2.mg-1
-   Amount:
-    Value: 1
-    Units: g
-  LitterType4:
-   Species: Glandularia dissecta
-   LifeForm: forb
-   Material: recently senesced leaves
-   cellulose:
-     Value: 21.6
-     Units: percentage
-   Hemicellulose:
-     Value: 0.0
-     Units: percentage
-   Lignin:
-     Value: 18.8
-     Units: percentage
-   Nitrogen:
-     Value: 1.6
-     Units: percentage
-   SLA:
-     Value: 20
-     Units: mm2.mg-1
-   Amount:
-    Value: 1
-    Units: g
-  LitterType5:
-   Species: Grindelia globularifolia
-   LifeForm: forb
-   Material: recently senesced leaves
-   cellulose:
-     Value: 20.9
-     Units: percentage
-   Hemicellulose:
-     Value: 0.0
-     Units: percentage
-   Lignin:
-     Value: 10.7
-     Units: percentage
-   Nitrogen:
-     Value: 1.2
-     Units: percentage
-   SLA:
-     Value: 9
-     Units: mm2.mg-1
-   Amount:
-    Value: 1
-    Units: g
-  LitterType6:
-   Species: Lachemilla pinnata
-   LifeForm: forb
-   Material: recently senesced leaves
-   cellulose:
-     Value: 28.4
-     Units: percentage
-   Hemicellulose:
-     Value: 3.8
-     Units: percentage
-   Lignin:
-     Value: 9.9
-     Units: percentage
-   Nitrogen:
-     Value: 1.1
-     Units: percentage
-   SLA:
-     Value: 14
-     Units: mm2.mg-1
-   Amount:
-    Value: 1
-    Units: g
-  LitterType7:
-   Species: Plantago argentina
-   LifeForm: forb
-   Material: recently senesced leaves
-   cellulose:
-     Value: 28.9
-     Units: percentage
-   Hemicellulose:
-     Value: 0.0
-     Units: percentage
-   Lignin:
-     Value: 19.2
-     Units: percentage
-   Nitrogen:
-     Value: 1.0
-     Units: percentage
-   SLA:
-     Value: 7
-     Units: mm2.mg-1
-   Amount:
-    Value: 1
-    Units: g
-  LitterType8:
-   Species: Bromus catharticus
-   LifeForm: graminoid
-   Material: recently senesced leaves
-   cellulose:
-     Value: 44.9
-     Units: percentage
-   Hemicellulose:
-     Value: 20.9
-     Units: percentage
-   Lignin:
-     Value: 5.3
-     Units: percentage
-   Nitrogen:
-     Value: 0.7
-     Units: percentage
-   SLA:
-     Value: 18
-     Units: mm2.mg-1
-   Amount:
-    Value: 1
-    Units: g
-  LitterType9:
-   Species: Carex fuscula
-   LifeForm: graminoid
-   Material: recently senesced leaves
-   cellulose:
-     Value: 31.3
-     Units: percentage
-   Hemicellulose:
-     Value: 25.1
-     Units: percentage
-   Lignin:
-     Value: 9.8
-     Units: percentage
-   Nitrogen:
-     Value: 0.8
-     Units: percentage
-   SLA:
-     Value: 18
-     Units: mm2.mg-1
-   Amount:
-    Value: 1
-    Units: g
-  LitterType10:
-   Species: Chascolytrum subaristatum
-   LifeForm: graminoid
-   Material: recently senesced leaves
-   cellulose:
-     Value: 42.3
-     Units: percentage
-   Hemicellulose:
-     Value: 22.3
-     Units: percentage
-   Lignin:
-     Value: 6.1
-     Units: percentage
-   Nitrogen:
-     Value: 0.8
-     Units: percentage
-   SLA:
-     Value: 12
-     Units: mm2.mg-1
-   Amount:
-    Value: 1
-    Units: g
-  LitterType11:
-   Species: Eleocharis pseudoalbibracteata
-   LifeForm: graminoid
-   Material: recently senesced leaves
-   cellulose:
-     Value: 38.5
-     Units: percentage
-   Hemicellulose:
-     Value: 18.1
-     Units: percentage
-   Lignin:
-     Value: 8.4
-     Units: percentage
-   Nitrogen:
-     Value: 1.4
-     Units: percentage
-   SLA:
-     Value: 27
-     Units: mm2.mg-1
-   Amount:
-    Value: 1
-    Units: g
-  LitterType12:
-   Species: Eragrostis lugens
-   LifeForm: graminoid
-   Material: recently senesced leaves
-   cellulose:
-     Value: 34.7
-     Units: percentage
-   Hemicellulose:
-     Value: 25.0
-     Units: percentage
-   Lignin:
-     Value: 5.3
-     Units: percentage
-   Nitrogen:
-     Value: 1.0
-     Units: percentage
-   SLA:
-     Value: 8
-     Units: mm2.mg-1
-   Amount:
-    Value: 1
-    Units: g
-  LitterType13:
-   Species: Festuca dissitiflora
-   LifeForm: graminoid
-   Material: recently senesced leaves
-   cellulose:
-     Value: 38.4
-     Units: percentage
-   Hemicellulose:
-     Value: 24.4
-     Units: percentage
-   Lignin:
-     Value: 4.4
-     Units: percentage
-   Nitrogen:
-     Value: 0.7
-     Units: percentage
-   SLA:
-     Value: 12
-     Units: mm2.mg-1
-   Amount:
-    Value: 1
-    Units: g
-  LitterType14:
-   Species: Juncus pallescens
-   LifeForm: graminoid
-   Material: recently senesced leaves
-   cellulose:
-     Value: 37.1
-     Units: percentage
-   Hemicellulose:
-     Value: 19.6
-     Units: percentage
-   Lignin:
-     Value: 10.2
-     Units: percentage
-   Nitrogen:
-     Value: 1.6
-     Units: percentage
-   SLA:
-     Value: 7
-     Units: mm2.mg-1
-   Amount:
-    Value: 1
-    Units: g
-  LitterType15:
-   Species: Juncus uruguensis
-   LifeForm: graminoid
-   Material: recently senesced leaves
-   cellulose:
-     Value: 35.4
-     Units: percentage
-   Hemicellulose:
-     Value: 29.5
-     Units: percentage
-   Lignin:
-     Value: 6.7
-     Units: percentage
-   Nitrogen:
-     Value: 1.4
-     Units: percentage
-   SLA:
-     Value: 8
-     Units: mm2.mg-1
-   Amount:
-    Value: 1
-    Units: g
-  LitterType16:
-   Species: Muhlenbergia peruviana
-   LifeForm: graminoid
-   Material: recently senesced leaves
-   cellulose:
-     Value: 33.5
-     Units: percentage
-   Hemicellulose:
-     Value: 34.4
-     Units: percentage
-   Lignin:
-     Value: 4.7
-     Units: percentage
-   Nitrogen:
-     Value: 0.9
-     Units: percentage
-   SLA:
-     Value: 14
-     Units: mm2.mg-1
-   Amount:
-    Value: 1
-    Units: g
-  LitterType17:
-   Species: Poa hubbardiana
-   LifeForm: graminoid
-   Material: recently senesced leaves
-   cellulose:
-     Value: 42.5
-     Units: percentage
-   Hemicellulose:
-     Value: 23.5
-     Units: percentage
-   Lignin:
-     Value: 5.2
-     Units: percentage
-   Nitrogen:
-     Value: 0.6
-     Units: percentage
-   SLA:
-     Value: 21
-     Units: mm2.mg-1
-   Amount:
-    Value: 1
-    Units: g
-  LitterType18:
-   Species: Sisyrinchium unguiculatum
-   LifeForm: graminoid
-   Material: recently senesced leaves
-   cellulose:
-     Value: 35.4
-     Units: percentage
-   Hemicellulose:
-     Value: 5.6
-     Units: percentage
-   Lignin:
-     Value: 11.8
-     Units: percentage
-   Nitrogen:
-     Value: 1.2
-     Units: percentage
-   SLA:
-     Value: 9
-     Units: mm2.mg-1
-   Amount:
-    Value: 1
-    Units: g
-  LitterType19:
-   Species: Sorghastrum pellitum
-   LifeForm: graminoid
-   Material: recently senesced leaves
-   cellulose:
-     Value: 37.9
-     Units: percentage
-   Hemicellulose:
-     Value: 19.8
-     Units: percentage
-   Lignin:
-     Value: 7.6
-     Units: percentage
-   Nitrogen:
-     Value: 0.8
-     Units: percentage
-   SLA:
-     Value: 7
-     Units: mm2.mg-1
-   Amount:
-    Value: 1
-    Units: g
-  LitterType20:
-   Species: Sporobolus indicus
-   LifeForm: graminoid
-   Material: recently senesced leaves
-   cellulose:
-     Value: 34.7
-     Units: percentage
-   Hemicellulose:
-     Value: 31.8
-     Units: percentage
-   Lignin:
-     Value: 3.8
-     Units: percentage
-   Nitrogen:
-     Value: 1.2
-     Units: percentage
-   SLA:
-     Value: 10
-     Units: mm2.mg-1
-   Amount:
-    Value: 1
-    Units: g
-  LitterType21:
-   Species: Deyeuxia hieronymi
-   LifeForm: bunchgrass
-   Material: recently senesced leaves
-   cellulose:
-     Value: 39.7
-     Units: percentage
-   Hemicellulose:
-     Value: 26.9
-     Units: percentage
-   Lignin:
-     Value: 7.2
-     Units: percentage
-   Nitrogen:
-     Value: 0.5
-     Units: percentage
-   SLA:
-     Value: 10
-     Units: mm2.mg-1
-   Amount:
-    Value: 1
-    Units: g
-  LitterType22:
-   Species: Festuca lilloi
-   LifeForm: bunchgrass
-   Material: recently senesced leaves
-   cellulose:
-     Value: 47.9
-     Units: percentage
-   Hemicellulose:
-     Value: 18.8
-     Units: percentage
-   Lignin:
-     Value: 7.7
-     Units: percentage
-   Nitrogen:
-     Value: 0.5
-     Units: percentage
-   SLA:
-     Value: 6
-     Units: mm2.mg-1
-   Amount:
-    Value: 1
-    Units: g
-  LitterType23:
-   Species: Nassella nidulans
-   LifeForm: bunchgrass
-   Material: recently senesced leaves
-   cellulose:
-     Value: 41.0
-     Units: percentage
-   Hemicellulose:
-     Value: 20.5
-     Units: percentage
-   Lignin:
-     Value: 6.5
-     Units: percentage
-   Nitrogen:
-     Value: 0.7
-     Units: percentage
-   SLA:
-     Value: 12
-     Units: mm2.mg-1
-   Amount:
-    Value: 1
-    Units: g
-  LitterType24:
-   Species: Poa stuckertii
-   LifeForm: bunchgrass
-   Material: recently senesced leaves
-   cellulose:
-     Value: 44.4
-     Units: percentage
-   Hemicellulose:
-     Value: 23.8
-     Units: percentage
-   Lignin:
-     Value: 7.7
-     Units: percentage
-   Nitrogen:
-     Value: 0.4
-     Units: percentage
-   SLA:
-     Value: 6
-     Units: mm2.mg-1
-   Amount:
-    Value: 1
-    Units: g
 
 Variables:
   V1:

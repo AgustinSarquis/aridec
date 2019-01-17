@@ -57,19 +57,20 @@ ExperimentInfo:
   Duration:
     Time: 30
     Units: months
-  LitterType: LitterType1
-  
+
 Variables:
   V1:
     Name: Time
     Units: years
   V2:
     Name: OM_C
-    Units: "Remaining organic matter percentage"
+    Units: Organic matter remaining
     Description: "Litter organic matter percentage remaining at harvest time without any nitrification inhibition treatment"
+    LitterType: LitterType1
     Nitrification: "Not inhibited"
   V3:
     Name: OM_I
-    Units: "Remaining organic matter percentage"
+    Units: Organic matter remaining
     Description: "Litter organic matter percentage remaining at harvest time with a nitrification inhibition treatment"
+    LitterType: LitterType1
     Nitrification: "Nitrapyrin (inhibited)"
