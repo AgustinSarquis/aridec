@@ -70,7 +70,7 @@ Variables:
     RainfallInterception:
       Value: 0
       Units: percentage
-  V2:
+  V3:
     Name: RI_30
     Units: Organic matter remaining
     Description: "Mass loss through time of leaf litter of the grass Stipa speciosa for the 30% rainfall interception treatment"
@@ -78,7 +78,7 @@ Variables:
     RainfallInterception:
       Value: 30
       Units: percentage
-  V2:
+  V4:
     Name: RI_55
     Units: Organic matter remaining
     Description: "Mass loss through time of leaf litter of the grass Stipa speciosa for the 55% rainfall interception treatment"
@@ -86,7 +86,7 @@ Variables:
     RainfallInterception:
       Value: 55
       Units: percentage
-  V2:
+  V5:
     Name: RI_80
     Units: Organic matter remaining
     Description: "Mass loss through time of leaf litter of the grass Stipa speciosa for the 80% rainfall interception treatment"
