@@ -557,7 +557,9 @@ ExperimentInfo:
     MeshSize:
       Value: 0.3
       Units: mm
-    Position: decomposition bed covered in litter
+    Position:
+      -decomposition bed
+      -covered in litter
   StartingDate:
     Month: december
     Season: summer

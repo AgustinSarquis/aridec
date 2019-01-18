@@ -11,7 +11,7 @@ SiteInfo:
   MAT:
     Value:
     Units: Celsius
-  RainySeason: winter
+  RainySeason: 
   Altitude:
     Value:
     Units: masl
@@ -72,7 +72,7 @@ Variables:
   V2:
     Name:
     Units:
-    Description: 
+    Description:
     FilterType:
     LitterType:
     BiocideApplication:

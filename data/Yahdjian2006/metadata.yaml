@@ -3,76 +3,94 @@ doi: 10.1007/s10021-004-0118-7
 EntryAuthor: Agustín Sarquis
 
 SiteInfo:
-  Name:
-  EcosystemType:
+  Name: Río Mayo, Chubut, Argentina
+  EcosystemType: steppe
   MAP:
-    Value:
+    Value: 168
     Units: mm
   MAT:
-    Value:
+    Value: 8
     Units: Celsius
   RainySeason: winter
   Altitude:
-    Value:
+    Value: 500
     Units: masl
-  SoilType:
-  SoilTexture:
+  SoilType: Aridisol
+  SoilTexture: coarse
   PlantCover:
-    BunchgrassCover:
-    ShrubCover:
-    BareSoil:
+    BunchgrassCover: 32
+    ShrubCover: 15
+    BareSoil: 53
     Units: percentage
   ANPP:
-    Value:
+    Value: 56
     Units: g.m-2.y-1
   Coordinates:
-    Latitude:
-    Longitude:
+    Latitude: -45.683333
+    Longitude: -70.266667
 
 ExperimentInfo:
  LitterInfo:
   LitterType1:
-   Species:
-   LifeForm:
-   Material:
+   Species: Stipa speciosa
+   LifeForm: bunchgrass
+   Material: recently senesced leaves
    Amount:
-     Value:
+     Value: 1
      Units: g
  Experiment1:
-    Description:
+    Description: "They created four levels of precipitation input: control and three levels (30, 55 and 80%) of precipitation interception and they examined litter decomposition of a dominant grass species, Stipa speciosa, over two consecutive years."
     LitterBagInfo:
-      Material:
+      Material: fiberglass
       MeshSize:
-       Value:
+       Value: 2
        Units: mm
       Dimentions:
-       Width:
-       Lenght:
-       Hight:
+       Width: 10
+       Lenght: 10
        Units: cm
       Position:
-    FilterInfo:
-      FilterType1:
-        Name:
-        Wavelenght:
-          Value:
-          Units: nm
-        Transmitance:
-          Value:
-          Units: percentage
-    Treatment:
+        -bare soil
+        -under shrub
+        -under rainout shelter
+    Treatment: rainfall interception
     Duration:
-      Time:
+      Time: 20
       Units: months
 
 Variables:
   V1:
     Name: Time
-    Units:
+    Units: months
   V2:
-    Name:
-    Units:
-    Description:
-    FilterType:
-    LitterType:
-    BiocideApplication:
+    Name: Ctrl
+    Units: Organic matter remaining
+    Description: "Mass loss through time of leaf litter of the grass Stipa speciosa without any rainfall interception treatment"
+    LitterType: LitterType1
+    RainfallInterception:
+      Value: 0
+      Units: percentage
+  V2:
+    Name: RI_30
+    Units: Organic matter remaining
+    Description: "Mass loss through time of leaf litter of the grass Stipa speciosa for the 30% rainfall interception treatment"
+    LitterType: LitterType1
+    RainfallInterception:
+      Value: 30
+      Units: percentage
+  V2:
+    Name: RI_55
+    Units: Organic matter remaining
+    Description: "Mass loss through time of leaf litter of the grass Stipa speciosa for the 55% rainfall interception treatment"
+    LitterType: LitterType1
+    RainfallInterception:
+      Value: 55
+      Units: percentage
+  V2:
+    Name: RI_80
+    Units: Organic matter remaining
+    Description: "Mass loss through time of leaf litter of the grass Stipa speciosa for the 80% rainfall interception treatment"
+    LitterType: LitterType1
+    RainfallInterception:
+      Value: 80
+      Units: percentage
