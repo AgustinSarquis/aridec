@@ -1,0 +1,73 @@
+CitationKey: Torres2008
+doi: 10.1016/j.soilbio.2004.04.042
+EntryAuthor: Agustín Sarquis
+
+SiteInfo:
+  Name: Chancaní Provincial Reserve, Córdoba, Argentina
+  EcosystemType: xerophyllous woodland
+  MAP:
+    Value: 450
+    Units: mm
+  MAT:
+    Value: 17
+    Units: Celsius
+  RainySeason: summer
+  SoilType: Mollic Ustifluvent
+  Coordinates:
+    Latitude: -31.4
+    Longitude: -65.55
+
+ExperimentInfo:
+ LitterInfo:
+  LitterType1:
+   Species:
+    - Aspidosperma quebracho-blanco
+    - Zizyphus mistol
+    - Celtis sp.
+    - Mimozyganthus carinatus
+    - Geoffroea decorticans
+    - Prosopis sp.
+    - Acacia sp.
+   LifeForm:
+    - tree
+    - shrub
+   Material: recently senesced leaves
+   Carbon:
+     Value: 61.1
+     Units: percentage
+   Nitrogen:
+     Value: 1.52
+     Units: percentage
+   SolublePhenols:
+     Value: 2.48
+     Units: percentage
+   LigninCelulose:
+     Value: 44.7
+     Units: percentage
+   Amount:
+     Value: 200
+     Units: g
+ Experiment1:
+    Description: "They placed 200 g of freshly shed litter in metallic cages for 1 year"
+    LitterBagInfo:
+      MeshSize:
+       Value: 10
+       Units: mm
+      Dimentions:
+       Width: 50
+       Lenght: 50
+       Hight: 10
+       Units: cm
+    Duration:
+      Time: 12
+      Units: months
+
+Variables:
+  V1:
+    Name: Time
+    Units: months
+  V2:
+    Name: ML
+    Units: mass remaining
+    Description: "Seasonal litter mass loss for leaf litter from a mixture of woody species"
+    LitterType: LitterType1

@@ -1,0 +1,119 @@
+CitationKey: Henry2008
+doi: 10.1007/s10021-008-9141-4
+EntryAuthor: Agustín Sarquis
+
+SiteInfo:
+  Name: Jasper Ridge Biological Preserve, California, USA
+  EcosystemType: grassland
+  MAP:
+    Value: 677
+    Units: mm
+  MAT:
+    Value: 16.25
+    Units: Celsius
+  RainySeason: winter
+  Altitude:
+    Value: 120
+    Units: masl
+  Coordinates:
+    Latitude: 37.67
+    Longitude: -122.37
+
+ExperimentInfo:
+ LitterInfo:
+  LitterType1:
+   Species: Crepis vesicaria
+   LifeForm: forb
+   Material: recently senesced leaves
+   Carbon:
+     Value: 39.6
+     Units: percentage
+   Lignin:
+     Value: 2.9
+     Units: percentage
+   Nitrogen:
+     Value: 1.04
+     Units: percentage
+   Amount:
+     Value: 0.4
+     Units: g
+  LitterType2:
+   Species:
+     - Avena barbata
+     - Avena fatua
+     - Bromus hordeaceus
+     - Lolium multiflorum
+   LifeForm: graminoid
+   Material: recently senesced leaves
+   Carbon:
+     Value: 39.9
+     Units: percentage
+   Lignin:
+     Value: 8.0
+     Units: percentage
+   Nitrogen:
+     Value: 0.51
+     Units: percentage
+   Amount:
+     Value: 0.4
+     Units: g
+  LitterType3:
+   Species:
+     - Avena barbata
+     - Avena fatua
+     - Bromus hordeaceus
+     - Lolium multiflorum
+   LifeForm: graminoid
+   Material: recently senesced stems
+   Carbon:
+     Value: 40.4
+     Units: percentage
+   Lignin:
+     Value: 12.1
+     Units: percentage
+   Nitrogen:
+     Value: 0.41
+     Units: percentage
+   Amount:
+     Value: 0.4
+     Units: g
+ Experiment1:
+    Description: "They examined the decomposition of sun-exposed litter over summer and inferred the effects of photodegradation from changes in mass loss"
+    LitterBagInfo:
+      Material: polyester mesh
+      MeshSize:
+       Value:
+        - 10
+        - 1
+       Units: mm
+      Dimentions:
+       Width: 10
+       Length: 10
+       Units: cm
+      Transmitance:
+        Value: 95
+        Units: percentage
+      Position: suspended 1 cm over bare soil
+    Duration:
+      Time: 2.5
+      Units: months
+
+Variables:
+  V1:
+    Name: Time
+    Units: days
+  V2:
+    Name: FML
+    Units: mass remaining
+    Description: "Effects over time of ambient summer sunlight exposure on percentage mass loss for senesced tissue of annual forbs"
+    LitterType: LitterType1
+  V3:
+    Name: GLML
+    Units: mass remaining
+    Description: "Effects over time of ambient summer sunlight exposure on percentage mass loss for senesced tissue of annual grass leaves"
+    LitterType: LitterType2
+  V4:
+    Name: GSML
+    Units: mass remaining
+    Description: "Effects over time of ambient summer sunlight exposure on percentage mass loss for senesced tissue of annual grass stems"
+    LitterType: LitterType3

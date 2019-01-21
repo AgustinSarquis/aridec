@@ -1,0 +1,228 @@
+CitationKey: Adair2017
+doi: 10.1002/ecs2.1892
+EntryAuthor: Agustín Sarquis
+
+SiteInfo:
+  Name:
+    - "Central Plains Experimental Range, Colorado, USA"
+    - "Jornada Experimental Range, New Mexico, USA"
+    - "Sevilleta Wildlife Refuge, New Mexico, USA"
+  MAP:
+    Value:
+      - 440
+      - 298
+      - 255
+    Units: mm
+  MAT:
+    Value:
+      - 8.6
+      - 17.15
+      - 13.17
+    Units: Celsius
+  AET:
+    Value:
+      - 430
+      - 292
+      - 252
+    Units: mm
+  PET:
+    Value:
+      - 1202
+      - 1666
+      - 1602
+    Units: mm
+  RainySeason:
+    - summer
+    - summer
+    - summer
+  Altitude:
+    Value:
+      - 1650
+      - 1410
+      - 1572
+    Units: masl
+  Coordinates:
+    Latitude:
+      - 40.82
+      - 32.50
+      - 34.33
+    Longitude:
+      - -104.77
+      - -106.75
+      - -106.67
+
+ExperimentInfo:
+ LitterInfo:
+  LitterType1:
+   Species:
+     - Acer saccharum
+     - Drypetes glauca
+     - Liriodendron tulipifera
+     - Pinus resinosa
+     - Quercus prinus
+     - Rhododendron macrohphyllum
+     - Thuja plicata
+     - Triticum aestivum
+   LifeForm:
+     - Tree
+     - Tree
+     - Forb
+     - Tree
+     - Tree
+     - Shrub
+     - Tree
+     - Crop
+   Material: leaves
+   Amount:
+     Value: 10
+     Units: g
+  LitterType2:
+    Species: Drypetes glauca
+    LifeForm: Tree
+    Material: leaves
+    Celulose:
+      Value: 39.82
+      Units: percentage
+    Lignin:
+      Value: 10.91
+      Units: percentage
+    Carbon:
+      Value: 47.79
+      Units: percentage
+    Nitrogen:
+      Value: 1.97
+      Units: percentage
+    C:N:
+      Value: 24.25
+      Units: unitless
+    Amount:
+     Value: 10
+     Units: g
+  LitterType3:
+    Species: Pinus resinosa
+    LifeForm: Conifer
+    Material: leaves
+    Celulose:
+      Value: 44.58
+      Units: percentage
+    Lignin:
+      Value: 19.18
+      Units: percentage
+    Carbon:
+      Value: 53.41
+      Units: percentage
+    Nitrogen:
+      Value: 0.59
+      Units: percentage
+    C:N:
+      Value: 92.72
+      Units: unitless
+    Amount:
+     Value: 10
+     Units: g
+  LitterType4:
+    Species: Thuja plicata
+    LifeForm: Conifer
+    Material: leaves
+    Celulose:
+      Value: 35.92
+      Units: percentage
+    Lignin:
+      Value: 26.67
+      Units: percentage
+    Carbon:
+      Value: 51.13
+      Units: percentage
+    Nitrogen:
+      Value: 0.62
+      Units: percentage
+    C:N:
+      Value: 83.12
+      Units: unitless
+    Amount:
+     Value: 10
+     Units: g
+  LitterType5:
+    Species: Triticum aestivum
+    LifeForm: Crop
+    Material: leaves
+    Celulose:
+      Value: 73.15
+      Units: percentage
+    Lignin:
+      Value: 16.21
+      Units: percentage
+    Carbon:
+      Value: 47.32
+      Units: percentage
+    Nitrogen:
+      Value: 0.38
+      Units: percentage
+    C:N:
+      Value: 133.32
+      Units: unitless
+    Amount:
+     Value: 10
+     Units: g
+ Experiment1:
+    Description: "Eight types of leaf litter were decomposed at three sites for 4 to 10 years"
+    LitterBagInfo:
+      Material:
+        - nylon mesh
+        - DACRON cloth
+      MeshSize:
+       Value:
+         - 1
+         - 0.055
+       Units: mm
+      Dimentions:
+       Width: 20
+       Lenght: 20
+       Units: cm
+      UV-BTransmitance:
+        Value: 90
+        Units: percentage
+      Position: on top of soil litter layer
+    Duration:
+      Time: 120
+      Units: months
+
+Variables:
+  V1:
+    Name: Time
+    Units: years
+  V2:
+    Name: CPR
+    Units: mass remaining
+    Description: "Percent mass remaining over time at Central Plains Experimental Range averaged across litter types"
+    LitterType: LitterType1
+  V3:
+    Name: JRN
+    Units: mass remaining
+    Description: "Percent mass remaining over time at Jornada Experimental Range averaged across litter types"
+    LitterType: LitterType1
+  V4:
+    Name: SEV
+    Units: mass remaining
+    Description: "Percent mass remaining over time at Sevilleta National Wildlife Refuge averaged across litter types"
+    LitterType: LitterType1
+  V5:
+    Name: DRGL_lig
+    Units: mass remaining
+    Description: "Percent mass remaining over time averaged across sites for Drypetes glauca litter"
+    LitterType: LitterType2
+  V6:
+    Name: PIRE
+    Units: mass remaining
+    Description: "Percent mass remaining over time averaged across sites for Pinus resinosa litter"
+    LitterType: LitterType3
+  V7:
+    Name: THPL
+    Units: mass remaining
+    Description: "Percent mass remaining over time averaged across sites for Thuja plicata litter"
+    LitterType: LitterType4
+  V8:
+    Name: TRAE
+    Units: mass remaining
+    Description: "Percent mass remaining over time averaged across sites for Triticum aestivum litter"
+    LitterType: LitterType5
