@@ -1,0 +1,228 @@
+CitationKey: Uselman2011
+doi: 10.1016/j.soilbio.2011.02.016
+EntryAuthor: Agustín Sarquis
+
+SiteInfo:
+  Name: Great Basin Desert, Nevada, USA
+  EcosystemType: desert
+  MAP:
+    Value: 173
+    Units: mm
+  MAT:
+    Value: 13.5
+    Units: Celsius
+  RainySeason: winter
+  Altitude:
+    Value: 1175
+    Units: masl
+  SoilType: beach
+  Coordinates:
+    Latitude: 39.85
+    Longitude: -119.38
+
+ExperimentInfo:
+ LitterInfo:
+  LitterType1:
+   Species: Tamarix ramosissima
+   LifeForm: tree
+   Material: recently senesced leaves
+   Nitrogen:
+     Value: 1.26
+     Units: percentage
+   Phosphorus:
+     Value: 0.048
+     Units: percentage
+   Carbon:
+     Value: 40.63
+     Units: percentage
+   C:N:
+     Value: 32
+     Units: unitless
+   Calcium:
+     Value: 2.24
+     Units: percentage
+   Lignin:
+     Value: 10.57
+     Units: percentage
+   Cellulose:
+     Value: 12.26
+     Units: percentage
+   Lignin:N:
+     Value: 8.4
+     Units: unitless
+   Amount:
+     Value: 3
+     Units: g
+  LitterType2:
+   Species: Tamarix ramosissima
+   LifeForm: tree
+   Material: prematurely senesced leaves
+   Nitrogen:
+     Value: 2.23
+     Units: percentage
+   Phosphorus:
+     Value: 0.142
+     Units: percentage
+   Carbon:
+     Value: 38.68
+     Units: percentage
+   C:N:
+     Value: 17
+     Units: unitless
+   Calcium:
+     Value: 2.01
+     Units: percentage
+   Lignin:
+     Value: 9.57
+     Units: percentage
+   Cellulose:
+     Value: 12.36
+     Units: percentage
+   Lignin:N:
+     Value: 4.3
+     Units: unitless
+   Amount:
+     Value: 3
+     Units: g
+  LitterType3:
+   Species: Lepidium latifolium
+   LifeForm: forb
+   Material: recently senesced leaves
+   Nitrogen:
+     Value: 1.14
+     Units: percentage
+   Phosphorus:
+     Value: 0.256
+     Units: percentage
+   Carbon:
+     Value: 36.96
+     Units: percentage
+   C:N:
+     Value: 32
+     Units: unitless
+   Calcium:
+     Value: 3.38
+     Units: percentage
+   Lignin:
+     Value: 11.29
+     Units: percentage
+   Cellulose:
+     Value: 12.29
+     Units: percentage
+   Lignin:N:
+     Value: 9.9
+     Units: unitless
+   Amount:
+     Value: 3
+     Units: g
+ Experiment1:
+    Description: "Three leaf litter types differing in substrate quality were decomposed in litterbags for one year in the field and subjected to one of three light attenuation treatments"
+    LitterBagInfo:
+      Material:
+        - white nylon mesh
+        - nylon tent netting fabric
+      MeshSize:
+       Value: 1
+       Units: mm
+      Dimentions:
+       Width: 10
+       Lenght: 15
+       Units: cm
+      UVBTransmitance:
+        Value: 90
+        Units: percentage
+      Position: bare soil under plastic frames
+    FilterInfo:
+      FilterType1:
+        Name: Aclar
+        Wavelenght:
+          Value: 280
+          Units: nm
+        UVBTransmitance:
+          Value: 89
+          Units: percentage
+        UVATransmitance:
+          Value: 91
+          Units: percentage
+        VisibleTransmitance:
+          Value: 99
+          Units: percentage
+      FilterType2:
+        Name: Mylar
+        Wavelenght:
+          Value: 315
+          Units: nm
+        UVBTransmitance:
+          Value: 11
+          Units: percentage
+        UVATransmitance:
+          Value: 84
+          Units: percentage
+        VisibleTransmitance:
+          Value: 97
+          Units: percentage
+    Treatment:
+      - litter type
+      - filter type
+    Duration:
+      Time: 12
+      Units: months
+
+Variables:
+  V1:
+    Name: Time
+    Units: days
+  V2:
+    Name: TraC_N
+    Units: mass remaining
+    Description: "Mass remaining over time for control Tamarix without plastic cover"
+    FilterType: None
+    LitterType: LitterType1
+  V3:
+    Name: TraC_A
+    Units: mass remaining
+    Description: "Mass remaining over time for control Tamarix under ambient UVB radiation"
+    FilterType: FilterType1
+    LitterType: LitterType1
+  V4:
+    Name: TraC_R
+    Units: mass remaining
+    Description: "Mass remaining over time for control Tamarix under reduced UVB radiation"
+    FilterType: FilterType2
+    LitterType: LitterType1
+  V5:
+    Name: TraB_N
+    Units: mass remaining
+    Description: "Mass remaining over time for beettle-affected Tamarix without plastic cover"
+    FilterType: None
+    LitterType: LitterType2
+  V6:
+    Name: TraB_A
+    Units: mass remaining
+    Description: "Mass remaining over time for beettle-affected Tamarix under ambient UVB radiation"
+    FilterType: FilterType1
+    LitterType: LitterType2
+  V7:
+    Name: TraB_R
+    Units: mass remaining
+    Description: "Mass remaining over time for beettle-affected Tamarix under reduced UVB radiation"
+    FilterType: FilterType2
+    LitterType: LitterType2
+  V8:
+    Name: Lla_N
+    Units: mass remaining
+    Description: "Mass remaining over time for L. latifolium without plastic cover"
+    FilterType: None
+    LitterType: LitterType3
+  V9:
+    Name: Lla_A
+    Units: mass remaining
+    Description: "Mass remaining over time for L. latifolium under ambient UVB radiation"
+    FilterType: FilterType1
+    LitterType: LitterType3
+  V10:
+    Name: Lla_R
+    Units: mass remaining
+    Description: "Mass remaining over time for L. latifolium under reduced UVB radiation"
+    FilterType: FilterType2
+    LitterType: LitterType3

@@ -179,7 +179,7 @@ ExperimentInfo:
        Width: 20
        Lenght: 20
        Units: cm
-      UV-BTransmitance:
+      UVBTransmitance:
         Value: 90
         Units: percentage
       Position: on top of soil litter layer
