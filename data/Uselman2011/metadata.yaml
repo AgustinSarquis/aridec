@@ -164,6 +164,9 @@ ExperimentInfo:
     Treatment:
       - litter type
       - filter type
+    StartingDate:
+      Month: january
+      Season: winter
     Duration:
       Time: 12
       Units: months

@@ -1,0 +1,128 @@
+CitationKey: AndersenNelson2006
+doi: 10.1016/j.jaridenv.2005.06.022
+EntryAuthor: Agustín Sarquis
+
+SiteInfo:
+  Name: Deerlodge Park, Colorado, USA
+  EcosystemType: alluvial valley
+  MAP:
+    Value: 250
+    Units: mm
+  MAT:
+    Value: 5.5
+    Units: Celsius
+  RainySeason: whole year
+  Altitude:
+    Value: 1705
+    Units: masl
+  Coordinates:
+    Latitude: 40.45
+    Longitude: -108.52
+
+ExperimentInfo:
+ LitterInfo:
+  LitterType1:
+   Species: Populus deltoides
+   LifeForm: tree
+   Material: recently senesced leaves
+   Lignin:
+     Value: 5.5
+     Units: percentage
+   Nitrogen:
+     Value: 0.355
+     Units: percentage
+   C:N:
+     Value: 142
+     Units: unitless
+   Amount:
+     Value: 5
+     Units: g
+ Experiment1:
+    Description: "Leafpacks containing P. deltoides leaves were pinned to the riverbed and collected after 161 days"
+    LitterBagInfo:
+      Material: black polypropylene mesh
+      MeshSize:
+       Value: 0.7
+       Units: mm
+      Dimentions:
+       Width: 25
+       Lenght: 25
+       Units: cm
+      Position: underwater pinned to riverbed
+    StartingDate:
+      Month: october
+      Season: autumn
+    Duration:
+      Time: 5.4
+      Units: months
+ Experiment2:
+    Description: "Leafpacks containing P. deltoides leaves were placed on the floodplain and collected after 653 days"
+    LitterBagInfo:
+     Material: black polypropylene mesh
+     MeshSize:
+      Value: 0.7
+      Units: mm
+     Dimentions:
+      Width: 25
+      Lenght: 25
+      Units: cm
+     Position:
+      Location1:
+       - sparsely vegetated soil
+       - under tree
+      Location2: bare soil
+      Location3:
+       - vegetated soil
+       - under tree
+      Location4:
+       - vegetated soil
+       - under tree
+      Location5:
+       - bare soil
+       - under tree
+    StartingDate:
+     Month: october
+     Season: autumn
+    Duration:
+     Time: 21.8
+     Units: months
+
+Variables:
+  V1:
+    Name: Time
+    Units: days
+  V2:
+    Name: PI
+    Units: organic matter remaining
+    Description: "Change in the mean proportions of organic matter remaining in P. deltoides leaf litter during immersion"
+    LitterType: LitterType1
+  V3:
+    Name: L1
+    Units: organic matter remaining
+    Description: "Decline in organic matter content of P. deltoides leaf litter as breakdown proceeded on the Location 1"
+    Position: Location1
+    LitterType: LitterType1
+  V4:
+    Name: L2
+    Units: organic matter remaining
+    Description: "Decline in organic matter content of P. deltoides leaf litter as breakdown proceeded on the Location 2"
+    Position: Location2
+    LitterType: LitterType1
+  V5:
+    Name: L3
+    Units: organic matter remaining
+    Description: "Decline in organic matter content of P. deltoides leaf litter as breakdown proceeded on the Location 3"
+    Position: Location3
+    LitterType: LitterType1
+  V6:
+    Name: L4
+    Units: organic matter remaining
+    Description: "Decline in organic matter content of P. deltoides leaf litter as breakdown proceeded on the Location 4"
+    Position: Location4
+    LitterType: LitterType1
+  V7:
+    Name: L5
+    Units: organic matter remaining
+    Description: "Decline in organic matter content of P. deltoides leaf litter as breakdown proceeded on the Location 5"
+    Position: Location5
+    LitterType: LitterType1

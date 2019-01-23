@@ -58,6 +58,9 @@ ExperimentInfo:
        Lenght: 50
        Hight: 10
        Units: cm
+    StartingDate:
+      Month: july
+      Season: winter
     Duration:
       Time: 12
       Units: months

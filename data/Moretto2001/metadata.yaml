@@ -197,6 +197,9 @@ ExperimentInfo:
        Lenght: 15
        Units: cm
       Position: buried 5 cm deep
+    StartingDate:
+      Month: march
+      Season: summer
     Duration:
       Time: 21
       Units: months

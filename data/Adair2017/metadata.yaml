@@ -183,6 +183,9 @@ ExperimentInfo:
         Value: 90
         Units: percentage
       Position: on top of soil litter layer
+    StartingDate:
+      Month: november
+      Season: autumn
     Duration:
       Time: 120
       Units: months

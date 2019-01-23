@@ -54,6 +54,9 @@ ExperimentInfo:
         -under shrub
         -under rainout shelter
     Treatment: rainfall interception
+    StartingDate:
+      Month: october
+      Season: spring
     Duration:
       Time: 20
       Units: months

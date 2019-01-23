@@ -94,6 +94,9 @@ ExperimentInfo:
         Value: 95
         Units: percentage
       Position: suspended 1 cm over bare soil
+    StartingDate:
+      Month: july
+      Season: summer
     Duration:
       Time: 2.5
       Units: months
