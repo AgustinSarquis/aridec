@@ -57,7 +57,7 @@ ExperimentInfo:
         - bare soil
         - under shrub
         - under shadecloth
-    Treatment: soil faunal exclusion
+    Treatment: soil fauna exclusion
     StartingDate:
       Month: january
       Season: summer

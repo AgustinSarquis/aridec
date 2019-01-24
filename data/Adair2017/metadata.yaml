@@ -168,7 +168,7 @@ ExperimentInfo:
     Description: "Eight types of leaf litter were decomposed at three sites for 4 to 10 years"
     LitterBagInfo:
       Material:
-        - nylon mesh
+        - nylon 
         - DACRON cloth
       MeshSize:
        Value:
@@ -199,16 +199,19 @@ Variables:
     Units: mass remaining
     Description: "Percent mass remaining over time at Central Plains Experimental Range averaged across litter types"
     LitterType: LitterType1
+    Site: "Central Plains Experimental Range, Colorado, USA"
   V3:
     Name: JRN
     Units: mass remaining
     Description: "Percent mass remaining over time at Jornada Experimental Range averaged across litter types"
     LitterType: LitterType1
+    Site: "Jornada Experimental Range, New Mexico, USA"
   V4:
     Name: SEV
     Units: mass remaining
     Description: "Percent mass remaining over time at Sevilleta National Wildlife Refuge averaged across litter types"
     LitterType: LitterType1
+    Site: "Sevilleta Wildlife Refuge, New Mexico, USA"
   V5:
     Name: DRGL_lig
     Units: mass remaining

@@ -202,7 +202,7 @@ ExperimentInfo:
  Experiment1:
   Description: "Leaf litter from three different vegetation patches was used in a common garden decomposition experiment with two sampling dates"
   LitterBagInfo:
-    Material: nylon mesh
+    Material: nylon
     MeshSize:
       Value: 0.3
       Units: mm
@@ -218,11 +218,11 @@ ExperimentInfo:
  Experiment2:
   Description: "Leaf litter from three distinct vegetation patches and faeces were incubated in situ with two sampling dates"
   LitterBagInfo:
-    Material: nylon mesh
+    Material: nylon
     MeshSize:
       Value: 0.3
       Units: mm
-    Position: soil surface
+    Position: vegetated soil
   StartingDate:
     Month: january
     Season: summer
@@ -232,11 +232,11 @@ ExperimentInfo:
  Experiment3:
   Description: "Muhlenbergia peruviana and Poa stuckertii leaf litter were incubated in each of three distinct vegetation patches with two sampling dates"
   LitterBagInfo:
-    Material: nylon mesh
+    Material: nylon
     MeshSize:
       Value: 0.3
       Units: mm
-    Position: soil surface
+    Position: vegetated soil 
   StartingDate:
     Month: january
     Season: summer

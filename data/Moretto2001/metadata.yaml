@@ -181,7 +181,7 @@ ExperimentInfo:
        Width: 10
        Lenght: 15
        Units: cm
-      Position: soil surface
+      Position: vegetated soil 
     Duration:
       Time: 21
       Units: months

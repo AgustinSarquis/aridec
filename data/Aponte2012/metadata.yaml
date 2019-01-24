@@ -1,0 +1,203 @@
+CitationKey: Aponte2012
+doi: 10.1007/s10021-012-9577-4
+EntryAuthor: Agustín Sarquis
+
+SiteInfo:
+  Name:
+    - "San Carlos del Tiradero, Los Arcornocales National Park, Spain"
+    - "La Sauceda, Los Arcornocales National Park, Spain"
+  EcosystemType: forest
+  MAP:
+    Value:
+      - 964
+      - 1470
+    Units: mm
+  MAT:
+    Value:
+      - 16.6
+      - 15.5
+    Units: Celsius
+  RainySeason: winter
+  Altitude:
+    Value:
+     - 347.5
+     - 545
+    Units: masl
+  SoilType:
+    - Palexerafls
+    - Haploxererts
+  Coordinates:
+    Latitude:
+      - 36.16
+      - 36.53
+    Longitude:
+      - -5.59
+      - -5.58
+
+ExperimentInfo:
+ LitterInfo:
+  LitterType1:
+   Species: Quercus canariensis
+   LifeForm: tree
+   Material: recently senesced leaves
+   Carbon:
+     Value: 43.68
+     Units: percentage
+   Nitrogen:
+     Value: 1.24
+     Units: percentage
+   Calcium:
+     Value: 1.484
+     Units: percentage
+   Potasium:
+     Value: 0.544
+     Units: percentage
+   Magnesium:
+     Value: 0.211
+     Units: percentage
+   Phosphorus:
+     Value: 0.100
+     Units: percentage
+   Sulfur:
+     Value: 0.01
+     Units: percentage
+   Manganesium:
+     Value: 0.0864
+     Units: percentage
+   Zinc:
+     Value: 0.002228
+     Units: percentage
+   Copper:
+     Value: 0.000546
+     Units: percentage
+   C:N:
+     Value: 35.4
+     Units: unitless
+   Amount:
+     Value: 2
+     Units: g
+  LitterType2:
+   Species: Quercus suber
+   LifeForm: tree
+   Material: recently senesced leaves
+   Carbon:
+     Value: 46.03
+     Units: percentage
+   Nitrogen:
+     Value: 0.88
+     Units: percentage
+   Calcium:
+     Value: 0.925
+     Units: percentage
+   Potasium:
+     Value: 0.447
+     Units: percentage
+   Magnesium:
+     Value: 0.143
+     Units: percentage
+   Phosphorus:
+     Value: 0.062
+     Units: percentage
+   Sulfur:
+     Value: 0.078
+     Units: percentage
+   Manganesium:
+     Value: 0.1075
+     Units: percentage
+   Zinc:
+     Value: 0.001705
+     Units: percentage
+   Copper:
+     Value: 0.000472
+     Units: percentage
+   C:N:
+     Value: 53.0
+     Units: unitless
+   Amount:
+     Value: 2
+     Units: g
+ Experiment1:
+    Description: "Litterbags containing leaf litter of the winter-deciduous Q. canariensis, the evergreen Q. suber and mixed litter were incubated beneath distinct plant covers"
+    LitterBagInfo:
+      Material: fiberglass
+      MeshSize:
+       Value: 2
+       Units: mm
+      Dimentions:
+       Width: 11
+       Lenght: 11
+       Units: cm
+      Position:
+        - under tree
+        - on top of soil litter layer
+    Treatment:
+      - litter type
+      - location
+      - litter mixture
+    StartingDate:
+      Month: november
+      Season: autumn
+    Duration:
+      Time: 24
+      Units: months
+
+Variables:
+  V1:
+    Name: Time
+    Units: months
+  V2:
+    Name: C_LS
+    Units: C remaining
+    Description: "Carbon remaining from Q. canariensis leaf litter decomposing at La Sauceda"
+    LitterType: LitterType1
+    Site: "La Sauceda, Los Arcornocales National Park, Spain"
+    MixedLitter: No
+  V3:
+    Name: S_LS
+    Units: C remaining
+    Description: "Carbon remaining from Q. suber leaf litter decomposing at La Sauceda"
+    LitterType:  LitterType2
+    Site: "La Sauceda, Los Arcornocales National Park, Spain"
+    MixedLitter: No
+  V4:
+    Name: MC_LS
+    Units: C remaining
+    Description: "Carbon remaining from Q. canariensis leaf litter mixed with Q. suber decomposing at La Sauceda"
+    LitterType: LitterType1
+    Site: "La Sauceda, Los Arcornocales National Park, Spain"
+    MixedLitter: Yes
+  V5:
+    Name: MS_LS
+    Units: C remaining
+    Description: "Carbon remaining from Q. suber leaf litter mixed with Q. canariensis decomposing at La Sauceda"
+    LitterType: LitterType2
+    Site: "La Sauceda, Los Arcornocales National Park, Spain"
+    MixedLitter: Yes
+  V6:
+    Name: C_T
+    Units: C remaining
+    Description: "Carbon remaining from Q. canariensis leaf litter decomposing at Tiradero"
+    LitterType: LitterType1
+    Site: "San Carlos del Tiradero, Los Arcornocales National Park, Spain"
+    MixedLitter: No
+  V7:
+    Name: S_T
+    Units: C remaining
+    Description: "Carbon remaining from Q. suber leaf litter decomposing at Tiradero"
+    LitterType: LitterType2
+    Site: "San Carlos del Tiradero, Los Arcornocales National Park, Spain"
+    MixedLitter: No
+  V8:
+    Name: MC_T
+    Units: C remaining
+    Description: "Carbon remaining from Q. canariensis leaf litter mixed with Q. suber decomposing at Tiradero"
+    LitterType: LitterType1
+    Site: "San Carlos del Tiradero, Los Arcornocales National Park, Spain"
+    MixedLitter: Yes
+  V9:
+    Name: MS_T
+    Units: C remaining
+    Description: "Carbon remaining from Q. suber leaf litter mixed with Q. canariensis decomposing at Tiradero"
+    LitterType: LitterType2
+    Site: "San Carlos del Tiradero, Los Arcornocales National Park, Spain"
+    MixedLitter: Yes

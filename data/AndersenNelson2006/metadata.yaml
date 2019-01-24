@@ -40,7 +40,7 @@ ExperimentInfo:
  Experiment1:
     Description: "Leafpacks containing P. deltoides leaves were pinned to the riverbed and collected after 161 days"
     LitterBagInfo:
-      Material: black polypropylene mesh
+      Material: black polypropylene
       MeshSize:
        Value: 0.7
        Units: mm
@@ -58,7 +58,7 @@ ExperimentInfo:
  Experiment2:
     Description: "Leafpacks containing P. deltoides leaves were placed on the floodplain and collected after 653 days"
     LitterBagInfo:
-     Material: black polypropylene mesh
+     Material: black polypropylene
      MeshSize:
       Value: 0.7
       Units: mm
@@ -68,7 +68,7 @@ ExperimentInfo:
       Units: cm
      Position:
       Location1:
-       - sparsely vegetated soil
+       - vegetated soil
        - under tree
       Location2: bare soil
       Location3:

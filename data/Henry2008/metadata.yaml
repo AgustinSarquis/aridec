@@ -80,7 +80,7 @@ ExperimentInfo:
  Experiment1:
     Description: "They examined the decomposition of sun-exposed litter over summer and inferred the effects of photodegradation from changes in mass loss"
     LitterBagInfo:
-      Material: polyester mesh
+      Material: polyester
       MeshSize:
        Value:
         - 10

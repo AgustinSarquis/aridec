@@ -4,19 +4,19 @@ EntryAuthor:
 
 SiteInfo:
   Name:
-  EcosystemType:
+  EcosystemType: scrub, xerophyllous woodland, alluvial valley, forest, Steppe, Desert, grassland, mountain grassland
   MAP:
     Value:
     Units: mm
   MAT:
     Value:
     Units: Celsius
-  RainySeason:
+  RainySeason: whole year, spring, summer, autumn, winter
   Altitude:
     Value:
     Units: masl
   SoilType:
-  SoilTexture:
+  SoilTexture: Coarse, fine
   PlantCover:
     BunchgrassCover:
     ShrubCover:
@@ -33,15 +33,15 @@ ExperimentInfo:
  LitterInfo:
   LitterType1:
    Species:
-   LifeForm:
-   Material:
+   LifeForm: Tree, Forb, Shrub, Crop, Conifer, graminoid, bunchgrass
+   Material: prematurely senesced leaves, leaves, recently senesced leaves, recently senesced terminal shoots, recently senesced stems, roots
    Amount:
      Value:
      Units: g
  Experiment1:
     Description:
     LitterBagInfo:
-      Material:
+      Material: plastic, white nylon, nylon tent netting fabric, nylon, DACRON cloth, black polypropylene, fiberglass, wire mesh, bolting cloth, polyester, polyethylene gauze
       MeshSize:
        Value:
        Units: mm
@@ -50,20 +50,20 @@ ExperimentInfo:
        Lenght:
        Hight:
        Units: cm
-      Position:
+      Position: rainfall, radiation, under rainout shelter, under plastic frames, decomposition bed, covered in litter, suspended 1 cm over bare soil, on top of soil litter layer, underwater pinned to riverbed, vegetated soil, under tree, bare soil, vegetated soil, under shrub, under shadecloth, buried 5 cm deep
     FilterInfo:
       FilterType1:
-        Name:
+        Name: Aclar, Mylar, Courtgard, Mylar with paint
         Wavelenght:
-          Value:
+          Value: 280, 315, 400, 700
           Units: nm
         Transmitance:
           Value:
           Units: percentage
-    Treatment:
+    Treatment: rainfall interception, light attenuation, biocide application, labile C addition, inorganic N addition, litter type, location, litter mixture, soil fauna exclusion, fungi reduction, nitrification inhibition, filter type
     StartingDate:
       Month:
-      Season: 
+      Season:
     Duration:
       Time:
       Units: months
@@ -71,11 +71,19 @@ ExperimentInfo:
 Variables:
   V1:
     Name: Time
-    Units:
+    Units: days, months, years
   V2:
     Name:
-    Units:
+    Units: mass remaining (g), mass remaining, organic matter remaining, C remaining
     Description:
     FilterType:
     LitterType:
     BiocideApplication:
+    Position:
+    Site:
+    MixedLitter:
+    MeshSize:
+    Nitrification:
+    PatchType:
+    RainfallInterception:
+    Rainfall:

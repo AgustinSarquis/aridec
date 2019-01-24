@@ -553,13 +553,13 @@ ExperimentInfo:
  Experiment1:
   Description: "Leaf litter from 24 herbaceous species from a highland grassland were used in a common garden decomposition experiment with two retrieval dates"
   LitterBagInfo:
-    Material: nylon mesh
+    Material: nylon
     MeshSize:
       Value: 0.3
       Units: mm
     Position:
-      -decomposition bed
-      -covered in litter
+      - decomposition bed
+      - covered in litter
   StartingDate:
     Month: december
     Season: summer
@@ -575,119 +575,119 @@ Variables:
     Name: Ban
     Units: "Mass remaining"
     Description: "B. andicola leaf litter mass percentage remaining at harvest time"
-    Litter: LitterType1
+    LitterType: LitterType1
   V3:
     Name: Eag
     Units: "Mass remaining"
     Description: "E. agavifolium leaf litter mass percentage remaining at harvest time"
-    Litter: LitterType2
+    LitterType: LitterType2
   V4:
     Name: Enu
     Units: "Mass remaining"
     Description: "E. nudicale leaf litter mass percentage remaining at harvest time"
-    Litter: LitterType3
+    LitterType: LitterType3
   V5:
     Name: Gdi
     Units: "Mass remaining"
     Description: "G. dissecta leaf litter mass percentage remaining at harvest time"
-    Litter: LitterType4
+    LitterType: LitterType4
   V6:
     Name: Ggl
     Units: "Mass remaining"
     Description: "G. globularifolia leaf litter mass percentage remaining at harvest time"
-    Litter: LitterType5
+    LitterType: LitterType5
   V7:
     Name: Lpi
     Units: "Mass remaining"
     Description: "L. pinnata leaf litter mass percentage remaining at harvest time"
-    Litter: LitterType6
+    LitterType: LitterType6
   V8:
     Name: Par
     Units: "Mass remaining"
     Description: "P. argentina leaf litter mass percentage remaining at harvest time"
-    Litter: LitterType7
+    LitterType: LitterType7
   V9:
     Name: Bca
     Units: "Mass remaining"
     Description: "B. catharticus leaf litter mass percentage remaining at harvest time"
-    Litter: LitterType8
+    LitterType: LitterType8
   V10:
     Name: Cfu
     Units: "Mass remaining"
     Description: "C. fuscula leaf litter mass percentage remaining at harvest time"
-    Litter: LitterType9
+    LitterType: LitterType9
   V11:
     Name: Csu
     Units: "Mass remaining"
     Description: "C. subaristatum leaf litter mass percentage remaining at harvest time"
-    Litter: LitterType10
+    LitterType: LitterType10
   V12:
     Name: Eps
     Units: "Mass remaining"
     Description: "E. pseudoalbibracteata leaf litter mass percentage remaining at harvest time"
-    Litter: LitterType11
+    LitterType: LitterType11
   V13:
     Name: Elu
     Units: "Mass remaining"
     Description: "E. lugens leaf litter mass percentage remaining at harvest time"
-    Litter: LitterType12
+    LitterType: LitterType12
   V14:
     Name: Fdi
     Units: "Mass remaining"
     Description: "F. dissitiflora leaf litter mass percentage remaining at harvest time"
-    Litter: LitterType13
+    LitterType: LitterType13
   V15:
     Name: Jpa
     Units: "Mass remaining"
     Description: "J. pallescens leaf litter mass percentage remaining at harvest time"
-    Litter: LitterType14
+    LitterType: LitterType14
   V16:
     Name: Jur
     Units: "Mass remaining"
     Description: "J. uruguensis leaf litter mass percentage remaining at harvest time"
-    Litter: LitterType15
+    LitterType: LitterType15
   V17:
     Name: Mpe
     Units: "Mass remaining"
     Description: "M. peruviana leaf litter mass percentage remaining at harvest time"
-    Litter: LitterType16
+    LitterType: LitterType16
   V18:
     Name: Phu
     Units: "Mass remaining"
     Description: "P. hubbardiana leaf litter mass percentage remaining at harvest time"
-    Litter: LitterType17
+    LitterType: LitterType17
   V19:
     Name: Sun
     Units: "Mass remaining"
     Description: "S. unguiculatum leaf litter mass percentage remaining at harvest time"
-    Litter: LitterType18
+    LitterType: LitterType18
   V20:
     Name: Spe
     Units: "Mass remaining"
     Description: "S. pellitum leaf litter mass percentage remaining at harvest time"
-    Litter: LitterType19
+    LitterType: LitterType19
   V21:
     Name: Sin
     Units: "Mass remaining"
     Description: "S. indicus leaf litter mass percentage remaining at harvest time"
-    Litter: LitterType20
+    LitterType: LitterType20
   V22:
     Name: Dhi
     Units: "Mass remaining"
     Description: "D. hieronymi leaf litter mass percentage remaining at harvest time"
-    Litter: LitterType21
+    LitterType: LitterType21
   V23:
     Name: Fli
     Units: "Mass remaining"
     Description: "F. lilloi leaf litter mass percentage remaining at harvest time"
-    Litter: LitterType22
+    LitterType: LitterType22
   V24:
     Name: Nni
     Units: "Mass remaining"
     Description: "N. nidulans leaf litter mass percentage remaining at harvest time"
-    Litter: LitterType23
+    LitterType: LitterType23
   V25:
     Name: Pst
     Units: "Mass remaining"
     Description: "P. stuckertii leaf litter mass percentage remaining at harvest time"
-    Litter: LitterType24
+    LitterType: LitterType24

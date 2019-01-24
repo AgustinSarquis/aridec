@@ -76,7 +76,9 @@ ExperimentInfo:
         Transmitance:
           Value: 10
           Units: percentage
-    Treatment: light attenuation and biocide application
+    Treatment:
+      - light attenuation
+      - biocide application
     Duration:
       Time: 18
       Units: months
@@ -92,7 +94,9 @@ ExperimentInfo:
       Lenght: 20
       Units: cm
      Position: bare soil
-   Treatment: labile C and inorganic N addition
+   Treatment:
+     - labile C addition
+     - inorganic N addition
    Duration:
      Time: 18
      Units: months
