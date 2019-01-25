@@ -50,7 +50,7 @@ ExperimentInfo:
        Lenght:
        Hight:
        Units: cm
-      Position: under rainout shelter, under plastic frames, decomposition bed, covered in litter, suspended 1 cm over bare soil, on top of soil litter layer, underwater pinned to riverbed, vegetated soil, under tree, bare soil, vegetated soil, under shrub, under shadecloth, buried 5 cm deep
+      Position: under cut tree, under rainout shelter, under plastic frames, decomposition bed, covered in litter, suspended 1 cm over bare soil, on top of soil litter layer, underwater pinned to riverbed, vegetated soil, under tree, bare soil, vegetated soil, under shrub, under shadecloth, buried 5 cm deep
     FilterInfo:
       FilterType1:
         Name: Aclar, Mylar, Courtgard, Mylar with paint, polyester film
@@ -60,7 +60,7 @@ ExperimentInfo:
         Transmitance:
           Value:
           Units: percentage
-    Treatment: rainfall, radiation, rainfall interception, light attenuation, biocide application, labile C addition, inorganic N addition, litter type, location, litter mixture, soil fauna exclusion, fungi reduction, nitrification inhibition, filter type
+    Treatment: tree cutting, rainfall, radiation, rainfall interception, light attenuation, biocide application, labile C addition, inorganic N addition, litter type, location, litter mixture, soil fauna exclusion, fungi reduction, nitrification inhibition, filter type
     StartingDate:
       Month:
       Season:
