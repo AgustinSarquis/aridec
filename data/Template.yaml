@@ -41,7 +41,7 @@ ExperimentInfo:
  Experiment1:
     Description:
     LitterBagInfo:
-      Material: plastic, white nylon, nylon tent netting fabric, nylon, DACRON cloth, black polypropylene, fiberglass, wire mesh, bolting cloth, polyester, polyethylene gauze
+      Material: aluminum, plastic, nylon bridal mesh, white nylon, nylon tent netting fabric, nylon, DACRON cloth, black polypropylene, fiberglass, wire mesh, bolting cloth, polyester, polyethylene gauze
       MeshSize:
        Value:
        Units: mm
@@ -50,17 +50,17 @@ ExperimentInfo:
        Lenght:
        Hight:
        Units: cm
-      Position: rainfall, radiation, under rainout shelter, under plastic frames, decomposition bed, covered in litter, suspended 1 cm over bare soil, on top of soil litter layer, underwater pinned to riverbed, vegetated soil, under tree, bare soil, vegetated soil, under shrub, under shadecloth, buried 5 cm deep
+      Position: under rainout shelter, under plastic frames, decomposition bed, covered in litter, suspended 1 cm over bare soil, on top of soil litter layer, underwater pinned to riverbed, vegetated soil, under tree, bare soil, vegetated soil, under shrub, under shadecloth, buried 5 cm deep
     FilterInfo:
       FilterType1:
-        Name: Aclar, Mylar, Courtgard, Mylar with paint
+        Name: Aclar, Mylar, Courtgard, Mylar with paint, polyester film
         Wavelenght:
           Value: 280, 315, 400, 700
           Units: nm
         Transmitance:
           Value:
           Units: percentage
-    Treatment: rainfall interception, light attenuation, biocide application, labile C addition, inorganic N addition, litter type, location, litter mixture, soil fauna exclusion, fungi reduction, nitrification inhibition, filter type
+    Treatment: rainfall, radiation, rainfall interception, light attenuation, biocide application, labile C addition, inorganic N addition, litter type, location, litter mixture, soil fauna exclusion, fungi reduction, nitrification inhibition, filter type
     StartingDate:
       Month:
       Season:
@@ -74,7 +74,7 @@ Variables:
     Units: days, months, years
   V2:
     Name:
-    Units: mass remaining (g), mass remaining, organic matter remaining, C remaining
+    Units: non-ash dry mass remaining (g), mass remaining (g), mass remaining, organic matter remaining, C remaining
     Description:
     FilterType:
     LitterType:

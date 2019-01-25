@@ -1,0 +1,128 @@
+CitationKey: BakerAllison2015
+doi: 10.1890/14-1482.1
+EntryAuthor: Agustín Sarquis
+
+SiteInfo:
+  Name: Irvine, California, USA
+  EcosystemType: scrub
+  MAP:
+    Value: 300
+    Units: mm
+  MAT:
+    Value: 17
+    Units: Celsius
+  RainySeason: winter
+  Altitude:
+    Value: 30
+    Units: masl
+  Coordinates:
+    Latitude: 33.65
+    Longitude: -117.85
+
+ExperimentInfo:
+ LitterInfo:
+  LitterType1:
+   Species: Elymus condensatus
+   LifeForm: bunchgrass
+   Material: recently senesced leaves
+   Lignin:
+     Value: 13.05
+     Units: percentage
+   Cellulose:
+     Value: 43.53
+     Units: percentage
+   Hemicellulose:
+     Value: 25.47
+     Units: percentage
+   Amount:
+     Value: 1.9
+     Units: g
+  LitterType2:
+   Species:
+     - Avena barbata
+     - Avena fatua
+   LifeForm: graminoid
+   Material: recently senesced leaves
+   Lignin:
+     Value: 7.38
+     Units: percentage
+   Cellulose:
+     Value: 38.84
+     Units: percentage
+   Hemicellulose:
+     Value: 30.89
+     Units: percentage
+   Amount:
+     Value: 1.9
+     Units: g
+ Experiment1:
+    Description: "Two types of litter with contrasting initial lignin concentrations were decomposed under ambient and UV blocked radiation treatments for 14 months"
+    LitterBagInfo:
+      Material:
+        - aluminum
+        - nylon bridal mesh
+      MeshSize:
+       Value:
+         - 1.5
+         - 0.5
+       Units: mm
+      Position:
+        Position1:
+          - under plastic frames
+          - bare soil
+        Position2:
+          - bare soil
+    FilterInfo:
+      FilterType1:
+        Name: polyester film
+        Wavelenght:
+          Value: 400
+          Units: nm
+        UVTransmitance:
+          Value: 32
+          Units: percentage
+        VisibleTransmitance:
+          Value: 90
+          Units: percentage
+    Treatment:
+      - light attenuation
+      - litter type
+    StartingDate:
+      Month: july
+      Season: summer
+    Duration:
+      Time: 14
+      Units: months
+
+Variables:
+  V1:
+    Name: Time
+    Units: days
+  V2:
+    Name: HLBUV
+    Units: non-ash dry mass remaining (g)
+    Description: "Dry mass of the non-ash component of E. condensatus litter, in grams, after incubation under blocked UV radiation"
+    FilterType: FilterType1
+    LitterType: LitterType1
+    Position: Position1
+  V3:
+    Name: HLAUV
+    Units: non-ash dry mass remaining (g)
+    Description: "Dry mass of the non-ash component of E. condensatus litter, in grams, after incubation under ambient radiation"
+    FilterType: None
+    LitterType: LitterType1
+    Position: Position2
+  V4:
+    Name: LLBUV
+    Units: non-ash dry mass remaining (g)
+    Description: "Dry mass of the non-ash component of Avena spp. litter, in grams, after incubation under blocked UV radiation"
+    FilterType: FilterType1
+    LitterType: LitterType2
+    Position: Position1
+  V5:
+    Name: LLAUV
+    Units: non-ash dry mass remaining (g)
+    Description: "Dry mass of the non-ash component of E. condensatus litter, in grams, after incubation under ambient radiation"
+    FilterType: None
+    LitterType: LitterType2
+    Position: Position2
