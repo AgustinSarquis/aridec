@@ -50,10 +50,10 @@ ExperimentInfo:
        Lenght:
        Hight:
        Units: cm
-      Position: under cut tree, under rainout shelter, under plastic frames, decomposition bed, covered in litter, suspended 1 cm over bare soil, on top of soil litter layer, underwater pinned to riverbed, vegetated soil, under tree, bare soil, vegetated soil, under shrub, under shadecloth, buried 5 cm deep
+      Position: under cut tree, under rainout shelter, under plastic frames, decomposition bed, covered in litter, suspended 1 cm over bare soil, on top of soil litter layer, underwater pinned to riverbed, under tree, bare soil, vegetated soil, under shrub, under shadecloth, buried 5 cm deep
     FilterInfo:
       FilterType1:
-        Name: Aclar, Mylar, Courtgard, Mylar with paint, polyester film
+        Name: Aclar, Mylar, Courtgard, Mylar with paint, polyester film, Solacryl SUVT
         Wavelenght:
           Value: 280, 315, 400, 700
           Units: nm

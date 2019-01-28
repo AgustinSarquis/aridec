@@ -1,0 +1,278 @@
+CitationKey: Brandt2010
+doi: 10.1007/s10021-010-9353-2
+EntryAuthor: Agustín Sarquis
+
+SiteInfo:
+  Name:
+    - "Cedar Creep, Minnesota, USA"
+    - "Central Plains, Colorado, USA"
+    - "Sevilleta, New Mexico, USA"
+  EcosystemType: grassland
+  MAP:
+    Value:
+      - 726
+      - 309
+      - 222
+    Units: mm
+  MAT:
+    Value:
+      - 5.5
+      - 8.7
+      - 10.5
+    Units: Celsius
+  RainySeason: summer
+  AET:
+    Value:
+      - 586
+      - 299
+      - 222
+    Units: mm
+  PET:
+    Value:
+      - 597
+      - 605
+      - 735
+    Units: mm
+  Altitude:
+    Value:
+      - 365
+      - 1650
+      - 1596
+    Units: masl
+  PlantCover:
+    BareSoil:
+      - 0
+      - 25
+      - 25
+    Units: percentage
+  LAI:
+    Value:
+      - 2.0
+      - 0.22
+      - 0.45
+    Units: m2.m-2
+  Coordinates:
+    Latitude:
+      - 45.4
+      - 40.8
+      - 34.4
+    Longitude:
+      - -93.2
+      - -104.8
+      - -106.9
+
+ExperimentInfo:
+ LitterInfo:
+  LitterType1:
+   Species: Andropogon gerardii
+   LifeForm: bunchgrass
+   Material: recently senesced leaves
+   Carbon:
+     Value: 45.05
+     Units: percentage
+   Nitrogen:
+     Value: 0.30
+     Units: percentage
+   Phosphorus:
+     Value: 0.05
+     Units: percentage
+   Potassium:
+     Value: 0.28
+     Units: percentage
+   Iron:
+     Value: 0.04
+     Units: percentage
+   Hemicellulose:
+     Value: 32.36
+     Units: percentage
+   Cellulose:
+     Value: 39.99
+     Units: percentage
+   Lignin:
+     Value: 8.10
+     Units: percentage
+   C:N:
+     Value: 154.19
+     Units: unitless
+   Lignin:N:
+     Value: 26.93
+     Units: unitless
+   Amount:
+     Value: 10
+     Units: g
+  LitterType2:
+   Species: Bouteloua gracilis
+   LifeForm: bunchgrass
+   Material: recently senesced leaves
+   Carbon:
+     Value: 44.47
+     Units: percentage
+   Nitrogen:
+     Value: 1.06
+     Units: percentage
+   Phosphorus:
+     Value: 0.13
+     Units: percentage
+   Potassium:
+     Value: 0.32
+     Units: percentage
+   Iron:
+     Value: 0.01
+     Units: percentage
+   Hemicellulose:
+     Value: 38.47
+     Units: percentage
+   Cellulose:
+     Value: 30.97
+     Units: percentage
+   Lignin:
+     Value: 6.61
+     Units: percentage
+   C:N:
+     Value: 42.67
+     Units: unitless
+   Lignin:N:
+     Value: 6.24
+     Units: unitless
+   Amount:
+     Value: 10
+     Units: g
+ Experiment1:
+    Description: "Leaf litter from two grass species with contrasting lignin content were incubated under ambient and UV-blocked radiation at three grasslands of varying aridity"
+    LitterBagInfo:
+      Material: aluminum
+      MeshSize:
+       Value: 1.5
+       Units: mm
+      Dimentions:
+       Width: 15
+       Lenght: 15
+       Units: cm
+      Position:
+        - under plastic frames
+        - vegetated soil
+    FilterInfo:
+      FilterType1:
+        Name: Solacryl SUVT
+        Wavelenght:
+          Value: 280
+          Units: nm
+        Transmitance:
+          Value: 90
+          Units: percentage
+        UVATransmitance:
+          Value: 87
+          Units: percentage
+        UVBTransmitance:
+          Value: 86
+          Units: percentage
+      FilterType2:
+        Name: Lexan
+        Wavelenght:
+          Value: 400
+          Units: nm
+        UVATransmitance:
+          Value: 14
+          Units: percentage
+        UVBTransmitance:
+          Value: 26
+          Units: percentage
+    Treatment:
+      - light attenuation
+      - litter type
+      - location
+    StartingDate:
+      Month: may
+      Season: spring
+    Duration:
+      Time: 24
+      Units: months
+
+Variables:
+  V1:
+    Name: Time
+    Units: months
+  V2:
+    Name: CAB
+    Units: organic matter remaining
+    Description: "Percent ash-free dry mass remaining over time in A. gerardii litter under UV block treatments at Cedar Creek"
+    FilterType: FilterType2
+    LitterType: LitterType1
+    Site: "Cedar Creek, Minnesota, USA"
+  V3:
+    Name: CAP
+    Units: organic matter remaining
+    Description: "Percent ash-free dry mass remaining over time in A. gerardii litter under UV pass treatments at Cedar Creek"
+    FilterType: FilterType1
+    LitterType: LitterType1
+    Site: "Cedar Creek, Minnesota, USA"
+  V4:
+    Name: CBB
+    Units: organic matter remaining
+    Description: "Percent ash-free dry mass remaining over time in B. gracilis litter under UV block treatments at Cedar Creek"
+    FilterType: FilterType2
+    LitterType: LitterType2
+    Site: "Cedar Creek, Minnesota, USA"
+  V5:
+    Name: CBP
+    Units: organic matter remaining
+    Description: "Percent ash-free dry mass remaining over time in B. gracilis litter under UV pass treatments at Cedar Creek"
+    FilterType: FilterType1
+    LitterType: LitterType2
+    Site: "Cedar Creek, Minnesota, USA"
+  V6:
+    Name: PAB
+    Units: organic matter remaining
+    Description: "Percent ash-free dry mass remaining over time in A. gerardii litter under UV block treatments at Central Plains"
+    FilterType: FilterType2
+    LitterType: LitterType1
+    Site: "Central Plains, Colorado, USA"
+  V7:
+    Name: PAP
+    Units: organic matter remaining
+    Description: "Percent ash-free dry mass remaining over time in A. gerardii litter under UV pass treatments at Central Plains"
+    FilterType: FilterType1
+    LitterType: LitterType1
+    Site: "Central Plains, Colorado, USA"
+  V8:
+    Name: PBB
+    Units: organic matter remaining
+    Description: "Percent ash-free dry mass remaining over time in B. gracilis litter under UV block treatments at Central Plains"
+    FilterType: FilterType2
+    LitterType: LitterType2
+    Site: "Central Plains, Colorado, USA"
+  V9:
+    Name: PBP
+    Units: organic matter remaining
+    Description: "Percent ash-free dry mass remaining over time in B. gracilis litter under UV pass treatments at Central Plains"
+    FilterType: FilterType1
+    LitterType: LitterType2
+    Site: "Central Plains, Colorado, USA"
+  V10:
+    Name: SAB
+    Units: organic matter remaining
+    Description: "Percent ash-free dry mass remaining over time in A. gerardii litter under UV block treatments at Sevilleta"
+    FilterType: FilterType2
+    LitterType: LitterType1
+    Site: "Sevilleta, New Mexico, USA"
+  V11:
+    Name: SAP
+    Units: organic matter remaining
+    Description: "Percent ash-free dry mass remaining over time in A. gerardii litter under UV pass treatments at Sevilleta"
+    FilterType: FilterType1
+    LitterType: LitterType1
+    Site: "Sevilleta, New Mexico, USA"
+  V12:
+    Name: SBB
+    Units: organic matter remaining
+    Description: "Percent ash-free dry mass remaining over time in B. gracilis litter under UV block treatments at Sevilleta"
+    FilterType: FilterType2
+    LitterType: LitterType2
+    Site: "Sevilleta, New Mexico, USA"
+  V13:
+    Name: SBP
+    Units: organic matter remaining
+    Description: "Percent ash-free dry mass remaining over time in B. gracilis litter under UV pass treatments at Sevilleta"
+    FilterType: FilterType1
+    LitterType: LitterType2
+    Site: "Sevilleta, New Mexico, USA"
