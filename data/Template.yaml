@@ -34,7 +34,7 @@ ExperimentInfo:
   LitterType1:
    Species:
    LifeForm: Tree, Forb, Shrub, Crop, Conifer, graminoid, bunchgrass
-   Material: prematurely senesced leaves, leaves, recently senesced leaves, recently senesced terminal shoots, recently senesced stems, roots
+   Material: aboveground parts, prematurely senesced leaves, leaves, recently senesced leaves, recently senesced terminal shoots, recently senesced stems, roots
    Amount:
      Value:
      Units: g
@@ -50,7 +50,7 @@ ExperimentInfo:
        Lenght:
        Hight:
        Units: cm
-      Position: under cut tree, under rainout shelter, under plastic frames, decomposition bed, covered in litter, suspended 1 cm over bare soil, on top of soil litter layer, underwater pinned to riverbed, under tree, bare soil, vegetated soil, under shrub, under shadecloth, buried 5 cm deep
+      Position: adjacent to grass clumps, under cut tree, under rainout shelter, under plastic frames, decomposition bed, covered in litter, suspended 1 cm over bare soil, on top of soil litter layer, underwater pinned to riverbed, under tree, bare soil, vegetated soil, under shrub, under shadecloth, buried 5 cm deep
     FilterInfo:
       FilterType1:
         Name: Aclar, Mylar, Courtgard, Mylar with paint, polyester film, Solacryl SUVT
