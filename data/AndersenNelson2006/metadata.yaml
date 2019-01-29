@@ -67,17 +67,17 @@ ExperimentInfo:
       Lenght: 25
       Units: cm
      Position:
-      Location1:
+      Position1:
        - vegetated soil
        - under tree
-      Location2: bare soil
-      Location3:
+      Position2: bare soil
+      Position3:
        - vegetated soil
        - under tree
-      Location4:
+      Position4:
        - vegetated soil
        - under tree
-      Location5:
+      Position5:
        - bare soil
        - under tree
     StartingDate:
@@ -99,30 +99,30 @@ Variables:
   V3:
     Name: L1
     Units: organic matter remaining
-    Description: "Decline in organic matter content of P. deltoides leaf litter as breakdown proceeded on the Location 1"
-    Position: Location1
+    Description: "Decline in organic matter content of P. deltoides leaf litter as breakdown proceeded on the Position 1"
+    Position: Position1
     LitterType: LitterType1
   V4:
     Name: L2
     Units: organic matter remaining
-    Description: "Decline in organic matter content of P. deltoides leaf litter as breakdown proceeded on the Location 2"
-    Position: Location2
+    Description: "Decline in organic matter content of P. deltoides leaf litter as breakdown proceeded on the Position 2"
+    Position: Position2
     LitterType: LitterType1
   V5:
     Name: L3
     Units: organic matter remaining
-    Description: "Decline in organic matter content of P. deltoides leaf litter as breakdown proceeded on the Location 3"
-    Position: Location3
+    Description: "Decline in organic matter content of P. deltoides leaf litter as breakdown proceeded on the Position 3"
+    Position: Position3
     LitterType: LitterType1
   V6:
     Name: L4
     Units: organic matter remaining
-    Description: "Decline in organic matter content of P. deltoides leaf litter as breakdown proceeded on the Location 4"
-    Position: Location4
+    Description: "Decline in organic matter content of P. deltoides leaf litter as breakdown proceeded on the Position 4"
+    Position: Position4
     LitterType: LitterType1
   V7:
     Name: L5
     Units: organic matter remaining
-    Description: "Decline in organic matter content of P. deltoides leaf litter as breakdown proceeded on the Location 5"
-    Position: Location5
+    Description: "Decline in organic matter content of P. deltoides leaf litter as breakdown proceeded on the Position 5"
+    Position: Position5
     LitterType: LitterType1

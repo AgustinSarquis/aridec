@@ -1,0 +1,350 @@
+CitationKey: Classen2007
+doi: 10.1111/j.1365-2745.2007.01297.x
+EntryAuthor: Agustín Sarquis
+
+SiteInfo:
+  Name: "Sunset Crater National Monument, Arizona, USA"
+  EcosystemType: forest
+  MAP:
+    Value: 432
+    Units: mm
+  MAT:
+    Value: 8.6
+    Units: Celsius
+  Altitude:
+    Value: 2100
+    Units: masl
+  SoilType: Ustorthents
+  Coordinates:
+    Latitude: 35.37
+    Longitude: -111.55
+
+ExperimentInfo:
+ LitterInfo:
+  LitterType1:
+   Species: Pinus edulis
+   LifeForm: Conifer
+   Material: recently senesced leaves
+   C:N:
+     Value: 96.2
+     Units: unitless
+   Phosphorus:
+     Value: 0.11
+     Units: percentage
+   Nitrogen:
+     Value: 0.48
+     Units: percentage
+   Lignin:
+     Value: 19.0
+     Units: percentage
+   Lignin:N:
+     Value: 40.5
+     Units: unitless
+   Amount:
+     Amount1:
+      Value: 2.5
+      Units: g
+     Amount2:
+      Value: 1.25
+      Units: g
+  LitterType2:
+   Species: Pinus edulis
+   LifeForm: Conifer
+   Material: prematurely senesced leaves
+   C:N:
+     Value: 82.3
+     Units: unitless
+   Phosphorus:
+     Value: 0.11
+     Units: percentage
+   Nitrogen:
+     Value: 0.57
+     Units: percentage
+   Lignin:
+     Value: 20.0
+     Units: percentage
+   Lignin:N:
+     Value: 35.5
+     Units: unitless
+   Amount:
+     Amount1:
+      Value: 2.5
+      Units: g
+     Amount2:
+      Value: 1.25
+      Units: g
+  LitterType3:
+   Species: Pinus edulis
+   LifeForm: Conifer
+   Material: live roots
+   C:N:
+     Value: 92.7
+     Units: unitless
+   Phosphorus:
+     Value: 0.10
+     Units: percentage
+   Nitrogen:
+     Value: 0.50
+     Units: percentage
+   Lignin:
+     Value: 15.8
+     Units: percentage
+   Lignin:N:
+     Value: 31.6
+     Units: unitless
+   Amount:
+     Value: 1.25
+     Units: g
+  LitterType4:
+   Species: Pinus edulis
+   LifeForm: Conifer
+   Material: live roots
+   C:N:
+     Value: 102.6
+     Units: unitless
+   Phosphorus:
+     Value: 0.10
+     Units: percentage
+   Nitrogen:
+     Value: 0.46
+     Units: percentage
+   Lignin:
+     Value: 15.8
+     Units: percentage
+   Lignin:N:
+     Value: 34.6
+     Units: unitless
+   Amount:
+     Value: 1.25
+     Units: g
+  LitterType5:
+   Species: Pinus edulis
+   LifeForm: Conifer
+   Material: recently senesced leaves
+   C:N:
+     Value: 99.9
+     Units: unitless
+   Phosphorus:
+     Value: 0.12
+     Units: percentage
+   Nitrogen:
+     Value: 0.55
+     Units: percentage
+   Lignin:
+     Value: 19.4
+     Units: percentage
+   Lignin:N:
+     Value: 38.0
+     Units: unitless
+   Amount:
+     Amount1:
+      Value: 2.5
+      Units: g
+     Amount2:
+      Value: 1.25
+      Units: g
+  LitterType6:
+   Species: Pinus edulis
+   LifeForm: Conifer
+   Material: prematurely senesced leaves
+   C:N:
+     Value: 64.2
+     Units: unitless
+   Phosphorus:
+     Value: 0.17
+     Units: percentage
+   Nitrogen:
+     Value: 0.79
+     Units: percentage
+   Lignin:
+     Value: 18.2
+     Units: percentage
+   Lignin:N:
+     Value: 22.5
+     Units: unitless
+   Amount:
+     Amount1:
+      Value: 2.5
+      Units: g
+     Amount2:
+      Value: 1.25
+      Units: g
+  LitterType7:
+   Species: Pinus edulis
+   LifeForm: Conifer
+   Material: live roots
+   C:N:
+     Value: 100.6
+     Units: unitless
+   Phosphorus:
+     Value: 0.11
+     Units: percentage
+   Nitrogen:
+     Value: 0.47
+     Units: percentage
+   Lignin:
+     Value: 15.2
+     Units: percentage
+   Lignin:N:
+     Value: 33.0
+     Units: unitless
+   Amount:
+     Value: 0.625
+     Units: g
+  LitterType8:
+   Species: Pinus edulis
+   LifeForm: Conifer
+   Material: live roots
+   C:N:
+     Value: 92.5
+     Units: unitless
+   Phosphorus:
+     Value: 0.11
+     Units: percentage
+   Nitrogen:
+     Value: 0.53
+     Units: percentage
+   Lignin:
+     Value: 18.2
+     Units: percentage
+   Lignin:N:
+     Value: 35.0
+     Units: unitless
+   Amount:
+     Value: 0.625
+     Units: g
+ Experiment1:
+    Description: "Root and needle litter from four different genotypes of P. edulis were incubated under tree crowns from each one of those genotypes"
+    LitterBagInfo:
+      Material:
+        - polyester
+        - polypropylene
+      MeshSize:
+       Value:
+         - 0.8
+         - 0.2
+       Units: mm
+      Dimentions:
+       Width: 10
+       Lenght: 10
+       Units: cm
+      Position:
+        Position1:
+          - under tree
+          - bare soil
+        Position2:
+          - bare soil
+          - under sparse tree crown
+        Position3:
+          - buried 15 cm deep
+          - under tree
+    Treatment:
+      - litter type
+      - location
+    StartingDate:
+      Month: may
+      Season: spring
+    Duration:
+      Time: 24
+      Units: months
+
+Variables:
+  V1:
+    Name: Time
+    Units: years
+  V2:
+    Name: MNRR
+    Units: mass remaining
+    Description: "Mass remaining from moth resistant P. edulis needle litter incubated under a moth resistant tree"
+    LitterType: LitterType1
+    Position: Position1
+  V3:
+    Name: MNRS
+    Units: mass remaining
+    Description: "Mass remaining from moth resistant P. edulis needle litter incubated under a moth susceptible tree"
+    LitterType: LitterType1
+    Position: Position2
+  V4:
+    Name: MNSR
+    Units: mass remaining
+    Description: "Mass remaining from moth susceptible P. edulis needle litter incubated under a moth resistant tree"
+    LitterType: LitterType2
+    Position: Position1
+  V5:
+    Name: MNSS
+    Units: mass remaining
+    Description: "Mass remaining from moth susceptible P. edulis needle litter incubated under a moth susceptible tree"
+    LitterType: LitterType2
+    Position: Position2
+  V6:
+    Name: MRRR
+    Units: mass remaining
+    Description: "Mass remaining from moth resistant P. edulis root litter incubated under a moth resistant tree"
+    LitterType: LitterType3
+    Position: Position3
+  V7:
+    Name: MRRS
+    Units: mass remaining
+    Description: "Mass remaining from moth resistant P. edulis root litter incubated under a moth susceptible tree"
+    LitterType: LitterType3
+    Position: Position3
+  V8:
+    Name: MRSR
+    Units: mass remaining
+    Description: "Mass remaining from moth susceptible P. edulis root litter incubated under a moth resistant tree"
+    LitterType: LitterType4
+    Position: Position3
+  V9:
+    Name: MRSS
+    Units: mass remaining
+    Description: "Mass remaining from moth susceptible P. edulis root litter incubated under a moth susceptible tree"
+    LitterType: LitterType4
+    Position: Position3
+  V10:
+    Name: SNRR
+    Units: mass remaining
+    Description: "Mass remaining from scale resistant P. edulis needle litter incubated under a scale resistant tree"
+    LitterType: LitterType5
+    Position: Position1
+  V11:
+    Name: SNRS
+    Units: mass remaining
+    Description: "Mass remaining from scale resistant P. edulis needle litter incubated under a scale susceptible tree"
+    LitterType: LitterType5
+    Position: Position2
+  V12:
+    Name: SNSR
+    Units: mass remaining
+    Description: "Mass remaining from scale susceptible P. edulis needle litter incubated under a scale resistant tree"
+    LitterType: LitterType6
+    Position: Position1
+  V13:
+    Name: SNSS
+    Units: mass remaining
+    Description: "Mass remaining from scale susceptible P. edulis needle litter incubated under a scale susceptible tree"
+    LitterType: LitterType6
+    Position: Position2
+  V14:
+    Name: SRRR
+    Units: mass remaining
+    Description: "Mass remaining from scale resistant P. edulis root litter incubated under a scale resistant tree"
+    LitterType: LitterType7
+    Position: Position3
+  V15:
+    Name: SRRS
+    Units: mass remaining
+    Description: "Mass remaining from scale resistant P. edulis root litter incubated under a scale susceptible tree"
+    LitterType: LitterType7
+    Position: Position2
+  V16:
+    Name: SRSR
+    Units: mass remaining
+    Description: "Mass remaining from scale susceptible P. edulis root litter incubated under a scale resistant tree"
+    LitterType: LitterType8
+    Position: Position3
+  V17:
+    Name: SRSS
+    Units: mass remaining
+    Description: "Mass remaining from scale susceptible P. edulis root litter incubated under a scale susceptible tree"
+    LitterType: LitterType8
+    Position: Position3
