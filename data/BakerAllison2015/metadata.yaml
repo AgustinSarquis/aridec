@@ -100,28 +100,28 @@ Variables:
     Units: days
   V2:
     Name: HLBUV
-    Units: non-ash dry mass remaining (g)
+    Units: non-ash dry mass remaining
     Description: "Dry mass of the non-ash component of E. condensatus litter, in grams, after incubation under blocked UV radiation"
     FilterType: FilterType1
     LitterType: LitterType1
     Position: Position1
   V3:
     Name: HLAUV
-    Units: non-ash dry mass remaining (g)
+    Units: non-ash dry mass remaining
     Description: "Dry mass of the non-ash component of E. condensatus litter, in grams, after incubation under ambient radiation"
     FilterType: None
     LitterType: LitterType1
     Position: Position2
   V4:
     Name: LLBUV
-    Units: non-ash dry mass remaining (g)
+    Units: non-ash dry mass remaining
     Description: "Dry mass of the non-ash component of Avena spp. litter, in grams, after incubation under blocked UV radiation"
     FilterType: FilterType1
     LitterType: LitterType2
     Position: Position1
   V5:
     Name: LLAUV
-    Units: non-ash dry mass remaining (g)
+    Units: non-ash dry mass remaining
     Description: "Dry mass of the non-ash component of E. condensatus litter, in grams, after incubation under ambient radiation"
     FilterType: None
     LitterType: LitterType2

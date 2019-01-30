@@ -194,7 +194,7 @@ Variables:
     Units: months
   V2:
     Name: PaWBS
-    Units: mass remaining (g)
+    Units: mass remaining 
     Description: "Mass loss of P. articulata leaf litter during a wet year on bare soil after a year"
     LitterType: LitterType1
     Position: Location1
@@ -203,7 +203,7 @@ Variables:
       Units: mm
   V3:
     Name: PaWPC
-    Units: mass remaining (g)
+    Units: mass remaining
     Description: "Mass loss of P. articulata leaf litter during a wet year under tree canopy after a year"
     LitterType: LitterType1
     Position: Location2
@@ -212,7 +212,7 @@ Variables:
       Units: mm
   V4:
     Name: PaDBS
-    Units: mass remaining (g)
+    Units: mass remaining
     Description: "Mass loss of P. articulata leaf litter during a dry year on bare soil after a year"
     LitterType: LitterType1
     Position: Location1
@@ -221,7 +221,7 @@ Variables:
       Units: mm
   V5:
     Name: PaDPC
-    Units: mass remaining (g)
+    Units: mass remaining
     Description: "Mass loss of P. articulata leaf litter during a dry year under tree canopy after a year"
     LitterType: LitterType1
     Position: Location2
@@ -230,7 +230,7 @@ Variables:
       Units: mm
   V6:
     Name: JcWBS
-    Units: mass remaining (g)
+    Units: mass remaining
     Description: "Mass loss of J. cinerea leaf litter during a wet year on bare soil after a year"
     LitterType: LitterType2
     Position: Location1
@@ -239,7 +239,7 @@ Variables:
       Units: mm
   V7:
     Name: JcWPC
-    Units: mass remaining (g)
+    Units: mass remaining
     Description: "Mass loss of J. cinerea leaf litter during a wet year under tree canopy after a year"
     LitterType: LitterType2
     Position: Location2
@@ -248,7 +248,7 @@ Variables:
       Units: mm
   V8:
     Name: JcDBS
-    Units: mass remaining (g)
+    Units: mass remaining
     Description: "Mass loss of J. cinerea leaf litter during a dry year on bare soil after a year"
     LitterType: LitterType2
     Position: Location1
@@ -257,7 +257,7 @@ Variables:
       Units: mm
   V9:
     Name: JcDPC
-    Units: mass remaining (g)
+    Units: mass remaining
     Description: "Mass loss of J. cinerea leaf litter during a dry year under tree canopy after a year"
     LitterType: LitterType2
     Position: Location2
@@ -266,7 +266,7 @@ Variables:
       Units: mm
   V10:
     Name: JcuWBS
-    Units: mass remaining (g)
+    Units: mass remaining
     Description: "Mass loss of J. cuneata leaf litter during a wet year on bare soil after a year"
     LitterType: LitterType3
     Position: Location1
@@ -275,7 +275,7 @@ Variables:
       Units: mm
   V11:
     Name: JcuWPC
-    Units: mass remaining (g)
+    Units: mass remaining
     Description: "Mass loss of J. cuneata leaf litter during a wet year under tree canopy after a year"
     LitterType: LitterType3
     Position: Location2
@@ -284,7 +284,7 @@ Variables:
       Units: mm
   V12:
     Name: JcuDBS
-    Units: mass remaining (g)
+    Units: mass remaining
     Description: "Mass loss of J. cuneata leaf litter during a dry year on bare soil after a year"
     LitterType: LitterType3
     Position: Location1
@@ -293,7 +293,7 @@ Variables:
       Units: mm
   V13:
     Name: JcuDPC
-    Units: mass remaining (g)
+    Units: mass remaining
     Description: "Mass loss of J. cuneata leaf litter during a dry year under tree canopy after a year"
     LitterType: LitterType3
     Position: Location2
@@ -302,7 +302,7 @@ Variables:
       Units: mm
   V14:
     Name: CeWBS
-    Units: mass remaining (g)
+    Units: mass remaining
     Description: "Mass loss of C. edulis leaf litter during a wet year on bare soil after a year"
     LitterType: LitterType4
     Position: Location1
@@ -311,7 +311,7 @@ Variables:
       Units: mm
   V15:
     Name: CeWPC
-    Units: mass remaining (g)
+    Units: mass remaining
     Description: "Mass loss of C. edulis leaf litter during a wet year under tree canopy after a year"
     LitterType: LitterType4
     Position: Location2
@@ -320,7 +320,7 @@ Variables:
       Units: mm
   V16:
     Name: CeDBS
-    Units: mass remaining (g)
+    Units: mass remaining
     Description: "Mass loss of C. edulis leaf litter during a dry year on bare soil after a year"
     LitterType: LitterType4
     Position: Location1
@@ -329,7 +329,7 @@ Variables:
       Units: mm
   V17:
     Name: CeDPC
-    Units: mass remaining (g)
+    Units: mass remaining
     Description: "Mass loss of C. edulis leaf litter during a dry year under tree canopy after a year"
     LitterType: LitterType4
     Position: Location2
@@ -338,7 +338,7 @@ Variables:
       Units: mm
   V18:
     Name: FdWBS
-    Units: mass remaining (g)
+    Units: mass remaining
     Description: "Mass loss of F. diguetti leaf litter during a wet year on bare soil after a year"
     LitterType: LitterType5
     Position: Location1
@@ -347,7 +347,7 @@ Variables:
       Units: mm
   V19:
     Name: FdWPC
-    Units: mass remaining (g)
+    Units: mass remaining
     Description: "Mass loss of F. diguetti leaf litter during a wet year under tree canopy after a year"
     LitterType: LitterType5
     Position: Location2
@@ -356,7 +356,7 @@ Variables:
       Units: mm
   V20:
     Name: FdDBS
-    Units: mass remaining (g)
+    Units: mass remaining
     Description: "Mass loss of F. diguetti leaf litter during a dry year on bare soil after a year"
     LitterType: LitterType5
     Position: Location1
@@ -365,7 +365,7 @@ Variables:
       Units: mm
   V21:
     Name: FdDPC
-    Units: mass remaining (g)
+    Units: mass remaining
     Description: "Mass loss of F. diguetti leaf litter during a dry year under tree canopy after a year"
     LitterType: LitterType5
     Position: Location2

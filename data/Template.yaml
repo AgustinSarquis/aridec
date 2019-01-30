@@ -74,7 +74,7 @@ Variables:
     Units: days, months, years
   V2:
     Name:
-    Units: non-ash dry mass remaining (g), mass remaining (g), mass remaining, organic matter remaining, C remaining
+    Units: non-ash dry mass remaining, mass remaining, organic matter remaining, C remaining
     Description:
     FilterType:
     LitterType:
