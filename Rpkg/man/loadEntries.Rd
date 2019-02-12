@@ -7,7 +7,7 @@
 loadEntries(path = "~/Repos/aridec/data/")
 }
 \arguments{
-\item{path}{character string with the path where isdb is stored}
+\item{path}{character string with the path where aridec data is stored}
 }
 \value{
 R list with all entries
