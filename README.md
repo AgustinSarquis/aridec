@@ -4,5 +4,5 @@ All data with corresponding metadata are stored in the folder `data`.
 The folder `Rpkg` contains source files of an R package that can be used to load database entries into an R session. To install, open R and run:
 ```R
 install.packages("devtools")
-devtools::install_github('SoilBGC-Datashare/sidb/Rpkg')
+devtools::install_github('AgustinSarquis/aridec/Rpkg')
 ```
