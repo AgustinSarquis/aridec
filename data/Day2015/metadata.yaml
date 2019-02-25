@@ -15,6 +15,10 @@ SiteInfo:
   Altitude:
     Value: 400
     Units: masl
+  PlantCover:
+    ShrubCover: 18
+    BareSoil: 82
+    Units: percentage
   Coordinates:
     Latitude: 33.5
     Longitude: -111.8
