@@ -67,7 +67,7 @@ ExperimentInfo:
      Value: 1
      Units: g
  LitterType3:
-  Species: Eryngium nudicale
+  Species: Eryngium nudicaule
   LifeForm: forb
   Material: recently senesced leaves
   cellulose:
@@ -584,7 +584,7 @@ Variables:
   V4:
     Name: Enu
     Units: "Mass remaining"
-    Description: "E. nudicale leaf litter mass percentage remaining at harvest time"
+    Description: "E. nudicaule leaf litter mass percentage remaining at harvest time"
     LitterType: LitterType3
   V5:
     Name: Gdi
