@@ -1,0 +1,485 @@
+CitationKey: Day2018
+doi: 10.1111/gcb.14438
+EntryAuthor: Agustín Sarquis
+
+SiteInfo:
+  Name: Phoenix, AZ, USA
+  EcosystemType: Desert
+  MAP:
+    Value: 195
+    Units: mm
+  MAT:
+    Value: 22.5
+    Units: Celsius
+  RainySeason: summer
+  Altitude:
+    Value: 400
+    Units: masl
+  SoilType: sandy loam
+  PlantCover:
+    Gravel: 35
+    BareSoil: 65
+    Units: percentage
+  Coordinates:
+    Latitude: 33.5
+    Longitude: -111.8
+
+ExperimentInfo:
+ LitterInfo:
+  LitterType1:
+   Species: Simmondsia chinensis
+   LifeForm: Shrub
+   Material: recently senesced leaves
+   Carbon:
+     Value: 43.9
+     Units: percentage
+   Nitrogen:
+     Value: 1.7
+     Units: percentage
+   C:N:
+     Value: 26.3
+     Units: unitless
+   Lignin:
+     Value: 9.0
+     Units: percentage
+   Cellulose:
+     Value: 6.4
+     Units: percentage
+   Hemicellulose:
+     Value: 10.6
+     Units: percentage
+   Lignin:N:
+     Value: 5.4
+     Units: unitless
+   SLA:
+     Value: 2.93
+     Units: mm2.mg-1
+   Amount:
+     Value: 2.39
+     Units: g
+  LitterType2:
+   Species: Olneya tesota
+   LifeForm: Tree
+   Material: recently senesced leaves
+   Carbon:
+     Value: 42.7
+     Units: percentage
+   Nitrogen:
+     Value: 3.2
+     Units: percentage
+   C:N:
+     Value: 13.6
+     Units: unitless
+   Lignin:
+     Value: 8.9
+     Units: percentage
+   Cellulose:
+     Value: 9.6
+     Units: percentage
+   Hemicellulose:
+     Value: 7.0
+     Units: percentage
+   Lignin:N:
+     Value: 2.8
+     Units: unitless
+   SLA:
+     Value: 9.10
+     Units: mm2.mg-1
+   Amount:
+     Value: 0.88
+     Units: g
+  LitterType3:
+   Species: Prosopis velutina
+   LifeForm: Tree
+   Material: recently senesced leaves
+   Carbon:
+     Value: 46.9
+     Units: percentage
+   Nitrogen:
+     Value: 3.7
+     Units: percentage
+   C:N:
+     Value: 12.9
+     Units: unitless
+   Lignin:
+     Value: 13.5
+     Units: percentage
+   Cellulose:
+     Value: 13.8
+     Units: percentage
+   Hemicellulose:
+     Value: 9.7
+     Units: percentage
+   Lignin:N:
+     Value: 3.7
+     Units: unitless
+   SLA:
+     Value: 11.32
+     Units: mm2.mg-1
+   Amount:
+     Value: 0.88
+     Units: g
+  LitterType4:
+   Species: Larrea tridentata
+   LifeForm: Shrub
+   Material: recently senesced leaves
+   Carbon:
+     Value: 47.9
+     Units: percentage
+   Nitrogen:
+     Value: 2.3
+     Units: percentage
+   C:N:
+     Value: 21.2
+     Units: unitless
+   Lignin:
+     Value: 4.4
+     Units: percentage
+   Cellulose:
+     Value: 6.7
+     Units: percentage
+   Hemicellulose:
+     Value: 3.2
+     Units: percentage
+   Lignin:N:
+     Value: 2.0
+     Units: unitless
+   SLA:
+     Value: 5.95
+     Units: mm2.mg-1
+   Amount:
+     Value: 1.34
+     Units: g
+  LitterType5:
+   Species: Ambrosia deltoidea
+   LifeForm: Shrub
+   Material: recently senesced leaves
+   Carbon:
+     Value: 45.9
+     Units: percentage
+   Nitrogen:
+     Value: 2.4
+     Units: percentage
+   C:N:
+     Value: 18.9
+     Units: unitless
+   Lignin:
+     Value: 4.9
+     Units: percentage
+   Cellulose:
+     Value: 10.7
+     Units: percentage
+   Hemicellulose:
+     Value: 4.9
+     Units: percentage
+   Lignin:N:
+     Value: 2.0
+     Units: unitless
+   SLA:
+     Value: 6.55
+     Units: mm2.mg-1
+   Amount:
+     Value: 1.22
+     Units: g
+  LitterType6:
+   Species: Baileya multiradiata
+   LifeForm: Forb
+   Material: recently senesced leaves
+   Carbon:
+     Value: 40.8
+     Units: percentage
+   Nitrogen:
+     Value: 1.4
+     Units: percentage
+   C:N:
+     Value: 29.5
+     Units: unitless
+   Lignin:
+     Value: 2.8
+     Units: percentage
+   Cellulose:
+     Value: 22.2
+     Units: percentage
+   Hemicellulose:
+     Value: 7.4
+     Units: percentage
+   Lignin:N:
+     Value: 2.1
+     Units: unitless
+   SLA:
+     Value: 4.68
+     Units: mm2.mg-1
+   Amount:
+     Value: 1.71
+     Units: g
+  LitterType7:
+   Species: Encelia farinosa
+   LifeForm: Shrub
+   Material: recently senesced leaves
+   Carbon:
+     Value: 38.8
+     Units: percentage
+   Nitrogen:
+     Value: 2.4
+     Units: percentage
+   C:N:
+     Value: 16.2
+     Units: unitless
+   Lignin:
+     Value: 5.0
+     Units: percentage
+   Cellulose:
+     Value: 11.0
+     Units: percentage
+   Hemicellulose:
+     Value: 12.5
+     Units: percentage
+   Lignin:N:
+     Value: 2.1
+     Units: unitless
+   SLA:
+     Value: 5.05
+     Units: mm2.mg-1
+   Amount:
+     Value: 1.58
+     Units: g
+  LitterType8:
+   Species: Encelia frutescens
+   LifeForm: Shrub
+   Material: recently senesced leaves
+   Carbon:
+     Value: 36.0
+     Units: percentage
+   Nitrogen:
+     Value: 2.1
+     Units: percentage
+   C:N:
+     Value: 17.0
+     Units: unitless
+   Lignin:
+     Value: 2.8
+     Units: percentage
+   Cellulose:
+     Value: 10.6
+     Units: percentage
+   Hemicellulose:
+     Value: 8.6
+     Units: percentage
+   Lignin:N:
+     Value: 1.3
+     Units: unitless
+   SLA:
+     Value: 6.88
+     Units: mm2.mg-1
+   Amount:
+     Value: 1.16
+     Units: g
+  LitterType9:
+   Species: Aristida purpurea
+   LifeForm: bunchgrass
+   Material: recently senesced leaves
+   Carbon:
+     Value: 41.5
+     Units: percentage
+   Nitrogen:
+     Value: 1.9
+     Units: percentage
+   C:N:
+     Value: 22.4
+     Units: unitless
+   Lignin:
+     Value: 1.3
+     Units: percentage
+   Cellulose:
+     Value: 37.4
+     Units: percentage
+   Hemicellulose:
+     Value: 31.0
+     Units: percentage
+   Lignin:N:
+     Value: 0.7
+     Units: unitless
+   SLA:
+     Value: 6.42
+     Units: mm2.mg-1
+   Amount:
+     Value: 1.25
+     Units: g
+  LitterType10:
+   Species: Bromus rubens
+   LifeForm: graminoid
+   Material: recently senesced leaves
+   Carbon:
+     Value: 41.7
+     Units: percentage
+   Nitrogen:
+     Value: 0.6
+     Units: percentage
+   C:N:
+     Value: 72.1
+     Units: unitless
+   Lignin:
+     Value: 2.0
+     Units: percentage
+   Cellulose:
+     Value: 36.6
+     Units: percentage
+   Hemicellulose:
+     Value: 26.1
+     Units: percentage
+   Lignin:N:
+     Value: 3.4
+     Units: unitless
+   SLA:
+     Value: 10.67
+     Units: mm2.mg-1
+   Amount:
+     Value: 0.88
+     Units: g
+  LitterType11:
+   Species: Cynodon dactylon
+   LifeForm: graminoid
+   Material: recently senesced leaves
+   Carbon:
+     Value: 41.8
+     Units: percentage
+   Nitrogen:
+     Value: 1.4
+     Units: percentage
+   C:N:
+     Value: 30.8
+     Units: unitless
+   Lignin:
+     Value: 2.4
+     Units: percentage
+   Cellulose:
+     Value: 32.6
+     Units: percentage
+   Hemicellulose:
+     Value: 35.6
+     Units: percentage
+   Lignin:N:
+     Value: 1.8
+     Units: unitless
+   SLA:
+     Value: 11.42
+     Units: mm2.mg-1
+   Amount:
+     Value: 0.88
+     Units: g
+  LitterType12:
+   Species: Eragrostis curvula
+   LifeForm: bunchgrass
+   Material: recently senesced leaves
+   Carbon:
+     Value: 45.3
+     Units: percentage
+   Nitrogen:
+     Value: 1.0
+     Units: percentage
+   C:N:
+     Value: 43.7
+     Units: unitless
+   Lignin:
+     Value: 2.0
+     Units: percentage
+   Cellulose:
+     Value: 36.1
+     Units: percentage
+   Hemicellulose:
+     Value: 39.6
+     Units: percentage
+   Lignin:N:
+     Value: 1.9
+     Units: unitless
+   SLA:
+     Value: 5.19
+     Units: mm2.mg-1
+   Amount:
+     Value: 1.54
+     Units: g
+Experiment1:
+    Description: "They monitored the decay of 12 leaf litter types on the soil surface of the Sonoran Desert for 34 months and assessed how exposure to different wavebands of sunlight influenced mass loss"
+    LitterBagInfo:
+      Material: bolting cloth
+      MeshSize:
+       Value: 0.153
+       Units: mm
+      Dimentions:
+       Width: 10
+       Lenght: 10
+       Units: cm
+      Position: bare soil
+    FilterInfo:
+      FilterType1:
+        Name: Aclar
+        Wavelenght:
+          Value: 280
+          Units: nm
+        Transmitance:
+          Value: 80
+          Units: percentage
+      FilterType2:
+        Name: Clear UV Filter
+        Wavelenght:
+          Value: 387
+          Units: nm
+        Transmitance:
+          Value: 50
+          Units: percentage
+      FilterType3:
+        Name: Amber UV Filter
+        Wavelenght:
+          Value: 545
+          Units: nm
+        Transmitance:
+          Value: 50
+          Units: percentage
+    Treatment: light attenuation, litter type
+    StartingDate:
+      Month: december
+      Season: autumn
+    Duration:
+      Time: 34
+      Units: months
+
+Variables:
+  V1:
+    Name: Time
+    Units: days
+  V2:
+    Name: Sc_fs
+    Units: organic dry mass remaining
+    Description: "Simmondsia chinensis leaf litter under full sun treatment"
+    FilterType: FilterType1
+    LitterType: LitterType1
+  V3:
+    Name: Sc_NoUV
+    Units: organic dry mass remaining
+    Description: "Simmondsia chinensis leaf litter under no UV treatment"
+    FilterType: FilterType2
+    LitterType: LitterType1
+  V4:
+    Name: Sc_NoUVbl
+    Units: organic dry mass remaining
+    Description: "Simmondsia chinensis leaf litter under no UV/blue treatment"
+    FilterType: FilterType3
+    LitterType: LitterType1
+  V5:
+    Name: Ot_fs
+    Units: organic dry mass remaining
+    Description: "Olneya tesota leaf litter under full sun treatment"
+    FilterType: FilterType1
+    LitterType: LitterType2
+  V6:
+    Name: Ot_NoUV
+    Units: organic dry mass remaining
+    Description: "Olneya tesota leaf litter under no UV treatment"
+    FilterType: FilterType2
+    LitterType: LitterType2
+  V7:
+    Name: Ot_NoUVbl
+    Units: organic dry mass remaining
+    Description: "Olneya tesota leaf litter under no UV/blue treatment"
+    FilterType: FilterType3
+    LitterType: LitterType2

@@ -119,7 +119,7 @@ ExperimentInfo:
     Description: "Three leaf litter types differing in substrate quality were decomposed in litterbags for one year in the field and subjected to one of three light attenuation treatments"
     LitterBagInfo:
       Material:
-        - white nylon 
+        - white nylon
         - nylon tent netting fabric
       MeshSize:
        Value: 1
@@ -146,7 +146,7 @@ ExperimentInfo:
         UVATransmitance:
           Value: 91
           Units: percentage
-        VisibleTransmitance:
+        PARTransmitance:
           Value: 99
           Units: percentage
       FilterType2:
@@ -160,7 +160,7 @@ ExperimentInfo:
         UVATransmitance:
           Value: 84
           Units: percentage
-        VisibleTransmitance:
+        PARTransmitance:
           Value: 97
           Units: percentage
     Treatment:
