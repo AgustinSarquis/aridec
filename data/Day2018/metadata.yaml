@@ -483,3 +483,183 @@ Variables:
     Description: "Olneya tesota leaf litter under no UV/blue treatment"
     FilterType: FilterType3
     LitterType: LitterType2
+  V8:
+    Name: Pv_fs
+    Units: organic dry mass remaining
+    Description: "Prosopis velutina leaf litter under full sun treatment"
+    FilterType: FilterType1
+    LitterType: LitterType3
+  V9:
+    Name: Pv_NoUV
+    Units: organic dry mass remaining
+    Description: "Prosopis velutina leaf litter under no UV treatment"
+    FilterType: FilterType2
+    LitterType: LitterType3
+  V10:
+    Name: Pv_NoUVbl
+    Units: organic dry mass remaining
+    Description: "Prosopis velutina leaf litter under no UV/blue treatment"
+    FilterType: FilterType3
+    LitterType: LitterType3
+  V11:
+    Name: Lt_fs
+    Units: organic dry mass remaining
+    Description: "Larrea tridentata leaf litter under full sun treatment"
+    FilterType: FilterType1
+    LitterType: LitterType4
+  V12:
+    Name: Lt_NoUV
+    Units: organic dry mass remaining
+    Description: "Larrea tridentata leaf litter under no UV treatment"
+    FilterType: FilterType2
+    LitterType: LitterType4
+  V13:
+    Name: Lt_NoUVbl
+    Units: organic dry mass remaining
+    Description: "Larrea tridentata leaf litter under no UV/blue treatment"
+    FilterType: FilterType3
+    LitterType: LitterType4
+  V14:
+    Name: Ad_fs
+    Units: organic dry mass remaining
+    Description: "Ambrosia deltoidea leaf litter under full sun treatment"
+    FilterType: FilterType1
+    LitterType: LitterType5
+  V15:
+    Name: Ad_NoUV
+    Units: organic dry mass remaining
+    Description: "Ambrosia deltoidea leaf litter under no UV treatment"
+    FilterType: FilterType2
+    LitterType: LitterType5
+  V16:
+    Name: Ad_NoUVbl
+    Units: organic dry mass remaining
+    Description: "Ambrosia deltoidea leaf litter under no UV/blue treatment"
+    FilterType: FilterType3
+    LitterType: LitterType5
+  V17:
+    Name: Bm_fs
+    Units: organic dry mass remaining
+    Description: "Baileya multiradiata leaf litter under full sun treatment"
+    FilterType: FilterType1
+    LitterType: LitterType6
+  V18:
+    Name: Bm_NoUV
+    Units: organic dry mass remaining
+    Description: "Baileya multiradiata leaf litter under no UV treatment"
+    FilterType: FilterType2
+    LitterType: LitterType6
+  V19:
+    Name: Bm_NoUVbl
+    Units: organic dry mass remaining
+    Description: "Baileya multiradiata leaf litter under no UV/blue treatment"
+    FilterType: FilterType3
+    LitterType: LitterType6
+  V20:
+    Name: Efa_fs
+    Units: organic dry mass remaining
+    Description: "Encelia farinosa leaf litter under full sun treatment"
+    FilterType: FilterType1
+    LitterType: LitterType7
+  V21:
+    Name: Efa_NoUV
+    Units: organic dry mass remaining
+    Description: "Encelia farinosa leaf litter under no UV treatment"
+    FilterType: FilterType2
+    LitterType: LitterType7
+  V22:
+    Name: Efa_NoUVbl
+    Units: organic dry mass remaining
+    Description: "Encelia farinosa leaf litter under no UV/blue treatment"
+    FilterType: FilterType3
+    LitterType: LitterType7
+  V23:
+    Name: Efr_fs
+    Units: organic dry mass remaining
+    Description: "Encelia frutescens leaf litter under full sun treatment"
+    FilterType: FilterType1
+    LitterType: LitterType8
+  V24:
+    Name: Efr_NoUV
+    Units: organic dry mass remaining
+    Description: "Encelia frutescens leaf litter under no UV treatment"
+    FilterType: FilterType2
+    LitterType: LitterType8
+  V25:
+    Name: Efr_NoUVbl
+    Units: organic dry mass remaining
+    Description: "Encelia frutescens leaf litter under no UV/blue treatment"
+    FilterType: FilterType3
+    LitterType: LitterType8
+  V26:
+    Name: Ap_fs
+    Units: organic dry mass remaining
+    Description: "Aristida purpurea leaf litter under full sun treatment"
+    FilterType: FilterType1
+    LitterType: LitterType9
+  V27:
+    Name: Ap_NoUV
+    Units: organic dry mass remaining
+    Description: "Aristida purpurea leaf litter under no UV treatment"
+    FilterType: FilterType2
+    LitterType: LitterType9
+  V28:
+    Name: Ap_NoUVbl
+    Units: organic dry mass remaining
+    Description: "Aristida purpurea leaf litter under no UV/blue treatment"
+    FilterType: FilterType3
+    LitterType: LitterType9
+  V29:
+    Name: Br_fs
+    Units: organic dry mass remaining
+    Description: "Bromus rubens leaf litter under full sun treatment"
+    FilterType: FilterType1
+    LitterType: LitterType10
+  V30:
+    Name: Br_NoUV
+    Units: organic dry mass remaining
+    Description: "Bromus rubens leaf litter under no UV treatment"
+    FilterType: FilterType2
+    LitterType: LitterType10
+  V31:
+    Name: Br_NoUVbl
+    Units: organic dry mass remaining
+    Description: "Bromus rubens leaf litter under no UV/blue treatment"
+    FilterType: FilterType3
+    LitterType: LitterType10
+  V32:
+    Name: Cd_fs
+    Units: organic dry mass remaining
+    Description: "Cynodon dactylon leaf litter under full sun treatment"
+    FilterType: FilterType1
+    LitterType: LitterType11
+  V33:
+    Name: Cd_NoUV
+    Units: organic dry mass remaining
+    Description: "Cynodon dactylon leaf litter under no UV treatment"
+    FilterType: FilterType2
+    LitterType: LitterType11
+  V34:
+    Name: Cd_NoUVbl
+    Units: organic dry mass remaining
+    Description: "Cynodon dactylon leaf litter under no UV/blue treatment"
+    FilterType: FilterType3
+    LitterType: LitterType11
+  V35:
+    Name: Ec_fs
+    Units: organic dry mass remaining
+    Description: "Eragrostis curvula leaf litter under full sun treatment"
+    FilterType: FilterType1
+    LitterType: LitterType12
+  V36:
+    Name: Ec_NoUV
+    Units: organic dry mass remaining
+    Description: "Eragrostis curvula leaf litter under no UV treatment"
+    FilterType: FilterType2
+    LitterType: LitterType12
+  V37:
+    Name: Ec_NoUVbl
+    Units: organic dry mass remaining
+    Description: "Eragrostis curvula leaf litter under no UV/blue treatment"
+    FilterType: FilterType3
+    LitterType: LitterType12
