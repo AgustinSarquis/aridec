@@ -1,0 +1,486 @@
+CitationKey: Liu2017
+doi: 10.1111/1365-2745.12868
+EntryAuthor: Agustín Sarquis
+
+SiteInfo:
+  Name: Gurbantunggut desert, Xinjiang, China
+  EcosystemType: Desert
+  MAP:
+    Value: 158.8
+    Units: mm
+  MAT:
+    Value: 6.5
+    Units: Celsius
+  RainySeason: summer
+  Altitude:
+    Value: 444
+    Units: masl
+  SoilType: aeolian sandy
+  PlantCover:
+    BareSoil: 77
+    Units: percentage
+  Coordinates:
+    Latitude: 44.378
+    Longitude: 87.928
+
+ExperimentInfo:
+ LitterInfo:
+  LitterType1:
+   Species: Tamarix chinensis
+   LifeForm: Shrub
+   Material: recently senesced leaves
+   SLA:
+     Value: 10.789
+     Units: mm2.mg-1
+   Carbon:
+     Value: 46.7
+     Units: percentage
+   Nitrogen:
+     Value: 1.42
+     Units: percentage
+   C:N:
+     Value: 32.83
+     Units: unitless
+   Phosphorous:
+     Value: 0.026
+     Units: percentage
+   Lignin:
+     Value: 52.95
+     Units: percentage
+   Amount:
+     Value: 0.5
+     Units: g
+  LitterType2:
+   Species: Cynanchum sibiricum
+   LifeForm: Forb
+   Material: recently senesced leaves
+   SLA:
+     Value: 20.66
+     Units: mm2.mg-1
+   Carbon:
+     Value: 56.2
+     Units: percentage
+   Nitrogen:
+     Value: 1.61
+     Units: percentage
+   C:N:
+     Value: 34.85
+     Units: unitless
+   Phosphorous:
+     Value: 0.11
+     Units: percentage
+   Lignin:
+     Value: 53.62
+     Units: percentage
+   Amount:
+     Value: 0.5
+     Units: g
+  LitterType3:
+   Species: Karelinia caspia
+   LifeForm: Forb
+   Material: recently senesced leaves
+   SLA:
+     Value: 14.82
+     Units: mm2.mg-1
+   Carbon:
+     Value: 55
+     Units: percentage
+   Nitrogen:
+     Value: 1.92
+     Units: percentage
+   C:N:
+     Value: 28.62
+     Units: unitless
+   Phosphorous:
+     Value: 0.052
+     Units: percentage
+   Lignin:
+     Value: 60.68
+     Units: percentage
+   Amount:
+     Value: 0.5
+     Units: g
+  LitterType4:
+   Species: Erodium oxyrrhynchum
+   LifeForm: Forb
+   Material: recently senesced leaves
+   SLA:
+     Value: 11.64
+     Units: mm2.mg-1
+   Carbon:
+     Value: 53.3
+     Units: percentage
+   Nitrogen:
+     Value: 2.16
+     Units: percentage
+   C:N:
+     Value: 24.73
+     Units: unitless
+   Phosphorous:
+     Value: 0.086
+     Units: percentage
+   Lignin:
+     Value: 51.29
+     Units: percentage
+   Amount:
+     Value: 0.5
+     Units: g
+  LitterType5:
+   Species: Echinops sphaerocephalus
+   LifeForm: Forb
+   Material: recently senesced leaves
+   SLA:
+     Value: 10.45
+     Units: mm2.mg-1
+   Carbon:
+     Value: 55.2
+     Units: percentage
+   Nitrogen:
+     Value: 1.14
+     Units: percentage
+   C:N:
+     Value: 48.53
+     Units: unitless
+   Phosphorous:
+     Value: 0.035
+     Units: percentage
+   Lignin:
+     Value: 38.51
+     Units: percentage
+   Amount:
+     Value: 0.5
+     Units: g
+  LitterType6:
+   Species: Echinops sphaerocephalus
+   LifeForm: Forb
+   Material: recently senesced leaves
+   SLA:
+     Value: 10.45
+     Units: mm2.mg-1
+   Carbon:
+     Value: 55.2
+     Units: percentage
+   Nitrogen:
+     Value: 1.14
+     Units: percentage
+   C:N:
+     Value: 48.53
+     Units: unitless
+   Phosphorous:
+     Value: 0.035
+     Units: percentage
+   Lignin:
+     Value: 38.51
+     Units: percentage
+   Amount:
+     Value: 0.5
+     Units: g
+  LitterType7:
+   Species: Phragmites australis
+   LifeForm: graminoid
+   Material: recently senesced leaves
+   SLA:
+     Value: 11.68
+     Units: mm2.mg-1
+   Carbon:
+     Value: 53.8
+     Units: percentage
+   Nitrogen:
+     Value: 1.54
+     Units: percentage
+   C:N:
+     Value: 34.83
+     Units: unitless
+   Phosphorous:
+     Value: 0.020
+     Units: percentage
+   Lignin:
+     Value: 47.42
+     Units: percentage
+   Amount:
+     Value: 0.5
+     Units: g
+  LitterType8:
+   Species: Alhagi sparsifolia
+   LifeForm: Shrub
+   Material: recently senesced leaves
+   SLA:
+     Value: 9.88
+     Units: mm2.mg-1
+   Carbon:
+     Value: 56.2
+     Units: percentage
+   Nitrogen:
+     Value: 1.94
+     Units: percentage
+   C:N:
+     Value: 29.03
+     Units: unitless
+   Phosphorous:
+     Value: 0.046
+     Units: percentage
+   Lignin:
+     Value: 41.15
+     Units: percentage
+   Amount:
+     Value: 0.5
+     Units: g
+  LitterType9:
+   Species: Peganum harmala
+   LifeForm: Forb
+   Material: recently senesced leaves
+   SLA:
+     Value: 17.66
+     Units: mm2.mg-1
+   Carbon:
+     Value: 44
+     Units: percentage
+   Nitrogen:
+     Value: 1.96
+     Units: percentage
+   C:N:
+     Value: 22.44
+     Units: unitless
+   Phosphorous:
+     Value: 0.046
+     Units: percentage
+   Amount:
+     Value: 0.5
+     Units: g
+  LitterType10:
+   Species: Mulgedium tataricum
+   LifeForm: Forb
+   Material: recently senesced leaves
+   SLA:
+     Value: 11.27
+     Units: mm2.mg-1
+   Carbon:
+     Value: 57.9
+     Units: percentage
+   Nitrogen:
+     Value: 1.21
+     Units: percentage
+   C:N:
+     Value: 47.74
+     Units: unitless
+   Phosphorous:
+     Value: 0.048
+     Units: percentage
+   Lignin:
+     Value: 50.97
+     Units: percentage
+   Amount:
+     Value: 0.5
+     Units: g
+  LitterType11:
+   Species: Calligonum mongolicum
+   LifeForm: Shrub
+   Material: recently senesced leaves
+   SLA:
+     Value: 8.44
+     Units: mm2.mg-1
+   Carbon:
+     Value: 48.5
+     Units: percentage
+   Nitrogen:
+     Value: 1.16
+     Units: percentage
+   C:N:
+     Value: 41.83
+     Units: unitless
+   Phosphorous:
+     Value: 0.023
+     Units: percentage
+   Lignin:
+     Value: 39.06
+     Units: percentage
+   Amount:
+     Value: 0.5
+     Units: g
+  LitterType12:
+   Species: Agriophyllum arenarium
+   LifeForm: Forb
+   Material: recently senesced leaves
+   SLA:
+     Value: 17.21
+     Units: mm2.mg-1
+   Carbon:
+     Value: 51.4
+     Units: percentage
+   Nitrogen:
+     Value: 1.06
+     Units: percentage
+   C:N:
+     Value: 48.44
+     Units: unitless
+   Phosphorous:
+     Value: 0.017
+     Units: percentage
+   Lignin:
+     Value: 48.32
+     Units: percentage
+   Amount:
+     Value: 0.5
+     Units: g
+  LitterType13:
+   Species: Echinops gmelini
+   LifeForm: Forb
+   Material: recently senesced leaves
+   SLA:
+     Value: 13.02
+     Units: mm2.mg-1
+   Carbon:
+     Value: 54.7
+     Units: percentage
+   Nitrogen:
+     Value: 2.23
+     Units: percentage
+   C:N:
+     Value: 24.56
+     Units: unitless
+   Phosphorous:
+     Value: 0.063
+     Units: percentage
+   Lignin:
+     Value: 43.24
+     Units: percentage
+   Amount:
+     Value: 0.5
+     Units: g
+  LitterType14:
+   Species: Ephedra distachya
+   LifeForm: Shrub
+   Material: recently senesced leaves
+   SLA:
+     Value: 7.86
+     Units: mm2.mg-1
+   Carbon:
+     Value: 58.9
+     Units: percentage
+   Nitrogen:
+     Value: 1.65
+     Units: percentage
+   C:N:
+     Value: 35.65
+     Units: unitless
+   Phosphorous:
+     Value: 0.073
+     Units: percentage
+   Lignin:
+     Value: 47.09
+     Units: percentage
+   Amount:
+     Value: 0.5
+     Units: g
+  LitterType15:
+   Species: Euphorbia turczaninowii
+   LifeForm: Forb
+   Material: recently senesced leaves
+   SLA:
+     Value: 21.14
+     Units: mm2.mg-1
+   Carbon:
+     Value: 53.1
+     Units: percentage
+   Nitrogen:
+     Value: 1.64
+     Units: percentage
+   C:N:
+     Value: 32.29
+     Units: unitless
+   Phosphorous:
+     Value: 0.052
+     Units: percentage
+   Lignin:
+     Value: 54.04
+     Units: percentage
+   Amount:
+     Value: 0.5
+     Units: g
+  LitterType16:
+   Species: Ceratoides latens
+   LifeForm: Shrub
+   Material: recently senesced leaves
+   SLA:
+     Value: 20.07
+     Units: mm2.mg-1
+   Carbon:
+     Value: 44.7
+     Units: percentage
+   Nitrogen:
+     Value: 1.21
+     Units: percentage
+   C:N:
+     Value: 37.07
+     Units: unitless
+   Phosphorous:
+     Value: 0.035
+     Units: percentage
+   Lignin:
+     Value: 55.24
+     Units: percentage
+   Amount:
+     Value: 0.5
+     Units: g
+  LitterType17:
+   Species: Nitraria sibirica
+   LifeForm: Shrub
+   Material: recently senesced leaves
+   SLA:
+     Value: 17.25
+     Units: mm2.mg-1
+   Carbon:
+     Value: 47.1
+     Units: percentage
+   Nitrogen:
+     Value: 1.73
+     Units: percentage
+   C:N:
+     Value: 27.60
+     Units: unitless
+   Phosphorous:
+     Value: 0.040
+     Units: percentage
+   Lignin:
+     Value: 61.28
+     Units: percentage
+   Amount:
+     Value: 0.5
+     Units: g
+ Experiment1:
+    Description: "Leaf litter samples from 17 desert species were incubated under strong solar exposure vs. shade conditions, or buried in the soil at 10 cm depth, for a whole year"
+    LitterBagInfo:
+      Material: nylon
+      MeshSize:
+       Value:
+         - 2
+         - 0.5
+       Units: mm
+      Dimentions:
+       Width: 10
+       Lenght: 15
+       Units: cm
+      Position:
+        Position1: bare soil
+        Position2: under shadecloth
+        Position3: buried 10 cm deep
+    Treatment:
+      - litter type
+      - location
+    StartingDate:
+      Month: september
+      Season: autumn
+    Duration:
+      Time: 12
+      Units: months
+
+Variables:
+  V1:
+    Name: Time
+    Units: months
+  V2:
+    Name:
+    Units: mass remaining
+    Description:
+    LitterType:
+    Position:
