@@ -1,0 +1,260 @@
+CitationKey: Ma2017
+doi: 10.1002/ecs2.1770
+EntryAuthor: Agustín Sarquis
+
+SiteInfo:
+  Name: Chongzhou, Sichuan, China
+  EcosystemType: abbandoned farmland
+  MAP:
+    Value: 1015.2
+    Units: mm
+  MAT:
+    Value: 16
+    Units: Celsius
+  RainySeason: summer
+  Altitude:
+    Value: 516
+    Units: masl
+  SoilType: alluvium yellow
+  Coordinates:
+    Latitude: 30.92
+    Longitude: 103.82
+
+ExperimentInfo:
+ LitterInfo:
+  LitterType1:
+   Species: Pinus massoniana
+   LifeForm: Conifer
+   Material: recently senesced leaves
+   Carbon:
+     Value: 44.12
+     Units: percentage
+   Nitrogen:
+     Value: 1.072
+     Units: percentage
+   Phosphorus:
+     Value: 0.081
+     Units: percentage
+   C:N:
+     Value: 41.23
+     Units: unitless
+   Lignin:
+     Value: 34.87
+     Units: percentage
+   Cellulose:
+     Value: 20.03
+     Units: percentage
+   Amount:
+     Value: 10
+     Units: g
+  LitterType2:
+   Species: Cunninghamia lanceolata
+   LifeForm: Conifer
+   Material: recently senesced leaves
+   Carbon:
+     Value: 42.51
+     Units: percentage
+   Nitrogen:
+     Value: 1.199
+     Units: percentage
+   Phosphorus:
+     Value: 0.087
+     Units: percentage
+   C:N:
+     Value: 35.48
+     Units: unitless
+   Lignin:
+     Value: 36.23
+     Units: percentage
+   Cellulose:
+     Value: 25.03
+     Units: percentage
+   Amount:
+     Value: 10
+     Units: g
+  LitterType3:
+   Species: Cryptomeria fortunei
+   LifeForm: Conifer
+   Material: recently senesced leaves
+   Carbon:
+     Value: 39.395
+     Units: percentage
+   Nitrogen:
+     Value: 1.019
+     Units: percentage
+   Phosphorus:
+     Value: 0.076
+     Units: percentage
+   C:N:
+     Value: 39.25
+     Units: unitless
+   Lignin:
+     Value: 38.92
+     Units: percentage
+   Cellulose:
+     Value: 24.39
+     Units: percentage
+   Amount:
+     Value: 10
+     Units: g
+  LitterType4:
+   Species: Cinnamomum camphora
+   LifeForm: Tree
+   Material: recently senesced leaves
+   Carbon:
+     Value: 37.911
+     Units: percentage
+   Nitrogen:
+     Value: 1.051
+     Units: percentage
+   Phosphorus:
+     Value: 0.123
+     Units: percentage
+   C:N:
+     Value: 36.19
+     Units: unitless
+   Lignin:
+     Value: 38.38
+     Units: percentage
+   Cellulose:
+     Value: 22.09
+     Units: percentage
+   Amount:
+     Value: 10
+     Units: g
+  LitterType5:
+   Species: Toona ciliata
+   LifeForm: Tree
+   Material: recently senesced leaves
+   Carbon:
+     Value: 35.036
+     Units: percentage
+   Nitrogen:
+     Value: 1.223
+     Units: percentage
+   Phosphorus:
+     Value: 0.098
+     Units: percentage
+   C:N:
+     Value: 28.95
+     Units: unitless
+   Lignin:
+     Value: 28.75
+     Units: percentage
+   Cellulose:
+     Value: 17.65
+     Units: percentage
+   Amount:
+     Value: 10
+     Units: g
+  LitterType6:
+   Species: Quercus acutissima
+   LifeForm: Conifer
+   Material: recently senesced leaves
+   Carbon:
+     Value: 42.859
+     Units: percentage
+   Nitrogen:
+     Value: 1.106
+     Units: percentage
+   Phosphorus:
+     Value: 0.078
+     Units: percentage
+   C:N:
+     Value: 38.78
+     Units: unitless
+   Lignin:
+     Value: 38.80
+     Units: percentage
+   Cellulose:
+     Value: 20.35
+     Units: percentage
+   Amount:
+     Value: 10
+     Units: g
+ Experiment1:
+    Description: "They incubated broadleaf and needle litter under different light intensity treatments in a field experiment"
+    LitterBagInfo:
+      MeshSize:
+       Value:
+         - 1.0
+         - 0.5
+       Units: mm
+      Dimentions:
+       Width: 20
+       Lenght: 25
+       Units: cm
+      Position:
+        Position1:
+          - vegetated soil
+        Position2:
+          - vegetated soil
+          - under shadecloth
+    FilterInfo:
+      FilterType1:
+        Name: shadecloth
+        Wavelenght:
+          Value: 280
+          Units: nm
+        Transmitance:
+          Value: 72
+          Units: percentage
+      FilterType2:
+        Name: shadecloth
+        Wavelenght:
+          Value: 280
+          Units: nm
+        Transmitance:
+          Value: 62
+          Units: percentage
+      FilterType3:
+        Name: shadecloth
+        Wavelenght:
+          Value: 280
+          Units: nm
+        Transmitance:
+          Value: 55
+          Units: percentage
+      FilterType4:
+        Name: shadecloth
+        Wavelenght:
+          Value: 280
+          Units: nm
+        Transmitance:
+          Value: 45
+          Units: percentage
+      FilterType5:
+        Name: shadecloth
+        Wavelenght:
+          Value: 280
+          Units: nm
+        Transmitance:
+          Value: 32
+          Units: percentage
+    Treatment: light attenuation, litter type
+    StartingDate:
+      Month: january
+      Season: winter
+    Duration:
+      Time: 24
+      Units: months
+
+Variables:
+  V1:
+    Name: Time
+    Units: days, months, years
+  V2:
+    Name:
+    Units: non-ash dry mass remaining, mass remaining, organic matter remaining, C remaining
+    Description:
+    FilterType:
+    LitterType:
+    BiocideApplication:
+    Position:
+    Site:
+    MixedLitter:
+    MeshSize:
+    Nitrification:
+    PatchType:
+    RainfallInterception:
+    Rainfall:
