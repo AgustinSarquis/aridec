@@ -196,7 +196,7 @@ ExperimentInfo:
         Wavelenght:
           Value: 280
           Units: nm
-        Transmitance:
+        Intensity:
           Value: 72
           Units: percentage
       FilterType2:
@@ -204,7 +204,7 @@ ExperimentInfo:
         Wavelenght:
           Value: 280
           Units: nm
-        Transmitance:
+        Intensity:
           Value: 62
           Units: percentage
       FilterType3:
@@ -212,7 +212,7 @@ ExperimentInfo:
         Wavelenght:
           Value: 280
           Units: nm
-        Transmitance:
+        Intensity:
           Value: 55
           Units: percentage
       FilterType4:
@@ -220,7 +220,7 @@ ExperimentInfo:
         Wavelenght:
           Value: 280
           Units: nm
-        Transmitance:
+        Intensity:
           Value: 45
           Units: percentage
       FilterType5:
@@ -228,7 +228,7 @@ ExperimentInfo:
         Wavelenght:
           Value: 280
           Units: nm
-        Transmitance:
+        Intensity:
           Value: 32
           Units: percentage
     Treatment: light attenuation, litter type
@@ -242,19 +242,256 @@ ExperimentInfo:
 Variables:
   V1:
     Name: Time
-    Units: days, months, years
+    Units: days
   V2:
-    Name:
-    Units: non-ash dry mass remaining, mass remaining, organic matter remaining, C remaining
-    Description:
-    FilterType:
-    LitterType:
-    BiocideApplication:
-    Position:
-    Site:
-    MixedLitter:
-    MeshSize:
-    Nitrification:
-    PatchType:
-    RainfallInterception:
-    Rainfall:
+    Name: Pm_CK
+    Units: mass remaining
+    Description: "Pinus massoniana litter was incubated under full sun radiation"
+    FilterType: NA
+    LitterType: LitterType1
+    Position: Position1
+  V3:
+    Name: Pm_L72
+    Units: mass remaining
+    Description: "Pinus massoniana litter was incubated under shadecloth with 72% relative light intensity"
+    FilterType: FilterType1
+    LitterType: LitterType1
+    Position: Position2
+  V4:
+    Name: Pm_L62
+    Units: mass remaining
+    Description: "Pinus massoniana litter was incubated under shadecloth with 62% relative light intensity"
+    FilterType: FilterType2
+    LitterType: LitterType1
+    Position: Position2
+  V5:
+    Name: Pm_L55
+    Units: mass remaining
+    Description: "Pinus massoniana litter was incubated under shadecloth with 55% relative light intensity"
+    FilterType: FilterType3
+    LitterType: LitterType1
+    Position: Position2
+  V6:
+    Name: Pm_L45
+    Units: mass remaining
+    Description: "Pinus massoniana litter was incubated under shadecloth with 45% relative light intensity"
+    FilterType: FilterType4
+    LitterType: LitterType1
+    Position: Position2
+  V7:
+    Name: Pm_L32
+    Units: mass remaining
+    Description: "Pinus massoniana litter was incubated under shadecloth with 32% relative light intensity"
+    FilterType: FilterType5
+    LitterType: LitterType1
+    Position: Position2
+  V8:
+    Name: Cl_CK
+    Units: mass remaining
+    Description: "Cunninghamia lanceolata litter was incubated under full sun radiation"
+    FilterType: NA
+    LitterType: LitterType2
+    Position: Position1
+  V9:
+    Name: Cl_L72
+    Units: mass remaining
+    Description: "Cunninghamia lanceolata litter was incubated under shadecloth with 72% relative light intensity"
+    FilterType: FilterType1
+    LitterType: LitterType2
+    Position: Position2
+  V10:
+    Name: Cl_L62
+    Units: mass remaining
+    Description: "Cunninghamia lanceolata litter was incubated under shadecloth with 62% relative light intensity"
+    FilterType: FilterType2
+    LitterType: LitterType2
+    Position: Position2
+  V11:
+    Name: Cl_L55
+    Units: mass remaining
+    Description: "Cunninghamia lanceolata litter was incubated under shadecloth with 55% relative light intensity"
+    FilterType: FilterType3
+    LitterType: LitterType2
+    Position: Position2
+  V12:
+    Name: Cl_L45
+    Units: mass remaining
+    Description: "Cunninghamia lanceolata litter was incubated under shadecloth with 45% relative light intensity"
+    FilterType: FilterType4
+    LitterType: LitterType2
+    Position: Position2
+  V13:
+    Name: Cl_L32
+    Units: mass remaining
+    Description: "Cunninghamia lanceolata litter was incubated under shadecloth with 32% relative light intensity"
+    FilterType: FilterType5
+    LitterType: LitterType2
+    Position: Position2
+  V14:
+    Name: Cf_CK
+    Units: mass remaining
+    Description: "Cryptomeria fortunei litter was incubated under full sun radiation"
+    FilterType: NA
+    LitterType: LitterType3
+    Position: Position1
+  V15:
+    Name: Cf_L72
+    Units: mass remaining
+    Description: "Cryptomeria fortunei litter was incubated under shadecloth with 72% relative light intensity"
+    FilterType: FilterType1
+    LitterType: LitterType3
+    Position: Position2
+  V16:
+    Name: Cf_L62
+    Units: mass remaining
+    Description: "Cryptomeria fortunei litter was incubated under shadecloth with 62% relative light intensity"
+    FilterType: FilterType2
+    LitterType: LitterType3
+    Position: Position2
+  V17:
+    Name: Cf_L55
+    Units: mass remaining
+    Description: "Cryptomeria fortunei litter was incubated under shadecloth with 55% relative light intensity"
+    FilterType: FilterType3
+    LitterType: LitterType3
+    Position: Position2
+  V18:
+    Name: Cf_L45
+    Units: mass remaining
+    Description: "Cryptomeria fortunei litter was incubated under shadecloth with 45% relative light intensity"
+    FilterType: FilterType4
+    LitterType: LitterType3
+    Position: Position2
+  V19:
+    Name: Cf_L32
+    Units: mass remaining
+    Description: "Cryptomeria fortunei litter was incubated under shadecloth with 32% relative light intensity"
+    FilterType: FilterType5
+    LitterType: LitterType3
+    Position: Position2
+  V20:
+    Name: Cc_CK
+    Units: mass remaining
+    Description: "Cinnamomum camphora litter was incubated under full sun radiation"
+    FilterType: NA
+    LitterType: LitterType4
+    Position: Position1
+  V21:
+    Name: Cc_L72
+    Units: mass remaining
+    Description: "Cinnamomum camphora litter was incubated under shadecloth with 72% relative light intensity"
+    FilterType: FilterType1
+    LitterType: LitterType4
+    Position: Position2
+  V22:
+    Name: Cc_L62
+    Units: mass remaining
+    Description: "Cinnamomum camphora litter was incubated under shadecloth with 62% relative light intensity"
+    FilterType: FilterType2
+    LitterType: LitterType4
+    Position: Position2
+  V23:
+    Name: Cc_L55
+    Units: mass remaining
+    Description: "Cinnamomum camphora litter was incubated under shadecloth with 55% relative light intensity"
+    FilterType: FilterType3
+    LitterType: LitterType4
+    Position: Position2
+  V24:
+    Name: Cc_L45
+    Units: mass remaining
+    Description: "Cinnamomum camphora litter was incubated under shadecloth with 45% relative light intensity"
+    FilterType: FilterType4
+    LitterType: LitterType4
+    Position: Position2
+  V25:
+    Name: Cc_L32
+    Units: mass remaining
+    Description: "Cinnamomum camphora litter was incubated under shadecloth with 32% relative light intensity"
+    FilterType: FilterType5
+    LitterType: LitterType4
+    Position: Position2
+  V26:
+    Name: Tc_CK
+    Units: mass remaining
+    Description: "Toona ciliata litter was incubated under full sun radiation"
+    FilterType: NA
+    LitterType: LitterType5
+    Position: Position1
+  V27:
+    Name: Tc_L72
+    Units: mass remaining
+    Description: "Toona ciliata litter was incubated under shadecloth with 72% relative light intensity"
+    FilterType: FilterType1
+    LitterType: LitterType5
+    Position: Position2
+  V28:
+    Name: Tc_L62
+    Units: mass remaining
+    Description: "Toona ciliata litter was incubated under shadecloth with 62% relative light intensity"
+    FilterType: FilterType2
+    LitterType: LitterType5
+    Position: Position2
+  V29:
+    Name: Tc_L55
+    Units: mass remaining
+    Description: "Toona ciliata litter was incubated under shadecloth with 55% relative light intensity"
+    FilterType: FilterType3
+    LitterType: LitterType5
+    Position: Position2
+  V30:
+    Name: Tc_L45
+    Units: mass remaining
+    Description: "Toona ciliata litter was incubated under shadecloth with 45% relative light intensity"
+    FilterType: FilterType4
+    LitterType: LitterType5
+    Position: Position2
+  V31:
+    Name: Tc_L32
+    Units: mass remaining
+    Description: "Toona ciliata litter was incubated under shadecloth with 32% relative light intensity"
+    FilterType: FilterType5
+    LitterType: LitterType5
+    Position: Position2
+  V32:
+    Name: Qa_CK
+    Units: mass remaining
+    Description: "Quercus acutissima litter was incubated under full sun radiation"
+    FilterType: NA
+    LitterType: LitterType6
+    Position: Position1
+  V33:
+    Name: Qa_L72
+    Units: mass remaining
+    Description: "Quercus acutissima litter was incubated under shadecloth with 72% relative light intensity"
+    FilterType: FilterType1
+    LitterType: LitterType6
+    Position: Position2
+  V34:
+    Name: Qa_L62
+    Units: mass remaining
+    Description: "Quercus acutissima litter was incubated under shadecloth with 62% relative light intensity"
+    FilterType: FilterType2
+    LitterType: LitterType6
+    Position: Position2
+  V35:
+    Name: Qa_L55
+    Units: mass remaining
+    Description: "Quercus acutissima litter was incubated under shadecloth with 55% relative light intensity"
+    FilterType: FilterType3
+    LitterType: LitterType6
+    Position: Position2
+  V36:
+    Name: Qa_L45
+    Units: mass remaining
+    Description: "Quercus acutissima litter was incubated under shadecloth with 45% relative light intensity"
+    FilterType: FilterType4
+    LitterType: LitterType6
+    Position: Position2
+  V37:
+    Name: Qa_L32
+    Units: mass remaining
+    Description: "Quercus acutissima litter was incubated under shadecloth with 32% relative light intensity"
+    FilterType: FilterType5
+    LitterType: LitterType6
+    Position: Position2
