@@ -1,0 +1,96 @@
+CitationKey: Liu2015
+doi: 10.1007/s11104-015-2595-1
+EntryAuthor: Agustín Sarquis
+
+SiteInfo:
+  Name: Mu Us sandland, Inner Mongolia, China
+  EcosystemType: sandland
+  MAP:
+    Value: 369
+    Units: mm
+  MAT:
+    Value: 6.2
+    Units: Celsius
+  RainySeason: summer
+  Altitude:
+    Value: 1290
+    Units: masl
+  SoilType: aeolian sand
+  PlantCover:
+    BareSoil: 60
+    Units: percentage
+  Coordinates:
+    Latitude: 39.494
+    Longitude: 110.192
+
+ExperimentInfo:
+ LitterInfo:
+  Material: recently senesced leaves
+  LDMC:
+    Value: 284.039
+    Units: mg.g-1
+  SLA:
+    Value: 16.827
+    Units: mm2.mg-1
+  Carbon:
+    Value: 43.845
+    Units: percentage
+  Nitrogen:
+    Value: 1.458
+    Units: percentage
+  Phosphorus:
+    Value: 0.106
+    Units: percentage
+  Lignin:
+    Value: 33.949
+    Units: percentage
+  C:N:
+    Value: 36.914
+    Units: unitless
+  Amount:
+   Value: 0.5
+   Units: g
+ Experiment1:
+    Description: "They incubated litters from 51 species on the surface, sand-buried and suspended above the surface for a year"
+    LitterBagInfo:
+      MeshSize:
+       Value: 0.5
+       Units: mm
+      Dimentions:
+       Width: 10
+       Lenght: 15
+       Units: cm
+      Transmitance:
+        Value: 90
+        Units: percentage
+      Position:
+        Position1: suspended 60 cm over bare soil
+        Position2: decomposition bed
+        Position3: buried 10 cm deep
+    Treatment: position
+    StartingDate:
+      Month: november
+      Season: autumn
+    Duration:
+      Time: 12
+      Units: months
+
+Variables:
+  V1:
+    Name: Time
+    Units: months
+  V2:
+    Name: Standing
+    Units: mass remaining
+    Description: "They incubated litter from 51 species suspended 60 cm over soil simulating standing litter"
+    Position: Position1
+  V3:
+    Name: Surface
+    Units: mass remaining
+    Description: "They incubated litter from 51 species in a decomposition bed"
+    Position: Position2
+  V4:
+    Name: Burial
+    Units: mass remaining
+    Description: "They incubated litter from 51 species buried 10 cm deep"
+    Position: Position3
