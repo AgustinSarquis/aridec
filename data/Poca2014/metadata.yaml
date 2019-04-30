@@ -464,7 +464,7 @@ ExperimentInfo:
    Units: g
  LitterType21:
   Species: Deyeuxia hieronymi
-  LifeForm: bunchgrass
+  LifeForm: graminoid
   Material: recently senesced leaves
   cellulose:
     Value: 39.7
@@ -486,7 +486,7 @@ ExperimentInfo:
    Units: g
  LitterType22:
   Species: Festuca lilloi
-  LifeForm: bunchgrass
+  LifeForm: graminoid
   Material: recently senesced leaves
   cellulose:
     Value: 47.9
@@ -508,7 +508,7 @@ ExperimentInfo:
    Units: g
  LitterType23:
   Species: Nassella nidulans
-  LifeForm: bunchgrass
+  LifeForm: graminoid
   Material: recently senesced leaves
   cellulose:
     Value: 41.0
@@ -530,7 +530,7 @@ ExperimentInfo:
    Units: g
  LitterType24:
   Species: Poa stuckertii
-  LifeForm: bunchgrass
+  LifeForm: graminoid
   Material: recently senesced leaves
   cellulose:
     Value: 44.4

@@ -81,7 +81,6 @@ ExperimentInfo:
    LitterType2:
     PatchType: PatchType2
     LifeForm:
-      -bunchgrass
       -forb
       -graminoid
     Material: recently senesced leaves
@@ -121,7 +120,7 @@ ExperimentInfo:
       -Festuca lilloi
       -Poa stuckertii
       -Deyeuxia hieronymi
-    LifeForm: bunchgrass
+    LifeForm: graminoid
     Material: recently senesced leaves
     Carbon:
       Value: 46.7
@@ -194,7 +193,7 @@ ExperimentInfo:
      Units: g
    LitterType6:
     Species: Poa stuckertii
-    LifeForm: bunchgrass
+    LifeForm: graminoid
     Material: recently senesced leaves
     Amount:
      Value: 3
@@ -236,7 +235,7 @@ ExperimentInfo:
     MeshSize:
       Value: 0.3
       Units: mm
-    Position: vegetated soil 
+    Position: vegetated soil
   StartingDate:
     Month: january
     Season: summer

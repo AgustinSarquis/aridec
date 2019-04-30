@@ -23,7 +23,7 @@ ExperimentInfo:
  LitterInfo:
   LitterType1:
    Species: Pinus edulis
-   LifeForm: Conifer
+   LifeForm: conifer
    Material: recently senesced leaves
    C:N:
      Value: 96.2
@@ -49,7 +49,7 @@ ExperimentInfo:
       Units: g
   LitterType2:
    Species: Pinus edulis
-   LifeForm: Conifer
+   LifeForm: conifer
    Material: prematurely senesced leaves
    C:N:
      Value: 82.3
@@ -75,7 +75,7 @@ ExperimentInfo:
       Units: g
   LitterType3:
    Species: Pinus edulis
-   LifeForm: Conifer
+   LifeForm: conifer
    Material: live roots
    C:N:
      Value: 92.7
@@ -97,7 +97,7 @@ ExperimentInfo:
      Units: g
   LitterType4:
    Species: Pinus edulis
-   LifeForm: Conifer
+   LifeForm: conifer
    Material: live roots
    C:N:
      Value: 102.6
@@ -119,7 +119,7 @@ ExperimentInfo:
      Units: g
   LitterType5:
    Species: Pinus edulis
-   LifeForm: Conifer
+   LifeForm: conifer
    Material: recently senesced leaves
    C:N:
      Value: 99.9
@@ -145,7 +145,7 @@ ExperimentInfo:
       Units: g
   LitterType6:
    Species: Pinus edulis
-   LifeForm: Conifer
+   LifeForm: conifer
    Material: prematurely senesced leaves
    C:N:
      Value: 64.2
@@ -171,7 +171,7 @@ ExperimentInfo:
       Units: g
   LitterType7:
    Species: Pinus edulis
-   LifeForm: Conifer
+   LifeForm: conifer
    Material: live roots
    C:N:
      Value: 100.6
@@ -193,7 +193,7 @@ ExperimentInfo:
      Units: g
   LitterType8:
    Species: Pinus edulis
-   LifeForm: Conifer
+   LifeForm: conifer
    Material: live roots
    C:N:
      Value: 92.5

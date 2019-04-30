@@ -27,7 +27,7 @@ ExperimentInfo:
  LitterInfo:
   LitterType1:
    Species: Hedysarum leave
-   LifeForm: Shrub
+   LifeForm: shrub
    Material: recently senesced leaves
    Carbon:
      Value: 50.19
@@ -46,7 +46,7 @@ ExperimentInfo:
      Units: g
   LitterType2:
    Species: Lespedeza davurica
-   LifeForm: Shrub
+   LifeForm: shrub
    Material: recently senesced leaves
    Carbon:
      Value: 48.91
@@ -65,7 +65,7 @@ ExperimentInfo:
      Units: g
   LitterType3:
    Species: Agriophyllum pungens
-   LifeForm: Forb
+   LifeForm: forb
    Material: recently senesced leaves
    Carbon:
      Value: 43.70
@@ -84,7 +84,7 @@ ExperimentInfo:
      Units: g
   LitterType4:
    Species: Salix cheilophila
-   LifeForm: Shrub
+   LifeForm: shrub
    Material: recently senesced leaves
    Carbon:
      Value: 54.66
@@ -103,7 +103,7 @@ ExperimentInfo:
      Units: g
   LitterType5:
    Species: Leymus chinensis
-   LifeForm: Bunchgrass
+   LifeForm: graminoid
    Material: recently senesced leaves
    Carbon:
      Value: 50.22
@@ -122,7 +122,7 @@ ExperimentInfo:
      Units: g
   LitterType6:
    Species: Achnatherum sibiricum
-   LifeForm: Bunchgrass
+   LifeForm: graminoid
    Material: recently senesced leaves
    Carbon:
      Value: 49.58
@@ -141,7 +141,7 @@ ExperimentInfo:
      Units: g
   LitterType7:
    Species: Stipa krylovii
-   LifeForm: Bunchgrass
+   LifeForm: graminoid
    Material: recently senesced leaves
    Carbon:
      Value: 51.36
@@ -160,7 +160,7 @@ ExperimentInfo:
      Units: g
   LitterType8:
    Species: Agropyron cristatum
-   LifeForm: Bunchgrass
+   LifeForm: graminoid
    Material: recently senesced leaves
    Carbon:
      Value: 52.38
@@ -179,7 +179,7 @@ ExperimentInfo:
      Units: g
   LitterType9:
    Species: Caragan korshinskii
-   LifeForm: Shrub
+   LifeForm: shrub
    Material: recently senesced leaves
    Carbon:
      Value: 52.20
@@ -198,7 +198,7 @@ ExperimentInfo:
      Units: g
   LitterType10:
    Species: Salix gordejevii
-   LifeForm: Shrub
+   LifeForm: shrub
    Material: recently senesced leaves
    Carbon:
      Value: 54.75
@@ -217,7 +217,7 @@ ExperimentInfo:
      Units: g
   LitterType11:
    Species: Calligonum mongolicum
-   LifeForm: Shrub
+   LifeForm: shrub
    Material: recently senesced leaves
    Carbon:
      Value: 37.20
@@ -255,7 +255,7 @@ ExperimentInfo:
      Units: g
   LitterType13:
    Species: Nitraria tangutorum
-   LifeForm: Shrub
+   LifeForm: shrub
    Material: recently senesced leaves
    Carbon:
      Value: 35.43

@@ -4,7 +4,7 @@ EntryAuthor: Agustín Sarquis
 
 SiteInfo:
   Name: Gurbantunggut desert, Xinjiang, China
-  EcosystemType: Desert
+  EcosystemType: desert
   MAP:
     Value: 158.8
     Units: mm
@@ -27,7 +27,7 @@ ExperimentInfo:
  LitterInfo:
   LitterType1:
    Species: Calligonum mongolicum
-   LifeForm: Shrub
+   LifeForm: shrub
    Material: recently senesced leaves
    SLA:
      Value: 8.44
@@ -52,7 +52,7 @@ ExperimentInfo:
      Units: g
   LitterType2:
    Species: Tamarix chinensis
-   LifeForm: Shrub
+   LifeForm: shrub
    Material: recently senesced leaves
    SLA:
      Value: 10.789
@@ -102,7 +102,7 @@ ExperimentInfo:
      Units: g
   LitterType4:
    Species: Aristida pennata
-   LifeForm: bunchgrass
+   LifeForm: graminoid
    Material: recently senesced leaves
    SLA:
      Value: 20.93
@@ -127,7 +127,7 @@ ExperimentInfo:
      Units: g
   LitterType5:
    Species: Echinops sphaerocephalus
-   LifeForm: Forb
+   LifeForm: forb
    Material: recently senesced leaves
    SLA:
      Value: 10.45
@@ -152,7 +152,7 @@ ExperimentInfo:
      Units: g
   LitterType6:
    Species: Karelinia caspia
-   LifeForm: Forb
+   LifeForm: forb
    Material: recently senesced leaves
    SLA:
      Value: 14.82
@@ -177,7 +177,7 @@ ExperimentInfo:
      Units: g
   LitterType7:
    Species: Mulgedium tataricum
-   LifeForm: Forb
+   LifeForm: forb
    Material: recently senesced leaves
    SLA:
      Value: 11.27
@@ -202,7 +202,7 @@ ExperimentInfo:
      Units: g
   LitterType8:
    Species: Alhagi sparsifolia
-   LifeForm: Shrub
+   LifeForm: shrub
    Material: recently senesced leaves
    SLA:
      Value: 9.88
@@ -227,7 +227,7 @@ ExperimentInfo:
      Units: g
   LitterType9:
    Species: Ephedra distachya
-   LifeForm: Shrub
+   LifeForm: shrub
    Material: recently senesced leaves
    SLA:
      Value: 7.86
@@ -252,7 +252,7 @@ ExperimentInfo:
      Units: g
   LitterType10:
    Species: Agriophyllum arenarium
-   LifeForm: Forb
+   LifeForm: forb
    Material: recently senesced leaves
    SLA:
      Value: 17.21
@@ -277,7 +277,7 @@ ExperimentInfo:
      Units: g
   LitterType11:
    Species: Echinops gmelini
-   LifeForm: Forb
+   LifeForm: forb
    Material: recently senesced leaves
    SLA:
      Value: 13.02
@@ -302,7 +302,7 @@ ExperimentInfo:
      Units: g
   LitterType12:
    Species: Erodium oxyrrhynchum
-   LifeForm: Forb
+   LifeForm: forb
    Material: recently senesced leaves
    SLA:
      Value: 11.64
@@ -327,7 +327,7 @@ ExperimentInfo:
      Units: g
   LitterType13:
    Species: Euphorbia turczaninowii
-   LifeForm: Forb
+   LifeForm: forb
    Material: recently senesced leaves
    SLA:
      Value: 21.14
@@ -352,7 +352,7 @@ ExperimentInfo:
      Units: g
   LitterType14:
    Species: Krascheninnikovia ceratoides
-   LifeForm: Shrub
+   LifeForm: shrub
    Material: recently senesced leaves
    SLA:
      Value: 20.07
@@ -377,7 +377,7 @@ ExperimentInfo:
      Units: g
   LitterType15:
    Species: Cynanchum sibiricum
-   LifeForm: Forb
+   LifeForm: forb
    Material: recently senesced leaves
    SLA:
      Value: 20.66
@@ -402,7 +402,7 @@ ExperimentInfo:
      Units: g
   LitterType16:
    Species: Peganum harmala
-   LifeForm: Forb
+   LifeForm: forb
    Material: recently senesced leaves
    SLA:
      Value: 17.66
@@ -424,7 +424,7 @@ ExperimentInfo:
      Units: g
   LitterType17:
    Species: Nitraria sibirica
-   LifeForm: Shrub
+   LifeForm: shrub
    Material: recently senesced leaves
    SLA:
      Value: 17.25

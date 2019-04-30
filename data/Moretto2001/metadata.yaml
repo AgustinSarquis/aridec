@@ -22,7 +22,7 @@ ExperimentInfo:
  LitterInfo:
   LitterType1:
    Species: Stipa tenuissima
-   LifeForm: bunchgrass
+   LifeForm: graminoid
    Material: recently senesced leaves
    Lignin:
      Value: 7.9
@@ -47,7 +47,7 @@ ExperimentInfo:
      Units: g
   LitterType2:
    Species: Stipa clarazii
-   LifeForm: bunchgrass
+   LifeForm: graminoid
    Material: recently senesced leaves
    Lignin:
      Value: 4.9
@@ -72,7 +72,7 @@ ExperimentInfo:
      Units: g
   LitterType3:
    Species: Poa ligularis
-   LifeForm: bunchgrass
+   LifeForm: graminoid
    Material: recently senesced leaves
    Lignin:
      Value: 3.9
@@ -97,7 +97,7 @@ ExperimentInfo:
      Units: g
   LitterType4:
    Species: Stipa tenuissima
-   LifeForm: bunchgrass
+   LifeForm: graminoid
    Material: roots
    Lignin:
      Value: 19
@@ -122,7 +122,7 @@ ExperimentInfo:
      Units: g
   LitterType5:
    Species: Stipa clarazii
-   LifeForm: bunchgrass
+   LifeForm: graminoid
    Material: roots
    Lignin:
      Value: 16
@@ -147,7 +147,7 @@ ExperimentInfo:
      Units: g
   LitterType6:
    Species: Poa ligularis
-   LifeForm: bunchgrass
+   LifeForm: graminoid
    Material: roots
    Lignin:
      Value: 13
@@ -181,7 +181,7 @@ ExperimentInfo:
        Width: 10
        Lenght: 15
        Units: cm
-      Position: vegetated soil 
+      Position: vegetated soil
     Duration:
       Time: 21
       Units: months

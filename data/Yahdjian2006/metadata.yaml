@@ -33,7 +33,7 @@ ExperimentInfo:
  LitterInfo:
   LitterType1:
    Species: Stipa speciosa
-   LifeForm: bunchgrass
+   LifeForm: graminoid
    Material: recently senesced leaves
    Amount:
      Value: 1

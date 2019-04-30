@@ -4,7 +4,7 @@ EntryAuthor: Agustín Sarquis
 
 SiteInfo:
   Name: Phoenix, Arizona, USA
-  EcosystemType: Desert
+  EcosystemType: desert
   MAP:
     Value: 195
     Units: mm

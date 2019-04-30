@@ -64,21 +64,21 @@ ExperimentInfo:
      - Thuja plicata
      - Triticum aestivum
    LifeForm:
-     - Tree
-     - Tree
-     - Forb
-     - Tree
-     - Tree
-     - Shrub
-     - Tree
-     - Crop
+     - tree
+     - tree
+     - forb
+     - tree
+     - tree
+     - shrub
+     - tree
+     - crop
    Material: leaves
    Amount:
      Value: 10
      Units: g
   LitterType2:
     Species: Drypetes glauca
-    LifeForm: Tree
+    LifeForm: tree
     Material: leaves
     Celulose:
       Value: 39.82
@@ -100,7 +100,7 @@ ExperimentInfo:
      Units: g
   LitterType3:
     Species: Pinus resinosa
-    LifeForm: Conifer
+    LifeForm: conifer
     Material: leaves
     Celulose:
       Value: 44.58
@@ -122,7 +122,7 @@ ExperimentInfo:
      Units: g
   LitterType4:
     Species: Thuja plicata
-    LifeForm: Conifer
+    LifeForm: conifer
     Material: leaves
     Celulose:
       Value: 35.92
@@ -144,7 +144,7 @@ ExperimentInfo:
      Units: g
   LitterType5:
     Species: Triticum aestivum
-    LifeForm: Crop
+    LifeForm: crop
     Material: leaves
     Celulose:
       Value: 73.15
@@ -168,7 +168,7 @@ ExperimentInfo:
     Description: "Eight types of leaf litter were decomposed at three sites for 4 to 10 years"
     LitterBagInfo:
       Material:
-        - nylon 
+        - nylon
         - DACRON cloth
       MeshSize:
        Value:

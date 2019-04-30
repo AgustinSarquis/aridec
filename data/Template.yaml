@@ -4,7 +4,7 @@ EntryAuthor: Agustín Sarquis
 
 SiteInfo:
   Name:
-  EcosystemType: sandland, abbandoned farmland, scrub, xerophyllous woodland, alluvial valley, forest, Steppe, Desert, grassland, mountain grassland
+  EcosystemType: sandland, abbandoned farmland, scrub, xerophyllous woodland, alluvial valley, forest, steppe, desert, grassland, mountain grassland
   MAP:
     Value:
     Units: mm
@@ -16,7 +16,7 @@ SiteInfo:
     Value:
     Units: masl
   SoilType:
-  SoilTexture: Coarse, fine
+  SoilTexture: coarse, fine
   PlantCover:
     BunchgrassCover:
     ShrubCover:
@@ -33,7 +33,7 @@ ExperimentInfo:
  LitterInfo:
   LitterType1:
    Species:
-   LifeForm: Tree, Forb, Shrub, Crop, Conifer, Graminoid, Bunchgrass
+   LifeForm: tree, forb, shrub, crop, conifer, graminoid
    Material: aboveground parts, prematurely senesced leaves, leaves, recently senesced leaves, recently senesced terminal shoots, recently senesced stems, roots, live roots
    Amount:
      Value:

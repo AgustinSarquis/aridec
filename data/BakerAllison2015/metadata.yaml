@@ -23,7 +23,7 @@ ExperimentInfo:
  LitterInfo:
   LitterType1:
    Species: Elymus condensatus
-   LifeForm: bunchgrass
+   LifeForm: graminoid
    Material: recently senesced leaves
    Lignin:
      Value: 13.05

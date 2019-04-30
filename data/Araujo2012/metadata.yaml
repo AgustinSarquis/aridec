@@ -4,7 +4,7 @@ EntryAuthor: Agustín Sarquis
 
 SiteInfo:
   Name: Río Mayo, Chubut, Argentina
-  EcosystemType: Steppe
+  EcosystemType: steppe
   MAP:
     Value: 170
     Units: mm
@@ -16,7 +16,7 @@ SiteInfo:
     Value: 500
     Units: masl
   SoilType: Aridisol
-  SoilTexture: Coarse
+  SoilTexture: coarse
   PlantCover:
     BunchgrassCover: 32
     ShrubCover: 15

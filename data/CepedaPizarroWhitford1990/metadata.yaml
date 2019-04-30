@@ -4,7 +4,7 @@ EntryAuthor: Agustín Sarquis
 
 SiteInfo:
   Name: "Jornada Experimental Range, New Mexico, USA"
-  EcosystemType: Desert
+  EcosystemType: desert
   MAP:
     Value: 225
     Units: mm
@@ -25,7 +25,7 @@ ExperimentInfo:
  LitterInfo:
   LitterType1:
    Species: Larrea tridentata
-   LifeForm: Shrub
+   LifeForm: shrub
    Material: leaves
    C:N:
      Value: 26.7
@@ -48,7 +48,7 @@ ExperimentInfo:
      Units: g
   LitterType3:
    Species: Prosopis glandulosa
-   LifeForm: Tree
+   LifeForm: tree
    Material: leaves
    C:N:
      Value: 16.1
@@ -61,7 +61,7 @@ ExperimentInfo:
      Units: g
   LitterType4:
    Species: Baileya multiradiata
-   LifeForm: Forb
+   LifeForm: forb
    Material: aboveground parts
    C:N:
      Value: 24.2

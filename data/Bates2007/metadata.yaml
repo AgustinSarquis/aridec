@@ -28,7 +28,7 @@ ExperimentInfo:
  LitterInfo:
   LitterType1:
    Species: Juniperus occidentalis
-   LifeForm: Conifer
+   LifeForm: conifer
    Material: leaves
    Nitrogen:
      Value: 45

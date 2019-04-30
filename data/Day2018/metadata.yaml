@@ -4,7 +4,7 @@ EntryAuthor: Agustín Sarquis
 
 SiteInfo:
   Name: Phoenix, AZ, USA
-  EcosystemType: Desert
+  EcosystemType: desert
   MAP:
     Value: 195
     Units: mm
@@ -28,7 +28,7 @@ ExperimentInfo:
  LitterInfo:
   LitterType1:
    Species: Simmondsia chinensis
-   LifeForm: Shrub
+   LifeForm: shrub
    Material: recently senesced leaves
    Carbon:
      Value: 43.9
@@ -59,7 +59,7 @@ ExperimentInfo:
      Units: g
   LitterType2:
    Species: Olneya tesota
-   LifeForm: Tree
+   LifeForm: tree
    Material: recently senesced leaves
    Carbon:
      Value: 42.7
@@ -90,7 +90,7 @@ ExperimentInfo:
      Units: g
   LitterType3:
    Species: Prosopis velutina
-   LifeForm: Tree
+   LifeForm: tree
    Material: recently senesced leaves
    Carbon:
      Value: 46.9
@@ -121,7 +121,7 @@ ExperimentInfo:
      Units: g
   LitterType4:
    Species: Larrea tridentata
-   LifeForm: Shrub
+   LifeForm: shrub
    Material: recently senesced leaves
    Carbon:
      Value: 47.9
@@ -152,7 +152,7 @@ ExperimentInfo:
      Units: g
   LitterType5:
    Species: Ambrosia deltoidea
-   LifeForm: Shrub
+   LifeForm: shrub
    Material: recently senesced leaves
    Carbon:
      Value: 45.9
@@ -183,7 +183,7 @@ ExperimentInfo:
      Units: g
   LitterType6:
    Species: Baileya multiradiata
-   LifeForm: Forb
+   LifeForm: forb
    Material: recently senesced leaves
    Carbon:
      Value: 40.8
@@ -214,7 +214,7 @@ ExperimentInfo:
      Units: g
   LitterType7:
    Species: Encelia farinosa
-   LifeForm: Shrub
+   LifeForm: shrub
    Material: recently senesced leaves
    Carbon:
      Value: 38.8
@@ -245,7 +245,7 @@ ExperimentInfo:
      Units: g
   LitterType8:
    Species: Encelia frutescens
-   LifeForm: Shrub
+   LifeForm: shrub
    Material: recently senesced leaves
    Carbon:
      Value: 36.0
@@ -276,7 +276,7 @@ ExperimentInfo:
      Units: g
   LitterType9:
    Species: Aristida purpurea
-   LifeForm: bunchgrass
+   LifeForm: graminoid
    Material: recently senesced leaves
    Carbon:
      Value: 41.5
@@ -369,7 +369,7 @@ ExperimentInfo:
      Units: g
   LitterType12:
    Species: Eragrostis curvula
-   LifeForm: bunchgrass
+   LifeForm: graminoid
    Material: recently senesced leaves
    Carbon:
      Value: 45.3

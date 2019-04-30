@@ -24,7 +24,7 @@ ExperimentInfo:
  LitterInfo:
   LitterType1:
    Species: Prosopis articulata
-   LifeForm: Tree
+   LifeForm: tree
    Material: recently senesced leaves
    Carbon:
      Value: 39.35
@@ -52,7 +52,7 @@ ExperimentInfo:
      Units: g
   LitterType2:
    Species: Jatropha cinerea
-   LifeForm: Shrub
+   LifeForm: shrub
    Material: recently senesced leaves
    Carbon:
      Value: 30.00
@@ -80,7 +80,7 @@ ExperimentInfo:
      Units: g
   LitterType3:
    Species: Jatropha cuneata
-   LifeForm: Shrub
+   LifeForm: shrub
    Material: recently senesced leaves
    Carbon:
      Value: 19.89
@@ -108,7 +108,7 @@ ExperimentInfo:
      Units: g
   LitterType4:
    Species: Cyrtocarpa edulis
-   LifeForm: Tree
+   LifeForm: tree
    Material: recently senesced leaves
    Carbon:
      Value: 23.06
@@ -136,7 +136,7 @@ ExperimentInfo:
      Units: g
   LitterType5:
    Species: Fouquieria diguetti
-   LifeForm: Shrub
+   LifeForm: shrub
    Material: recently senesced leaves
    Carbon:
      Value: 17.80
@@ -194,7 +194,7 @@ Variables:
     Units: months
   V2:
     Name: PaWBS
-    Units: mass remaining 
+    Units: mass remaining
     Description: "Mass loss of P. articulata leaf litter during a wet year on bare soil after a year"
     LitterType: LitterType1
     Position: Location1

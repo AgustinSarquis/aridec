@@ -4,7 +4,7 @@ EntryAuthor: Agustín Sarquis
 
 SiteInfo:
   Name: Río Mayo, Chubut, Argentina
-  EcosystemType: Steppe
+  EcosystemType: steppe
   MAP:
     Value: 155
     Units: mm
@@ -16,7 +16,7 @@ SiteInfo:
     Value: 500
     Units: masl
   SoilType: Aridisol
-  SoilTexture: Coarse
+  SoilTexture: coarse
   PlantCover:
     BunchgrassCover: 25
     ShrubCover: 13
@@ -33,7 +33,7 @@ ExperimentInfo:
  LitterInfo:
   LitterType1:
    Species: Stipa speciosa
-   LifeForm: bunchgrass
+   LifeForm: graminoid
    Material: recently senesced leaves
    Amount:
      Value: 1

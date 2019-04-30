@@ -65,7 +65,7 @@ ExperimentInfo:
  LitterInfo:
   LitterType1:
    Species: Andropogon gerardii
-   LifeForm: bunchgrass
+   LifeForm: graminoid
    Material: recently senesced leaves
    Carbon:
      Value: 45.05
@@ -102,7 +102,7 @@ ExperimentInfo:
      Units: g
   LitterType2:
    Species: Bouteloua gracilis
-   LifeForm: bunchgrass
+   LifeForm: graminoid
    Material: recently senesced leaves
    Carbon:
      Value: 44.47

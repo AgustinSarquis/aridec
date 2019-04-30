@@ -24,7 +24,7 @@ ExperimentInfo:
  LitterInfo:
   LitterType1:
    Species: Pinus massoniana
-   LifeForm: Conifer
+   LifeForm: conifer
    Material: recently senesced leaves
    Carbon:
      Value: 44.12
@@ -49,7 +49,7 @@ ExperimentInfo:
      Units: g
   LitterType2:
    Species: Cunninghamia lanceolata
-   LifeForm: Conifer
+   LifeForm: conifer
    Material: recently senesced leaves
    Carbon:
      Value: 42.51
@@ -74,7 +74,7 @@ ExperimentInfo:
      Units: g
   LitterType3:
    Species: Cryptomeria fortunei
-   LifeForm: Conifer
+   LifeForm: conifer
    Material: recently senesced leaves
    Carbon:
      Value: 39.395
@@ -99,7 +99,7 @@ ExperimentInfo:
      Units: g
   LitterType4:
    Species: Cinnamomum camphora
-   LifeForm: Tree
+   LifeForm: tree
    Material: recently senesced leaves
    Carbon:
      Value: 37.911
@@ -124,7 +124,7 @@ ExperimentInfo:
      Units: g
   LitterType5:
    Species: Toona ciliata
-   LifeForm: Tree
+   LifeForm: tree
    Material: recently senesced leaves
    Carbon:
      Value: 35.036
@@ -149,7 +149,7 @@ ExperimentInfo:
      Units: g
   LitterType6:
    Species: Quercus acutissima
-   LifeForm: Conifer
+   LifeForm: conifer
    Material: recently senesced leaves
    Carbon:
      Value: 42.859
