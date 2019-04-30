@@ -1,0 +1,134 @@
+CitationKey: Wang2017
+doi: 10.1007/s11104-017-3290-1
+EntryAuthor: Agustín Sarquis
+
+SiteInfo:
+  Name: Duolun, Inner Mongolia, China
+  EcosystemType: steppe
+  MAP:
+    Value: 378
+    Units: mm
+  MAT:
+    Value: 2.1
+    Units: Celsius
+  RainySeason: summer
+  Altitude:
+    Value: 1324
+    Units: masl
+  SoilType: Haplic Calcisols
+  Coordinates:
+    Latitude: 42.03
+    Longitude: 116.283
+
+ExperimentInfo:
+ LitterInfo:
+  LitterType1:
+   Species: Cleistogenes squarrosa
+   LifeForm: graminoid
+   Material: recently senesced leaves
+   Nitrogen:
+     Value: 0.64
+     Units: percentage
+   Carbon:
+     Value: 42.112
+     Units: percentage
+   C:N:
+     Value: 65.80
+     Units: unitless
+   Amount:
+     Value: 2
+     Units: g
+  LitterType2:
+   Species: Stipa krylovii
+   LifeForm: graminoid
+   Material: recently senesced leaves
+   Nitrogen:
+     Value: 0.55
+     Units: percentage
+   Carbon:
+     Value: 43.714
+     Units: percentage
+   C:N:
+     Value: 79.48
+     Units: unitless
+   Amount:
+     Value: 3
+     Units: g
+ Experiment1:
+    Description: "A two-by-two factorial experiment was conducted including two UV treatments (ambient UVand reduced UV) and two litter type treatments (C. squarrosa and S. krylovii)."
+    LitterBagInfo:
+      Material: nylon
+      MeshSize:
+       Value: 1.23
+       Units: mm
+      Dimentions:
+       Width: 10
+       Lenght: 15
+       Units: cm
+      UVTransmitance:
+        Value: 95
+        Untis: percentage
+      Position:
+        - under frames
+        - bare soil
+    FilterInfo:
+      FilterType1:
+        Name: UV-transparent acrylic
+        Wavelenght:
+          Value: 280
+          Units: nm
+        UVTransmitance:
+          Value: 90
+          Units: percentage
+        PARTransmitance:
+          Value: 85
+          Units: percentage
+      FilterType2:
+        Name: UV-absorbing polycarbonate
+        Wavelenght:
+          Value: 400
+          Units: nm
+        UVTransmitance:
+          Value: 10
+          Units: percentage
+        PARTransmitance:
+          Value: 85
+          Units: percentage
+    Treatment:
+      - light attenuation
+      - litter type
+    StartingDate:
+      Month: may
+      Season: spring
+    Duration:
+      Time: 29
+      Units: months
+
+Variables:
+  V1:
+    Name: Time
+    Units: days
+  V2:
+    Name: Cs_ambient
+    Units: mass remaining
+    Description: "C. squarrosa leaf litter was incubated under UV-transparent filter for 29 months"
+    FilterType: FilterType1
+    LitterType: LitterType1
+  V3:
+    Name: Cs_reduced
+    Units: mass remaining
+    Description: "C. squarrosa leaf litter was incubated under UV-absorbing filter for 29 months"
+    FilterType: FilterType2
+    LitterType: LitterType1
+  V4:
+    Name: Sk_ambient
+    Units: mass remaining
+    Description: "S. krylovii leaf litter was incubated under UV-transparent filter for 29 months"
+    FilterType: FilterType1
+    LitterType: LitterType2
+  V5:
+    Name: Sk_reduced
+    Units: mass remaining
+    Description: "S. krylovii leaf litter was incubated under UV-absorbing filter for 29 months"
+    FilterType: FilterType2
+    LitterType: LitterType2
