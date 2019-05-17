@@ -71,7 +71,7 @@ ExperimentInfo:
 Variables:
   V1:
     Name: Time
-    Units: days, months, years
+    Units: days, weeks, months, years
   V2:
     Name:
     Units: non-ash dry mass remaining, mass remaining, organic matter remaining, C remaining
