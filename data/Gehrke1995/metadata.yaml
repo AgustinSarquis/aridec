@@ -1,0 +1,72 @@
+CitationKey: Gehrke1995
+doi: 10.2307/3546223
+EntryAuthor: Ignacio Siebenhart
+
+SiteInfo:
+ Name: Abisko, Lapland, Sweden
+ MAP:
+  Value: 1320
+  Units: mm
+ MAT:
+  Value: 5.43
+  Units: Celsius
+ Altitude:
+  Value: 360
+  Units: masl
+ Coordinates:
+  Latitude: 68.35
+  Longitude: 18.82
+
+ExperimentInfo:
+ LitterInfo:
+   LitterType1:
+    Species: Vaccinium myrtillus
+    Lifeform: shrub
+    Material: recently senesced leaves
+    Amount:
+     Value: 0.25
+     Units: g
+ Experiment1:
+  LitterBagInfo:
+  Material: plexiglass
+  Dimentions:
+   Hight: 2
+   Units: cm
+  Position: on the ground
+  Treatment:
+    - enhanced UV during growth
+    - enhanced UV during decomposition
+  StartingDate:
+   Season: autumn
+  Duration:
+   Time: 12
+   Units: months
+
+Variable:
+ V1:
+   Name: Time
+   Units: months
+ V2:
+   Name: CCO
+   Units: mass remaining
+   Description: "Litter organic matter percentage remaining at harvest time that had grown under ambient UV and decomposed without enhanced UV"
+   UVgrowth: No
+   UVdecomposition: No
+ V3:
+   Name: UVC
+   Units: mass remaining
+   Description: "Litter organic matter percentage remaining at harvest time that grown under UV enhanced conditions and decomposed without enhanced UV"
+   UVgrowth: Yes
+   UVdecomposition: No
+ V4:
+   Name: CCT
+   Units: mass remaining
+   Description: "Litter organic matter percentage remaining at harvest time that had grown under ambient UV and decomposed without field enhanced UV"
+   UVgrowth: No
+   UVdecomposition: No
+ V5:
+   Name: CUV
+   Units: mass remaining
+   Description: "Litter organic matter percentage remaining at harvest time that had grown under ambient UV and decomposed with enhanced UV solar radiation"
+   UVgrowth: No
+   UVdecomposition: Yes

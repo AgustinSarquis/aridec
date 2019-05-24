@@ -1,0 +1,80 @@
+CitationKey: Elkins1982
+doi: https://doi.org/10.2307/1938973
+EntryAuthor: Ignacio Siebenhart
+
+Site Info:
+ Name: Carlsbad, New Mexico, United States
+ MAP:
+  Units: 260
+  Value: mm
+
+ExperimentInfo:
+ LitterInfo:
+  LitterType1:
+   Species:
+    - Bouteloua eriopoda
+    - Scleropogon brevifolius
+   Lifeform: graminoid
+   Lignin:
+    Value:
+     - 7.26
+    Units: percentage
+   Amount:
+    Value: 10
+    Units: g
+  LitterType2:
+   Species: Larrea tridentata
+   Lifeform: shrub
+   Lignin:
+    Value: 9.5
+    Units: percentage
+   Amount:
+    Value: 10
+    Units: g
+   LitterType3:
+    Species: Quercus harvardii
+    Lifeform: tree
+    Lignin:
+     Value: 10.8
+     Units: percentage
+    Amount:
+     Value: 10
+     Units: g
+
+ Experiment1:
+  LitterBagInfo:
+   Material: fiberglass
+   MeshSize:
+    Value: 1.5
+    Units: mm
+   Dimentions:
+    Widht: 20
+    Lenght: 20
+    Units: cm
+   Position: on top of soil surface
+  StartingDate:
+   Month: february
+   Season: winter
+  Duration:
+   Time: 12
+   Units: months
+
+Variables:
+  V1:
+    Name: Time
+    Units: months
+  V2:
+    Name: Gram
+    Units: mass remaining
+    Description: "Graminoid litter organic matter percentage remaining at harvest time"
+    LitterType: LitterType1
+  V3:
+    Name: Creo
+    Units: mass remaining
+    Description: "Shrub litter organic matter percentage remaining at harvest time"
+    LitterType: LitterType2
+  V4:
+    Name: Oak
+    Units: mass remaining
+    Description: "Tree litter organic matter percentage remaining at harvest time"
+    LitterType: LitterType3

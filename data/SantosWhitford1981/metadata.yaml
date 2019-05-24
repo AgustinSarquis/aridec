@@ -1,0 +1,106 @@
+CitationKey: SantosWhitford1981
+doi: https://doi.org/10.2307/1937733
+EntryAuthor: Ignacio Siebenhart
+
+SiteInfo:
+ Name: Jornada Experimental Ranch, New Mexico, USA
+ EcosystemType: desert
+ MAP:
+  Value: 211
+  Units: mm
+ RainySeason: summer
+ Altitude:
+  Value:
+   - 1200
+   - 2000
+  Units: masl
+ SoilTexture: coarse
+
+ExperimentInfo:
+ LitterInfo:
+  LitterType1:
+  Species:
+   - Larrea tridentata
+   - Yucca elata
+   - Fallugia paradoxa
+   - Prosopis glandulosa
+  Lifeform:
+   - shrub
+   - tree
+   - shrub
+   - tree
+  Amount:
+   Value: 30
+   Units: g
+ Experiment1:
+  Description: They used biocide treatments to assess the influence in biotic decomposition of nematodes, fungi and insects.
+  LitterBagInfo:
+  Material: fiberglass
+  MeshSize:
+   Value: 1.5
+   Units: mm
+  Position: buried
+  Treatment: biocide application
+  StartingDate:
+   StartingDate1:
+    Month: april
+    Season: spring
+   StartingDate2:
+    Month: july
+    Season: summer
+  Duration:
+   Time: 6
+   Units: months
+
+Variables:
+  V1:
+    Name: Time
+    Units: days
+  V2:
+    Name: CTRA
+    Units: mass loss
+    Description: "Litter organic matter percentage remaining at harvest time without biocide and starting date in april"
+    BiocideApplication: "none"
+    StartingDate: StartingDate1
+  V3:
+    Name: INA
+    Units: mass loss
+    Description: "Litter organic matter percentage remaining at harvest time with insecticide and starting date in april"
+    BiocideApplication: "Insecticide"
+    StartingDate: StartingDate1
+  V4:
+    Name: FGA
+    Units: mass loss
+    Description: "Litter organic matter percentage remaining at harvest time with fungicide and starting date in april"
+    BiocideApplication: "Fungicide"
+    StartingDate: StartingDate1
+  V5:
+    Name: FGINA
+    Units: mass loss
+    Description: "Litter organic matter percentage remaining at harvest time with insecticide and fungicide and starting date in april"
+    BiocideApplication: "Fungicide and insecticide"
+    StartingDate: StartingDate1
+  V6:
+    Name: CTRJ
+    Units: mass loss
+    Description: "Litter organic matter percentage remaining at harvest time without biocide"
+    BiocideApplication: "none"
+    StartingDate: StartingDate2
+  V7:
+    Name: INJ
+    Units: mass loss
+    Description: "Litter organic matter percentage remaining at harvest time with insecticide and starting date in july"
+    BiocideApplication: "Insecticide"
+    StartingDate: StartingDate2
+  V8:
+    Name: FGJ
+    Units: mass loss
+    Description: "Litter organic matter percentage remaining at harvest time with fungicide and starting date in july"
+    BiocideApplication: "Fungicide"
+    StartingDate: StartingDate2
+  V9:
+    Name: FGINJ
+    Units: mass loss
+    Description: "Litter organic matter percentage remaining at harvest time with fungicide, insecticide, and starting date in july"
+    BiocideApplication: "Insecticide and Fungicide"
+    StartingDate: StartingDate2

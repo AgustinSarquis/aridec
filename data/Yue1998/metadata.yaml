@@ -1,0 +1,259 @@
+CitationKey: Yue1998
+doi: https://doi.org/10.1016/S0378-4290(97)00138-X
+EntryAuthor: Ignacio Siebenhart
+
+SiteInfo:
+ Name: Lanzhou, Gansu, China
+ EcosystemType: mountain grassland
+ SoilTexture: loessial
+ Altitude:
+  Value: 1530
+  Units: masl
+ Coordinates:
+  Latitude: 36.0437813
+  Longitude: 103.7499
+
+ExperimentInfo:
+ LitterInfo:
+  LitterType1:
+   Species: Triticum aestivum
+   Lifeform: crop
+   Material: leaves
+   Nitrogen:
+    Value: 1.25
+    Units: percentage
+   Holocellulose:
+    Value: 37.3
+    Units: percentage
+   Phosphorus:
+    Value: 0.15
+    Units: percentage
+   Potasium:
+    Value: 2.01
+    Units: percentage
+   Magnesium:
+    Value: 0.29
+    Units: percentage
+   Iron:
+    Value: 0.0012
+    Units: percentage
+   Zinc:
+    Value: 0.000030
+    Units: percentage
+  LitterType2:
+   Species: Triticum aestivum
+   Lifeform: crop
+   Material: leaves
+   Nitrogen:
+    Value: 1.65
+    Units: percentage
+   Holocellulose:
+    Value: 42.8
+    Units: percentage
+   Phosphorus:
+    Value: 0.13
+    Units: percentage
+   Potasium:
+    Value: 2.08
+    Units: percentage
+   Magnesium:
+    Value: 0.31
+    Units: percentage
+   Iron:
+    Value: 0.0013
+    Units: percentage
+   Zinc:
+    Value: 0.000036
+    Units: percentage
+  LitterType3:
+   Species: Triticum aestivum
+   Lifeform: crop
+   Material: leaves
+   Nitrogen:
+    Value: 1.83
+    Units: percentage
+   Holocellulose:
+    Value: 47.2
+    Units: percentage
+   Phosphorus:
+    Value: 0.13
+    Units: percentage
+   Potasium:
+    Value: 2.14
+    Units: percentage
+   Magnesium:
+    Value: 0.32
+    Units: percentage
+   Iron:
+    Value: 0.0013
+    Units: percentage
+   Zinc:
+    Value: 0.000039
+    Units: percentage
+  LitterType4:
+   Species: Triticum aestivum
+   Lifeform: crop
+   Material: leaves
+   Nitrogen:
+    Value: 2.31
+    Units: percentage
+   Holocellulose:
+     Value: 50.9
+     Units: percentage
+   Phosphorus:
+    Value: 0.12
+    Units: percentage
+   Potasium:
+    Value: 2.16
+    Units: percentage
+   Magnesium:
+    Value: 0.35
+    Units: percentage
+   Iron:
+    Value: 0.0015
+    Units: percentage
+   Zinc:
+    Value: 0.000045
+    Units:
+  LitterType5:
+   Species: Triticum aestivum
+   Lifeform: crop
+   Material: stems
+   Nitrogen:
+    Value: 0.82
+    Units: percentage
+   Phosphorus:
+    Value: 0.08
+    Units: percentage
+   Potasium:
+    Value: 3.57
+    Units: percentage
+   Magnesium:
+    Value: 0.08
+    Units: percentage
+  LitterType6:
+   Species: Triticum aestivum
+   Lifeform: crop
+   Material: stems
+   Nitrogen:
+    Value: 0.98
+    Units: percentage
+   Phosphorus:
+    Value: 0.06
+    Units: percentage
+   Potasium:
+    Value: 3.71
+    Units: percentage
+   Magnesium:
+    Value: 0,09
+    Units: percentage
+   Iron:
+    Value: 0.00025
+    Units: percentage
+   Zinc:
+    Value: 0.000012
+    Units: percentage
+  LitterType7:
+   Species: Triticum aestivum
+   Lifeform: crop
+   Material: stems
+   Nitrogen:
+    Value: 1.04
+    Units: percentage
+   Phosphorus:
+    Value: 0.05
+    Units: percentage
+   Potasium:
+    Value: 3.89
+    Units: percentage
+   Magnesium:
+    Value: 0.09
+    Units: percentage
+   Iron:
+    Value: 0.00019
+    Units: percentage
+   Zinc:
+    Value: 0.000018
+    Units: percentage
+  LitterType8:
+   Species: Triticum aestivum
+   Lifeform: crop
+   Material: stems
+   Nitrogen:
+    Value: 1.28
+    Units: percentage
+   Phosphorus:
+    Value: 0.05
+    Units: percentage
+   Potasium:
+    Value: 4.01
+    Units: percentage
+   Magnesium:
+    Value: 0.11
+    Units: percentage
+   Iron:
+    Value: 0.00019
+    Units: percentage
+   Zinc:
+    Value: 0.000022
+    Units: percentage
+ Treatment: enhanced UV-B radiation
+ StartingDate:
+  Month: march
+  Season: spring
+ Duration:
+  Time: 3.33
+  Units: months
+
+Variable:
+ V1:
+    Name: Time
+    Value: days
+ V2:
+    Name: LCUV
+    Units: C remaining
+    Description: "Litter organic matter percentage remaining at harvest time without enhancing UV-B at the growth stage"
+    LitterType: LitterType1
+    UVBEnhancing: "none"
+ V3:
+    Name: LLUV
+    Units: C remaining
+    Description: "Litter organic matter percentage remaining at harvest time with enhancing UV-B at the growth stage"
+    LitterType: LitterType2
+    UVBEnhancing: "low"
+ V4:
+    Name: LMUV
+    Units: C remaining
+    Description: "Litter organic matter percentage remaining at harvest time with enhancing UV-B at the growth stage"
+    LitterType: LitterType3
+    UVBEnhancing: "medium"
+ V5:
+    Name: LHUV
+    Units: C remaining
+    Description: "Litter organic matter percentage remaining at harvest time with enhancing UV-B at the growth stage"
+    LitterType: LitterType4
+    UVBEnhancing: "maximum"
+ V6:
+    Name: SCUV
+    Units: C remaining
+    Description: "Litter organic matter percentage remaining at harvest time without enhancing UV-B at the growth stage"
+    LitterType: LitterType5
+    UVBEnhancing: "none"
+ V7:
+    Name: SLUV
+    Units: C remaining
+    Description: "Litter organic matter percentage remaining at harvest time with enhancing UV-B at the growth stage"
+    LitterType: LitterType6
+    UVBEnhancing: "low"
+ V8:
+    Name: SMUV
+    Units: C remaining
+    Description: "Litter organic matter percentage remaining at harvest time with enhancing UV-B at the growth stage"
+    LitterType: LitterType7
+    UVBEnhancing: "medium"
+ V9:
+    Name: SHUV
+    Units: C remaining
+    Description: "Litter organic matter percentage remaining at harvest time with enhancing UV-B at the growth stage"
+    LitterType: LitterType8
+    UVBEnhancing: "maximum"

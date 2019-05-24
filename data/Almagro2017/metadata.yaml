@@ -1,0 +1,291 @@
+CitationKey: Almagro2017
+doi: 10.1007/s10021-016-0036-5
+EntryAuthor: Ignacio Siebenhart
+
+SiteInfo:
+ Name:
+   - "Aranjuez, Spain"
+   - "Sorbas, Spain"
+ EcosistemType:
+   - grassland
+   - grassland
+ MAP:
+  Value:
+   - 362
+   - 248
+  Units: mm
+ MAT:
+  Value:
+    - 15.0
+    - 16.5
+  Units: Celsius
+ RainySeason:
+   - spring and autumn
+   - spring and autumn
+ Altitude:
+  Value:
+    - 590
+    - 397
+  Units: masl
+ SoilType:
+   - Gypsiric Leptosols
+   - Gypsiric Leptosols
+ Coordinates:
+  Latitude:
+    - 40.0166667
+    - 37.0833333
+  Longitude:
+    - 3.5166666666666666
+    - -2.066666666666667
+ExperimentInfo:
+ LitterInfo:
+  LitterType1:
+   Species: Stipa tenacissima
+   Lifeform: graminoid
+   Material: recently senesced leaves
+   Carbon:
+    Value: 47.28
+    Units: percentage
+   Nitrogen:
+    Value: 0.18
+    Units: percentage
+   C:N:
+    Value: 258.89
+   Cell solubles:
+    Value: 17.44
+    Units: percentage
+   Hemicellulose:
+    Value: 27.87
+    Units: percentage
+   Cellulose:
+    Value: 49.68
+    Units: percentage
+   Lignin:
+    Value: 5.00
+    Units: percentage
+   Lignin:N:
+    Value: 27.37
+   Water Holding Capacity:
+    Value: 55.03
+    Units: percentage
+    Amount:
+     Value: 2
+     Units: g
+  LitterType2:
+   Species: Retama sphaerocarpa
+   Lifeform: shrub
+   Material: standing senescent leaves
+   Carbon:
+    Value: 48.76
+    Units: percentage
+   Nitrogen:
+    Value: 2.88
+    Units: percentage
+   C:N:
+    Value: 16.94
+   Cell solubles:
+    Value: 49.90
+    Units: percentage
+   Hemicellulose:
+    Value: 12.43
+    Units: percentage
+   Cellulose:
+    Value: 24.35
+    Units: percentage
+   Lignin:
+    Value: 13.31
+    Units: percentage
+   Lignin:N:
+    Value: 4.62
+   Ash content:
+    Value: 4.57
+    Units: percentage
+   Water Holding Capacity:
+    Value: 131.41
+    Units: percentage
+   Amount:
+     Value: 2
+     Units: g
+ Experiment1:
+  Description: "They used a fully factorial experiment to asses the efect of three factors UV radiation, position, and litter quality "
+  LitterBagInfo:
+   Material:
+     - polyethylene
+     - window screen
+   MeshSize:
+    Value:
+      - 2.6
+      - 1.4
+    Units: mm
+   Dimentions:
+    Width: 10
+    Lenght: 10
+    Units: cm
+   Position:
+    Position1: on the ground
+    Position2: suspended 15 cm
+   UVTransmitance:
+     Value: 90
+     Units: percentage
+   PARTransmitance:
+     Value: 92.5
+     Units: percentage
+  FilterInfo:
+   FilterType1:
+    Name: acrylic
+    UVTransmitance:
+     Value: 90
+     Units: percentage
+    PARTransmitance:
+     Value: 97
+     Units: percentage
+   FilterType2:
+    Name: polycarbonate
+    UVTransmitance:
+     Value: 10
+     Units: percentage
+    PARTransmitance:
+     Value: 92
+     Units: percentage
+  Treatment:
+   - light attenuation
+   - litterbag position
+  Starting Date:
+   Month: July
+   Season: summer
+  Duration:
+   Time: 15
+   Units: months
+
+Variable:
+  V1:
+    Name: Time
+    Units: months
+  V2:
+    Name: CSUVPG
+    Units: non-ash dry mass remaining
+    Description: "Litter organic matter percentage remaining at harvest time with UV-B total solar radiation and positioned on the ground at Continental Site"
+    LitterType: LitterType1
+    FilterType: FilterType1
+    Position: Position1
+    Site: "Aranjuez, Spain"
+  V3:
+    Name: CSUVBG
+    Units: non-ash dry mass remaining
+    Description: "Litter organic matter percentage remaining at harvest time with UV-B solar radiation blocked and positioned on the ground at Continental Site"
+    LitterType: LitterType1
+    FilterType: FilterType2
+    Position: Position1
+    Site: "Aranjuez, Spain"
+  V4:
+    Name: CSUVPS
+    Units: non-ash dry mass remaining
+    Description: "Litter organic matter percentage remaining at harvest time with UV-B total solar radiation and standing position at Continental Site"
+    LitterType: LitterType1
+    FilterType: FilterType1
+    Position: Position2
+    Site: "Aranjuez, Spain"
+  V5:
+    Name: CSUVBS
+    Units: non-ash dry mass remaining
+    Description: "Litter organic matter percentage remaining at harvest time with UV-B solar radiation blocked and standing position at Continental Site"
+    LitterType: LitterType1
+    FilterType: FilterType2
+    Position: Position2
+    Site: "Aranjuez, Spain"
+  V6:
+    Name: CRUVPG
+    Units: non-ash dry mass remaining
+    Description: "Litter organic matter percentage remaining at harvest time with UV-B total solar radiation and positioned on the ground at Continental Site"
+    LitterType: LitterType2
+    FilterType: FilterType1
+    Position: Position1
+    Site: "Aranjuez, Spain"
+  V7:
+    Name: CRUVBG
+    Units: non-ash dry mass remaining
+    Description: "Litter organic matter percentage remaining at harvest time with UV-B solar radiation blocked and positioned on the ground at Continental Site"
+    LitterType: LitterType2
+    FilterType: FilterType2
+    Position: Position1
+    Site: "Aranjuez, Spain"
+  V8:
+    Name: CRUVPS
+    Units: non-ash dry mass remaining
+    Description: "Litter organic matter percentage remaining at harvest time with UV-B total solar radiation and standing position at Continental Site"
+    LitterType: LitterType2
+    FilterType: FilterType1
+    Position: Position2
+    Site: "Aranjuez, Spain"
+  V9:
+    Name: CRUVBS
+    Units: non-ash dry mass remaining
+    Description: "Litter organic matter percentage remaining at harvest time with UV-B total solar radiation and standing position at Continental Site"
+    LitterType: LitterType2
+    FilterType: FilterType2
+    Position: Position2
+    Site: "Aranjuez, Spain"
+  V10:
+     Name: MSUVPG
+     Units: non-ash dry mass remaining
+     Description: "Litter organic matter percentage remaining at harvest time with UV-B total solar radiation and positioned on the ground at Maritime Site"
+     LitterType: LitterType1
+     FilterType: FilterType1
+     Position: Position1
+     Site: "Sorbas, Spain"
+  V11:
+     Name: MSUVBG
+     Units: non-ash dry mass remaining
+     Description: "Litter organic matter percentage remaining at harvest time with UV-B solar radiation blocked and positioned on the ground at Maritime Site"
+     LitterType: LitterType1
+     FilterType: FilterType2
+     Position: Position1
+     Site: "Sorbas,Spain"
+  V12:
+     Name: MSUVPS
+     Units: non-ash dry mass remaining
+     Description: "Litter organic matter percentage remaining at harvest time with UV-B total solar radiation and standing position at Maritime Site"
+     LitterType: LitterType1
+     FilterType: FilterType1
+     Position: Position2
+     Site: "Sorbas, Spain"
+  V13:
+     Name: MSUVBS
+     Units: non-ash dry mass remaining
+     Description: "Litter organic matter percentage remaining at harvest time with UV-B solar radiation blocked and standing position at Maritime Site"
+     LitterType: LitterType1
+     FilterType: FilterType2
+     Position: Position2
+     Site: "Sorbas, Spain"
+  V14:
+     Name: MRUVPG
+     Units: non-ash dry mass remaining
+     Description: "Litter organic matter percentage remaining at harvest time with UV-B total solar radiation and positioned on the ground at Maritime Site"
+     LitterType: LitterType2
+     FilterType: FilterType1
+     Position: Position1
+     Site: "Sorbas, Spain"
+  V15:
+     Name: MRUVBG
+     Units: non-ash dry mass remaining
+     Description: "Litter organic matter percentage remaining at harvest time with UV-B solar radiation blocked and positioned on the ground at Maritime Site"
+     LitterType: LitterType2
+     FilterType: FilterType2
+     Position: Position1
+     Site: "Sorbas, Spain"
+  V16:
+     Name: MRUVPS
+     Units: non-ash dry mass remaining
+     Description: "Litter organic matter percentage remaining at harvest time with UV-B total solar radiation and standing position on the ground at Maritime Site"
+     LitterType: LitterType2
+     FilterType: FilterType1
+     Position: Position2
+     Site: "Sorbas, Spain"
+  V17:
+     Name: MRUVBS
+     Units: non-ash dry mass remaining
+     Description: "Litter organic matter percentage remaining at harvest time with UV-B total radiation blocked and standing position on the ground at Maritime Site"
+     LitterType: LitterType2
+     FilterType: FilterType2
+     Position: Position2
+     Site: "Sorbas, Spain"

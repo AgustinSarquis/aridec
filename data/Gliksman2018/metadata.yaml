@@ -1,0 +1,162 @@
+CitationKey: Gliksman2018
+doi: 10.1111/1365-2435.13018
+EntryAuthor: Ignacio Siebenhart
+
+SiteInfo:
+ Name: "Ramat Hanadiv Nature Park, Haifa, Israel"
+ MAP:
+  Value: 530
+  Units: mm
+ MAT:
+  Value: 21.0
+  Units: Celsius
+ RainySeason: winter
+ Altitude:
+  Value: 120
+  Units: masl
+ Coordinates:
+  Latitude: 32.5
+  Longitude: 43.166666666666664
+
+ExperimentInfo:
+ LitterInfo:
+  LitterType1:
+   Species: Phillyrea latifolia
+   Lifeform: shrub
+   Material: recently senesced leaves
+   Carbon:
+    Value: 49.5
+    Units: percentage
+   Nitrogen:
+    Value: 0.88
+    Units: percentage
+   C:N:
+    Value: 56.3
+   Lignin:
+    Value: 20.3
+    Units: percentage
+   Amount:
+     Value: 2.5
+     Units: g
+  LitterType2:
+   Species: Calicotome villosa
+   Lifeform: shrub
+   Material: recently senesced leaves
+   Carbon:
+    Value: 46.2
+    Units: percentage
+   Nitrogen:
+    Value: 2.47
+    Units: percentage
+   C:N:
+    Value: 18.7
+   Lignin:
+    Value: 18.9
+    Units: percentage
+   Amount:
+    Value: 2.5
+    Units: g
+  LitterType3:
+   Species: Avena sterilis
+   Lifeform: graminoid
+   Material: recently senesced leaves
+   Carbon:
+    Value: 43.1
+    Units: percentage
+   Nitrogen:
+    Value: 0.82
+    Units: percentage
+   C:N:
+    Value: 54.1
+   Lignin:
+    Value: 8.9
+    Units: percentage
+   Amount:
+     Value: 2.5
+     Units: g
+  LitterType4:
+   Species: Triticum aestivum
+   Lifeform: crop
+   Material: recently senesced leaves
+   Carbon:
+    Value: 43.9
+    Units: percentage
+   Nitrogen:
+    Value: 0.62
+    Units: percentage
+   C:N:
+    Value: 71.4
+   Lignin:
+    Value: 6.0
+    Units: percentage
+   Amount:
+    Value: 2.5
+    Units: g
+ Experiment1:
+  Description:
+  LitterBagInfo:
+   Material: fiberglass
+   MeshSize:
+    Value: 1
+    Units: mm
+   Dimentions:
+    Width: 12
+    Lenght: 12
+    Units: cm
+   Position:
+    Position1: under shrub
+    Position2: under shrub
+    Position3: open intershrub patches
+   Transmitance:
+    Value: 90
+    Units: percentage
+  Treatment:
+   - succesive introduction
+   - litter type
+  StartingDate:
+   Month: june
+   Season: summer
+  Duration:
+   Time: 9
+   Units: months
+
+Variables:
+  V1:
+    Name: Time
+    Units: months
+  V2:
+    Name: EVL
+    Units: mass remaining
+    Description: "Local litter organic matter percentage remaining at harvest time positioned on evergreen microsite"
+    Position: Position1
+    LitterType: LitterType1
+  V3:
+    Name: DEL
+    Units: mass remaining
+    Description: "Local litter organic matter percentage remaining at harvest time positioned on deciduous microsite"
+    Position: Position2
+    LitterType: LitterType2
+  V4:
+    Name: OPL
+    Units: mass remaining
+    Description: "Local litter organic matter percentage remaining at harvest time positioned on open microsite"
+    Position: Position3
+    LitterType: LitterType3
+  V5:
+    Name: EVS
+    Units: mass remaining
+    Description: "Standard litter organic matter percentage remaining at harvest time positioned on evergreen microsite"
+    Position: Position1
+    LitterType: LitterType4
+  V6:
+    Name: DES
+    Units: mass remaining
+    Description: "Standard litter organic matter percentage remaining at harvest time positioned on deciduous microsite"
+    Position: Position2
+    LitterType: LitterType4
+  V7:
+    Name: OPS
+    Units: mass remaining
+    Description: "Standar litter organic matter percentage remaining at harvest time positioned on open microsite"
+    Position: Position3
+    LitterType: LitterType4

@@ -1,0 +1,102 @@
+CitationKey: MacAuley1975
+doi: https://doi.org/10.1016/0038-0717(75)90046-2
+EntryAuthor: Ignacio Siebenhart
+
+SiteInfo:
+ Name: Kosciuszko National Park, New South Wales, Australia
+ MAP:
+  Value: 827.88
+  Units: mm
+ MAT:
+  Value: 10.4
+  Units: Celsius
+ Altitude:
+  Value: 1500
+  Units: masl
+ Coordinates:
+  Latitude: -36.5048
+  Longitude: 148.3021
+
+ExperimentInfo:
+ LitterInfo:
+  LitterType1:
+   Species: Eucalyptus pauciflora
+   LifeForm: tree
+   Material: leaves
+ Experiment1:
+  Description: They evaluate the role of insects and fungi in decomposition through three mesh size treatments and biocide application.
+  LitterBagInfo:
+   Material: polyester
+   MeshSize:
+    MeshSize1:
+     Value: 0.5
+     Units: mm
+    MeshSize2:
+     Value: 1
+     Units: mm
+    MeshSize3:
+     Value: 5
+     Units: mm
+    Dimentions:
+     Width: 30
+     Lenght: 40
+     Units: cm
+   Position:
+    - on top of soil litter layer
+    - bare soil
+  Treatment: 4
+    - soil fauna exclusion
+    - biocide application
+  StartingDate:
+   Month: november
+   Season: spring
+  Duration:
+   Time: 12
+   Units: months
+
+Variables:
+  V1:
+    Name: Time
+    Units: weeks
+  V2:
+    Name: FM
+    Units: mass remaining
+    Description: "Litter organic matter percentage remaining at harvest time with a small mesh size"
+    MeshSize: MeshSize1
+    BiocideApplication: "none"
+  V3:
+    Name: MM
+    Units: mass remaining
+    Description: "Litter organic matter percentage remaining at harvest time with a medium mesh size"
+    MeshSize: MeshSize2
+    BiocideApplication: "none"
+  V4:
+    Name: LM
+    Units: mass remaining
+    Description: "Litter organic matter percentage remaining at harvest time with a large mesh size"
+    MeshSize: MeshSize3
+    BiocideApplication: "none"
+  V5:
+    Name: BEN
+    Units: mass remaining
+    Description: "Litter organic matter percentage remaining at harvest time with fungicide"
+    MeshSize: MeshSize3
+    BiocideApplication: "Benomyl fungicide"
+  V6:
+    Name: ZIN
+    Units: mass remaining
+    Description: "Litter organic matter percentage remaining at harvest time with fungicide "
+    MeshSize: MeshSize3
+    BiocideApplication: "Zineb fungicide"
+  V7:
+    Name: DDT
+    Units: mass remaining
+    Description: "Litter organic matter percentage remaining at harvest time with insecticide"
+    MeshSize: MeshSize3
+    BiocideApplication: "DDT insecticide"
+  V8:
+    Name: DIE
+    Units: mass remaining
+    Description: "Litter organic matter percentage remaining at harvest time with insecticide"
+    MeshSize: MeshSize3
+    BiocideApplication: "Dieldrin insecticide"
