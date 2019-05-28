@@ -1,0 +1,82 @@
+CitationKey: Wang2017b
+doi: 10.1111/1365-2435.12854
+EntryAuthor: Agustín Sarquis
+
+SiteInfo:
+  Name: Duolun, Inner Mongolia, China
+  EcosystemType: steppe
+  MAP:
+    Value: 378
+    Units: mm
+  MAT:
+    Value: 2.1
+    Units: Celsius
+  RainySeason: summer
+  Altitude:
+    Value: 1324
+    Units: masl
+  SoilType: Haplic Calcisols
+  Coordinates:
+    Latitude: 42.03
+    Longitude: 116.283
+
+ExperimentInfo:
+ LitterInfo:
+  LitterType1:
+   Species: Cleistogenes squarrosa
+   LifeForm: graminoid
+   Material: recently senesced leaves
+   DOC:
+     Value: 12.44
+     Units: mg.g-1
+   Nitrogen:
+     Value: 0.64
+     Units: percentage
+   C:N:
+     Value: 65.8
+   Carbon:
+     Value: 42.11
+     Units: percentage
+   Amount:
+     Value: 2
+     Units: g
+ Experiment1:
+    Description: "An in situ litter decomposition experiment simulating standing lit- ter and soil surface litter was conducted in Inner Mongolia, China."
+    LitterBagInfo:
+      Material: nylon
+      MeshSize:
+       Value: 1.22
+       Units: mm
+      Dimentions:
+       Width: 10
+       Lenght: 15
+       Units: cm
+      Position:
+        Position1:
+          - under frames
+          - suspended 10 cm
+        Position2:
+          - under frames
+          - bare soil
+    Treatment: position
+    StartingDate:
+      Month: may
+      Season: spring
+    Duration:
+      Time: 26
+      Units: months
+
+Variables:
+  V1:
+    Name: Time
+    Units: days
+  V2:
+    Name: Standing
+    Units: mass remaining
+    Description: "C. squarrosa leaf litter was incubated suspended 10 cm for 787 days"
+    Position: Position1
+  V3:
+    Name: Surface
+    Units: mass remaining
+    Description: "C. squarrosa leaf litter was incubated on the soil surface for 787 days"
+    Position: Position2
