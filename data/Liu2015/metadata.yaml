@@ -46,7 +46,6 @@ ExperimentInfo:
     Units: percentage
   C:N:
     Value: 36.914
-    Units: unitless
   Amount:
    Value: 0.5
    Units: g

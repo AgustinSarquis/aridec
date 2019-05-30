@@ -72,7 +72,6 @@ ExperimentInfo:
      Units: percentage
    C:N:
      Value: 35.4
-     Units: unitless
    Amount:
      Value: 2
      Units: g
@@ -112,7 +111,6 @@ ExperimentInfo:
      Units: percentage
    C:N:
      Value: 53.0
-     Units: unitless
    Amount:
      Value: 2
      Units: g

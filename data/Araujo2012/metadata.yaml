@@ -51,7 +51,7 @@ ExperimentInfo:
       Dimentions:
        Width: 25
        Lenght: 8
-       Hight: 1
+       Height: 1
        Units: cm
       Position:
         - bare soil
@@ -74,7 +74,7 @@ ExperimentInfo:
       Dimentions:
        Width: 25
        Lenght: 8
-       Hight: 1
+       Height: 1
        Units: cm
       Position:
         - bare soil

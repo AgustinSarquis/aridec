@@ -38,7 +38,6 @@ ExperimentInfo:
      Units: percentage
    C:N:
      Value: 26.3
-     Units: unitless
    Lignin:
      Value: 9.0
      Units: percentage
@@ -50,7 +49,6 @@ ExperimentInfo:
      Units: percentage
    Lignin:N:
      Value: 5.4
-     Units: unitless
    SLA:
      Value: 2.93
      Units: mm2.mg-1
@@ -69,7 +67,6 @@ ExperimentInfo:
      Units: percentage
    C:N:
      Value: 13.6
-     Units: unitless
    Lignin:
      Value: 8.9
      Units: percentage
@@ -81,7 +78,6 @@ ExperimentInfo:
      Units: percentage
    Lignin:N:
      Value: 2.8
-     Units: unitless
    SLA:
      Value: 9.10
      Units: mm2.mg-1
@@ -100,7 +96,6 @@ ExperimentInfo:
      Units: percentage
    C:N:
      Value: 12.9
-     Units: unitless
    Lignin:
      Value: 13.5
      Units: percentage
@@ -112,7 +107,6 @@ ExperimentInfo:
      Units: percentage
    Lignin:N:
      Value: 3.7
-     Units: unitless
    SLA:
      Value: 11.32
      Units: mm2.mg-1
@@ -131,7 +125,6 @@ ExperimentInfo:
      Units: percentage
    C:N:
      Value: 21.2
-     Units: unitless
    Lignin:
      Value: 4.4
      Units: percentage
@@ -143,7 +136,6 @@ ExperimentInfo:
      Units: percentage
    Lignin:N:
      Value: 2.0
-     Units: unitless
    SLA:
      Value: 5.95
      Units: mm2.mg-1
@@ -162,7 +154,6 @@ ExperimentInfo:
      Units: percentage
    C:N:
      Value: 18.9
-     Units: unitless
    Lignin:
      Value: 4.9
      Units: percentage
@@ -174,7 +165,6 @@ ExperimentInfo:
      Units: percentage
    Lignin:N:
      Value: 2.0
-     Units: unitless
    SLA:
      Value: 6.55
      Units: mm2.mg-1
@@ -193,7 +183,6 @@ ExperimentInfo:
      Units: percentage
    C:N:
      Value: 29.5
-     Units: unitless
    Lignin:
      Value: 2.8
      Units: percentage
@@ -205,7 +194,6 @@ ExperimentInfo:
      Units: percentage
    Lignin:N:
      Value: 2.1
-     Units: unitless
    SLA:
      Value: 4.68
      Units: mm2.mg-1
@@ -224,7 +212,6 @@ ExperimentInfo:
      Units: percentage
    C:N:
      Value: 16.2
-     Units: unitless
    Lignin:
      Value: 5.0
      Units: percentage
@@ -236,7 +223,6 @@ ExperimentInfo:
      Units: percentage
    Lignin:N:
      Value: 2.1
-     Units: unitless
    SLA:
      Value: 5.05
      Units: mm2.mg-1
@@ -255,7 +241,6 @@ ExperimentInfo:
      Units: percentage
    C:N:
      Value: 17.0
-     Units: unitless
    Lignin:
      Value: 2.8
      Units: percentage
@@ -267,7 +252,6 @@ ExperimentInfo:
      Units: percentage
    Lignin:N:
      Value: 1.3
-     Units: unitless
    SLA:
      Value: 6.88
      Units: mm2.mg-1
@@ -286,7 +270,6 @@ ExperimentInfo:
      Units: percentage
    C:N:
      Value: 22.4
-     Units: unitless
    Lignin:
      Value: 1.3
      Units: percentage
@@ -298,7 +281,6 @@ ExperimentInfo:
      Units: percentage
    Lignin:N:
      Value: 0.7
-     Units: unitless
    SLA:
      Value: 6.42
      Units: mm2.mg-1
@@ -317,7 +299,6 @@ ExperimentInfo:
      Units: percentage
    C:N:
      Value: 72.1
-     Units: unitless
    Lignin:
      Value: 2.0
      Units: percentage
@@ -329,7 +310,6 @@ ExperimentInfo:
      Units: percentage
    Lignin:N:
      Value: 3.4
-     Units: unitless
    SLA:
      Value: 10.67
      Units: mm2.mg-1
@@ -348,7 +328,6 @@ ExperimentInfo:
      Units: percentage
    C:N:
      Value: 30.8
-     Units: unitless
    Lignin:
      Value: 2.4
      Units: percentage
@@ -360,7 +339,6 @@ ExperimentInfo:
      Units: percentage
    Lignin:N:
      Value: 1.8
-     Units: unitless
    SLA:
      Value: 11.42
      Units: mm2.mg-1
@@ -379,7 +357,6 @@ ExperimentInfo:
      Units: percentage
    C:N:
      Value: 43.7
-     Units: unitless
    Lignin:
      Value: 2.0
      Units: percentage
@@ -391,7 +368,6 @@ ExperimentInfo:
      Units: percentage
    Lignin:N:
      Value: 1.9
-     Units: unitless
    SLA:
      Value: 5.19
      Units: mm2.mg-1

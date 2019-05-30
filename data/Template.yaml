@@ -48,12 +48,12 @@ ExperimentInfo:
       Dimentions:
        Width:
        Lenght:
-       Hight:
+       Height:
        Units: cm
       Position: adjacent to grass clumps, under cut tree, under rainout shelter, under frames, decomposition bed, covered in litter, suspended 1/60 cm over bare soil, on top of soil litter layer, underwater pinned to riverbed, under tree, under sparse tree crown, bare soil, vegetated soil, under shrub, under shadecloth, buried 5/10 cm deep
     FilterInfo:
       FilterType1:
-        Name: UV-transparent acrylic, UV-absorbing polycarbonate, shadecloth, Aclar, Mylar, Courtgard, Mylar with paint, polyester film, Solacryl SUVT, Clear UV Filter, Amber UV Filter
+        Name: UV-transparent acrylic, UV-absorbing polycarbonate, shadecloth, Aclar, Mylar, Courtgard, Mylar with paint, polyester film, Solacryl SUVT, Clear UV Filter, Amber UV Filter, Plexiglass
         Wavelenght:
           Value: 280, 315, 387, 400, 545, 700
           Units: nm

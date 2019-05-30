@@ -27,7 +27,6 @@ ExperimentInfo:
    Material: recently senesced leaves
    C:N:
      Value: 96.2
-     Units: unitless
    Phosphorus:
      Value: 0.11
      Units: percentage
@@ -39,7 +38,6 @@ ExperimentInfo:
      Units: percentage
    Lignin:N:
      Value: 40.5
-     Units: unitless
    Amount:
      Amount1:
       Value: 2.5
@@ -53,7 +51,6 @@ ExperimentInfo:
    Material: prematurely senesced leaves
    C:N:
      Value: 82.3
-     Units: unitless
    Phosphorus:
      Value: 0.11
      Units: percentage
@@ -65,7 +62,6 @@ ExperimentInfo:
      Units: percentage
    Lignin:N:
      Value: 35.5
-     Units: unitless
    Amount:
      Amount1:
       Value: 2.5
@@ -79,7 +75,6 @@ ExperimentInfo:
    Material: live roots
    C:N:
      Value: 92.7
-     Units: unitless
    Phosphorus:
      Value: 0.10
      Units: percentage
@@ -91,7 +86,6 @@ ExperimentInfo:
      Units: percentage
    Lignin:N:
      Value: 31.6
-     Units: unitless
    Amount:
      Value: 1.25
      Units: g
@@ -101,7 +95,6 @@ ExperimentInfo:
    Material: live roots
    C:N:
      Value: 102.6
-     Units: unitless
    Phosphorus:
      Value: 0.10
      Units: percentage
@@ -113,7 +106,6 @@ ExperimentInfo:
      Units: percentage
    Lignin:N:
      Value: 34.6
-     Units: unitless
    Amount:
      Value: 1.25
      Units: g
@@ -123,7 +115,6 @@ ExperimentInfo:
    Material: recently senesced leaves
    C:N:
      Value: 99.9
-     Units: unitless
    Phosphorus:
      Value: 0.12
      Units: percentage
@@ -135,7 +126,6 @@ ExperimentInfo:
      Units: percentage
    Lignin:N:
      Value: 38.0
-     Units: unitless
    Amount:
      Amount1:
       Value: 2.5
@@ -149,7 +139,6 @@ ExperimentInfo:
    Material: prematurely senesced leaves
    C:N:
      Value: 64.2
-     Units: unitless
    Phosphorus:
      Value: 0.17
      Units: percentage
@@ -161,7 +150,6 @@ ExperimentInfo:
      Units: percentage
    Lignin:N:
      Value: 22.5
-     Units: unitless
    Amount:
      Amount1:
       Value: 2.5
@@ -175,7 +163,6 @@ ExperimentInfo:
    Material: live roots
    C:N:
      Value: 100.6
-     Units: unitless
    Phosphorus:
      Value: 0.11
      Units: percentage
@@ -187,7 +174,6 @@ ExperimentInfo:
      Units: percentage
    Lignin:N:
      Value: 33.0
-     Units: unitless
    Amount:
      Value: 0.625
      Units: g
@@ -197,7 +183,6 @@ ExperimentInfo:
    Material: live roots
    C:N:
      Value: 92.5
-     Units: unitless
    Phosphorus:
      Value: 0.11
      Units: percentage
@@ -209,7 +194,6 @@ ExperimentInfo:
      Units: percentage
    Lignin:N:
      Value: 35.0
-     Units: unitless
    Amount:
      Value: 0.625
      Units: g

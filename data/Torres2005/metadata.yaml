@@ -56,7 +56,7 @@ ExperimentInfo:
       Dimentions:
        Width: 50
        Lenght: 50
-       Hight: 10
+       Height: 10
        Units: cm
     StartingDate:
       Month: july

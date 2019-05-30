@@ -35,13 +35,10 @@ ExperimentInfo:
       Units: percentage
    C:N:
       Value: 49
-      Units: unitless
    Lignin:N:
       Value: 8.7
-      Units: unitless
    Lignin:P:
       Value: 370
-      Units: unitless
    Amount:
      Value: 5
      Units: g
@@ -60,13 +57,10 @@ ExperimentInfo:
       Units: percentage
    C:N:
       Value: 23
-      Units: unitless
    Lignin:N:
       Value: 2.7
-      Units: unitless
    Lignin:P:
       Value: 82
-      Units: unitless
    Amount:
      Value: 5
      Units: g
@@ -85,13 +79,10 @@ ExperimentInfo:
       Units: percentage
    C:N:
       Value: 26
-      Units: unitless
    Lignin:N:
       Value: 2.4
-      Units: unitless
    Lignin:P:
       Value: 63
-      Units: unitless
    Amount:
      Value: 5
      Units: g
@@ -110,13 +101,10 @@ ExperimentInfo:
       Units: percentage
    C:N:
       Value: 38
-      Units: unitless
    Lignin:N:
       Value: 17
-      Units: unitless
    Lignin:P:
       Value: 447
-      Units: unitless
    Amount:
      Value: 5
      Units: g
@@ -135,13 +123,10 @@ ExperimentInfo:
       Units: percentage
    C:N:
       Value: 27
-      Units: unitless
    Lignin:N:
       Value: 12
-      Units: unitless
    Lignin:P:
       Value: 237
-      Units: unitless
    Amount:
      Value: 5
      Units: g
@@ -160,13 +145,10 @@ ExperimentInfo:
       Units: percentage
    C:N:
       Value: 35
-      Units: unitless
    Lignin:N:
       Value: 11
-      Units: unitless
    Lignin:P:
       Value: 227
-      Units: unitless
    Amount:
      Value: 5
      Units: g

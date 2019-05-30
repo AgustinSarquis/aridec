@@ -34,7 +34,6 @@ ExperimentInfo:
      Units: percentage
    C:N:
      Value: 19.10
-     Units: unitless
    Phosphorus:
      Value: 0.006
      Units: percentage
@@ -62,7 +61,6 @@ ExperimentInfo:
      Units: percentage
    C:N:
      Value: 25.21
-     Units: unitless
    Phosphorus:
      Value: 0.345
      Units: percentage
@@ -90,7 +88,6 @@ ExperimentInfo:
      Units: percentage
    C:N:
      Value: 17.60
-     Units: unitless
    Phosphorus:
      Value: 0.007
      Units: percentage
@@ -118,7 +115,6 @@ ExperimentInfo:
      Units: percentage
    C:N:
      Value: 26.51
-     Units: unitless
    Phosphorus:
      Value: 0.005
      Units: percentage
@@ -146,7 +142,6 @@ ExperimentInfo:
      Units: percentage
    C:N:
      Value: 16.64
-     Units: unitless
    Phosphorus:
      Value: 0.004
      Units: percentage

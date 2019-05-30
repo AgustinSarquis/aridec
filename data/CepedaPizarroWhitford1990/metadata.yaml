@@ -29,7 +29,6 @@ ExperimentInfo:
    Material: leaves
    C:N:
      Value: 26.7
-     Units: unitless
    Lignin:
      Value: 10.6
      Units: percentage
@@ -52,7 +51,6 @@ ExperimentInfo:
    Material: leaves
    C:N:
      Value: 16.1
-     Units: unitless
    Lignin:
      Value: 7.85
      Units: percentage
@@ -65,7 +63,6 @@ ExperimentInfo:
    Material: aboveground parts
    C:N:
      Value: 24.2
-     Units: unitless
    Lignin:
      Value: 6.9
      Units: percentage
@@ -78,7 +75,6 @@ ExperimentInfo:
    Material: aboveground parts
    C:N:
      Value: 59.9
-     Units: unitless
    Lignin:
      Value: 7.6
      Units: percentage

@@ -5,10 +5,10 @@ EntryAuthor: Ignacio Siebenhart
 SiteInfo:
  Name: Abisko, Lapland, Sweden
  MAP:
-  Value: 1320
+  Value: 304
   Units: mm
  MAT:
-  Value: 5.43
+  Value: 11
   Units: Celsius
  Altitude:
   Value: 360
@@ -27,9 +27,11 @@ ExperimentInfo:
      Value: 0.25
      Units: g
  Experiment1:
+  Description: "V. myrtillus shrubs were grown under ambient and enhanced UV radiation and its leaf litter was incubated under ambient and enhanced UV radiation for a year"
   LitterBagInfo:
   Material: plexiglass
   Dimentions:
+   Diameter: 5
    Hight: 2
    Units: cm
   Position: on the ground

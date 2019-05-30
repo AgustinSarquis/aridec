@@ -1,0 +1,324 @@
+CitationKey: Huang2017
+doi: 10.1016/j.scitotenv.2017.05.213
+EntryAuthor: Agustín Sarquis
+
+SiteInfo:
+  Name:
+    - Gurbantunggut Desert (margin), China
+    - Gurbantunggut Desert (center), China
+    - Turpan Desert, China
+  EcosystemType:
+    - desert
+    - desert
+    - desert
+  MAP:
+    Value:
+      - 144
+      - 76
+      - 16
+    Units: mm
+  MAT:
+    Value:
+      - 6.6
+      - 7.3
+      - 13.9
+    Units: Celsius
+  RainySeason:
+    - summer
+    - spring
+  Altitude:
+    Value:
+      - 460
+      - 507
+      - 86
+    Units: masl
+  SoilType:
+    - desert solonetz
+    - desert solonetz
+    - Aeolian
+  PlantCover:
+    ForbCover:
+      - 40
+      - 20
+    ShrubCover:
+      - 30
+      -
+      - 3
+    Units: percentage
+  Coordinates:
+    Latitude:
+      - 44.367
+      - 45.25
+      - 40.85
+    Longitude:
+      - 87.917
+      - 87.6
+      - 98.183
+
+ExperimentInfo:
+ LitterInfo:
+  LitterType1:
+   Species: Haloxylon ammodendron
+   LifeForm: shrub
+   Material: recently senesced leaves
+   Carbon:
+     Value: 29.07
+     Units: percentage
+   Nitrogen:
+     Value: 1.35
+     Units: percentage
+   Phosphorus:
+     Value: 0.077
+     Units: percentage
+   C:N:
+     Value: 21.4
+   CellSolubles:
+     Value: 34.7
+     Units: percentage
+   Hemicellulose:
+     Value: 13.0
+     Units: percentage
+   Cellulose:
+     Value: 20.6
+     Units: percentage
+   Lignin:
+     Value: 6.3
+     Units: percentage
+   Amount:
+     Value: 10
+     Units: g
+  LitterType2:
+   Species: Phragmites australis
+   LifeForm: graminoid
+   Material: recently senesced leaves
+   Carbon:
+     Value: 38.03
+     Units: percentage
+   Nitrogen:
+     Value: 1.21
+     Units: percentage
+   Phosphorus:
+     Value: 0.10
+     Units: percentage
+   C:N:
+     Value: 32.3
+   CellSolubles:
+     Value: 26.8
+     Units: percentage
+   Hemicellulose:
+     Value: 24.9
+     Units: percentage
+   Cellulose:
+     Value: 28.3
+     Units: percentage
+   Lignin:
+     Value: 3.1
+     Units: percentage
+   Amount:
+     Value: 10
+     Units: g
+  LitterType3:
+   Species: Tritricum aestivum
+   LifeForm: crop
+   Material: stems
+   Carbon:
+     Value: 39.04
+     Units: percentage
+   Nitrogen:
+     Value: 4.3
+     Units: percentage
+   Phosphorus:
+     Value: 0.08
+     Units: percentage
+   C:N:
+     Value: 89.1
+   CellSolubles:
+     Value: 15.3
+     Units: percentage
+   Hemicellulose:
+     Value: 28.8
+     Units: percentage
+   Cellulose:
+     Value: 40.8
+     Units: percentage
+   Lignin:
+     Value: 6.9
+     Units: percentage
+   Amount:
+     Value: 10
+     Units: g
+ Experiment1:
+    Description: "Three litters were decomposed under full spectrum sun- light and UV filtering from solar radiation at three sites with contrasting precipitation amounts for 2.5 years."
+    LitterBagInfo:
+      Material: fiberglass
+      MeshSize:
+       Value: 1.22
+       Units: mm
+      Dimentions:
+       Width: 10
+       Lenght: 25
+       Units: cm
+      PARTransmitance:
+        Value: 87
+        Units: percentage
+      UVTransmitance:
+        Value: 80
+        Units: percentage
+      Position:
+        - under frames
+        - bare soil
+    FilterInfo:
+      FilterType1:
+        Name: Aclar
+        Wavelenght:
+          Value: 280
+          Units: nm
+        Transmitance:
+          Value: 90
+          Units: percentage
+      FilterType2:
+        Name: Plexiglass
+        Wavelenght:
+          Value: 380
+          Units: nm
+        PARTransmitance:
+          Value: 85
+          Units: percentage
+    Treatment: light attenuation, litter type, location
+    StartingDate:
+      Month: october
+      Season: spring
+    Duration:
+      Time: 30
+      Units: months
+
+Variables:
+  V1:
+    Name: Time
+    Units: years
+  V2:
+    Name: 144HaS
+    Units: non-ash dry mass remaining
+    Description: "H. ammodendron leaf litter was incubated for 2.5 years under full solar radiation at a site with 144 mm MAP"
+    FilterType: FilterType1
+    LitterType: LitterType1
+    Site: Gurbantunggut Desert (margin), China
+  V3:
+    Name: 144HaUVf
+    Units: non-ash dry mass remaining
+    Description: "H. ammodendron leaf litter was incubated for 2.5 years under UV filters at a site with 144 mm MAP"
+    FilterType: FilterType2
+    LitterType: LitterType1
+    Site: Gurbantunggut Desert (margin), China
+  V4:
+    Name: 144PaS
+    Units: non-ash dry mass remaining
+    Description: "P. australis leaf litter was incubated for 2.5 years under full solar radiation at a site with 144 mm MAP"
+    FilterType: FilterType1
+    LitterType: LitterType2
+    Site: Gurbantunggut Desert (margin), China
+  V5:
+    Name: 144PaUVf
+    Units: non-ash dry mass remaining
+    Description: "P. australis leaf litter was incubated for 2.5 years under UV filters at a site with 144 mm MAP"
+    FilterType: FilterType2
+    LitterType: LitterType2
+    Site: Gurbantunggut Desert (margin), China
+  V6:
+    Name: 144TaS
+    Units: non-ash dry mass remaining
+    Description: "T. aestivum stem litter was incubated for 2.5 years under full solar radiation at a site with 144 mm MAP"
+    FilterType: FilterType1
+    LitterType: LitterType3
+    Site: Gurbantunggut Desert (margin), China
+  V7:
+    Name: 144TaUVf
+    Units: non-ash dry mass remaining
+    Description: "T. aestivum stem litter was incubated for 2.5 years under UV filters at a site with 144 mm MAP"
+    FilterType: FilterType2
+    LitterType: LitterType3
+    Site: Gurbantunggut Desert (margin), China
+  V8:
+    Name: 76HaS
+    Units: non-ash dry mass remaining
+    Description: "H. ammodendron leaf litter was incubated for 2.5 years under full solar radiation at a site with 76 mm MAP"
+    FilterType: FilterType1
+    LitterType: LitterType1
+    Site: Gurbantunggut Desert (center), China
+  V9:
+    Name: 76HaUVf
+    Units: non-ash dry mass remaining
+    Description: "H. ammodendron leaf litter was incubated for 2.5 years under UV filters at a site with 76 mm MAP"
+    FilterType: FilterType2
+    LitterType: LitterType1
+    Site: Gurbantunggut Desert (center), China
+  V10:
+    Name: 76PaS
+    Units: non-ash dry mass remaining
+    Description: "P. australis leaf litter was incubated for 2.5 years under full solar radiation at a site with 76 mm MAP"
+    FilterType: FilterType1
+    LitterType: LitterType2
+    Site: Gurbantunggut Desert (center), China
+  V11:
+    Name: 76PaUVf
+    Units: non-ash dry mass remaining
+    Description: "P. australis leaf litter was incubated for 2.5 years under UV filters at a site with 76 mm MAP"
+    FilterType: FilterType2
+    LitterType: LitterType2
+    Site: Gurbantunggut Desert (center), China
+  V12:
+    Name: 76TaS
+    Units: non-ash dry mass remaining
+    Description: "T. aestivum stem litter was incubated for 2.5 years under full solar radiation at a site with 76 mm MAP"
+    FilterType: FilterType1
+    LitterType: LitterType3
+    Site: Gurbantunggut Desert (center), China
+  V13:
+    Name: 76TaUVf
+    Units: non-ash dry mass remaining
+    Description: "T. aestivum stem litter was incubated for 2.5 years under UV filters at a site with 76 mm MAP"
+    FilterType: FilterType2
+    LitterType: LitterType3
+    Site: Gurbantunggut Desert (center), China
+  V14:
+    Name: 16HaS
+    Units: non-ash dry mass remaining
+    Description: "H. ammodendron leaf litter was incubated for 2.5 years under full solar radiation at a site with 16 mm MAP"
+    FilterType: FilterType1
+    LitterType: LitterType1
+    Site: Turpan Desert, China
+  V15:
+    Name: 16HaUVf
+    Units: non-ash dry mass remaining
+    Description: "H. ammodendron leaf litter was incubated for 2.5 years under UV filters at a site with 16 mm MAP"
+    FilterType: FilterType2
+    LitterType: LitterType1
+    Site: Turpan Desert, China
+  V16:
+    Name: 16PaS
+    Units: non-ash dry mass remaining
+    Description: "P. australis leaf litter was incubated for 2.5 years under full solar radiation at a site with 16 mm MAP"
+    FilterType: FilterType1
+    LitterType: LitterType2
+    Site: Turpan Desert, China
+  V17:
+    Name: 16PaUVf
+    Units: non-ash dry mass remaining
+    Description: "P. australis leaf litter was incubated for 2.5 years under UV filters at a site with 16 mm MAP"
+    FilterType: FilterType2
+    LitterType: LitterType2
+    Site: Turpan Desert, China
+  V18:
+    Name: 16TaS
+    Units: non-ash dry mass remaining
+    Description: "T. aestivum stem litter was incubated for 2.5 years under full solar radiation at a site with 16 mm MAP"
+    FilterType: FilterType1
+    LitterType: LitterType3
+    Site: Turpan Desert, China
+  V19:
+    Name: 16TaUVf
+    Units: non-ash dry mass remaining
+    Description: "T. aestivum stem litter was incubated for 2.5 years under UV filters at a site with 16 mm MAP"
+    FilterType: FilterType2
+    LitterType: LitterType3
+    Site: Turpan Desert, China

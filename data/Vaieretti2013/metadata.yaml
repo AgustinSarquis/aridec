@@ -68,10 +68,8 @@ ExperimentInfo:
       Units: percentage
     C:N:
       Value: 35.7
-      Units: unitless
     Lignin:N:
       Value: 7.1
-      Units: unitless
     LHC:
       Value: 65.8
       Units: percentage
@@ -104,10 +102,8 @@ ExperimentInfo:
       Units: percentage
     C:N:
       Value: 50.8
-      Units: unitless
     Lignin:N:
       Value: 7.5
-      Units: unitless
     LHC:
       Value: 72.1
       Units: percentage
@@ -142,10 +138,8 @@ ExperimentInfo:
       Units: percentage
     C:N:
       Value: 49.5
-      Units: unitless
     Lignin:N:
       Value: 8.5
-      Units: unitless
     LHC:
       Value: 74.5
       Units: percentage

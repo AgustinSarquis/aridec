@@ -37,7 +37,6 @@ ExperimentInfo:
      Units: percentage
    C:N:
      Value: 19.64
-     Units: unitless
    SLA:
      Value: 9.98
      Units: mm.mg-1
@@ -56,7 +55,6 @@ ExperimentInfo:
      Units: percentage
    C:N:
      Value: 26.64
-     Units: unitless
    SLA:
      Value: 12.09
      Units: mm.mg-1
@@ -75,7 +73,6 @@ ExperimentInfo:
      Units: percentage
    C:N:
      Value: 46.88
-     Units: unitless
    SLA:
      Value: 14.03
      Units: mm.mg-1
@@ -94,7 +91,6 @@ ExperimentInfo:
      Units: percentage
    C:N:
      Value: 59.28
-     Units: unitless
    SLA:
      Value: 9.41
      Units: mm.mg-1
@@ -113,7 +109,6 @@ ExperimentInfo:
      Units: percentage
    C:N:
      Value: 28.93
-     Units: unitless
    SLA:
      Value: 10.49
      Units: mm.mg-1
@@ -132,7 +127,6 @@ ExperimentInfo:
      Units: percentage
    C:N:
      Value: 30.50
-     Units: unitless
    SLA:
      Value: 8.22
      Units: mm.mg-1
@@ -151,7 +145,6 @@ ExperimentInfo:
      Units: percentage
    C:N:
      Value: 39.08
-     Units: unitless
    SLA:
      Value: 5.00
      Units: mm.mg-1
@@ -170,7 +163,6 @@ ExperimentInfo:
      Units: percentage
    C:N:
      Value: 48.96
-     Units: unitless
    SLA:
      Value: 6.52
      Units: mm.mg-1
@@ -189,7 +181,6 @@ ExperimentInfo:
      Units: percentage
    C:N:
      Value: 17.79
-     Units: unitless
    SLA:
      Value: 13.26
      Units: mm.mg-1
@@ -208,7 +199,6 @@ ExperimentInfo:
      Units: percentage
    C:N:
      Value: 27.37
-     Units: unitless
    SLA:
      Value: 12.43
      Units: mm.mg-1
@@ -227,7 +217,6 @@ ExperimentInfo:
      Units: percentage
    C:N:
      Value: 27.81
-     Units: unitless
    SLA:
      Value: 2.36
      Units: mm.mg-1
@@ -246,7 +235,6 @@ ExperimentInfo:
      Units: percentage
    C:N:
      Value: 26.41
-     Units: unitless
    SLA:
      Value: 6.57
      Units: mm.mg-1
@@ -265,7 +253,6 @@ ExperimentInfo:
      Units: percentage
    C:N:
      Value: 12.21
-     Units: unitless
    SLA:
      Value: 7.84
      Units: mm.mg-1

@@ -51,7 +51,7 @@ ExperimentInfo:
       Dimentions:
        Width: 10
        Lenght: 20
-       Hight: 6
+       Height: 6
        Units: cm
       Position: bare soil
     FilterInfo:

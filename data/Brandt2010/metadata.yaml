@@ -93,10 +93,8 @@ ExperimentInfo:
      Units: percentage
    C:N:
      Value: 154.19
-     Units: unitless
    Lignin:N:
      Value: 26.93
-     Units: unitless
    Amount:
      Value: 10
      Units: g
@@ -130,10 +128,8 @@ ExperimentInfo:
      Units: percentage
    C:N:
      Value: 42.67
-     Units: unitless
    Lignin:N:
      Value: 6.24
-     Units: unitless
    Amount:
      Value: 10
      Units: g

@@ -37,7 +37,6 @@ ExperimentInfo:
      Units: percentage
    C:N:
      Value: 32
-     Units: unitless
    Calcium:
      Value: 2.24
      Units: percentage
@@ -49,7 +48,6 @@ ExperimentInfo:
      Units: percentage
    Lignin:N:
      Value: 8.4
-     Units: unitless
    Amount:
      Value: 3
      Units: g
@@ -68,7 +66,6 @@ ExperimentInfo:
      Units: percentage
    C:N:
      Value: 17
-     Units: unitless
    Calcium:
      Value: 2.01
      Units: percentage
@@ -80,7 +77,6 @@ ExperimentInfo:
      Units: percentage
    Lignin:N:
      Value: 4.3
-     Units: unitless
    Amount:
      Value: 3
      Units: g
@@ -99,7 +95,6 @@ ExperimentInfo:
      Units: percentage
    C:N:
      Value: 32
-     Units: unitless
    Calcium:
      Value: 3.38
      Units: percentage
@@ -111,7 +106,6 @@ ExperimentInfo:
      Units: percentage
    Lignin:N:
      Value: 9.9
-     Units: unitless
    Amount:
      Value: 3
      Units: g

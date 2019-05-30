@@ -37,7 +37,6 @@ ExperimentInfo:
      Units: percentage
    C:N:
      Value: 41.23
-     Units: unitless
    Lignin:
      Value: 34.87
      Units: percentage
@@ -62,7 +61,6 @@ ExperimentInfo:
      Units: percentage
    C:N:
      Value: 35.48
-     Units: unitless
    Lignin:
      Value: 36.23
      Units: percentage
@@ -87,7 +85,6 @@ ExperimentInfo:
      Units: percentage
    C:N:
      Value: 39.25
-     Units: unitless
    Lignin:
      Value: 38.92
      Units: percentage
@@ -112,7 +109,6 @@ ExperimentInfo:
      Units: percentage
    C:N:
      Value: 36.19
-     Units: unitless
    Lignin:
      Value: 38.38
      Units: percentage
@@ -137,7 +133,6 @@ ExperimentInfo:
      Units: percentage
    C:N:
      Value: 28.95
-     Units: unitless
    Lignin:
      Value: 28.75
      Units: percentage
@@ -162,7 +157,6 @@ ExperimentInfo:
      Units: percentage
    C:N:
      Value: 38.78
-     Units: unitless
    Lignin:
      Value: 38.80
      Units: percentage

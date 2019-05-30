@@ -1,0 +1,104 @@
+CitationKey: Moody2001
+doi: 10.1023/A:1012965610170
+EntryAuthor: Ignacio Siebenhart
+
+SiteInfo:
+ Name:
+  - Abisko, Lapland, Sweden
+  - Patra, Greece
+ MAP:
+  Value:
+   - 304
+   - 774.62
+  Units: mm
+ MAT:
+  Value:
+   - 11
+   - 18.02
+  Units: Celsius
+ Altitude:
+  Value:
+   - 360
+  Units: masl
+ Coordinates:
+  Latitude:
+   - 68.35
+   - 38.3
+  Longitude:
+   - 18.82
+   - 29.10
+
+ExperimentInfo:
+ LitterInfo:
+  LitterType1:
+   Species: Betula pubescens
+   Lifeform: tree
+   Material: recently senesced leaves
+   Nitrogen:
+    Value: 1.08
+    Units: percentage
+   C:N:
+    Value: 44.0
+   Cellulose:
+    Value: 13.2
+    Units: percentage
+   Lignin:
+    Value: 14.0
+    Units: percentage
+   Amount:
+    Value: 0.7
+    Units: g
+ Experiment1:
+  Description: "B. pubescens was decomposed under ambient and elevated UV-B using outdoor irradiation facilities at Abisko, Sweden, and Patras, Greece."
+  LitterBagInfo:
+  Material: plexiglass
+  MeshSize:
+   Value: 10
+   Units: mm
+  Dimentions:
+   Diameter: 6.4
+   Hight: 3
+   Units: cm
+  Transmitance:
+   Value: 91
+   Units: percentage
+  UVBTransmitance:
+   Value: 72
+   Units: percentage
+  Position: on the ground
+  Treatment: UV-B enhanced
+  StartingDate:
+   Month: june
+   Season: summer
+  Duration:
+   Time: 14
+   Units: months
+
+Variable:
+ V1:
+   Name: Time
+   Units: months
+ V2:
+   Name: AUVA
+   Units: mass remaining
+   Description: "B. pubescens litter organic matter percentage remaining at harvest time decomposed without enhanced UV"
+   UV-BEnhanced: "No"
+   Site: Abisko, Lapland, Sweden
+ V3:
+   Name: AUVE
+   Units: mass remaining
+   Description: "B. pubescens litter organic matter percentage remaining at harvest time decomposed with enhanced UV"
+   UV-BEnhanced: "Yes"
+   Site: Abisko, Lapland, Sweden
+ V4:
+   Name: PUVA
+   Units: mass remaining
+   Description: "B. pubescens litter organic matter percentage remaining at harvest time decomposed without enhanced UV"
+   UV-BEnhanced: "No"
+   Site: Patra, Greece
+ V5:
+   Name: PUVE
+   Units: mass remaining
+   Description: "B. pubescens litter organic matter percentage remaining at harvest time decomposed with enhanced UV"
+   UV-BEnhanced: "Yes"
+   Site: Patra, Greece
