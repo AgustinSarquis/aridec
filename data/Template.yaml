@@ -4,7 +4,7 @@ EntryAuthor: Agustín Sarquis
 
 SiteInfo:
   Name:
-  EcosystemType: sandland, abbandoned farmland, scrub, xerophyllous woodland, alluvial valley, forest, steppe, desert, grassland, mountain grassland, savanna
+  EcosystemType: urban, sandland, abbandoned farmland, scrub, xerophyllous woodland, alluvial valley, forest, steppe, desert, grassland, mountain grassland, savanna
   MAP:
     Value:
     Units: mm
@@ -33,8 +33,8 @@ ExperimentInfo:
  LitterInfo:
   LitterType1:
    Species:
-   LifeForm: tree, forb, shrub, crop, conifer, graminoid
-   Material: aboveground parts, prematurely senesced leaves, leaves, recently senesced leaves, recently senesced terminal shoots, recently senesced stems, roots, live roots
+   LifeForm: succulent, bromeliad, tree, forb, shrub, crop, conifer, graminoid
+   Material: senesced photosynthetic stems, aboveground parts, prematurely senesced leaves, leaves, recently senesced leaves, recently senesced terminal shoots, recently senesced stems, roots, live roots
    Amount:
      Value:
      Units: g

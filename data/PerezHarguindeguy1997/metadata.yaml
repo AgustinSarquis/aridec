@@ -1,0 +1,973 @@
+CitationKey: PerezHarguindeguy1997
+EntryAuthor: Agustín Sarquis
+
+SiteInfo:
+  Name: Córdoba, Córdoba, Argentina
+  EcosystemType: urban
+  MAP:
+    Value: 843
+    Units: mm
+  MAT:
+    Value: 16.32
+    Units: Celsius
+  RainySeason: summer
+  Altitude:
+    Value: 440
+    Units: masl
+  Coordinates:
+    Latitude: -31.441
+    Longitude: -64.185
+
+ExperimentInfo:
+ LitterInfo:
+  LitterType1:
+   Species: Deinacanthon urbanianum
+   LifeForm: bromeliad
+   Material: recently senesced leaves
+   Amount:
+     Value: 1
+     Units: g
+  LitterType2:
+   Species: Tillandsia duratii
+   LifeForm: bromeliad
+   Material: recently senesced leaves
+   Carbon:
+     Value: 49.0
+     Units: percentage
+   Nitrogen:
+     Value: 0.52
+     Units: percentage
+   Phosphorus:
+     Value: 0.03
+     Units: percentage
+   C:N:
+     Value: 94.5
+   Amount:
+     Value: 1
+     Units: g
+  LitterType3:
+   Species: Tillandsia capillaris
+   LifeForm: bromeliad
+   Material: recently senesced leaves
+   Carbon:
+     Value: 44.1
+     Units: percentage
+   Nitrogen:
+     Value: 1.23
+     Units: percentage
+   Phosphorus:
+     Value: 0.05
+     Units: percentage
+   C:N:
+     Value: 35.8
+   Amount:
+     Value: 1
+     Units: g
+  LitterType4:
+   Species: Lachemilla pinnata
+   LifeForm: forb
+   Material: recently senesced leaves
+   Carbon:
+     Value: 44.4
+     Units: percentage
+   Nitrogen:
+     Value: 2.08
+     Units: percentage
+   Phosphorus:
+     Value: 0.27
+     Units: percentage
+   C:N:
+     Value: 21.3
+   Amount:
+     Value: 1
+     Units: g
+  LitterType5:
+   Species: Alternanthera pungens
+   LifeForm: forb
+   Material: recently senesced leaves
+   Carbon:
+     Value: 39.1
+     Units: percentage
+   Nitrogen:
+     Value: 3.90
+     Units: percentage
+   Phosphorus:
+     Value: 0.40
+     Units: percentage
+   C:N:
+     Value: 10.0
+   Amount:
+     Value: 1
+     Units: g
+  LitterType6:
+   Species: Carduus thoermeri
+   LifeForm: forb
+   Material: recently senesced leaves
+   Carbon:
+     Value: 41.6
+     Units: percentage
+   Nitrogen:
+     Value: 3.30
+     Units: percentage
+   Phosphorus:
+     Value: 0.17
+     Units: percentage
+   C:N:
+     Value: 12.6
+   Amount:
+     Value: 1
+     Units: g
+  LitterType7:
+   Species: Eryngium agavifolium
+   LifeForm: forb
+   Material: recently senesced leaves
+   Carbon:
+     Value: 43.7
+     Units: percentage
+   Nitrogen:
+     Value: 1.58
+     Units: percentage
+   Phosphorus:
+     Value: 0.13
+     Units: percentage
+   C:N:
+     Value: 27.6
+   Amount:
+     Value: 1
+     Units: g
+  LitterType8:
+   Species: Gentianella parviflora
+   LifeForm: forb
+   Material: recently senesced leaves
+   Nitrogen:
+     Value: 1.97
+     Units: percentage
+   Phosphorus:
+     Value: 0.18
+     Units: percentage
+   Amount:
+     Value: 1
+     Units: g
+  LitterType9:
+   Species: Gomphrena pulchella
+   LifeForm: forb
+   Material: recently senesced leaves
+   Carbon:
+     Value: 40.0
+     Units: percentage
+   Nitrogen:
+     Value: 2.65
+     Units: percentage
+   Phosphorus:
+     Value: 0.37
+     Units: percentage
+   C:N:
+     Value: 15.1
+   Amount:
+     Value: 1
+     Units: g
+  LitterType10:
+   Species: Pithecoctenium cynanchoides
+   LifeForm: forb
+   Material: recently senesced leaves
+   Carbon:
+     Value: 45.8
+     Units: percentage
+   Nitrogen:
+     Value: 3.46
+     Units: percentage
+   Phosphorus:
+     Value: 0.33
+     Units: percentage
+   C:N:
+     Value: 13.2
+   Amount:
+     Value: 1
+     Units: g
+  LitterType11:
+   Species: Aristida achalensis
+   LifeForm: graminoid
+   Material: recently senesced leaves
+   Carbon:
+     Value: 47.9
+     Units: percentage
+   Nitrogen:
+     Value: 1.01
+     Units: percentage
+   Phosphorus:
+     Value: 0.08
+     Units: percentage
+   C:N:
+     Value: 47.4
+   Amount:
+     Value: 1
+     Units: g
+  LitterType12:
+   Species: Bouteloua aristidoides
+   LifeForm: graminoid
+   Material: recently senesced leaves
+   Carbon:
+     Value: 46.8
+     Units: percentage
+   Nitrogen:
+     Value: 1.59
+     Units: percentage
+   Phosphorus:
+     Value: 0.16
+     Units: percentage
+   C:N:
+     Value: 29.4
+   Amount:
+     Value: 1
+     Units: g
+  LitterType13:
+   Species: Carex fuscula
+   LifeForm: graminoid
+   Material: recently senesced leaves
+   Carbon:
+     Value: 47.4
+     Units: percentage
+   Nitrogen:
+     Value: 2.11
+     Units: percentage
+   Phosphorus:
+     Value: 0.15
+     Units: percentage
+   C:N:
+     Value: 22.5
+   Amount:
+     Value: 1
+     Units: g
+  LitterType14:
+   Species: Cortaderia speciosa
+   LifeForm: graminoid
+   Material: recently senesced leaves
+   Carbon:
+     Value: 47.5
+     Units: percentage
+   Nitrogen:
+     Value: 1.12
+     Units: percentage
+   Phosphorus:
+     Value: 0.16
+     Units: percentage
+   C:N:
+     Value: 42.4
+   Amount:
+     Value: 1
+     Units: g
+  LitterType15:
+   Species: Festuca lilloi
+   LifeForm: graminoid
+   Material: recently senesced leaves
+   Carbon:
+     Value: 47.2
+     Units: percentage
+   Nitrogen:
+     Value: 1.44
+     Units: percentage
+   Phosphorus:
+     Value: 0.11
+     Units: percentage
+   C:N:
+     Value: 32.8
+   Amount:
+     Value: 1
+     Units: g
+  LitterType16:
+   Species: Juncus uruguensis
+   LifeForm: graminoid
+   Material: recently senesced leaves
+   Carbon:
+     Value: 47.6
+     Units: percentage
+   Nitrogen:
+     Value: 1.49
+     Units: percentage
+   Phosphorus:
+     Value: 0.13
+     Units: percentage
+   C:N:
+     Value: 31.9
+   Amount:
+     Value: 1
+     Units: g
+  LitterType17:
+   Species: Distichlis littoralis
+   LifeForm: graminoid
+   Material: recently senesced leaves
+   Carbon:
+     Value: 44.0
+     Units: percentage
+   Nitrogen:
+     Value: 1.19
+     Units: percentage
+   Phosphorus:
+     Value: 0.06
+     Units: percentage
+   C:N:
+     Value: 36.9
+   Amount:
+     Value: 1
+     Units: g
+  LitterType18:
+   Species: Muhlenbergia peruviana
+   LifeForm: graminoid
+   Material: recently senesced leaves
+   Carbon:
+     Value: 44.3
+     Units: percentage
+   Nitrogen:
+     Value: 1.76
+     Units: percentage
+   Phosphorus:
+     Value: 0.12
+     Units: percentage
+   C:N:
+     Value: 25.2
+   Amount:
+     Value: 1
+     Units: g
+  LitterType19:
+   Species: Neobouteloua lophostachya
+   LifeForm: graminoid
+   Material: recently senesced leaves
+   Carbon:
+     Value: 45.4
+     Units: percentage
+   Nitrogen:
+     Value: 1.37
+     Units: percentage
+   Phosphorus:
+     Value: 0.10
+     Units: percentage
+   C:N:
+     Value: 33.2
+   Amount:
+     Value: 1
+     Units: g
+  LitterType20:
+   Species: Nothoscordum gracile
+   LifeForm: graminoid
+   Material: recently senesced leaves
+   Carbon:
+     Value: 42.2
+     Units: percentage
+   Nitrogen:
+     Value: 4.10
+     Units: percentage
+   Phosphorus:
+     Value: 0.32
+     Units: percentage
+   C:N:
+     Value: 10.3
+   Amount:
+     Value: 1
+     Units: g
+  LitterType21:
+   Species: Pappophorum caespitosum
+   LifeForm: graminoid
+   Material: recently senesced leaves
+   Carbon:
+     Value: 46.3
+     Units: percentage
+   Nitrogen:
+     Value: 2.07
+     Units: percentage
+   Phosphorus:
+     Value: 0.19
+     Units: percentage
+   C:N:
+     Value: 22.4
+   Amount:
+     Value: 1
+     Units: g
+  LitterType22:
+   Species: Paspalum quadrifarium
+   LifeForm: graminoid
+   Material: recently senesced leaves
+   Carbon:
+     Value: 47.3
+     Units: percentage
+   Nitrogen:
+     Value: 1.00
+     Units: percentage
+   Phosphorus:
+     Value: 0.09
+     Units: percentage
+   C:N:
+     Value: 48.0
+   Amount:
+     Value: 1
+     Units: g
+  LitterType23:
+   Species: Poa stuckertii
+   LifeForm: graminoid
+   Material: recently senesced leaves
+   Carbon:
+     Value: 47.9
+     Units: percentage
+   Nitrogen:
+     Value: 1.14
+     Units: percentage
+   Phosphorus:
+     Value: 0.14
+     Units: percentage
+   C:N:
+     Value: 42.0
+   Amount:
+     Value: 1
+     Units: g
+  LitterType24:
+   Species: Schizachyrium microstachyum
+   LifeForm: graminoid
+   Material: recently senesced leaves
+   Carbon:
+     Value: 46.2
+     Units: percentage
+   Nitrogen:
+     Value: 1.22
+     Units: percentage
+   Phosphorus:
+     Value: 0.13
+     Units: percentage
+   C:N:
+     Value: 38.0
+   Amount:
+     Value: 1
+     Units: g
+  LitterType25:
+   Species: Setaria pampeana
+   LifeForm: graminoid
+   Material: recently senesced leaves
+   Nitrogen:
+     Value: 2.47
+     Units: percentage
+   Phosphorus:
+     Value: 0.28
+     Units: percentage
+   Amount:
+     Value: 1
+     Units: g
+  LitterType26:
+   Species: Sorghum halepense
+   LifeForm: graminoid
+   Material: recently senesced leaves
+   Carbon:
+     Value: 45.6
+     Units: percentage
+   Nitrogen:
+     Value: 2.22
+     Units: percentage
+   Phosphorus:
+     Value: 0.20
+     Units: percentage
+   C:N:
+     Value: 20.5
+   Amount:
+     Value: 1
+     Units: g
+  LitterType27:
+   Species: Leptochloa crinita
+   LifeForm: graminoid
+   Material: recently senesced leaves
+   Carbon:
+     Value: 44.1
+     Units: percentage
+   Nitrogen:
+     Value: 1.89
+     Units: percentage
+   Phosphorus:
+     Value: 0.15
+     Units: percentage
+   C:N:
+     Value: 23.3
+   Amount:
+     Value: 1
+     Units: g
+  LitterType28:
+   Species: Baccharis articulata
+   LifeForm: shrub
+   Material: senesced photosynthetic stems
+   Carbon:
+     Value: 46.3
+     Units: percentage
+   Nitrogen:
+     Value: 1.13
+     Units: percentage
+   Phosphorus:
+     Value: 0.10
+     Units: percentage
+   C:N:
+     Value: 41.1
+   Amount:
+     Value: 1
+     Units: g
+  LitterType29:
+   Species: Senna aphylla
+   LifeForm: shrub
+   Material: senesced photosynthetic stems
+   Carbon:
+     Value: 46.7
+     Units: percentage
+   Nitrogen:
+     Value: 2.06
+     Units: percentage
+   Phosphorus:
+     Value: 0.20
+     Units: percentage
+   C:N:
+     Value: 22.7
+   Amount:
+     Value: 1
+     Units: g
+  LitterType30:
+   Species: Vachellia aroma
+   LifeForm: tree
+   Material: recently senesced leaves
+   Carbon:
+     Value: 47.1
+     Units: percentage
+   Nitrogen:
+     Value: 3.46
+     Units: percentage
+   Phosphorus:
+     Value: 0.21
+     Units: percentage
+   C:N:
+     Value: 13.6
+   Amount:
+     Value: 1
+     Units: g
+  LitterType31:
+   Species: Vachellia caven
+   LifeForm: tree
+   Material: recently senesced leaves
+   Carbon:
+     Value: 45.3
+     Units: percentage
+   Nitrogen:
+     Value: 2.70
+     Units: percentage
+   Phosphorus:
+     Value: 0.16
+     Units: percentage
+   C:N:
+     Value: 16.8
+   Amount:
+     Value: 1
+     Units: g
+  LitterType32:
+   Species: Acalypha communis
+   LifeForm: shrub
+   Material: recently senesced leaves
+   Carbon:
+     Value: 44.1
+     Units: percentage
+   Nitrogen:
+     Value: 4.13
+     Units: percentage
+   Phosphorus:
+     Value: 0.21
+     Units: percentage
+   C:N:
+     Value: 10.7
+   Amount:
+     Value: 1
+     Units: g
+  LitterType33:
+   Species: Buddleja stachyoides
+   LifeForm: shrub
+   Material: recently senesced leaves
+   Carbon:
+     Value: 48.0
+     Units: percentage
+   Nitrogen:
+     Value: 1.52
+     Units: percentage
+   Phosphorus:
+     Value: 0.14
+     Units: percentage
+   C:N:
+     Value: 31.7
+   Amount:
+     Value: 1
+     Units: g
+  LitterType34:
+   Species: Celtis pallida
+   LifeForm: tree
+   Material: recently senesced leaves
+   Carbon:
+     Value: 39.5
+     Units: percentage
+   Nitrogen:
+     Value: 3.39
+     Units: percentage
+   Phosphorus:
+     Value: 0.17
+     Units: percentage
+   C:N:
+     Value: 11.7
+   Amount:
+     Value: 1
+     Units: g
+  LitterType35:
+   Species: Celtis tala
+   LifeForm: tree
+   Material: recently senesced leaves
+   Carbon:
+     Value: 38.6
+     Units: percentage
+   Nitrogen:
+     Value: 3.97
+     Units: percentage
+   Phosphorus:
+     Value: 0.13
+     Units: percentage
+   C:N:
+     Value: 9.7
+   Amount:
+     Value: 1
+     Units: g
+  LitterType36:
+   Species: Croton lachnostachyus
+   LifeForm: shrub
+   Material: recently senesced leaves
+   Carbon:
+     Value: 43.5
+     Units: percentage
+   Nitrogen:
+     Value: 3.27
+     Units: percentage
+   Phosphorus:
+     Value: 0.40
+     Units: percentage
+   C:N:
+     Value: 13.3
+   Amount:
+     Value: 1
+     Units: g
+  LitterType37:
+   Species: Lorentzianthus viscidus
+   LifeForm: shrub
+   Material: recently senesced leaves
+   Carbon:
+     Value: 43.6
+     Units: percentage
+   Nitrogen:
+     Value: 3.25
+     Units: percentage
+   Phosphorus:
+     Value: 0.18
+     Units: percentage
+   C:N:
+     Value: 13.4
+   Amount:
+     Value: 1
+     Units: g
+  LitterType38:
+   Species: Flourensia thurifera
+   LifeForm: shrub
+   Material: recently senesced leaves
+   Carbon:
+     Value: 45.7
+     Units: percentage
+   Nitrogen:
+     Value: 2.57
+     Units: percentage
+   Phosphorus:
+     Value: 0.30
+     Units: percentage
+   C:N:
+     Value: 17.8
+   Amount:
+     Value: 1
+     Units: g
+  LitterType39:
+   Species: Mimozyganthus carinatus
+   LifeForm: tree
+   Material: recently senesced leaves
+   Carbon:
+     Value: 44.4
+     Units: percentage
+   Nitrogen:
+     Value: 1.96
+     Units: percentage
+   Phosphorus:
+     Value: 0.13
+     Units: percentage
+   C:N:
+     Value: 22.6
+   Amount:
+     Value: 1
+     Units: g
+  LitterType40:
+   Species: Polylepis australis
+   LifeForm: tree
+   Material: recently senesced leaves
+   Carbon:
+     Value: 44.2
+     Units: percentage
+   Nitrogen:
+     Value: 1.89
+     Units: percentage
+   Phosphorus:
+     Value: 0.15
+     Units: percentage
+   C:N:
+     Value: 23.3
+   Amount:
+     Value: 1
+     Units: g
+  LitterType41:
+   Species: Prosopis flexuosa
+   LifeForm: tree
+   Material: recently senesced leaves
+   Carbon:
+     Value: 46.1
+     Units: percentage
+   Nitrogen:
+     Value: 3.28
+     Units: percentage
+   Phosphorus:
+     Value: 0.12
+     Units: percentage
+   C:N:
+     Value: 14.0
+   Amount:
+     Value: 1
+     Units: g
+  LitterType42:
+   Species: Schinopsis marginata
+   LifeForm: tree
+   Material: recently senesced leaves
+   Carbon:
+     Value: 45.4
+     Units: percentage
+   Nitrogen:
+     Value: 1.79
+     Units: percentage
+   Phosphorus:
+     Value: 0.16
+     Units: percentage
+   C:N:
+     Value: 25.3
+   Amount:
+     Value: 1
+     Units: g
+  LitterType43:
+   Species: Ziziphus mistol
+   LifeForm: tree
+   Material: recently senesced leaves
+   Carbon:
+     Value: 45.5
+     Units: percentage
+   Nitrogen:
+     Value: 3.06
+     Units: percentage
+   Phosphorus:
+     Value: 0.16
+     Units: percentage
+   C:N:
+     Value: 14.8
+   Amount:
+     Value: 1
+     Units: g
+  LitterType44:
+   Species: Aspidosperma quebracho-blanco
+   LifeForm: tree
+   Material: recently senesced leaves
+   Carbon:
+     Value: 47.0
+     Units: percentage
+   Nitrogen:
+     Value: 1.67
+     Units: percentage
+   Phosphorus:
+     Value: 0.12
+     Units: percentage
+   C:N:
+     Value: 28.2
+   Amount:
+     Value: 1
+     Units: g
+  LitterType45:
+   Species: Atamisquea emarginata
+   LifeForm: shrub
+   Material: recently senesced leaves
+   Carbon:
+     Value: 43.8
+     Units: percentage
+   Nitrogen:
+     Value: 2.58
+     Units: percentage
+   Phosphorus:
+     Value: 0.12
+     Units: percentage
+   C:N:
+     Value: 17.0
+   Amount:
+     Value: 1
+     Units: g
+  LitterType46:
+   Species: Baccharis aliena
+   LifeForm: shrub
+   Material: recently senesced leaves
+   Carbon:
+     Value: 45.2
+     Units: percentage
+   Nitrogen:
+     Value: 1.49
+     Units: percentage
+   Phosphorus:
+     Value: 0.14
+     Units: percentage
+   C:N:
+     Value: 30.4
+   Amount:
+     Value: 1
+     Units: g
+  LitterType47:
+   Species: Larrea divaricata
+   LifeForm: shrub
+   Material: recently senesced leaves
+   Carbon:
+     Value: 44.3
+     Units: percentage
+   Nitrogen:
+     Value: 2.29
+     Units: percentage
+   Phosphorus:
+     Value: 0.14
+     Units: percentage
+   C:N:
+     Value: 19.3
+   Amount:
+     Value: 1
+     Units: g
+  LitterType48:
+   Species: Lithraea molleoides
+   LifeForm: tree
+   Material: recently senesced leaves
+   Carbon:
+     Value: 45.5
+     Units: percentage
+   Nitrogen:
+     Value: 1.67
+     Units: percentage
+   Phosphorus:
+     Value: 0.20
+     Units: percentage
+   C:N:
+     Value: 27.2
+   Amount:
+     Value: 1
+     Units: g
+  LitterType49:
+   Species: Allenrolfea patagonica
+   LifeForm: succulent
+   Material: recently senesced leaves
+   Carbon:
+     Value: 31.2
+     Units: percentage
+   Nitrogen:
+     Value: 1.15
+     Units: percentage
+   Phosphorus:
+     Value: 0.08
+     Units: percentage
+   C:N:
+     Value: 27.1
+   Amount:
+     Value: 1
+     Units: g
+  LitterType50:
+   Species: Maytenus vitis-idaea
+   LifeForm: succulent
+   Material: recently senesced leaves
+   Carbon:
+     Value: 39.3
+     Units: percentage
+   Nitrogen:
+     Value: 1.52
+     Units: percentage
+   Phosphorus:
+     Value: 0.12
+     Units: percentage
+   C:N:
+     Value: 25.9
+   Amount:
+     Value: 1
+     Units: g
+  LitterType51:
+   Species: Opuntia sulphurea
+   LifeForm: succulent
+   Material: senesced photosynthetic stems
+   Carbon:
+     Value: 39.2
+     Units: percentage
+   Nitrogen:
+     Value: 1.51
+     Units: percentage
+   Phosphorus:
+     Value: 0.12
+     Units: percentage
+   C:N:
+     Value: 25.9
+   Amount:
+     Value: 1
+     Units: g
+  LitterType52:
+   Species: Tephrocactus articulatus
+   LifeForm: succulent
+   Material: senesced photosynthetic stems
+   Carbon:
+     Value: 41.0
+     Units: percentage
+   Nitrogen:
+     Value: 1.40
+     Units: percentage
+   Phosphorus:
+     Value: 0.12
+     Units: percentage
+   C:N:
+     Value: 29.3
+   Amount:
+     Value: 1
+     Units: g
+ Experiment1:
+    Description: "Litter of 52 species were buried simultaneously in an experimental decomposition bed during 9 and 18 summer weeks"
+    LitterBagInfo:
+      Material: nylon
+      MeshSize:
+       Value: 0.3
+       Units: mm
+      Position:
+        - decomposition bed
+        - buried
+    StartingDate:
+      Month: november
+      Season: spring
+    Duration:
+      Time: 4.5
+      Units: months
+
+Variables:
+  V1:
+    Name: Time
+    Units: days, weeks, months, years
+  V2:
+    Name:
+    Units: non-ash dry mass remaining, mass remaining, organic matter remaining, C remaining
+    Description:
+    FilterType:
+    LitterType:
+    BiocideApplication:
+    Position:
+    Site:
+    MixedLitter:
+    MeshSize:
+    Nitrification:
+    PatchType:
+    RainfallInterception:
+    Rainfall:
