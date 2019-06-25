@@ -955,19 +955,264 @@ ExperimentInfo:
 Variables:
   V1:
     Name: Time
-    Units: days, weeks, months, years
+    Units: weeks
   V2:
-    Name:
-    Units: non-ash dry mass remaining, mass remaining, organic matter remaining, C remaining
-    Description:
-    FilterType:
-    LitterType:
-    BiocideApplication:
-    Position:
-    Site:
-    MixedLitter:
-    MeshSize:
-    Nitrification:
-    PatchType:
-    RainfallInterception:
-    Rainfall:
+    Name: Du
+    Units: mass remaining
+    Description: "Deinacanthon urbanianum litter incubated for 18 weeks in a decomposition bed"
+    LitterType: LitterType1
+  V3:
+    Name: Td
+    Units: mass remaining
+    Description: "Tillandsia duratii litter incubated for 18 weeks in a decomposition bed"
+    LitterType: LitterType2
+  V4:
+    Name: Tc
+    Units: mass remaining
+    Description: "Tillandsia capillaris litter incubated for 18 weeks in a decomposition bed"
+    LitterType: LitterType3
+  V5:
+    Name: Lp
+    Units: mass remaining
+    Description: "Lachemilla pinnata litter incubated for 18 weeks in a decomposition bed"
+    LitterType: LitterType4
+  V6:
+    Name: Ap
+    Units: mass remaining
+    Description: "Alternanthera pungens litter incubated for 18 weeks in a decomposition bed"
+    LitterType: LitterType5
+  V7:
+    Name: Ct
+    Units: mass remaining
+    Description: "Carduus thoermeri litter incubated for 18 weeks in a decomposition bed"
+    LitterType: LitterType6
+  V8:
+    Name: Ea
+    Units: mass remaining
+    Description: "Eryngium agavifolium litter incubated for 18 weeks in a decomposition bed"
+    LitterType: LitterType7
+  V9:
+    Name: Gpa
+    Units: mass remaining
+    Description: "Gentianella parviflora litter incubated for 18 weeks in a decomposition bed"
+    LitterType: LitterType8
+  V10:
+    Name: Gpu
+    Units: mass remaining
+    Description: "Gomphrena pulchella litter incubated for 18 weeks in a decomposition bed"
+    LitterType: LitterType9
+  V11:
+    Name: Pcy
+    Units: mass remaining
+    Description: "Pithecoctenium cynanchoides litter incubated for 18 weeks in a decomposition bed"
+    LitterType: LitterType10
+  V12:
+    Name: Aa
+    Units: mass remaining
+    Description: "Aristida achalensis litter incubated for 18 weeks in a decomposition bed"
+    LitterType: LitterType11
+  V13:
+    Name: Bari
+    Units: mass remaining
+    Description: "Bouteloua aristidoides litter incubated for 18 weeks in a decomposition bed"
+    LitterType: LitterType12
+  V14:
+    Name: Cf
+    Units: mass remaining
+    Description: "Carex fuscula litter incubated for 18 weeks in a decomposition bed"
+    LitterType: LitterType13
+  V15:
+    Name: Cs
+    Units: mass remaining
+    Description: "Cortaderia speciosa litter incubated for 18 weeks in a decomposition bed"
+    LitterType: LitterType14
+  V16:
+    Name: Fl
+    Units: mass remaining
+    Description: "Festuca lilloi litter incubated for 18 weeks in a decomposition bed"
+    LitterType: LitterType15
+  V17:
+    Name: Ju
+    Units: mass remaining
+    Description: "Juncus uruguensis litter incubated for 18 weeks in a decomposition bed"
+    LitterType: LitterType16
+  V18:
+    Name: Dl
+    Units: mass remaining
+    Description: "Distichlis littoralis litter incubated for 18 weeks in a decomposition bed"
+    LitterType: LitterType17
+  V19:
+    Name: Mp
+    Units: mass remaining
+    Description: "Muhlenbergia peruviana litter incubated for 18 weeks in a decomposition bed"
+    LitterType: LitterType18
+  V20:
+    Name: Nl
+    Units: mass remaining
+    Description: "Neobouteloua lophostachya litter incubated for 18 weeks in a decomposition bed"
+    LitterType: LitterType19
+  V21:
+    Name: Ng
+    Units: mass remaining
+    Description: "Nothoscordum gracile litter incubated for 18 weeks in a decomposition bed"
+    LitterType: LitterType20
+  V22:
+    Name: Pca
+    Units: mass remaining
+    Description: "Pappophorum caespitosum litter incubated for 18 weeks in a decomposition bed"
+    LitterType: LitterType21
+  V23:
+    Name: Pq
+    Units: mass remaining
+    Description: "Paspalum quadrifarium litter incubated for 18 weeks in a decomposition bed"
+    LitterType: LitterType22
+  V24:
+    Name: Ps
+    Units: mass remaining
+    Description: "Poa stuckertii litter incubated for 18 weeks in a decomposition bed"
+    LitterType: LitterType23
+  V25:
+    Name: Smi
+    Units: mass remaining
+    Description: "Schizachyrium microstachyum litter incubated for 18 weeks in a decomposition bed"
+    LitterType: LitterType24
+  V26:
+    Name: Sp
+    Units: mass remaining
+    Description: "Setaria pampeana litter incubated for 18 weeks in a decomposition bed"
+    LitterType: LitterType25
+  V27:
+    Name: Sh
+    Units: mass remaining
+    Description: "Sorghum halepense litter incubated for 18 weeks in a decomposition bed"
+    LitterType: LitterType26
+  V28:
+    Name: Lc
+    Units: mass remaining
+    Description: "Leptochloa crinita litter incubated for 18 weeks in a decomposition bed"
+    LitterType: LitterType27
+  V29:
+    Name: Bart
+    Units: mass remaining
+    Description: "Baccharis articulata litter incubated for 18 weeks in a decomposition bed"
+    LitterType: LitterType28
+  V30:
+    Name: Sa
+    Units: mass remaining
+    Description: "Senna aphylla litter incubated for 18 weeks in a decomposition bed"
+    LitterType: LitterType29
+  V31:
+    Name: Va
+    Units: mass remaining
+    Description: "Vachellia aroma litter incubated for 18 weeks in a decomposition bed"
+    LitterType: LitterType30
+  V32:
+    Name: Vc
+    Units: mass remaining
+    Description: "Vachellia caven litter incubated for 18 weeks in a decomposition bed"
+    LitterType: LitterType31
+  V33:
+    Name: Ac
+    Units: mass remaining
+    Description: "Acalypha communis litter incubated for 18 weeks in a decomposition bed"
+    LitterType: LitterType32
+  V34:
+    Name: Bs
+    Units: mass remaining
+    Description: "Buddleja stachyoides litter incubated for 18 weeks in a decomposition bed"
+    LitterType: LitterType33
+  V35:
+    Name: Cp
+    Units: mass remaining
+    Description: "Celtis pallida litter incubated for 18 weeks in a decomposition bed"
+    LitterType: LitterType34
+  V36:
+    Name: Ct
+    Units: mass remaining
+    Description: "Celtis tala litter incubated for 18 weeks in a decomposition bed"
+    LitterType: LitterType35
+  V37:
+    Name: Cl
+    Units: mass remaining
+    Description: "Croton lachnostachyus litter incubated for 18 weeks in a decomposition bed"
+    LitterType: LitterType36
+  V38:
+    Name: Lv
+    Units: mass remaining
+    Description: "Lorentzianthus viscidus litter incubated for 18 weeks in a decomposition bed"
+    LitterType: LitterType37
+  V39:
+    Name: Ft
+    Units: mass remaining
+    Description: "Flourensia thurifera litter incubated for 18 weeks in a decomposition bed"
+    LitterType: LitterType38
+  V40:
+    Name: Mc
+    Units: mass remaining
+    Description: "Mimozyganthus carinatus litter incubated for 18 weeks in a decomposition bed"
+    LitterType: LitterType39
+  V41:
+    Name: Pa
+    Units: mass remaining
+    Description: "Polylepis australis litter incubated for 18 weeks in a decomposition bed"
+    LitterType: LitterType40
+  V42:
+    Name: Pf
+    Units: mass remaining
+    Description: "Prosopis flexuosa litter incubated for 18 weeks in a decomposition bed"
+    LitterType: LitterType41
+  V43:
+    Name: Sma
+    Units: mass remaining
+    Description: "Schinopsis marginata litter incubated for 18 weeks in a decomposition bed"
+    LitterType: LitterType42
+  V44:
+    Name: Zm
+    Units: mass remaining
+    Description: "Ziziphus mistol litter incubated for 18 weeks in a decomposition bed"
+    LitterType: LitterType43
+  V45:
+    Name: Aqb
+    Units: mass remaining
+    Description: "Aspidosperma quebracho-blanco litter incubated for 18 weeks in a decomposition bed"
+    LitterType: LitterType44
+  V46:
+    Name: Ae
+    Units: mass remaining
+    Description: "Atamisquea emarginata litter incubated for 18 weeks in a decomposition bed"
+    LitterType: LitterType45
+  V47:
+    Name: Bal
+    Units: mass remaining
+    Description: "Baccharis aliena litter incubated for 18 weeks in a decomposition bed"
+    LitterType: LitterType46
+  V48:
+    Name: Ld
+    Units: mass remaining
+    Description: "Larrea divaricata litter incubated for 18 weeks in a decomposition bed"
+    LitterType: LitterType47
+  V49:
+    Name: Lm
+    Units: mass remaining
+    Description: "Lithraea molleoides litter incubated for 18 weeks in a decomposition bed"
+    LitterType: LitterType48
+  V50:
+    Name: Ap
+    Units: mass remaining
+    Description: "Allenrolfea patagonica litter incubated for 18 weeks in a decomposition bed"
+    LitterType: LitterType49
+  V51:
+    Name: Mvi
+    Units: mass remaining
+    Description: "Maytenus vitis-idaea litter incubated for 18 weeks in a decomposition bed"
+    LitterType: LitterType50
+  V52:
+    Name: Os
+    Units: mass remaining
+    Description: "Opuntia sulphurea litter incubated for 18 weeks in a decomposition bed"
+    LitterType: LitterType51
+  V53:
+    Name: Ta
+    Units: mass remaining
+    Description: "Tephrocactus articulatus litter incubated for 18 weeks in a decomposition bed"
+    LitterType: LitterType52
