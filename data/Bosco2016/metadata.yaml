@@ -1,0 +1,162 @@
+CitationKey: Bosco2016
+doi: 10.1007/s11104-016-2864-7
+EntryAuthor: Agustín Sarquis
+
+SiteInfo:
+  Name: Puerto Madryn, Chubut, Argentina
+  EcosystemType: shrubland
+  MAP:
+    Value: 235.9
+    Units: mm
+  MAT:
+    Value: 13.4
+    Units: Celsius
+  RainySeason:
+   - autumn
+   - winter
+  Altitude:
+    Value: 5
+    Units: masl
+  SoilType:
+    - Haplocalcids
+    - Petrocalcids
+  Coordinates:
+    Latitude: -42.786
+    Longitude: -65.008
+
+ExperimentInfo:
+ LitterInfo:
+  LitterType1:
+   Species:
+     - Stipa tenuis
+     - Larrea divaricata
+   LifeForm:
+     - graminoid
+     - shrub
+   Material: leaves
+   Amount:
+     Value: 1
+     Units: g
+  LitterType2:
+   Species: Larrea divaricata
+   LifeForm: shrub
+   Material: leaves
+   Amount:
+     Value: 1
+     Units: g
+ Experiment1:
+    Description: "Litter from evergreen shrub patches and from perennial grasses and evergreen shrub patches was incubated in microcosms under field conditions with UV attenuation and water addition treatments"
+    LitterBagInfo:
+      Material: nylon
+      MeshSize:
+       Value: 2
+       Units: mm
+      Dimentions:
+       Width: 5
+       Lenght: 5
+       Units: cm
+      PARTransmitance:
+        Value: 93
+        Units: percentage
+      UVBTransmitance:
+        Value: 87
+        Units: percentage
+      UVATransmitance:
+        Value: 90
+        Units: percentage
+      Position:
+        - on microcosms
+        - under frames
+    FilterInfo:
+      FilterType1:
+        Name: Mylar
+        Wavelenght:
+          Value: 400
+          Units: nm
+        UVATransmitance:
+          Value: 45
+          Units: percentage
+        UVBTransmitance:
+          Value: 15
+          Units: percentage
+        PARTransmitance:
+          Value: 85
+          Units: percentage
+      FilterType2:
+        Name: Aclar
+        Wavelenght:
+          Value: 280
+          Units: nm
+        Transmitance:
+          Value: 85
+          Units: percentage
+    Treatment:
+      - light attenuation
+      - soil volumetric water content
+    StartingDate:
+      Month: january
+      Season: summer
+    Duration:
+      Time: 14
+      Units: months
+
+Variables:
+  V1:
+    Name: Time
+    Units: days
+  V2:
+    Name: PGW
+    Units: non-ash dry mass remaining
+    Description: "Litter from grass and shrub patches incubated under UV-block filters with high soil volumetric water content"
+    FilterType: FilterType1
+    LitterType: LitterType1
+    WaterContent: high
+  V3:
+    Name: PGWUV
+    Units: non-ash dry mass remaining
+    Description: "Litter from grass and shrub patches incubated under UV-pass filters with high soil volumetric water content"
+    FilterType: FilterType2
+    LitterType: LitterType1
+    WaterContent: high
+  V4:
+    Name: PG
+    Units: non-ash dry mass remaining
+    Description: "Litter from grass and shrub patches incubated under UV-block filters with low soil volumetric water content"
+    FilterType: FilterType1
+    LitterType: LitterType1
+    WaterContent: low
+  V5:
+    Name: PGUV
+    Units: non-ash dry mass remaining
+    Description: "Litter from grass and shrub patches incubated under UV-pass filters with low soil volumetric water content"
+    FilterType: FilterType2
+    LitterType: LitterType1
+    WaterContent: low
+  V6:
+    Name: ESW
+    Units: non-ash dry mass remaining
+    Description: "Litter from shrub patches incubated under UV-block filters with high soil volumetric water content"
+    FilterType: FilterType1
+    LitterType: LitterType2
+    WaterContent: high
+  V7:
+    Name: ESWUV
+    Units: non-ash dry mass remaining
+    Description: "Litter from shrub patches incubated under UV-pass filters with high soil volumetric water content"
+    FilterType: FilterType2
+    LitterType: LitterType2
+    WaterContent: high
+  V8:
+    Name: ES
+    Units: non-ash dry mass remaining
+    Description: "Litter from shrub patches incubated under UV-block filters with low soil volumetric water content"
+    FilterType: FilterType2
+    LitterType: LitterType2
+    WaterContent: low
+  V9:
+    Name: ESUV
+    Units: non-ash dry mass remaining
+    Description: "Litter from shrub patches incubated under UV-pass filters with low soil volumetric water content"
+    FilterType: FilterType2
+    LitterType: LitterType2
+    WaterContent: low

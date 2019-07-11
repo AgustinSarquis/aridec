@@ -4,7 +4,7 @@ EntryAuthor: Agustín Sarquis
 
 SiteInfo:
   Name:
-  EcosystemType: urban, sandland, abbandoned farmland, scrub, xerophyllous woodland, alluvial valley, forest, steppe, desert, grassland, mountain grassland, savanna
+  EcosystemType: shrubland, urban, sandland, abbandoned farmland, scrub, xerophyllous woodland, alluvial valley, forest, steppe, desert, grassland, mountain grassland, savanna
   MAP:
     Value:
     Units: mm
@@ -17,7 +17,8 @@ SiteInfo:
     Units: masl
   SoilType:
   SoilTexture: coarse, fine
-  PlantCover:
+  Cover:
+    PlantCover:
     BunchgrassCover:
     ShrubCover:
     BareSoil:
@@ -50,7 +51,10 @@ ExperimentInfo:
        Lenght:
        Height:
        Units: cm
-      Position: adjacent to grass clumps, under cut tree, under rainout shelter, under frames, decomposition bed, covered in litter, suspended 1/60 cm over bare soil, on top of soil litter layer, underwater pinned to riverbed, under tree, under sparse tree crown, bare soil, vegetated soil, under shrub, under shadecloth, buried 5/10 cm deep
+     (add specific)Transmitance:
+       Value:
+       Units: percentage
+      Position: on microcosms, adjacent to grass clumps, under cut tree, under rainout shelter, under frames, decomposition bed, covered in litter, suspended 1/60 cm over bare soil, on top of soil litter layer, underwater pinned to riverbed, under tree, under sparse tree crown, bare soil, vegetated soil, under shrub, under shadecloth, buried 5/10 cm deep
     FilterInfo:
       FilterType1:
         Name: UV-transparent acrylic, UV-absorbing polycarbonate, shadecloth, Aclar, Mylar, Courtgard, Mylar with paint, polyester film, Solacryl SUVT, Clear UV Filter, Amber UV Filter, Plexiglass
@@ -60,7 +64,7 @@ ExperimentInfo:
         Transmitance:
           Value:
           Units: percentage
-    Treatment: tree cutting, rainfall, radiation, rainfall interception, light attenuation, biocide application, labile C addition, inorganic N addition, litter type, location, litter mixture, soil fauna exclusion, fungi reduction, nitrification inhibition, filter type
+    Treatment: soil volumetric water content, tree cutting, rainfall, radiation, rainfall interception, light attenuation, biocide application, labile C addition, inorganic N addition, litter type, location, litter mixture, soil fauna exclusion, fungi reduction, nitrification inhibition, filter type
     StartingDate:
       Month:
       Season:
