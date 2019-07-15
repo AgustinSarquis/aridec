@@ -1,0 +1,413 @@
+CitationKey: Erdenebileg2018
+doi: 10.1016/j.soilbio.2018.06.013
+EntryAuthor: Ignacio Siebenhart
+
+SiteInfo:
+ Name: Mu Us sandland, Inner Mongolia, China.
+ EcosystemType: steppe
+ MAP:
+  Value: 369
+  Units: mm
+ MAT:
+  Value: 6.2
+  Units: celsius
+ RainySeason:
+  - spring
+  - summer
+ Altitude:
+  Value: 1290
+  Units: masl
+ SoilTexture: coarse
+ PlantCover:
+  Value: 40
+  Units: percentage
+ Coordinates:
+  Latitude: 39.49
+  Longitude: 110.19
+
+ExperimentInfo:
+ LitterInfo:
+  LitterType1:
+   Species: Psammochloa villosa
+   Lifeform: graminoid
+   Material: recently senesced leaves
+   Carbon:
+    Value: 45.98
+    Units: percentage
+   Nitrogen:
+    Value: 0.90
+    Units: percentage
+   C:N:
+    Value: 53.92
+   Amount:
+    Value: 5
+    Units: g
+  LitterType2:
+   Species: Pennisetum flaccidum
+   Lifeform: graminoid
+   Material: recently senesced leaves
+   Carbon:
+    Value: 38.87
+    Units: percentage
+   Nitrogen:
+    Value: 0.62
+    Units: percentage
+   C:N:
+    Value: 62.54
+   Amount:
+    Value: 5
+    Units: g
+  LitterType3:
+   Species: Calamagrostis pseudophragmites
+   Lifeform: graminoid
+   Material: recently senesced leaves
+   Carbon:
+    Value: 44.25
+    Units: percentage
+   Nitrogen:
+    Value: 0.65
+    Units: percentage
+   C:N:
+    Value: 70.03
+   Amount:
+    Value: 5
+    Units: g
+  LitterType4:
+   Species: Salix psammophila
+   Lifeform: shrub
+   Material: recently senesced leaves
+   Carbon:
+    Value: 45.46
+    Units: percentage
+   Nitrogen:
+    Value: 1.36
+    Units: percentage
+   C:N:
+    Value: 33.92
+   Amount:
+    Value: 5
+    Units:
+  LitterType5:
+   Species: Caragana korshinskii
+   Lifeform: shrub
+   Material: recently senesced leaves
+   Carbon:
+    Value: 44.92
+    Units: percentage
+   Nitrogen:
+    Value: 1.96
+    Units: percentage
+   C:N:
+    Value: 22.99
+   Amount:
+    Value: 5
+    Units: g
+  LitterType6:
+   Species: Atraphaxis bracteata
+   Lifeform: shrub
+   Material: recently senesced leaves
+   Carbon:
+    Value: 42.23
+    Units: percentage
+   Nitrogen:
+    Value: 0.61
+    Units: percentage
+   C:N:
+    Value: 69.56
+   Amount:
+    Value: 5
+    Units: g
+  LitterType7:
+   Species: Agriophyllum squarrosum
+   Lifeform: forb
+   Material: recently senesced leaves
+   Carbon:
+    Value: 38.05
+    Units: percentage
+   Nitrogen:
+    Value: 0.62
+    Units: percentage
+   C:N:
+    Value: 61.26
+   Amount:
+    Value: 5
+    Units: g
+  LitterType8:
+   Species: Corispermum chinganicum
+   Lifeform: forb
+   Material: recently senesced leaves
+   Carbon:
+    Value: 40.54
+    Units: percentage
+   Nitrogen:
+    Value: 0.67
+    Units: percentage
+   C:N:
+    Value: 60.40
+   Amount:
+    Value: 5
+    Units: g
+ Experiment1:
+  Description: "They evaluate the effect of UV radiation and litter position on decomposition for eight different species"
+  LitterBagInfo:
+   MeshSize:
+    Value:
+     - 2
+     - 0.5
+    Units: mm
+   Dimentions:
+    Width: 20
+    Lenght: 15
+    Units: cm
+   Position:
+    Position1: bare soil
+    Position2: suspended 40 cm over bare soil
+  FilterInfo:
+   FilterType1:
+    Name: polycarbonate
+    UVTransmitance:
+     Value: 5
+     Units: percentage
+   FilterType2:
+    Name: Aclar
+    UVTransmitance:
+     Value: 90
+     Units: percentage
+  Treatment:
+   - UV attenuation
+   - Position
+  StartingDate:
+   Month: december
+   Season: winter
+  Duration:
+   Time: 12
+   Units: months
+
+Variables:
+ V1:
+  Name: Time
+  Units: months
+ V2:
+   Name: PGUVB
+   Units: mass remaining
+   Description: "P. villosa litter mass percentage remaining at harvest time positioned on the ground with blocked UV radiation"
+   Position: Position1
+   LitterType: LitterType1
+   FilterType: FilterType1
+ V3:
+   Name: PGUVP
+   Units: mass remaining
+   Description: "P. villosa litter mass percentage remaining at harvest time positioned on the ground with total UV radiation"
+   Position: Position1
+   LitterType: LitterType1
+   FilterType: FilterType2
+ V4:
+   Name: PSUVB
+   Units: mass remaining
+   Description: "P. villosa litter mass percentage remaining at harvest time positioned suspended with blocked UV radiation"
+   Position: Position2
+   LitterType: LitterType1
+   FilterType: FilterType1
+ V5:
+   Name: PSUVP
+   Units: mass remaining
+   Description: "P. villosa litter mass percentage remaining at harvest time positioned suspended with total UV radiation"
+   Position: Position2
+   LitterType: LitterType1
+   FilterType: FilterType2
+ V6:
+   Name: PeGUVB
+   Units: mass remaining
+   Description: "P. flaccidum litter mass percentage remaining at harvest time positioned on the ground with blocked UV radiation"
+   Position: Position1
+   LitterType: LitterType2
+   FilterType: FilterType1
+ V7:
+   Name: PeGUVP
+   Units: mass remaining
+   Description: "P. flaccidum litter mass percentage remaining at harvest time positioned on the ground with total UV radiation"
+   Position: Position1
+   LitterType: LitterType2
+   FilterType: FilterType2
+ V8:
+   Name: PeSUVB
+   Units: mass remaining
+   Description: "P. flaccidum litter mass percentage remaining at harvest time positioned suspended with blocked UV radiation"
+   Position: Position2
+   LitterType: LitterType2
+   FilterType: FilterType1
+ V9:
+   Name: PeSUVP
+   Units: mass remaining
+   Description: "P. flaccidum litter mass percentage remaining at harvest time positioned suspended with total UV radiation"
+   Position: Position2
+   LitterType: LitterType2
+   FilterType: FilterType2
+ V10:
+    Name: CGUVB
+    Units: mass remaining
+    Description: "C. pseudophragmites litter mass percentage remaining at harvest time positioned on the ground with blocked UV radiation"
+    Position: Position1
+    LitterType: LitterType3
+    FilterType: FilterType1
+ V11:
+    Name: CGUVP
+    Units: mass remaining
+    Description: "C. pseudophragmites litter mass percentage remaining at harvest time positioned on the ground with total UV radiation"
+    Position: Position1
+    LitterType: LitterType3
+    FilterType: FilterType2
+ V12:
+    Name: CSUVB
+    Units: mass remaining
+    Description: "C. pseudophragmites litter mass percentage remaining at harvest time positioned suspended with blocked UV radiation"
+    Position: Position2
+    LitterType: LitterType3
+    FilterType: FilterType1
+ V13:
+    Name: CSUVP
+    Units: mass remaining
+    Description: "C. pseudophragmites litter mass percentage remaining at harvest time positioned suspended with total UV radiation"
+    Position: Position2
+    LitterType: LitterType3
+    FilterType: FilterType2
+ V14:
+    Name: SGUVB
+    Units: mass remaining
+    Description: "S. psammophila litter mass percentage remaining at harvest time positioned on the ground with blocked UV radiation"
+    Position: Position1
+    LitterType: LitterType4
+    FilterType: FilterType1
+ V15:
+    Name: SGUVP
+    Units: mass remaining
+    Description: "S. psammophila litter mass percentage remaining at harvest time positioned on the ground with total UV radiation"
+    Position: Position1
+    LitterType: LitterType4
+    FilterType: FilterType2
+ V16:
+    Name: SSUVB
+    Units: mass remaining
+    Description: "S. psammophila litter mass percentage remaining at harvest time positioned suspended with blocked UV radiation"
+    Position: Position2
+    LitterType: LitterType4
+    FilterType: FilterType1
+ V17:
+    Name: SSUVP
+    Units: mass remaining
+    Description: "S. psammophila litter mass percentage remaining at harvest time positioned suspended with total UV radiation"
+    Position: Position2
+    LitterType: LitterType4
+    FilterType: FilterType2
+ V18:
+    Name: CkGUVB
+    Units: mass remaining
+    Description: "C. korshinskii litter mass percentage remaining at harvest time positioned on the ground with blocked UV radiation"
+    Position: Position1
+    LitterType: LitterType5
+    FilterType: FilterType1
+ V19:
+    Name: CkGUVP
+    Units: mass remaining
+    Description: "C. korshinskii litter mass percentage remaining at harvest time positioned on the ground with total UV radiation"
+    Position: Position1
+    LitterType: LitterType5
+    FilterType: FilterType2
+ V20:
+    Name: CkSUVB
+    Units: mass remaining
+    Description: "C. korshinskii litter mass percentage remaining at harvest time positioned suspended with blocked UV radiation"
+    Position: Position2
+    LitterType: LitterType5
+    FilterType: FilterType1
+ V21:
+    Name: CkSUVP
+    Units: mass remaining
+    Description: "C. korshinskii litter mass percentage remaining at harvest time positioned suspended with total UV radiation"
+    Position: Position2
+    LitterType: LitterType5
+    FilterType: FilterType2
+ V22:
+    Name: AGUVB
+    Units: mass remaining
+    Description: "A. bracteata litter mass percentage remaining at harvest time positioned on the ground with blocked UV radiation"
+    Position: Position1
+    LitterType: LitterType6
+    FilterType: FilterType1
+ V23:
+    Name: AGUVP
+    Units: mass remaining
+    Description: "A. bracteata litter mass percentage remaining at harvest time positioned on the ground with total UV radiation"
+    Position: Position1
+    LitterType: LitterType6
+    FilterType: FilterType2
+ V24:
+    Name: ASUVB
+    Units: mass remaining
+    Description: "A. bracteata litter mass percentage remaining at harvest time positioned suspended with blocked UV radiation"
+    Position: Position2
+    LitterType: LitterType6
+    FilterType: FilterType1
+ V25:
+    Name: ASUVP
+    Units: mass remaining
+    Description: "A. bracteata litter mass percentage remaining at harvest time positioned suspended with total UV radiation"
+    Position: Position2
+    LitterType: LitterType6
+    FilterType: FilterType2
+ V26:
+    Name: AgGUVB
+    Units: mass remaining
+    Description: "A. squarrosum litter mass percentage remaining at harvest time positioned on the ground with blocked UV radiation"
+    Position: Position1
+    LitterType: LitterType7
+    FilterType: FilterType1
+ V27:
+    Name: AgGUVP
+    Units: mass remaining
+    Description: "A. squarrosum litter mass percentage remaining at harvest time positioned on the ground with total UV radiation"
+    Position: Position1
+    LitterType: LitterType7
+    FilterType: FilterType2
+ V28:
+    Name: AgSUVB
+    Units: mass remaining
+    Description: "A. squarrosum litter mass percentage remaining at harvest time positioned suspended with blocked UV radiation"
+    Position: Position2
+    LitterType: LitterType7
+    FilterType: FilterType1
+ V29:
+    Name: AgSUVP
+    Units: mass remaining
+    Description: "A. squarrosum litter mass percentage remaining at harvest time positioned suspended with total UV radiation"
+    Position: Position2
+    LitterType: LitterType7
+    FilterType: FilterType2
+ V30:
+    Name: CoGUVB
+    Units: mass remaining
+    Description: "C. chinganicum litter mass percentage remaining at harvest time positioned on the ground with blocked UV radiation"
+    Position: Position1
+    LitterType: LitterType8
+    FilterType: FilterType1
+ V31:
+    Name: CoGUVP
+    Units: mass remaining
+    Description: "C. chinganicum litter mass percentage remaining at harvest time positioned on the ground with total UV radiation"
+    Position: Position1
+    LitterType: LitterType8
+    FilterType: FilterType2
+ V32:
+    Name: CoSUVB
+    Units: mass remaining
+    Description: "C. chinganicum litter mass percentage remaining at harvest time positioned suspended with blocked UV radiation"
+    Position: Position2
+    LitterType: LitterType8
+    FilterType: FilterType1
+ V33:
+    Name: CoSUVP
+    Units: mass remaining
+    Description: "C. chinganicum litter mass percentage remaining at harvest time positioned suspended with total UV radiation"
+    Position: Position2
+    LitterType: LitterType8
+    FilterType: FilterType2
