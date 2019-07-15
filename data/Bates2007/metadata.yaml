@@ -8,14 +8,17 @@ SiteInfo:
   MAP:
     Value: 249
     Units: mm
-  RainySeason: winter
+  RainySeason:
+    - autumn
+    - winter
+    - spring
   Altitude:
     Value: 1500
     Units: masl
   SoilType:
     - Vitrixerands
     - Durixerolls
-  PlantCover:
+  Cover:
     TreeCover: 24
     ForbCover: 5
     BareSoil: 97

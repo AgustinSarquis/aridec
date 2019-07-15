@@ -15,7 +15,7 @@ SiteInfo:
   Altitude:
     Value: 400
     Units: masl
-  PlantCover:
+  Cover:
     ShrubCover: 18
     BareSoil: 82
     Units: percentage
@@ -26,7 +26,7 @@ SiteInfo:
 ExperimentInfo:
  LitterInfo:
   LitterType1:
-   Species: Cynodon dactylon
+   Species: Capriola dactylon
    LifeForm: graminoid
    Material: recently senesced leaves
    Amount:

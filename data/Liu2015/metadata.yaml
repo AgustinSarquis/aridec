@@ -11,12 +11,15 @@ SiteInfo:
   MAT:
     Value: 6.2
     Units: Celsius
-  RainySeason: summer
+  RainySeason:
+   - spring
+   - summer
   Altitude:
     Value: 1290
     Units: masl
   SoilType: aeolian sand
-  PlantCover:
+  Cover:
+    PlantCover: 40
     BareSoil: 60
     Units: percentage
   Coordinates:

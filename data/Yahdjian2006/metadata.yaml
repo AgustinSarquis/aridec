@@ -11,13 +11,15 @@ SiteInfo:
   MAT:
     Value: 8
     Units: Celsius
-  RainySeason: winter
+  RainySeason:
+   - autumn
+   - winter
   Altitude:
     Value: 500
     Units: masl
   SoilType: Aridisol
   SoilTexture: coarse
-  PlantCover:
+  Cover:
     BunchgrassCover: 32
     ShrubCover: 15
     BareSoil: 53
@@ -32,14 +34,14 @@ SiteInfo:
 ExperimentInfo:
  LitterInfo:
   LitterType1:
-   Species: Stipa speciosa
+   Species: Pappostipa speciosa
    LifeForm: graminoid
    Material: recently senesced leaves
    Amount:
      Value: 1
      Units: g
  Experiment1:
-    Description: "They created four levels of precipitation input: control and three levels (30, 55 and 80%) of precipitation interception and they examined litter decomposition of a dominant grass species, Stipa speciosa, over two consecutive years."
+    Description: "They created four levels of precipitation input: control and three levels (30, 55 and 80%) of precipitation interception and they examined litter decomposition of a dominant grass species, Pappostipa speciosa, over two consecutive years."
     LitterBagInfo:
       Material: fiberglass
       MeshSize:
@@ -68,7 +70,7 @@ Variables:
   V2:
     Name: Ctrl
     Units: Organic matter remaining
-    Description: "Mass loss through time of leaf litter of the grass Stipa speciosa without any rainfall interception treatment"
+    Description: "Mass loss through time of leaf litter of the grass Pappostipa speciosa without any rainfall interception treatment"
     LitterType: LitterType1
     RainfallInterception:
       Value: 0
@@ -76,7 +78,7 @@ Variables:
   V3:
     Name: RI_30
     Units: Organic matter remaining
-    Description: "Mass loss through time of leaf litter of the grass Stipa speciosa for the 30% rainfall interception treatment"
+    Description: "Mass loss through time of leaf litter of the grass Pappostipa speciosa for the 30% rainfall interception treatment"
     LitterType: LitterType1
     RainfallInterception:
       Value: 30
@@ -84,7 +86,7 @@ Variables:
   V4:
     Name: RI_55
     Units: Organic matter remaining
-    Description: "Mass loss through time of leaf litter of the grass Stipa speciosa for the 55% rainfall interception treatment"
+    Description: "Mass loss through time of leaf litter of the grass Pappostipa speciosa for the 55% rainfall interception treatment"
     LitterType: LitterType1
     RainfallInterception:
       Value: 55
@@ -92,7 +94,7 @@ Variables:
   V5:
     Name: RI_80
     Units: Organic matter remaining
-    Description: "Mass loss through time of leaf litter of the grass Stipa speciosa for the 80% rainfall interception treatment"
+    Description: "Mass loss through time of leaf litter of the grass Pappostipa speciosa for the 80% rainfall interception treatment"
     LitterType: LitterType1
     RainfallInterception:
       Value: 80

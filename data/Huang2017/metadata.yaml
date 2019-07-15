@@ -24,8 +24,8 @@ SiteInfo:
       - 13.9
     Units: Celsius
   RainySeason:
-    - summer
     - spring
+    - summer
   Altitude:
     Value:
       - 460
@@ -36,7 +36,7 @@ SiteInfo:
     - desert solonetz
     - desert solonetz
     - Aeolian
-  PlantCover:
+  Cover:
     ForbCover:
       - 40
       - 20
@@ -88,7 +88,7 @@ ExperimentInfo:
      Value: 10
      Units: g
   LitterType2:
-   Species: Phragmites australis
+   Species: Phragmites communis
    LifeForm: graminoid
    Material: recently senesced leaves
    Carbon:
@@ -213,14 +213,14 @@ Variables:
   V4:
     Name: 144PaS
     Units: non-ash dry mass remaining
-    Description: "P. australis leaf litter was incubated for 2.5 years under full solar radiation at a site with 144 mm MAP"
+    Description: "P. communis leaf litter was incubated for 2.5 years under full solar radiation at a site with 144 mm MAP"
     FilterType: FilterType1
     LitterType: LitterType2
     Site: Gurbantunggut Desert (margin), China
   V5:
     Name: 144PaUVf
     Units: non-ash dry mass remaining
-    Description: "P. australis leaf litter was incubated for 2.5 years under UV filters at a site with 144 mm MAP"
+    Description: "P. communis leaf litter was incubated for 2.5 years under UV filters at a site with 144 mm MAP"
     FilterType: FilterType2
     LitterType: LitterType2
     Site: Gurbantunggut Desert (margin), China
@@ -255,14 +255,14 @@ Variables:
   V10:
     Name: 76PaS
     Units: non-ash dry mass remaining
-    Description: "P. australis leaf litter was incubated for 2.5 years under full solar radiation at a site with 76 mm MAP"
+    Description: "P. communis leaf litter was incubated for 2.5 years under full solar radiation at a site with 76 mm MAP"
     FilterType: FilterType1
     LitterType: LitterType2
     Site: Gurbantunggut Desert (center), China
   V11:
     Name: 76PaUVf
     Units: non-ash dry mass remaining
-    Description: "P. australis leaf litter was incubated for 2.5 years under UV filters at a site with 76 mm MAP"
+    Description: "P. communis leaf litter was incubated for 2.5 years under UV filters at a site with 76 mm MAP"
     FilterType: FilterType2
     LitterType: LitterType2
     Site: Gurbantunggut Desert (center), China
@@ -297,14 +297,14 @@ Variables:
   V16:
     Name: 16PaS
     Units: non-ash dry mass remaining
-    Description: "P. australis leaf litter was incubated for 2.5 years under full solar radiation at a site with 16 mm MAP"
+    Description: "P. communis leaf litter was incubated for 2.5 years under full solar radiation at a site with 16 mm MAP"
     FilterType: FilterType1
     LitterType: LitterType2
     Site: Turpan Desert, China
   V17:
     Name: 16PaUVf
     Units: non-ash dry mass remaining
-    Description: "P. australis leaf litter was incubated for 2.5 years under UV filters at a site with 16 mm MAP"
+    Description: "P. communis leaf litter was incubated for 2.5 years under UV filters at a site with 16 mm MAP"
     FilterType: FilterType2
     LitterType: LitterType2
     Site: Turpan Desert, China

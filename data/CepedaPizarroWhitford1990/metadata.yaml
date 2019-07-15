@@ -36,7 +36,7 @@ ExperimentInfo:
      Value: 10.35
      Units: g
   LitterType2:
-   Species: Panicum obtusum
+   Species: Hopia obtusum
    LifeForm: graminoid
    Material: aboveground parts
    Lignin:
@@ -46,7 +46,7 @@ ExperimentInfo:
      Value: 10.35
      Units: g
   LitterType3:
-   Species: Prosopis glandulosa
+   Species: Prosopis juliflora
    LifeForm: tree
    Material: leaves
    C:N:
@@ -70,7 +70,7 @@ ExperimentInfo:
      Value: 10.35
      Units: g
   LitterType5:
-   Species: Erioneuron pulchellum
+   Species: Munroa pulchellum
    LifeForm: graminoid
    Material: aboveground parts
    C:N:
@@ -125,7 +125,7 @@ Variables:
   V4:
     Name: PPo
     Units: organic matter remaining
-    Description: "Mass loss of P. obtusum leaf litter at the Playa site"
+    Description: "Mass loss of H. obtusum leaf litter at the Playa site"
     LitterType: LitterType2
     Site: Playa
   V5:
@@ -137,7 +137,7 @@ Variables:
   V6:
     Name: PFPg
     Units: organic matter remaining
-    Description: "Mass loss of P. glandulosa leaf litter at the Playa Fringe site"
+    Description: "Mass loss of P. juliflora leaf litter at the Playa Fringe site"
     LitterType: LitterType3
     Site: Playa Fringe
   V7:
@@ -161,7 +161,7 @@ Variables:
   V10:
     Name: LPEp
     Units: organic matter remaining
-    Description: "Mass loss of E. pulchellum leaf litter at the Lower Piedmont site"
+    Description: "Mass loss of M. pulchellum leaf litter at the Lower Piedmont site"
     LitterType: LitterType5
     Site: Lower Piedmont
   V11:

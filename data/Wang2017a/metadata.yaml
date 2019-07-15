@@ -11,7 +11,9 @@ SiteInfo:
   MAT:
     Value: 2.1
     Units: Celsius
-  RainySeason: summer
+  RainySeason:
+   - spring
+   - summer
   Altitude:
     Value: 1324
     Units: masl
@@ -23,7 +25,7 @@ SiteInfo:
 ExperimentInfo:
  LitterInfo:
   LitterType1:
-   Species: Cleistogenes squarrosa
+   Species: Kengia squarrosa
    LifeForm: graminoid
    Material: recently senesced leaves
    Nitrogen:
@@ -39,7 +41,7 @@ ExperimentInfo:
      Value: 2
      Units: g
   LitterType2:
-   Species: Stipa krylovii
+   Species: Stipa sareptana
    LifeForm: graminoid
    Material: recently senesced leaves
    Nitrogen:
@@ -55,7 +57,7 @@ ExperimentInfo:
      Value: 3
      Units: g
  Experiment1:
-    Description: "A two-by-two factorial experiment was conducted including two UV treatments (ambient UVand reduced UV) and two litter type treatments (C. squarrosa and S. krylovii)."
+    Description: "A two-by-two factorial experiment was conducted including two UV treatments (ambient UVand reduced UV) and two litter type treatments (K. squarrosa and S. sareptana)."
     LitterBagInfo:
       Material: nylon
       MeshSize:
@@ -111,24 +113,24 @@ Variables:
   V2:
     Name: Cs_ambient
     Units: mass remaining
-    Description: "C. squarrosa leaf litter was incubated under UV-transparent filter for 29 months"
+    Description: "K. squarrosa leaf litter was incubated under UV-transparent filter for 29 months"
     FilterType: FilterType1
     LitterType: LitterType1
   V3:
     Name: Cs_reduced
     Units: mass remaining
-    Description: "C. squarrosa leaf litter was incubated under UV-absorbing filter for 29 months"
+    Description: "K. squarrosa leaf litter was incubated under UV-absorbing filter for 29 months"
     FilterType: FilterType2
     LitterType: LitterType1
   V4:
     Name: Sk_ambient
     Units: mass remaining
-    Description: "S. krylovii leaf litter was incubated under UV-transparent filter for 29 months"
+    Description: "S. sareptana leaf litter was incubated under UV-transparent filter for 29 months"
     FilterType: FilterType1
     LitterType: LitterType2
   V5:
     Name: Sk_reduced
     Units: mass remaining
-    Description: "S. krylovii leaf litter was incubated under UV-absorbing filter for 29 months"
+    Description: "S. sareptana leaf litter was incubated under UV-absorbing filter for 29 months"
     FilterType: FilterType2
     LitterType: LitterType2

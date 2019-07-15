@@ -131,7 +131,7 @@ ExperimentInfo:
      Value: 2
      Units: g
   LitterType5:
-   Species: Fouquieria diguetti
+   Species: Fouquieria diguetii
    LifeForm: shrub
    Material: recently senesced leaves
    Carbon:
@@ -334,7 +334,7 @@ Variables:
   V18:
     Name: FdWBS
     Units: mass remaining
-    Description: "Mass loss of F. diguetti leaf litter during a wet year on bare soil after a year"
+    Description: "Mass loss of F. diguetii leaf litter during a wet year on bare soil after a year"
     LitterType: LitterType5
     Position: Location1
     Rainfall:
@@ -343,7 +343,7 @@ Variables:
   V19:
     Name: FdWPC
     Units: mass remaining
-    Description: "Mass loss of F. diguetti leaf litter during a wet year under tree canopy after a year"
+    Description: "Mass loss of F. diguetii leaf litter during a wet year under tree canopy after a year"
     LitterType: LitterType5
     Position: Location2
     Rainfall:
@@ -352,7 +352,7 @@ Variables:
   V20:
     Name: FdDBS
     Units: mass remaining
-    Description: "Mass loss of F. diguetti leaf litter during a dry year on bare soil after a year"
+    Description: "Mass loss of F. diguetii leaf litter during a dry year on bare soil after a year"
     LitterType: LitterType5
     Position: Location1
     Rainfall:
@@ -361,7 +361,7 @@ Variables:
   V21:
     Name: FdDPC
     Units: mass remaining
-    Description: "Mass loss of F. diguetti leaf litter during a dry year under tree canopy after a year"
+    Description: "Mass loss of F. diguetii leaf litter during a dry year under tree canopy after a year"
     LitterType: LitterType5
     Position: Location2
     Rainfall:

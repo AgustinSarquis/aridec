@@ -16,18 +16,29 @@ SiteInfo:
    - 750
    - 900
   Units: mm
+ Coordinates:
+  Latitude:
+   - -22.417
+   - -24.392
+   - -25.166
+   - -28.017
+  Longitude:
+   - 30.833
+   - 31.783
+   - 31.267
+   - 32.250
 
 ExperimentInfo:
  LitterInfo:
   LitterType1:
-   Species: Urochloa mosambicensis
+   Species: Urochloa trichopus
    Lifeform: graminoid
    Material: aboveground parts
    Amount:
     Value: 8
     Units: g
   LitterType2:
-   Species: Cenchrus ciliaris
+   Species: Pennisetum ciliare
    Lifeform: graminoid
    Material: aboveground parts
    Amount:
@@ -41,7 +52,7 @@ ExperimentInfo:
     Value: 8
     Units: g
   LitterType4:
-   Species: Cymbopogon excavatus
+   Species: Cymbopogon caesius
    Lifeform: graminoid
    Material: aboveground parts
    Amount:
@@ -78,224 +89,224 @@ Variable:
  V2:
    Name: UMW
    Units: mass remaining
-   Description: "Litter percentage remaining at harvest time decomposed during the wet season"
+   Description: "U. trichopus litter percentage remaining at harvest time decomposed during the wet season"
    Site: Mopani, Krueger National Park, South Africa
    LitterType: LitterType1
    StartingDate: StartingDate1
  V3:
    Name: USW
    Units: mass remaining
-   Description: "Litter percentage remaining at harvest time decomposed during the wet season"
+   Description: "U. trichopus litter percentage remaining at harvest time decomposed during the wet season"
    Site: Satara, Krueger National Park, South Africa
    LitterType: LitterType1
    StartingDate: StartingDate1
  V4:
    Name: UPW
    Units: mass remaining
-   Description: "Litter percentage remaining at harvest time decomposed during the wet season"
+   Description: "U. trichopus litter percentage remaining at harvest time decomposed during the wet season"
    Site: Pretoriuskop, Krueger National Park, South Africa
    LitterType: LitterType1
    StartingDate: StartingDate1
  V5:
    Name: UHW
    Units: mass remaining
-   Description: "Litter percentage remaining at harvest time decomposed during the wet season"
+   Description: "U. trichopus litter percentage remaining at harvest time decomposed during the wet season"
    Site: Hluhluwe, Hluhluwe-iMfolozi National Park, South Africa
    LitterType: LitterType1
    StartingDate: StartingDate1
  V6:
    Name: UMD
    Units: mass remaining
-   Description: "Litter percentage remaining at harvest time decomposed during the dry season"
+   Description: "U. trichopus litter percentage remaining at harvest time decomposed during the dry season"
    Site: Mopani, Krueger National Park, South Africa
    LitterType: LitterType1
    StartingDate: StartingDate2
  V7:
    Name: USD
    Units: mass remaining
-   Description: "Litter percentage remaining at harvest time decomposed during the dry season"
+   Description: "U. trichopus litter percentage remaining at harvest time decomposed during the dry season"
    Site: Satara, Krueger National Park, South Africa
    LitterType: LitterType1
    StartingDate: StartingDate2
  V8:
    Name: UPD
    Units: mass remaining
-   Description: "Litter percentage remaining at harvest time decomposed during the dry season"
+   Description: "U. trichopus litter percentage remaining at harvest time decomposed during the dry season"
    Site: Pretoriuskop, Krueger National Park, South Africa
    LitterType: LitterType1
    StartingDate: StartingDate2
  V9:
    Name: UHD
    Units: mass remaining
-   Description: "Litter percentage remaining at harvest time decomposed during the dry season"
+   Description: "U. trichopus litter percentage remaining at harvest time decomposed during the dry season"
    Site: Hluhluwe, Hluhluwe-iMfolozi National Park, South Africa
    LitterType: LitterType1
    StartingDate: StartingDate2
  V10:
     Name: CMW
     Units: mass remaining
-    Description: "Litter percentage remaining at harvest time decomposed during the wet season"
+    Description: "P. ciliare litter percentage remaining at harvest time decomposed during the wet season"
     Site: Mopani, Krueger National Park, South Africa
     LitterType: LitterType2
     StartingDate: StartingDate1
  V11:
     Name: CSW
     Units: mass remaining
-    Description: "Litter percentage remaining at harvest time decomposed during the wet season"
+    Description: "P. ciliare litter percentage remaining at harvest time decomposed during the wet season"
     Site: Satara, Krueger National Park, South Africa
     LitterType: LitterType2
     StartingDate: StartingDate1
  V12:
     Name: CPW
     Units: mass remaining
-    Description: "Litter percentage remaining at harvest time decomposed during the wet season"
+    Description: "P. ciliare litter percentage remaining at harvest time decomposed during the wet season"
     Site: Pretoriuskop, Krueger National Park, South Africa
     LitterType: LitterType2
     StartingDate: StartingDate1
  V13:
     Name: CHW
     Units: mass remaining
-    Description: "Litter percentage remaining at harvest time decomposed during the wet season"
+    Description: "P. ciliare litter percentage remaining at harvest time decomposed during the wet season"
     Site: Hluhluwe, Hluhluwe-iMfolozi National Park, South Africa
     LitterType: LitterType2
     StartingDate: StartingDate1
  V14:
     Name: CMD
     Units: mass remaining
-    Description: "Litter percentage remaining at harvest time decomposed during the dry season"
+    Description: "P. ciliare litter percentage remaining at harvest time decomposed during the dry season"
     Site: Mopani, Krueger National Park, South Africa
     LitterType: LitterType2
     StartingDate: StartingDate2
  V15:
     Name: CSD
     Units: mass remaining
-    Description: "Litter percentage remaining at harvest time decomposed during the dry season"
+    Description: "P. ciliare litter percentage remaining at harvest time decomposed during the dry season"
     Site: Satara, Krueger National Park, South Africa
     LitterType: LitterType2
     StartingDate: StartingDate2
  V16:
     Name: CPD
     Units: mass remaining
-    Description: "Litter percentage remaining at harvest time decomposed during the dry season"
+    Description: "P. ciliare litter percentage remaining at harvest time decomposed during the dry season"
     Site: Pretoriuskop, Krueger National Park, South Africa
     LitterType: LitterType2
     StartingDate: StartingDate2
  V17:
     Name: CHD
     Units: mass remaining
-    Description: "Litter percentage remaining at harvest time decomposed during the dry season"
+    Description: "P. ciliare litter percentage remaining at harvest time decomposed during the dry season"
     Site: Hluhluwe, Hluhluwe-iMfolozi National Park, South Africa
     LitterType: LitterType2
     StartingDate: StartingDate2
  V18:
     Name: TMW
     Units: mass remaining
-    Description: "Litter percentage remaining at harvest time decomposed during the wet season"
+    Description: "T. triandra litter percentage remaining at harvest time decomposed during the wet season"
     Site: Mopani, Krueger National Park, South Africa
     LitterType: LitterType3
     StartingDate: StartingDate1
  V19:
     Name: TSW
     Units: mass remaining
-    Description: "Litter percentage remaining at harvest time decomposed during the wet season"
+    Description: "T. triandra litter percentage remaining at harvest time decomposed during the wet season"
     Site: Satara, Krueger National Park, South Africa
     LitterType: LitterType3
     StartingDate: StartingDate1
  V20:
     Name: TPW
     Units: mass remaining
-    Description: "Litter percentage remaining at harvest time decomposed during the wet season"
+    Description: "T. triandra litter percentage remaining at harvest time decomposed during the wet season"
     Site: Pretoriuskop, Krueger National Park, South Africa
     LitterType: LitterType3
     StartingDate: StartingDate1
  V21:
     Name: THW
     Units: mass remaining
-    Description: "Litter percentage remaining at harvest time decomposed during the wet season"
+    Description: "T. triandra litter percentage remaining at harvest time decomposed during the wet season"
     Site: Hluhluwe, Hluhluwe-iMfolozi National Park, South Africa
     LitterType: LitterType3
     StartingDate: StartingDate1
  V22:
     Name: TMD
     Units: mass remaining
-    Description: "Litter percentage remaining at harvest time decomposed during the dry season"
+    Description: "T. triandra litter percentage remaining at harvest time decomposed during the dry season"
     Site: Mopani, Krueger National Park, South Africa
     LitterType: LitterType3
     StartingDate: StartingDate2
  V23:
     Name: TSD
     Units: mass remaining
-    Description: "Litter percentage remaining at harvest time decomposed during the dry season"
+    Description: "T. triandra litter percentage remaining at harvest time decomposed during the dry season"
     Site: Satara, Krueger National Park, South Africa
     LitterType: LitterType3
     StartingDate: StartingDate2
  V24:
     Name: TPD
     Units: mass remaining
-    Description: "Litter percentage remaining at harvest time decomposed during the dry season"
+    Description: "T. triandra litter percentage remaining at harvest time decomposed during the dry season"
     Site: Pretoriuskop, Krueger National Park, South Africa
     LitterType: LitterType3
     StartingDate: StartingDate2
  V25:
     Name: THD
     Units: mass remaining
-    Description: "Litter percentage remaining at harvest time decomposed during the dry season"
+    Description: "T. triandra litter percentage remaining at harvest time decomposed during the dry season"
     Site: Hluhluwe, Hluhluwe-iMfolozi National Park, South Africa
     LitterType: LitterType3
     StartingDate: StartingDate2
  V26:
     Name: CYMW
     Units: mass remaining
-    Description: "Litter percentage remaining at harvest time decomposed during the wet season"
+    Description: "C. caesius litter percentage remaining at harvest time decomposed during the wet season"
     Site: Mopani, Krueger National Park, South Africa
     LitterType: LitterType4
     StartingDate: StartingDate1
  V27:
     Name: CYSW
     Units: mass remaining
-    Description: "Litter percentage remaining at harvest time decomposed during the wet season"
+    Description: "C. caesius litter percentage remaining at harvest time decomposed during the wet season"
     Site: Satara, Krueger National Park, South Africa
     LitterType: LitterType4
     StartingDate: StartingDate1
  V28:
     Name: CYPW
     Units: mass remaining
-    Description: "Litter percentage remaining at harvest time decomposed during the wet season"
+    Description: "C. caesius litter percentage remaining at harvest time decomposed during the wet season"
     Site: Pretoriuskop, Krueger National Park, South Africa
     LitterType: LitterType4
     StartingDate: StartingDate1
  V29:
     Name: CYHW
     Units: mass remaining
-    Description: "Litter percentage remaining at harvest time decomposed during the wet season"
+    Description: "C. caesius litter percentage remaining at harvest time decomposed during the wet season"
     Site: Hluhluwe, Hluhluwe-iMfolozi National Park, South Africa
     LitterType: LitterType4
     StartingDate: StartingDate1
  V30:
     Name: CYMD
     Units: mass remaining
-    Description: "Litter percentage remaining at harvest time decomposed during the dry season"
+    Description: "C. caesius litter percentage remaining at harvest time decomposed during the dry season"
     Site: Mopani, Krueger National Park, South Africa
     LitterType: LitterType4
     StartingDate: StartingDate2
  V31:
     Name: CYSD
     Units: mass remaining
-    Description: "Litter percentage remaining at harvest time decomposed during the dry season"
+    Description: "C. caesius litter percentage remaining at harvest time decomposed during the dry season"
     Site: Satara, Krueger National Park, South Africa
     LitterType: LitterType4
     StartingDate: StartingDate2
  V32:
     Name: CYPD
     Units: mass remaining
-    Description: "Litter percentage remaining at harvest time decomposed during the dry season"
+    Description: "C. caesius litter percentage remaining at harvest time decomposed during the dry season"
     Site: Pretoriuskop, Krueger National Park, South Africa
     LitterType: LitterType4
     StartingDate: StartingDate2
  V33:
     Name: CYHD
     Units: mass remaining
-    Description: "Litter percentage remaining at harvest time decomposed during the dry season"
+    Description: "C. caesius litter percentage remaining at harvest time decomposed during the dry season"
     Site: Hluhluwe, Hluhluwe-iMfolozi National Park, South Africa
     LitterType: LitterType4
     StartingDate: StartingDate2

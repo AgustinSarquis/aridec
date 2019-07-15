@@ -58,9 +58,9 @@ ExperimentInfo:
      - Acer saccharum
      - Drypetes glauca
      - Liriodendron tulipifera
-     - Pinus resinosa
-     - Quercus prinus
-     - Rhododendron macrohphyllum
+     - Pinus hartwegii
+     - Quercus montana
+     - Rhododendron macrophyllum
      - Thuja plicata
      - Triticum aestivum
    LifeForm:
@@ -98,7 +98,7 @@ ExperimentInfo:
      Value: 10
      Units: g
   LitterType3:
-    Species: Pinus resinosa
+    Species: Pinus hartwegii
     LifeForm: conifer
     Material: leaves
     Celulose:
@@ -216,7 +216,7 @@ Variables:
   V6:
     Name: PIRE
     Units: mass remaining
-    Description: "Percent mass remaining over time averaged across sites for Pinus resinosa litter"
+    Description: "Percent mass remaining over time averaged across sites for Pinus hartwegii litter"
     LitterType: LitterType3
   V7:
     Name: THPL

@@ -11,7 +11,9 @@ SiteInfo:
   MAT:
     Value: 17
     Units: Celsius
-  RainySeason: summer
+  RainySeason:
+  - spring
+  - summer
   SoilType: Mollic Ustifluvent
   Coordinates:
     Latitude: -31.4
@@ -22,12 +24,12 @@ ExperimentInfo:
   LitterType1:
    Species:
     - Aspidosperma quebracho-blanco
-    - Zizyphus mistol
+    - Ziziphus mistol
     - Celtis sp.
     - Mimozyganthus carinatus
     - Geoffroea decorticans
     - Prosopis sp.
-    - Acacia sp.
+    - Vachellia sp.
    LifeForm:
     - tree
     - shrub

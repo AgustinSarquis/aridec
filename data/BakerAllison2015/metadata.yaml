@@ -22,7 +22,7 @@ SiteInfo:
 ExperimentInfo:
  LitterInfo:
   LitterType1:
-   Species: Elymus condensatus
+   Species: Leymus condensatus
    LifeForm: graminoid
    Material: recently senesced leaves
    Lignin:

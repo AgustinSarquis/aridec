@@ -11,13 +11,15 @@ SiteInfo:
   MAT:
     Value: 8
     Units: Celsius
-  RainySeason: winter
+  RainySeason:
+    - autumn
+    - winter
   Altitude:
     Value: 500
     Units: masl
   SoilType: Aridisol
   SoilTexture: coarse
-  PlantCover:
+  Cover:
     BunchgrassCover: 25
     ShrubCover: 13
     BareSoil: 62
@@ -32,7 +34,7 @@ SiteInfo:
 ExperimentInfo:
  LitterInfo:
   LitterType1:
-   Species: Stipa speciosa
+   Species: Pappostipa speciosa
    LifeForm: graminoid
    Material: recently senesced leaves
    Amount:

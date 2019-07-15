@@ -23,7 +23,7 @@ SiteInfo:
 ExperimentInfo:
  LitterInfo:
   LitterType1:
-   Species: Tamarix ramosissima
+   Species: Tamarix chinensis
    LifeForm: tree
    Material: recently senesced leaves
    Nitrogen:
@@ -52,7 +52,7 @@ ExperimentInfo:
      Value: 3
      Units: g
   LitterType2:
-   Species: Tamarix ramosissima
+   Species: Tamarix chinensis
    LifeForm: tree
    Material: prematurely senesced leaves
    Nitrogen:

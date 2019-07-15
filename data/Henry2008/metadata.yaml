@@ -11,7 +11,10 @@ SiteInfo:
   MAT:
     Value: 16.25
     Units: Celsius
-  RainySeason: winter
+  RainySeason:
+   - autumn
+   - winter
+   - spring
   Altitude:
     Value: 120
     Units: masl
@@ -41,8 +44,8 @@ ExperimentInfo:
    Species:
      - Avena barbata
      - Avena fatua
-     - Bromus hordeaceus
-     - Lolium multiflorum
+     - Bromus mollis
+     - Lolium perenne
    LifeForm: graminoid
    Material: recently senesced leaves
    Carbon:
@@ -61,8 +64,8 @@ ExperimentInfo:
    Species:
      - Avena barbata
      - Avena fatua
-     - Bromus hordeaceus
-     - Lolium multiflorum
+     - Bromus mollis
+     - Lolium perenne
    LifeForm: graminoid
    Material: recently senesced stems
    Carbon:

@@ -16,7 +16,8 @@ SiteInfo:
     Value: 1300
     Units: masl
   SoilType: aeolian sand
-  PlantCover:
+  Cover:
+    PlantCover: 40
     BareSoil: 60
     Units: percentage
   Coordinates:
@@ -26,7 +27,7 @@ SiteInfo:
 ExperimentInfo:
  LitterInfo:
   LitterType1:
-   Species: Hedysarum leave
+   Species: Corethrodendron lignosum
    LifeForm: shrub
    Material: recently senesced leaves
    Carbon:
@@ -62,7 +63,7 @@ ExperimentInfo:
      Value: 0.5
      Units: g
   LitterType3:
-   Species: Agriophyllum pungens
+   Species: Agriophyllum squarrosum
    LifeForm: forb
    Material: recently senesced leaves
    Carbon:
@@ -98,7 +99,7 @@ ExperimentInfo:
      Value: 0.5
      Units: g
   LitterType5:
-   Species: Leymus chinensis
+   Species: Leymus divaricatus
    LifeForm: graminoid
    Material: recently senesced leaves
    Carbon:
@@ -116,7 +117,7 @@ ExperimentInfo:
      Value: 0.5
      Units: g
   LitterType6:
-   Species: Achnatherum sibiricum
+   Species: Stipa sibirica
    LifeForm: graminoid
    Material: recently senesced leaves
    Carbon:
@@ -134,7 +135,7 @@ ExperimentInfo:
      Value: 0.5
      Units: g
   LitterType7:
-   Species: Stipa krylovii
+   Species: Stipa sareptana
    LifeForm: graminoid
    Material: recently senesced leaves
    Carbon:
@@ -170,7 +171,7 @@ ExperimentInfo:
      Value: 0.5
      Units: g
   LitterType9:
-   Species: Caragan korshinskii
+   Species: Caragana korshinskii
    LifeForm: shrub
    Material: recently senesced leaves
    Carbon:
@@ -300,13 +301,13 @@ Variables:
   V2:
     Name: Hl_S
     Units: mass remaining
-    Description: "Hedysarum leave leaf litter was incubated on a decompositon bed under shade treatment"
+    Description: "Corethrodendron lignosum leaf litter was incubated on a decompositon bed under shade treatment"
     FilterType: FilterType1
     LitterType: LitterType1
   V3:
     Name: Hl_U
     Units: mass remaining
-    Description: "Hedysarum leave leaf litter was incubated on a decompositon bed under full sun treatment"
+    Description: "Corethrodendron lignosum leaf litter was incubated on a decompositon bed under full sun treatment"
     FilterType: NA
     LitterType: LitterType1
   V4:
@@ -324,13 +325,13 @@ Variables:
   V6:
     Name: Ap_S
     Units: mass remaining
-    Description: "Agriophyllum pungens leaf litter was incubated on a decompositon bed under shade treatment"
+    Description: "Agriophyllum squarrosum leaf litter was incubated on a decompositon bed under shade treatment"
     FilterType: FilterType1
     LitterType: LitterType3
   V7:
     Name: Ap_U
     Units: mass remaining
-    Description: "Agriophyllum pungens leaf litter was incubated on a decompositon bed under full sun treatment"
+    Description: "Agriophyllum squarrosum leaf litter was incubated on a decompositon bed under full sun treatment"
     FilterType: NA
     LitterType: LitterType3
   V8:
@@ -348,37 +349,37 @@ Variables:
   V10:
     Name: Lc_S
     Units: mass remaining
-    Description: "Leymus chinensis leaf litter was incubated on a decompositon bed under shade treatment"
+    Description: "Leymus divaricatus leaf litter was incubated on a decompositon bed under shade treatment"
     FilterType: FilterType1
     LitterType: LitterType5
   V11:
     Name: Lc_U
     Units: mass remaining
-    Description: "Leymus chinensis leaf litter was incubated on a decompositon bed under full sun treatment"
+    Description: "Leymus divaricatus leaf litter was incubated on a decompositon bed under full sun treatment"
     FilterType: NA
     LitterType: LitterType5
   V12:
     Name: Asi_S
     Units: mass remaining
-    Description: "Achnatherum sibiricum leaf litter was incubated on a decompositon bed under shade treatment"
+    Description: "Stipa sibirica leaf litter was incubated on a decompositon bed under shade treatment"
     FilterType: FilterType1
     LitterType: LitterType6
   V13:
     Name: Asi_U
     Units: mass remaining
-    Description: "Achnatherum sibiricum leaf litter was incubated on a decompositon bed under full sun treatment"
+    Description: "Stipa sibirica leaf litter was incubated on a decompositon bed under full sun treatment"
     FilterType: NA
     LitterType: LitterType6
   V14:
     Name: Sk_S
     Units: mass remaining
-    Description: "Stipa krylovii leaf litter was incubated on a decompositon bed under shade treatment"
+    Description: "Stipa sareptana leaf litter was incubated on a decompositon bed under shade treatment"
     FilterType: FilterType1
     LitterType: LitterType7
   V15:
     Name: Sk_U
     Units: mass remaining
-    Description: "Stipa krylovii leaf litter was incubated on a decompositon bed under full sun treatment"
+    Description: "Stipa sareptana leaf litter was incubated on a decompositon bed under full sun treatment"
     FilterType: NA
     LitterType: LitterType7
   V16:
@@ -396,13 +397,13 @@ Variables:
   V18:
     Name: Ck_S
     Units: mass remaining
-    Description: "Caragan korshinskii litter was incubated on a decompositon bed under shade treatment"
+    Description: "Caragana korshinskii litter was incubated on a decompositon bed under shade treatment"
     FilterType: FilterType1
     LitterType: LitterType9
   V19:
     Name: Ck_U
     Units: mass remaining
-    Description: "Caragan korshinskii leaf litter was incubated on a decompositon bed under full sun treatment"
+    Description: "Caragana korshinskii leaf litter was incubated on a decompositon bed under full sun treatment"
     FilterType: NA
     LitterType: LitterType9
   V20:

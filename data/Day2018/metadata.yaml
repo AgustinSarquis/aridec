@@ -16,7 +16,7 @@ SiteInfo:
     Value: 400
     Units: masl
   SoilType: sandy loam
-  PlantCover:
+  Cover:
     Gravel: 35
     BareSoil: 65
     Units: percentage
@@ -85,7 +85,7 @@ ExperimentInfo:
      Value: 0.88
      Units: g
   LitterType3:
-   Species: Prosopis velutina
+   Species: Prosopis juliflora
    LifeForm: tree
    Material: recently senesced leaves
    Carbon:
@@ -288,7 +288,7 @@ ExperimentInfo:
      Value: 1.25
      Units: g
   LitterType10:
-   Species: Bromus rubens
+   Species: Anisantha rubens
    LifeForm: graminoid
    Material: recently senesced leaves
    Carbon:
@@ -317,7 +317,7 @@ ExperimentInfo:
      Value: 0.88
      Units: g
   LitterType11:
-   Species: Cynodon dactylon
+   Species: Capriola dactylon
    LifeForm: graminoid
    Material: recently senesced leaves
    Carbon:
@@ -462,19 +462,19 @@ Variables:
   V8:
     Name: Pv_fs
     Units: organic dry mass remaining
-    Description: "Prosopis velutina leaf litter under full sun treatment"
+    Description: "Prosopis juliflora leaf litter under full sun treatment"
     FilterType: FilterType1
     LitterType: LitterType3
   V9:
     Name: Pv_NoUV
     Units: organic dry mass remaining
-    Description: "Prosopis velutina leaf litter under no UV treatment"
+    Description: "Prosopis juliflora leaf litter under no UV treatment"
     FilterType: FilterType2
     LitterType: LitterType3
   V10:
     Name: Pv_NoUVbl
     Units: organic dry mass remaining
-    Description: "Prosopis velutina leaf litter under no UV/blue treatment"
+    Description: "Prosopis juliflora leaf litter under no UV/blue treatment"
     FilterType: FilterType3
     LitterType: LitterType3
   V11:
@@ -588,19 +588,19 @@ Variables:
   V29:
     Name: Br_fs
     Units: organic dry mass remaining
-    Description: "Bromus rubens leaf litter under full sun treatment"
+    Description: "A. rubens leaf litter under full sun treatment"
     FilterType: FilterType1
     LitterType: LitterType10
   V30:
     Name: Br_NoUV
     Units: organic dry mass remaining
-    Description: "Bromus rubens leaf litter under no UV treatment"
+    Description: "A. rubens leaf litter under no UV treatment"
     FilterType: FilterType2
     LitterType: LitterType10
   V31:
     Name: Br_NoUVbl
     Units: organic dry mass remaining
-    Description: "Bromus rubens leaf litter under no UV/blue treatment"
+    Description: "A. rubens leaf litter under no UV/blue treatment"
     FilterType: FilterType3
     LitterType: LitterType10
   V32:

@@ -11,7 +11,9 @@ SiteInfo:
   MAT:
     Value: 16
     Units: Celsius
-  RainySeason: summer
+  RainySeason:
+   - spring
+   - summer
   Altitude:
     Value: 516
     Units: masl

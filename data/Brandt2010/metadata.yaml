@@ -39,7 +39,11 @@ SiteInfo:
       - 1650
       - 1596
     Units: masl
-  PlantCover:
+  Cover:
+    PlantCover:
+      - 100
+      - 75
+      - 75
     BareSoil:
       - 0
       - 25
@@ -64,7 +68,7 @@ SiteInfo:
 ExperimentInfo:
  LitterInfo:
   LitterType1:
-   Species: Andropogon gerardii
+   Species: Andropogon gerardi
    LifeForm: graminoid
    Material: recently senesced leaves
    Carbon:
@@ -99,7 +103,7 @@ ExperimentInfo:
      Value: 10
      Units: g
   LitterType2:
-   Species: Bouteloua gracilis
+   Species: Bouteloua aristidoides
    LifeForm: graminoid
    Material: recently senesced leaves
    Carbon:
@@ -191,84 +195,84 @@ Variables:
   V2:
     Name: CAB
     Units: organic matter remaining
-    Description: "Percent ash-free dry mass remaining over time in A. gerardii litter under UV block treatments at Cedar Creek"
+    Description: "Percent ash-free dry mass remaining over time in A. gerardi litter under UV block treatments at Cedar Creek"
     FilterType: FilterType2
     LitterType: LitterType1
     Site: "Cedar Creek, Minnesota, USA"
   V3:
     Name: CAP
     Units: organic matter remaining
-    Description: "Percent ash-free dry mass remaining over time in A. gerardii litter under UV pass treatments at Cedar Creek"
+    Description: "Percent ash-free dry mass remaining over time in A. gerardi litter under UV pass treatments at Cedar Creek"
     FilterType: FilterType1
     LitterType: LitterType1
     Site: "Cedar Creek, Minnesota, USA"
   V4:
     Name: CBB
     Units: organic matter remaining
-    Description: "Percent ash-free dry mass remaining over time in B. gracilis litter under UV block treatments at Cedar Creek"
+    Description: "Percent ash-free dry mass remaining over time in B. aristidoides litter under UV block treatments at Cedar Creek"
     FilterType: FilterType2
     LitterType: LitterType2
     Site: "Cedar Creek, Minnesota, USA"
   V5:
     Name: CBP
     Units: organic matter remaining
-    Description: "Percent ash-free dry mass remaining over time in B. gracilis litter under UV pass treatments at Cedar Creek"
+    Description: "Percent ash-free dry mass remaining over time in B. aristidoides litter under UV pass treatments at Cedar Creek"
     FilterType: FilterType1
     LitterType: LitterType2
     Site: "Cedar Creek, Minnesota, USA"
   V6:
     Name: PAB
     Units: organic matter remaining
-    Description: "Percent ash-free dry mass remaining over time in A. gerardii litter under UV block treatments at Central Plains"
+    Description: "Percent ash-free dry mass remaining over time in A. gerardi litter under UV block treatments at Central Plains"
     FilterType: FilterType2
     LitterType: LitterType1
     Site: "Central Plains, Colorado, USA"
   V7:
     Name: PAP
     Units: organic matter remaining
-    Description: "Percent ash-free dry mass remaining over time in A. gerardii litter under UV pass treatments at Central Plains"
+    Description: "Percent ash-free dry mass remaining over time in A. gerardi litter under UV pass treatments at Central Plains"
     FilterType: FilterType1
     LitterType: LitterType1
     Site: "Central Plains, Colorado, USA"
   V8:
     Name: PBB
     Units: organic matter remaining
-    Description: "Percent ash-free dry mass remaining over time in B. gracilis litter under UV block treatments at Central Plains"
+    Description: "Percent ash-free dry mass remaining over time in B. aristidoides litter under UV block treatments at Central Plains"
     FilterType: FilterType2
     LitterType: LitterType2
     Site: "Central Plains, Colorado, USA"
   V9:
     Name: PBP
     Units: organic matter remaining
-    Description: "Percent ash-free dry mass remaining over time in B. gracilis litter under UV pass treatments at Central Plains"
+    Description: "Percent ash-free dry mass remaining over time in B. aristidoides litter under UV pass treatments at Central Plains"
     FilterType: FilterType1
     LitterType: LitterType2
     Site: "Central Plains, Colorado, USA"
   V10:
     Name: SAB
     Units: organic matter remaining
-    Description: "Percent ash-free dry mass remaining over time in A. gerardii litter under UV block treatments at Sevilleta"
+    Description: "Percent ash-free dry mass remaining over time in A. gerardi litter under UV block treatments at Sevilleta"
     FilterType: FilterType2
     LitterType: LitterType1
     Site: "Sevilleta, New Mexico, USA"
   V11:
     Name: SAP
     Units: organic matter remaining
-    Description: "Percent ash-free dry mass remaining over time in A. gerardii litter under UV pass treatments at Sevilleta"
+    Description: "Percent ash-free dry mass remaining over time in A. gerardi litter under UV pass treatments at Sevilleta"
     FilterType: FilterType1
     LitterType: LitterType1
     Site: "Sevilleta, New Mexico, USA"
   V12:
     Name: SBB
     Units: organic matter remaining
-    Description: "Percent ash-free dry mass remaining over time in B. gracilis litter under UV block treatments at Sevilleta"
+    Description: "Percent ash-free dry mass remaining over time in B. aristidoides litter under UV block treatments at Sevilleta"
     FilterType: FilterType2
     LitterType: LitterType2
     Site: "Sevilleta, New Mexico, USA"
   V13:
     Name: SBP
     Units: organic matter remaining
-    Description: "Percent ash-free dry mass remaining over time in B. gracilis litter under UV pass treatments at Sevilleta"
+    Description: "Percent ash-free dry mass remaining over time in B. aristidoides litter under UV pass treatments at Sevilleta"
     FilterType: FilterType1
     LitterType: LitterType2
     Site: "Sevilleta, New Mexico, USA"

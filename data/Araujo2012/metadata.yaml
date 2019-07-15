@@ -11,13 +11,15 @@ SiteInfo:
   MAT:
     Value: 8
     Units: Celsius
-  RainySeason: winter
+  RainySeason:
+   - autumn
+   - winter
   Altitude:
     Value: 500
     Units: masl
   SoilType: Aridisol
   SoilTexture: coarse
-  PlantCover:
+  Cover:
     BunchgrassCover: 32
     ShrubCover: 15
     BareSoil: 53
@@ -32,14 +34,14 @@ SiteInfo:
 ExperimentInfo:
  LitterInfo:
   LitterType1:
-   Species: Bromus pictus
+   Species: Bromus setifolius
    LifeForm: graminoid
    Material: recently senesced leaves
    Amount:
      Value: 1.5
      Units: g
  Experiment1:
-    Description: "They incubated B. pictus leaf litter under shrub cannopies for 3 years using different mesh size litter boxes to exclude macro and mesofauna"
+    Description: "They incubated B. setifolius leaf litter under shrub cannopies for 3 years using different mesh size litter boxes to exclude macro and mesofauna"
     LitterBagInfo:
       Material: wire mesh
       MeshSize:
@@ -65,7 +67,7 @@ ExperimentInfo:
       Time: 36
       Units: months
  Experiment2:
-    Description: "They incubated leaf litter from B. pictus using a fungicide treatment to assess the effect of fungal activity on decomposition"
+    Description: "They incubated leaf litter from B. setifolius using a fungicide treatment to assess the effect of fungal activity on decomposition"
     LitterBagInfo:
       Material: wire mesh
       MeshSize:
@@ -95,24 +97,24 @@ Variables:
   V2:
     Name: 10mm
     Units: organic matter remaining
-    Description: "B. pictus litter decomposition without physical exclusion of soil fauna"
+    Description: "B. setifolius litter decomposition without physical exclusion of soil fauna"
     MeshSize: 10
     LitterType: LitterType1
   V3:
     Name: 2mm
     Units: organic matter remaining
-    Description: "B. pictus litter decomposition with physical exclusion of soil macrofauna"
+    Description: "B. setifolius litter decomposition with physical exclusion of soil macrofauna"
     MeshSize: 2
     LitterType: LitterType1
   V4:
     Name: 001mm
     Units: organic matter remaining
-    Description: "B. pictus litter decomposition with physical exclusion of soil mesofauna"
+    Description: "B. setifolius litter decomposition with physical exclusion of soil mesofauna"
     MeshSize: 0.01
     LitterType: LitterType1
   V5:
     Name: 001mmF
     Units: organic matter remaining
-    Description: "B. pictus litter decomposition with fungi reduction"
+    Description: "B. setifolius litter decomposition with fungi reduction"
     MeshSize: 0.01
     LitterType: LitterType1

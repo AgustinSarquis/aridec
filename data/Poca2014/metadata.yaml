@@ -10,7 +10,9 @@ SiteInfo:
   MAT:
     Value: 8
     Units: Celsius
-  RainySeason: summer
+  RainySeason:
+   - spring
+   - summer
   Altitude:
     Value: 2200
     Units: masl
@@ -23,7 +25,7 @@ SiteInfo:
 ExperimentInfo:
  LitterInfo:
   LitterType1:
-   Species: Bidens andicola
+   Species: Bidens triplinervia
    LifeForm: forb
    Material: recently senesced leaves
    cellulose:
@@ -89,7 +91,7 @@ ExperimentInfo:
    Value: 1
    Units: g
  LitterType4:
-  Species: Glandularia dissecta
+  Species: Verbena dissecta
   LifeForm: forb
   Material: recently senesced leaves
   cellulose:
@@ -221,7 +223,7 @@ ExperimentInfo:
    Value: 1
    Units: g
  LitterType10:
-  Species: Chascolytrum subaristatum
+  Species: Briza subaristatum
   LifeForm: graminoid
   Material: recently senesced leaves
   cellulose:
@@ -265,7 +267,7 @@ ExperimentInfo:
    Value: 1
    Units: g
  LitterType12:
-  Species: Eragrostis lugens
+  Species: Eragrostis polytrichia
   LifeForm: graminoid
   Material: recently senesced leaves
   cellulose:
@@ -287,7 +289,7 @@ ExperimentInfo:
    Value: 1
    Units: g
  LitterType13:
-  Species: Festuca dissitiflora
+  Species: Festuca rigescens
   LifeForm: graminoid
   Material: recently senesced leaves
   cellulose:
@@ -309,7 +311,7 @@ ExperimentInfo:
    Value: 1
    Units: g
  LitterType14:
-  Species: Juncus pallescens
+  Species: Luzula pallescens
   LifeForm: graminoid
   Material: recently senesced leaves
   cellulose:
@@ -419,7 +421,7 @@ ExperimentInfo:
    Value: 1
    Units: g
  LitterType19:
-  Species: Sorghastrum pellitum
+  Species: Sorghastrum nutans
   LifeForm: graminoid
   Material: recently senesced leaves
   cellulose:
@@ -441,7 +443,7 @@ ExperimentInfo:
    Value: 1
    Units: g
  LitterType20:
-  Species: Sporobolus indicus
+  Species: Sporobolus jacquemontii
   LifeForm: graminoid
   Material: recently senesced leaves
   cellulose:
@@ -574,7 +576,7 @@ Variables:
   V2:
     Name: Ban
     Units: "Mass remaining"
-    Description: "B. andicola leaf litter mass percentage remaining at harvest time"
+    Description: "B. triplinervia leaf litter mass percentage remaining at harvest time"
     LitterType: LitterType1
   V3:
     Name: Eag
@@ -589,7 +591,7 @@ Variables:
   V5:
     Name: Gdi
     Units: "Mass remaining"
-    Description: "G. dissecta leaf litter mass percentage remaining at harvest time"
+    Description: "V. dissecta leaf litter mass percentage remaining at harvest time"
     LitterType: LitterType4
   V6:
     Name: Ggl
@@ -619,7 +621,7 @@ Variables:
   V11:
     Name: Csu
     Units: "Mass remaining"
-    Description: "C. subaristatum leaf litter mass percentage remaining at harvest time"
+    Description: "B. subaristatum leaf litter mass percentage remaining at harvest time"
     LitterType: LitterType10
   V12:
     Name: Eps
@@ -629,17 +631,17 @@ Variables:
   V13:
     Name: Elu
     Units: "Mass remaining"
-    Description: "E. lugens leaf litter mass percentage remaining at harvest time"
+    Description: "E. polytrichia leaf litter mass percentage remaining at harvest time"
     LitterType: LitterType12
   V14:
     Name: Fdi
     Units: "Mass remaining"
-    Description: "F. dissitiflora leaf litter mass percentage remaining at harvest time"
+    Description: "F. rigescens leaf litter mass percentage remaining at harvest time"
     LitterType: LitterType13
   V15:
     Name: Jpa
     Units: "Mass remaining"
-    Description: "J. pallescens leaf litter mass percentage remaining at harvest time"
+    Description: "L. pallescens leaf litter mass percentage remaining at harvest time"
     LitterType: LitterType14
   V16:
     Name: Jur
@@ -664,12 +666,12 @@ Variables:
   V20:
     Name: Spe
     Units: "Mass remaining"
-    Description: "S. pellitum leaf litter mass percentage remaining at harvest time"
+    Description: "S. nutans leaf litter mass percentage remaining at harvest time"
     LitterType: LitterType19
   V21:
     Name: Sin
     Units: "Mass remaining"
-    Description: "S. indicus leaf litter mass percentage remaining at harvest time"
+    Description: "S. jacquemontii leaf litter mass percentage remaining at harvest time"
     LitterType: LitterType20
   V22:
     Name: Dhi

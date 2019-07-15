@@ -11,12 +11,15 @@ SiteInfo:
   MAT:
     Value: 6.5
     Units: Celsius
-  RainySeason: summer
+  RainySeason:
+   - spring
+   - summer
   Altitude:
     Value: 444
     Units: masl
   SoilType: aeolian sandy
-  PlantCover:
+  Cover:
+    PlantCover: 23
     BareSoil: 77
     Units: percentage
   Coordinates:
@@ -98,7 +101,7 @@ ExperimentInfo:
      Value: 0.5
      Units: g
   LitterType4:
-   Species: Aristida pennata
+   Species: Stipagrostis pennata
    LifeForm: graminoid
    Material: recently senesced leaves
    SLA:
@@ -170,7 +173,7 @@ ExperimentInfo:
      Value: 0.5
      Units: g
   LitterType7:
-   Species: Mulgedium tataricum
+   Species: Lactuca tatarica
    LifeForm: forb
    Material: recently senesced leaves
    SLA:
@@ -218,7 +221,7 @@ ExperimentInfo:
      Value: 0.5
      Units: g
   LitterType9:
-   Species: Ephedra distachya
+   Species: Ephedra gerardiana
    LifeForm: shrub
    Material: recently senesced leaves
    SLA:
@@ -242,7 +245,7 @@ ExperimentInfo:
      Value: 0.5
      Units: g
   LitterType10:
-   Species: Agriophyllum arenarium
+   Species: Agriophyllum squarrosum
    LifeForm: forb
    Material: recently senesced leaves
    SLA:
@@ -290,7 +293,7 @@ ExperimentInfo:
      Value: 0.5
      Units: g
   LitterType12:
-   Species: Erodium oxyrrhynchum
+   Species: Erodium oxyrhinchum
    LifeForm: forb
    Material: recently senesced leaves
    SLA:
@@ -338,7 +341,7 @@ ExperimentInfo:
      Value: 0.5
      Units: g
   LitterType14:
-   Species: Krascheninnikovia ceratoides
+   Species: Ceratoides papposa
    LifeForm: shrub
    Material: recently senesced leaves
    SLA:
@@ -362,7 +365,7 @@ ExperimentInfo:
      Value: 0.5
      Units: g
   LitterType15:
-   Species: Cynanchum sibiricum
+   Species: Cynanchum acutum
    LifeForm: forb
    Material: recently senesced leaves
    SLA:
@@ -482,7 +485,7 @@ Variables:
   V5:
     Name: Ap_L
     Units: mass remaining
-    Description: "Aristida pennata leaf litter incubated under light exposure"
+    Description: "S. pennata leaf litter incubated under light exposure"
     LitterType: LitterType4
     Position: Position1
   V6:
@@ -500,7 +503,7 @@ Variables:
   V8:
     Name: Mt_L
     Units: mass remaining
-    Description: "Mulgedium tataricum leaf litter incubated under light exposure"
+    Description: "L. tatarica leaf litter incubated under light exposure"
     LitterType: LitterType7
     Position: Position1
   V9:
@@ -512,13 +515,13 @@ Variables:
   V10:
     Name: Ed_L
     Units: mass remaining
-    Description: "Ephedra distachya leaf litter incubated under light exposure"
+    Description: "Ephedra gerardiana leaf litter incubated under light exposure"
     LitterType: LitterType9
     Position: Position1
   V11:
     Name: Aa_L
     Units: mass remaining
-    Description: "Agriophyllum arenarium leaf litter incubated under light exposure"
+    Description: "Agriophyllum squarrosum leaf litter incubated under light exposure"
     LitterType: LitterType10
     Position: Position1
   V12:
@@ -530,7 +533,7 @@ Variables:
   V13:
     Name: Eo_L
     Units: mass remaining
-    Description: "Erodium oxyrrhynchum leaf litter incubated under light exposure"
+    Description: "Erodium oxyrhinchum leaf litter incubated under light exposure"
     LitterType: LitterType12
     Position: Position1
   V14:
@@ -542,13 +545,13 @@ Variables:
   V15:
     Name: Kce_L
     Units: mass remaining
-    Description: "Krascheninnikovia ceratoides leaf litter incubated under light exposure"
+    Description: "Ceratoides papposa leaf litter incubated under light exposure"
     LitterType: LitterType14
     Position: Position1
   V16:
     Name: Cs_L
     Units: mass remaining
-    Description: "Cynanchum sibiricum leaf litter incubated under light exposure"
+    Description: "Cynanchum acutum leaf litter incubated under light exposure"
     LitterType: LitterType15
     Position: Position1
   V17:
@@ -584,7 +587,7 @@ Variables:
   V22:
     Name: Ap_S
     Units: mass remaining
-    Description: "Aristida pennata leaf litter incubated under shadecloth"
+    Description: "S. pennata leaf litter incubated under shadecloth"
     LitterType: LitterType4
     Position: Position2
   V23:
@@ -602,7 +605,7 @@ Variables:
   V25:
     Name: Mt_S
     Units: mass remaining
-    Description: "Mulgedium tataricum leaf litter incubated under shadecloth"
+    Description: "L. tatarica leaf litter incubated under shadecloth"
     LitterType: LitterType7
     Position: Position2
   V26:
@@ -614,13 +617,13 @@ Variables:
   V27:
     Name: Ed_S
     Units: mass remaining
-    Description: "Ephedra distachya leaf litter incubated under shadecloth"
+    Description: "Ephedra gerardiana leaf litter incubated under shadecloth"
     LitterType: LitterType9
     Position: Position2
   V28:
     Name: Aa_S
     Units: mass remaining
-    Description: "Agriophyllum arenarium leaf litter incubated under shadecloth"
+    Description: "Agriophyllum squarrosum leaf litter incubated under shadecloth"
     LitterType: LitterType10
     Position: Position2
   V29:
@@ -632,7 +635,7 @@ Variables:
   V30:
     Name: Eo_S
     Units: mass remaining
-    Description: "Erodium oxyrrhynchum leaf litter incubated under shadecloth"
+    Description: "Erodium oxyrhinchum leaf litter incubated under shadecloth"
     LitterType: LitterType12
     Position: Position2
   V31:
@@ -644,13 +647,13 @@ Variables:
   V32:
     Name: Kce_S
     Units: mass remaining
-    Description: "Krascheninnikovia ceratoides leaf litter incubated under shadecloth"
+    Description: "Ceratoides papposa leaf litter incubated under shadecloth"
     LitterType: LitterType14
     Position: Position2
   V33:
     Name: Cs_S
     Units: mass remaining
-    Description: "Cynanchum sibiricum leaf litter incubated under shadecloth"
+    Description: "Cynanchum acutum leaf litter incubated under shadecloth"
     LitterType: LitterType15
     Position: Position2
   V34:
@@ -686,7 +689,7 @@ Variables:
   V39:
     Name: Ap_B
     Units: mass remaining
-    Description: "Aristida pennata leaf litter incubated buried 10 cm"
+    Description: "S. pennata leaf litter incubated buried 10 cm"
     LitterType: LitterType4
     Position: Position3
   V40:
@@ -704,7 +707,7 @@ Variables:
   V42:
     Name: Mt_B
     Units: mass remaining
-    Description: "Mulgedium tataricum leaf litter incubated buried 10 cm"
+    Description: "L. tatarica leaf litter incubated buried 10 cm"
     LitterType: LitterType7
     Position: Position3
   V43:
@@ -716,13 +719,13 @@ Variables:
   V44:
     Name: Ed_B
     Units: mass remaining
-    Description: "Ephedra distachya leaf litter incubated buried 10 cm"
+    Description: "Ephedra gerardiana leaf litter incubated buried 10 cm"
     LitterType: LitterType9
     Position: Position3
   V45:
     Name: Aa_B
     Units: mass remaining
-    Description: "Agriophyllum arenarium leaf litter incubated buried 10 cm"
+    Description: "Agriophyllum squarrosum leaf litter incubated buried 10 cm"
     LitterType: LitterType10
     Position: Position3
   V46:
@@ -734,7 +737,7 @@ Variables:
   V47:
     Name: Eo_B
     Units: mass remaining
-    Description: "Erodium oxyrrhynchum leaf litter incubated buried 10 cm"
+    Description: "Erodium oxyrhinchum leaf litter incubated buried 10 cm"
     LitterType: LitterType12
     Position: Position3
   V48:
@@ -746,13 +749,13 @@ Variables:
   V49:
     Name: Kce_B
     Units: mass remaining
-    Description: "Krascheninnikovia ceratoides leaf litter incubated buried 10 cm"
+    Description: "Ceratoides papposa leaf litter incubated buried 10 cm"
     LitterType: LitterType14
     Position: Position3
   V50:
     Name: Cs_B
     Units: mass remaining
-    Description: "Cynanchum sibiricum leaf litter incubated buried 10 cm"
+    Description: "Cynanchum acutum leaf litter incubated buried 10 cm"
     LitterType: LitterType15
     Position: Position3
   V51:

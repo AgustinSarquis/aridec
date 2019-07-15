@@ -11,7 +11,9 @@ SiteInfo:
   MAT:
     Value: 15
     Units: Celsius
-  RainySeason: winter
+  RainySeason:
+   - spring
+   - autumn
   SoilType: Calciustolls
   SoilTexture: coarse
   Coordinates:
@@ -21,7 +23,7 @@ SiteInfo:
 ExperimentInfo:
  LitterInfo:
   LitterType1:
-   Species: Stipa tenuissima
+   Species: Nassella tenuissima
    LifeForm: graminoid
    Material: recently senesced leaves
    Lignin:
@@ -43,7 +45,7 @@ ExperimentInfo:
      Value: 5
      Units: g
   LitterType2:
-   Species: Stipa clarazii
+   Species: Nassella clarazii
    LifeForm: graminoid
    Material: recently senesced leaves
    Lignin:
@@ -87,7 +89,7 @@ ExperimentInfo:
      Value: 5
      Units: g
   LitterType4:
-   Species: Stipa tenuissima
+   Species: Nassella tenuissima
    LifeForm: graminoid
    Material: roots
    Lignin:
@@ -109,7 +111,7 @@ ExperimentInfo:
      Value: 5
      Units: g
   LitterType5:
-   Species: Stipa clarazii
+   Species: Nassella clarazii
    LifeForm: graminoid
    Material: roots
    Lignin:
@@ -193,12 +195,12 @@ Variables:
   V2:
     Name: Ste_L
     Units: Organic matter remaining
-    Description: "Ash-free mass remaining through time of leaf litter from S. tenuissima"
+    Description: "Ash-free mass remaining through time of leaf litter from N. tenuissima"
     LitterType: LitterType1
   V3:
      Name: Scl_L
      Units: Organic matter remaining
-     Description: "Ash-free mass remaining through time of leaf litter from S. clarazii"
+     Description: "Ash-free mass remaining through time of leaf litter from N. clarazii"
      LitterType: LitterType2
   V4:
      Name: Pli_L
@@ -208,12 +210,12 @@ Variables:
   V5:
      Name: Ste_R
      Units: Organic matter remaining
-     Description: "Ash-free mass remaining through time of roots from S. tenuissima"
+     Description: "Ash-free mass remaining through time of roots from N. tenuissima"
      LitterType: LitterType4
   V6:
      Name: Scl_R
      Units: Organic matter remaining
-     Description: "Ash-free mass remaining through time of roots from S. clarazii"
+     Description: "Ash-free mass remaining through time of roots from N. clarazii"
      LitterType: LitterType5
   V7:
      Name: Pli_R

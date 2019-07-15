@@ -7,6 +7,11 @@ Site Info:
  MAP:
   Units: 260
   Value: mm
+ Coordinates:
+  Latitude:
+   - 32.408
+  Longitude:
+   - -104.230
 
 ExperimentInfo:
  LitterInfo:
@@ -32,7 +37,7 @@ ExperimentInfo:
     Value: 10
     Units: g
    LitterType3:
-    Species: Quercus harvardii
+    Species: Quercus havardii
     Lifeform: tree
     Lignin:
      Value: 10.8
@@ -40,7 +45,6 @@ ExperimentInfo:
     Amount:
      Value: 10
      Units: g
-
  Experiment1:
   LitterBagInfo:
    Material: fiberglass

@@ -11,7 +11,9 @@ SiteInfo:
   MAT:
     Value: 2.1
     Units: Celsius
-  RainySeason: summer
+  RainySeason:
+   - spring
+   - summer
   Altitude:
     Value: 1324
     Units: masl
@@ -23,7 +25,7 @@ SiteInfo:
 ExperimentInfo:
  LitterInfo:
   LitterType1:
-   Species: Cleistogenes squarrosa
+   Species: Kengia squarrosa
    LifeForm: graminoid
    Material: recently senesced leaves
    DOC:
@@ -73,10 +75,10 @@ Variables:
   V2:
     Name: Standing
     Units: mass remaining
-    Description: "C. squarrosa leaf litter was incubated suspended 10 cm for 787 days"
+    Description: "K. squarrosa leaf litter was incubated suspended 10 cm for 787 days"
     Position: Position1
   V3:
     Name: Surface
     Units: mass remaining
-    Description: "C. squarrosa leaf litter was incubated on the soil surface for 787 days"
+    Description: "K. squarrosa leaf litter was incubated on the soil surface for 787 days"
     Position: Position2

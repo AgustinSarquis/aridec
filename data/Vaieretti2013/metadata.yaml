@@ -11,13 +11,15 @@ SiteInfo:
   MAT:
     Value: 8
     Units: Celsius
-  RainySeason: summer
+  RainySeason:
+   - spring
+   - summer
   Altitude:
     Value: 2200
     Units: masl
   SoilType: molisol
   SoilTexture: fine
-  PlantCover:
+  Cover:
     PatchType1:
       Name: Lawn
       BunchgrassCover: 2.7

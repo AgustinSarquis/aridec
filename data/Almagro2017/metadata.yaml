@@ -20,8 +20,10 @@ SiteInfo:
     - 16.5
   Units: Celsius
  RainySeason:
-   - spring and autumn
-   - spring and autumn
+   - spring
+   - autumn
+   - spring
+   - autumn
  Altitude:
   Value:
     - 590
