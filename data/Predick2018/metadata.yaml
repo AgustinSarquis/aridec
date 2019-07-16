@@ -1,0 +1,100 @@
+CitationKey: Predick2018
+doi: 10.1016/j.jaridenv.2018.06.007
+EntryAuthor: Ignacio Siebenhart
+
+SiteInfo:
+ Name: Santa Rita Experimental Range, Arizona, United States
+ MAP:
+  Value: 370
+  Units: mm
+ RainySeason:
+  - summer
+  - winter
+ Altitude:
+  Value: 1150
+  Units: masl
+ SoilType: Entisol
+ SoilTexture: coarse
+ Cover:
+  BareSoil: 30
+  ShrubCover: 30
+  GraminoidCover: 30
+  Units: percentage
+ Coordinates:
+  Latitude: 31.803
+  Longitude: 110.863
+
+ExperimentInfo:
+ LitterInfo:
+  LitterType1:
+   Species: Prosopis juliflora
+   Lifeform: shrub
+   Material: leaflet
+   Amount:
+    Value: 1.3
+    Units: g
+ Experiment1:
+  Description: "They evaluate the effect of UV radiation on decomposition in diferent microsites"
+  LitterBagInfo:
+   Material: fiberglass
+   MeshSize:
+    Value:
+    - 0.9
+    - 1.5
+    Units: mm
+   Dimentions:
+    Width: 10
+    Lenght: 10
+    Units: cm
+   Position:
+    Position1: under shrub
+    Position2: bare soil
+  FilterInfo:
+   FilterType1:
+    Name: Aclar
+    UVBTransmitance:
+     Value: 90
+     Units: percentage
+   FilterType2:
+    Name: Mylar
+    WaveLenght:
+     Value: 325
+     Units: nm
+  Treatment:
+   - UV-B attenuation
+   - microsite
+  StartingDate:
+   Month: july
+   Season: summer
+  Duration:
+   Time: 10.7
+   Units: months
+
+Variables:
+ V1:
+   Name: Time
+   Units: days
+ V2:
+   Name: SUVP
+   Units: non-ash dry mass remaining
+   Description: "Prosopis juliflora litter mass remaining at harvest time positioned under shrub with total UV-B radiation"
+   Position: Position1
+   FilterType: FilterType1
+ V3:
+   Name: SUVB
+   Units: non-ash dry mass remaining
+   Description: "Prosopis juliflora litter mass remaining at harvest time positioned under shrub with blocked UV-B radiation"
+   Position: Position1
+   FilterType: FilterType2
+ V4:
+   Name: IUVP
+   Units: non-ash dry mass remaining
+   Description: "Prosopis juliflora litter mass remaining at harvest time positioned intercanopy with total UV-B radiation"
+   Position: Position2
+   FilterType: FilterType1
+ V5:
+   Name: IUVB
+   Units: non-ash dry mass remaining
+   Description: "Prosopis juliflora litter mass remaining at harvest time positioned intercanopy with blocked UV-B radiation"
+   Position: Position2
+   FilterType: FilterType2
