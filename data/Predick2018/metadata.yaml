@@ -38,9 +38,7 @@ ExperimentInfo:
   LitterBagInfo:
    Material: fiberglass
    MeshSize:
-    Value:
-    - 0.9
-    - 1.5
+    Value: 0.9
     Units: mm
    Dimentions:
     Width: 10

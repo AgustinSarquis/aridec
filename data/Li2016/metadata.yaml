@@ -1,0 +1,410 @@
+CitationKey: Li2016
+doi: 10.1371/journal.pone.0162663
+EntryAuthor: Agustín Sarquis
+
+SiteInfo:
+  Name: Horqin Sand Land, Inner Mongolia, China
+  EcosystemType: sandland
+  MAP:
+    Value: 362
+    Units: mm
+  MAT:
+    Value: 6.4
+    Units: Celsius
+  RainySeason:
+    - spring
+    - summer
+  Altitude:
+    Value: 350
+    Units: masl
+  SoilTexture: coarse
+  Coordinates:
+    Latitude: 42.917
+    Longitude: 120.683
+
+ExperimentInfo:
+ LitterInfo:
+  LitterType1:
+   Species: Artemisia halodendron
+   LifeForm: shrub
+   Material: fine roots
+   Carbon:
+     Value: 49.2
+     Units: percentage
+   Nitrogen:
+     Value: 0.6
+     Units: percentage
+   Lignin:
+     Value: 17.3
+     Units: percentage
+   Phosphorus:
+     Value: 0.19
+     Units: percentage
+   C:N:
+     Value: 89
+   Lignin:N:
+     Value: 31
+   Amount:
+     Value: 5
+     Units: g
+  LitterType2:
+   Species: Artemisia halodendron
+   LifeForm: shrub
+   Material: recently senesced leaves
+   Carbon:
+     Value: 44.6
+     Units: percentage
+   Nitrogen:
+     Value: 1.83
+     Units: percentage
+   Lignin:
+     Value: 6.3
+     Units: percentage
+   Phosphorus:
+     Value: 0.31
+     Units: percentage
+   C:N:
+     Value: 25
+   Lignin:N:
+     Value: 3
+   Amount:
+     Value: 5
+     Units: g
+  LitterType3:
+   Species: Setaria viridis
+   LifeForm: graminoid
+   Material: fine roots
+   Carbon:
+     Value: 47.3
+     Units: percentage
+   Nitrogen:
+     Value: 1.15
+     Units: percentage
+   Lignin:
+     Value: 11.4
+     Units: percentage
+   Phosphorus:
+     Value: 0.09
+     Units: percentage
+   C:N:
+     Value: 39
+   Lignin:N:
+     Value: 10
+   Amount:
+     Value: 5
+     Units: g
+  LitterType4:
+   Species: Setaria viridis
+   LifeForm: graminoid
+   Material: recently senesced leaves
+   Carbon:
+     Value: 42.3
+     Units: percentage
+   Nitrogen:
+     Value: 1.24
+     Units: percentage
+   Lignin:
+     Value: 10.5
+     Units: percentage
+   Phosphorus:
+     Value: 0.16
+     Units: percentage
+   C:N:
+     Value: 34
+   Lignin:N:
+     Value: 8
+   Amount:
+     Value: 5
+     Units: g
+  LitterType5:
+   Species: Phragmites communis
+   LifeForm: graminoid
+   Material: fine roots
+   Carbon:
+     Value: 41.4
+     Units: percentage
+   Nitrogen:
+     Value: 0.72
+     Units: percentage
+   Lignin:
+     Value: 12.6
+     Units: percentage
+   Phosphorus:
+     Value: 0.12
+     Units: percentage
+   C:N:
+     Value: 58
+   Lignin:N:
+     Value: 18
+   Amount:
+     Value: 5
+     Units: g
+  LitterType6:
+   Species: Phragmites communis
+   LifeForm: graminoid
+   Material: recently senesced leaves
+   Carbon:
+     Value: 39.6
+     Units: percentage
+   Nitrogen:
+     Value: 0.96
+     Units: percentage
+   Lignin:
+     Value: 15.7
+     Units: percentage
+   Phosphorus:
+     Value: 0.17
+     Units: percentage
+   C:N:
+     Value: 42
+   Lignin:N:
+     Value: 17
+   Amount:
+     Value: 5
+     Units: g
+ Experiment1:
+    Description: "Leaf and root litter from three species was incubated on the ground and buried, respectively, for 3,5 years with a combination of water and N addition treatments"
+    LitterBagInfo:
+      Material: nylon
+      MeshSize:
+       MeshSize1: 0.1
+       MeshSize2: 1
+       Units: mm
+      Dimentions:
+       Width: 10
+       Lenght: 15
+       Units: cm
+      Position:
+        Position1: vegetated soil
+        Position2: buried 10 cm deep
+    Treatment:
+      - inorganic N addition
+      - litter type
+      - water addition
+    StartingDate:
+      Month: april
+      Season: spring
+    Duration:
+      Time: 43
+      Units: months
+
+Variables:
+  V1:
+    Name: Time
+    Units: months
+  V2:
+    Name: ArCK
+    Units: mass remaining
+    Description: "Buried A. halodendron fine roots mass remaining without N or water addition"
+    LitterType: LitterType1
+    Position: Position1
+    MeshSize: MeshSize1
+    NitrogenAddition: No
+    WaterAddition: No
+  V3:
+    Name: ArW
+    Units: mass remaining
+    Description: "Buried A. halodendron fine roots mass remaining with only water addition"
+    LitterType: LitterType1
+    Position: Position1
+    MeshSize: MeshSize1
+    NitrogenAddition: No
+    WaterAddition: Yes
+  V4:
+    Name: ArN
+    Units: mass remaining
+    Description: "Buried A. halodendron fine roots mass remaining with only N addition"
+    LitterType: LitterType1
+    Position: Position1
+    MeshSize: MeshSize1
+    NitrogenAddition: Yes
+    WaterAddition: No
+  V5:
+    Name: ArNW
+    Units: mass remaining
+    Description: "Buried A. halodendron fine roots mass remaining with N and water addition"
+    LitterType: LitterType1
+    Position: Position1
+    MeshSize: MeshSize1
+    NitrogenAddition: Yes
+    WaterAddition: Yes
+  V6:
+    Name: AlCK
+    Units: mass remaining
+    Description: "A. halodendron leaf mass remaining without N or water addition"
+    LitterType: LitterType2
+    Position: Position2
+    MeshSize: MeshSize2
+    NitrogenAddition: No
+    WaterAddition: No
+  V7:
+    Name: AlW
+    Units: mass remaining
+    Description: "A. halodendron leaf mass remaining with only water addition"
+    LitterType: LitterType2
+    Position: Position2
+    MeshSize: MeshSize2
+    NitrogenAddition: No
+    WaterAddition: Yes
+  V8:
+    Name: AlN
+    Units: mass remaining
+    Description: "A. halodendron leaf mass remaining with only N addition"
+    LitterType: LitterType2
+    Position: Position2
+    MeshSize: MeshSize2
+    NitrogenAddition: Yes
+    WaterAddition: No
+  V9:
+    Name: AlNW
+    Units: mass remaining
+    Description: "A. halodendron leaf mass remaining with N and water addition"
+    LitterType: LitterType2
+    Position: Position2
+    MeshSize: MeshSize2
+    NitrogenAddition: Yes
+    WaterAddition: Yes
+  V10:
+    Name: SrCK
+    Units: mass remaining
+    Description: "Buried S. viridis fine roots mass remaining without N or water addition"
+    LitterType: LitterType3
+    Position: Position1
+    MeshSize: MeshSize1
+    NitrogenAddition: No
+    WaterAddition: No
+  V11:
+    Name: SrW
+    Units: mass remaining
+    Description: "Buried S. viridis fine roots mass remaining with only water addition"
+    LitterType: LitterType3
+    Position: Position1
+    MeshSize: MeshSize1
+    NitrogenAddition: No
+    WaterAddition: Yes
+  V12:
+    Name: SrN
+    Units: mass remaining
+    Description: "Buried S. viridis fine roots mass remaining with only N addition"
+    LitterType: LitterType3
+    Position: Position1
+    MeshSize: MeshSize1
+    NitrogenAddition: Yes
+    WaterAddition: No
+  V13:
+    Name: SrNW
+    Units: mass remaining
+    Description: "Buried S. viridis fine roots mass remaining with N and water addition"
+    LitterType: LitterType3
+    Position: Position1
+    MeshSize: MeshSize1
+    NitrogenAddition: Yes
+    WaterAddition: Yes
+  V14:
+    Name: SlCK
+    Units: mass remaining
+    Description: "S. viridis leaf mass remaining without N or water addition"
+    LitterType: LitterType4
+    Position: Position2
+    MeshSize: MeshSize2
+    NitrogenAddition: No
+    WaterAddition: No
+  V15:
+    Name: SlW
+    Units: mass remaining
+    Description: "S. viridis leaf mass remaining with only water addition"
+    LitterType: LitterType4
+    Position: Position2
+    MeshSize: MeshSize2
+    NitrogenAddition: No
+    WaterAddition: Yes
+  V16:
+    Name: SlN
+    Units: mass remaining
+    Description: "S. viridis leaf mass remaining with only N addition"
+    LitterType: LitterType4
+    Position: Position2
+    MeshSize: MeshSize2
+    NitrogenAddition: Yes
+    WaterAddition: No
+  V17:
+    Name: SlNW
+    Units: mass remaining
+    Description: "S. viridis leaf mass remaining with N and water addition"
+    LitterType: LitterType4
+    Position: Position2
+    MeshSize: MeshSize2
+    NitrogenAddition: Yes
+    WaterAddition: Yes
+  V18:
+    Name: PrCK
+    Units: mass remaining
+    Description: "Buried P. communis fine roots mass remaining without N or water addition"
+    LitterType: LitterType5
+    Position: Position1
+    MeshSize: MeshSize1
+    NitrogenAddition: No
+    WaterAddition: No
+  V19:
+    Name: PrW
+    Units: mass remaining
+    Description: "Buried P. communis fine roots mass remaining with only water addition"
+    LitterType: LitterType5
+    Position: Position1
+    MeshSize: MeshSize1
+    NitrogenAddition: No
+    WaterAddition: Yes
+  V20:
+    Name: PrN
+    Units: mass remaining
+    Description: "Buried P. communis fine roots mass remaining with only N addition"
+    LitterType: LitterType5
+    Position: Position1
+    MeshSize: MeshSize1
+    NitrogenAddition: Yes
+    WaterAddition: No
+  V21:
+    Name: PrNW
+    Units: mass remaining
+    Description: "Buried P. communis fine roots mass remaining with N and water addition"
+    LitterType: LitterType5
+    Position: Position1
+    MeshSize: MeshSize1
+    NitrogenAddition: Yes
+    WaterAddition: Yes
+  V22:
+    Name: PlCK
+    Units: mass remaining
+    Description: "P. communis leaf mass remaining without N or water addition"
+    LitterType: LitterType6
+    Position: Position2
+    MeshSize: MeshSize2
+    NitrogenAddition: No
+    WaterAddition: No
+  V23:
+    Name: PlW
+    Units: mass remaining
+    Description: "P. communis leaf mass remaining with only water addition"
+    LitterType: LitterType6
+    Position: Position2
+    MeshSize: MeshSize2
+    NitrogenAddition: No
+    WaterAddition: Yes
+  V24:
+    Name: PlN
+    Units: mass remaining
+    Description: "P. communis leaf mass remaining with only N addition"
+    LitterType: LitterType6
+    Position: Position2
+    MeshSize: MeshSize2
+    NitrogenAddition: Yes
+    WaterAddition: No
+  V25:
+    Name: PlNW
+    Units: mass remaining
+    Description: "P. communis leaf mass remaining with N and water addition"
+    LitterType: LitterType6
+    Position: Position2
+    MeshSize: MeshSize2
+    NitrogenAddition: Yes
+    WaterAddition: Yes

@@ -35,7 +35,7 @@ ExperimentInfo:
   LitterType1:
    Species:
    LifeForm: succulent, bromeliad, tree, forb, shrub, crop, conifer, graminoid
-   Material: senesced photosynthetic stems, aboveground parts, prematurely senesced leaves, leaves, recently senesced leaves, recently senesced terminal shoots, recently senesced stems, roots, live roots
+   Material: senesced photosynthetic stems, aboveground parts, prematurely senesced leaves, leaves, recently senesced leaves, recently senesced terminal shoots, recently senesced stems, (fine) roots, live roots
    Amount:
      Value:
      Units: g
@@ -91,3 +91,5 @@ Variables:
     PatchType:
     RainfallInterception:
     Rainfall:
+    NitrogenAddition:
+    WaterAddition:
