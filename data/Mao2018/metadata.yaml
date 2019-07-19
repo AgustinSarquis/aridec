@@ -1,0 +1,205 @@
+CitationKey: Mao2018
+doi: 10.1007/s40333-018-0054-6
+EntryAuthor: Ignacio Siebenhart
+
+SiteInfo:
+ Name: Horqin Sandy Land, Inner Mongolia, China
+ EcosystemType: abbandoned farmland
+ MAP:
+  Value: 450
+  Units: mm
+ MAT:
+  Value: 6.4
+  Units: Celsius
+ Altitude:
+  Value: 260
+  Units: masl
+ Coordinates:
+  Latitude: 42.97
+  Longitude: 122.35
+
+ExperimentInfo:
+ LitterInfo:
+  LitterType1:
+   Species: Populus xiaozhuanica
+   Lifeform: tree
+   Material: senesced leaves
+   Carbon:
+    Value: 44.64
+    Units: percentage
+   Nitrogen:
+    Value: 1.05
+    Units: percentage
+   C:N:
+    Value: 42.4
+   Lignin:
+    Value: 27.3
+    Units: percentage
+   Lignin:N:
+    Value: 26
+   Amount:
+    Amount1:
+     Value: 1
+     Units: g
+    Amount2:
+     Value: 2
+     Units: g
+    Amount3:
+     Value: 4
+     Units: g
+  LitterType2:
+   Species: Pinus sylvestris
+   Lifeform: tree
+   Material: senesced leaves
+   Carbon:
+    Value: 55.05
+    Units: percentage
+   Nitrogen:
+    Value: 0.36
+    Units: percentage
+   C:N:
+    Value: 152.6
+   Lignin:
+    Value: 30.6
+    Units: percentage
+   Lignin:N:
+    Value: 84.8
+   Amount:
+    Amount1:
+     Value: 1
+     Units: g
+    Amount2:
+     Value: 2
+     Units: g
+    Amount3:
+     Value: 4
+     Units: g
+ Experiment1:
+  Description: "They conducted a field-based experiment in 2011 in the southeastern Horqin Sandy
+Land, Northeast China, to investigate the effects of UV radiation, litter layer thickness, and their
+interaction on the mass loss and chemical properties of decomposing litter from Xiaozhuan poplar
+(Populus × xiaozhuanica) and Mongolian pine (Pinus sylvestris var. mongolica) plantation trees."
+  LitterBagInfo:
+   MeshSize:
+    Value: 2
+    Units: mm
+   Dimentions:
+    Width: 10
+    Lenght: 10
+    Height: 6
+    Units: cm
+   Position: bare soil
+  FilterType:
+   FilterType1:
+    Name: acrylic
+    Transmitance:
+     Value: 87
+     Units: percentage
+    UVtransmitance:
+     Value: 68
+     Units: percentage
+   FilterType2:
+    Transmitance:
+     Value: 76
+     Units: percentage
+    UVTransmitance:
+     Value: 1
+     Units: percentage
+  Treatment:
+   - UV attenuation
+   - litter layer thickness
+  StartingDate:
+   Month: may
+   Season: spring
+  Duration:
+   Time: 6
+   Units: months
+
+Variables:
+ V1:
+   Name: Time
+   Units: months
+ V2:
+   Name: XUVPLT
+   Units: mass remaining
+   Description: "Populus xiaozhuanica litter mass remaining with total UV radiation and a low thickness level"
+   LitterType: LitterType1
+   Amount: Amount1
+   FilterType: FilterType1
+ V3:
+   Name: XUVPMT
+   Units: mass remaining
+   Description: "Populus xiaozhuanica litter mass remaining with total UV radiation and a medium thickness level"
+   LitterType: LitterType1
+   Amount: Amount2
+   FilterType: FilterType1
+ V4:
+   Name: XUVPHT
+   Units: mass remaining
+   Description: "Populus xiaozhuanica litter mass remaining with total UV radiation and a high thickness level"
+   LitterType: LitterType1
+   Amount: Amount3
+   FilterType: FilterType1
+ V5:
+   Name: XUVBLT
+   Units: mass remaining
+   Description: "Populus xiaozhuanica litter mass remaining with blocked UV radiation and a low thickness level"
+   LitterType: LitterType1
+   Amount: Amount1
+   FilterType: FilterType2
+ V6:
+   Name: XUVBMT
+   Units: mass remaining
+   Description: "Populus xiaozhuanica litter mass remaining with blocked UV radiation and a medium thickness level"
+   LitterType: LitterType1
+   Amount: Amount2
+   FilterType: FilterType2
+ V7:
+   Name: XUVBHT
+   Units: mass remaining
+   Description: "Populus xiaozhuanica litter mass remaining with blocked UV radiation and a high thickness level"
+   LitterType: LitterType1
+   Amount: Amount3
+   FilterType: FilterType2
+ V8:
+   Name: PUVPLT
+   Units: mass remaining
+   Description: "Pinus sylvestris litter mass remaining with total UV radiation and a low thickness level"
+   LitterType: LitterType2
+   Amount: Amount1
+   FilterType: FilterType1
+ V9:
+   Name: PUVPMT
+   Units: mass remaining
+   Description: "Pinus sylvestris litter mass remaining with total UV radiation and a medium thickness level"
+   LitterType: LitterType2
+   Amount: Amount2
+   FilterType: FilterType1
+ V10:
+   Name: PUVPHT
+   Units: mass remaining
+   Description: "Pinus sylvestris litter mass remaining with total UV radiation and a high thickness level"
+   LitterType: LitterType2
+   Amount: Amount3
+   FilterType: FilterType1
+ V11:
+   Name: PUVBLT
+   Units: mass remaining
+   Description: "Pinus sylvestris litter mass remaining with blocked UV radiation and a low thickness level"
+   LitterType: LitterType2
+   Amount: Amount1
+   FilterType: FilterType2
+ V12:
+   Name: PUVBMT
+   Units: mass remaining
+   Description: "Pinus sylvestris litter mass remaining with blocked UV radiation and a medium thickness level"
+   LitterType: LitterType2
+   Amount: Amount2
+   FilterType: FilterType2
+ V13:
+   Name: PUVBHT
+   Units: mass remaining
+   Description: "Pinus sylvestris litter mass remaining with blocked UV radiation and a high thickness level"
+   LitterType: LitterType2
+   Amount: Amount3
+   FilterType: FilterType2
