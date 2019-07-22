@@ -1,0 +1,114 @@
+CitationKey: HewinsThroop2016
+doi: 10.1016/j.jaridenv.2016.02.014
+EntryAuthor: Agustín Sarquis
+
+SiteInfo:
+  Name: Jornada Experimental Range, New Mexico, USA
+  EcosystemType: desert
+  MAP:
+    Value: 245
+    Units: mm
+  MAT:
+    Value: 14.7
+    Units: Celsius
+  RainySeason: summer
+  Altitude:
+    Value: 1325
+    Units: masl
+  SoilType:
+    SoilType1: Haplocambids
+    SoilType2: Haplargid Pintura
+    SoilType3: Torripsamment Onite
+  SoilTexture: fine
+  Coordinates:
+    Latitude: 32.611
+    Longitude: -106.796
+
+ExperimentInfo:
+ LitterInfo:
+  LitterType1:
+   Species: Prosopis juliflora
+   LifeForm: tree
+   Material: leaflets
+   Amount:
+     Value: 2
+     Units: g
+ Experiment1:
+  Description: "They conducted a 24 month decomposition study aimed at understanding how placement of litter on either up or downwind sides of dunes in association with dune volume affected litter decomposition"
+  LitterBagInfo:
+   Material: aluminum
+   MeshSize:
+    Value: 1
+    Units: mm
+   Dimentions:
+    Diameter: 15.25
+    Height: 15.25
+    Units: cm
+   UVBTransmitance:
+    Value: 78.5
+    Units: percentage
+   Position: bare soil
+  Treatment:
+   - location
+   - soil type
+  StartingDate:
+   Month: november
+   Season: autumn
+  Duration:
+   Time: 24
+   Units: months
+
+Variables:
+  V1:
+    Name: Time
+    Units: months
+  V2:
+    Name: LU
+    Units: non-ash dry mass remaining
+    Description: "P. juliflora leaflets incubated at large dunes upwind location"
+    LitterType: LitterType1
+    Position: large dunes upwind
+    SoilType:
+      - SoilType2
+      - SoilType3
+  V3:
+    Name: LD
+    Units: non-ash dry mass remaining
+    Description: "P. juliflora leaflets incubated at large dunes downwind location"
+    LitterType: LitterType1
+    Position: large dunes downwind
+    SoilType:
+      - SoilType2
+      - SoilType3
+  V4:
+    Name: MU
+    Units: non-ash dry mass remaining
+    Description: "P. juliflora leaflets incubated at medium dunes upwind location"
+    LitterType: LitterType1
+    Position: medium dunes upwind
+    SoilType:
+      - SoilType2
+      - SoilType3
+  V5:
+    Name: MD
+    Units: non-ash dry mass remaining
+    Description: "P. juliflora leaflets incubated at medium dunes downwind location"
+    LitterType: LitterType1
+    Position: medium dunes downwind
+    SoilType:
+      - SoilType2
+      - SoilType3
+  V6:
+    Name: SU
+    Units: non-ash dry mass remaining
+    Description: "P. juliflora leaflets incubated at small dunes upwind location"
+    LitterType: LitterType1
+    Position: small dunes upwind
+    SoilType: SoilType1
+  V7:
+    Name: SD
+    Units: non-ash dry mass remaining
+    Description: "P. juliflora leaflets incubated at small dunes downwind location"
+    LitterType: LitterType1
+    Position: smal dunes downwind
+    SoilType: SoilType1
