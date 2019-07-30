@@ -1,4 +1,4 @@
-CitationKey: Smith2017
+CitationKey: SmithThroop2018
 doi: 10.1016/j.jaridenv.2017.11.003
 EntryAuthor: Ignacio Siebenhart
 
@@ -126,10 +126,10 @@ ExperimentInfo:
     Lenght: 10
     Units: cm
    Position:
-    Position1:
+    Position1: bare soil
+    Position2:
      - under shrub
      - bare soil
-    Position2: bare soil
   Treatment:
     - litter type
     - location

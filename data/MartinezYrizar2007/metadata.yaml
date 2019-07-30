@@ -1,0 +1,208 @@
+CitationKey: MartinezYrizar2007
+doi: 10.1016/j.actao.2007.05.010
+EntryAuthor: Ignacio Siebenhart
+
+SiteInfo:
+ Name: Sonoran Desert, Sonora, Mexico
+ EcosystemType: desert
+ MAP:
+  Value: 335
+  Units: mm
+ MAT:
+  Value: 24.4
+  Units: celsius
+ RainySeason:
+  - summer
+  - winter
+ SoilType: Aridisol
+ SoilTexture: coarse
+ Altitude:
+  Value: 250
+  Units: m
+ Coordinates:
+  Latitude: 29.017
+  Longitude: -110.95
+
+ExperimentInfo:
+ LitterInfo:
+  LitterType1:
+   Species: Encelia farinosa
+   Lifeform: forb
+   Material: recently senesced leaves
+   Carbon:
+    Value: 38.7
+    Units: percentage
+   Nitrogen:
+    Value: 1.09
+    Units: percentage
+   Phosphorus:
+    Value: 0.23
+    Units: percentage
+   Lignin:
+    Value: 9.5
+    Units: percentage
+   C:N:
+    Value: 35.6
+   C:P:
+    Value: 166.3
+   N:P:
+    Value: 4.7
+   Lignin:N:
+    Value: 8.8
+   Lignin:P:
+    Value: 41.1
+   Amount:
+    Value: 3.5
+    Unis: g
+  LitterType2:
+   Species: Olneya tesota
+   LifeForm: tree
+   Material: recently senesced leaves
+   Carbon:
+    Value: 39.4
+    Units: percentage
+   Nitrogen:
+    Value: 1.66
+    Units: percentage
+   Phosphorus:
+    Value: 0.24
+    Units: percentage
+   Lignin:
+    Value: 29.8
+    Units: percentage
+   C:N:
+    Value: 23.7
+   C:P:
+    Value: 166.9
+   N:P:
+    Value: 7.0
+   Lignin:N:
+    Value: 17.9
+   Lignin:P:
+    Value: 126.1
+   Amount:
+    Value: 7.0
+    Units: g
+  LitterType3:
+   Species:
+    - Encelia farinosa
+    - Olneya tesota
+    - Jatropha cardiophylla
+    - Jatropha cordata
+    - Croton sonorae
+   LifeForm:
+    - forb
+    - tree
+    - shrub
+    - tree
+    - shrub
+   Material: recently senesced leaves
+   Carbon:
+    Value: 41.1
+    Units: percentage
+   Nitrogen:
+    Value: 1.26
+    Units: percentage
+   Phosphorus:
+    Value: 0.28
+    Units: percentage
+   Lignin:
+    Value: 19.2
+    Units: percentage
+   C:N:
+    Value: 32.8
+   C:P:
+    Value: 149.0
+   N:P:
+    Value: 4.5
+   Lignin:N:
+    Value: 15.3
+   Lignin:P:
+    Value: 69.7
+   Amount:
+    Value: 4.5
+    Unis: g
+ Experiment1:
+  Description: "They assessed the influence of litter quality on decomposition rates in three contrasting desert environments"
+  LitterBagInfo:
+   Material: fiberglass
+   MeshSize:
+    Value: 1.4
+    Units: mm
+   Dimentions:
+    Width: 17
+    Lenght: 20
+    Units: cm
+   Position:
+     Position1: bare soil
+     Position2:
+      - bare soil
+      - under tree
+  Treatment:
+   - litter type
+   - location
+  StartingDate:
+   Month: april
+   Season: spring
+  Duration:
+   Time: 12
+   Units: months
+
+Variables:
+ V1:
+   Name: Time
+   Units: months
+ V2:
+   Name: EP
+   Units: mass remaining
+   Description: "Encelia Farinosa litter mass remaining at harvest time decomposed in Plains"
+   LitterType: LitterType1
+   Position: Position1
+ V3:
+   Name: EH
+   Units: mass remaining
+   Description: "Encelia Farinosa litter mass remaining at harvest time decomposed in Hillsides"
+   LitterType: LitterType1
+   Position: Position2
+ V4:
+   Name: EA
+   Units: mass remaining
+   Description: "Encelia Farinosa litter mass remaining at harvest time decomposed in Arroyos"
+   LitterType: LitterType1
+   Position: Position2
+ V5:
+   Name: OP
+   Units: mass remaining
+   Description: "Olneya tesota litter mass remaining at harvest time decomposed in Plains"
+   LitterType: LitterType2
+   Position: Position1
+ V6:
+   Name: OH
+   Units: mass remaining
+   Description: "Olneya tesota litter mass remaining at harvest time decomposed in Hillsides"
+   LitterType: LitterType2
+   Position: Position2
+ V7:
+   Name: OA
+   Units: mass remaining
+   Description: "Olneya tesota litter mass remaining at harvest time decomposed in Arroyos"
+   LitterType: LitterType2
+   Position: Position2
+ V8:
+   Name: SMP
+   Units: mass remaining
+   Description: "Species mixture litter mass remaining at harvest time decomposed in Plains"
+   LitterType: LitterType3
+   Position: Position1
+ V9:
+   Name: SMH
+   Units: mass remaining
+   Description: "Species mixture litter mass remaining at harvest time decomposed in Hillsides"
+   LitterType: LitterType3
+   Position: Position2
+ V10:
+    Name: SMA
+    Units: mass remaining
+    Description: "Species mixture litter mass remaining at harvest time decomposed in Arroyos"
+    LitterType: LitterType3
+    Position: Position2

@@ -1,0 +1,85 @@
+CitationKey: Gliksman2018b
+doi: 10.1007/s11104-018-3696-4
+EntryAuthor: Ignacio Siebenhart
+
+SiteInfo:
+ Name: Ramat Hanadiv Nature Park, Haifa, Israel
+ MAP:
+  Value: 530
+  Units: mm
+ MAT:
+  Value: 21.0
+  Units: celsius
+ RainySeason: winter
+ Altitude:
+  Value: 120
+  Units: masl
+ Coordinates:
+  Latitude: 32.5
+  Longitude: 43.167
+
+ExperimentInfo:
+ LitterInfo:
+  LitterType1:
+   Species: Triticum aestivum
+   LifeForm: crop
+   Material: recently senesced leaves
+   Carbon:
+    Value: 43.4
+    Units: percentage
+   Nitrogen:
+    Value: 0.41
+    Units: percentage
+   C:N:
+    Value: 105.9
+   Amount:
+    Value: 2.5
+    Units: g
+ Experiment1:
+  Description: "They evaluate decomposition of standing (at two different heights) and surface litter of T. aestivum"
+  LitterBagInfo:
+   Material:
+    - polyethylene
+    - fiberglass
+   MeshSize:
+    Value:
+     - 1
+    Units: mm
+   Dimentions:
+    Width: 12
+    Lenght: 12
+    Units: cm
+   Transmitance:
+    Value: 90.4
+    Units: percentage
+   Position:
+    Position1: on top of soil litter layer
+    Position2: suspended 5 cm
+    Position3: suspended 100 cm
+  Treatment: location
+  StartingDate:
+   Month: june
+   Season: winter
+  Duration:
+   Time: 7.5
+   Units: months
+
+Variables:
+ V1:
+   Name: Time
+   Units: months
+ V2:
+   Name: TAG
+   Units: mass remaining
+   Description: "Triticum aestivum litter mass remaining at harvest time positioned on the ground"
+   Position: Position1
+ V3:
+   Name: TAS
+   Units: mass remaining
+   Description: "Triticum aestivum litter mass remaining at harvest time positioned suspended 5 cm over the ground"
+   Position: Position2
+ V4:
+   Name: TASM
+   Units: mass remaining
+   Description: "Triticum aestivum litter mass remaining at harvest time positioned suspenden 100 cm over the ground"
+   Position: Position3
