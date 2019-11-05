@@ -1,0 +1,97 @@
+CitationKey: Mendez2019
+doi: 10.1007/s11104-019-04325-1
+EntryAuthor: Agustín Sarquis
+
+SiteInfo:
+  Name: Villa Meliquina, Neuquén, Argentina
+  EcosystemType: woodland
+  MAP:
+    Value: 1100
+    Units: mm
+  MAT:
+    Value: 8.9
+    Units: Celsius
+  RainySeason: winter
+  Altitude:
+    Value: 900
+    Units: masl
+  SoilType: Mollisols
+  Coordinates:
+    Latitude: -40.433
+    Longitude: -71.217
+
+ExperimentInfo:
+ LitterInfo:
+  LitterType1:
+   Species: Populus nigra
+   LifeForm: tree
+   Material: recently senesced leaves
+   Amount:
+     Value: 2
+     Units: g
+ Experiment1:
+  Description: "They established an experiment to evaluate the effects of solar radiation on litter decomposition in litter for a year"
+  LitterBagInfo:
+   Material: fiberglass
+   MeshSize:
+    Value: 4
+    Units: mm
+   Dimentions:
+    Width: 10
+    Lenght: 10
+    Units: cm
+   Transmitance:
+    Value: 90
+    Units: percentage
+   Position: bare soil
+  FilterInfo:
+   FilterType1:
+    Name: Rosco
+    Wavelenght:
+     Value: 550
+     Units: nm
+    PARTransmitance:
+     Value: 34.43
+     Units: percentage
+    UVBTransmitance:
+     Value: 1.24
+     Units: percentage
+    UVATransmitance:
+     Value: 1.92
+     Units: percentage
+   FilterType2:
+    Name: polyethylene
+    Wavelenght:
+     Value: 700
+     Units: nm
+    PARTransmitance:
+     Value: 76.3
+     Units: percentage
+    UVBTransmitance:
+     Value: 69.93
+     Units: percentage
+    UVATransmitance:
+     Value: 77.38
+     Units: percentage
+  Treatment: light attenuation
+  StartingDate:
+   Month: may
+   Season: autumn
+  Duration:
+   Time: 12
+   Units: months
+
+Variables:
+  V1:
+    Name: Time
+    Units: months
+  V2:
+    Name: Blocked
+    Units: organic matter remaining
+    Description: "P. nigra organic matter remaining from leaf litter under UV and blue-green light attenuation treatment"
+    FilterType: FilterType1
+  V3:
+    Name: Full
+    Units: organic matter remaining
+    Description: "P. nigra organic matter remaining from leaf litter under full sun treatment"
+    FilterType: FilterType2
