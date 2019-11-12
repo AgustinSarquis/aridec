@@ -1,0 +1,289 @@
+CitationKey: PenaPena2016
+doi: 10.1016/j.apsoil.2016.05.007
+EntryAuthor: Agustín Sarquis
+
+SiteInfo:
+  Name: Mato Grosso, Brazil
+  EcosystemType:
+    - savanna
+    - grassland
+    - cropland
+  MAP:
+    Value: 1591
+    Units: mm
+  MAT:
+    Value: 24.60
+    Units: Celsius
+  RainySeason:
+    - autumn
+    - winter
+  Altitude:
+    Value: 670
+    Units: masl
+  SoilType: Oxisols
+  Coordinates:
+    Latitude: -15.700
+    Longitude: -55.357
+
+ExperimentInfo:
+ LitterInfo:
+  LitterType1:
+   LifeForm:
+     - tree
+     - shrub
+   Material: recently senesced leaves
+   C:N:
+    Value: 51
+   Amount:
+    Value: 10
+    Units: g
+  LitterType2:
+   Species: Brachiaria
+   LifeForm: graminoid
+   Material:
+     - recently senesced leaves
+     - recently senesced stems
+   C:N:
+    Value: 142
+   Amount:
+    Value: 10
+    Units: g
+  LitterType3:
+   Species: Glycine max
+   LifeForm: crop
+   Material:
+    - stems
+    - pods
+   C:N:
+    Value: 57
+   Amount:
+    Value: 10
+    Units: g
+  LitterType4:
+   Species: Zea mays
+   LifeForm: crop
+   Material: recently senesced leaves
+   C:N:
+    Value: 72
+   Amount:
+    Value: 10
+    Units: g
+ Experiment1:
+  Description: "The experiment consisted of a full factorial design including: season (dry/rainy), land use (cropland/grassland/Cerrado), litter type (original/standard) and litterbag mesh size (coarse/fine)"
+  LitterBagInfo:
+   LitterBag1:
+    Material: polyester
+    MeshSize:
+     Value: 5
+     Units: mm
+    Dimentions:
+     Width: 20
+     Lenght: 20
+     Units: cm
+    Position: covered in litter
+   LitterBag2:
+    Material: polyamide
+    MeshSize:
+     Value: 0.02
+     Units: mm
+    Dimentions:
+     Width: 20
+     Lenght: 15
+     Units: cm
+    Position: covered in litter
+  Treatment:
+    - litter type
+    - location
+    - soil fauna exclusion
+    - season
+  StartingDate:
+   StartingDate1:
+    Month: may
+    Season: autumn
+   StartingDate2:
+    Month: november
+    Season: spring
+  Duration:
+   Time: 5
+   Units: months
+
+Variables:
+  V1:
+    Name: Time
+    Units: weeks
+  V2:
+    Name: CDOC
+    Units: mass remaining
+    Description: "Tree and shrub mixture litter incubated in the dry season with a coarse mesh at Cerrado site."
+    LitterType: LitterType1
+    LitterBag: LitterBag1
+    Site: savanna
+    StartingDate: StartingDate1
+  V3:
+    Name: CDOF
+    Units: mass remaining
+    Description: "Tree and shrub mixture litter incubated in the dry season with a fine mesh at Cerrado site."
+    LitterType: LitterType1
+    LitterBag: LitterBag2
+    StartingDate: StartingDate1
+    Site: savanna
+  V4:
+    Name: CDSC
+    Units: mass remaining
+    Description: "Z. mays litter incubated in the dry season with a coarse mesh at Cerrado site."
+    LitterType: LitterType4
+    LitterBag: LitterBag1
+    StartingDate: StartingDate1
+    Site: savanna
+  V5:
+    Name: CDSF
+    Units: mass remaining
+    Description: "Z. mays litter incubated in the dry season with a fine mesh at Cerrado site."
+    LitterType: LitterType4
+    LitterBag: LitterBag2
+    StartingDate: StartingDate1
+    Site: savanna
+  V6:
+    Name: CROC
+    Units: mass remaining
+    Description: "Tree and shrub mixture litter incubated in the rainy season with a coarse mesh at Cerrado site."
+    LitterType: LitterType1
+    LitterBag: LitterBag1
+    StartingDate: StartingDate2
+    Site: savanna
+  V7:
+    Name: CROF
+    Units: mass remaining
+    Description: "Tree and shrub mixture litter incubated in the rainy season with a fine mesh at Cerrado site."
+    LitterType: LitterType1
+    LitterBag: LitterBag2
+    StartingDate: StartingDate2
+    Site: savanna
+  V8:
+    Name: CRSC
+    Units: mass remaining
+    Description: "Z. mays litter incubated in the rainy season with a coarse mesh at Cerrado site."
+    LitterType: LitterType4
+    LitterBag: LitterBag1
+    StartingDate: StartingDate2
+    Site: savanna
+  V9:
+    Name: CRSF
+    Units: mass remaining
+    Description: "Z. mays litter incubated in the rainy season with a fine mesh at Cerrado site."
+    LitterType: LitterType4
+    LitterBag: LitterBag2
+    StartingDate: StartingDate2
+    Site: savanna
+  V10:
+    Name: GDOC
+    Units: mass remaining
+    Description: "Brachiaria litter incubated in the dry season with a coarse mesh at grassland site."
+    LitterType: LitterType2
+    LitterBag: LitterBag1
+    Site: grassland
+  V11:
+    Name: GDOF
+    Units: mass remaining
+    Description: "Brachiaria litter incubated in the dry season with a fine mesh at grassland site."
+    LitterType: LitterType2
+    LitterBag: LitterBag2
+    Site: grassland
+  V12:
+    Name: GDSC
+    Units: mass remaining
+    Description: "Z. mays litter incubated in the dry season with a coarse mesh at grassland site."
+    LitterType: LitterType4
+    LitterBag: LitterBag1
+    Site: grassland
+  V13:
+    Name: GDSF
+    Units: mass remaining
+    Description: "Z. mays litter incubated in the dry season with a fine mesh at grassland site."
+    LitterType: LitterType4
+    LitterBag: LitterBag2
+    Site: grassland
+  V14:
+    Name: GROC
+    Units: mass remaining
+    Description: "Brachiaria litter incubated in the rainy season with a coarse mesh at grassland site."
+    LitterType: LitterType2
+    LitterBag: LitterBag1
+    Site: grassland
+  V15:
+    Name: GROF
+    Units: mass remaining
+    Description: "Brachiaria litter incubated in the rainy season with a fine mesh at grassland site."
+    LitterType: LitterType2
+    LitterBag: LitterBag2
+    Site: grassland
+  V16:
+    Name: GRSC
+    Units: mass remaining
+    Description: "Z. mays litter incubated in the rainy season with a coarse mesh at grassland site."
+    LitterType: LitterType4
+    LitterBag: LitterBag1
+    Site: grassland
+  V17:
+    Name: GRSF
+    Units: mass remaining
+    Description: "Z. mays litter incubated in the rainy season with a fine mesh at grassland site."
+    LitterType: LitterType4
+    LitterBag: LitterBag2
+    Site: grassland
+  V18:
+    Name: CrDOC
+    Units: mass remaining
+    Description: "G. max litter incubated in the dry season with a coarse mesh at cropland site."
+    LitterType: LitterType3
+    LitterBag: LitterBag1
+    Site: cropland
+  V19:
+    Name: CrDOF
+    Units: mass remaining
+    Description: "G. max litter incubated in the dry season with a fine mesh at cropland site."
+    LitterType: LitterType3
+    LitterBag: LitterBag2
+    Site: cropland
+  V20:
+    Name: CrDSC
+    Units: mass remaining
+    Description: "Z.mays litter incubated in the dry season with a coarse mesh at cropland site."
+    LitterType: LitterType4
+    LitterBag: LitterBag1
+    Site: cropland
+  V21:
+    Name: CrDSF
+    Units: mass remaining
+    Description: "Z. mays litter incubated in the dry season with a fine mesh at cropland site."
+    LitterType: LitterType4
+    LitterBag: LitterBag2
+    Site: cropland
+  V22:
+    Name: CrROC
+    Units: mass remaining
+    Description: "G. max litter incubated in the rainy season with a coarse mesh at cropland site."
+    LitterType: LitterType3
+    LitterBag: LitterBag1
+    Site: cropland
+  V23:
+    Name: CrROF
+    Units: mass remaining
+    Description: "G. max litter incubated in the rainy season with a fine mesh at cropland site."
+    LitterType: LitterType3
+    LitterBag: LitterBag2
+    Site: cropland
+  V24:
+    Name: CrRSC
+    Units: mass remaining
+    Description: "Z. mays litter incubated in the rainy season with a coarse mesh at cropland site."
+    LitterType: LitterType4
+    LitterBag: LitterBag1
+    Site: cropland
+  V25:
+    Name: CrRSF
+    Units: mass remaining
+    Description: "Z. mays litter incubated in the rainy season with a fine mesh at cropland site."
+    LitterType: LitterType4
+    LitterBag: LitterBag2
+    Site: cropland

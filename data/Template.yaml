@@ -35,14 +35,14 @@ ExperimentInfo:
   LitterType1:
    Species:
    LifeForm: succulent, bromeliad, tree, forb, shrub, crop, conifer, graminoid
-   Material: green leaves, senesced photosynthetic stems, aboveground parts, prematurely senesced leaves, leaves, recently senesced leaves, recently senesced terminal shoots, recently senesced stems, (fine) roots, live roots
+   Material: green leaves, senesced photosynthetic stems, aboveground parts, prematurely senesced leaves, leaves, recently senesced leaves, recently senesced terminal shoots, recently senesced stems, (fine) roots, live roots, pods
    Amount:
      Value:
      Units: g
  Experiment1:
   Description:
   LitterBagInfo:
-   Material: net curtain, aluminum, plastic, nylon bridal mesh, white nylon, nylon tent netting fabric, nylon, DACRON cloth, black polypropylene, fiberglass, wire mesh, bolting cloth, polyester, polyethylene gauze
+   Material: net curtain, aluminum, plastic, nylon bridal mesh, white nylon, nylon tent netting fabric, nylon, DACRON cloth, black polypropylene, fiberglass, wire mesh, bolting cloth, polyester, polyethylene gauze, polyamide
    MeshSize:
     Value:
     Units: mm
@@ -94,3 +94,5 @@ Variables:
     NitrogenAddition:
     WaterAddition:
     SoilType:
+    LitterBag:
+    
