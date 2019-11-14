@@ -1,0 +1,169 @@
+CitationKey: Throop2007
+doi: 10.1890/06-0889.1
+EntryAuthor: Agustín Sarquis
+
+SiteInfo:
+  Name: Santa Rita Experimental Range, Arizona, USA
+  EcosystemType: steppe
+  MAP:
+    Value: 370
+    Units: mm
+  MAT:
+    Value: 17.10
+    Units: Celsius
+  RainySeason:
+    - summer
+    - winter
+  Altitude:
+    Value: 1100
+    Units: masl
+  Cover:
+    PlantCover: 85
+    HerbaceousCover: 55
+    WoodyCover: 30
+    BareSoil: 15
+    Units: percentage
+  Coordinates:
+    Latitude: 31.793
+    Longitude: -110.885
+
+ExperimentInfo:
+ LitterInfo:
+  LitterType1:
+   Species: Prosopis juliflora
+   LifeForm: tree
+   Material: recently senesced leaves
+   Carbon:
+     Value: 53.2
+     Units: percentage
+   Nitrogen:
+     Value: 3.4
+     Units: percentage
+   C:N:
+     Value: 15.7
+   Amount:
+     Value: 4
+     Units: g
+  LitterType2:
+   Species: Eragrostis lehmanniana
+   LifeForm: graminoid
+   Material: recently senesced leaves
+   Carbon:
+     Value: 48.4
+     Units: percentage
+   Nitrogen:
+     Value: 1.1
+     Units: percentage
+   C:N:
+     Value: 45.0
+   Amount:
+     Value: 3.5
+     Units: g
+ Experiment1:
+  Description: "They quantified changes in mass in litterbags deployed under mesquite canopies and in intercanopy zones"
+  LitterBagInfo:
+   Material: fiberglass
+   MeshSize:
+    Value: 0.9
+    Units: mm
+   Dimentions:
+    Width: 10
+    Lenght: 10
+    Units: cm
+   Position:
+     Position1: under tree
+     Position2: under cut tree
+     Position3: adjacent to grass clumps
+     Position4: bare soil
+  Treatment:
+    - litter type
+    - location
+  StartingDate:
+   Month: february
+   Season: winter
+  Duration:
+   Time: 12
+   Units: months
+
+Variables:
+  V1:
+    Name: Time
+    Units: months
+  V2:
+    Name: MM
+    Units: non-ash dry mass remaining
+    Description: "Prosopis leaf litter incubated for 12 months at a Prosopis placement"
+    LitterType: LitterType1
+    Position: Position1
+  V3:
+    Name: MG
+    Units: non-ash dry mass remaining
+    Description: "Prosopis leaf litter incubated for 12 months at a girdle placement"
+    LitterType: LitterType1
+    Position: Position1
+  V4:
+    Name: MN
+    Units: non-ash dry mass remaining
+    Description: "Prosopis leaf litter incubated for 12 months at a new-stump placement"
+    LitterType: LitterType1
+    Position: Position2
+  V5:
+    Name: MGr
+    Units: non-ash dry mass remaining
+    Description: "Prosopis leaf litter incubated for 12 months at a grassland placement"
+    LitterType: LitterType1
+    Position: Position3
+  V6:
+    Name: MS
+    Units: non-ash dry mass remaining
+    Description: "Prosopis leaf litter incubated for 12 months at a skeleton placement"
+    LitterType: LitterType1
+    Position: Position1
+  V7:
+    Name: MO
+    Units: non-ash dry mass remaining
+    Description: "Prosopis leaf litter incubated for 12 months at an old-stump placement"
+    LitterType: LitterType1
+    Position: Position2
+  V8:
+    Name: MB
+    Units: non-ash dry mass remaining
+    Description: "Prosopis leaf litter incubated for 12 months at a bare-ground placement"
+    LitterType: LitterType1
+    Position: Position4
+  V9:
+    Name: LM
+    Units: non-ash dry mass remaining
+    Description: "Eragrostis leaf litter incubated for 12 months at a Prosopis placement"
+    LitterType: LitterType2
+    Position: Position1
+  V10:
+    Name: LG
+    Units: non-ash dry mass remaining
+    Description: "Eragrostis leaf litter incubated for 12 months at a girdle placement"
+    LitterType: LitterType2
+    Position: Position1
+  V11:
+    Name: LN
+    Units: non-ash dry mass remaining
+    Description: "Eragrostis leaf litter incubated for 12 months at a new-stump placement"
+    LitterType: LitterType2
+    Position: Position2
+  V12:
+    Name: LGr
+    Units: non-ash dry mass remaining
+    Description: "Eragrostis leaf litter incubated for 12 months at a grassland placement"
+    LitterType: LitterType2
+    Position: Position3
+  V13:
+    Name: LO
+    Units: non-ash dry mass remaining
+    Description: "Eragrostis leaf litter incubated for 12 months at an old-stump placement"
+    LitterType: LitterType2
+    Position: Position2
+  V14:
+    Name: LB
+    Units: non-ash dry mass remaining
+    Description: "Eragrostis leaf litter incubated for 12 months at a bare-ground placement"
+    LitterType: LitterType2
+    Position: Position4
