@@ -1,0 +1,69 @@
+CitationKey: Pucheta2006
+doi: 10.1111/j.1442-9993.2006.01635.x
+EntryAuthor: Agustín Sarquis
+
+SiteInfo:
+  Name: Médanos Grandes, San Juan, Argentina
+  EcosystemType: desert
+  MAP:
+    Value: 140
+    Units: mm
+  MAT:
+    Value: 18.46
+    Units: Celsius
+  RainySeason:
+    - summer
+    - autumn
+  Altitude:
+    Value: 557
+    Units: masl
+  SoilTexture: coarse
+  Cover:
+    ShrubCover: 25
+    Units: percentage
+  Coordinates:
+    Latitude: -31.86
+    Longitude: -68.227
+
+ExperimentInfo:
+ LitterInfo:
+  LitterType1:
+   Species: Larrea divaricata
+   LifeForm: shrub
+   Material: recently senesced leaves
+   Amount:
+     Value: 4
+     Units: g
+ Experiment1:
+  Description: "They incubated L. divaricata leaf litter buried 5 cm deep for 163 days under L. divaricata, Bulnesia retama and open patches"
+  LitterBagInfo:
+   MeshSize:
+    Value: .4
+    Units: mm
+  Treatment: location
+  StartingDate:
+   Month: december
+   Season: summer
+  Duration:
+   Time: 5.4
+   Units: months
+
+Variables:
+  V1:
+    Name: Time
+    Units: days
+  V2:
+    Name: Larrea
+    Units: mass remaining
+    Description: "L. divaricata leaf litter incubated for 163 days buried under a L. divaricata patch"
+    Position: L. divaricata patch
+  V3:
+    Name: Bulnesia
+    Units: mass remaining
+    Description: "L. divaricata leaf litter incubated for 163 days buried under a B. retama patch"
+    Position: B. retama patch
+  V4:
+    Name: Open
+    Units: mass remaining
+    Description: "L. divaricata leaf litter incubated for 163 days buried under an open patch"
+    Position: open patch
