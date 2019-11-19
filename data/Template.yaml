@@ -35,14 +35,14 @@ ExperimentInfo:
   LitterType1:
    Species:
    LifeForm: succulent, bromeliad, tree, forb, shrub, crop, conifer, graminoid
-   Material: green leaves, senesced photosynthetic stems, aboveground parts, prematurely senesced leaves, leaves, recently senesced leaves, recently senesced terminal shoots, recently senesced stems, (fine) roots, live roots, pods
+   Material: leaflets, green leaves, senesced photosynthetic stems, aboveground parts, prematurely senesced leaves, leaves, recently senesced leaves, recently senesced terminal shoots, recently senesced stems, (fine) roots, live roots, pods
    Amount:
      Value:
      Units: g
  Experiment1:
   Description:
   LitterBagInfo:
-   Material: net curtain, aluminum, plastic, nylon bridal mesh, white nylon, nylon tent netting fabric, nylon, DACRON cloth, black polypropylene, fiberglass, wire mesh, bolting cloth, polyester, polyethylene gauze, polyamide
+   Material: net curtain, aluminum, plastic, nylon bridal mesh, white nylon, nylon tent netting fabric, nylon, DACRON cloth, black polypropylene, (black) fiberglass, wire mesh, bolting cloth, polyester, polyethylene gauze, polyamide
    MeshSize:
     Value:
     Units: mm
@@ -54,7 +54,7 @@ ExperimentInfo:
    (add specific)Transmitance:
     Value:
     Units: percentage
-   Position: on microcosms, adjacent to grass clumps, under cut tree, under rainout shelter, under frames, decomposition bed, covered in litter, suspended 1/60 cm over bare soil, on top of soil litter layer, underwater pinned to riverbed, under tree, under sparse tree crown, bare soil, vegetated soil, under shrub, under shadecloth, buried 5/10 cm deep
+   Position: on microcosms, adjacent to grass clumps, under cut tree, under rainout shelter, under frames, decomposition bed, covered in litter, suspended 1/60 cm over bare soil, on top of soil litter layer, underwater pinned to riverbed, under tree/grass/shrub, under sparse tree crown, bare soil, vegetated soil, under shadecloth, buried 5/10 cm deep
   FilterInfo:
    FilterType1:
     Name: Rosco, polyethylene, UV-transparent acrylic, UV-absorbing polycarbonate, shadecloth, Aclar, Mylar, Courtgard, Mylar with paint, polyester film, Solacryl SUVT, Clear UV Filter, Amber UV Filter, Plexiglass
@@ -95,4 +95,3 @@ Variables:
     WaterAddition:
     SoilType:
     LitterBag:
-    

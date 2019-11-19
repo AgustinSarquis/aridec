@@ -1,0 +1,85 @@
+CitationKey: Hewins2017
+doi: 10.1007/s11258-017-0703-4
+EntryAuthor: Agustín Sarquis
+
+SiteInfo:
+  Name: Jornada Experimental Range, New Mexico, USA
+  EcosystemType: desert
+  MAP:
+    Value: 245
+    Units: mm
+  MAT:
+    Value: 14.7
+    Units: Celsius
+  RainySeason: summer
+  Altitude:
+    Value: 1320
+    Units: masl
+  SoilTexture: coarse
+  Coordinates:
+    Latitude: 32.563
+    Longitude: -106.760
+
+ExperimentInfo:
+ LitterInfo:
+  LitterType1:
+   Species: Prosopis glandulosa
+   LifeForm: tree
+   Material: leaflets
+   Carbon:
+     Value: 47.97
+     Units: percentage
+   Nitrogen:
+     Value: 2.93
+     Units: percentage
+   Amount:
+     Value: 2
+     Units: g
+ Experiment1:
+  Description: "They incubated P. glandulosa leaflets for 30 months in bare soil, grass and shrub patches"
+  LitterBagInfo:
+   Material: black fiberglass
+   MeshSize:
+    Value: 1
+    Units: mm
+   Dimentions:
+    Width: 10
+    Lenght: 10
+    Units: cm
+   UVBTransmitance:
+    Value: 51
+    Units: percentage
+   PARTransmitance:
+    Value: 50
+    Units: percentage
+   Position:
+     Position1: bare soil
+     Position2: under grass
+     Position3: under shrub
+  Treatment: location
+  StartingDate:
+   Month: april
+   Season: spring
+  Duration:
+   Time: 30
+   Units: months
+
+Variables:
+  V1:
+    Name: Time
+    Units: months
+  V2:
+    Name: Bare
+    Units: non-ash dry mass remaining
+    Description: "P. glandulosa leaflets incubated for 30 months at bare soil patches"
+    Position: Position1
+  V3:
+    Name: Grass
+    Units: non-ash dry mass remaining
+    Description: "P. glandulosa leaflets incubated for 30 months at grass-cover patches"
+    Position: Position2
+  V4:
+    Name: Shrub
+    Units: non-ash dry mass remaining
+    Description: "P. glandulosa leaflets incubated for 30 months at shrub patches"
+    Position: Position3
