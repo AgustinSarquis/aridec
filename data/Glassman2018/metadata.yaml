@@ -1,0 +1,361 @@
+CitationKey: Glassman2018
+doi: 10.1073/pnas.1811269115
+EntryAuthor: Agustín Sarquis
+
+SiteInfo:
+  Name: California, USA
+  EcosystemType:
+   - desert
+   - scrub
+   - grassland
+   - forest
+   - subalpine
+  MAP:
+    Value:
+      - 213.5
+      - 428.4
+      - 569.4
+      - 1415.8
+      - 1376.5
+    Units: mm
+  MAT:
+    Value:
+      - 26.3
+      - 17.4
+      - 18.8
+      - 11.4
+      - 11.0
+    Units: Celsius
+  RainySeason: winter
+  Altitude:
+    Value:
+      - 275
+      - 1280
+      - 470
+      - 1710
+      - 2250
+    Units: masl
+  Coordinates:
+    Latitude:
+      - 33.648
+      - 33.610
+      - 33.737
+      - 33.683
+      - 33.823
+    Longitude:
+      - -116.38
+      - -116.45
+      - -117.70
+      - -116.77
+      - -116.75
+
+ExperimentInfo:
+ LitterInfo:
+  LitterType1:
+   Species:
+     - Avena spp.
+     - Bromus spp.
+     - Lolium spp.
+     - Erodium spp.
+     - Lupinus spp.
+     - Nassella pulchra
+   LifeForm:
+      - graminoid
+      - graminoid
+      - graminoid
+      - forb
+      - forb
+      - graminoid
+   Material: homogenized leaves
+   Amount:
+     Value: 5
+     Units: g
+  LitterType2:
+   Species:
+     - Avena spp.
+     - Bromus spp.
+     - Lolium spp.
+     - Erodium spp.
+     - Lupinus spp.
+     - Nassella pulchra
+   LifeForm:
+      - graminoid
+      - graminoid
+      - graminoid
+      - forb
+      - forb
+      - graminoid
+   Material: leaves
+   Amount:
+     Value: 2
+     Units: g
+ Experiment1:
+  Description: "They incubated a common litter substrate at five sites along a gradient inoculated with microbes from each of the five sites for 18 months"
+  LitterBagInfo:
+   LitterBag1:
+    Material: nylon
+    MeshSize:
+     Value: 0.00022
+     Units: mm
+   LitterBag2:
+    Material: window screening
+    MeshSize:
+     Value: 2
+     Units: mm
+  Treatment: location, microbial inoculum
+  StartingDate:
+   Month: october
+   Season: autumn
+  Duration:
+   Time: 18
+   Units: months
+
+Variables:
+  V1:
+    Name: Time
+    Units: months
+  V2:
+    Name: DD
+    Units: mass remaining
+    Description: "Homogenized litter incubated at the desert site inoculated with desert microbes in a closed bag"
+    LitterType: LitterType1
+    Site: desert
+    LitterBag: LitterBag1
+  V3:
+    Name: DSc
+    Units: mass remaining
+    Description: "Homogenized litter incubated at the desert site inoculated with scrubland microbes in a closed bag"
+    LitterType: LitterType1
+    Site: desert
+    LitterBag: LitterBag1
+  V4:
+    Name: DG
+    Units: mass remaining
+    Description: "Homogenized litter incubated at the desert site inoculated with grassland microbes in a closed bag"
+    LitterType: LitterType1
+    Site: desert
+    LitterBag: LitterBag1
+  V5:
+    Name: DP
+    Units: mass remaining
+    Description: "Homogenized litter incubated at the desert site inoculated with pine-oak forest microbes in a closed bag"
+    LitterType: LitterType1
+    Site: desert
+    LitterBag: LitterBag1
+  V6:
+    Name: DS
+    Units: mass remaining
+    Description: "Homogenized litter incubated at the desert site inoculated with subalpine microbes in a closed bag"
+    LitterType: LitterType1
+    Site: desert
+    LitterBag: LitterBag1
+  V7:
+    Name: Dc
+    Units: mass remaining
+    Description: "Clipped litter incubated at the desert site in a closed bag"
+    LitterType: LitterType2
+    Site: desert
+    LitterBag: LitterBag1
+  V8:
+    Name: Do
+    Units: mass remaining
+    Description: "Clipped litter incubated at the desert site in an open bag"
+    LitterType: LitterType2
+    Site: desert
+    LitterBag: LitterBag2
+  V9:
+    Name: ScD
+    Units: mass remaining
+    Description: "Homogenized litter incubated at the scrubland site inoculated with desert microbes in a closed bag"
+    LitterType: LitterType1
+    Site: scrub
+    LitterBag: LitterBag1
+  V10:
+    Name: ScSc
+    Units: mass remaining
+    Description: "Homogenized litter incubated at the scrubland site inoculated with scrubland microbes in a closed bag"
+    LitterType: LitterType1
+    Site: scrub
+    LitterBag: LitterBag1
+  V11:
+    Name: ScG
+    Units: mass remaining
+    Description: "Homogenized litter incubated at the scrubland site inoculated with grassland microbes in a closed bag"
+    LitterType: LitterType1
+    Site: scrub
+    LitterBag: LitterBag1
+  V12:
+    Name: ScP
+    Units: mass remaining
+    Description: "Homogenized litter incubated at the scrubland site inoculated with pine-oak forest microbes in a closed bag"
+    LitterType: LitterType1
+    Site: scrub
+    LitterBag: LitterBag1
+  V13:
+    Name: ScS
+    Units: mass remaining
+    Description: "Homogenized litter incubated at the scrubland site inoculated with subalpine microbes in a closed bag"
+    LitterType: LitterType1
+    Site: scrub
+    LitterBag: LitterBag1
+  V14:
+    Name: Scc
+    Units: mass remaining
+    Description: "Clipped litter incubated at the scrubland site in a closed bag"
+    LitterType: LitterType2
+    Site: scrub
+    LitterBag: LitterBag1
+  V15:
+    Name: Sco
+    Units: mass remaining
+    Description: "Clipped litter incubated at the scrubland site in an open bag"
+    LitterType: LitterType2
+    Site: scrub
+    LitterBag: LitterBag2
+  V16:
+    Name: GD
+    Units: mass remaining
+    Description: "Homogenized litter incubated at the grassland site inoculated with desert microbes in a closed bag"
+    LitterType: LitterType1
+    Site: grassland
+    LitterBag: LitterBag1
+  V17:
+    Name: GSc
+    Units: mass remaining
+    Description: "Homogenized litter incubated at the grassland site inoculated with scrubland microbes in a closed bag"
+    LitterType: LitterType1
+    Site: grassland
+    LitterBag: LitterBag1
+  V18:
+    Name: GG
+    Units: mass remaining
+    Description: "Homogenized litter incubated at the grassland site inoculated with grassland microbes in a closed bag"
+    LitterType: LitterType1
+    Site: grassland
+    LitterBag: LitterBag1
+  V19:
+    Name: GP
+    Units: mass remaining
+    Description: "Homogenized litter incubated at the grassland site inoculated with pine-oak forest microbes in a closed bag"
+    LitterType: LitterType1
+    Site: grassland
+    LitterBag: LitterBag1
+  V20:
+    Name: GS
+    Units: mass remaining
+    Description: "Homogenized litter incubated at the grassland site inoculated with subalpine microbes in a closed bag"
+    LitterType: LitterType1
+    Site: grassland
+    LitterBag: LitterBag1
+  V21:
+    Name: Gc
+    Units: mass remaining
+    Description: "Clipped litter incubated at the grassland site in a closed bag"
+    LitterType: LitterType2
+    Site: grassland
+    LitterBag: LitterBag1
+  V22:
+    Name: Go
+    Units: mass remaining
+    Description: "Clipped litter incubated at the grassland site in an open bag"
+    LitterType: LitterType2
+    Site: grassland
+    LitterBag: LitterBag2
+  V23:
+    Name: PD
+    Units: mass remaining
+    Description: "Homogenized litter incubated at the pine-oak forest site inoculated with desert microbes in a closed bag"
+    LitterType: LitterType1
+    Site: forest
+    LitterBag: LitterBag1
+  V24:
+    Name: PSc
+    Units: mass remaining
+    Description: "Homogenized litter incubated at the pine-oak forest site inoculated with scrubland microbes in a closed bag"
+    LitterType: LitterType1
+    Site: forest
+    LitterBag: LitterBag1
+  V25:
+    Name: PG
+    Units: mass remaining
+    Description: "Homogenized litter incubated at the pine-oak forest site inoculated with grassland microbes in a closed bag"
+    LitterType: LitterType1
+    Site: forest
+    LitterBag: LitterBag1
+  V26:
+    Name: PP
+    Units: mass remaining
+    Description: "Homogenized litter incubated at the pine-oak forest site inoculated with pine-oak forest microbes in a closed bag"
+    LitterType: LitterType1
+    Site: forest
+    LitterBag: LitterBag1
+  V27:
+    Name: PS
+    Units: mass remaining
+    Description: "Homogenized litter incubated at the pine-oak forest site inoculated with subalpine microbes in a closed bag"
+    LitterType: LitterType1
+    Site: forest
+    LitterBag: LitterBag1
+  V28:
+    Name: Pc
+    Units: mass remaining
+    Description: "Clipped litter incubated at the pine-oak forest site in a closed bag"
+    LitterType: LitterType2
+    Site: forest
+    LitterBag: LitterBag1
+  V29:
+    Name: Po
+    Units: mass remaining
+    Description: "Clipped litter incubated at the pine-oak forest site in an open bag"
+    LitterType: LitterType2
+    Site: forest
+    LitterBag: LitterBag2
+  V30:
+    Name: SD
+    Units: mass remaining
+    Description: "Homogenized litter incubated at the subalpine site inoculated with desert microbes in a closed bag"
+    LitterType: LitterType1
+    Site: subalpine
+    LitterBag: LitterBag1
+  V31:
+    Name: SSc
+    Units: mass remaining
+    Description: "Homogenized litter incubated at the subalpine site inoculated with scrubland microbes in a closed bag"
+    LitterType: LitterType1
+    Site: subalpine
+    LitterBag: LitterBag1
+  V32:
+    Name: SG
+    Units: mass remaining
+    Description: "Homogenized litter incubated at the subalpine site inoculated with grassland microbes in a closed bag"
+    LitterType: LitterType1
+    Site: subalpine
+    LitterBag: LitterBag1
+  V33:
+    Name: SP
+    Units: mass remaining
+    Description: "Homogenized litter incubated at the subalpine site inoculated with pine-oak forest microbes in a closed bag"
+    LitterType: LitterType1
+    Site: subalpine
+    LitterBag: LitterBag1
+  V34:
+    Name: SS
+    Units: mass remaining
+    Description: "Homogenized litter incubated at the subalpine site inoculated with subalpine microbes in a closed bag"
+    LitterType: LitterType1
+    Site: subalpine
+    LitterBag: LitterBag1
+  V35:
+    Name: Sc
+    Units: mass remaining
+    Description: "Clipped litter incubated at the subalpine sitein a closed bag"
+    LitterType: LitterType2
+    Site: subalpine
+    LitterBag: LitterBag1
+  V36:
+    Name: So
+    Units: mass remaining
+    Description: "Clipped litter incubated at the subalpine site in an open bag"
+    LitterType: LitterType2
+    Site: subalpine
+    LitterBag: LitterBag2

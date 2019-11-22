@@ -4,7 +4,7 @@ EntryAuthor: Agustín Sarquis
 
 SiteInfo:
   Name:
-  EcosystemType: shrubland, urban, sandland, abbandoned farmland, scrub, woodland, alluvial valley, forest, steppe, desert, grassland, mountain grassland, savanna
+  EcosystemType: subalpine, shrubland, urban, sandland, abbandoned farmland, scrub, woodland, alluvial valley, forest, steppe, desert, grassland, mountain grassland, savanna
   MAP:
     Value:
     Units: mm
@@ -35,14 +35,14 @@ ExperimentInfo:
   LitterType1:
    Species:
    LifeForm: succulent, bromeliad, tree, forb, shrub, crop, conifer, graminoid
-   Material: leaflets, green leaves, senesced photosynthetic stems, aboveground parts, prematurely senesced leaves, leaves, recently senesced leaves, recently senesced terminal shoots, recently senesced stems, (fine) roots, live roots, pods
+   Material: homogenized leaves, leaflets, green leaves, senesced photosynthetic stems, aboveground parts, prematurely senesced leaves, leaves, recently senesced leaves, recently senesced terminal shoots, recently senesced stems, (fine) roots, live roots, pods
    Amount:
      Value:
      Units: g
  Experiment1:
   Description:
   LitterBagInfo:
-   Material: net curtain, aluminum, plastic, nylon bridal mesh, white nylon, nylon tent netting fabric, nylon, DACRON cloth, black polypropylene, (black) fiberglass, wire mesh, bolting cloth, polyester, polyethylene gauze, polyamide
+   Material: window screening, net curtain, aluminum, plastic, nylon bridal mesh, white nylon, nylon tent netting fabric, nylon, DACRON cloth, black polypropylene, (black) fiberglass, wire mesh, bolting cloth, polyester, polyethylene gauze, polyamide
    MeshSize:
     Value:
     Units: mm
@@ -64,7 +64,7 @@ ExperimentInfo:
     Transmitance:
      Value:
      Units: percentage
-  Treatment: soil type, litter layer thickness, soil volumetric water content, tree cutting, rainfall, radiation, rainfall interception, light attenuation, biocide application, labile C addition, inorganic N addition, litter type, location, litter mixture, soil fauna exclusion, fungi reduction, nitrification inhibition, filter type
+  Treatment: microbial inoculum, soil type, litter layer thickness, soil volumetric water content, tree cutting, rainfall, radiation, rainfall interception, light attenuation, biocide application, labile C addition, inorganic N addition, litter type, location, litter mixture, soil fauna exclusion, fungi reduction, nitrification inhibition, filter type
   StartingDate:
    Month:
    Season:
