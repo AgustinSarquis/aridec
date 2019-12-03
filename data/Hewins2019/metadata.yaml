@@ -1,0 +1,77 @@
+CitationKey: Hewins2019
+doi: 10.1371/journal.pone.0210470
+EntryAuthor: Agustín Sarquis
+
+SiteInfo:
+  Name: Sevilleta National Wildlife Refuge, New Mexico, USA
+  EcosystemType: woodland
+  MAP:
+    Value: 362.7
+    Units: mm
+  MAT:
+    Value: 12.7
+    Units: Celsius
+  RainySeason:
+    - summer
+    - winter
+  Altitude:
+    Value: 1858
+    Units: masl
+  Coordinates:
+    Latitude: 34.386
+    Longitude: -106.529
+
+ExperimentInfo:
+ LitterInfo:
+  LitterType1:
+   Species: Prosopis glandulosa
+   LifeForm: tree
+   Material: leaflets
+   Carbon:
+     Value: 45.4
+     Units: percentage
+   Nitrogen:
+     Value: 2.5
+     Units: percentage
+   Amount:
+     Value: 3
+     Units: g
+ Experiment1:
+  Description: "They incubated P. glandulosa leaflets previously irradiated with UV buried under three precipitation treatments"
+  LitterBagInfo:
+   Material: fiberglass
+   MeshSize:
+    Value: 0.9
+    Units: mm
+   Dimentions:
+    Width: 10
+    Lenght: 20
+    Units: cm
+   Position: buried 0.5 cm deep
+  Treatment: rainfall
+  StartingDate:
+   Month: october
+   Season: autumn
+  Duration:
+   Time: 12
+   Units: months
+
+Variables:
+  V1:
+    Name: Time
+    Units: months
+  V2:
+    Name: MA
+    Units: non-ash dry mass remaining
+    Description: "UV-pre-treated P. glandulosa leaflets buried under ambient PPT"
+    Rainfall: ambient
+  V3:
+    Name: MD
+    Units: non-ash dry mass remaining
+    Description: "UV-pre-treated P. glandulosa leaflets buried under drought conditions"
+    Rainfall: 50% reduction
+  V4:
+    Name: MPA
+    Units: non-ash dry mass remaining
+    Description: "UV-pre-treated P. glandulosa leaflets buried under increased PPT"
+    Rainfall: 150% addition
