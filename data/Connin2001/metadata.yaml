@@ -1,0 +1,110 @@
+CitationKey: Connin2001
+doi: 10.1016/S0038-0717(00)00113-9
+EntryAuthor: Agustín Sarquis
+
+SiteInfo:
+  Name: Jornada, New Mexico, USA
+  EcosystemType: desert
+  MAP:
+    Value: 211
+    Units: mm
+  MAT:
+    Value: 15.6
+    Units: Celsius
+  RainySeason: summer
+  Altitude:
+    Value: 1312
+    Units: masl
+  SoilType: Haplargids
+  SoilTexture:
+    - coarse
+    - fine
+  Coordinates:
+    Latitude: 32.5
+    Longitude: -106.75
+
+ExperimentInfo:
+ LitterInfo:
+  LitterType1:
+   Species: Andropogon gerardi
+   LifeForm: graminoid
+   Material: fine roots
+   Carbon:
+     Value: 27.56
+     Units: percentage
+   Nitrogen:
+     Value: 0.53
+     Units: percentage
+   C:N:
+     Value: 52.0
+   Amount:
+     Value: 6
+     Units: g
+  LitterType2:
+   Species: Drypetes glauca
+   LifeForm: tree
+   Material: fine roots
+   Carbon:
+     Value: 39.894
+     Units: percentage
+   Nitrogen:
+     Value: 0.61
+     Units: percentage
+   C:N:
+     Value: 65.4
+   Amount:
+     Value: 6
+     Units: g
+  LitterType3:
+   Species: Pinus elliotti
+   LifeForm: conifer
+   Material: fine roots
+   Carbon:
+     Value: 40.61
+     Units: percentage
+   Nitrogen:
+     Value: 0.62
+     Units: percentage
+   C:N:
+     Value: 65.5
+   Amount:
+     Value: 6
+     Units: g
+ Experiment1:
+  Description: "Incubation of fine roots of three species for 5 years buried 20 cm deep"
+  LitterBagInfo:
+   Material: fiberglass
+   MeshSize:
+    Value: 0.055
+    Units: mm
+   Dimentions:
+    Width: 20
+    Lenght: 20
+    Units: cm
+   Position: buried 20 cm deep
+  Treatment: litter type
+  StartingDate:
+   Season: autumn
+  Duration:
+   Time: 60
+   Units: months
+
+Variables:
+  V1:
+    Name: Time
+    Units: years
+  V2:
+    Name: Ag
+    Units: non-ash dry mass remaining
+    Description: "A. gerardi fine roots incubated for 5 years"
+    LitterType: LitterType1
+  V3:
+    Name: Dg
+    Units: non-ash dry mass remaining
+    Description: "D. glauca fine roots incubated for 5 years"
+    LitterType: LitterType2
+  V4:
+    Name: Pe
+    Units: non-ash dry mass remaining
+    Description: "P. elliotti fine roots incubated for 5 years"
+    LitterType: LitterType3
