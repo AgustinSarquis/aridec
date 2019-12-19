@@ -1,0 +1,224 @@
+CitationKey: Vanderbilt2008
+doi: 10.1016/j.jaridenv.2007.10.010
+EntryAuthor: Agustín Sarquis
+
+SiteInfo:
+  Name: Sevilleta National Wildlife Refuge, New Mexico, USA
+  EcosystemType:
+    - woodland
+    - savanna
+    - steppe
+    - scrub
+  MAP:
+    Value:
+      - 379
+      - 282
+      - 243
+      - 246
+    Units: mm
+  MAT:
+    Value:
+      - 12.7
+      - 14.1
+      - 13.3
+      - 15.3
+    Units: Celsius
+  RainySeason: summer
+  Altitude:
+    Value:
+      - 1971
+      - 1767
+      - 1606
+      - 1510
+    Units: masl
+  Coordinates:
+    Latitude:
+      - 34.369
+      - 34.398
+      - 34.352
+      - 34.296
+    Longitude:
+      - -106.535
+      - -107.036
+      - -106.692
+      - -106.927
+
+ExperimentInfo:
+ LitterInfo:
+  LitterType1:
+   Species: Bouteloua eriopoda
+   LifeForm: graminoid
+   Material: recently senesced leaves
+   Carbon:
+     Value: 43.72
+     Units: percentage
+   Nitrogen:
+     Value: 0.64
+     Units: percentage
+   C:N:
+     Value: 68.31
+   Lignin:
+     Value: 8.31
+     Units: percentage
+   Lignin:N:
+     Value: 12.98
+   Cellulose:
+     Value: 30.77
+     Units: percentage
+   Silica:
+     Value: 2.27
+     Units: percentage
+   Amount:
+     Value: 5
+     Units: g
+  LitterType2:
+   Species: Juniperus monosperma
+   LifeForm: conifer
+   Material: recently senesced leaves
+   Carbon:
+     Value: 49.10
+     Units: percentage
+   Nitrogen:
+     Value: 0.75
+     Units: percentage
+   C:N:
+     Value: 65.47
+   Lignin:
+     Value: 8.38
+     Units: percentage
+   Lignin:N:
+     Value: 11.17
+   Cellulose:
+     Value: 20.22
+     Units: percentage
+   Silica:
+     Value: 0.41
+     Units: percentage
+   Amount:
+     Value: 5
+     Units: g
+  LitterType3:
+   Species: Larrea tridentata
+   LifeForm: shrub
+   Material: recently senesced leaves
+   Carbon:
+     Value: 49.21
+     Units: percentage
+   Nitrogen:
+     Value: 2.32
+     Units: percentage
+   C:N:
+     Value: 21.21
+   Lignin:
+     Value: 5.20
+     Units: percentage
+   Lignin:N:
+     Value: 2.24
+   Cellulose:
+     Value: 8.78
+     Units: percentage
+   Silica:
+     Value: 0.89
+     Units: percentage
+   Amount:
+     Value: 5
+     Units: g
+  LitterType4:
+   Species: Oryzopsis hymenoides
+   LifeForm: graminoid
+   Material: recently senesced leaves
+   Carbon:
+     Value: 42.97
+     Units: percentage
+   Nitrogen:
+     Value: 0.61
+     Units: percentage
+   C:N:
+     Value: 70.45
+   Lignin:
+     Value: 7.41
+     Units: percentage
+   Lignin:N:
+     Value: 12.15
+   Cellulose:
+     Value: 33.88
+     Units: percentage
+   Silica:
+     Value: 3.34
+     Units: percentage
+   Amount:
+     Value: 5
+     Units: g
+  LitterType5:
+   Species: Bouteloua gracilis
+   LifeForm: graminoid
+   Material: recently senesced leaves
+   Carbon:
+     Value: 42.72
+     Units: percentage
+   Nitrogen:
+     Value: 0.61
+     Units: percentage
+   C:N:
+     Value: 70.03
+   Lignin:
+     Value: 6.73
+     Units: percentage
+   Lignin:N:
+     Value: 11.03
+   Cellulose:
+     Value: 38.09
+     Units: percentage
+   Silica:
+     Value: 2.50
+     Units: percentage
+   Amount:
+     Value: 5
+     Units: g
+ Experiment1:
+  Description: "For ten years, they repeated a decomposition study of five species in four arid to semi- arid biomes in central New Mexico."
+  LitterBagInfo:
+   Material: fiberglass
+   MeshSize:
+    Value: 1.5
+    Units: mm
+   Position: bare soil
+  Treatment:
+    - litter type
+    - location
+  StartingDate:
+   Month: february
+   Season: winter
+  Duration:
+   Time: 12
+   Units: months
+
+Variables:
+  V1:
+    Name: Time
+    Units: months
+  V2:
+    Name: Be
+    Units: non-ash dry mass remaining
+    Description: "B. eriopoda leaf litter incubated for a year averaged for ten years and four locations"
+    LitterType: LitterType1
+  V3:
+    Name: Jm
+    Units: non-ash dry mass remaining
+    Description: "J. monosperma leaf litter incubated for a year averaged for ten years and four locations"
+    LitterType: LitterType2
+  V4:
+    Name: Lt
+    Units: non-ash dry mass remaining
+    Description: "L. tridentata leaf litter incubated for a year averaged for ten years and four locations"
+    LitterType: LitterType3
+  V5:
+    Name: Oh
+    Units: non-ash dry mass remaining
+    Description: "O. hymenoides leaf litter incubated for a year averaged for ten years and four locations"
+    LitterType: LitterType4
+  V6:
+    Name: Bg
+    Units: non-ash dry mass remaining
+    Description: "B. gracilis leaf litter incubated for a year averaged for ten years at one location"
+    LitterType: LitterType5

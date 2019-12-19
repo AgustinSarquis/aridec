@@ -1,0 +1,116 @@
+CitationKey: Maute2017
+doi: http://dx.doi.org/10.1071/SR16002
+EntryAuthor: Agustín Sarquis
+
+SiteInfo:
+  Name: Broken Hill, New South Wales, Australia
+  EcosystemType: grassland
+  MAP:
+    Value: 240.5
+    Units: mm
+  MAT:
+    Value:
+    Units: Celsius
+  RainySeason: whole year
+  Altitude:
+    Value: 181
+    Units: masl
+  SoilType:
+    - Durisol
+    - Ferralsol
+    - Vertosol
+  Coordinates:
+    Latitude: -31.072
+    Longitude: 141.799
+
+ExperimentInfo:
+ LitterInfo:
+  LitterType1:
+   Species: Astrebla sp.
+   LifeForm: graminoid
+   Material: leaves
+   Carbon:
+     Value: 40.55
+     Units: percentage
+   Nitrogen:
+     Value: 0.762
+     Units: percentage
+   C:N:
+     Value: 55.56
+   Amount:
+     Amount1:
+      Value: 42
+      Units: g
+     Amount2:
+      Value: 45
+      Units: g
+  LitterType2:
+   Species: Astrebla sp.
+   LifeForm: graminoid
+   Material: leaves
+   Carbon:
+     Value: 39.233
+     Units: percentage
+   Nitrogen:
+     Value: 0.478
+     Units: percentage
+   C:N:
+     Value: 83.87
+   Amount:
+     Amount1:
+      Value: 42
+      Units: g
+     Amount2:
+      Value: 45
+      Units: g
+ Experiment1:
+  Description: "They incubated Astrebla sp. dry gass using two types of mesh bags with a before-after, control-impact (BACI) design for the application of locust pest control"
+  LitterBagInfo:
+   MeshSize:
+    MeshSize1:
+     Value: 5
+     Units: mm
+    MeshSize2:
+     Value: 0.28
+     Units: mm
+   Dimentions:
+    Width: 25
+    Lenght: 25
+    Units: cm
+   Position: under grass/shrub
+  Treatment: biocide application, soil fauna exclusion, fungi reduction
+  StartingDate:
+   Month: february
+   Season: summer
+  Duration:
+   Time: 12
+   Units: months
+
+Variables:
+  V1:
+    Name: Time
+    Units: months
+  V2:
+    Name: CB
+    Units: mass remaining
+    Description: "Astrebla leaf litter colected before application of pesticides incubated in coarse mesh bags"
+    LitterType: LitterType1
+    MeshSize: MeshSize1
+  V3:
+    Name: CA
+    Units: mass remaining
+    Description: "Astrebla leaf litter colected after application of pesticides incubated in coarse mesh bags"
+    LitterType: LitterType2
+    MeshSize: MeshSize1
+  V4:
+    Name: FB
+    Units: mass remaining
+    Description: "Astrebla leaf litter colected before application of pesticides incubated in fine mesh bags"
+    LitterType: LitterType1
+    MeshSize: MeshSize2
+  V5:
+    Name: FA
+    Units: mass remaining
+    Description: "Astrebla leaf litter colected after application of pesticides incubated in fine mesh bags"
+    LitterType: LitterType2
+    MeshSize: MeshSize2
