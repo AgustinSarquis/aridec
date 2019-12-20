@@ -1,0 +1,97 @@
+CitationKey: Bhatt1985
+doi: 10.1007/BF03053679
+EntryAuthor: Agustín Sarquis
+
+SiteInfo:
+  Name: Rajkot, Guyarat, India
+  EcosystemType: grassland
+  MAP:
+    Value: 675
+    Units: mm
+  MAT:
+    Value:
+    Units: Celsius
+  RainySeason: winter
+  Altitude:
+    Value: 15
+    Units: masl
+  SoilType:
+  SoilTexture: fine
+  Cover:
+    PlantCover:
+    BunchgrassCover:
+    ShrubCover:
+    BareSoil:
+    Units: percentage
+  ANPP:
+    Value:
+    Units: g.m-2.y-1
+  Coordinates:
+    Latitude: 20.967
+    Longitude: 70.333
+
+ExperimentInfo:
+ LitterInfo:
+  LitterType1:
+   Species:
+   LifeForm: succulent, bromeliad, tree, forb, shrub, crop, conifer, graminoid
+   Material: homogenized leaves, leaflets, green leaves, senesced photosynthetic stems, aboveground parts, prematurely senesced leaves, leaves, recently senesced leaves, recently senesced terminal shoots, recently senesced stems, (fine) roots, live roots, pods
+   Amount:
+     Value:
+     Units: g
+ Experiment1:
+  Description:
+  LitterBagInfo:
+   Material: window screening, net curtain, aluminum, plastic, nylon bridal mesh, white nylon, nylon tent netting fabric, nylon, DACRON cloth, black polypropylene, (black) fiberglass, wire mesh, bolting cloth, polyester, polyethylene gauze, polyamide
+   MeshSize:
+    Value:
+    Units: mm
+   Dimentions:
+    Width:
+    Lenght:
+    Height:
+    Units: cm
+   (add specific)Transmitance:
+    Value:
+    Units: percentage
+   Position: on microcosms, adjacent to grass clumps, under cut tree, under rainout shelter, under frames, decomposition bed, covered in litter, suspended 1/60 cm over bare soil, on top of soil litter layer, underwater pinned to riverbed, under tree/grass/shrub, under sparse tree crown, bare soil, vegetated soil, under shadecloth, buried 5/10 cm deep
+  FilterInfo:
+   FilterType1:
+    Name: Rosco, polyethylene, UV-transparent acrylic, UV-absorbing polycarbonate, shadecloth, Aclar, Mylar, Courtgard, Mylar with paint, polyester film, Solacryl SUVT, Clear UV Filter, Amber UV Filter, Plexiglass
+    Wavelenght:
+     Value: 280, 315, 387, 400, 545, 700
+     Units: nm
+    Transmitance:
+     Value:
+     Units: percentage
+  Treatment: microbial inoculum, soil type, litter layer thickness, soil volumetric water content, tree cutting, rainfall, radiation, rainfall interception, light attenuation, biocide application, labile C addition, inorganic N addition, litter type, location, litter mixture, soil fauna exclusion, fungi reduction, nitrification inhibition, filter type
+  StartingDate:
+   Month:
+   Season:
+  Duration:
+   Time:
+   Units: months
+
+Variables:
+  V1:
+    Name: Time
+    Units: days, weeks, months, years
+  V2:
+    Name:
+    Units: non-ash dry mass remaining, mass remaining, organic matter remaining, C remaining
+    Description:
+    FilterType:
+    LitterType:
+    BiocideApplication:
+    Position:
+    Site:
+    MixedLitter:
+    MeshSize:
+    Nitrification:
+    PatchType:
+    RainfallInterception:
+    Rainfall:
+    NitrogenAddition:
+    WaterAddition:
+    SoilType:
+    LitterBag:
