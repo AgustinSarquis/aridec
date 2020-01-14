@@ -9,7 +9,7 @@ SiteInfo:
     Value: 240.5
     Units: mm
   MAT:
-    Value:
+    Value: 19.2
     Units: Celsius
   RainySeason: whole year
   Altitude:
