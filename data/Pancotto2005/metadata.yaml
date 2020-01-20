@@ -1,0 +1,157 @@
+CitationKey: Pancotto2005
+doi: 10.1111/j.1365-2486.2005.01027.x
+EntryAuthor: Agustín Sarquis
+
+SiteInfo:
+  Name: Tierra del Fuego National Park, Tierra del Fuego, Argentina
+  EcosystemType: shrubland
+  MAP:
+    Value: 499
+    Units: mm
+  MAT:
+    Value: 5.6
+    Units: Celsius
+  RainySeason:
+    - summer
+    - autumn
+  Altitude:
+    Value: 405
+    Units: masl
+  Coordinates:
+    Latitude: -54.85
+    Longitude: -68.6
+
+ExperimentInfo:
+ LitterInfo:
+  LitterType1:
+   Species: Hordeum vulgare
+   LifeForm: graminoid
+   Material: recently senesced aboveground parts
+   Carbon:
+     Value: 43.70
+     Units: percentage
+   Phosphorus:
+     Value: 0.43
+     Units: percentage
+   Nitrogen:
+     Value: 0.72
+     Units: percentage
+   CellSolubles:
+     Value: 48.60
+     Units: percentage
+   Cellulose:
+     Value: 33.90
+     Units: percentage
+   Lignin:
+     Value: 4.36
+     Units: percentage
+   C:N:
+     Value: 60.70
+   Lignin:N:
+     Value: 6.21
+   N:P:
+     Value: 1.67
+   Amount:
+     Value: 4
+     Units: g
+  LitterType2:
+   Species: Hordeum vulgare
+   LifeForm: graminoid
+   Material: recently senesced aboveground parts
+   Carbon:
+     Value: 44.94
+     Units: percentage
+   Phosphorus:
+     Value: 0.28
+     Units: percentage
+   Nitrogen:
+     Value: 0.84
+     Units: percentage
+   CellSolubles:
+     Value: 52.20
+     Units: percentage
+   Cellulose:
+     Value: 30.20
+     Units: percentage
+   Lignin:
+     Value: 3.94
+     Units: percentage
+   C:N:
+     Value: 53.50
+   Lignin:N:
+     Value: 4.57
+   N:P:
+     Value: 3.02
+   Amount:
+     Value: 4
+     Units: g
+ Experiment1:
+  Description: "They used barley straw and leaf litter grown under reduced UV-B or under near-ambient UV-B in Buenos Aires and decomposed the litter under reduced or near-ambient solar UV-B for 29 months in Tierra del Fuego"
+  LitterBagInfo:
+   Material: fiberglass
+   MeshSize:
+    Value: 2
+    Units: mm
+   Dimentions:
+    Width: 15
+    Lenght: 5
+    Units: cm
+   UVBTransmitance:
+    Value: 55
+    Units: percentage
+   Position: under frames
+  FilterInfo:
+   FilterType1:
+    Name: Aclar
+    Wavelenght:
+     Value: 280
+     Units: nm
+    UVBTransmitance:
+     Value: 90
+     Units: percentage
+   FilterType2:
+    Name: polyester film
+    Wavelenght:
+     Value: 310
+     Units: nm
+    UVBTransmitance:
+     Value: 15
+     Units: percentage
+  Treatment:
+    - light attenuation
+    - litter type
+  StartingDate:
+   Month: october
+   Season: spring
+  Duration:
+   Time: 29
+   Units: months
+
+Variables:
+  V1:
+    Name: Time
+    Units: months
+  V2:
+    Name: AA
+    Units: non-ash dry mass remaining
+    Description: "H. vulgare litter grown under ambient UV radiation and decomposed under ambient UV radiation"
+    FilterType: FilterType1
+    LitterType: LitterType1
+  V3:
+    Name: AR
+    Units: non-ash dry mass remaining
+    Description: "H. vulgare litter grown under ambient UV radiation and decomposed under reduced UV radiation"
+    FilterType: FilterType2
+    LitterType: LitterType1
+  V4:
+    Name: RA
+    Units: non-ash dry mass remaining
+    Description: "H. vulgare litter grown under reduced UV radiation and decomposed under ambient UV radiation"
+    FilterType: FilterType1
+    LitterType: LitterType2
+  V5:
+    Name: RR
+    Units: non-ash dry mass remaining
+    Description: "H. vulgare litter grown under reduced UV radiation and decomposed under reduced UV radiation"
+    FilterType: FilterType2
+    LitterType: LitterType2

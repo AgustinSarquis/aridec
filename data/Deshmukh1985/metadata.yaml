@@ -1,0 +1,89 @@
+CitationKey: Deshmukh1985
+doi: 10.1007/BF00378467
+EntryAuthor: Ignacio Siebenhart
+
+SiteInfo:
+ Name: Nairobi National Park, Nairobi, Kenya
+ EcosystemType: savanna
+ MAP:
+  Value: 850
+  Units: mm
+ MAT:
+  Value: 19.6
+  Units: Celsius
+ RainySeason:
+  - autumn
+  - spring
+ Altitude:
+  Value: 1600
+  Units: masl
+ SoilType: Vertisol
+ SoilTexture: fine
+ Coordinates:
+  Latitude: -1.333
+  Longitude: 36.833
+
+ExperimentInfo:
+ LitterInfo:
+  LitterType1:
+   Species:
+    - Themeda triandra
+    - Setaria phleoides
+    - Cenchrus mezianum
+    - Andropogon guyanus
+    - Ischaeum afrum
+   Lifeform: graminoid
+   Material: recently senesced aboveground parts
+   Amount:
+    Value: 4.41
+    Units: g
+  LitterType2:
+   Species:
+    - Themeda triandra
+    - Setaria phleoides
+    - Cenchrus mezianum
+    - Andropogon guyanus
+    - Ischaeum afrum
+   Lifeform: graminoid
+   Material: senesced aboveground parts
+   Amount:
+    Value: 4.60
+    Units: g
+ Experiment1:
+  Description: "They evaluate decomposition rates of standing dead grass and grass litter at a grassland"
+  LitterBagInfo:
+   Material: plastic
+   MeshSize:
+    Value: 5
+    Units: mm
+   Dimentions:
+    Width: 10
+    Lenght: 30
+    Units: cm
+   Position:
+    Position1: suspended
+    Position2: covered in litter
+  Treatment: position
+  StartingDate:
+   Month: february
+   Season: summer
+  Duration:
+   Time: 22.69
+   Units: months
+
+Variables:
+ V1:
+   Name: Time
+   Units: days
+ V2:
+   Name: STD
+   Units: non-ash dry mass remaining
+   Description: "Standing dead litter mass remaining at harvest time positioned suspended"
+   LitterType: LitterType1
+   Position: Position1
+ V3:
+   Name: GL
+   Units: non-ash dry mass remaining
+   Description: "Detached grass litter mass remaining at harvest time positioned covered in litter"
+   LitterType: LitterType2
+   Position: Position2

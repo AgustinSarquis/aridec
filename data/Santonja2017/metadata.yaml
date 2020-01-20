@@ -1,0 +1,173 @@
+CitationKey: Santonja2017
+doi: 10.1111/1365-2745.12711
+EntryAuthor: Ignacio Siebenhart
+
+SiteInfo:
+ Name: Observatoire de Haute Provence, Provence-Alpes-Côte d'Azur, France
+ EcosystemType: forest
+ MAP:
+  Value: 830
+  Units: mm
+ MAT:
+  Value: 12.3
+  Units: Celsius
+ Altitude:
+  Value: 650
+  Units: masl
+ SoilType: Mollic Leptosol
+ SoilTexture: coarse
+ Coordinates:
+  Latitude: 43.97
+  Longitude: 5.88
+
+ExperimentInfo:
+ LitterInfo:
+  LitterType1:
+   Species: Quercus pubescens
+   LifeForm: tree
+   Material: recently senesced leaves
+   Carbon:
+    Value: 46.64
+    Units: percentage
+   Nitrogen:
+    Value: 0.7
+    Units: percentage
+   Lignin:
+    Value: 12.51
+    Units: percentage
+   Cellulose:
+    Value: 18.76
+    Units: percentage
+   Phenolics:
+    Value: 6.71
+    Units: percentage
+   C:N:
+    Value: 66.1
+   Lignin:N:
+    Value: 17.8
+   Amount:
+     Value: 10
+     Units: g
+  LitterType2:
+   Species:
+    - Quercus pubescens
+    - Acer monspessulanum
+   LifeForm:
+    - tree
+    - tree
+   Material: recently senesced leaves
+   Carbon:
+    Value: 45.98
+    Units: percentage
+   Nitrogen:
+    Value: 0.78
+    Units: percentage
+   Lignin:
+    Value: 10
+    Units: percentage
+   Cellulose:
+    Value: 14.97
+    Units: percentage
+   Phenolics:
+    Value: 8.44
+    Units: percentage
+   C:N:
+    Value: 58.9
+   Lignin:N:
+    Value: 12.9
+   Amount:
+     Value: 10
+     Units: g
+  LitterType3:
+   Species:
+    - Quercus pubescens
+    - Acer monspessulanum
+    - Cotinus coggygria
+   LifeForm:
+    - tree
+    - tree
+    - shrub
+   Material: recently senesced leaves
+   Carbon:
+    Value: 46.18
+    Units: percentage
+   Nitrogen:
+    Value: 0.76
+    Units: percentage
+   Lignin:
+    Value: 7.95
+    Units: percentage
+   Cellulose:
+    Value: 12.84
+    Units: percentage
+   Phenolics:
+    Value: 13.24
+    Units: percentage
+   C:N:
+    Value: 60.7
+   Lignin:N:
+    Value: 10.5
+   Amount:
+    Value: 10
+    Units: g
+ Experiment1:
+  Description: "They studied the relative effects of enhanced drought and of plant species mixture on soil biota and on litter decomposition in a Mediterranean oak forest."
+  LitterBagInfo:
+   MeshSize:
+    Value: 4
+    Units: mm
+   Dimentions:
+    Width: 20
+    Lenght: 20
+    Units: cm
+   Position: bare soil
+  Treatment:
+   - rainfall interception
+   - litter mixture
+  StartingDate:
+   Month: february
+   Season: winter
+  Duration:
+   Time: 24
+   Units: months
+
+Variables:
+  V1:
+    Name: Time
+    Units: months
+  V2:
+    Name: QC
+    Units: mass remaining
+    Description: "Quercus pubescens mass remaining at harvest time without rainfaill interception"
+    LitterType: LitterType1
+    RainfallInterception: No
+  V3:
+    Name: QR
+    Units: mass remaining
+    Description: "Quercus pubescens mass remaining at harvest time with rainfaill interception"
+    LitterType: LitterType1
+    RainfallInterception: Yes
+  V4:
+    Name: QAC
+    Units: mass remaining
+    Description: "Mass remaining at harvest time of mixture of Quercus pubescens and Acer monspessulanum without rainfaill interception"
+    LitterType: LitterType2
+    RainfallInterception: No
+  V5:
+    Name: QAR
+    Units: mass remaining
+    Description: "Mass remaining at harvest time of mixture of Quercus pubescens and Acer monspessulanum with rainfaill interception"
+    LitterType: LitterType2
+    RainfallInterception: Yes
+  V6:
+    Name: QACC
+    Units: mass remaining
+    Description: "Mass remaining at harvest time of mixture of Quercus pubescens, Acer monspessulanum and Cotinus coggygria without rainfaill interception"
+    LitterType: LitterType3
+    RainfallInterception:  No
+  V7:
+   Name: QACR
+   Units: mass remaining
+   Description: "Mass remaining at harvest time of mixture of Quercus pubescens, Acer monspessulanum and Cotinus coggygria with rainfaill interception"
+   LitterType: LitterType3
+   RainfallInterception: Yes

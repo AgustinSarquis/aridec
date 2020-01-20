@@ -1,0 +1,168 @@
+CitationKey: Hou2019
+doi: 10.1080/03650340.2019.1639156
+EntryAuthor: Ignacio Siebenhart
+
+SiteInfo:
+ Name: Lingbao, Henan, China
+ EcosystemType: cropland
+ MAP:
+  Value: 640
+  Units: mm
+ MAT:
+  Value: 13.8
+  Units: Celsius
+ RainySeason: summer
+ Coordinates:
+  Latitude: 34.52
+  Longitude: 110.98
+
+ExperimentInfo:
+ LitterInfo:
+  LitterType1:
+   Species: Zea mays
+   LifeForm: crop
+   Material: recently senesced stems
+   Carbon:
+    Value: 45.39
+    Units: percentage
+   Nitrogen:
+    Value: 1.83
+    Units: percentage
+   Cellulose:
+    Value: 19.47
+    Units: percentage
+   Lignin:
+    Value: 14.76
+    Units: percentage
+   C:N:
+    Value: 24.9
+   Lignin:N:
+    Value: 8.1
+   Amount:
+    Value: 4
+    Units: g
+  LitterType2:
+   Species: Zea mays
+   LifeForm: crop
+   Material: recently senesced leaves
+   Carbon:
+    Value: 43.10
+    Units: percentage
+   Nitrogen:
+    Value: 2.23
+    Units: percentage
+   Cellulose:
+    Value: 25.59
+    Units: percentage
+   Lignin:
+    Value: 17.67
+    Units: percentage
+   C:N:
+     Value: 19.4
+   Lignin:N:
+    Value: 7.9
+   Amount:
+    Value: 4
+    Units: g
+  LitterType3:
+   Species: Zea mays
+   LifeForm: crop
+   Material: recently senesced sheaths
+   Carbon:
+    Value: 44.63
+    Units: percentage
+   Nitrogen:
+    Value: 1.08
+    Units: percentage
+   Cellulose:
+    Value: 27.33
+    Units: percentage
+   Lignin:
+    Value: 176.8
+    Units: percentage
+   C:N:
+    Value: 41.3
+   Lignin:N:
+    Value: 16.4
+   Amount:
+    Value: 4
+    Units: g
+ Experiment1:
+  Description: "They investigate the mass loss and nitrogen (N) dynamics of maize litters (culms, leaves and sheaths) at aerial, surficial and belowground positions in the initial 191 days of decomposition"
+  LitterBagInfo:
+   MeshSize:
+    Value: 1
+    Units: mm
+   Dimentions:
+    Width: 15
+    Lenght: 15
+    Units: cm
+   Position:
+    Position1: suspended 150 cm
+    Position2: bare soil
+    Position3: buried 15 cm deep
+   StartingDate:
+    Month: november
+    Season: autumn
+   Duration:
+    Time:  6.28
+    Units: months
+
+Variables:
+ V1:
+   Name: Time
+   Units: days
+ V2:
+   Name: FRS
+   Units: mass remaining
+   Description: "Recently senesced culms mass remaining at harvest time positioned suspended 150 cm"
+   LitterType: LitterType1
+   Position: Position1
+ V3:
+   Name: FRG
+   Units: mass remaining
+   Description: "Recently senesced culms mass remaining at harvest time positioned on the ground"
+   LitterType: LitterType1
+   Position: Position2
+ V4:
+   Name: FRB
+   Units: mass remaining
+   Description: "Recently senesced culms mass remaining at harvest time buried 15 cm deep"
+   LitterType: LitterType1
+   Position: Position3
+ V5:
+   Name: LS
+   Units: mass remaining
+   Description: "Recently senesced leaves mass remaining at harvest time positioned suspended 150 cm"
+   LitterType: LitterType2
+   Position: Position1
+ V6:
+   Name: LG
+   Units: mass remaining
+   Description: "Recently senesced leaves mass remaining at harvest time positioned on the ground"
+   LitterType: LitterType2
+   Position: Position2
+ V7:
+   Name: LB
+   Units: mass remaining
+   Description: "Recently senesced leaves mass remaining at harvest time buried 15 cm deep"
+   LitterType: LitterType2
+   Position: Position3
+ V8:
+  Name: SS
+  Units: mass remaining
+  Description: "Recently senesced sheaths mass remaining at harvest time positioned suspended 150 cm"
+  LitterType: LitterType3
+  Position: Position1
+ V9:
+   Name: SG
+   Units: mass remaining
+   Description: "Recently senesced sheaths mass remaining at harvest time positioned on the ground"
+   LitterType: LitterType3
+   Position: Position2
+ V10:
+   Name: SB
+   Units: mass remaining
+   Description: "Recently senesced sheaths mass remaining at harvest time positioned buried 15 cm deep"
+   LitterType: LitterType3
+   Position: Position3

@@ -1,0 +1,194 @@
+CitationKey: Brandt2007
+doi: 10.1111/j.1365-2486.2007.01428.x
+EntryAuthor: Agustín Sarquis
+
+SiteInfo:
+  Name: Central Plains Experimental Range, Colorado, USA
+  EcosystemType: steppe
+  MAP:
+    Value: 321
+    Units: mm
+  MAT:
+    Value: 9.26
+    Units: Celsius
+  RainySeason:
+    - spring
+    - summer
+  Altitude:
+    Value: 1647
+    Units: masl
+  SoilType: Ustollic camborthid
+  SoilTexture: fine
+  Cover:
+    PlantCover: 30
+    BareSoil: 70
+    Units: percentage
+  ANPP:
+    Value:
+      - 43
+      - 167
+    Units: g.m-2.y-1
+  Coordinates:
+    Latitude: 40.817
+    Longitude: -104.767
+
+ExperimentInfo:
+ LitterInfo:
+  LitterType1:
+   Species:
+     - Bouteloua gracilis
+     - Stipa comata
+     - Aristida longiseta
+   LifeForm: graminoid
+   Material: senesced aboveground parts
+   Carbon:
+     Value: 39.08
+     Units: percentage
+   Nitrogen:
+     Value: 0.823
+     Units: percentage
+   CellSolubles:
+     Value: 31.35
+     Units: percentage
+   Holocellulose:
+     Value: 62.18
+     Units: percentage
+   Lignin:
+     Value: 6.47
+     Units: percentage
+   C:N:
+     Value: 47.73
+   Lignin:N:
+     Value: 7.90
+   Amount:
+     Value: 3
+     Units: g
+  LitterType2:
+   Species:
+     - Bouteloua gracilis
+     - Stipa comata
+     - Aristida longiseta
+   LifeForm: graminoid
+   Material: senesced aboveground parts
+   Carbon:
+     Value: 39.07
+     Units: percentage
+   Nitrogen:
+     Value: 0.637
+     Units: percentage
+   CellSolubles:
+     Value: 28.98
+     Units: percentage
+   Holocellulose:
+     Value: 64.84
+     Units: percentage
+   Lignin:
+     Value: 6.18
+     Units: percentage
+   C:N:
+     Value: 61.48
+   Lignin:N:
+     Value: 9.73
+   Amount:
+     Value: 3
+     Units: g
+ Experiment1:
+  Description: "They examined the effect of altered levels of UV radiation and different amounts of precipitation on the decomposition rates of litter of contrasting C:N in a 3-year field experiment in a shortgrass steppeecosystem. "
+  LitterBagInfo:
+   Material: fiberglass
+   MeshSize:
+    Value: 1.5
+    Units: mm
+   Dimentions:
+    Width: 10
+    Lenght: 10
+    Units: cm
+   Transmitance:
+    Value: 50
+    Units: percentage
+   Position:
+     - under frames
+     - bare soil
+  FilterInfo:
+   FilterType1:
+    Name: UV-absorbing polycarbonate
+    Wavelenght:
+     Value: 400
+     Units: nm
+    PARTransmitance:
+     Value: 85
+     Units: percentage
+    UVTransmitance:
+     Value: 10
+     Units: percentage
+   FilterType2:
+    Name: Solacryl SUVT
+    Wavelenght:
+     Value: 400
+     Units: nm
+    Transmitance:
+     Value: 87
+     Units: percentage
+  Treatment:
+    - rainfall
+    - light attenuation
+    - litter type
+  StartingDate:
+   Month: april
+   Season: spring
+  Duration:
+   Time: 36
+   Units: months
+
+Variables:
+  V1:
+    Name: Time
+    Units: years
+  V2:
+    Name: LBD
+    Units: non-ash dry mass remaining
+    Description: "Low C:N litter incubated under UV-block-filters and low rainfall treatment"
+    FilterType: FilterType1
+    LitterType: LitterType1
+  V3:
+    Name: LBW
+    Units: non-ash dry mass remaining
+    Description: "Low C:N litter incubated under UV-block-filters and high rainfall treatment"
+    FilterType: FilterType1
+    LitterType: LitterType1
+  V4:
+    Name: LPD
+    Units: non-ash dry mass remaining
+    Description: "Low C:N litter incubated under UV-pass-filters and low rainfall treatment"
+    FilterType: FilterType2
+    LitterType: LitterType1
+  V5:
+    Name: LPW
+    Units: non-ash dry mass remaining
+    Description: "Low C:N litter incubated under UV-pass-filters and high rainfall treatment"
+    FilterType: FilterType2
+    LitterType: LitterType1
+  V6:
+    Name: HBD
+    Units: non-ash dry mass remaining
+    Description: "High C:N litter incubated under UV-block-filters and low rainfall treatment"
+    FilterType: FilterType1
+    LitterType: LitterType2
+  V7:
+    Name: HBW
+    Units: non-ash dry mass remaining
+    Description: "High C:N litter incubated under UV-block-filters and high rainfall treatment"
+    FilterType: FilterType1
+    LitterType: LitterType2
+  V8:
+    Name: HPD
+    Units: non-ash dry mass remaining
+    Description: "High C:N litter incubated under UV-pass-filters and low rainfall treatment"
+    FilterType: FilterType2
+    LitterType: LitterType2
+  V9:
+    Name: HPW
+    Units: non-ash dry mass remaining
+    Description: "High C:N litter incubated under UV-pass-filters and high rainfall treatment"
+    FilterType: FilterType2
+    LitterType: LitterType2
