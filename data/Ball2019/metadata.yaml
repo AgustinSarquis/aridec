@@ -1,0 +1,216 @@
+CitationKey: Ball2019
+doi: 10.1016/j.jaridenv.2018.09.004
+EntryAuthor: Agustín Sarquis
+
+SiteInfo:
+  Name: Sonoran Desert, Arizona, USA
+  EcosystemType: desert
+  MAP:
+    Value: 193
+    Units: mm
+  MAT:
+    Value: 21.93
+    Units: Celsius
+  RainySeason:
+    - summer
+    - winter
+  Altitude:
+    Value: 391
+    Units: masl
+  SoilType: Aridisols
+  Coordinates:
+    Latitude: 33.577
+    Longitude: -112.081
+
+ExperimentInfo:
+ LitterInfo:
+  LitterType1:
+   Species: Ambrosia deltoidea
+   LifeForm: shrub
+   Material: senesced aboveground parts
+   Carbon:
+     Value: 46.75
+     Units: percentage
+   Nitrogen:
+     Value: 2.75
+     Units: percentage
+   Phosphorus:
+     Value: 0.12
+     Units: percentage
+   Lignin:
+     Value: 8.76
+     Units: percentage
+   Cellulose:
+     Value: 7.95
+     Units: percentage
+   Hemicellulose:
+     Value: 5.91
+     Units: percentage
+   C:N:
+     Value: 17
+   Amount:
+     Value: 3
+     Units: g
+  LitterType2:
+   Species: Ambrosia deltoidea
+   LifeForm: shrub
+   Material: senesced aboveground parts
+   Carbon:
+     Value: 47.6
+     Units: percentage
+   Nitrogen:
+     Value: 2.8
+     Units: percentage
+   Phosphorus:
+     Value: 0.10
+     Units: percentage
+   Lignin:
+     Value: 5.07
+     Units: percentage
+   Cellulose:
+     Value: 7.08
+     Units: percentage
+   Hemicellulose:
+     Value: 5.00
+     Units: percentage
+   C:N:
+     Value: 17
+   Amount:
+     Value: 3
+     Units: g
+  LitterType3:
+   Species: Ambrosia deltoidea
+   LifeForm: shrub
+   Material: senesced aboveground parts
+   Carbon:
+     Value: 61.5
+     Units: percentage
+   Nitrogen:
+     Value: 2.46
+     Units: percentage
+   Phosphorus:
+     Value: 0.11
+     Units: percentage
+   Lignin:
+     Value: 8.54
+     Units: percentage
+   Cellulose:
+     Value: 8.69
+     Units: percentage
+   Hemicellulose:
+     Value: 7.88
+     Units: percentage
+   C:N:
+     Value: 25
+   Amount:
+     Value: 3
+     Units: g
+  LitterType4:
+   Species: Ambrosia deltoidea
+   LifeForm: shrub
+   Material: senesced aboveground parts
+   Carbon:
+     Value: 49.56
+     Units: percentage
+   Nitrogen:
+     Value: 2.36
+     Units: percentage
+   Phosphorus:
+     Value: 0.07
+     Units: percentage
+   Lignin:
+     Value: 8.28
+     Units: percentage
+   Cellulose:
+     Value: 11.19
+     Units: percentage
+   Hemicellulose:
+     Value: 6.90
+     Units: percentage
+   C:N:
+     Value: 21
+   Amount:
+     Value: 3
+     Units: g
+ Experiment1:
+  Description: "Litter was decomposed with and without UV radiation for 9 months, in a long-term N + P enrichment experiment in both urban and outlying areas of the Sonoran Desert"
+  LitterBagInfo:
+   Dimentions:
+    Width: 10
+    Lenght: 10
+    Units: cm
+   Position: bare soil
+  FilterInfo:
+   FilterType1:
+    Name: Aclar
+    Wavelenght:
+     Value: 280
+     Units: nm
+   FilterType2:
+    Name: CON-TROL-CURE UV Blocking Film
+    Wavelenght:
+     Value: 400
+     Units: nm
+  Treatment:
+    - radiation
+    - location
+    - fertilization
+  StartingDate:
+   Month: december
+   Season: winter
+  Duration:
+   Time: 9
+   Units: months
+
+Variables:
+  V1:
+    Name: Time
+    Units: weeks
+  V2:
+    Name: IFT
+    Units: non-ash dry mass remaining
+    Description: "Fertilized inside city litter decomposed under total radiation treatment"
+    FilterType: FilterType1
+    LitterType: LitterType1
+  V3:
+    Name: IFR
+    Units: non-ash dry mass remaining
+    Description: "Fertilized inside city litter decomposed under reduced UV radiation treatment"
+    FilterType: FilterType2
+    LitterType: LitterType1
+  V4:
+    Name: ICT
+    Units: non-ash dry mass remaining
+    Description: "Non-fertilized inside city litter decomposed under total radiation treatment"
+    FilterType: FilterType1
+    LitterType: LitterType2
+  V5:
+    Name: ICR
+    Units: non-ash dry mass remaining
+    Description: "Non-fertilized inside city litter decomposed under reduced UV radiation treatment"
+    FilterType: FilterType2
+    LitterType: LitterType2
+  V6:
+    Name: OFT
+    Units: non-ash dry mass remaining
+    Description: "Fertilized outside city litter decomposed under total radiation treatment"
+    FilterType: FilterType1
+    LitterType: LitterType3
+  V7:
+    Name: OFR
+    Units: non-ash dry mass remaining
+    Description: "Fertilized outside city litter decomposed under reduced UV radiation treatment"
+    FilterType: FilterType2
+    LitterType: LitterType3
+  V8:
+    Name: OCT
+    Units: non-ash dry mass remaining
+    Description: "Non-fertilized outside city litter decomposed under total radiation treatment"
+    FilterType: FilterType1
+    LitterType: LitterType4
+  V9:
+    Name: OCR
+    Units: non-ash dry mass remaining
+    Description: "Non-fertilized outside city litter decomposed under reduced UV radiation treatment"
+    FilterType: FilterType2
+    LitterType: LitterType4

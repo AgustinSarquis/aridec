@@ -57,14 +57,14 @@ ExperimentInfo:
    Position: on microcosms, adjacent to grass clumps, under cut tree, under rainout shelter, under frames, decomposition bed, covered in litter, suspended 1/60 cm over bare soil, on top of soil litter layer, underwater pinned to riverbed, under tree/grass/shrub, under sparse tree crown, bare soil, vegetated soil, under shadecloth, buried 5/10 cm deep
   FilterInfo:
    FilterType1:
-    Name: Rosco, polyethylene, UV-transparent acrylic, UV-absorbing polycarbonate, shadecloth, Aclar, Mylar, Courtgard, Mylar with paint, polyester film, Solacryl SUVT, Clear UV Filter, Amber UV Filter, Plexiglass
+    Name: CON-TROL-CURE UV Blocking Film, Rosco, polyethylene, UV-transparent acrylic, UV-absorbing polycarbonate, shadecloth, Aclar, Mylar, Courtgard, Mylar with paint, polyester film, Solacryl SUVT, Clear UV Filter, Amber UV Filter, Plexiglass
     Wavelenght:
      Value: 280, 315, 387, 400, 545, 700
      Units: nm
     Transmitance:
      Value:
      Units: percentage
-  Treatment: microbial inoculum, soil type, litter layer thickness, soil volumetric water content, tree cutting, rainfall, radiation, rainfall interception, light attenuation, biocide application, labile C addition, inorganic N addition, litter type, location, litter mixture, soil fauna exclusion, fungi reduction, nitrification inhibition, filter type
+  Treatment: fertilization, microbial inoculum, soil type, litter layer thickness, soil volumetric water content, tree cutting, rainfall, radiation, rainfall interception, light attenuation, biocide application, labile C addition, inorganic N addition, litter type, location, litter mixture, soil fauna exclusion, fungi reduction, nitrification inhibition, filter type
   StartingDate:
    Month:
    Season:
