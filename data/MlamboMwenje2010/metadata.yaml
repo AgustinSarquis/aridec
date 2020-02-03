@@ -1,0 +1,76 @@
+CitationKey: MlamboMwenje2010
+doi: 10.1111/j.1365-2028.2010.01208.x
+EntryAuthor: Agustín Sarquis
+
+SiteInfo:
+  Name: Bulawayo, Zimbabwe
+  EcosystemType: savanna
+  MAP:
+    Value: 600
+    Units: mm
+  MAT:
+    Value: 23.6
+    Units: Celsius
+  RainySeason: summer
+  Altitude:
+    Value: 1341
+    Units: masl
+  SoilType: Chromic Luvisol
+  SoilTexture: coarse
+  Cover:
+    TreeCover: 35
+    Units: percentage
+  Coordinates:
+    Latitude: -20.133
+    Longitude: 28.6
+
+ExperimentInfo:
+ LitterInfo:
+  LitterType1:
+   Species: Colophospermum mopane
+   LifeForm: tree
+   Material: recently senesced leaves
+   Amount:
+     Value: 25
+     Units: g
+ Experiment1:
+  Description: "They decomposed C. mopane leaf litter for a year under large and small tree canopy and on intercanopy area in a savanna"
+  LitterBagInfo:
+   Material: nylon
+   MeshSize:
+    Value: 2
+    Units: mm
+   Dimentions:
+    Width: 30
+    Lenght: 30
+    Units: cm
+   Position:
+     Position1: bare soil
+     Position2: under tree
+  Treatment: location
+  StartingDate:
+   Month: september
+   Season: spring
+  Duration:
+   Time: 12
+   Units: months
+
+Variables:
+  V1:
+    Name: Time
+    Units: months
+  V2:
+    Name: IC
+    Units: non-ash dry mass remaining
+    Description: "C. mopane leaf litter decomposed on the intercanopy area"
+    Position: Position1
+  V3:
+    Name: ST
+    Units: non-ash dry mass remaining
+    Description: "C. mopane leaf litter decomposed under small tree canopy"
+    Position: Position2
+  V4:
+    Name: LT
+    Units: non-ash dry mass remaining
+    Description: "C. mopane leaf litter decomposed under large tree canopy"
+    Position: Position2
