@@ -1,0 +1,78 @@
+CitationKey: SanchezAndres2010
+doi: 10.1016/j.ecss.2010.07.005
+EntryAuthor: Agustín Sarquis
+
+SiteInfo:
+  Name: Bahía del Tóbari, Sonora, Mexico
+  EcosystemType: mangrove forest
+  MAP:
+    Value: 300
+    Units: mm
+  MAT:
+    Value: 24
+    Units: Celsius
+  RainySeason:
+    - summer
+    - autumn
+  Altitude:
+    Value: 0
+    Units: masl
+  Coordinates:
+    Latitude: 27.7
+    Longitude: -110.6
+
+ExperimentInfo:
+ LitterInfo:
+  LitterType1:
+   Species: Avicennia germinans
+   LifeForm: shrub
+   Material: recently senesced leaves
+   Carbon:
+    Value: 33.75
+    Units: percentage
+   Nitrogen:
+    Value: 1.096
+    Units: percentage
+   Phosphorus:
+    Value: 0.002
+    Units: percentage
+   C:N:
+    Value: 36
+   Amount:
+     Value: 10
+     Units: g
+ Experiment1:
+  Description: "They incubated A. germinans leaf litter on mangrove forest soils of three sites with different tidal influence for 111 days"
+  LitterBagInfo:
+   MeshSize:
+    Value: 1.5
+    Units: mm
+   Dimentions:
+    Width: 26
+    Lenght: 20
+    Units: cm
+   Position: mangrove forest soil
+  Treatment: location
+  StartingDate:
+   Month: march
+   Season: spring
+  Duration:
+   Time: 3.7
+   Units: months
+
+Variables:
+  V1:
+    Name: Time
+    Units: days
+  V2:
+    Name: A
+    Units: mass remaining
+    Description: "A. germinans leaf litter decomposed at a site with medium tidal inundation days"
+  V3:
+    Name: B
+    Units: mass remaining
+    Description: "A. germinans leaf litter decomposed at a site with more tidal inundation days"
+  V4:
+    Name: C
+    Units: mass remaining
+    Description: "A. germinans leaf litter decomposed at a site with less tidal inundation days"
