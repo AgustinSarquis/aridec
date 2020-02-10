@@ -1,0 +1,356 @@
+CitationKey: Gliksman2018C
+doi: 10.1007/s11104-017-3366-y
+EntryAuthor: Ignacio Siebenhart
+
+SiteInfo:
+ Name:
+  - "Kdoshim forest, Jerusalem, Israel"
+  - "Yatir forest, Negev, Israel"
+ EcosystemType:
+  - forest
+  - forest
+ MAP:
+  Value:
+   - 550
+   - 280
+  Units: mm
+ MAT:
+   Value:
+   - 19.84
+   - 19.81
+   Units: Celsius
+ RainySeason: winter
+ Altitude:
+  Value:
+   - 450
+   - 650
+  Units: masl
+ Coordinates:
+  Latitude:
+   - 32.3
+   - 31.35
+  Longitude:
+   - 35.03
+   - 35.35
+
+ExperimentInfo:
+ LitterInfo:
+  LitterType1:
+   Species: Pinus halepensis
+   Lifeform: tree
+   Material: recently senesced leaves
+   Carbon:
+    Value: 51.6
+    Units: percentage
+   Nitrogen:
+    Value: 0.79
+    Units: percentage
+   C:N:
+    Value: 65.2
+   Amount:
+    Value: 2
+    Units: g
+  LitterType2:
+   Species: Avena sterilis
+   Lifeform: graminoid
+   Material: aboveground parts
+   Carbon:
+    Value: 44.3
+    Units: percentage
+   Nitrogen:
+    Value: 0.62
+    Units: percentage
+   C:N:
+    Value: 71.2
+   Amount:
+    Value: 2
+    Units: g
+  LitterType3:
+   Species: Pinus halepensis
+   Lifeform: tree
+   Material: recently senesced leaves
+   Carbon:
+    Value: 51.3
+    Units: percentage
+   Nitrogen:
+    Value: 0.67
+    Units: percentage
+   C:N:
+    Value: 76.7
+   Amount:
+    Value: 2
+    Units: g
+  LitterType4:
+   Lifeform: graminoid
+   Material: aboveground parts
+   Carbon:
+    Value: 44.1
+    Units: percentage
+   Nitrogen:
+    Value: 1.22
+    Units: percentage
+   C:N:
+    Value: 36.4
+   Amount:
+    Value: 2
+    Units: g
+ Experiment1:
+  Description: "They investigated the impact of canopy cover and seasonality on litter decay in Mediterranean pine forests that differ on precipitation"
+  LitterBagInfo:
+   Material:
+    - fiberglass
+    - polyethylene
+   MeshSize:
+    Value:
+     - 0.5
+     - 1
+    Units: mm
+   Dimentions:
+    Width: 10
+    Lenght: 10
+    Units: cm
+   Transmitance:
+    Value: 90
+    Units: percentage
+   Position:
+    Position1: bare soil
+    Position2: under tree
+  Treatment:
+   - location
+   - tree density
+   - littertype
+  StartingDate:
+   Month: july
+   Season: summer
+  Duration:
+   Time: 20.15
+   Units: months
+
+Variables:
+ V1:
+  Name: Time
+  Units: months
+ V2:
+  Name: SPGLD
+  Units: mass remaining
+  Description: "Pine litter mass remaning at harvested time positioned on forest gap and with low tree density at the sub-humid forest"
+  LitterType: LitterType1
+  Position: Position1
+  Site: "Kdoshim forest, Jerusalem, Israel"
+ V3:
+   Name: SPGMD
+   Units: mass remaining
+   Description: "Pine litter mass remaning at harvested time positioned on forest gap and with medium tree density at the sub-humid forest"
+   LitterType: LitterType1
+   Position: Position1
+   Site: "Kdoshim forest, Jerusalem, Israel"
+ V4:
+   Name: SPGHD
+   Units: mass remaining
+   Description: "Pine litter mass remaning at harvested time positioned on forest gap and with high tree density at the sub-humid forest"
+   LitterType: LitterType1
+   Position: Position1
+   Site: "Kdoshim forest, Jerusalem, Israel"
+ V5:
+   Name: SPCLD
+   Units: mass remaining
+   Description: "Pine litter mass remaning at harvested time positioned under canopy cover and with low tree density at the sub-humid forest"
+   LitterType: LitterType1
+   Position: Position2
+   Site: "Kdoshim forest, Jerusalem, Israel"
+ V6:
+   Name: SPCMD
+   Units: mass remaining
+   Description: "Pine litter mass remaning at harvested time positioned under canopy cover and with medium tree density at the sub-humid forest"
+   LitterType: LitterType1
+   Position: Position2
+   Site: "Kdoshim forest, Jerusalem, Israel"
+ V7:
+   Name: SPCHD
+   Units: mass remaining
+   Description: "Pine litter mass remaning at harvested time positioned under canopy cover and with high tree density at the sub-humid forest"
+   LitterType: LitterType1
+   Position: Position2
+   Site: "Kdoshim forest, Jerusalem, Israel"
+ V8:
+   Name: SGGLD
+   Units: mass remaining
+   Description: "A. sterilis litter mass remaining at harvested time positioned on forest gap and with low tree density at the sub-humid forest"
+   LitterType: LitterType2
+   Position: Position1
+   Site: "Kdoshim forest, Jerusalem, Israel"
+ V9:
+   Name: SGGMD
+   Units: mass remaining
+   Description: "A. sterilis litter mass remaining at harvested time positioned on forest gap and with medium tree density at the sub-humid forest"
+   LitterType: LitterType2
+   Position: Position1
+   Site: "Kdoshim forest, Jerusalem, Israel"
+ V10:
+    Name: SGGHD
+    Units: mass remaining
+    Description: "A. sterilis litter mass remaining at harvested time positioned on forest gap and with high tree density at the sub-humid forest"
+    LitterType: LitterType2
+    Position: Position1
+    Site: "Kdoshim forest, Jerusalem, Israel"
+ V11:
+    Name: SGCLD
+    Units: mass remaining
+    Description: "A. sterilis litter mass remaining at harvested time positioned under canopy cover and with low tree density at the sub-humid forest"
+    LitterType: LitterType2
+    Position: Position2
+    Site: "Kdoshim forest, Jerusalem, Israel"
+ V12:
+    Name: SGCMD
+    Units: mass remaining
+    Description: "A. sterilis litter mass remaining at harvested time positioned under canopy cover and with medium tree density at the sub-humid forest"
+    LitterType: LitterType2
+    Position: Position2
+    Site: "Kdoshim forest, Jerusalem, Israel"
+ V13:
+    Name: SGCHD
+    Units: mass remaining
+    Description: "A. sterilis litter mass remaining at harvested time positioned under canopy cover and with high tree density at the sub-humid forest"
+    LitterType: LitterType2
+    Position: Position2
+    Site: "Kdoshim forest, Jerusalem, Israel"
+ V14:
+    Name: APGLD
+    Units: mass remaining
+    Description: "Pine litter mass remaining at harvested time positioned on forest gap and with low tree density at the dry forest"
+    LitterType: LitterType3
+    Position: Position1
+    Site: "Yatir forest, Negev, Israel"
+ V15:
+    Name: APGMD
+    Units: mass remaining
+    Description: "Pine litter mass remaining at harvested time positioned on forest gap and with medium tree density at the dry forest"
+    LitterType: LitterType3
+    Position: Position1
+    Site: "Yatir forest, Negev, Israel"
+ V16:
+    Name: APGHD
+    Units: mass remaining
+    Description: "Pine litter mass remaining at harvested time positioned on forest gap and with high tree density at the dry forest"
+    LitterType: LitterType3
+    Position: Position1
+    Site: "Yatir forest, Negev, Israel"
+ V17:
+    Name: APCLD
+    Units: mass remaining
+    Description: "Pine litter mass remaining at harvested time positioned under canopy cover and with low tree density at the dry forest"
+    LitterType: LitterType3
+    Position: Position2
+    Site: "Yatir forest, Negev, Israel"
+ V18:
+    Name: APCMD
+    Units: mass remaining
+    Description: "Pine litter mass remaining at harvested time positioned under canopy cover and with medium tree density at the dry forest"
+    LitterType: LitterType3
+    Position: Position2
+    Site: "Yatir forest, Negev, Israel"
+ V19:
+    Name: APCHD
+    Units: mass remaining
+    Description: "Pine litter mass remaining at harvested time positioned under canopy cover and with high tree density at the dry forest"
+    LitterType: LitterType3
+    Position: Position2
+    Site: "Yatir forest, Negev, Israel"
+ V20:
+    Name: AGGLD
+    Units: mass remaining
+    Description: "Grass litter mass remaining at harvested time positioned on forest gap and with low tree density at the dry forest"
+    LitterType: LitterType4
+    Position: Position1
+    Site: "Yatir forest, Negev, Israel"
+ V21:
+    Name: AGGMD
+    Units: mass remaining
+    Description: "Grass litter mass remaining at harvested time positioned on forest gap and with medium tree density at the dry forest"
+    LitterType: LitterType4
+    Position: Position1
+    Site: "Yatir forest, Negev, Israel"
+ V22:
+    Name: AGGHD
+    Units: mass remaining
+    Description: "Grass litter mass remaining at harvested time positioned on forest gap and with high tree density at the dry forest"
+    LitterType: LitterType4
+    Position: Position1
+    Site: "Yatir forest, Negev, Israel"
+ V23:
+    Name: AGCLD
+    Units: mass remaining
+    Description: "Grass litter mass remaining at harvested time positioned under canopy cover and with low tree density at the dry forest"
+    LitterType: LitterType4
+    Position: Position2
+    Site: "Yatir forest, Negev, Israel"
+ V24:
+    Name: AGCMD
+    Units: mass remaining
+    Description: "Grass litter mass remaining at harvested time positioned under canopy cover and with medium tree density at the dry forest"
+    LitterType: LitterType4
+    Position: Position2
+    Site: "Yatir forest, Negev, Israel"
+ V25:
+    Name: AGCHD
+    Units: mass remaining
+    Description: "Grass litter mass remaining at harvested time positioned under canopy cover and high tree density at the dry forest"
+    LitterType: LitterType4
+    Position: Position2
+    Site: "Yatir forest, Negev, Israel"
+ V26:
+    Name: CPGS
+    Units: mass remaining
+    Description: "Dry sub-humid forest's Pine litter mass remaining at harvested time positioned on forest gap at the sub-humid forest"
+    LitterType: LitterType1
+    Position: Position1
+    Site: "Kdoshim forest, Jerusalem, Israel"
+ V27:
+    Name: CPCS
+    Units: mass remaining
+    Description: "Dry sub-humid forest's Pine litter mass remaining at harvested time positioned under canopy at the sub-humid forest"
+    LitterType: LitterType1
+    Position: Position2
+    Site: "Kdoshim forest, Jerusalem, Israel"
+ V28:
+    Name: CGGS
+    Units: mass remaining
+    Description: "Dry sub-humid forest's A. sterilis litter mass remaining at harvested time positioned on forest gap at the sub-humid forest"
+    LitterType: LitterType2
+    Position: Position1
+    Site: "Kdoshim forest, Jerusalem, Israel"
+ V29:
+    Name: CGCS
+    Units: mass remaining
+    Description: "Dry sub-humid forest's A. sterilis litter mass remaining at harvested time positioned under canopy at the sub-humid forest"
+    LitterType: LitterType2
+    Position: Position2
+    Site: "Kdoshim forest, Jerusalem, Israel"
+ V30:
+    Name: CPGA
+    Units: mass remaining
+    Description: "Semi-arid forest's Pine litter mass remaining at harvested time positioned on forest gap at the sub-humid forest"
+    LitterType: LitterType3
+    Position: Position1
+    Site: "Kdoshim forest, Jerusalem, Israel"
+ V31:
+    Name: CPCA
+    Units: mass remaining
+    Description: "Semiarid forest's Pine litter mass remaining at harvested time positioned under canopy at the sub-humid forest"
+    LitterType: LitterType3
+    Position: Position2
+    Site: "Kdoshim forest, Jerusalem, Israel"
+ V32:
+    Name: CGGA
+    Units: mass remaining
+    Description: "Semiarid forest's grass litter mass remaining at harvested time positioned on forest gap at the sub-humid forest"
+    LitterType: LitterType4
+    Position: Position1
+    Site: "Kdoshim forest, Jerusalem, Israel"
+ V33:
+    Name: CPCA
+    Units: mass remaining
+    Description: "Semiarid forest's grass litter mass remaining at harvested time positioned under canopy at the sub-humid forest"
+    LitterType: LitterType4
+    Position: Position2
+    Site: "Kdoshim forest, Jerusalem, Israel"
