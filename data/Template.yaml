@@ -64,7 +64,7 @@ ExperimentInfo:
     Transmitance:
      Value:
      Units: percentage
-  Treatment: tree density, fertilization, microbial inoculum, soil type, litter layer thickness, soil volumetric water content, tree cutting, rainfall, radiation, rainfall interception, light attenuation, biocide application, labile C addition, inorganic N addition, litter type, location, litter mixture, soil fauna exclusion, fungi reduction, nitrification inhibition, filter type
+  Treatment: water addition, tree density, fertilization, microbial inoculum, soil type, litter layer thickness, soil volumetric water content, tree cutting, rainfall, radiation, rainfall interception, light attenuation, biocide application, labile C addition, inorganic N addition, litter type, location, litter mixture, soil fauna exclusion, fungi reduction, nitrification inhibition, filter type
   StartingDate:
    Month:
    Season:

@@ -1,0 +1,218 @@
+CitationKey: WangX2017
+doi: 10.1007/s11104-017-3288-8
+EntryAuthor: Agustín Sarquis
+
+SiteInfo:
+  Name: Duolun, Inner Mongolia, China
+  EcosystemType: steppe
+  MAP:
+    Value: 379
+    Units: mm
+  MAT:
+    Value: 2.1
+    Units: Celsius
+  RainySeason: summer
+  Altitude:
+    Value: 1324
+    Units: masl
+  SoilType: Calcis-orthic Aridisol
+  SoilTexture: coarse, fine
+  Cover:
+    PlantCover: 65
+    BareSoil: 35
+    Units: percentage
+  Coordinates:
+    Latitude: 42.033
+    Longitude: 116.283
+
+ExperimentInfo:
+ LitterInfo:
+  LitterType1:
+   Species: Agropyron cristatum
+   LifeForm: graminoid
+   Material: recently senesced leaves
+   Carbon:
+     Value: 44.473
+     Units: percentage
+   Nitrogen:
+     Value: 0.629
+     Units: percentage
+   Phosphorus:
+     Value: 0.029
+     Units: percentage
+   Potassium:
+     Value: 0.270
+     Units: percentage
+   Calcium:
+     Value: 0.232
+     Units: percentage
+   Magnesium:
+     Value: 0.042
+     Units: percentage
+   C:N:
+     Value: 70.98
+   Amount:
+     Value: 15
+     Units: g
+  LitterType2:
+   Species: Stipa krylovii
+   LifeForm: graminoid
+   Material: recently senesced leaves
+   Carbon:
+     Value: 45.014
+     Units: percentage
+   Nitrogen:
+     Value: 0.889
+     Units: percentage
+   Phosphorus:
+     Value: 0.033
+     Units: percentage
+   Potassium:
+     Value: 0.306
+     Units: percentage
+   Calcium:
+     Value: 0.256
+     Units: percentage
+   Magnesium:
+     Value: 0.059
+     Units: percentage
+   C:N:
+     Value: 50.91
+   Amount:
+     Value: 15
+     Units: g
+  LitterType3:
+   Species: Artemisia frigida
+   LifeForm: forb
+   Material: recently senesced leaves
+   Carbon:
+     Value: 46.087
+     Units: percentage
+   Nitrogen:
+     Value: 0.878
+     Units: percentage
+   Phosphorus:
+     Value: 0.090
+     Units: percentage
+   Potassium:
+     Value: 0.846
+     Units: percentage
+   Calcium:
+     Value: 0.420
+     Units: percentage
+   Magnesium:
+     Value: 0.099
+     Units: percentage
+   C:N:
+     Value: 52.72
+   Amount:
+     Value: 15
+     Units: g
+ Experiment1:
+  Description: "Litter decomposition was studied over three years to determine the effects of water and N addition on litter decomposition rate."
+  LitterBagInfo:
+   Material: polyethylene
+   MeshSize:
+    Value: 1
+    Units: mm
+   Dimentions:
+    Width: 25
+    Lenght: 20
+    Units: cm
+   Position: bare soil
+  Treatment:
+    - water addition
+    - inorganic N addition
+    - litter type
+  Duration:
+   Time: 36
+   Units: months
+
+Variables:
+  V1:
+    Name: Time
+    Units: years
+  V2:
+    Name: AcC
+    Units: mass remaining
+    Description: "Control A. cristatum litter dry mass remaining"
+    LitterType: LitterType1
+    NitrogenAddition: No
+    WaterAddition: No
+  V3:
+    Name: AcN
+    Units: mass remaining
+    Description: "A. cristatum litter dry mass remaining with N addition"
+    LitterType: LitterType1
+    NitrogenAddition: Yes
+    WaterAddition: No
+  V4:
+    Name: AcW
+    Units: mass remaining
+    Description: "A. cristatum litter dry mass remaining with water addition"
+    LitterType: LitterType1
+    NitrogenAddition: No
+    WaterAddition: Yes
+  V5:
+    Name: AcWN
+    Units: mass remaining
+    Description: "A. cristatum litter dry mass remaining with water and N addition"
+    LitterType: LitterType1
+    NitrogenAddition: Yes
+    WaterAddition: Yes
+  V6:
+    Name: SkC
+    Units: mass remaining
+    Description: "Control S. krylovii litter dry mass remaining"
+    LitterType: LitterType2
+    NitrogenAddition: No
+    WaterAddition: No
+  V7:
+    Name: SkN
+    Units: mass remaining
+    Description: "S. krylovii litter dry mass remaining with N addition"
+    LitterType: LitterType2
+    NitrogenAddition: Yes
+    WaterAddition: No
+  V8:
+    Name: SkW
+    Units: mass remaining
+    Description: "S. krylovii litter dry mass remaining with water addition"
+    LitterType: LitterType2
+    NitrogenAddition: No
+    WaterAddition: Yes
+  V9:
+    Name: SkWN
+    Units: mass remaining
+    Description: "S. krylovii litter dry mass remaining with water and N addition"
+    LitterType: LitterType2
+    NitrogenAddition: Yes
+    WaterAddition: Yes
+  V10:
+    Name: AfC
+    Units: mass remaining
+    Description: "Control A. frigida litter dry mass remaining"
+    LitterType: LitterType3
+    NitrogenAddition: No
+    WaterAddition: No
+  V11:
+    Name: AfN
+    Units: mass remaining
+    Description: "A. frigida litter dry mass remaining with N addition"
+    LitterType: LitterType3
+    NitrogenAddition: Yes
+    WaterAddition: No
+  V12:
+    Name: AfW
+    Units: mass remaining
+    Description: "A. krylovii litter dry mass remaining with water addition"
+    LitterType: LitterType3
+    NitrogenAddition: No
+    WaterAddition: Yes
+  V13:
+    Name: AfWN
+    Units: mass remaining
+    Description: "A. krylovii litter dry mass remaining with water and N addition"
+    LitterType: LitterType3
+    NitrogenAddition: Yes
+    WaterAddition: Yes
