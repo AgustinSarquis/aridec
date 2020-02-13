@@ -4,7 +4,7 @@ EntryAuthor: Agustín Sarquis
 
 SiteInfo:
   Name:
-  EcosystemType: mangrove forest, subalpine, shrubland, urban, sandland, abbandoned farmland, scrub, woodland, alluvial valley, forest, steppe, desert, grassland, mountain grassland, savanna
+  EcosystemType: plantation, mangrove forest, subalpine, shrubland, urban, sandland, abbandoned farmland, scrub, woodland, alluvial valley, forest, steppe, desert, grassland, mountain grassland, savanna
   MAP:
     Value:
     Units: mm
@@ -36,6 +36,36 @@ ExperimentInfo:
    Species:
    LifeForm: succulent, bromeliad, tree, forb, shrub, crop, conifer, graminoid
    Material: homogenized leaves, leaflets, green leaves, senesced photosynthetic stems, aboveground parts, prematurely senesced leaves, leaves, recently senesced leaves, recently senesced terminal shoots, recently senesced stems, (fine) roots, live roots, pods, recently senesced sheaths
+   Carbon:
+     Value:
+     Units: percentage
+   Nitrogen:
+     Value:
+     Units: percentage
+   Phosphorus:
+     Value:
+     Units: percentage
+   Potassium:
+     Value:
+     Units: percentage
+   Sodium:
+     Value:
+     Units: percentage
+   Magnesium:
+     Value:
+     Units: percentage
+   Manganese:
+     Value:
+     Units: percentage
+   Copper:
+     Value:
+     Units: percentage
+   Zinc:
+     Value:
+     Units: percentage
+   Lead:
+     Value:
+     Units: percentage
    Amount:
      Value:
      Units: g

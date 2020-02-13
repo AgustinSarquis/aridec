@@ -1,0 +1,138 @@
+CitationKey: Ilangovan1996
+doi:
+EntryAuthor: Agustín Sarquis
+
+SiteInfo:
+  Name: Madurai, Tamil Nadu, India
+  EcosystemType:
+   - plantation
+   - grassland
+  MAP:
+    Value: 575
+    Units: mm
+  MAT:
+    Value: 27.34
+    Units: Celsius
+  RainySeason: autumn
+  Altitude:
+    Value: 132.5
+    Units: masl
+  SoilType:
+    - Laterite loamy sand
+    - Sandy loam
+  Coordinates:
+    Latitude: 9.917
+    Longitude: 78.167
+
+ExperimentInfo:
+ LitterInfo:
+  LitterType1:
+   Species: Leucaena leucocephala
+   LifeForm: tree
+   Material: recently senesced leaves
+   Carbon:
+     Value: 64.491
+     Units: percentage
+   Nitrogen:
+     Value: 2.592
+     Units: percentage
+   Phosphorus:
+     Value: 0.112
+     Units: percentage
+   Potassium:
+     Value: 0.298
+     Units: percentage
+   Sodium:
+     Value: 0.116
+     Units: percentage
+   Magnesium:
+     Value: 0.638
+     Units: percentage
+   Manganese:
+     Value: 0.0034
+     Units: percentage
+   Copper:
+     Value: 0.0018
+     Units: percentage
+   Zinc:
+     Value: 0.2080
+     Units: percentage
+   Lead:
+     Value: 0.0024
+     Units: percentage
+   Amount:
+     Value: 10
+     Units: g
+  LitterType2:
+   Species: Cymbopogon citratus
+   LifeForm: graminoid
+   Material: aboveground parts
+   Carbon:
+     Value: 59.192
+     Units: percentage
+   Nitrogen:
+     Value: 1.114
+     Units: percentage
+   Phosphorus:
+     Value: 0.069
+     Units: percentage
+   Potassium:
+     Value: 1.004
+     Units: percentage
+   Sodium:
+     Value: 0.142
+     Units: percentage
+   Magnesium:
+     Value: 0.176
+     Units: percentage
+   Manganese:
+     Value: 0.0008
+     Units: percentage
+   Copper:
+     Value: 0.0014
+     Units: percentage
+   Zinc:
+     Value: 0.0584
+     Units: percentage
+   Lead:
+     Value: 0.0040
+     Units: percentage
+   Amount:
+     Value: 10
+     Units: g
+ Experiment1:
+  Description: "Incubation of L. leucocephala and C. citratus litter for a year at a L. leucocephala plantation and a grazing land, respectively"
+  LitterBagInfo:
+   Material: nylon
+   MeshSize:
+    Value: 1
+    Units: mm
+   Dimentions:
+    Width: 20
+    Lenght: 20
+    Units: cm
+   Position: bare soil
+  Treatment: litter type
+  StartingDate:
+   Month: april
+   Season: spring
+  Duration:
+   Time: 12
+   Units: months
+
+Variables:
+  V1:
+    Name: Time
+    Units: months
+  V2:
+    Name: Ll
+    Units: mass remainingg
+    Description: "L. leucocephala leaf litter incubated at a L. leucocephala plantation for a year"
+    LitterType: LitterType1
+    EcosystemType: plantation
+  V3:
+    Name: Cc
+    Units: mass remaining
+    Description: "C. citratus standing dead litter incubated for a year at a grazing land"
+    LitterType: LitterType2
+    EcosystemType: grassland 
