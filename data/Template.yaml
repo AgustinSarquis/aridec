@@ -35,7 +35,7 @@ ExperimentInfo:
   LitterType1:
    Species:
    LifeForm: succulent, bromeliad, tree, forb, shrub, crop, conifer, graminoid
-   Material: homogenized leaves, leaflets, green leaves, senesced photosynthetic stems, aboveground parts, prematurely senesced leaves, leaves, recently senesced leaves, recently senesced terminal shoots, recently senesced stems, (fine) roots, live roots, pods, recently senesced sheaths
+   Material: homogenized leaves, leaflets, green leaves, senesced photosynthetic stems, aboveground parts, prematurely senesced leaves, leaves, (crushed) recently senesced leaves, recently senesced terminal shoots, recently senesced stems, (fine) roots, live roots, pods, recently senesced sheaths
    Carbon:
      Value:
      Units: percentage

@@ -1,0 +1,283 @@
+CitationKey: Mubarak2008
+doi: 10.1080/00103620802292574
+EntryAuthor: Agustín Sarquis
+
+SiteInfo:
+  Name: Shambat, Khartoum, Sudan
+  EcosystemType: plantation
+  MAP:
+    Value: 155.5
+    Units: mm
+  MAT:
+    Value: 28.91
+    Units: Celsius
+  RainySeason: summer
+  Altitude:
+    Value: 385
+    Units: masl
+  SoilType: Chromustert
+  Coordinates:
+    Latitude: 15.667
+    Longitude: 32.367
+
+ExperimentInfo:
+ LitterInfo:
+  LitterType1:
+   Species: Psidium guajava
+   LifeForm: tree
+   Material: crushed recently senesced leaves
+   Carbon:
+     Value: 41.82
+     Units: percentage
+   Nitrogen:
+     Value: 0.900
+     Units: percentage
+   Phosphorus:
+     Value: 0.136
+     Units: percentage
+   Potassium:
+     Value: 0.829
+     Units: percentage
+   Calcium:
+     Value: 2.765
+     Units: percentage
+   Sulfur:
+     Value: 0.237
+     Units: percentage
+   Magnesium:
+     Value: 0.419
+     Units: percentage
+   Iron:
+     Value: 0.3515
+     Units: percentage
+   Manganese:
+     Value: 0.0188
+     Units: percentage
+   Copper:
+     Value: 0.0012
+     Units: percentage
+   Zinc:
+     Value: 0.0024
+     Units: percentage
+   C:N:
+     Value: 59.7
+   Amount:
+     Value: 16
+     Units: g
+  LitterType2:
+   Species: Mangifera indica
+   LifeForm: tree
+   Material: crushed recently senesced leaves
+   Carbon:
+     Value: 35.60
+     Units: percentage
+   Nitrogen:
+     Value: 0.465
+     Units: percentage
+   Phosphorus:
+     Value: 0.067
+     Units: percentage
+   Potassium:
+     Value: 0.452
+     Units: percentage
+   Calcium:
+     Value: 3.012
+     Units: percentage
+   Sulfur:
+     Value: 0.201
+     Units: percentage
+   Magnesium:
+     Value: 0.373
+     Units: percentage
+   Iron:
+     Value: 0.1511
+     Units: percentage
+   Manganese:
+     Value: 0.0053
+     Units: percentage
+   Copper:
+     Value: 0.0004
+     Units: percentage
+   Zinc:
+     Value: 0.0014
+     Units: percentage
+   C:N:
+     Value: 76.6
+   Amount:
+     Value: 16
+     Units: g
+  LitterType3:
+   Species: Eucalyptus microtheca
+   LifeForm: tree
+   Material: crushed recently senesced aboveground parts
+   Carbon:
+     Value: 45.33
+     Units: percentage
+   Nitrogen:
+     Value: 1.274
+     Units: percentage
+   Phosphorus:
+     Value: 0.098
+     Units: percentage
+   Potassium:
+     Value: 1.277
+     Units: percentage
+   Calcium:
+     Value: 2.256
+     Units: percentage
+   Sulfur:
+     Value: 0.156
+     Units: percentage
+   Magnesium:
+     Value: 0.361
+     Units: percentage
+   Iron:
+     Value: 0.0442
+     Units: percentage
+   Manganese:
+     Value: 0.0071
+     Units: percentage
+   Copper:
+     Value: 0.0038
+     Units: percentage
+   Zinc:
+     Value: 0.0017
+     Units: percentage
+   C:N:
+     Value: 35.7
+   Amount:
+     Value: 16
+     Units: g
+  LitterType4:
+   Species: Ficus spp.
+   LifeForm: tree
+   Material: crushed recently senesced aboveground parts
+   Carbon:
+     Value: 39.21
+     Units: percentage
+   Nitrogen:
+     Value: 1.382
+     Units: percentage
+   Phosphorus:
+     Value: 0.096
+     Units: percentage
+   Potassium:
+     Value: 1.412
+     Units: percentage
+   Calcium:
+     Value: 3.807
+     Units: percentage
+   Sulfur:
+     Value: 0.132
+     Units: percentage
+   Magnesium:
+     Value: 0.406
+     Units: percentage
+   Iron:
+     Value: 0.0515
+     Units: percentage
+   Manganese:
+     Value: 0.0042
+     Units: percentage
+   Copper:
+     Value: 0.0011
+     Units: percentage
+   Zinc:
+     Value: 0.0007
+     Units: percentage
+   C:N:
+     Value: 28.4
+   Amount:
+     Value: 16
+     Units: g
+  LitterType5:
+   Species: Leucaena leucocephala
+   LifeForm: tree
+   Material: crushed recently senesced aboveground parts
+   Carbon:
+     Value: 45.30
+     Units: percentage
+   Nitrogen:
+     Value: 2.351
+     Units: percentage
+   Phosphorus:
+     Value: 0.117
+     Units: percentage
+   Potassium:
+     Value: 1.506
+     Units: percentage
+   Calcium:
+     Value: 1.962
+     Units: percentage
+   Sulfur:
+     Value: 0.251
+     Units: percentage
+   Magnesium:
+     Value: 0.250
+     Units: percentage
+   Iron:
+     Value: 0.0664
+     Units: percentage
+   Manganese:
+     Value: 0.0074
+     Units: percentage
+   Copper:
+     Value: 0.0010
+     Units: percentage
+   Zinc:
+     Value: 0.0016
+     Units: percentage
+   C:N:
+     Value: 19.3
+   Amount:
+     Value: 16
+     Units: g
+ Experiment1:
+  Description: "Decomposition from leaves of some agroforestry trees (Eucalyptus microtheca, Ficus spp., and Leucaena leucocephala) and litter fall from guava (Psidium guajava) and mango (Magnifera indica) were monitored in a 12-week litter-bag experiment."
+  LitterBagInfo:
+   Material: nylon
+   MeshSize:
+    Value: 2
+    Units: mm
+   Dimentions:
+    Width: 20
+    Lenght: 30
+    Units: cm
+   Position: buried 20 cm deep
+  Treatment: litter type
+  StartingDate:
+   Month: june
+   Season: summer
+  Duration:
+   Time: 3
+   Units: months
+
+Variables:
+  V1:
+    Name: Time
+    Units: weeks
+  V2:
+    Name: Gua
+    Units: mass remaining
+    Description: "Guava leaf litter dry mass after 12 weeks buried in the field"
+    LitterType: LitterType1
+  V3:
+    Name: Man
+    Units: mass remaining
+    Description: "Mango leaf litter dry mass after 12 weeks buried in the field"
+    LitterType: LitterType2
+  V4:
+    Name: Euc
+    Units: mass remaining
+    Description: "Eucalyptus leaf and stem litter dry mass after 12 weeks buried in the field"
+    LitterType: LitterType3
+  V5:
+    Name: Fic
+    Units: mass remaining
+    Description: "Ficus leaf and stem litter dry mass after 12 weeks buried in the field"
+    LitterType: LitterType4
+  V6:
+    Name: Leu
+    Units: mass remaining
+    Description: "Leucaena leaf and stem litter dry mass after 12 weeks buried in the field"
+    LitterType: LitterType5
