@@ -1,0 +1,120 @@
+CitationKey: Ndagurwa2015
+doi: 10.1111/aec.12191
+EntryAuthor: Agustín Sarquis
+
+SiteInfo:
+  Name: Matobo, Bulawayo, Zimbabwe
+  EcosystemType: savanna
+  MAP:
+    Value: 600
+    Units: mm
+  MAT:
+    Value: 23.6
+    Units: Celsius
+  RainySeason: summer
+  Altitude:
+    Value: 1340
+    Units: masl
+  SoilType: siallitic red clay
+  Coordinates:
+    Latitude: -20.383
+    Longitude: 28.467
+
+ExperimentInfo:
+ LitterInfo:
+  LitterType1:
+   Species: Erianthemum ngamicum
+   LifeForm: parasitic shrub
+   Material: recently senesced leaves
+   Nitrogen:
+     Value: 2.41
+     Units: percentage
+   Phosphorus:
+     Value: 0.07
+     Units: percentage
+   Amount:
+     Value: 25
+     Units: g
+  LitterType2:
+   Species: Plicosepalus kalachariensis
+   LifeForm: parasitic shrub
+   Material: recently senesced leaves
+   Nitrogen:
+     Value: 1.54
+     Units: percentage
+   Phosphorus:
+     Value: 0.08
+     Units: percentage
+   Amount:
+     Value: 25
+     Units: g
+  LitterType3:
+   Species: Viscum verrucosum
+   LifeForm: parasitic shrub
+   Material: recently senesced stems
+   Nitrogen:
+     Value: 1.81
+     Units: percentage
+   Phosphorus:
+     Value: 0.08
+     Units: percentage
+   Amount:
+     Value: 25
+     Units: g
+  LitterType4:
+   Species: Vachellia karroo
+   LifeForm: tree
+   Material: recently senesced leaves
+   Nitrogen:
+     Value: 1.35
+     Units: percentage
+   Phosphorus:
+     Value: 0.07
+     Units: percentage
+   Amount:
+     Value: 25
+     Units: g
+ Experiment1:
+  Description: "They studied the decomposition of litter of three mistletoe species and N-fixing Acacia karroo in a semi-arid savanna"
+  LitterBagInfo:
+   Material: nylon
+   MeshSize:
+    Value: 2
+    Units: mm
+   Dimentions:
+    Width: 30
+    Lenght: 30
+    Units: cm
+   Position: under tree
+  Treatment: litter type
+  StartingDate:
+   Month: may
+   Season: autumn
+  Duration:
+   Time: 12
+   Units: months
+
+Variables:
+  V1:
+    Name: Time
+    Units: months
+  V2:
+    Name: En
+    Units: mass remaining
+    Description: "E. ngamicum leaf litter incubated for a year under V. karroo parasitized by E. nganicum"
+    LitterType: LitterType1
+  V3:
+    Name: Pk
+    Units: mass remaining
+    Description: "P. kalachariensis leaf litter incubated for a year under V. karroo parasitized by P. kalachariensis"
+    LitterType: LitterType2
+  V4:
+    Name: Vv
+    Units: mass remaining
+    Description: "V. verrucosum stem litter incubated for a year under V. karroo parasitized by V. verrucosum"
+    LitterType: LitterType3
+  V5:
+    Name: Ak
+    Units: mass remaining
+    Description: "V. karroo leaf litter incubated for a year under non-parasitized V. karroo canopy"
+    LitterType: LitterType4
