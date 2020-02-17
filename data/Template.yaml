@@ -87,7 +87,7 @@ ExperimentInfo:
    Position: mangrove forest soil, on microcosms, adjacent to grass clumps, under cut tree, under rainout shelter, under frames, decomposition bed, covered in litter, suspended 1/60 cm over bare soil, on top of soil litter layer, underwater pinned to riverbed, under tree/grass/shrub, under sparse tree crown, bare soil, vegetated soil, under shadecloth, buried 5/10 cm deep
   FilterInfo:
    FilterType1:
-    Name: CON-TROL-CURE UV Blocking Film, Rosco, polyethylene, UV-transparent acrylic, UV-absorbing polycarbonate, shadecloth, Aclar, Mylar, Courtgard, Mylar with paint, polyester film, Solacryl SUVT, Clear UV Filter, Amber UV Filter, Plexiglass
+    Name: Gila UV-blocking, CON-TROL-CURE UV Blocking Film, Rosco, polyethylene, UV-transparent acrylic, UV-absorbing polycarbonate, shadecloth, Aclar, Mylar, Courtgard, Mylar with paint, polyester film, Solacryl SUVT, Clear UV Filter, Amber UV Filter, Plexiglass
     Wavelenght:
      Value: 280, 315, 387, 400, 545, 700
      Units: nm

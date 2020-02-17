@@ -55,7 +55,6 @@ ExperimentInfo:
      Units: percentage
    C:N:
      Value: 85.792
-     Units: percentage
    Amount:
      Value: 10
      Units: g

@@ -1,0 +1,188 @@
+CitationKey: Dipman2019
+doi: 10.1016/j.apsoil.2019.07.005
+EntryAuthor: Agustín Sarquis
+
+SiteInfo:
+  Name: Claremont, California, USA
+  EcosystemType:
+    - shrubland
+    - grassland
+  MAP:
+    Value: 313.9
+    Units: mm
+  MAT:
+    Value: 16.32
+    Units: Celsius
+  RainySeason: winter
+  Altitude:
+    Value: 378
+    Units: masl
+  Coordinates:
+    Latitude: 34.1
+    Longitude: -117.7
+
+ExperimentInfo:
+ LitterInfo:
+  LitterType1:
+   Species: Ribes aureum
+   LifeForm: shrub
+   Material: leaves
+   C:N:
+     Value: 13.02
+  LitterType2:
+   Species: Bromus diandrus
+   LifeForm: graminoid
+   Material: leaves
+   C:N:
+     Value: 60.88
+ Experiment1:
+  Description: "They examined the importance of various abiotic and biotic factors (litter quality, UV radiation and macroinvertebrate access) in driving early decomposition processes in native sage scrub and in adjacent non-native grassland"
+  LitterBagInfo:
+   MeshSize:
+    Value: 2
+    Units: mm
+   Dimentions:
+    Width: 9.5
+    Lenght: 11.4
+    Height: 6.6
+    Units: cm
+   Position:
+     Position1: under grass
+     Position2: under shrub
+  FilterInfo:
+   FilterType1:
+    Name: Gila UV-blocking
+    Wavelenght:
+     Value: 400
+     Units: nm
+    UVTransmitance:
+     Value: 3
+     Units: percentage
+  Treatment:
+    - radiation
+    - litter type
+    - location
+    - soil fauna exclusion
+  StartingDate:
+   Month: july
+   Season: summer
+  Duration:
+   Time: 7
+   Units: months
+
+Variables:
+  V1:
+    Name: Time
+    Units: months
+  V2:
+    Name: GRaBMBUV
+    Units: non-ash dry mass remaining
+    Description: "R. aureum leaf litter decomposed at the non-native grassland with UV-blocking filter and macroinvertebrates excluded"
+    FilterType: FilterType1
+    LitterType: LitterType1
+    Position: Position1
+  V3:
+    Name: GRaAMBUV
+    Units: non-ash dry mass remaining
+    Description: "R. aureum leaf litter decomposed at the non-native grassland with UV-blocking filter and macroinvertebrates allowed"
+    FilterType: FilterType1
+    LitterType: LitterType1
+    Position: Position1
+  V4:
+    Name: GRaBMAUV
+    Units: non-ash dry mass remaining
+    Description: "R. aureum leaf litter decomposed at the non-native grassland without UV-blocking filter and macroinvertebrates excluded"
+    FilterType: none
+    LitterType: LitterType1
+    Position: Position1
+  V5:
+    Name: GRaAMAUV
+    Units: non-ash dry mass remaining
+    Description: "R. aureum leaf litter decomposed at the non-native grassland without UV-blocking filter and macroinvertebrates allowed"
+    FilterType: none
+    LitterType: LitterType1
+    Position: Position1
+  V6:
+    Name: GBBMBUV
+    Units: non-ash dry mass remaining
+    Description: "B. diandrus leaf litter decomposed at the non-native grassland with UV-blocking filter and macroinvertebrates excluded"
+    FilterType: FilterType1
+    LitterType: LitterType2
+    Position: Position1
+  V7:
+    Name: GBAMBUV
+    Units: non-ash dry mass remaining
+    Description: "B. diandrus leaf litter decomposed at the non-native grassland with UV-blocking filter and macroinvertebrates allowed"
+    FilterType: FilterType1
+    LitterType: LitterType2
+    Position: Position1
+  V8:
+    Name: GBBMAUV
+    Units: non-ash dry mass remaining
+    Description: "B. diandrus leaf litter decomposed at the non-native grassland without UV-blocking filter and macroinvertebrates excluded"
+    FilterType: none
+    LitterType: LitterType2
+    Position: Position1
+  V9:
+    Name: GBAMAUV
+    Units: non-ash dry mass remaining
+    Description: "B. diandrus leaf litter decomposed at the non-native grassland without UV-blocking filter and macroinvertebrates allowed"
+    FilterType: none
+    LitterType: LitterType2
+    Position: Position1
+  V10:
+    Name: SRaBMBUV
+    Units: non-ash dry mass remaining
+    Description: "R. aureum leaf litter decomposed at the native sage scrub with UV-blocking filter and macroinvertebrates excluded"
+    FilterType: FilterType1
+    LitterType: LitterType1
+    Position: Position2
+  V11:
+    Name: SRaAMBUV
+    Units: non-ash dry mass remaining
+    Description: "R. aureum leaf litter decomposed at the native sage scrub with UV-blocking filter and macroinvertebrates allowed"
+    FilterType: FilterType1
+    LitterType: LitterType1
+    Position: Position2
+  V12:
+    Name: SRaBMAUV
+    Units: non-ash dry mass remaining
+    Description: "R. aureum leaf litter decomposed at the native sage scrub without UV-blocking filter and macroinvertebrates excluded"
+    FilterType: none
+    LitterType: LitterType1
+    Position: Position2
+  V13:
+    Name: SRaAMAUV
+    Units: non-ash dry mass remaining
+    Description: "R. aureum leaf litter decomposed at the native sage scrub without UV-blocking filter and macroinvertebrates allowed"
+    FilterType: none
+    LitterType: LitterType1
+    Position: Position2
+  V14:
+    Name: SBBMBUV
+    Units: non-ash dry mass remaining
+    Description: "B. diandrus leaf litter decomposed at the native sage scrub with UV-blocking filter and macroinvertebrates excluded"
+    FilterType: FilterType1
+    LitterType: LitterType2
+    Position: Position2
+  V15:
+    Name: SBAMBUV
+    Units: non-ash dry mass remaining
+    Description: "B. diandrus leaf litter decomposed at the native sage scrub with UV-blocking filter and macroinvertebrates allowed"
+    FilterType: FilterType1
+    LitterType: LitterType2
+    Position: Position2
+  V16:
+    Name: SBBMAUV
+    Units: non-ash dry mass remaining
+    Description: "B. diandrus leaf litter decomposed at the native sage scrub without UV-blocking filter and macroinvertebrates excluded"
+    FilterType: none
+    LitterType: LitterType2
+    Position: Position2
+  V17:
+    Name: SBAMAUV
+    Units: non-ash dry mass remaining
+    Description: "B. diandrus leaf litter decomposed at the native sage scrub without UV-blocking filter and macroinvertebrates allowed"
+    FilterType: none
+    LitterType: LitterType2
+    Position: Position2
