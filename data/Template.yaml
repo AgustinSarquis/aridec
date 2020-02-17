@@ -4,7 +4,7 @@ EntryAuthor: Agustín Sarquis
 
 SiteInfo:
   Name:
-  EcosystemType: plantation, mangrove forest, subalpine, shrubland, urban, sandland, abbandoned farmland, scrub, woodland, alluvial valley, forest, steppe, desert, grassland, mountain grassland, savanna
+  EcosystemType: greenbelt, plantation, mangrove forest, subalpine, shrubland, urban, sandland, abbandoned farmland, scrub, woodland, alluvial valley, forest, steppe, desert, grassland, mountain grassland, savanna
   MAP:
     Value:
     Units: mm

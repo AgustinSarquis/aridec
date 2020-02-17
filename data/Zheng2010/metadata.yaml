@@ -1,0 +1,101 @@
+CitationKey: Zheng2010
+EntryAuthor: Agustín Sarquis
+
+SiteInfo:
+  Name: Karamay, Xinjiang, China
+  EcosystemType: greenbelt
+  MAP:
+    Value: 101.7
+    Units: mm
+  MAT:
+    Value: 8
+    Units: Celsius
+  RainySeason: summer
+  Altitude:
+    Value: 280
+    Units: masl
+  SoilTexture: coarse
+  Coordinates:
+    Latitude: 45.608
+    Longitude: 84.834
+
+ExperimentInfo:
+ LitterInfo:
+  LitterType1:
+   Species:
+     - Populus alba var. pyramidalis
+     - Populus euphratica
+     - Amorpha fruticosa
+     - Elaeagnus oxycarpa
+     - Ulmus pumila
+   LifeForm:
+     - tree
+     - tree
+     - shrub
+     - tree
+     - tree
+   Material: recently senesced aboveground parts
+   Carbon:
+     Value: 43.239
+     Units: percentage
+   Nitrogen:
+     Value: 0.504
+     Units: percentage
+   Phosphorus:
+     Value: 0.242
+     Units: percentage
+   Potassium:
+     Value: 0.846
+     Units: percentage
+   Magnesium:
+     Value: 0.641
+     Units: percentage
+   Calcium:
+     Value: 3.793
+     Units: percentage
+   C:N:
+     Value: 85.792
+     Units: percentage
+   Amount:
+     Value: 10
+     Units: g
+ Experiment1:
+  Description: "They did a composting experiment with the inoculation of three kinds of microbial agents on leaf litter of a mixture of species from a protective greenbelt"
+  LitterBagInfo:
+   Material: nylon
+   MeshSize:
+    Value: 1
+    Units: mm
+   Dimentions:
+    Width: 12
+    Lenght: 20
+    Units: cm
+   Position: decomposition bed
+  Treatment:  microbial inoculum
+  StartingDate:
+   Month: november
+   Season: autumn
+  Duration:
+   Time: 6.6
+   Units: months
+
+Variables:
+  V1:
+    Name: Time
+    Units: days
+  V2:
+    Name: CK
+    Units: mass remaining
+    Description: "Mass remaining of species mixture from protective greenbelt without microbial inoculum (control)"
+  V3:
+    Name: QZ
+    Units: mass remaining
+    Description: "Mass remaining of species mixture from protective greenbelt with soilage microbial inoculum"
+  V4:
+    Name: QZ
+    Units: mass remaining
+    Description: "Mass remaining of species mixture from protective greenbelt with straw microbial inoculum"
+  V5:
+    Name: QZ
+    Units: mass remaining
+    Description: "Mass remaining of species mixture from protective greenbelt with a decomposition synergist microbial inoculum"
