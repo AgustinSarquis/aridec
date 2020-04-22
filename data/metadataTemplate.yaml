@@ -34,9 +34,33 @@ siteInfo:
 incubationInfo:
         incDesc: # Short description of the incubation setup and main treatments
         # These fields should all be one dimensional arrays. Values for experimental variables with multiple treatment levels should be entered in the variables section and left blank here
-        replicates:
-          value: # Number of replicates per treatment
+        replicates: # Number of replicates per treatment
         incubationTime: # length of incubation in days
+        startingMonth: # month during which the study started, all in lower case
+        litterBag:
+          material: # mesh type used to construct the litter bags, options are: wire, aluminum, window screening, net curtain, DACRON cloth, bolting cloth, plastic, fiberglass, nylon, polypropylene, polyester, polyethylene, polyamide. If no mesh was used, write no
+          meshSize: # mesh size in mm referring to one side of the net-square. If no mesh was used, write no
+          dimentions: # size of the full litter bag in cm
+            width:
+            length:
+            height: # for 3-dimensional designs such as litter boxes in AustinVivanco2006
+          transmitance: # when reported, light transmitance of the mesh material as a percentage of full sunlight for each wavelength
+            total:
+            PAR:
+            UV:
+            UVA:
+            UVB:
+          position: # position of litterbags in the field, valid options are: baresoil, decomposition bed, under litter, over litter, over lawn, next to grass, under tree/shrub/grass, buried X cm deep, underwater, under rainout shelter, under frames, suspended X cm, under shadecloth
+        filter: # for photodegradation experiments only
+          material: # filter type used to create a light treatment, options are: Aclar, polyethylene, Mylar, UV-transparent acrylic, Clear UV Filter, Amber UV Filter, Gila UV-blocking, CON-TROL-CURE UV Blocking Film, UV-absorbing polycarbonate, Rosco, shadecloth, Courtgard, Mylar with paint, polyester film, Solacryl SUVT, Plexiglass
+          wavelengthBlocked: # wavelength blocked in the treatment (considering the upper end of the spectrum blocked, i.e. when blue-green light is blocked all wavelengths below that are blocked too).
+                             # Valid options are: none, UV, UVA, UVB, Blue-green, all
+          transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+            total:
+            PAR:
+            UV:
+            UVA:
+            UVB:
 
 variables: # These describe the columns of your timeSeries.csv file
         V1: # column 1
