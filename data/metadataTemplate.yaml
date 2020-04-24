@@ -37,7 +37,8 @@ incubationInfo:
         replicates: # Number of replicates per treatment
         incubationTime: # length of incubation in days
         startingMonth: # month during which the study started, all in lower case
-        litterBag:
+        litter: # plant species used as litter material for the experiment. All details related to the species must be specified in the initConditions.csv file
+        litterbag:
           material: # mesh type used to construct the litter bags, options are: wire, aluminum, window screening, net curtain, DACRON cloth, bolting cloth, plastic, fiberglass, nylon, polypropylene, polyester, polyethylene, polyamide. If no mesh was used, write no
           meshSize: # mesh size in mm referring to one side of the net-square. If no mesh was used, write no
           dimentions: # size of the full litter bag in cm
@@ -64,14 +65,11 @@ incubationInfo:
 
 variables: # These describe the columns of your timeSeries.csv file
         V1: # column 1
-          name: # Name of first variable in the accompanying timeSeries.csv data file. The first variable must always be time.
-          units: # Time units used in accompanying file. Usually "d" for days
+          name: time
+          units: # Time units used in accompanying file. Usually "d" for days. Possible options are: days, weeks, months, years
         V2: # column 2
           name: # Name of second variable in accompanying file
+          units: # units in which litter mass loss was reported. Valid options are: non-ash dry mass remaining, mass remaining, organic matter remaining, C remaining
           varDesc: # Description of the variable
           site: # Site where the incubated sample was collected
-          experimentalTreatment: # 'experimentalTreatment' here is a place holder for treatments with multiple levels. Replace this word by any of the listed variables in incubationInfo above (temperature, moisture, etc.) and type treatment value (level) after colon. Note that units should be specified in the incubationInfo field above.
-          gasMeasured: # Blank if CO2, Other valid fields are: CH4, N2O, 13CO2, 14CO2, 13CH4, etc
-          units: # Units for 'gasMeasured' field
-          statistic: # Leave blank if mean values. Other valid fields include: SD, SE, and none (if a single rep)
-          primaryVariableName: # Links variable with associated time series data collected on the same sample e.g. SD data or 13C-CO2 data associated with mean CO2 data. Leave blank if there are no associated variables
+          experimentalTreatment: # 'experimentalTreatment' here is a place holder for treatments with multiple levels. Replace this word by any of the listed variables in incubationInfo above (startingMonth, incubationTime, litter, litterbag, filter) and type treatment value (level) after colon. Note that units should be specified in the incubationInfo field above.
