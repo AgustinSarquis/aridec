@@ -1,0 +1,6 @@
+species, type, N-fixer, material, amount, carbon, nitrogen, C:N, phosphorus, potassium, sodium, magnesium, manganese, copper, zinc, lead, lignin, cellulose, hemicellulose, SLA
+mixture,,no,leaves,10,,,,,,,,,,,,,,,
+Drypetes glauca, evergreen, no, leaves, 10, 47.79, 1.97, 24.25,,,,,,,,, 10.91, 39.82,
+Pinus hartwegii, evergreen, no, leaves, 10, 53.41, 0.59, 92.72,,,,,,,,, 19.18, 44.58,
+Thuja plicata, evergreen, no, leaves, 10, 51.13, 0.62, 83.12,,,,,,,,, 26.67, 35.92,
+Triticum aestivum, graminoid, no, leaves, 10, 47.32, 0.38, 133.32,,,,,,,,, 16.21, 73.15,
