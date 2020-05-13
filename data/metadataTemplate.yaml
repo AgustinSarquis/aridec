@@ -63,6 +63,7 @@ variables: # These describe the columns of your timeSeries.csv file
           varDesc: # Description of the variable
           site: # Site where the incubated sample was collected
           experimentalTreatment: # 'experimentalTreatment' here is a place holder for treatments with multiple levels. Replace this word by any of the listed variables in incubationInfo above (startingMonth, incubationTime, litter, litterbag, filter) and type treatment value (level) after colon. Note that units should be specified in the incubationInfo field above.
+          fullTreatment: # full combination of treatments
           filter: # for photodegradation experiments only
            threshold: # wavelength bellow which the filter blocks radiation (in nm)
            transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
