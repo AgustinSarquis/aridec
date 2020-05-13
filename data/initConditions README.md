@@ -2,7 +2,7 @@ Instructions for the initConditions.csv file:
 
 The initConditions.csv file contains all information related to initial conditions of litter used in the experiment.
 
-species: current name checked in the Tropicos data base (www.tropicos.org). If mixture of species, enter "mixture" and specify all the species in the metadata.yaml file.
+species: current name checked in the Tropicos data base (www.tropicos.org). If mixture of species, enter "mixture" and if average value for different species, enter "mean". In both cases, specify all the species in the metadata.yaml file variables section, at "varDesc".
 
 type: valid options are "deciduous" or "evergreen" (for woody plants) and "forb" (eudicots) or "graminoid" (monocots) (for herbaceous plants).
 

@@ -39,7 +39,7 @@ experimentInfo:
         startingMonth: # month during which the study started, all in lower case
         litter: # plant species used as litter material for the experiment. All details related to the species must be specified in the initConditions.csv file
         litterbag:
-          material: # mesh type used to construct the litter bags, options are: wire, aluminum, window screening, net curtain, DACRON cloth, bolting cloth, plastic, fiberglass, nylon, polypropylene, polyester, polyethylene, polyamide. If no mesh was used, write no
+          material: # mesh type used to construct the litter bags, options are: wire, aluminum, window screening, net curtain, bolting cloth, plastic, fiberglass, nylon, polypropylene, polyester, polyethylene, polyamide. If no mesh was used, write no
           meshSize: # mesh size in mm referring to one side of the net-square. If no mesh was used, write no
           dimentions: # size of the full litter bag in cm
             width:

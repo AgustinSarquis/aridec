@@ -1,230 +1,136 @@
-CitationKey: Adair2017
+citationKey: Adair2017
 doi: 10.1002/ecs2.1892
-EntryAuthor: Agustín Sarquis
+entryAuthor: Agustín Sarquis
+entryCreationDate: # Date when the data was entered in this file. Format: YYYY-MM-DD
+contactName:  Agustín Sarquis
+contactEmail: agusarquis@agro.uba.ar
+entryNote: Variables 2, 3 and 4 correspond to averaged values belonging to different species. This study is a part of the LIDEt project, so there's more information available online
+study: Eight types of leaf litter were decomposed at three sites part of the LIDET project for 4 to 10 years
 
-SiteInfo:
-  Name:
-    - "Central Plains Experimental Range, Colorado, USA"
-    - "Jornada Experimental Range, New Mexico, USA"
-    - "Sevilleta Wildlife Refuge, New Mexico, USA"
-  MAP:
-    Value:
-      - 440
-      - 298
-      - 255
-    Units: mm
-  MAT:
-    Value:
-      - 8.6
-      - 17.15
-      - 13.17
-    Units: Celsius
-  AET:
-    Value:
-      - 430
-      - 292
-      - 252
-    Units: mm
-  PET:
-    Value:
-      - 1202
-      - 1666
-      - 1602
-    Units: mm
-  RainySeason:
-    - summer
-    - summer
-    - summer
-  Altitude:
-    Value:
-      - 1650
-      - 1410
-      - 1572
-    Units: masl
-  Coordinates:
-    Latitude:
-      - 40.82
-      - 32.50
-      - 34.33
-    Longitude:
-      - -104.77
-      - -106.75
-      - -106.67
+siteInfo:
+        site:
+         - Central Plains Experimental Range
+         - Jornada Experimental Range
+         - Sevilleta Wildlife Refuge
+        coordinates:
+          latitude:
+           - 40.82
+           - 32.50
+           - 34.33
+          longitude:
+           - -104.77
+           - -106.75
+           - -106.67
+        country:
+         - USA
+         - USA
+         - USA
+        MAT:
+         - 8.6
+         - 17.15
+         - 13.17
+        MAP:
+         - 440
+         - 298
+         - 255
+        rainySeason:
+         - summer
+         - summer
+         - summer
+        elevation:
+         - 1650
+         - 1410
+         - 1572
+        landCover: # Land cover of the site. Valid fields are: greenbelt, (abbandoned) farmland, mangrove forest, subalpine, shrubland, urban, sandland, alluvial valley, forest, steppe, desert, grassland, savanna
+        vegNote: # Additional details about land cover such as species or functional type composition
+        cover:
+          plantCover: # Total plant cover percentage (if they report cover by specific plant types, fill the fields below)
+          bunchgrassCover:
+          shrubCover:
+          bareSoil:
+        soilTaxonomy:
+          soilOrder: # Soil order according to the classification system described below
+          soilFamily: # Soil family description (ex. 'Eutric' for a Eutric Cambisol)
+          soilSeries: # Soil series according to the classification system described below
+          classificationSystem: # Name of classification system used. Valid fields are: USDA, FAO, and WRB.
 
-ExperimentInfo:
- LitterInfo:
-  LitterType1:
-   Species:
-     - Acer saccharum
-     - Drypetes glauca
-     - Liriodendron tulipifera
-     - Pinus hartwegii
-     - Quercus montana
-     - Rhododendron macrophyllum
-     - Thuja plicata
-     - Triticum aestivum
-   LifeForm:
-     - tree
-     - tree
-     - forb
-     - tree
-     - tree
-     - shrub
-     - tree
-     - crop
-   Material: leaves
-   Amount:
-     Value: 10
-     Units: g
-  LitterType2:
-    Species: Drypetes glauca
-    LifeForm: tree
-    Material: leaves
-    Celulose:
-      Value: 39.82
-      Units: percentage
-    Lignin:
-      Value: 10.91
-      Units: percentage
-    Carbon:
-      Value: 47.79
-      Units: percentage
-    Nitrogen:
-      Value: 1.97
-      Units: percentage
-    C:N:
-      Value: 24.25
-    Amount:
-     Value: 10
-     Units: g
-  LitterType3:
-    Species: Pinus hartwegii
-    LifeForm: conifer
-    Material: leaves
-    Celulose:
-      Value: 44.58
-      Units: percentage
-    Lignin:
-      Value: 19.18
-      Units: percentage
-    Carbon:
-      Value: 53.41
-      Units: percentage
-    Nitrogen:
-      Value: 0.59
-      Units: percentage
-    C:N:
-      Value: 92.72
-    Amount:
-     Value: 10
-     Units: g
-  LitterType4:
-    Species: Thuja plicata
-    LifeForm: conifer
-    Material: leaves
-    Celulose:
-      Value: 35.92
-      Units: percentage
-    Lignin:
-      Value: 26.67
-      Units: percentage
-    Carbon:
-      Value: 51.13
-      Units: percentage
-    Nitrogen:
-      Value: 0.62
-      Units: percentage
-    C:N:
-      Value: 83.12
-    Amount:
-     Value: 10
-     Units: g
-  LitterType5:
-    Species: Triticum aestivum
-    LifeForm: crop
-    Material: leaves
-    Celulose:
-      Value: 73.15
-      Units: percentage
-    Lignin:
-      Value: 16.21
-      Units: percentage
-    Carbon:
-      Value: 47.32
-      Units: percentage
-    Nitrogen:
-      Value: 0.38
-      Units: percentage
-    C:N:
-      Value: 133.32
-    Amount:
-     Value: 10
-     Units: g
- Experiment1:
-    Description: "Eight types of leaf litter were decomposed at three sites for 4 to 10 years"
-    LitterBagInfo:
-      Material:
-        - nylon
-        - DACRON cloth
-      MeshSize:
-       Value:
-         - 1
-         - 0.055
-       Units: mm
-      Dimentions:
-       Width: 20
-       Lenght: 20
-       Units: cm
-      UVBTransmitance:
-        Value: 90
-        Units: percentage
-      Position: on top of soil litter layer
-    StartingDate:
-      Month: november
-      Season: autumn
-    Duration:
-      Time: 120
-      Units: months
+experimentInfo:
+        incDesc: Eight types of leaf litter were decomposed at these sites, including the six standard litter types included at all LIDET sites (Table
+        # These fields should all be one dimensional arrays. Values for experimental variables with multiple treatment levels should be entered in the variables section and left blank here
+        replicates: 4
+        incubationTime: 3650
+        startingMonth: november
+        litter: # plant species used as litter material for the experiment. All details related to the species must be specified in the initConditions.csv file
+        litterbag:
+          material: nylon
+          meshSize: 1
+          dimentions: # size of the full litter bag in cm
+            width: 20
+            length: 20
+            height: # for 3-dimensional designs such as litter boxes in AustinVivanco2006
+          transmitance: # when reported, light transmitance of the mesh material as a percentage of full sunlight for each wavelength
+            total:
+            PAR:
+            UV:
+            UVA:
+            UVB: 90
+          position: over litter
 
-Variables:
-  V1:
-    Name: Time
-    Units: years
-  V2:
-    Name: CPR
-    Units: mass remaining
-    Description: "Percent mass remaining over time at Central Plains Experimental Range averaged across litter types"
-    LitterType: LitterType1
-    Site: "Central Plains Experimental Range, Colorado, USA"
-  V3:
-    Name: JRN
-    Units: mass remaining
-    Description: "Percent mass remaining over time at Jornada Experimental Range averaged across litter types"
-    LitterType: LitterType1
-    Site: "Jornada Experimental Range, New Mexico, USA"
-  V4:
-    Name: SEV
-    Units: mass remaining
-    Description: "Percent mass remaining over time at Sevilleta National Wildlife Refuge averaged across litter types"
-    LitterType: LitterType1
-    Site: "Sevilleta Wildlife Refuge, New Mexico, USA"
-  V5:
-    Name: DRGL_lig
-    Units: mass remaining
-    Description: "Percent mass remaining over time averaged across sites for Drypetes glauca litter"
-    LitterType: LitterType2
-  V6:
-    Name: PIRE
-    Units: mass remaining
-    Description: "Percent mass remaining over time averaged across sites for Pinus hartwegii litter"
-    LitterType: LitterType3
-  V7:
-    Name: THPL
-    Units: mass remaining
-    Description: "Percent mass remaining over time averaged across sites for Thuja plicata litter"
-    LitterType: LitterType4
-  V8:
-    Name: TRAE
-    Units: mass remaining
-    Description: "Percent mass remaining over time averaged across sites for Triticum aestivum litter"
-    LitterType: LitterType5
+variables:
+        V1:
+          name: time
+          units: years
+        V2:
+          name: CPR
+          units: mass remaining
+          varDesc: Percent mass remaining over time at Central Plains Experimental Range averaged across litter types (listed on paper)
+          site: Central Plains Experimental Range
+          litter: mean
+        V3:
+          name: JRN
+          units: mass remaining
+          varDesc: Percent mass remaining over time at Jornada Experimental Range averaged across litter types (listed on paper)
+          site: Jornada Experimental Range
+          litter: mean
+        V4:
+          name: SEV
+          units: mass remaining
+          varDesc: Percent mass remaining over time at Sevilleta National Wildlife Refuge averaged across litter types (listed on paper)
+          site: Sevilleta Wildlife Refuge
+          litter: mean
+        V5:
+          name: DRGL
+          units: mass remaining
+          varDesc: Percent mass remaining over time averaged across sites for Drypetes glauca litter
+          site:
+           - Central Plains Experimental Range
+           - Jornada Experimental Range
+           - Sevilleta Wildlife Refuge
+          litter: Drypetes glauca
+        V6:
+          name: PIRE
+          units: mass remaining
+          varDesc: Percent mass remaining over time averaged across sites for Pinus hartwegii litter
+          site:
+           - Central Plains Experimental Range
+           - Jornada Experimental Range
+           - Sevilleta Wildlife Refuge
+          litter: Pinus hartwegii
+        V7:
+          name: THPL
+          units: mass remaining
+          varDesc: Percent mass remaining over time averaged across sites for Thuja plicata litter
+          site:
+           - Central Plains Experimental Range
+           - Jornada Experimental Range
+           - Sevilleta Wildlife Refuge
+          litter: Thuja plicata
+        V8:
+          name: TRAE
+          units: mass remaining
+          varDesc: Percent mass remaining over time averaged across sites for Triticum aestivum litter
+          site:
+           - Central Plains Experimental Range
+           - Jornada Experimental Range
+           - Sevilleta Wildlife Refuge
+          litter: Triticum aestivum
