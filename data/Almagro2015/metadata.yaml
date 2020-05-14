@@ -1,236 +1,301 @@
-CitationKey: Almagro2015
-doi: https://doi.org/10.1016/j.soilbio.2015.08.006
-EntryAuthor: Ignacio Siebenhart
+citationKey: Almagro2015 # Unique identifier in the format: LastnameYearJOURNAL (journal may be abbreviated and must be only added when there are two or more entries by the same author)
+doi: https://doi.org/10.1016/j.soilbio.2015.08.006 # DOI of the publication where data is published
+entryAuthor: Ignacio Siebenhart # First and last name of the person who entered the data in this file
+entryCreationDate: # Date when the data was entered in this file. Format: YYYY-MM-DD
+contactName: Agustín Sarquis # First and last name of contact person (may be the principal investigator supervising the entryAuthor)
+contactEmail: agusarquis@agro.uba.ar # Email of the contact person
+entryNote: Coordinates on the paper are wrong. We retrieved the correct ones from Google Earth # Any notes or comments related to this entry.
+study: They used a factorial experiment to evaluate climate change impacts (warming and rainfall reduction treatments) on litter decomposition and the interaction with photodegration (UV block and UV pass treatments) # Overall study description
 
-SiteInfo:
- Name: Mostoles, Spain
- EcosystemType: grassland
- MAP:
-  Value: 449
-  Units: mm
- MAT:
-  Value: 14.4
-  Units: Celsius
- RainySeason:
-   - autumn
-   - spring
- Coordinates:
-  Latitude: 40.3436111
-  Longitude: -38.86666666666667
+siteInfo:
+        site: Mostoles # Names of individual sites, if one site, keep on this line, if multiple, use array format
+              # These fields should be arrays of equal length to site array
+        coordinates:
+          latitude: 40.335667 # Latitude in decimal units (check for negative that denotes southern hemisphere)
+          longitude: -3.876933 # Longitude in decimal units (check for negative that denotes western hemisphere)
+        country: Spain # Name of country where site was conducted
+        MAT: 14.4 # Mean annual temperature in degrees Celsius
+        MAP: 449 # Mean annual precipitation in mm
+        rainySeason:
+          - autumn
+          - spring # Period of the year during which most precipitation occurs, i.e.: whole year, spring, summer, autumn, winter (if more than one use array format)
+        elevation: 650 # Elevation of study site in meters above sea level
+        landCover: grassland
+        vegNote: # Additional details about land cover such as species or functional type composition
+        cover:
+          plantCover: # Total plant cover percentage (if they report cover by specific plant types, fill the fields below)
+          bunchgrassCover:
+          shrubCover:
+          bareSoil:
+        soilTaxonomy:
+          soilOrder: # Soil order according to the classification system described below
+          soilFamily: # Soil family description (ex. 'Eutric' for a Eutric Cambisol)
+          soilSeries: # Soil series according to the classification system described below
+          classificationSystem: # Name of classification system used. Valid fields are: USDA, FAO, and WRB.
 
-ExperimentInfo:
- LitterInfo:
-  LitterType1:
-   Species: Stipa tenacissima
-   Lifeform: graminoid
-   Material: recently senesced leaves
-   Carbon:
-    Value: 47.3
-    Units: percentage
-   Nitrogen:
-    Value: 0.18
-    Units: percentage
-   Cell solubles:
-    Value: 17.4
-    Units: percentage
-   Cellulose:
-    Value: 49.7
-    Units: percentage
-   Hemicellulose:
-    Value: 27.9
-    Units: percentage
-   Lignin:
-    Value: 5.00
-    Units: percentage
-   Amount:
-    Value: 2
-    Units: g
- Experiment1:
-  Description: "They used a factorial experiment to evaluate climate change impacts (warming and rainfall reduction treatments) on litter decomposition and the interaction with photodegration (UV block and UV pass treatments)"
-  LitterBagInfo:
-   Material:
-     - polyethylene
-     - window screen
-   MeshSize:
-    Value:
-      - 2.6
-      - 1.4
-    Units: mm
-   Dimentions:
-    Width:
-     Value: 5
-     Units: cm
-    Lenght:
-     Value: 10
-     Units: cm
-   UVTransmitance:
-     Value: 90
-     Units: percentage
-   PARTransmitance:
-     Value: 92.5
-     Units: percentage
-   Position:
-    Position1: bare soil suspended 5 cm
-    Position2: suspended 5 cm
-  FilterInfo:
-   FilterType1:
-    Name: acrylic
-    UVTransmitance:
-     Value: 90
-     Units: percentage
-    PARTransmitance:
-     Value: 92
-     Units: percentage
-   FilterType2:
-    Name: polycarbonate
-    UVTransmitance:
-      Value: 10
-      Units: percentage
-    PARTransmitance:
-      Value: 92
-      Units: percentage
-  Treatment:
-   - rainfall interception
-   - warming
-   - warming and rainfall interception
-   - light atenuation
-   - litterbag position
-  Starting Date:
-   Month: july
-   Season: summer
-  Duration:
-   Time: 15
-   Units: months
+experimentInfo:
+        incDesc: 4 climate treatments X 2 UV radiation exposure levels X 2 positions X 4 sampling periods X 8 replicates # Short description of the incubation setup and main treatments
+        # These fields should all be one dimensional arrays. Values for experimental variables with multiple treatment levels should be entered in the variables section and left blank here
+        replicates: 8 # Number of replicates per treatment
+        incubationTime: 379 # length of incubation in days
+        startingMonth: september # month during which the study started, all in lower case
+        litter: Stipa tenacissima # plant species used as litter material for the experiment. All details related to the species must be specified in the initConditions.csv file
+        litterbag:
+          material: polyethylene # mesh type used to construct the litter bags, options are: wire, aluminum, window screening, net curtain, bolting cloth, plastic, fiberglass, nylon, polypropylene, polyester, polyethylene, polyamide. If no mesh was used, write no
+          meshSize: 2.6 # mesh size in mm referring to one side of the net-square. If no mesh was used, write no
+          dimentions: # size of the full litter bag in cm
+            width: 5
+            length: 10
+            height: # for 3-dimensional designs such as litter boxes in AustinVivanco2006
+          transmitance: # when reported, light transmitance of the mesh material as a percentage of full sunlight for each wavelength
+            total:
+            PAR: 92.5
+            UV: 90
+            UVA:
+            UVB:
+          position: # position of litterbags in the field, valid options are: baresoil, decomposition bed, under litter, over litter, over lawn, next to grass, under tree/shrub/grass, buried X cm deep, underwater, under rainout shelter, under frames, suspended X cm, under shadecloth
 
-Variables:
-  V1:
-    Name: Time
-    Units: months
-  V2:
-    Name: CUVPG
-    Units: non-ash dry mass remaining
-    Description: "Litter organic matter percentage remaining at harvest time with total solar radiation, positioned on bare soil and in field climate conditions"
-    FilterType: FilterType1
-    Position: Position1
-    RainfallInterception: "none"
-    Warming: "none"
-  V3:
-    Name: CUVPS
-    Units: non-ash dry mass remaining
-    Description: "Litter organic matter percentage remaining at harvest time with total solar radiation, standing position and in field climate conditions"
-    FilterType: FilterType1
-    Position: Position2
-    RainfallInterception: "none"
-    Warming: "none"
-  V4:
-    Name: CUVBG
-    Units: non-ash dry mass remaining
-    Description: "Litter organic matter percentage remaining at harvest time with UV-B solar radiation blocked, positioned on bare soil and in field climate conditions"
-    FilterType: FilterType2
-    Position: Position1
-    RainfallInterception: "none"
-    Warming: "none"
-  V5:
-    Name: CUVBS
-    Units: non-ash dry mass remaining
-    Description: "Litter organic matter percentage remaining at harvest time with UV-B solar radiation blocked, standing position and in field climate conditions"
-    FilterType: FilterType2
-    Position: Position2
-    RainfallInterception: "none"
-    Warming: "none"
-  V6:
-    Name: RUVPG
-    Units: non-ash dry mass remaining
-    Description: "Litter organic matter percentage remaining at harvest time with total solar radiation, positioned on bare soil and rainfall interception"
-    FilterType: FilterType1
-    Position: Position1
-    RainfallInterception: "35 percent reduction in annual rainfall"
-    Warming: "none"
-  V7:
-    Name: RUVPS
-    Units: non-ash dry mass remaining
-    Description: "Litter organic matter percentage remaining at harvest time with total solar radiation, standing position and rainfall interception"
-    FilterType: FilterType1
-    Position: Position2
-    RainfallInterception: "35 percent reduction in annual rainfall"
-    Warming: "none"
-  V8:
-    Name: RUVBG
-    Units: non-ash dry mass remaining
-    Description: "Litter organic matter percentage remaining at harvest time with UV-B solar radiation blocked, positioned on bare soil and rainfall interception"
-    FilterType: FilterType2
-    Position: Position1
-    RainfallInterception: "35 percent reduction in annual rainfall"
-    Warming: "none"
-  V9:
-    Name: RUVBS
-    Units: non-ash dry mass remaining
-    Description: "Litter organic matter percentage remaining at harvest time with UV-B solar radiation blocked, standing position and rainfall interception"
-    FilterType: FilterType2
-    Position: Position2
-    RainfallInterception: "35 percent reduction in annual rainfall"
-    Warming: "none"
-  V10:
-     Name: WUVPG
-     Units: non-ash dry mass remaining
-     Description: "Litter organic matter percentage remaining at harvest time with total solar radiation, positioned on bare soil and temperature increase"
-     FilterType: FilterType1
-     Position: Position1
-     RainfallInterception: "none"
-     Warming: "temperature increase in 3 degrades"
-  V11:
-     Name: WUVPS
-     Units: non-ash dry mass remaining
-     Description: "Litter organic matter percentage remaining at harvest time with total solar radiation, standing position and temperature increase"
-     FilterType: FilterType1
-     Position: Position2
-     RainfallInterception: "none"
-     Warming: "temperature increase in 3 degrades"
-  V12:
-     Name: WUVBG
-     Units: non-ash dry mass remaining
-     Description: "Litter organic matter percentage remaining at harvest time with UV-B solar radiation blocked, positioned on bare soil and temperature increase"
-     FilterType: FilterType2
-     Position: Position1
-     RainfallInterception: "none"
-     Warming: "temperature increased in 3 degrades"
-  V13:
-    Name: WUVBS
-    Units: non-ash dry mass remaining
-    Description: "Litter organic matter percentage remaining at harvest time with UV-B solar radiation blocked, standing position and temperature increase"
-    FilterType: FilterType2
-    Position: Position2
-    RainfallInterception: "none"
-    Warming: "temperature increased in 3 degrades"
-  V14:
-     Name: WRUVPG
-     Units: non-ash dry mass remaining
-     Description: "Litter organic matter percentage remaining at harvest time with total solar radiation, positioned on bare soil, rainfall reduction and temperature increase"
-     FilterType: FilterType1
-     Position: Position1
-     RainfallInterception: "35 percent reduction in annual rainfall"
-     Warming: "temperature increased in 3 degrades"
-  V15:
-     Name: WRUVPS
-     Units: non-ash dry mass remaining
-     Description: "Litter organic matter percentage remaining at harvest time with total solar radiation, standing position, rainfall reduction and temperature increase"
-     FilterType: FilterType1
-     Position: Position2
-     RainfallInterception: "35 percent reduction in annual rainfall"
-     Warming: "temperature increased in 3 degrades"
-  V16:
-     Name: WRUVBG
-     Units: non-ash dry mass remaining
-     Description: "Litter organic matter percentage remaining at harvest time with UV-B solar radiation blocked, positioned on bare soil, rainfall reduction and temperature increase"
-     FilterType: FilterType2
-     Position: Position1
-     RainfallInterception: "35 percent reduction in annual rainfall"
-     Warming: "temperature increased in 3 degrades"
-  V17:
-     Name: WRUVBS
-     Units: non-ash dry mass remaining
-     Description: "Litter organic matter percentage remaining at harvest time with UV-B solar radiation blocked, standing position, rainfall reduction and temperature increase"
-     FilterType: FilterType2
-     Position: Position2
-     RainfallInterception: "35 percent reduction in annual rainfall"
-     Warming: "temperature increased in 3 degrades"
+variables: # These describe the columns of your timeSeries.csv file
+       V1: # column 1
+          name: Time
+          units: months
+       V2: 
+          name: CUVPG
+          units: organic matter remaining
+          varDesc: Litter organic matter percentage remaining at harvest time with total solar radiation, positioned on bare soil and in field climate conditions
+          site: Mostoles
+          position: baresoil
+          compTreat: full rainfall without any artificial warming
+          filter: 
+           threshold: 0 
+           transmitance: 
+             total:
+             PAR: 92
+             UV: 90
+             UVA:
+             UVB:
+       V3: 
+          name: CUVPS
+          units: organic matter remaining
+          varDesc: Litter organic matter percentage remaining at harvest time with total solar radiation, standing position and in field climate conditions
+          site: Mostoles
+          position: suspended 5 cm
+          compTreat: full rainfall without any artificial warming
+          filter: 
+           threshold: 0 
+           transmitance: 
+             total:
+             PAR: 92
+             UV: 90
+             UVA:
+             UVB:
+       V4: 
+          name: CUVBG
+          units: organic matter remaining
+          varDesc: Litter organic matter percentage remaining at harvest time with UV solar radiation blocked, positioned on bare soil and in field climate conditions
+          site: Mostoles
+          position: baresoil
+          compTreat: full rainfall without any artificial warming
+          filter: 
+           threshold: 400 
+           transmitance: 
+             total:
+             PAR: 92
+             UV: 10
+             UVA:
+             UVB:
+       V5: 
+          name: CUVBS
+          units: organic matter remaining
+          varDesc: Litter organic matter percentage remaining at harvest time with UV solar radiation blocked, standing position and in field climate conditions
+          site: Mostoles
+          position: suspended 5 cm
+          compTreat: full rainfall without any artificial warming
+          filter: 
+           threshold: 400 
+           transmitance: 
+             total:
+             PAR: 92
+             UV: 10
+             UVA:
+             UVB:
+       V6: 
+          name: RUVPG
+          units: organic matter remaining
+          varDesc: Litter organic matter percentage remaining at harvest time with total solar radiation, positioned on bare soil and rainfall interception
+          site: Mostoles
+          position: baresoil
+          compTreat: reduced rainfall without any artificial warming
+          filter: 
+           threshold: 0 
+           transmitance: 
+             total:
+             PAR: 92
+             UV: 90
+             UVA:
+             UVB:
+       V7: 
+          name: RUVPS
+          units: organic matter remaining
+          varDesc: Litter organic matter percentage remaining at harvest time with total solar radiation, standing position and rainfall interception
+          site: Mostoles
+          position: suspended 5 cm
+          compTreat: reduced rainfall without any artificial warming
+          filter: 
+           threshold: 0 
+           transmitance: 
+             total:
+             PAR: 92
+             UV: 90
+             UVA:
+             UVB:
+       V8: 
+          name: RUVBG
+          units: organic matter remaining
+          varDesc: Litter organic matter percentage remaining at harvest time with UV solar radiation blocked, positioned on bare soil and rainfall interception
+          site: Mostoles
+          position: baresoil
+          compTreat: reduced rainfall without any artificial warming
+          filter: 
+           threshold: 400 
+           transmitance: 
+             total:
+             PAR: 92
+             UV: 10
+             UVA:
+             UVB:
+       V9: 
+          name: RUVBS
+          units: organic matter remaining
+          varDesc: Litter organic matter percentage remaining at harvest time with UV solar radiation blocked, standing position and rainfall interception
+          site: Mostoles
+          position: suspended 5 cm
+          compTreat: reduced rainfall without any artificial warming
+          filter: 
+           threshold: 400 
+           transmitance: 
+             total:
+             PAR: 92
+             UV: 10
+             UVA:
+             UVB:
+       V10: 
+          name: WUVPG
+          units: organic matter remaining
+          varDesc: Litter organic matter percentage remaining at harvest time with total solar radiation, positioned on bare soil and temperature increase
+          site: Mostoles
+          position: baresoil
+          compTreat: full rainfall and artificial warming
+          filter: 
+           threshold: 0 
+           transmitance: 
+             total:
+             PAR: 92
+             UV: 90
+             UVA:
+             UVB:
+       V11: 
+          name: WUVPS
+          units: organic matter remaining
+          varDesc: Litter organic matter percentage remaining at harvest time with total solar radiation, standing position and temperature increase
+          site: Mostoles
+          position: suspended 5 cm
+          compTreat: full rainfall and artificial warming
+          filter: 
+           threshold: 0 
+           transmitance: 
+             total:
+             PAR: 92
+             UV: 90
+             UVA:
+             UVB:
+       V12: 
+          name: WUVBG
+          units: organic matter remaining
+          varDesc: Litter organic matter percentage remaining at harvest time with UV solar radiation blocked, positioned on bare soil and temperature increase
+          site: Mostoles
+          position: baresoil
+          compTreat: full rainfall and artificial warming
+          filter: 
+           threshold: 400 
+           transmitance: 
+             total:
+             PAR: 92
+             UV: 10
+             UVA:
+             UVB:
+       V13: 
+          name: WUVBS
+          units: organic matter remaining
+          varDesc: Litter organic matter percentage remaining at harvest time with UV solar radiation blocked, standing position and temperature increase
+          site: Mostoles
+          position: suspended 5 cm
+          compTreat: full rainfall and artificial warming
+          filter: 
+           threshold: 400 
+           transmitance: 
+             total:
+             PAR: 92
+             UV: 10
+             UVA:
+             UVB:
+       V14: 
+          name: WRUVPG
+          units: organic matter remaining
+          varDesc: Litter organic matter percentage remaining at harvest time with total solar radiation, positioned on bare soil, rainfall reduction and temperature increase
+          site: Mostoles
+          position: baresoil
+          compTreat: reduced rainfall and artificial warming
+          filter: 
+           threshold: 0 
+           transmitance: 
+             total:
+             PAR: 92
+             UV: 90
+             UVA:
+             UVB:
+       V15: 
+          name: WRUVPS
+          units: organic matter remaining
+          varDesc: Litter organic matter percentage remaining at harvest time with total solar radiation, standing position, rainfall reduction and temperature increase
+          site: Mostoles
+          position: suspended 5 cm
+          compTreat: reduced rainfall and artificial warming
+          filter: 
+           threshold: 0 
+           transmitance: 
+             total:
+             PAR: 92
+             UV: 90
+             UVA:
+             UVB:
+       V16: 
+          name: WRUVBG
+          units: organic matter remaining
+          varDesc: Litter organic matter percentage remaining at harvest time with UV solar radiation blocked, positioned on bare soil, rainfall reduction and temperature increase
+          site: Mostoles
+          position: baresoil
+          compTreat: reduced rainfall and artificial warming
+          filter: 
+           threshold: 400 
+           transmitance: 
+             total:
+             PAR: 92
+             UV: 10
+             UVA:
+             UVB:
+       V17: 
+          name: WRUVBS
+          units: organic matter remaining
+          varDesc: Litter organic matter percentage remaining at harvest time with UV solar radiation blocked, standing position, rainfall reduction and temperature increase
+          site: Mostoles
+          position: suspended 5 cm
+          compTreat: reduced rainfall and artificial warming
+          filter: 
+           threshold: 400 
+           transmitance: 
+             total:
+             PAR: 92
+             UV: 10
+             UVA:
+             UVB:
