@@ -61,7 +61,7 @@ variables: # These describe the columns of your timeSeries.csv file
           name: # Name of second variable in accompanying file
           units: # units in which litter mass loss was reported. Valid options are: mass remaining, organic matter remaining, C remaining
           varDesc: # Description of the variable
-          site: # Site where the incubated sample was collected
+          site: # Site where the experiment was conducted
           experimentalTreatment: # 'experimentalTreatment' here is a place holder for treatments with multiple levels. Replace this word by any of the listed variables in incubationInfo above (startingMonth, incubationTime, litter, litterbag, filter) and type treatment value (level) after colon. Note that units should be specified in the incubationInfo field above.
           compTreat: # combination of complementary treatments not included in the rest of the variables
           filter: # for photodegradation experiments only

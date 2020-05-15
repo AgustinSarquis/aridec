@@ -1,293 +1,340 @@
-CitationKey: Almagro2017
-doi: 10.1007/s10021-016-0036-5
-EntryAuthor: Ignacio Siebenhart
+citationKey: Almagro2017 # Unique identifier in the format: LastnameYearJOURNAL (journal may be abbreviated and must be only added when there are two or more entries by the same author)
+doi: 10.1007/s10021-016-0036-5 # DOI of the publication where data is published
+entryAuthor: Ignacio Siebenhart # First and last name of the person who entered the data in this file
+entryCreationDate: # Date when the data was entered in this file. Format: YYYY-MM-DD
+contactName: Agustín Sarquis # First and last name of contact person (may be the principal investigator supervising the entryAuthor)
+contactEmail: agusarquis@agro.uba.ar # Email of the contact person
+entryNote: # Any notes or comments related to this entry.
+study: They used a fully factorial experiment to asses the efect of UV radiation, position, and litter quality # Overall study description
 
-SiteInfo:
- Name:
-   - "Aranjuez, Spain"
-   - "Sorbas, Spain"
- EcosistemType:
-   - grassland
-   - grassland
- MAP:
-  Value:
-   - 362
-   - 248
-  Units: mm
- MAT:
-  Value:
-    - 15.0
-    - 16.5
-  Units: Celsius
- RainySeason:
-   - spring
-   - autumn
-   - spring
-   - autumn
- Altitude:
-  Value:
-    - 590
-    - 397
-  Units: masl
- SoilType:
-   - Gypsiric Leptosols
-   - Gypsiric Leptosols
- Coordinates:
-  Latitude:
-    - 40.0166667
-    - 37.0833333
-  Longitude:
-    - 3.5166666666666666
-    - -2.066666666666667
-ExperimentInfo:
- LitterInfo:
-  LitterType1:
-   Species: Stipa tenacissima
-   Lifeform: graminoid
-   Material: recently senesced leaves
-   Carbon:
-    Value: 47.28
-    Units: percentage
-   Nitrogen:
-    Value: 0.18
-    Units: percentage
-   C:N:
-    Value: 258.89
-   Cell solubles:
-    Value: 17.44
-    Units: percentage
-   Hemicellulose:
-    Value: 27.87
-    Units: percentage
-   Cellulose:
-    Value: 49.68
-    Units: percentage
-   Lignin:
-    Value: 5.00
-    Units: percentage
-   Lignin:N:
-    Value: 27.37
-   Water Holding Capacity:
-    Value: 55.03
-    Units: percentage
-    Amount:
-     Value: 2
-     Units: g
-  LitterType2:
-   Species: Retama sphaerocarpa
-   Lifeform: shrub
-   Material: standing senescent leaves
-   Carbon:
-    Value: 48.76
-    Units: percentage
-   Nitrogen:
-    Value: 2.88
-    Units: percentage
-   C:N:
-    Value: 16.94
-   Cell solubles:
-    Value: 49.90
-    Units: percentage
-   Hemicellulose:
-    Value: 12.43
-    Units: percentage
-   Cellulose:
-    Value: 24.35
-    Units: percentage
-   Lignin:
-    Value: 13.31
-    Units: percentage
-   Lignin:N:
-    Value: 4.62
-   Ash content:
-    Value: 4.57
-    Units: percentage
-   Water Holding Capacity:
-    Value: 131.41
-    Units: percentage
-   Amount:
-     Value: 2
-     Units: g
- Experiment1:
-  Description: "They used a fully factorial experiment to asses the efect of three factors UV radiation, position, and litter quality "
-  LitterBagInfo:
-   Material:
-     - polyethylene
-     - window screen
-   MeshSize:
-    Value:
-      - 2.6
-      - 1.4
-    Units: mm
-   Dimentions:
-    Width: 10
-    Lenght: 10
-    Units: cm
-   Position:
-    Position1: on the ground
-    Position2: suspended 15 cm
-   UVTransmitance:
-     Value: 90
-     Units: percentage
-   PARTransmitance:
-     Value: 92.5
-     Units: percentage
-  FilterInfo:
-   FilterType1:
-    Name: acrylic
-    UVTransmitance:
-     Value: 90
-     Units: percentage
-    PARTransmitance:
-     Value: 97
-     Units: percentage
-   FilterType2:
-    Name: polycarbonate
-    UVTransmitance:
-     Value: 10
-     Units: percentage
-    PARTransmitance:
-     Value: 92
-     Units: percentage
-  Treatment:
-   - light attenuation
-   - litterbag position
-  Starting Date:
-   Month: July
-   Season: summer
-  Duration:
-   Time: 15
-   Units: months
+siteInfo:
+        site:
+          - Aranjuez
+          - Sorbas
+        coordinates:
+          latitude:
+            - 40.0166667
+            - 37.0833333
+          longitude:
+            - 3.5166666666666666
+            - -2.066666666666667
+        country: Spain
+        MAT:
+         - 15.0
+         - 16.5
+        MAP:
+         - 362
+         - 248
+        rainySeason:
+           - spring
+           - autumn
+           - spring
+           - autumn
+        elevation:
+          - 590
+          - 397
+        landCover:
+         - grassland
+         - grassland
+        vegNote:
+          - dominated by Stipa tenacissima and Retama sphaerocarpa
+          - dominated by Stipa tenacissima and Retama sphaerocarpa
+        cover:
+          plantCover:
+            - 40
+            - 40
+          bunchgrassCover:
+          shrubCover:
+          bareSoil:
+        soilTaxonomy:
+          soilOrder:
+            - Leptosols
+            - Leptosols
+          soilFamily:
+            - Gypsiric
+            - Gypsiric
+          soilSeries: # Soil series according to the classification system described below
+          classificationSystem: WRB.
 
-Variable:
-  V1:
-    Name: Time
-    Units: months
-  V2:
-    Name: CSUVPG
-    Units: non-ash dry mass remaining
-    Description: "Litter organic matter percentage remaining at harvest time with UV-B total solar radiation and positioned on the ground at Continental Site"
-    LitterType: LitterType1
-    FilterType: FilterType1
-    Position: Position1
-    Site: "Aranjuez, Spain"
-  V3:
-    Name: CSUVBG
-    Units: non-ash dry mass remaining
-    Description: "Litter organic matter percentage remaining at harvest time with UV-B solar radiation blocked and positioned on the ground at Continental Site"
-    LitterType: LitterType1
-    FilterType: FilterType2
-    Position: Position1
-    Site: "Aranjuez, Spain"
-  V4:
-    Name: CSUVPS
-    Units: non-ash dry mass remaining
-    Description: "Litter organic matter percentage remaining at harvest time with UV-B total solar radiation and standing position at Continental Site"
-    LitterType: LitterType1
-    FilterType: FilterType1
-    Position: Position2
-    Site: "Aranjuez, Spain"
-  V5:
-    Name: CSUVBS
-    Units: non-ash dry mass remaining
-    Description: "Litter organic matter percentage remaining at harvest time with UV-B solar radiation blocked and standing position at Continental Site"
-    LitterType: LitterType1
-    FilterType: FilterType2
-    Position: Position2
-    Site: "Aranjuez, Spain"
-  V6:
-    Name: CRUVPG
-    Units: non-ash dry mass remaining
-    Description: "Litter organic matter percentage remaining at harvest time with UV-B total solar radiation and positioned on the ground at Continental Site"
-    LitterType: LitterType2
-    FilterType: FilterType1
-    Position: Position1
-    Site: "Aranjuez, Spain"
-  V7:
-    Name: CRUVBG
-    Units: non-ash dry mass remaining
-    Description: "Litter organic matter percentage remaining at harvest time with UV-B solar radiation blocked and positioned on the ground at Continental Site"
-    LitterType: LitterType2
-    FilterType: FilterType2
-    Position: Position1
-    Site: "Aranjuez, Spain"
-  V8:
-    Name: CRUVPS
-    Units: non-ash dry mass remaining
-    Description: "Litter organic matter percentage remaining at harvest time with UV-B total solar radiation and standing position at Continental Site"
-    LitterType: LitterType2
-    FilterType: FilterType1
-    Position: Position2
-    Site: "Aranjuez, Spain"
-  V9:
-    Name: CRUVBS
-    Units: non-ash dry mass remaining
-    Description: "Litter organic matter percentage remaining at harvest time with UV-B total solar radiation and standing position at Continental Site"
-    LitterType: LitterType2
-    FilterType: FilterType2
-    Position: Position2
-    Site: "Aranjuez, Spain"
-  V10:
-     Name: MSUVPG
-     Units: non-ash dry mass remaining
-     Description: "Litter organic matter percentage remaining at harvest time with UV-B total solar radiation and positioned on the ground at Maritime Site"
-     LitterType: LitterType1
-     FilterType: FilterType1
-     Position: Position1
-     Site: "Sorbas, Spain"
-  V11:
-     Name: MSUVBG
-     Units: non-ash dry mass remaining
-     Description: "Litter organic matter percentage remaining at harvest time with UV-B solar radiation blocked and positioned on the ground at Maritime Site"
-     LitterType: LitterType1
-     FilterType: FilterType2
-     Position: Position1
-     Site: "Sorbas,Spain"
-  V12:
-     Name: MSUVPS
-     Units: non-ash dry mass remaining
-     Description: "Litter organic matter percentage remaining at harvest time with UV-B total solar radiation and standing position at Maritime Site"
-     LitterType: LitterType1
-     FilterType: FilterType1
-     Position: Position2
-     Site: "Sorbas, Spain"
-  V13:
-     Name: MSUVBS
-     Units: non-ash dry mass remaining
-     Description: "Litter organic matter percentage remaining at harvest time with UV-B solar radiation blocked and standing position at Maritime Site"
-     LitterType: LitterType1
-     FilterType: FilterType2
-     Position: Position2
-     Site: "Sorbas, Spain"
-  V14:
-     Name: MRUVPG
-     Units: non-ash dry mass remaining
-     Description: "Litter organic matter percentage remaining at harvest time with UV-B total solar radiation and positioned on the ground at Maritime Site"
-     LitterType: LitterType2
-     FilterType: FilterType1
-     Position: Position1
-     Site: "Sorbas, Spain"
-  V15:
-     Name: MRUVBG
-     Units: non-ash dry mass remaining
-     Description: "Litter organic matter percentage remaining at harvest time with UV-B solar radiation blocked and positioned on the ground at Maritime Site"
-     LitterType: LitterType2
-     FilterType: FilterType2
-     Position: Position1
-     Site: "Sorbas, Spain"
-  V16:
-     Name: MRUVPS
-     Units: non-ash dry mass remaining
-     Description: "Litter organic matter percentage remaining at harvest time with UV-B total solar radiation and standing position on the ground at Maritime Site"
-     LitterType: LitterType2
-     FilterType: FilterType1
-     Position: Position2
-     Site: "Sorbas, Spain"
-  V17:
-     Name: MRUVBS
-     Units: non-ash dry mass remaining
-     Description: "Litter organic matter percentage remaining at harvest time with UV-B total radiation blocked and standing position on the ground at Maritime Site"
-     LitterType: LitterType2
-     FilterType: FilterType2
-     Position: Position2
-     Site: "Sorbas, Spain"
+experimentInfo:
+        incDesc: UV radiation (UV pass vs. UV block), position (on the ground vs. standing biomass), and litter quality (labile and nitrogen-rich Retama vs. recalcitrant and nitrogen- poor Stipa)
+        # These fields should all be one dimensional arrays. Values for experimental variables with multiple treatment levels should be entered in the variables section and left blank here
+        replicates: 6
+        incubationTime: 450
+        startingMonth: july
+        litter: # plant species used as litter material for the experiment. All details related to the species must be specified in the initConditions.csv file
+        litterbag:
+          material: polyethylene
+          meshSize: 2.6
+          dimentions: # size of the full litter bag in cm
+            width: 10
+            length: 10
+            height: # for 3-dimensional designs such as litter boxes in AustinVivanco2006
+          transmitance: # when reported, light transmitance of the mesh material as a percentage of full sunlight for each wavelength
+            total:
+            PAR: 92.5
+            UV: 90
+            UVA:
+            UVB:
+          position: # position of litterbags in the field, valid options are: baresoil, decomposition bed, under litter, over litter, over lawn, next to grass, under tree/shrub/grass, buried X cm deep, underwater, under rainout shelter, under frames, suspended X cm, under shadecloth
+
+variables: # These describe the columns of your timeSeries.csv file
+        V1: # column 1
+          name: Time
+          units: months
+        V2: # column 2
+          name: CSUVPG
+          units: organic matter remaining
+          varDesc: Litter organic matter percentage remaining at harvest time with UV-B total solar radiation and positioned on the ground at Continental Site
+          site: Aranjuez
+          position: baresoil
+          litter: Stipa tenacissima
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: 0 # wavelength bellow which the filter blocks radiation (in nm)
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR: 97
+             UV: 90
+             UVA:
+             UVB:
+        V3:
+          name: CSUVBG # Name of second variable in accompanying file
+          units: organic matter remaining
+          varDesc: Litter organic matter percentage remaining at harvest time with UV-B solar radiation blocked and positioned on the ground at Continental Site
+          site: Aranjuez
+          position: baresoil
+          litter: Stipa tenacissima
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: 400 # wavelength bellow which the filter blocks radiation (in nm)
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR: 92
+             UV: 10
+             UVA:
+             UVB:
+        V4:
+          name: CSUVPS # Name of second variable in accompanying file
+          units: organic matter remaining
+          varDesc: Litter organic matter percentage remaining at harvest time with UV-B total solar radiation and standing position at Continental Site
+          site: Aranjuez
+          position: suspended 15 cm
+          litter: Stipa tenacissima
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: 0
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR: 97
+             UV: 90
+             UVA:
+             UVB:
+        V5:
+          name: CSUVBS
+          units: organic matter remaining
+          varDesc: Litter organic matter percentage remaining at harvest time with UV-B solar radiation blocked and standing position at Continental Site
+          site: Aranjuez
+          position: suspended 15 cm
+          litter: Stipa tenacissima
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: 400
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR: 92
+             UV: 10
+             UVA:
+             UVB:
+        V6:
+          name: CRUVPG
+          units: organic matter remaining
+          varDesc: Litter organic matter percentage remaining at harvest time with UV-B total solar radiation and positioned on the ground at Continental Site
+          site: Aranjuez
+          position: baresoil
+          litter: Retama sphaerocarpa
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: 0 # wavelength bellow which the filter blocks radiation (in nm)
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR: 97
+             UV: 90
+             UVA:
+             UVB:
+        V7:
+          name: CRUVBG
+          units: organic matter remaining
+          varDesc: Litter organic matter percentage remaining at harvest time with UV-B solar radiation blocked and positioned on the ground at Continental Site
+          site: Aranjuez
+          position: baresoil
+          litter: Retama sphaerocarpa
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: 400 # wavelength bellow which the filter blocks radiation (in nm)
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR: 92
+             UV: 10
+             UVA:
+             UVB:
+        V8:
+          name: CRUVPS
+          units: organic matter remaining
+          varDesc: Litter organic matter percentage remaining at harvest time with UV-B total solar radiation and standing position at Continental Site
+          site: Aranjuez
+          position: suspended 15 cm
+          litter: Retama sphaerocarpa
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: 0 # wavelength bellow which the filter blocks radiation (in nm)
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR: 97
+             UV: 90
+             UVA:
+             UVB:
+        V9:
+          name: CRUVBS
+          units: organic matter remaining
+          varDesc: Litter organic matter percentage remaining at harvest time with UV-B total solar radiation blocked and standing position at Continental Site
+          site: Aranjuez
+          position: suspended 15 cm
+          litter: Retama sphaerocarpa
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: 400 # wavelength bellow which the filter blocks radiation (in nm)
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR: 90
+             UV: 10
+             UVA:
+             UVB:
+        V10:
+          name: MSUVPG
+          units: organic matter remaining
+          varDesc: Litter organic matter percentage remaining at harvest time with UV-B total solar radiation and positioned on the ground at Maritime Site
+          site: Sorbas
+          position: baresoil
+          litter: Stipa tenacissima
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: 0 # wavelength bellow which the filter blocks radiation (in nm)
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR: 97
+             UV: 90
+             UVA:
+             UVB:
+        V11:
+          name: MSUVBG
+          units: organic matter remaining
+          varDesc: Litter organic matter percentage remaining at harvest time with UV-B solar radiation blocked and positioned on the ground at Maritime Site
+          site: Sorbas
+          position: baresoil
+          litter: Stipa tenacissima
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: 400 # wavelength bellow which the filter blocks radiation (in nm)
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR: 90
+             UV: 10
+             UVA:
+             UVB:
+        V12: # column 12
+          name: MSUVPS
+          units: organic matter remaining
+          varDesc: Litter organic matter percentage remaining at harvest time with UV-B total solar radiation and standing position at Maritime Site
+          site: Sorbas
+          position: suspended 15 cm
+          litter: Stipa tenacissima
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: 0 # wavelength bellow which the filter blocks radiation (in nm)
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR: 97
+             UV: 90
+             UVA:
+             UVB:
+        V13:
+          name: MSUVBS
+          units: organic matter remaining
+          varDesc: Litter organic matter percentage remaining at harvest time with UV-B solar radiation blocked and standing position at Maritime Site
+          site: Sorbas
+          position: suspended 15 cm
+          litter: Stipa tenacissima
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: 400 # wavelength bellow which the filter blocks radiation (in nm)
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR: 90
+             UV: 10
+             UVA:
+             UVB:
+        V14:
+          name: MRUVPG
+          units: organic matter remaining
+          varDesc: Litter organic matter percentage remaining at harvest time with UV-B total solar radiation and positioned on the ground at Maritime Site
+          site: Sorbas
+          position: baresoil
+          litter: Retama sphaerocarpa
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: 0 # wavelength bellow which the filter blocks radiation (in nm)
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR: 97
+             UV: 90
+             UVA:
+             UVB:
+        V15:
+          name: MRUVBG
+          units: organic matter remaining
+          varDesc: Litter organic matter percentage remaining at harvest time with UV-B solar radiation blocked and positioned on the ground at Maritime Site
+          site: Sorbas
+          position: baresoil
+          litter: Retama sphaerocarpa
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: 400 # wavelength bellow which the filter blocks radiation (in nm)
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR: 90
+             UV: 10
+             UVA:
+             UVB:
+        V16:
+          name: MRUVPS
+          units: organic matter remaining
+          varDesc: Litter organic matter percentage remaining at harvest time with UV-B total solar radiation and standing position at Maritime Site
+          site: Sorbas
+          position: suspended 15 cm
+          litter: Retama sphaerocarpa
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: 0 # wavelength bellow which the filter blocks radiation (in nm)
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR: 97
+             UV: 90
+             UVA:
+             UVB:
+        V17:
+          name: MRUVBS
+          units: organic matter remaining
+          varDesc: Litter organic matter percentage remaining at harvest time with UV-B total radiation blocked and standing position at Maritime Site
+          site: Sorbas
+          position: suspended 15 cm
+          litter: Retama sphaerocarpa
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: 400 # wavelength bellow which the filter blocks radiation (in nm)
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR: 90
+             UV: 10
+             UVA:
+             UVB:
