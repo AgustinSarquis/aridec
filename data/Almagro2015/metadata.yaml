@@ -37,7 +37,7 @@ experimentInfo:
         incDesc: 4 climate treatments X 2 UV radiation exposure levels X 2 positions X 4 sampling periods X 8 replicates # Short description of the incubation setup and main treatments
         # These fields should all be one dimensional arrays. Values for experimental variables with multiple treatment levels should be entered in the variables section and left blank here
         replicates: 8 # Number of replicates per treatment
-        incubationTime: 379 # length of incubation in days
+        duration: 379 # length of incubation in days
         startingMonth: september # month during which the study started, all in lower case
         litter: Stipa tenacissima # plant species used as litter material for the experiment. All details related to the species must be specified in the initConditions.csv file
         litterbag:
@@ -53,247 +53,247 @@ experimentInfo:
             UV: 90
             UVA:
             UVB:
-          position: # position of litterbags in the field, valid options are: baresoil, decomposition bed, under litter, over litter, over lawn, next to grass, under tree/shrub/grass, buried X cm deep, underwater, under rainout shelter, under frames, suspended X cm, under shadecloth
+          position: # position of litterbags in the field, valid options are: bare soil, decomposition bed, under litter, over litter, over lawn, next to grass, under tree/shrub/grass, buried X cm deep, underwater, under rainout shelter, under frames, suspended X cm, under shadecloth
 
 variables: # These describe the columns of your timeSeries.csv file
        V1: # column 1
           name: Time
           units: months
-       V2: 
+       V2:
           name: CUVPG
           units: organic matter remaining
           varDesc: Litter organic matter percentage remaining at harvest time with total solar radiation, positioned on bare soil and in field climate conditions
           site: Mostoles
-          position: baresoil
+          position: bare soil
           compTreat: full rainfall without any artificial warming
-          filter: 
-           threshold: 0 
-           transmitance: 
+          filter:
+           threshold: 0
+           transmitance:
              total:
              PAR: 92
              UV: 90
              UVA:
              UVB:
-       V3: 
+       V3:
           name: CUVPS
           units: organic matter remaining
           varDesc: Litter organic matter percentage remaining at harvest time with total solar radiation, standing position and in field climate conditions
           site: Mostoles
           position: suspended 5 cm
           compTreat: full rainfall without any artificial warming
-          filter: 
-           threshold: 0 
-           transmitance: 
+          filter:
+           threshold: 0
+           transmitance:
              total:
              PAR: 92
              UV: 90
              UVA:
              UVB:
-       V4: 
+       V4:
           name: CUVBG
           units: organic matter remaining
           varDesc: Litter organic matter percentage remaining at harvest time with UV solar radiation blocked, positioned on bare soil and in field climate conditions
           site: Mostoles
-          position: baresoil
+          position: bare soil
           compTreat: full rainfall without any artificial warming
-          filter: 
-           threshold: 400 
-           transmitance: 
+          filter:
+           threshold: 400
+           transmitance:
              total:
              PAR: 92
              UV: 10
              UVA:
              UVB:
-       V5: 
+       V5:
           name: CUVBS
           units: organic matter remaining
           varDesc: Litter organic matter percentage remaining at harvest time with UV solar radiation blocked, standing position and in field climate conditions
           site: Mostoles
           position: suspended 5 cm
           compTreat: full rainfall without any artificial warming
-          filter: 
-           threshold: 400 
-           transmitance: 
+          filter:
+           threshold: 400
+           transmitance:
              total:
              PAR: 92
              UV: 10
              UVA:
              UVB:
-       V6: 
+       V6:
           name: RUVPG
           units: organic matter remaining
           varDesc: Litter organic matter percentage remaining at harvest time with total solar radiation, positioned on bare soil and rainfall interception
           site: Mostoles
-          position: baresoil
+          position: bare soil
           compTreat: reduced rainfall without any artificial warming
-          filter: 
-           threshold: 0 
-           transmitance: 
+          filter:
+           threshold: 0
+           transmitance:
              total:
              PAR: 92
              UV: 90
              UVA:
              UVB:
-       V7: 
+       V7:
           name: RUVPS
           units: organic matter remaining
           varDesc: Litter organic matter percentage remaining at harvest time with total solar radiation, standing position and rainfall interception
           site: Mostoles
           position: suspended 5 cm
           compTreat: reduced rainfall without any artificial warming
-          filter: 
-           threshold: 0 
-           transmitance: 
+          filter:
+           threshold: 0
+           transmitance:
              total:
              PAR: 92
              UV: 90
              UVA:
              UVB:
-       V8: 
+       V8:
           name: RUVBG
           units: organic matter remaining
           varDesc: Litter organic matter percentage remaining at harvest time with UV solar radiation blocked, positioned on bare soil and rainfall interception
           site: Mostoles
-          position: baresoil
+          position: bare soil
           compTreat: reduced rainfall without any artificial warming
-          filter: 
-           threshold: 400 
-           transmitance: 
+          filter:
+           threshold: 400
+           transmitance:
              total:
              PAR: 92
              UV: 10
              UVA:
              UVB:
-       V9: 
+       V9:
           name: RUVBS
           units: organic matter remaining
           varDesc: Litter organic matter percentage remaining at harvest time with UV solar radiation blocked, standing position and rainfall interception
           site: Mostoles
           position: suspended 5 cm
           compTreat: reduced rainfall without any artificial warming
-          filter: 
-           threshold: 400 
-           transmitance: 
+          filter:
+           threshold: 400
+           transmitance:
              total:
              PAR: 92
              UV: 10
              UVA:
              UVB:
-       V10: 
+       V10:
           name: WUVPG
           units: organic matter remaining
           varDesc: Litter organic matter percentage remaining at harvest time with total solar radiation, positioned on bare soil and temperature increase
           site: Mostoles
-          position: baresoil
+          position: bare soil
           compTreat: full rainfall and artificial warming
-          filter: 
-           threshold: 0 
-           transmitance: 
+          filter:
+           threshold: 0
+           transmitance:
              total:
              PAR: 92
              UV: 90
              UVA:
              UVB:
-       V11: 
+       V11:
           name: WUVPS
           units: organic matter remaining
           varDesc: Litter organic matter percentage remaining at harvest time with total solar radiation, standing position and temperature increase
           site: Mostoles
           position: suspended 5 cm
           compTreat: full rainfall and artificial warming
-          filter: 
-           threshold: 0 
-           transmitance: 
+          filter:
+           threshold: 0
+           transmitance:
              total:
              PAR: 92
              UV: 90
              UVA:
              UVB:
-       V12: 
+       V12:
           name: WUVBG
           units: organic matter remaining
           varDesc: Litter organic matter percentage remaining at harvest time with UV solar radiation blocked, positioned on bare soil and temperature increase
           site: Mostoles
-          position: baresoil
+          position: bare soil
           compTreat: full rainfall and artificial warming
-          filter: 
-           threshold: 400 
-           transmitance: 
+          filter:
+           threshold: 400
+           transmitance:
              total:
              PAR: 92
              UV: 10
              UVA:
              UVB:
-       V13: 
+       V13:
           name: WUVBS
           units: organic matter remaining
           varDesc: Litter organic matter percentage remaining at harvest time with UV solar radiation blocked, standing position and temperature increase
           site: Mostoles
           position: suspended 5 cm
           compTreat: full rainfall and artificial warming
-          filter: 
-           threshold: 400 
-           transmitance: 
+          filter:
+           threshold: 400
+           transmitance:
              total:
              PAR: 92
              UV: 10
              UVA:
              UVB:
-       V14: 
+       V14:
           name: WRUVPG
           units: organic matter remaining
           varDesc: Litter organic matter percentage remaining at harvest time with total solar radiation, positioned on bare soil, rainfall reduction and temperature increase
           site: Mostoles
-          position: baresoil
+          position: bare soil
           compTreat: reduced rainfall and artificial warming
-          filter: 
-           threshold: 0 
-           transmitance: 
+          filter:
+           threshold: 0
+           transmitance:
              total:
              PAR: 92
              UV: 90
              UVA:
              UVB:
-       V15: 
+       V15:
           name: WRUVPS
           units: organic matter remaining
           varDesc: Litter organic matter percentage remaining at harvest time with total solar radiation, standing position, rainfall reduction and temperature increase
           site: Mostoles
           position: suspended 5 cm
           compTreat: reduced rainfall and artificial warming
-          filter: 
-           threshold: 0 
-           transmitance: 
+          filter:
+           threshold: 0
+           transmitance:
              total:
              PAR: 92
              UV: 90
              UVA:
              UVB:
-       V16: 
+       V16:
           name: WRUVBG
           units: organic matter remaining
           varDesc: Litter organic matter percentage remaining at harvest time with UV solar radiation blocked, positioned on bare soil, rainfall reduction and temperature increase
           site: Mostoles
-          position: baresoil
+          position: bare soil
           compTreat: reduced rainfall and artificial warming
-          filter: 
-           threshold: 400 
-           transmitance: 
+          filter:
+           threshold: 400
+           transmitance:
              total:
              PAR: 92
              UV: 10
              UVA:
              UVB:
-       V17: 
+       V17:
           name: WRUVBS
           units: organic matter remaining
           varDesc: Litter organic matter percentage remaining at harvest time with UV solar radiation blocked, standing position, rainfall reduction and temperature increase
           site: Mostoles
           position: suspended 5 cm
           compTreat: reduced rainfall and artificial warming
-          filter: 
-           threshold: 400 
-           transmitance: 
+          filter:
+           threshold: 400
+           transmitance:
              total:
              PAR: 92
              UV: 10

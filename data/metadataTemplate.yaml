@@ -18,7 +18,7 @@ siteInfo:
         MAP: # Mean annual precipitation in mm
         rainySeason: # Period of the year during which most precipitation occurs, i.e.: whole year, spring, summer, autumn, winter (if more than one use array format)
         elevation: # Elevation of study site in meters above sea level
-        landCover: # Land cover of the site. Valid fields are: greenbelt, (abbandoned) farmland, mangrove forest, subalpine, shrubland, urban, sandland, alluvial valley, forest, steppe, desert, grassland, savanna
+        landCover: # Land cover of the site. Valid fields are: greenbelt, (abbandoned) farmland, mangrove forest, subalpine, shrubland, urban, sandland, forest, steppe, desert, grassland, savanna
         vegNote: # Additional details about land cover such as species or functional type composition
         cover:
           plantCover: # Total plant cover percentage (if they report cover by specific plant types, fill the fields below)
@@ -35,7 +35,7 @@ experimentInfo:
         incDesc: # Short description of the incubation setup and main treatments
         # These fields should all be one dimensional arrays. Values for experimental variables with multiple treatment levels should be entered in the variables section and left blank here
         replicates: # Number of replicates per treatment
-        incubationTime: # length of incubation in days
+        duration: # length of incubation in days
         startingMonth: # month during which the study started, all in lower case
         litter: # plant species used as litter material for the experiment. All details related to the species must be specified in the initConditions.csv file
         litterbag:
@@ -51,7 +51,7 @@ experimentInfo:
             UV:
             UVA:
             UVB:
-          position: # position of litterbags in the field, valid options are: baresoil, decomposition bed, under litter, over litter, over lawn, next to grass, under tree/shrub/grass, buried X cm deep, underwater, under rainout shelter, under frames, suspended X cm, under shadecloth
+          position: # position of litterbags in the field, valid options are: bare soil, decomposition bed, under litter, over litter, over lawn, next to grass, under tree/shrub/grass, buried X cm deep, underwater, under rainout shelter, under frames, suspended X cm, under shadecloth
 
 variables: # These describe the columns of your timeSeries.csv file
         V1: # column 1
@@ -62,7 +62,7 @@ variables: # These describe the columns of your timeSeries.csv file
           units: # units in which litter mass loss was reported. Valid options are: mass remaining, organic matter remaining, C remaining
           varDesc: # Description of the variable
           site: # Site where the experiment was conducted
-          experimentalTreatment: # 'experimentalTreatment' here is a place holder for treatments with multiple levels. Replace this word by any of the listed variables in incubationInfo above (startingMonth, incubationTime, litter, litterbag, filter) and type treatment value (level) after colon. Note that units should be specified in the incubationInfo field above.
+          experimentalTreatment: # 'experimentalTreatment' here is a place holder for treatments with multiple levels. Replace this word by any of the listed variables in incubationInfo above (startingMonth, duration, litter, litterbag, filter) and type treatment value (level) after colon. Note that units should be specified in the incubationInfo field above.
           compTreat: # combination of complementary treatments not included in the rest of the variables
           filter: # for photodegradation experiments only
            threshold: # wavelength bellow which the filter blocks radiation (in nm)

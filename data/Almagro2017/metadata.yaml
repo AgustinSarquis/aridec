@@ -60,7 +60,7 @@ experimentInfo:
         incDesc: UV radiation (UV pass vs. UV block), position (on the ground vs. standing biomass), and litter quality (labile and nitrogen-rich Retama vs. recalcitrant and nitrogen- poor Stipa)
         # These fields should all be one dimensional arrays. Values for experimental variables with multiple treatment levels should be entered in the variables section and left blank here
         replicates: 6
-        incubationTime: 450
+        duration: 450
         startingMonth: july
         litter: # plant species used as litter material for the experiment. All details related to the species must be specified in the initConditions.csv file
         litterbag:
@@ -76,7 +76,7 @@ experimentInfo:
             UV: 90
             UVA:
             UVB:
-          position: # position of litterbags in the field, valid options are: baresoil, decomposition bed, under litter, over litter, over lawn, next to grass, under tree/shrub/grass, buried X cm deep, underwater, under rainout shelter, under frames, suspended X cm, under shadecloth
+          position: # position of litterbags in the field, valid options are: bare soil, decomposition bed, under litter, over litter, over lawn, next to grass, under tree/shrub/grass, buried X cm deep, underwater, under rainout shelter, under frames, suspended X cm, under shadecloth
 
 variables: # These describe the columns of your timeSeries.csv file
         V1: # column 1
@@ -87,7 +87,7 @@ variables: # These describe the columns of your timeSeries.csv file
           units: organic matter remaining
           varDesc: Litter organic matter percentage remaining at harvest time with UV-B total solar radiation and positioned on the ground at Continental Site
           site: Aranjuez
-          position: baresoil
+          position: bare soil
           litter: Stipa tenacissima
           compTreat: # combination of complementary treatments not included in the rest of the variables
           filter: # for photodegradation experiments only
@@ -103,7 +103,7 @@ variables: # These describe the columns of your timeSeries.csv file
           units: organic matter remaining
           varDesc: Litter organic matter percentage remaining at harvest time with UV-B solar radiation blocked and positioned on the ground at Continental Site
           site: Aranjuez
-          position: baresoil
+          position: bare soil
           litter: Stipa tenacissima
           compTreat: # combination of complementary treatments not included in the rest of the variables
           filter: # for photodegradation experiments only
@@ -151,7 +151,7 @@ variables: # These describe the columns of your timeSeries.csv file
           units: organic matter remaining
           varDesc: Litter organic matter percentage remaining at harvest time with UV-B total solar radiation and positioned on the ground at Continental Site
           site: Aranjuez
-          position: baresoil
+          position: bare soil
           litter: Retama sphaerocarpa
           compTreat: # combination of complementary treatments not included in the rest of the variables
           filter: # for photodegradation experiments only
@@ -167,7 +167,7 @@ variables: # These describe the columns of your timeSeries.csv file
           units: organic matter remaining
           varDesc: Litter organic matter percentage remaining at harvest time with UV-B solar radiation blocked and positioned on the ground at Continental Site
           site: Aranjuez
-          position: baresoil
+          position: bare soil
           litter: Retama sphaerocarpa
           compTreat: # combination of complementary treatments not included in the rest of the variables
           filter: # for photodegradation experiments only
@@ -215,7 +215,7 @@ variables: # These describe the columns of your timeSeries.csv file
           units: organic matter remaining
           varDesc: Litter organic matter percentage remaining at harvest time with UV-B total solar radiation and positioned on the ground at Maritime Site
           site: Sorbas
-          position: baresoil
+          position: bare soil
           litter: Stipa tenacissima
           compTreat: # combination of complementary treatments not included in the rest of the variables
           filter: # for photodegradation experiments only
@@ -231,7 +231,7 @@ variables: # These describe the columns of your timeSeries.csv file
           units: organic matter remaining
           varDesc: Litter organic matter percentage remaining at harvest time with UV-B solar radiation blocked and positioned on the ground at Maritime Site
           site: Sorbas
-          position: baresoil
+          position: bare soil
           litter: Stipa tenacissima
           compTreat: # combination of complementary treatments not included in the rest of the variables
           filter: # for photodegradation experiments only
@@ -279,7 +279,7 @@ variables: # These describe the columns of your timeSeries.csv file
           units: organic matter remaining
           varDesc: Litter organic matter percentage remaining at harvest time with UV-B total solar radiation and positioned on the ground at Maritime Site
           site: Sorbas
-          position: baresoil
+          position: bare soil
           litter: Retama sphaerocarpa
           compTreat: # combination of complementary treatments not included in the rest of the variables
           filter: # for photodegradation experiments only
@@ -295,7 +295,7 @@ variables: # These describe the columns of your timeSeries.csv file
           units: organic matter remaining
           varDesc: Litter organic matter percentage remaining at harvest time with UV-B solar radiation blocked and positioned on the ground at Maritime Site
           site: Sorbas
-          position: baresoil
+          position: bare soil
           litter: Retama sphaerocarpa
           compTreat: # combination of complementary treatments not included in the rest of the variables
           filter: # for photodegradation experiments only

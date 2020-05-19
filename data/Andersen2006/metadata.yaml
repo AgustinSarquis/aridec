@@ -1,0 +1,155 @@
+citationKey: Andersen2006 # Unique identifier in the format: LastnameYearJOURNAL (journal may be abbreviated and must be only added when there are two or more entries by the same author)
+doi: 10.1016/j.jaridenv.2005.06.022 # DOI of the publication where data is published
+entryAuthor: Agustín Sarquis # First and last name of the person who entered the data in this file
+entryCreationDate: # Date when the data was entered in this file. Format: YYYY-MM-DD
+contactName: Agustín Sarquis # First and last name of contact person (may be the principal investigator supervising the entryAuthor)
+contactEmail: agusarquis@agro.uba.ar # Email of the contact person
+entryNote: This entry includes two separate experiments # Any notes or comments related to this entry.
+study: Leafpacks of P. deltoides leaves werer incubated underwater in the river for 161 days and another set of samples was incubated on the floodplain for 653 days # Overall study description
+
+siteInfo:
+        site: Deerlodge Park # Names of individual sites, if one site, keep on this line, if multiple, use array format
+              # These fields should be arrays of equal length to site array
+        coordinates:
+          latitude: 40.45 # Latitude in decimal units (check for negative that denotes southern hemisphere)
+          longitude: -108.52 # Longitude in decimal units (check for negative that denotes western hemisphere)
+        country: USA # Name of country where site was conducted
+        MAT: 5.5 # Mean annual temperature in degrees Celsius
+        MAP: 250 # Mean annual precipitation in mm
+        rainySeason: whole year
+        elevation: 1705 # Elevation of study site in meters above sea level
+        landCover: forest
+        vegNote: The floodplain supports a gallery forest of Populus deltoides with localized stands of Salix exigua and scattered clumps of other woody plants, including Shepherdia argentea and Tamarix ramossisima. The understory consists of mixed grasses and forbs # Additional details about land cover such as species or functional type composition
+        cover:
+          plantCover: # Total plant cover percentage (if they report cover by specific plant types, fill the fields below)
+          bunchgrassCover:
+          shrubCover:
+          bareSoil:
+        soilTaxonomy:
+          soilOrder: # Soil order according to the classification system described below
+          soilFamily: # Soil family description (ex. 'Eutric' for a Eutric Cambisol)
+          soilSeries: # Soil series according to the classification system described below
+          classificationSystem: # Name of classification system used. Valid fields are: USDA, FAO, and WRB.
+
+experimentInfo:
+        incDesc: 3 replicates x 6 collection dates for one experiment, and 3 replicates x 10 collection dates x 5 positions for the other # Short description of the incubation setup and main treatments
+        # These fields should all be one dimensional arrays. Values for experimental variables with multiple treatment levels should be entered in the variables section and left blank here
+        replicates: 3 # Number of replicates per treatment
+        duration: # length of incubation in days
+        startingMonth: october # month during which the study started, all in lower case
+        litter: Populus deltoides # plant species used as litter material for the experiment. All details related to the species must be specified in the initConditions.csv file
+        litterbag:
+          material: polypropylene
+          meshSize: 0.7 # mesh size in mm referring to one side of the net-square. If no mesh was used, write no
+          dimentions: # size of the full litter bag in cm
+            width: 25
+            length: 25
+            height: # for 3-dimensional designs such as litter boxes in AustinVivanco2006
+          transmitance: # when reported, light transmitance of the mesh material as a percentage of full sunlight for each wavelength
+            total:
+            PAR:
+            UV:
+            UVA:
+            UVB:
+          position: # position of litterbags in the field, valid options are: bare soil, decomposition bed, under litter, over litter, over lawn, next to grass, under tree/shrub/grass, buried X cm deep, underwater, under rainout shelter, under frames, suspended X cm, under shadecloth
+
+variables: # These describe the columns of your timeSeries.csv file
+        V1: # column 1
+          name: Time
+          units: days
+        V2:
+          name: PI
+          units: organic matter remaining
+          varDesc: Change in organic matter remaining in P. deltoides leaf litter during immersion in the river
+          site: Deerlodge Park
+          duration: 161
+          position: underwater
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm)
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V3: # column 2
+          name: L1 # Name of second variable in accompanying file
+          units: organic matter remaining
+          varDesc: Decline in organic matter content of P. deltoides leaf litter as breakdown proceeded under Populus sapling
+          site: Deerlodge Park # Site where the experiment was conducted
+          duration: 653 # 'experimentalTreatment' here is a place holder for treatments with multiple levels. Replace this word by any of the listed variables in incubationInfo above (startingMonth, duration, litter, litterbag, filter) and type treatment value (level) after colon. Note that units should be specified in the incubationInfo field above.
+          position: under tree
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm)
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V4: # column 2
+          name: L2 # Name of second variable in accompanying file
+          units: organic matter remaining
+          varDesc: Decline in organic matter content of P. deltoides leaf litter as breakdown proceeded on bare soil
+          site: Deerlodge Park # Site where the experiment was conducted
+          duration: 653 # 'experimentalTreatment' here is a place holder for treatments with multiple levels. Replace this word by any of the listed variables in incubationInfo above (startingMonth, duration, litter, litterbag, filter) and type treatment value (level) after colon. Note that units should be specified in the incubationInfo field above.
+          position: bare soil
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm)
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V5: # column 2
+          name: L3 # Name of second variable in accompanying file
+          units: organic matter remaining
+          varDesc: Decline in organic matter content of P. deltoides leaf litter as breakdown proceeded over lawn
+          site: Deerlodge Park # Site where the experiment was conducted
+          duration: 653 # 'experimentalTreatment' here is a place holder for treatments with multiple levels. Replace this word by any of the listed variables in incubationInfo above (startingMonth, duration, litter, litterbag, filter) and type treatment value (level) after colon. Note that units should be specified in the incubationInfo field above.
+          position: over lawn
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm)
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V6: # column 2
+          name: L4 # Name of second variable in accompanying file
+          units: organic matter remaining
+          varDesc: Decline in organic matter content of P. deltoides leaf litter as breakdown proceeded over lawn, under a tree
+          site: Deerlodge Park # Site where the experiment was conducted
+          duration: 653 # 'experimentalTreatment' here is a place holder for treatments with multiple levels. Replace this word by any of the listed variables in incubationInfo above (startingMonth, duration, litter, litterbag, filter) and type treatment value (level) after colon. Note that units should be specified in the incubationInfo field above.
+          position: under tree
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm)
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V7: # column 2
+          name: L5 # Name of second variable in accompanying file
+          units: organic matter remaining
+          varDesc: Decline in organic matter content of P. deltoides leaf litter as breakdown proceeded on bare soil partially shaded by tree # Description of the variable
+          site: Deerlodge Park # Site where the experiment was conducted
+          duration: 653 # 'experimentalTreatment' here is a place holder for treatments with multiple levels. Replace this word by any of the listed variables in incubationInfo above (startingMonth, duration, litter, litterbag, filter) and type treatment value (level) after colon. Note that units should be specified in the incubationInfo field above.
+          position: bare soil
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm)
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:

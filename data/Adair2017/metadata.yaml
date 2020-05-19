@@ -58,7 +58,7 @@ experimentInfo:
         incDesc: Eight types of leaf litter were decomposed at these sites, including the six standard litter types included at all LIDET sites (Table
         # These fields should all be one dimensional arrays. Values for experimental variables with multiple treatment levels should be entered in the variables section and left blank here
         replicates: 4
-        incubationTime: 3650
+        duration: 3650
         startingMonth: november
         litter: # plant species used as litter material for the experiment. All details related to the species must be specified in the initConditions.csv file
         litterbag:
