@@ -1,120 +1,121 @@
-CitationKey: Araujo2012
-doi: 10.1007/s00442-011-2063-4
-EntryAuthor: Agustín Sarquis
+citationKey: Araujo2012 # Unique identifier in the format: LastnameYearJOURNAL (journal may be abbreviated and must be only added when there are two or more entries by the same author)
+doi: 10.1007/s00442-011-2063-4 # DOI of the publication where data is published
+entryAuthor: Agustín Sarquis # First and last name of the person who entered the data in this file
+entryCreationDate: # Date when the data was entered in this file. Format: YYYY-MM-DD
+contactName: Agustín Sarquis # First and last name of contact person (may be the principal investigator supervising the entryAuthor)
+contactEmail: agusarquis@agro.uba.ar # Email of the contact person
+entryNote: # Any notes or comments related to this entry.
+study: One experiment of macro and mesofauna exclusion and another one with fungicide application
 
-SiteInfo:
-  Name: Río Mayo, Chubut, Argentina
-  EcosystemType: steppe
-  MAP:
-    Value: 170
-    Units: mm
-  MAT:
-    Value: 8
-    Units: Celsius
-  RainySeason:
-   - autumn
-   - winter
-  Altitude:
-    Value: 500
-    Units: masl
-  SoilType: Aridisol
-  SoilTexture: coarse
-  Cover:
-    BunchgrassCover: 32
-    ShrubCover: 15
-    BareSoil: 53
-    Units: percentage
-  ANPP:
-    Value: 56
-    Units: g.m-2.y-1
-  Coordinates:
-    Latitude: -45.683333
-    Longitude: -70.266667
+siteInfo:
+        site: Río Mayo
+              # These fields should be arrays of equal length to site array
+        coordinates:
+          latitude: -45.683333 # Latitude in decimal units (check for negative that denotes southern hemisphere)
+          longitude: -70.266667 # Longitude in decimal units (check for negative that denotes western hemisphere)
+        country: Argentina # Name of country where site was conducted
+        MAT: 8 # Mean annual temperature in degrees Celsius
+        MAP: 170 # Mean annual precipitation in mm
+        rainySeason:
+          - autumn
+          - winter
+        elevation: 500 # Elevation of study site in meters above sea level
+        landCover: steppe
+        vegNote: dominant grasses are Stipa speciosa, Stipa humilis and Poa ligularis, and in lesser proportion Bromus pictus and B. setifolius. The dominant shrubs are Mulinum spinosum, Adesmia volckmannii and Senecio filiginoides
+        cover:
+          plantCover: 47 # Total plant cover percentage (if they report cover by specific plant types, fill the fields below)
+          bunchgrassCover: 32
+          shrubCover: 15
+          bareSoil: 53
+        soilTaxonomy:
+          soilOrder: Aridisol # Soil order according to the classification system described below
+          soilFamily: # Soil family description (ex. 'Eutric' for a Eutric Cambisol)
+          soilSeries: # Soil series according to the classification system described below
+          classificationSystem: USDA
 
-ExperimentInfo:
- LitterInfo:
-  LitterType1:
-   Species: Bromus setifolius
-   LifeForm: graminoid
-   Material: recently senesced leaves
-   Amount:
-     Value: 1.5
-     Units: g
- Experiment1:
-    Description: "They incubated B. setifolius leaf litter under shrub cannopies for 3 years using different mesh size litter boxes to exclude macro and mesofauna"
-    LitterBagInfo:
-      Material: wire mesh
-      MeshSize:
-       Value:
-         - 10
-         - 2
-         - 0.01
-       Units: mm
-      Dimentions:
-       Width: 25
-       Lenght: 8
-       Height: 1
-       Units: cm
-      Position:
-        - bare soil
-        - under shrub
-        - under shadecloth
-    Treatment: soil fauna exclusion
-    StartingDate:
-      Month: january
-      Season: summer
-    Duration:
-      Time: 36
-      Units: months
- Experiment2:
-    Description: "They incubated leaf litter from B. setifolius using a fungicide treatment to assess the effect of fungal activity on decomposition"
-    LitterBagInfo:
-      Material: wire mesh
-      MeshSize:
-       Value: 0.01
-       Units: mm
-      Dimentions:
-       Width: 25
-       Lenght: 8
-       Height: 1
-       Units: cm
-      Position:
-        - bare soil
-        - under shrub
-        - under shadecloth
-    Treatment: fungi reduction
-    StartingDate:
-      Month: january
-      Season: summer
-    Duration:
-      Time: 36
-      Units: months
+experimentInfo:
+        incDesc: one experiment with 3 mesh sizes x 5 replicates x 6 harvests and one experiment with fungicide application treatment (yes or no) x 5 replicates x 6 harvests
+        # These fields should all be one dimensional arrays. Values for experimental variables with multiple treatment levels should be entered in the variables section and left blank here
+        replicates: 5 # Number of replicates per treatment
+        duration: 1080 # length of incubation in days
+        startingMonth: january # month during which the study started, all in lower case
+        litter: Bromus pictus # plant species used as litter material for the experiment. All details related to the species must be specified in the initConditions.csv file
+        litterbag:
+          material: wire
+          meshSize: # mesh size in mm referring to one side of the net-square. If no mesh was used, write no
+          dimentions: # size of the full litter bag in cm
+            width: 25
+            length: 8
+            height: 1 # for 3-dimensional designs such as litter boxes in AustinVivanco2006
+          transmitance: # when reported, light transmitance of the mesh material as a percentage of full sunlight for each wavelength
+            total:
+            PAR:
+            UV:
+            UVA:
+            UVB:
+          position: under shadecloth
 
-Variables:
-  V1:
-    Name: Time
-    Units: months
-  V2:
-    Name: 10mm
-    Units: organic matter remaining
-    Description: "B. setifolius litter decomposition without physical exclusion of soil fauna"
-    MeshSize: 10
-    LitterType: LitterType1
-  V3:
-    Name: 2mm
-    Units: organic matter remaining
-    Description: "B. setifolius litter decomposition with physical exclusion of soil macrofauna"
-    MeshSize: 2
-    LitterType: LitterType1
-  V4:
-    Name: 001mm
-    Units: organic matter remaining
-    Description: "B. setifolius litter decomposition with physical exclusion of soil mesofauna"
-    MeshSize: 0.01
-    LitterType: LitterType1
-  V5:
-    Name: 001mmF
-    Units: organic matter remaining
-    Description: "B. setifolius litter decomposition with fungi reduction"
-    MeshSize: 0.01
-    LitterType: LitterType1
+variables: # These describe the columns of your timeSeries.csv file
+        V1: # column 1
+          name: Time
+          units: months
+        V2: # column 2
+          name: 10mm
+          units: organic matter remaining
+          varDesc: B. pictus litter decomposition without physical exclusion of soil fauna
+          site: Río Mayo
+          meshSize: 10
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm)
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V3:
+          name: 2mm
+          units: organic matter remaining
+          varDesc: B. pictus litter decomposition with physical exclusion of soil macrofauna
+          site: Río Mayo
+          meshSize: 2
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm)
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V4:
+          name: 001mm
+          units: organic matter remaining
+          varDesc: B. pictus litter decomposition with physical exclusion of soil mesofauna
+          site: Río Mayo
+          meshSize: 0.01
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm)
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V5:
+          name: 001mmF
+          units: organic matter remaining
+          varDesc: B. pictus litter decomposition with fungi reduction
+          site: Río Mayo
+          meshSize: 0.01
+          compTreat: fungicide application
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm)
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
