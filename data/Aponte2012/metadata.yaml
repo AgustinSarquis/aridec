@@ -1,201 +1,200 @@
-CitationKey: Aponte2012
-doi: 10.1007/s10021-012-9577-4
-EntryAuthor: Agustín Sarquis
+citationKey: Aponte2012 # Unique identifier in the format: LastnameYearJOURNAL (journal may be abbreviated and must be only added when there are two or more entries by the same author)
+doi: 10.1007/s10021-012-9577-4 # DOI of the publication where data is published
+entryAuthor: Agustín Sarquis # First and last name of the person who entered the data in this file
+entryCreationDate: # Date when the data was entered in this file. Format: YYYY-MM-DD
+contactName: Agustín Sarquis # First and last name of contact person (may be the principal investigator supervising the entryAuthor)
+contactEmail: agusarquis@agro.uba.ar # Email of the contact person
+entryNote: This study has a microsite treatment that was not included in this entry. Data in this entry comes from supplementary material # Any notes or comments related to this entry.
+study: Litterbags containing leaf litter of the winter-deciduous Q. canariensis, the evergreen Q. suber and mixed litter were incubated beneath distinct plant covers # Overall study description
 
-SiteInfo:
-  Name:
-    - "San Carlos del Tiradero, Los Arcornocales National Park, Spain"
-    - "La Sauceda, Los Arcornocales National Park, Spain"
-  EcosystemType: forest
-  MAP:
-    Value:
-      - 964
-      - 1470
-    Units: mm
-  MAT:
-    Value:
-      - 16.6
-      - 15.5
-    Units: Celsius
-  RainySeason: winter
-  Altitude:
-    Value:
-     - 347.5
-     - 545
-    Units: masl
-  SoilType:
-    - Palexerafls
-    - Haploxererts
-  Coordinates:
-    Latitude:
-      - 36.16
-      - 36.53
-    Longitude:
-      - -5.59
-      - -5.58
+siteInfo:
+        site:
+         - San Carlos del Tiradero
+         - La Sauceda
+        coordinates:
+          latitude:
+           - 36.16
+           - 36.53
+          longitude:
+           - -5.59
+           - -5.58
+        country:
+         - Spain
+         - Spain
+        MAT:
+         - 16.6
+         - 15.5 # Mean annual temperature in degrees Celsius
+        MAP:
+         - 964
+         - 1470 # Mean annual precipitation in mm
+        rainySeason:
+         - winter
+         - winter
+        elevation:
+         - 347.5
+         - 545 # Elevation of study site in meters above sea level
+        landCover:
+         - forest
+         - forest
+        vegNote:
+         - mixed forest of Quercus suber and Q. canariensis. The arborescent shrubs Erica arborea L., Phillyrea latifolia L. and Pistacia lentiscus L. are abundant in the understorey
+         - mixed forest of Quercus suber and Q. canariensis. The arborescent shrubs Erica arborea L., Phillyrea latifolia L. and Pistacia lentiscus L. are abundant in the understorey
+        cover:
+          plantCover: # Total plant cover percentage (if they report cover by specific plant types, fill the fields below)
+          bunchgrassCover:
+          shrubCover:
+          bareSoil:
+        soilTaxonomy:
+          soilOrder:
+           - Palexeralfs
+           - Palexeralfs
+          soilFamily: # Soil family description (ex. 'Eutric' for a Eutric Cambisol)
+          soilSeries: # Soil series according to the classification system described below
+          classificationSystem: USDA
 
-ExperimentInfo:
- LitterInfo:
-  LitterType1:
-   Species: Quercus canariensis
-   LifeForm: tree
-   Material: recently senesced leaves
-   Carbon:
-     Value: 43.68
-     Units: percentage
-   Nitrogen:
-     Value: 1.24
-     Units: percentage
-   Calcium:
-     Value: 1.484
-     Units: percentage
-   Potasium:
-     Value: 0.544
-     Units: percentage
-   Magnesium:
-     Value: 0.211
-     Units: percentage
-   Phosphorus:
-     Value: 0.100
-     Units: percentage
-   Sulfur:
-     Value: 0.01
-     Units: percentage
-   Manganesium:
-     Value: 0.0864
-     Units: percentage
-   Zinc:
-     Value: 0.002228
-     Units: percentage
-   Copper:
-     Value: 0.000546
-     Units: percentage
-   C:N:
-     Value: 35.4
-   Amount:
-     Value: 2
-     Units: g
-  LitterType2:
-   Species: Quercus suber
-   LifeForm: tree
-   Material: recently senesced leaves
-   Carbon:
-     Value: 46.03
-     Units: percentage
-   Nitrogen:
-     Value: 0.88
-     Units: percentage
-   Calcium:
-     Value: 0.925
-     Units: percentage
-   Potasium:
-     Value: 0.447
-     Units: percentage
-   Magnesium:
-     Value: 0.143
-     Units: percentage
-   Phosphorus:
-     Value: 0.062
-     Units: percentage
-   Sulfur:
-     Value: 0.078
-     Units: percentage
-   Manganesium:
-     Value: 0.1075
-     Units: percentage
-   Zinc:
-     Value: 0.001705
-     Units: percentage
-   Copper:
-     Value: 0.000472
-     Units: percentage
-   C:N:
-     Value: 53.0
-   Amount:
-     Value: 2
-     Units: g
- Experiment1:
-    Description: "Litterbags containing leaf litter of the winter-deciduous Q. canariensis, the evergreen Q. suber and mixed litter were incubated beneath distinct plant covers"
-    LitterBagInfo:
-      Material: fiberglass
-      MeshSize:
-       Value: 2
-       Units: mm
-      Dimentions:
-       Width: 11
-       Lenght: 11
-       Units: cm
-      Position:
-        - under tree
-        - on top of soil litter layer
-    Treatment:
-      - litter type
-      - location
-      - litter mixture
-    StartingDate:
-      Month: november
-      Season: autumn
-    Duration:
-      Time: 24
-      Units: months
+experimentInfo:
+        incDesc: 2 litter types x 2 litter mixture levels (yer or no) x 2 sites x 6 replicates x 4 harvests
+        # These fields should all be one dimensional arrays. Values for experimental variables with multiple treatment levels should be entered in the variables section and left blank here
+        replicates: 6 # Number of replicates per treatment
+        duration: 730 # length of incubation in days
+        startingMonth: november # month during which the study started, all in lower case
+        litter: # plant species used as litter material for the experiment. All details related to the species must be specified in the initConditions.csv file
+        litterbag:
+          material: fiberglass
+          meshSize: 2 # mesh size in mm referring to one side of the net-square. If no mesh was used, write no
+          dimentions: # size of the full litter bag in cm
+            width: 11
+            length: 11
+            height: # for 3-dimensional designs such as litter boxes in AustinVivanco2006
+          transmitance: # when reported, light transmitance of the mesh material as a percentage of full sunlight for each wavelength
+            total:
+            PAR:
+            UV:
+            UVA:
+            UVB:
+          position: under tree
 
-Variables:
-  V1:
-    Name: Time
-    Units: months
-  V2:
-    Name: C_LS
-    Units: C remaining
-    Description: "Carbon remaining from Q. canariensis leaf litter decomposing at La Sauceda"
-    LitterType: LitterType1
-    Site: "La Sauceda, Los Arcornocales National Park, Spain"
-    MixedLitter: No
-  V3:
-    Name: S_LS
-    Units: C remaining
-    Description: "Carbon remaining from Q. suber leaf litter decomposing at La Sauceda"
-    LitterType:  LitterType2
-    Site: "La Sauceda, Los Arcornocales National Park, Spain"
-    MixedLitter: No
-  V4:
-    Name: MC_LS
-    Units: C remaining
-    Description: "Carbon remaining from Q. canariensis leaf litter mixed with Q. suber decomposing at La Sauceda"
-    LitterType: LitterType1
-    Site: "La Sauceda, Los Arcornocales National Park, Spain"
-    MixedLitter: Yes
-  V5:
-    Name: MS_LS
-    Units: C remaining
-    Description: "Carbon remaining from Q. suber leaf litter mixed with Q. canariensis decomposing at La Sauceda"
-    LitterType: LitterType2
-    Site: "La Sauceda, Los Arcornocales National Park, Spain"
-    MixedLitter: Yes
-  V6:
-    Name: C_T
-    Units: C remaining
-    Description: "Carbon remaining from Q. canariensis leaf litter decomposing at Tiradero"
-    LitterType: LitterType1
-    Site: "San Carlos del Tiradero, Los Arcornocales National Park, Spain"
-    MixedLitter: No
-  V7:
-    Name: S_T
-    Units: C remaining
-    Description: "Carbon remaining from Q. suber leaf litter decomposing at Tiradero"
-    LitterType: LitterType2
-    Site: "San Carlos del Tiradero, Los Arcornocales National Park, Spain"
-    MixedLitter: No
-  V8:
-    Name: MC_T
-    Units: C remaining
-    Description: "Carbon remaining from Q. canariensis leaf litter mixed with Q. suber decomposing at Tiradero"
-    LitterType: LitterType1
-    Site: "San Carlos del Tiradero, Los Arcornocales National Park, Spain"
-    MixedLitter: Yes
-  V9:
-    Name: MS_T
-    Units: C remaining
-    Description: "Carbon remaining from Q. suber leaf litter mixed with Q. canariensis decomposing at Tiradero"
-    LitterType: LitterType2
-    Site: "San Carlos del Tiradero, Los Arcornocales National Park, Spain"
-    MixedLitter: Yes
+variables: # These describe the columns of your timeSeries.csv file
+        V1: # column 1
+          name: Time
+          units: months
+        V2: # column 2
+          name: C_LS
+          units: C remaining
+          varDesc: Carbon remaining from Q. canariensis leaf litter decomposing at La Sauceda
+          site: La Sauceda
+          litter: Quercus canariensis
+          compTreat: litter not mixecd
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm)
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V3:
+          name: S_LS
+          units: C remaining
+          varDesc: Carbon remaining from Q. suber leaf litter decomposing at La Sauceda
+          site: La Sauceda
+          litter: Quercus suber
+          compTreat: litter not mixecd
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm)
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V4:
+          name: MC_LS
+          units: C remaining
+          varDesc: Carbon remaining from Q. canariensis leaf litter mixed with Q. suber decomposing at La Sauceda
+          site: La Sauceda
+          litter: Quercus canariensis
+          compTreat: litter mixed
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm)
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V5:
+          name: MS_LS
+          units: C remaining
+          varDesc: Carbon remaining from Q. suber leaf litter mixed with Q. canariensis decomposing at La Sauceda
+          site: La Sauceda
+          litter: Quercus suber
+          compTreat: litter mixed
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm)
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V6:
+          name: C_T
+          units: C remaining
+          varDesc: Carbon remaining from Q. canariensis leaf litter decomposing at Tiradero
+          site: San Carlos del Tiradero
+          litter: Quercus canariensis
+          compTreat: litter not mixed
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm)
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V7:
+          name: S_T
+          units: C remaining
+          varDesc: Carbon remaining from Q. suber leaf litter decomposing at Tiradero
+          site: San Carlos del Tiradero
+          litter: Quercus suber
+          compTreat: litter not mixed
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm)
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V8:
+          name: MC_T
+          units: C remaining
+          varDesc: Carbon remaining from Q. canariensis leaf litter mixed with Q. suber decomposing at Tiradero
+          site: San Carlos del Tiradero
+          litter: Quercus canariensis
+          compTreat: litter mixed
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm)
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V9:
+          name: MS_T
+          units: C remaining
+          varDesc: Carbon remaining from Q. suber leaf litter mixed with Q. canariensis decomposing at Tiradero
+          site: San Carlos del Tiradero
+          litter: Quercus suber
+          compTreat: litter mixed
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm)
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
