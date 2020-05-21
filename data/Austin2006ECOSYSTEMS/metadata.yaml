@@ -1,0 +1,91 @@
+citationKey: Austin2006ECOSYSTEMS
+doi: 10.1007/s10021-005-0039-0
+entryAuthor: Agustín Sarquis
+entryCreationDate: 2018-12-11
+contactName: Agustín Sarquis
+contactEmail: agusarquis@agro.uba.ar
+entryNote: # Any notes or comments related to this entry.
+study: They measured litter decomposition with a nitrification inhibition treatment
+
+siteInfo:
+        site: Río Mayo
+              # These fields should be arrays of equal length to site array
+        coordinates:
+          latitude: -45.683333
+          longitude: -70.266667
+        country: Argentina
+        MAT: 8
+        MAP: 155
+        rainySeason:
+          - autumn
+          - winter
+        elevation: 500
+        landCover: steppe
+        vegNote: cover is discontinuous, dominant grass species is Stipa speciosa and dominant shrub species, Mulinum spinosum.
+        cover:
+          plantCover: 38
+          bunchgrassCover: 25
+          shrubCover: 13
+          bareSoil: 62
+        soilTaxonomy:
+          soilOrder: Aridisol
+          soilFamily: # Soil family description (ex. 'Eutric' for a Eutric Cambisol)
+          soilSeries: # Soil series according to the classification system described below
+          classificationSystem: USDA
+
+experimentInfo:
+        incDesc: 2 nitrification treatments x 8 replicates x 6 harvests
+        # These fields should all be one dimensional arrays. Values for experimental variables with multiple treatment levels should be entered in the variables section and left blank here
+        replicates: 8
+        duration: 900
+        startingMonth: april
+        litter: Pappostipa speciosa
+        litterbag:
+          material: fiberglass
+          meshSize: 2
+          dimentions: # size of the full litter bag in cm
+            width: 10
+            length: 10
+            height: # for 3-dimensional designs such as litter boxes in AustinVivanco2006
+          transmitance: # when reported, light transmitance of the mesh material as a percentage of full sunlight for each wavelength
+            total:
+            PAR:
+            UV:
+            UVA:
+            UVB:
+          position: bare soil
+
+variables: # These describe the columns of your timeSeries.csv file
+        V1: # column 1
+          name: Time
+          units: years
+        V2: # column 2
+          name: OMC
+          units: organic matter remaining
+          varDesc: Litter organic matter percentage remaining at harvest time without any nitrification inhibition treatment
+          site: Río Mayo
+          experimentalTreatment: # 'experimentalTreatment' here is a place holder for treatments with multiple levels. Replace this word by any of the listed variables in incubationInfo above (startingMonth, duration, litter, litterbag, meshSize) and type treatment value (level) after colon. Note that units should be specified in the incubationInfo field above.
+          compTreat: nitrification not inhibited
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm)
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V3:
+          name: OMI
+          units: organic matter remaining
+          varDesc: Litter organic matter percentage remaining at harvest time with a nitrification inhibition treatment
+          site: Río Mayo
+          experimentalTreatment: # 'experimentalTreatment' here is a place holder for treatments with multiple levels. Replace this word by any of the listed variables in incubationInfo above (startingMonth, duration, litter, litterbag, meshSize) and type treatment value (level) after colon. Note that units should be specified in the incubationInfo field above.
+          compTreat: nitrification inhibited
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm)
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:

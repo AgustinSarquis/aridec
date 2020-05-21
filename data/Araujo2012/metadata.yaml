@@ -1,7 +1,7 @@
 citationKey: Araujo2012 # Unique identifier in the format: LastnameYearJOURNAL (journal may be abbreviated and must be only added when there are two or more entries by the same author)
 doi: 10.1007/s00442-011-2063-4 # DOI of the publication where data is published
 entryAuthor: Agustín Sarquis # First and last name of the person who entered the data in this file
-entryCreationDate: # Date when the data was entered in this file. Format: YYYY-MM-DD
+entryCreationDate: 2019-01-23
 contactName: Agustín Sarquis # First and last name of contact person (may be the principal investigator supervising the entryAuthor)
 contactEmail: agusarquis@agro.uba.ar # Email of the contact person
 entryNote: # Any notes or comments related to this entry.
