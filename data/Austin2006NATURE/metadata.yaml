@@ -1,0 +1,241 @@
+citationKey: Austin2006NATURE
+doi: 10.1038/nature05038 # DOI of the publication where data is published
+entryAuthor: Agustín Sarquis # First and last name of the person who entered the data in this file
+entryCreationDate: 2018-12-11 # Date when the data was entered in this file. Format: YYYY-MM-DD
+contactName: Agustín Sarquis # First and last name of contact person (may be the principal investigator supervising the entryAuthor)
+contactEmail: agusarquis@agro.uba.ar # Email of the contact person
+entryNote: # Any notes or comments related to this entry.
+study: One experiment with a light attenuation treatment plus a biocide treatment, and another one with labile C and N addition
+
+siteInfo:
+        site: Río Mayo
+              # These fields should be arrays of equal length to site array
+        coordinates:
+          latitude: -45.683333
+          longitude: -70.266667
+        country: Argentina
+        MAT: 8
+        MAP: 155
+        rainySeason:
+         - autumn
+         - winter
+        elevation: 500
+        landCover: steppe
+        vegNote: cover is discontinuous, dominant grass species is Stipa speciosa and dominant shrub species, Mulinum spinosum
+        cover:
+          plantCover: 38
+          bunchgrassCover: 25
+          shrubCover: 13
+          bareSoil: 62
+        soilTaxonomy:
+          soilOrder: Aridisol
+          soilFamily: # Soil family description (ex. 'Eutric' for a Eutric Cambisol)
+          soilSeries: # Soil series according to the classification system described below
+          classificationSystem: USDA
+
+experimentInfo:
+        incDesc: one experiment with 3 radiation levels x 2 biocide levels x 3 harvests x 5 replicates, and another one with 4 levels of substrate addition x 5 replicates x 4 harvests
+        # These fields should all be one dimensional arrays. Values for experimental variables with multiple treatment levels should be entered in the variables section and left blank here
+        replicates: 5
+        duration: 540
+        startingMonth: # month during which the study started, all in lower case
+        litter: mixture
+        litterbag:
+          material: fiberglass
+          meshSize: 2
+          dimentions: # size of the full litter bag in cm
+            width:
+            length:
+            height: # for 3-dimensional designs such as litter boxes in AustinVivanco2006
+          transmitance: # when reported, light transmitance of the mesh material as a percentage of full sunlight for each wavelength
+            total:
+            PAR:
+            UV:
+            UVA:
+            UVB:
+          position: bare soil
+
+variables: # These describe the columns of your timeSeries.csv file
+        V1: # column 1
+          name: Time
+          units: years
+        V2:
+          name: TR
+          units: organic matter remaining
+          varDesc: Pappostipa speciosa, Poa ligularis and Stipa humilis litter with total solar radiation and without biocide application
+          site: Río Mayo
+          dimentions: # size of the full litter bag in cm
+           width: 10
+           length: 20
+           height: 6
+          compTreat: no biocide
+          filter: # for photodegradation experiments only
+           threshold: 0
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total: 95
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V3:
+          name: UVBB
+          units: organic matter remaining
+          varDesc: Pappostipa speciosa, Poa ligularis and Stipa humilis litter with UV-B solar radiation blocked and without biocide application
+          site: Río Mayo
+          dimentions: # size of the full litter bag in cm
+           width: 10
+           length: 20
+           height: 6
+          compTreat: no biocide
+          filter: # for photodegradation experiments only
+           threshold: 310
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V4:
+          name: TB
+          units: organic matter remaining
+          varDesc: Pappostipa speciosa, Poa ligularis and Stipa humilis litter with total solar radiation blocked and without biocide application
+          site: Río Mayo
+          dimentions: # size of the full litter bag in cm
+           width: 10
+           length: 20
+           height: 6
+          compTreat: no biocide
+          filter: # for photodegradation experiments only
+           threshold: 700
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total: 10
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V5:
+          name: TR_B
+          units: organic matter remaining
+          varDesc: Pappostipa speciosa, Poa ligularis and Stipa humilis litter with total solar radiation and biocide application
+          site: Río Mayo
+          dimentions: # size of the full litter bag in cm
+           width: 10
+           length: 20
+           height: 6
+          compTreat: biocide
+          filter: # for photodegradation experiments only
+           threshold: 0
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total: 95
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V6:
+          name: UVBB_B
+          units: organic matter remaining
+          varDesc: Pappostipa speciosa, Poa ligularis and Stipa humilis litter with UV-B solar radiation blocked and biocide application
+          site: Río Mayo
+          dimentions: # size of the full litter bag in cm
+           width: 10
+           length: 20
+           height: 6
+          compTreat: biocide
+          filter: # for photodegradation experiments only
+           threshold: 310
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V7:
+          name: TB_B
+          units: organic matter remaining
+          varDesc: Pappostipa speciosa, Poa ligularis and Stipa humilis litter with total solar radiation blocked and biocide application
+          site: Río Mayo
+          dimentions: # size of the full litter bag in cm
+           width: 10
+           length: 20
+           height: 6
+          compTreat: biocide
+          filter: # for photodegradation experiments only
+           threshold: 700
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total: 10
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V8:
+          name: NOA
+          units: organic matter remaining
+          varDesc: Pappostipa speciosa, Poa ligularis and Stipa humilis litter without any substrate addition
+          site: Río Mayo
+          dimentions: # size of the full litter bag in cm
+           width: 10
+           length: 20
+           height: # for 3-dimensional designs such as litter boxes in AustinVivanco2006
+          compTreat: no substrate addition
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm)
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V9:
+          name: CA
+          units: organic matter remaining
+          varDesc: Pappostipa speciosa, Poa ligularis and Stipa humilis litter with labile C addition
+          site: Río Mayo
+          dimentions: # size of the full litter bag in cm
+           width: 10
+           length: 20
+           height: # for 3-dimensional designs such as litter boxes in AustinVivanco2006
+          compTreat: C addition
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm)
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V10:
+          name: NA
+          units: organic matter remaining
+          varDesc: Pappostipa speciosa, Poa ligularis and Stipa humilis litter with inorganic N addition
+          site: Río Mayo
+          dimentions: # size of the full litter bag in cm
+           width: 10
+           length: 20
+           height: # for 3-dimensional designs such as litter boxes in AustinVivanco2006
+          compTreat: N addition
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm)
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V11:
+          name: CNA
+          units: organic matter remaining
+          varDesc: Pappostipa speciosa, Poa ligularis and Stipa humilis litter with labile C and inorganic N addition
+          site: Río Mayo
+          dimentions: # size of the full litter bag in cm
+           width: 10
+           length: 20
+           height: # for 3-dimensional designs such as litter boxes in AustinVivanco2006
+          compTreat: C and N addition
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm)
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
