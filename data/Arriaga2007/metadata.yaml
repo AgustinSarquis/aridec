@@ -1,0 +1,401 @@
+citationKey: Arriaga2007 # Unique identifier in the format: LastnameYearJOURNAL (journal may be abbreviated and must be only added when there are two or more entries by the same author)
+doi: 10.1007/s11258-006-9178-4 # DOI of the publication where data is published
+entryAuthor: Agustín Sarquis # First and last name of the person who entered the data in this file
+entryCreationDate: # Date when the data was entered in this file. Format: YYYY-MM-DD
+contactName: Agustín Sarquis # First and last name of contact person (may be the principal investigator supervising the entryAuthor)
+contactEmail: agusarquis@agro.uba.ar # Email of the contact person
+entryNote: They have litter crude fiber content values (lignin, hemicellulose and cellulose) as a whole that were not included in this entry.
+           They classify their soils as Yermosols, Xerosols and Regosols, but they don't indicate the classification system.
+           They used two mesh sizes but didn't include them in the analysis because the effect wasn't significant. The biggest one is included.
+study: Leaf litter from 5 species was used in a decomposition experiment under two radiation and rainfall treatments
+
+siteInfo:
+        site: La Paz-El Carrizal basin
+              # These fields should be arrays of equal length to site array
+        coordinates:
+          latitude: 24.13 # Latitude in decimal units (check for negative that denotes southern hemisphere)
+          longitude: -110.43 # Longitude in decimal units (check for negative that denotes western hemisphere)
+        country: Mexico # Name of country where site was conducted
+        MAT: 23.6 # Mean annual temperature in degrees Celsius
+        MAP: 176.1 # Mean annual precipitation in mm
+        rainySeason: summer
+        elevation: 11
+        landCover: shrubland
+        vegNote: dominated by the trees Prosopis articulata, Cyrtocarpa edulis, Bursera microphylla; the shrubs Jatropha cinerea, J. cuneata and Fouquieria diguetii; and the columnar cacti Pachycereus pringlei and Stenocereus thurberi
+        cover:
+          plantCover: # Total plant cover percentage (if they report cover by specific plant types, fill the fields below)
+          bunchgrassCover:
+          shrubCover:
+          bareSoil:
+        soilTaxonomy:
+          soilOrder: # Soil order according to the classification system described below
+          soilFamily: # Soil family description (ex. 'Eutric' for a Eutric Cambisol)
+          soilSeries: # Soil series according to the classification system described below
+          classificationSystem: # Name of classification system used. Valid fields are: USDA, FAO, and WRB.
+
+experimentInfo:
+        incDesc: 5 species x 2 positions x 2 starting dates x 2 mesh sizes x 3 replicates
+        # These fields should all be one dimensional arrays. Values for experimental variables with multiple treatment levels should be entered in the variables section and left blank here
+        replicates: 3 # Number of replicates per treatment
+        duration: 365 # length of incubation in days
+        startingMonth: # month during which the study started, all in lower case
+        litter: # plant species used as litter material for the experiment. All details related to the species must be specified in the initConditions.csv file
+        litterbag:
+          material: plastic
+          meshSize: 3 # mesh size in mm referring to one side of the net-square. If no mesh was used, write no
+          dimentions: # size of the full litter bag in cm
+            width:
+            length:
+            height: # for 3-dimensional designs such as litter boxes in AustinVivanco2006
+          transmitance: # when reported, light transmitance of the mesh material as a percentage of full sunlight for each wavelength
+            total:
+            PAR:
+            UV:
+            UVA:
+            UVB:
+          position: # position of litterbags in the field, valid options are: bare soil, decomposition bed, under litter, over litter, over lawn, next to grass, under tree/shrub/grass, buried X cm deep, underwater, under rainout shelter, under frames, suspended X cm, under shadecloth
+
+variables: # These describe the columns of your timeSeries.csv file
+        V1: # column 1
+          name: Time
+          units: months
+        V2: # column 2
+          name: PaWBS
+          units: mass remaining
+          varDesc: Mass loss of P. articulata leaf litter during a wet year on bare soil
+          site: La Paz-El Carrizal basin
+          litter: Prosopis articulata
+          startingMonth: july
+          position: bare soil
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm)
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V3: # column 3
+          name: PaWPC
+          units: mass remaining
+          varDesc: Mass loss of P. articulata leaf litter during a wet year under tree canopy
+          site: La Paz-El Carrizal basin
+          litter: Prosopis articulata
+          startingMonth: july
+          position: under tree
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm)
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V4: # column 4
+          name: PaDBS
+          units: mass remaining
+          varDesc: Mass loss of P. articulata leaf litter during a dry year on bare soil
+          site: La Paz-El Carrizal basin
+          litter: Prosopis articulata
+          startingMonth: may
+          position: bare soil
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm)
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V5: # column 5
+          name: PaDPC
+          units: mass remaining
+          varDesc: Mass loss of P. articulata leaf litter during a dry year under tree canopy
+          site: La Paz-El Carrizal basin
+          litter: Prosopis articulata
+          startingMonth: may
+          position: under tree
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm)
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V6: # column 6
+          name: JcWBS
+          units: mass remaining
+          varDesc: Mass loss of J. cinerea leaf litter during a wet year on bare soil
+          site: La Paz-El Carrizal basin
+          litter: Jatropha cinerea
+          startingMonth: july
+          position: bare soil
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm)
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V7: # column 7
+          name: JcWPC
+          units: mass remaining
+          varDesc: Mass loss of J. cinerea leaf litter during a wet year under tree canopy
+          site: La Paz-El Carrizal basin
+          litter: Jatropha cinerea
+          startingMonth: july
+          position: under tree
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm)
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V8: # column 8
+          name: JcDBS
+          units: mass remaining
+          varDesc: Mass loss of J. cinerea leaf litter during a dry year on bare soil
+          site: La Paz-El Carrizal basin
+          litter: Jatropha cinerea
+          startingMonth: may
+          position: bare soil
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm)
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V9: # column 9
+          name: JcDPC
+          units: mass remaining
+          varDesc: Mass loss of J. cinerea leaf litter during a dry year under tree canopy
+          site: La Paz-El Carrizal basin
+          litter: Jatropha cinerea
+          startingMonth: may
+          position: under tree
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm)
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V10: # column 10
+          name: JcuWBS
+          units: mass remaining
+          varDesc: Mass loss of J. cuneata leaf litter during a wet year on bare soil
+          site: La Paz-El Carrizal basin
+          litter: Jatropha cuneata
+          startingMonth: july
+          position: bare soil
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm)
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V11: # column 11
+          name: JcuWPC
+          units: mass remaining
+          varDesc: Mass loss of J. cuneata leaf litter during a wet year under tree canopy
+          site: La Paz-El Carrizal basin
+          litter: Jatropha cuneata
+          startingMonth: july
+          position: under tree
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm)
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V12: # column 12
+          name: JcuDBS
+          units: mass remaining
+          varDesc: Mass loss of J. cuneata leaf litter during a dry year on bare soil
+          site: La Paz-El Carrizal basin
+          litter: Jatropha cuneata
+          startingMonth: may
+          position: bare soil
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm)
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V13: # column 13
+          name: JcuDPC
+          units: mass remaining
+          varDesc: Mass loss of J. cuneata leaf litter during a dry year under tree canopy
+          site: La Paz-El Carrizal basin
+          litter: Jatropha cuneata
+          startingMonth: may
+          position: under tree
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm)
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V14: # column 14
+          name: CeWBS
+          units: mass remaining
+          varDesc: Mass loss of C. edulis leaf litter during a wet year on bare soil
+          site: La Paz-El Carrizal basin
+          litter: Cyrtocarpa edulis
+          startingMonth: july
+          position: bare soil
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm)
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V15: # column 15
+          name: CeWPC
+          units: mass remaining
+          varDesc: Mass loss of C. edulis leaf litter during a wet year under tree canopy
+          site: La Paz-El Carrizal basin
+          litter: Cyrtocarpa edulis
+          startingMonth: july
+          position: under tree
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm)
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V16: # column 16
+          name: CeDBS
+          units: mass remaining
+          varDesc: Mass loss of C. edulis leaf litter during a dry year on bare soil
+          site: La Paz-El Carrizal basin
+          litter: Cyrtocarpa edulis
+          startingMonth: may
+          position: bare soil
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm)
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V17: # column 17
+          name: CeDPC
+          units: mass remaining
+          varDesc: Mass loss of C. edulis leaf litter during a dry year under tree canopy
+          site: La Paz-El Carrizal basin
+          litter: Cyrtocarpa edulis
+          startingMonth: may
+          position: under tree
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm)
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V18: # column 18
+          name: FdWBS
+          units: mass remaining
+          varDesc: Mass loss of F. diguetii leaf litter during a wet year on bare soil
+          site: La Paz-El Carrizal basin
+          litter: Fouquieria diguetii
+          startingMonth: july
+          position: bare soil
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm)
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V19: # column 19
+          name: FdWPC
+          units: mass remaining
+          varDesc: Mass loss of F. diguetii leaf litter during a wet year under tree canopy
+          site: La Paz-El Carrizal basin
+          litter: Fouquieria diguetii
+          startingMonth: july
+          position: under tree
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm)
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V20: # column 20
+          name: FdDBS
+          units: mass remaining
+          varDesc: Mass loss of F. diguetii leaf litter during a dry year on bare soil
+          site: La Paz-El Carrizal basin
+          litter: Fouquieria diguetii
+          startingMonth: may
+          position: bare soil
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm)
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V21: # column 21
+          name: FdDPC
+          units: mass remaining
+          varDesc: Mass loss of F. diguetii leaf litter during a dry year under tree canopy
+          site: La Paz-El Carrizal basin
+          litter: Fouquieria diguetii
+          startingMonth: may
+          position: under tree
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm)
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
