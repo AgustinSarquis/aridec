@@ -1,216 +1,181 @@
-CitationKey: Ball2019
-doi: 10.1016/j.jaridenv.2018.09.004
-EntryAuthor: Agustín Sarquis
+citationKey: Ball2019  # Unique identifier in the format: LastnameYearJOURNAL (journal may be abbreviated and must be only added when there are two or more entries by the same author)
+doi: 10.1016/j.jaridenv.2018.09.004 # DOI of the publication where data is published
+entryAuthor: Agustín Sarquis # First and last name of the person who entered the data in this file
+entryCreationDate: 2020-01-27 # Date when the data was entered in this file. Format: YYYY-MM-DD
+contactName: Agustín Sarquis # First and last name of contact person (may be the principal investigator supervising the entryAuthor)
+contactEmail: agusarquis@agro.uba.ar # Email of the contact person
+entryNote: # Any notes or comments related to this entry.
+study: Litter decomposed with and without UV radiation for 9 months, in a long-term N + P enrichment experiment in both urban and outlying areas of the Sonoran Desert
 
-SiteInfo:
-  Name: Sonoran Desert, Arizona, USA
-  EcosystemType: desert
-  MAP:
-    Value: 193
-    Units: mm
-  MAT:
-    Value: 21.93
-    Units: Celsius
-  RainySeason:
-    - summer
-    - winter
-  Altitude:
-    Value: 391
-    Units: masl
-  SoilType: Aridisols
-  Coordinates:
-    Latitude: 33.577
-    Longitude: -112.081
+siteInfo:
+        site: Phoenix
+              # These fields should be arrays of equal length to site array
+        coordinates:
+          latitude: 33.577
+          longitude: -112.081
+        country: USA
+        MAT: 21.93
+        MAP: 193
+        rainySeason:
+         - summer
+         - winter
+        elevation: 391
+        landCover: desert
+        vegNote: Ambrosia deltoidea is the dominant species
+        cover:
+          plantCover: # Total plant cover percentage (if they report cover by specific plant types, fill the fields below)
+          bunchgrassCover:
+          shrubCover:
+          bareSoil:
+        soilTaxonomy:
+          soilOrder: Aridisols
+          soilFamily: # Soil family description (ex. 'Eutric' for a Eutric Cambisol)
+          soilSeries: # Soil series according to the classification system described below
+          classificationSystem: USDA
 
-ExperimentInfo:
- LitterInfo:
-  LitterType1:
-   Species: Ambrosia deltoidea
-   LifeForm: shrub
-   Material: senesced aboveground parts
-   Carbon:
-     Value: 46.75
-     Units: percentage
-   Nitrogen:
-     Value: 2.75
-     Units: percentage
-   Phosphorus:
-     Value: 0.12
-     Units: percentage
-   Lignin:
-     Value: 8.76
-     Units: percentage
-   Cellulose:
-     Value: 7.95
-     Units: percentage
-   Hemicellulose:
-     Value: 5.91
-     Units: percentage
-   C:N:
-     Value: 17
-   Amount:
-     Value: 3
-     Units: g
-  LitterType2:
-   Species: Ambrosia deltoidea
-   LifeForm: shrub
-   Material: senesced aboveground parts
-   Carbon:
-     Value: 47.6
-     Units: percentage
-   Nitrogen:
-     Value: 2.8
-     Units: percentage
-   Phosphorus:
-     Value: 0.10
-     Units: percentage
-   Lignin:
-     Value: 5.07
-     Units: percentage
-   Cellulose:
-     Value: 7.08
-     Units: percentage
-   Hemicellulose:
-     Value: 5.00
-     Units: percentage
-   C:N:
-     Value: 17
-   Amount:
-     Value: 3
-     Units: g
-  LitterType3:
-   Species: Ambrosia deltoidea
-   LifeForm: shrub
-   Material: senesced aboveground parts
-   Carbon:
-     Value: 61.5
-     Units: percentage
-   Nitrogen:
-     Value: 2.46
-     Units: percentage
-   Phosphorus:
-     Value: 0.11
-     Units: percentage
-   Lignin:
-     Value: 8.54
-     Units: percentage
-   Cellulose:
-     Value: 8.69
-     Units: percentage
-   Hemicellulose:
-     Value: 7.88
-     Units: percentage
-   C:N:
-     Value: 25
-   Amount:
-     Value: 3
-     Units: g
-  LitterType4:
-   Species: Ambrosia deltoidea
-   LifeForm: shrub
-   Material: senesced aboveground parts
-   Carbon:
-     Value: 49.56
-     Units: percentage
-   Nitrogen:
-     Value: 2.36
-     Units: percentage
-   Phosphorus:
-     Value: 0.07
-     Units: percentage
-   Lignin:
-     Value: 8.28
-     Units: percentage
-   Cellulose:
-     Value: 11.19
-     Units: percentage
-   Hemicellulose:
-     Value: 6.90
-     Units: percentage
-   C:N:
-     Value: 21
-   Amount:
-     Value: 3
-     Units: g
- Experiment1:
-  Description: "Litter was decomposed with and without UV radiation for 9 months, in a long-term N + P enrichment experiment in both urban and outlying areas of the Sonoran Desert"
-  LitterBagInfo:
-   Dimentions:
-    Width: 10
-    Lenght: 10
-    Units: cm
-   Position: bare soil
-  FilterInfo:
-   FilterType1:
-    Name: Aclar
-    Wavelenght:
-     Value: 280
-     Units: nm
-   FilterType2:
-    Name: CON-TROL-CURE UV Blocking Film
-    Wavelenght:
-     Value: 400
-     Units: nm
-  Treatment:
-    - radiation
-    - location
-    - fertilization
-  StartingDate:
-   Month: december
-   Season: winter
-  Duration:
-   Time: 9
-   Units: months
+experimentInfo:
+        incDesc: 2 filters x 4 litter qualities x 4 harvests x 16 replicates
+        # These fields should all be one dimensional arrays. Values for experimental variables with multiple treatment levels should be entered in the variables section and left blank here
+        replicates: 16
+        duration: 280
+        startingMonth: december
+        litter: # plant species used as litter material for the experiment. All details related to the species must be specified in the initConditions.csv file
+        litterbag:
+          material: # mesh type used to construct the litter bags, options are: wire, aluminum, window screening, net curtain, bolting cloth, plastic, fiberglass, nylon, polypropylene, polyester, polyethylene, polyamide. If no mesh was used, write no
+          meshSize: # mesh size in mm referring to one side of the net-square. If no mesh was used, write no
+          dimentions: # size of the full litter bag in cm
+            width: 10
+            length: 10
+            height: # for 3-dimensional designs such as litter boxes in Austin2006NATURE
+          transmitance: # when reported, light transmitance of the mesh material as a percentage of full sunlight for each wavelength
+            total:
+            PAR:
+            UV:
+            UVA:
+            UVB:
+          position: bare soil
 
-Variables:
-  V1:
-    Name: Time
-    Units: weeks
-  V2:
-    Name: IFT
-    Units: non-ash dry mass remaining
-    Description: "Fertilized inside city litter decomposed under total radiation treatment"
-    FilterType: FilterType1
-    LitterType: LitterType1
-  V3:
-    Name: IFR
-    Units: non-ash dry mass remaining
-    Description: "Fertilized inside city litter decomposed under reduced UV radiation treatment"
-    FilterType: FilterType2
-    LitterType: LitterType1
-  V4:
-    Name: ICT
-    Units: non-ash dry mass remaining
-    Description: "Non-fertilized inside city litter decomposed under total radiation treatment"
-    FilterType: FilterType1
-    LitterType: LitterType2
-  V5:
-    Name: ICR
-    Units: non-ash dry mass remaining
-    Description: "Non-fertilized inside city litter decomposed under reduced UV radiation treatment"
-    FilterType: FilterType2
-    LitterType: LitterType2
-  V6:
-    Name: OFT
-    Units: non-ash dry mass remaining
-    Description: "Fertilized outside city litter decomposed under total radiation treatment"
-    FilterType: FilterType1
-    LitterType: LitterType3
-  V7:
-    Name: OFR
-    Units: non-ash dry mass remaining
-    Description: "Fertilized outside city litter decomposed under reduced UV radiation treatment"
-    FilterType: FilterType2
-    LitterType: LitterType3
-  V8:
-    Name: OCT
-    Units: non-ash dry mass remaining
-    Description: "Non-fertilized outside city litter decomposed under total radiation treatment"
-    FilterType: FilterType1
-    LitterType: LitterType4
-  V9:
-    Name: OCR
-    Units: non-ash dry mass remaining
-    Description: "Non-fertilized outside city litter decomposed under reduced UV radiation treatment"
-    FilterType: FilterType2
-    LitterType: LitterType4
+variables: # These describe the columns of your timeSeries.csv file
+        V1: # column 1
+          name: Time
+          units: # Time units used in accompanying file. Possible options are: days, weeks, months, years
+        V2:
+          name: IFT
+          units: organic matter remaining
+          varDesc: Litter from fertilized plants grown inside the city decomposed under total radiation
+          site: Phoenix
+          litter: Ambrosia deltoidea1
+          compTreat: fertilized
+          filter: # for photodegradation experiments only
+           threshold: 0
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V3:
+          name: IFR
+          units: organic matter remaining
+          varDesc: Litter from fertilized plants grown inside the city decomposed under reduced UV radiation
+          site: Phoenix
+          litter: Ambrosia deltoidea1
+          compTreat: fertilized
+          filter: # for photodegradation experiments only
+           threshold: 400
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V4:
+          name: ICT
+          units: organic matter remaining
+          varDesc: Litter from non fertilized plants grown inside the city decomposed under total radiation
+          site: Phoenix
+          litter: Ambrosia deltoidea2
+          compTreat: non fertilized
+          filter: # for photodegradation experiments only
+           threshold: 0 # wavelength bellow which the filter blocks radiation (in nm)
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V5:
+          name: ICR
+          units: organic matter remaining
+          varDesc: Litter from non fertilized plants grown inside the city decomposed under reduced UV radiation
+          site: Phoenix
+          litter: Ambrosia deltoidea2
+          compTreat: non fertilized
+          filter: # for photodegradation experiments only
+           threshold: 400 # wavelength bellow which the filter blocks radiation (in nm)
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V6:
+          name: OFT
+          units: organic matter remaining
+          varDesc: Litter from fertilized plants grown outside the city decomposed under total radiation
+          site: Phoenix
+          litter: Ambrosia deltoidea3
+          compTreat: fertilized
+          filter: # for photodegradation experiments only
+           threshold: 0 # wavelength bellow which the filter blocks radiation (in nm)
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V7:
+          name: OFR
+          units: organic matter remaining
+          varDesc: Litter from fertilized plants grown outside the city decomposed under reduced UV radiation
+          site: Phoenix
+          litter: Ambrosia deltoidea3
+          compTreat: fertilized
+          filter: # for photodegradation experiments only
+           threshold: 400 # wavelength bellow which the filter blocks radiation (in nm)
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V8:
+          name: OCT
+          units: organic matter remaining
+          varDesc: Litter from non fertilized plants grown outside the city decomposed under total radiation
+          site: Phoenix
+          litter: Ambrosia deltoidea4
+          compTreat: non fertilized
+          filter: # for photodegradation experiments only
+           threshold: 0 # wavelength bellow which the filter blocks radiation (in nm)
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V9:
+          name: OCR
+          units: organic matter remaining
+          varDesc: Litter from non fertilized plants grown outside the city decomposed under reduced UV radiation
+          site: Phoenix
+          litter: Ambrosia deltoidea4
+          compTreat: non fertilized
+          filter: # for photodegradation experiments only
+           threshold: 400 # wavelength bellow which the filter blocks radiation (in nm)
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:

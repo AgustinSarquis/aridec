@@ -1,0 +1,5 @@
+species, type, N-fixer, material, amount, carbon, nitrogen, C:N, phosphorus, potassium, sodium, magnesium, manganese, copper, zinc, lead, calcium, sulfur, lignin, cellulose, hemicellulose, cell solubles, SLA
+Ambrosia deltoidea1, deciduous, no, leaves, 3, 46.75, 2.75, 17, 0.12,,,,,,,,,, 8.76, 7.95, 5.91,,
+Ambrosia deltoidea2, deciduous, no, leaves, 3, 47.6, 2.8, 17, 0.10,,,,,,,,,, 5.07, 7.08, 5.00,,
+Ambrosia deltoidea3, deciduous, no, leaves, 3, 61.5, 2.46, 25, 0.11,,,,,,,,,, 8.54, 8.69, 7.88,,
+Ambrosia deltoidea4, deciduous, no, leaves, 3, 49.56, 2.36, 21, 0.07,,,,,,,,,, 8.28, 11.19, 6.90,,

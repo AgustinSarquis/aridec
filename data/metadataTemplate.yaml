@@ -65,7 +65,7 @@ variables: # These describe the columns of your timeSeries.csv file
           experimentalTreatment: # 'experimentalTreatment' here is a place holder for treatments with multiple levels. Replace this word by any of the listed variables in incubationInfo above (startingMonth, duration, litter, litterbag, meshSize) and type treatment value (level) after colon. Note that units should be specified in the incubationInfo field above.
           compTreat: # combination of complementary treatments not included in the rest of the variables
           filter: # for photodegradation experiments only
-           threshold: # wavelength bellow which the filter blocks radiation (in nm)
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0" 
            transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
              total:
              PAR:
