@@ -1,86 +1,92 @@
-CitationKey: Bates2007
-doi: 10.1016/j.jaridenv.2006.12.015
-EntryAuthor: Agustín Sarquis
+citationKey: Bates2007 # Unique identifier in the format: LastnameYear (lowercase letters must be added when there are two or more entries by the same author and year, i.e.: LastnameYearx)
+doi: 10.1016/j.jaridenv.2006.12.015 # DOI of the publication where data is published
+entryAuthor: Agustín Sarquis # First and last name of the person who entered the data in this file
+entryCreationDate: 2019-01-25 # Date when the data was entered in this file. Format: YYYY-MM-DD
+contactName: Agustín Sarquis # First and last name of contact person (may be the principal investigator supervising the entryAuthor)
+contactEmail: agusarquis@agro.uba.ar # Email of the contact person
+entryNote: coordinates on the paper were wrong, we found the correct ones and put them here
+study: Leaf litter from J. occidentalis was incubated on soils from cut and uncut woodland plots for 2 years # Overall study description
 
-SiteInfo:
-  Name: "Steens Mountain, Oregon, USA"
-  EcosystemType: forest
-  MAP:
-    Value: 249
-    Units: mm
-  RainySeason:
-    - autumn
-    - winter
-    - spring
-  Altitude:
-    Value: 1500
-    Units: masl
-  SoilType:
-    - Vitrixerands
-    - Durixerolls
-  Cover:
-    TreeCover: 24
-    ForbCover: 5
-    BareSoil: 97
-    Units: percentage
-  Coordinates:
-    Latitude: 118.62
-    Longitude: -47.92
+siteInfo:
+        site: Steens Mountain # Names of individual sites, if one site, keep on this line, if multiple, use array format
+              # These fields should be arrays of equal length to site array
+        coordinates:
+          latitude: 42.93 # Latitude in decimal units (check for negative that denotes southern hemisphere)
+          longitude: -118.61 # Longitude in decimal units (check for negative that denotes western hemisphere)
+        country: USA # Name of country where site was conducted
+        MAT: 7.88 # Mean annual temperature in degrees Celsius
+        MAP: 249 # Mean annual precipitation in mm
+        rainySeason:
+         - autumn
+         - winter
+         - spring
+        elevation: 1500
+        landCover: forest
+        vegNote: western juniper woodland
+        cover:
+          plantCover: 29 # Total plant cover percentage (if they report cover by specific plant types, fill the fields below)
+          treeCover: 24
+          forbCover: 5
+          bareSoil: 97
+        soilTaxonomy:
+          soilOrder: # Soil order according to the classification system described below
+          soilFamily: # Soil family description (ex. 'Eutric' for a Eutric Cambisol)
+          soilSeries: # Soil series according to the classification system described below
+          classificationSystem: # Name of classification system used. Valid fields are: USDA, FAO, and WRB.
 
-ExperimentInfo:
- LitterInfo:
-  LitterType1:
-   Species: Juniperus occidentalis
-   LifeForm: conifer
-   Material: leaves
-   Nitrogen:
-     Value: 45
-     Units: percentage
-   C:N:
-     Value: 115
-     Units: percentage
-   Amount:
-     Value: 25
-     Units: g
- Experiment1:
-    Description: "Leaf litter from J. occidentalis was incubated on soils from cut and uncut woodland plots for 2 years"
-    LitterBagInfo:
-      Material: nylon
-      MeshSize:
-       Value: 1
-       Units: mm
-      Dimentions:
-       Width: 10
-       Lenght: 20
-       Units: cm
-      Position:
-        Position1:
-          - bare soil
-          - under cut tree
-          - covered in litter
-        Position2:
-          - covered in litter
-          - on top of soil litter layer
-          - under tree
-    Treatment: tree cutting
-    StartingDate:
-      Month: september
-      Season: autumn
-    Duration:
-      Time: 24
-      Units: months
+experimentInfo:
+        incDesc: 8 blocks x 2 plots (trees cut or not) x 6 harvests
+        # These fields should all be one dimensional arrays. Values for experimental variables with multiple treatment levels should be entered in the variables section and left blank here
+        replicates: 8 # Number of replicates per treatment
+        duration: 365
+        startingMonth: september
+        litter: Juniperus occidentalis
+        litterbag:
+          material: nylon
+          meshSize: 1
+          dimentions: # size of the full litter bag in cm
+            width: 10
+            length: 20
+            height: # for 3-dimensional designs such as litter boxes in Austin2006NATURE
+          transmitance: # when reported, light transmitance of the mesh material as a percentage of full sunlight for each wavelength
+            total:
+            PAR:
+            UV:
+            UVA:
+            UVB:
+          position: # position of litterbags in the field, valid options are: bare soil, decomposition bed, under litter, over litter, over lawn, next to grass, under tree/shrub/grass, buried X cm deep, underwater, under rainout shelter, under frame, suspended X cm, under shadecloth
 
-Variables:
-  V1:
-    Name: Time
-    Units: months
-  V2:
-    Name: Cut
-    Units: mass remaining
-    Description: "Percentage of J. occidentalis leaf litter mass remaining after incubation under cut trees"
-    Position: Position1
-  V3:
-    Name: Uncut
-    Units: mass remaining
-    Description: "Percentage of J. occidentalis leaf litter mass remaining after incubation under uncut trees"
-    Position: Position2
+variables: # These describe the columns of your timeSeries.csv file
+        V1: # column 1
+          name: Time
+          units: months
+        V2:
+          name: Cut
+          units: mass remaining
+          varDesc: J. occidentalis leaf litter mass remaining after incubation under cut trees
+          site: Steens Mountain
+          position: under litter
+          compTreat: tree cutting
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V3:
+          name: Uncut
+          units: mass remaining
+          varDesc: J. occidentalis leaf litter mass remaining after incubation under uncut trees
+          site: Steens Mountain
+          position: under tree
+          compTreat: no tree cutting
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:

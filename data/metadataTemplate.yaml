@@ -1,4 +1,4 @@
-citationKey: # Unique identifier in the format: LastnameYearJOURNAL (journal may be abbreviated and must be only added when there are two or more entries by the same author)
+citationKey: # Unique identifier in the format: LastnameYear (lowercase letters must be added when there are two or more entries by the same author and year, i.e.: LastnameYearx)
 doi:  # DOI of the publication where data is published
 entryAuthor: # First and last name of the person who entered the data in this file
 entryCreationDate: # Date when the data was entered in this file. Format: YYYY-MM-DD
@@ -24,6 +24,8 @@ siteInfo:
           plantCover: # Total plant cover percentage (if they report cover by specific plant types, fill the fields below)
           bunchgrassCover:
           shrubCover:
+          treeCover:
+          forbCover:
           bareSoil:
         soilTaxonomy:
           soilOrder: # Soil order according to the classification system described below
@@ -65,7 +67,7 @@ variables: # These describe the columns of your timeSeries.csv file
           experimentalTreatment: # 'experimentalTreatment' here is a place holder for treatments with multiple levels. Replace this word by any of the listed variables in incubationInfo above (startingMonth, duration, litter, litterbag, meshSize) and type treatment value (level) after colon. Note that units should be specified in the incubationInfo field above.
           compTreat: # combination of complementary treatments not included in the rest of the variables
           filter: # for photodegradation experiments only
-           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0" 
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
            transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
              total:
              PAR:
