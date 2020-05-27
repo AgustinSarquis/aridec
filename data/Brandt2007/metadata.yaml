@@ -1,194 +1,183 @@
-CitationKey: Brandt2007
-doi: 10.1111/j.1365-2486.2007.01428.x
-EntryAuthor: Agustín Sarquis
+citationKey: Brandt2007 # Unique identifier in the format: LastnameYear (lowercase letters must be added when there are two or more entries by the same author and year, i.e.: LastnameYearx)
+doi: 10.1111/j.1365-2486.2007.01428.x # DOI of the publication where data is published
+entryAuthor: Agustín Sarquis # First and last name of the person who entered the data in this file
+entryCreationDate: 2020-01-20 # Date when the data was entered in this file. Format: YYYY-MM-DD
+contactName: Agustín Sarquis # First and last name of contact person (may be the principal investigator supervising the entryAuthor)
+contactEmail: agusarquis@agro.uba.ar # Email of the contact person
+entryNote: They measured cellullose and hemicellulose but reported it as holocellulose. They say soils are Ustollic camborthids but don't specify the classification system
+study: They examined the effect of altered levels of UV radiation and different amounts of precipitation on the decomposition rates of litter of contrasting C:N in a 3-year field experiment in a shortgrass steppe
 
-SiteInfo:
-  Name: Central Plains Experimental Range, Colorado, USA
-  EcosystemType: steppe
-  MAP:
-    Value: 321
-    Units: mm
-  MAT:
-    Value: 9.26
-    Units: Celsius
-  RainySeason:
-    - spring
-    - summer
-  Altitude:
-    Value: 1647
-    Units: masl
-  SoilType: Ustollic camborthid
-  SoilTexture: fine
-  Cover:
-    PlantCover: 30
-    BareSoil: 70
-    Units: percentage
-  ANPP:
-    Value:
-      - 43
-      - 167
-    Units: g.m-2.y-1
-  Coordinates:
-    Latitude: 40.817
-    Longitude: -104.767
+siteInfo:
+        site: Central Plains Experimental Range
+              # These fields should be arrays of equal length to site array
+        coordinates:
+          latitude: 40.817 # Latitude in decimal units (check for negative that denotes southern hemisphere)
+          longitude: -104.767 # Longitude in decimal units (check for negative that denotes western hemisphere)
+        country: USA # Name of country where site was conducted
+        MAT: 9.26 # Mean annual temperature in degrees Celsius
+        MAP: 321 # Mean annual precipitation in mm
+        rainySeason:
+          - spring
+          - summer # Period of the year during which most precipitation occurs, i.e.: whole year, spring, summer, autumn, winter (if more than one use array format)
+        elevation: 1647 # Elevation of study site in meters above sea level
+        landCover: steppe
+        vegNote: The dominant plant species is Bouteloua gracilis. Other common species are Stipa comata and Aristida longiseta
+        cover:
+          plantCover: 30 # Total plant cover percentage (if they report cover by specific plant types, fill the fields below)
+          bunchgrassCover:
+          shrubCover:
+          treeCover:
+          forbCover:
+          bareSoil: 70
+        soilTaxonomy:
+          soilOrder: # Soil order according to the classification system described below
+          soilFamily: # Soil family description (ex. 'Eutric' for a Eutric Cambisol)
+          soilSeries: # Soil series according to the classification system described below
+          classificationSystem: # Name of classification system used. Valid fields are: USDA, FAO, and WRB.
 
-ExperimentInfo:
- LitterInfo:
-  LitterType1:
-   Species:
-     - Bouteloua gracilis
-     - Stipa comata
-     - Aristida longiseta
-   LifeForm: graminoid
-   Material: senesced aboveground parts
-   Carbon:
-     Value: 39.08
-     Units: percentage
-   Nitrogen:
-     Value: 0.823
-     Units: percentage
-   CellSolubles:
-     Value: 31.35
-     Units: percentage
-   Holocellulose:
-     Value: 62.18
-     Units: percentage
-   Lignin:
-     Value: 6.47
-     Units: percentage
-   C:N:
-     Value: 47.73
-   Lignin:N:
-     Value: 7.90
-   Amount:
-     Value: 3
-     Units: g
-  LitterType2:
-   Species:
-     - Bouteloua gracilis
-     - Stipa comata
-     - Aristida longiseta
-   LifeForm: graminoid
-   Material: senesced aboveground parts
-   Carbon:
-     Value: 39.07
-     Units: percentage
-   Nitrogen:
-     Value: 0.637
-     Units: percentage
-   CellSolubles:
-     Value: 28.98
-     Units: percentage
-   Holocellulose:
-     Value: 64.84
-     Units: percentage
-   Lignin:
-     Value: 6.18
-     Units: percentage
-   C:N:
-     Value: 61.48
-   Lignin:N:
-     Value: 9.73
-   Amount:
-     Value: 3
-     Units: g
- Experiment1:
-  Description: "They examined the effect of altered levels of UV radiation and different amounts of precipitation on the decomposition rates of litter of contrasting C:N in a 3-year field experiment in a shortgrass steppeecosystem. "
-  LitterBagInfo:
-   Material: fiberglass
-   MeshSize:
-    Value: 1.5
-    Units: mm
-   Dimentions:
-    Width: 10
-    Lenght: 10
-    Units: cm
-   Transmitance:
-    Value: 50
-    Units: percentage
-   Position:
-     - under frames
-     - bare soil
-  FilterInfo:
-   FilterType1:
-    Name: UV-absorbing polycarbonate
-    Wavelenght:
-     Value: 400
-     Units: nm
-    PARTransmitance:
-     Value: 85
-     Units: percentage
-    UVTransmitance:
-     Value: 10
-     Units: percentage
-   FilterType2:
-    Name: Solacryl SUVT
-    Wavelenght:
-     Value: 400
-     Units: nm
-    Transmitance:
-     Value: 87
-     Units: percentage
-  Treatment:
-    - rainfall
-    - light attenuation
-    - litter type
-  StartingDate:
-   Month: april
-   Season: spring
-  Duration:
-   Time: 36
-   Units: months
+experimentInfo:
+        incDesc: 2 litter types x 2 UV radiation levels x 2 precipitation levels x 6 harvests x 7 blocks
+        # These fields should all be one dimensional arrays. Values for experimental variables with multiple treatment levels should be entered in the variables section and left blank here
+        replicates: 7 # Number of replicates per treatment
+        duration: 1095 # length of incubation in days
+        startingMonth: april # month during which the study started, all in lower case
+        litter: # plant species used as litter material for the experiment. All details related to the species must be specified in the initConditions.csv file
+        litterbag:
+          material: fiberglass
+          meshSize: 1.5 # mesh size in mm referring to one side of the net-square
+          dimentions: # size of the full litter bag in cm
+            width: 10
+            length: 10
+            height: # for 3-dimensional designs such as litter boxes in Austin2006NATURE
+          transmitance: # when reported, light transmitance of the mesh material as a percentage of full sunlight for each wavelength
+            total: 50
+            PAR:
+            UV:
+            UVA:
+            UVB:
+          position: under frame
 
-Variables:
-  V1:
-    Name: Time
-    Units: years
-  V2:
-    Name: LBD
-    Units: non-ash dry mass remaining
-    Description: "Low C:N litter incubated under UV-block-filters and low rainfall treatment"
-    FilterType: FilterType1
-    LitterType: LitterType1
-  V3:
-    Name: LBW
-    Units: non-ash dry mass remaining
-    Description: "Low C:N litter incubated under UV-block-filters and high rainfall treatment"
-    FilterType: FilterType1
-    LitterType: LitterType1
-  V4:
-    Name: LPD
-    Units: non-ash dry mass remaining
-    Description: "Low C:N litter incubated under UV-pass-filters and low rainfall treatment"
-    FilterType: FilterType2
-    LitterType: LitterType1
-  V5:
-    Name: LPW
-    Units: non-ash dry mass remaining
-    Description: "Low C:N litter incubated under UV-pass-filters and high rainfall treatment"
-    FilterType: FilterType2
-    LitterType: LitterType1
-  V6:
-    Name: HBD
-    Units: non-ash dry mass remaining
-    Description: "High C:N litter incubated under UV-block-filters and low rainfall treatment"
-    FilterType: FilterType1
-    LitterType: LitterType2
-  V7:
-    Name: HBW
-    Units: non-ash dry mass remaining
-    Description: "High C:N litter incubated under UV-block-filters and high rainfall treatment"
-    FilterType: FilterType1
-    LitterType: LitterType2
-  V8:
-    Name: HPD
-    Units: non-ash dry mass remaining
-    Description: "High C:N litter incubated under UV-pass-filters and low rainfall treatment"
-    FilterType: FilterType2
-    LitterType: LitterType2
-  V9:
-    Name: HPW
-    Units: non-ash dry mass remaining
-    Description: "High C:N litter incubated under UV-pass-filters and high rainfall treatment"
-    FilterType: FilterType2
-    LitterType: LitterType2
+variables: # These describe the columns of your timeSeries.csv file
+        V1: # column 1
+          name: Time
+          units: years
+        V2:
+          name: LBD
+          units: organic matter remaining
+          varDesc: Low C:N litter (Bouteloua gracilis, Stipa comata and Aristida fasciculata) incubated under UV-block-filters and low rainfall treatment
+          site: Central Plains Experimental Range
+          litter: mixture1
+          compTreat: low rainfall
+          filter: # for photodegradation experiments only
+           threshold: 400
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR: 85
+             UV: 10
+             UVA:
+             UVB:
+        V3:
+          name: LBW
+          units: organic matter remaining
+          varDesc: Low C:N litter (Bouteloua gracilis, Stipa comata and Aristida fasciculata) incubated under UV-block-filters and high rainfall treatment
+          site: Central Plains Experimental Range
+          litter: mixture1
+          compTreat: high rainfall
+          filter: # for photodegradation experiments only
+           threshold: 400
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR: 85
+             UV: 10
+             UVA:
+             UVB:
+        V4:
+          name: LPD
+          units: organic matter remaining
+          varDesc: Low C:N litter (Bouteloua gracilis, Stipa comata and Aristida fasciculata) incubated under UV-pass-filters and low rainfall treatment
+          site: Central Plains Experimental Range
+          litter: mixture1
+          compTreat: low rainfall
+          filter: # for photodegradation experiments only
+           threshold: 0
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total: 87
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V5:
+          name: LPW
+          units: organic matter remaining
+          varDesc: Low C:N litter (Bouteloua gracilis, Stipa comata and Aristida fasciculata) incubated under UV-pass-filters and high rainfall treatment
+          site: Central Plains Experimental Range
+          litter: mixture1
+          compTreat: high rainfall
+          filter: # for photodegradation experiments only
+           threshold: 0
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total: 87
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V6:
+          name: HBD
+          units: organic matter remaining
+          varDesc: High C:N litter (Bouteloua gracilis, Stipa comata and Aristida fasciculata) incubated under UV-block-filters and low rainfall treatment
+          site: Central Plains Experimental Range
+          litter: mixture2
+          compTreat: low rainfall
+          filter: # for photodegradation experiments only
+           threshold: 400
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR: 85
+             UV: 10
+             UVA:
+             UVB:
+        V7:
+          name: HBW
+          units: organic matter remaining
+          varDesc: High C:N litter (Bouteloua gracilis, Stipa comata and Aristida fasciculata) incubated under UV-block-filters and high rainfall treatment
+          site: Central Plains Experimental Range
+          litter: mixture2
+          compTreat: high rainfall
+          filter: # for photodegradation experiments only
+           threshold: 400
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR: 85
+             UV: 10
+             UVA:
+             UVB:
+        V8:
+          name: HPD
+          units: organic matter remaining
+          varDesc: High C:N litter (Bouteloua gracilis, Stipa comata and Aristida fasciculata) incubated under UV-pass-filters and low rainfall treatment
+          site: Central Plains Experimental Range
+          litter: mixture2
+          compTreat: low rainfall
+          filter: # for photodegradation experiments only
+           threshold: 0
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total: 87
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V9:
+          name: HPW
+          units: organic matter remaining
+          varDesc: High C:N litter (Bouteloua gracilis, Stipa comata and Aristida fasciculata) incubated under UV-pass-filters and high rainfall treatment
+          site: Central Plains Experimental Range
+          litter: mixture2
+          compTreat: high rainfall
+          filter: # for photodegradation experiments only
+           threshold: 0
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total: 87
+             PAR:
+             UV:
+             UVA:
+             UVB:
