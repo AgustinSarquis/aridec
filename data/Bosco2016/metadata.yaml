@@ -1,162 +1,187 @@
-CitationKey: Bosco2016
-doi: 10.1007/s11104-016-2864-7
-EntryAuthor: Agustín Sarquis
+citationKey: Bosco2016 # Unique identifier in the format: LastnameYear (lowercase letters must be added when there are two or more entries by the same author and year, i.e.: LastnameYearx)
+doi: 10.1007/s11104-016-2864-7 # DOI of the publication where data is published
+entryAuthor: Agustín Sarquis # First and last name of the person who entered the data in this file
+entryCreationDate: 2019-07-11 # Date when the data was entered in this file. Format: YYYY-MM-DD
+contactName: Agustín Sarquis # First and last name of contact person (may be the principal investigator supervising the entryAuthor)
+contactEmail: agusarquis@agro.uba.ar # Email of the contact person
+entryNote: study was carried out in the field but on microcosms
+study: Litter from evergreen shrub patches and from perennial grasses and evergreen shrub patches was incubated in microcosms under field conditions with UV attenuation and water addition treatments
 
-SiteInfo:
-  Name: Puerto Madryn, Chubut, Argentina
-  EcosystemType: shrubland
-  MAP:
-    Value: 235.9
-    Units: mm
-  MAT:
-    Value: 13.4
-    Units: Celsius
-  RainySeason:
-   - autumn
-   - winter
-  Altitude:
-    Value: 5
-    Units: masl
-  SoilType:
-    - Haplocalcids
-    - Petrocalcids
-  Coordinates:
-    Latitude: -42.786
-    Longitude: -65.008
+siteInfo:
+        site: Puerto Madryn # Names of individual sites, if one site, keep on this line, if multiple, use array format
+              # These fields should be arrays of equal length to site array
+        coordinates:
+          latitude: -42.786 # Latitude in decimal units (check for negative that denotes southern hemisphere)
+          longitude: -65.008 # Longitude in decimal units (check for negative that denotes western hemisphere)
+        country: Argentina # Name of country where site was conducted
+        MAT: 13.4 # Mean annual temperature in degrees Celsius
+        MAP: 235.9 # Mean annual precipitation in mm
+        rainySeason:
+           - autumn
+           - winter # Period of the year during which most precipitation occurs, i.e.: whole year, spring, summer, autumn, winter (if more than one use array format)
+        elevation: 5 # Elevation of study site in meters above sea level
+        landCover: shrubland
+        vegNote: disturbed natural vegetation characteristic of the Patagonian Monte
+        cover:
+          plantCover: 40
+          bunchgrassCover:
+          shrubCover:
+          treeCover:
+          forbCover:
+          bareSoil: 60
+        soilTaxonomy:
+          soilOrder:
+              - Haplocalcids
+              - Petrocalcids
+          soilFamily:
+              - Typic
+              - Typic
+          soilSeries: # Soil series according to the classification system described below
+          classificationSystem: USDA
 
-ExperimentInfo:
- LitterInfo:
-  LitterType1:
-   Species:
-     - Stipa tenuis
-     - Larrea divaricata
-   LifeForm:
-     - graminoid
-     - shrub
-   Material: leaves
-   Amount:
-     Value: 1
-     Units: g
-  LitterType2:
-   Species: Larrea divaricata
-   LifeForm: shrub
-   Material: leaves
-   Amount:
-     Value: 1
-     Units: g
- Experiment1:
-    Description: "Litter from evergreen shrub patches and from perennial grasses and evergreen shrub patches was incubated in microcosms under field conditions with UV attenuation and water addition treatments"
-    LitterBagInfo:
-      Material: nylon
-      MeshSize:
-       Value: 2
-       Units: mm
-      Dimentions:
-       Width: 5
-       Lenght: 5
-       Units: cm
-      PARTransmitance:
-        Value: 93
-        Units: percentage
-      UVBTransmitance:
-        Value: 87
-        Units: percentage
-      UVATransmitance:
-        Value: 90
-        Units: percentage
-      Position:
-        - on microcosms
-        - under frames
-    FilterInfo:
-      FilterType1:
-        Name: Mylar
-        Wavelenght:
-          Value: 400
-          Units: nm
-        UVATransmitance:
-          Value: 45
-          Units: percentage
-        UVBTransmitance:
-          Value: 15
-          Units: percentage
-        PARTransmitance:
-          Value: 85
-          Units: percentage
-      FilterType2:
-        Name: Aclar
-        Wavelenght:
-          Value: 280
-          Units: nm
-        Transmitance:
-          Value: 85
-          Units: percentage
-    Treatment:
-      - light attenuation
-      - soil volumetric water content
-    StartingDate:
-      Month: january
-      Season: summer
-    Duration:
-      Time: 14
-      Units: months
+experimentInfo:
+        incDesc: 2 litter types x 2 UV levels x 2 water levels x 5 harvests x 6 blocks
+        # These fields should all be one dimensional arrays. Values for experimental variables with multiple treatment levels should be entered in the variables section and left blank here
+        replicates: 6 # Number of replicates per treatment
+        duration: 420 # length of incubation in days
+        startingMonth: january # month during which the study started, all in lower case
+        litter: # plant species used as litter material for the experiment. All details related to the species must be specified in the initConditions.csv file
+        litterbag:
+          material: nylon
+          meshSize: 2 # mesh size in mm referring to one side of the net-square
+          dimentions: # size of the full litter bag in cm
+            width: 5
+            length: 5
+            height: # for 3-dimensional designs such as litter boxes in Austin2006NATURE
+          transmitance: # when reported, light transmitance of the mesh material as a percentage of full sunlight for each wavelength
+            total:
+            PAR: 93
+            UV:
+            UVA: 90
+            UVB: 97
+          position: under frame
 
-Variables:
-  V1:
-    Name: Time
-    Units: days
-  V2:
-    Name: PGW
-    Units: non-ash dry mass remaining
-    Description: "Litter from grass and shrub patches incubated under UV-block filters with high soil volumetric water content"
-    FilterType: FilterType1
-    LitterType: LitterType1
-    WaterContent: high
-  V3:
-    Name: PGWUV
-    Units: non-ash dry mass remaining
-    Description: "Litter from grass and shrub patches incubated under UV-pass filters with high soil volumetric water content"
-    FilterType: FilterType2
-    LitterType: LitterType1
-    WaterContent: high
-  V4:
-    Name: PG
-    Units: non-ash dry mass remaining
-    Description: "Litter from grass and shrub patches incubated under UV-block filters with low soil volumetric water content"
-    FilterType: FilterType1
-    LitterType: LitterType1
-    WaterContent: low
-  V5:
-    Name: PGUV
-    Units: non-ash dry mass remaining
-    Description: "Litter from grass and shrub patches incubated under UV-pass filters with low soil volumetric water content"
-    FilterType: FilterType2
-    LitterType: LitterType1
-    WaterContent: low
-  V6:
-    Name: ESW
-    Units: non-ash dry mass remaining
-    Description: "Litter from shrub patches incubated under UV-block filters with high soil volumetric water content"
-    FilterType: FilterType1
-    LitterType: LitterType2
-    WaterContent: high
-  V7:
-    Name: ESWUV
-    Units: non-ash dry mass remaining
-    Description: "Litter from shrub patches incubated under UV-pass filters with high soil volumetric water content"
-    FilterType: FilterType2
-    LitterType: LitterType2
-    WaterContent: high
-  V8:
-    Name: ES
-    Units: non-ash dry mass remaining
-    Description: "Litter from shrub patches incubated under UV-block filters with low soil volumetric water content"
-    FilterType: FilterType2
-    LitterType: LitterType2
-    WaterContent: low
-  V9:
-    Name: ESUV
-    Units: non-ash dry mass remaining
-    Description: "Litter from shrub patches incubated under UV-pass filters with low soil volumetric water content"
-    FilterType: FilterType2
-    LitterType: LitterType2
-    WaterContent: low
+variables: # These describe the columns of your timeSeries.csv file
+        V1: # column 1
+          name: Time
+          units: days
+        V2:
+          name: PGW
+          units: organic matter remaining
+          varDesc: Nassella tenuis and L. divaricata litter incubated under UV-block filters with high soil volumetric water content
+          site: Puerto Madryn
+          litter: mixture
+          compTreat: high soil volumetric water content
+          filter: # for photodegradation experiments only
+           threshold: 400
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR: 85
+             UV:
+             UVA: 45
+             UVB: 15
+        V3:
+          name: PGWUV
+          units: organic matter remaining
+          varDesc: Nassella tenuis and L. divaricata litter incubated under UV-pass filters with high soil volumetric water content
+          site: Puerto Madryn
+          litter: mixture
+          compTreat: high soil volumetric water content
+          filter: # for photodegradation experiments only
+           threshold: 0
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total: 85
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V4:
+          name: PG
+          units: organic matter remaining
+          varDesc: Nassella tenuis and L. divaricata litter incubated under UV-block filters with low soil volumetric water content
+          site: Puerto Madryn
+          litter: mixture
+          compTreat: low soil volumetric water content
+          filter: # for photodegradation experiments only
+           threshold: 400
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR: 85
+             UV:
+             UVA: 45
+             UVB: 15
+        V5:
+          name: PGUV
+          units: organic matter remaining
+          varDesc: Nassella tenuis and L. divaricata litter incubated under UV-pass filters with low soil volumetric water content
+          site: Puerto Madryn
+          litter: mixture
+          compTreat: low soil volumetric water content
+          filter: # for photodegradation experiments only
+           threshold: 0
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total: 85
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V6:
+          name: ESW
+          units: organic matter remaining
+          varDesc: L. divaricata litter incubated under UV-block filters with high soil volumetric water content
+          site: Puerto Madryn
+          litter: Larrea divaricata
+          compTreat: high soil volumetric water content
+          filter: # for photodegradation experiments only
+           threshold: 400
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR: 85
+             UV:
+             UVA: 45
+             UVB: 15
+        V7:
+          name: ESWUV
+          units: organic matter remaining
+          varDesc: L. divaricata litter incubated under UV-pass filters with high soil volumetric water content
+          site: Puerto Madryn
+          litter: Larrea divaricata
+          compTreat: high soil volumetric water content
+          filter: # for photodegradation experiments only
+           threshold: 0
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total: 85
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V8:
+          name: ES
+          units: organic matter remaining
+          varDesc: L. divaricata litter incubated under UV-block filters with low soil volumetric water content
+          site: Puerto Madryn
+          litter: Larrea divaricata
+          compTreat: low soil volumetric water content
+          filter: # for photodegradation experiments only
+           threshold: 400
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR: 85
+             UV:
+             UVA: 45
+             UVB: 15
+        V9:
+          name: ESUV
+          units: organic matter remaining
+          varDesc: L. divaricata litter incubated under UV-pass filters with low soil volumetric water content
+          site: Puerto Madryn
+          litter: Larrea divaricata
+          compTreat: low soil volumetric water content
+          filter: # for photodegradation experiments only
+           threshold: 0
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total: 85
+             PAR:
+             UV:
+             UVA:
+             UVB:
