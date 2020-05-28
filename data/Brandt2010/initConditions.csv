@@ -1,0 +1,3 @@
+species, type, N-fixer, material, amount, carbon, nitrogen, C:N, phosphorus, potassium, sodium, magnesium, manganese, copper, zinc, lead, calcium, sulfur, iron, lignin, cellulose, hemicellulose, cell solubles, SLA
+Andropogon gerardi, graminoid, no, leaves, 10, 45.05, 0.30, 154.19, 0.05, 0.28,,,,,,,,, 0.04, 8.10, 39.99, 32.36,,
+Bouteloua gracilis, graminoid, no, leaves, 10, 44.47, 1.06, 42.67, 0.13, 0.32,,,,,,,,, 0.01, 6.61, 30.97, 38.47,, 

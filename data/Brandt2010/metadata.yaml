@@ -1,278 +1,277 @@
-CitationKey: Brandt2010
-doi: 10.1007/s10021-010-9353-2
-EntryAuthor: Agustín Sarquis
+citationKey: Brandt2010 # Unique identifier in the format: LastnameYear (lowercase letters must be added when there are two or more entries by the same author and year, i.e.: LastnameYearx)
+doi: 10.1007/s10021-010-9353-2 # DOI of the publication where data is published
+entryAuthor: Agustín Sarquis # First and last name of the person who entered the data in this file
+entryCreationDate: 2019-01-28 # Date when the data was entered in this file. Format: YYYY-MM-DD
+contactName: Agustín Sarquis # First and last name of contact person (may be the principal investigator supervising the entryAuthor)
+contactEmail: agusarquis@agro.uba.ar # Email of the contact person
+entryNote: # Any notes or comments related to this entry.
+study: Leaf litter from two grass species with contrasting lignin content were incubated under ambient and UV-blocked radiation at three grasslands of varying aridity
 
-SiteInfo:
-  Name:
-    - "Cedar Creep, Minnesota, USA"
-    - "Central Plains, Colorado, USA"
-    - "Sevilleta, New Mexico, USA"
-  EcosystemType: grassland
-  MAP:
-    Value:
-      - 726
-      - 309
-      - 222
-    Units: mm
-  MAT:
-    Value:
-      - 5.5
-      - 8.7
-      - 10.5
-    Units: Celsius
-  RainySeason: summer
-  AET:
-    Value:
-      - 586
-      - 299
-      - 222
-    Units: mm
-  PET:
-    Value:
-      - 597
-      - 605
-      - 735
-    Units: mm
-  Altitude:
-    Value:
-      - 365
-      - 1650
-      - 1596
-    Units: masl
-  Cover:
-    PlantCover:
-      - 100
-      - 75
-      - 75
-    BareSoil:
-      - 0
-      - 25
-      - 25
-    Units: percentage
-  LAI:
-    Value:
-      - 2.0
-      - 0.22
-      - 0.45
-    Units: m2.m-2
-  Coordinates:
-    Latitude:
-      - 45.4
-      - 40.8
-      - 34.4
-    Longitude:
-      - -93.2
-      - -104.8
-      - -106.9
+siteInfo:
+        site:
+         - Cedar Creek
+         - Central Plains
+         - Sevilleta
+              # These fields should be arrays of equal length to site array
+        coordinates:
+          latitude:
+            - 45.4
+            - 40.8
+            - 34.4
+          longitude:
+            - -93.2
+            - -104.8
+            - -106.9
+        country:
+          - USA
+          - USA
+          - USA
+        MAT:
+         - 5.5
+         - 8.7
+         - 10.5
+        MAP:
+         - 726
+         - 309
+         - 222
+        rainySeason:
+         - summer
+         - summer
+         - summer
+        elevation:
+          - 365
+          - 1650
+          - 1596
+        landCover:
+         - grassland
+         - steppe
+         - grassland
+        vegNote:
+         - dominated by the C3 and C4 grasses and forbs
+         - dominated by the C4 perennial short grass Bouteloua gracilis. Opuntia polyacantha (low cactus) and Sphaeralcea coccinea (C3 forb) are important components
+         - dominated by the two C4 short grasses Bouteloua eriopoda and B. gracilis
+        cover:
+          plantCover:
+            - 100
+            - 75
+            - 75 # Total plant cover percentage (if they report cover by specific plant types, fill the fields below)
+          bunchgrassCover:
+          shrubCover:
+          treeCover:
+          forbCover:
+          bareSoil:
+            - 0
+            - 25
+            - 25
+        soilTaxonomy:
+          soilOrder: # Soil order according to the classification system described below
+          soilFamily: # Soil family description (ex. 'Eutric' for a Eutric Cambisol)
+          soilSeries: # Soil series according to the classification system described below
+          classificationSystem: # Name of classification system used. Valid fields are: USDA, FAO, and WRB.
 
-ExperimentInfo:
- LitterInfo:
-  LitterType1:
-   Species: Andropogon gerardi
-   LifeForm: graminoid
-   Material: recently senesced leaves
-   Carbon:
-     Value: 45.05
-     Units: percentage
-   Nitrogen:
-     Value: 0.30
-     Units: percentage
-   Phosphorus:
-     Value: 0.05
-     Units: percentage
-   Potassium:
-     Value: 0.28
-     Units: percentage
-   Iron:
-     Value: 0.04
-     Units: percentage
-   Hemicellulose:
-     Value: 32.36
-     Units: percentage
-   Cellulose:
-     Value: 39.99
-     Units: percentage
-   Lignin:
-     Value: 8.10
-     Units: percentage
-   C:N:
-     Value: 154.19
-   Lignin:N:
-     Value: 26.93
-   Amount:
-     Value: 10
-     Units: g
-  LitterType2:
-   Species: Bouteloua aristidoides
-   LifeForm: graminoid
-   Material: recently senesced leaves
-   Carbon:
-     Value: 44.47
-     Units: percentage
-   Nitrogen:
-     Value: 1.06
-     Units: percentage
-   Phosphorus:
-     Value: 0.13
-     Units: percentage
-   Potassium:
-     Value: 0.32
-     Units: percentage
-   Iron:
-     Value: 0.01
-     Units: percentage
-   Hemicellulose:
-     Value: 38.47
-     Units: percentage
-   Cellulose:
-     Value: 30.97
-     Units: percentage
-   Lignin:
-     Value: 6.61
-     Units: percentage
-   C:N:
-     Value: 42.67
-   Lignin:N:
-     Value: 6.24
-   Amount:
-     Value: 10
-     Units: g
- Experiment1:
-    Description: "Leaf litter from two grass species with contrasting lignin content were incubated under ambient and UV-blocked radiation at three grasslands of varying aridity"
-    LitterBagInfo:
-      Material: aluminum
-      MeshSize:
-       Value: 1.5
-       Units: mm
-      Dimentions:
-       Width: 15
-       Lenght: 15
-       Units: cm
-      Position:
-        - under plastic frames
-        - vegetated soil
-    FilterInfo:
-      FilterType1:
-        Name: Solacryl SUVT
-        Wavelenght:
-          Value: 280
-          Units: nm
-        Transmitance:
-          Value: 90
-          Units: percentage
-        UVATransmitance:
-          Value: 87
-          Units: percentage
-        UVBTransmitance:
-          Value: 86
-          Units: percentage
-      FilterType2:
-        Name: Lexan
-        Wavelenght:
-          Value: 400
-          Units: nm
-        UVATransmitance:
-          Value: 14
-          Units: percentage
-        UVBTransmitance:
-          Value: 26
-          Units: percentage
-    Treatment:
-      - light attenuation
-      - litter type
-      - location
-    StartingDate:
-      Month: may
-      Season: spring
-    Duration:
-      Time: 24
-      Units: months
+experimentInfo:
+        incDesc: 2 litter types x 2 UV levels x 3 sites x 4 harvests x 10 replicates
+        # These fields should all be one dimensional arrays. Values for experimental variables with multiple treatment levels should be entered in the variables section and left blank here
+        replicates: 10 # Number of replicates per treatment
+        duration: 365 # length of incubation in days
+        startingMonth: may # month during which the study started, all in lower case
+        litter: # plant species used as litter material for the experiment. All details related to the species must be specified in the initConditions.csv file
+        litterbag:
+          material: aluminum
+          meshSize: 1.5
+          dimentions: # size of the full litter bag in cm
+            width: 15
+            length: 15
+            height: # for 3-dimensional designs such as litter boxes in Austin2006NATURE
+          transmitance: # when reported, light transmitance of the mesh material as a percentage of full sunlight for each wavelength
+            total:
+            PAR:
+            UV:
+            UVA:
+            UVB:
+          position: under frame
 
-Variables:
-  V1:
-    Name: Time
-    Units: months
-  V2:
-    Name: CAB
-    Units: organic matter remaining
-    Description: "Percent ash-free dry mass remaining over time in A. gerardi litter under UV block treatments at Cedar Creek"
-    FilterType: FilterType2
-    LitterType: LitterType1
-    Site: "Cedar Creek, Minnesota, USA"
-  V3:
-    Name: CAP
-    Units: organic matter remaining
-    Description: "Percent ash-free dry mass remaining over time in A. gerardi litter under UV pass treatments at Cedar Creek"
-    FilterType: FilterType1
-    LitterType: LitterType1
-    Site: "Cedar Creek, Minnesota, USA"
-  V4:
-    Name: CBB
-    Units: organic matter remaining
-    Description: "Percent ash-free dry mass remaining over time in B. aristidoides litter under UV block treatments at Cedar Creek"
-    FilterType: FilterType2
-    LitterType: LitterType2
-    Site: "Cedar Creek, Minnesota, USA"
-  V5:
-    Name: CBP
-    Units: organic matter remaining
-    Description: "Percent ash-free dry mass remaining over time in B. aristidoides litter under UV pass treatments at Cedar Creek"
-    FilterType: FilterType1
-    LitterType: LitterType2
-    Site: "Cedar Creek, Minnesota, USA"
-  V6:
-    Name: PAB
-    Units: organic matter remaining
-    Description: "Percent ash-free dry mass remaining over time in A. gerardi litter under UV block treatments at Central Plains"
-    FilterType: FilterType2
-    LitterType: LitterType1
-    Site: "Central Plains, Colorado, USA"
-  V7:
-    Name: PAP
-    Units: organic matter remaining
-    Description: "Percent ash-free dry mass remaining over time in A. gerardi litter under UV pass treatments at Central Plains"
-    FilterType: FilterType1
-    LitterType: LitterType1
-    Site: "Central Plains, Colorado, USA"
-  V8:
-    Name: PBB
-    Units: organic matter remaining
-    Description: "Percent ash-free dry mass remaining over time in B. aristidoides litter under UV block treatments at Central Plains"
-    FilterType: FilterType2
-    LitterType: LitterType2
-    Site: "Central Plains, Colorado, USA"
-  V9:
-    Name: PBP
-    Units: organic matter remaining
-    Description: "Percent ash-free dry mass remaining over time in B. aristidoides litter under UV pass treatments at Central Plains"
-    FilterType: FilterType1
-    LitterType: LitterType2
-    Site: "Central Plains, Colorado, USA"
-  V10:
-    Name: SAB
-    Units: organic matter remaining
-    Description: "Percent ash-free dry mass remaining over time in A. gerardi litter under UV block treatments at Sevilleta"
-    FilterType: FilterType2
-    LitterType: LitterType1
-    Site: "Sevilleta, New Mexico, USA"
-  V11:
-    Name: SAP
-    Units: organic matter remaining
-    Description: "Percent ash-free dry mass remaining over time in A. gerardi litter under UV pass treatments at Sevilleta"
-    FilterType: FilterType1
-    LitterType: LitterType1
-    Site: "Sevilleta, New Mexico, USA"
-  V12:
-    Name: SBB
-    Units: organic matter remaining
-    Description: "Percent ash-free dry mass remaining over time in B. aristidoides litter under UV block treatments at Sevilleta"
-    FilterType: FilterType2
-    LitterType: LitterType2
-    Site: "Sevilleta, New Mexico, USA"
-  V13:
-    Name: SBP
-    Units: organic matter remaining
-    Description: "Percent ash-free dry mass remaining over time in B. aristidoides litter under UV pass treatments at Sevilleta"
-    FilterType: FilterType1
-    LitterType: LitterType2
-    Site: "Sevilleta, New Mexico, USA"
+variables: # These describe the columns of your timeSeries.csv file
+        V1: # column 1
+          name: Time
+          units: months
+        V2:
+          name: CAB
+          units: organic matter remaining
+          varDesc: A. gerardi litter under UV block at Cedar Creek
+          site: Cedar Creek
+          litter: Andropogon gerardi
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: 400
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA: 14
+             UVB: 26
+        V3:
+          name: CAP
+          units: organic matter remaining
+          varDesc: A. gerardi litter under UV pass treatment at Cedar Creek
+          site: Cedar Creek
+          litter: Andropogon gerardi
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: 0
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total: 90
+             PAR:
+             UV:
+             UVA: 87
+             UVB: 86
+        V4:
+          name: CBB
+          units: organic matter remaining
+          varDesc: B. gracilis litter under UV block at Cedar Creek
+          site: Cedar Creek
+          litter: Bouteloua gracilis
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: 400
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA: 14
+             UVB: 26
+        V5:
+          name: CBP
+          units: organic matter remaining
+          varDesc:  B. gracilis litter under UV pass treatment at Cedar Creek
+          site: Cedar Creek
+          litter: Bouteloua gracilis
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: 0
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total: 90
+             PAR:
+             UV:
+             UVA: 87
+             UVB: 86
+        V6:
+          name: PAB
+          units: organic matter remaining
+          varDesc: A. gerardi litter under UV block at Central Plains
+          site: Central Plains
+          litter: Andropogon gerardi
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: 400
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA: 14
+             UVB: 26
+        V7:
+          name: PAP
+          units: organic matter remaining
+          varDesc: A. gerardi litter under UV pass treatment at Central Plains
+          site: Central Plains
+          litter: Andropogon gerardi
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: 0
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total: 90
+             PAR:
+             UV:
+             UVA: 87
+             UVB: 86
+        V8:
+          name: PBB
+          units: organic matter remaining
+          varDesc: B. gracilis litter under UV block at Central Plains
+          site: Central Plains
+          litter: Bouteloua gracilis
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: 400
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA: 14
+             UVB: 26
+        V9:
+          name: PBP
+          units: organic matter remaining
+          varDesc: B. gracilis litter under UV pass treatment at Central Plains
+          site: Central Plains
+          litter: Bouteloua gracilis
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: 0
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total: 90
+             PAR:
+             UV:
+             UVA: 87
+             UVB: 86
+        V10:
+          name: SAB
+          units: organic matter remaining
+          varDesc: A. gerardi litter under UV block treatments at Sevilleta
+          site: Sevilleta
+          litter: Andropogon gerardi
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: 400
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA: 14
+             UVB: 26
+        V11:
+          name: SAP
+          units: organic matter remaining
+          varDesc: A. gerardi litter under UV pass treatment at Sevilleta
+          site: Sevilleta
+          litter: Andropogon gerardi
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: 0
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total: 90
+             PAR:
+             UV:
+             UVA: 87
+             UVB: 86
+        V12:
+          name: SBB
+          units: organic matter remaining
+          varDesc: B. gracilis litter under UV block at Sevilleta
+          site: Sevilleta
+          litter: Bouteloua gracilis
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: 400
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA: 14
+             UVB: 26
+        V13:
+          name: SBP
+          units: organic matter remaining
+          varDesc: B. gracilis litter under UV pass treatment at Sevilleta
+          site: Sevilleta
+          litter: Bouteloua gracilis
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: 0
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total: 90
+             PAR:
+             UV:
+             UVA: 87
+             UVB: 86
