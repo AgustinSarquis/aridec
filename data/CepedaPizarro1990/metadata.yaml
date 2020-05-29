@@ -1,0 +1,211 @@
+citationKey: CepedaPizarro1990 # Unique identifier in the format: LastnameYear (lowercase letters must be added when there are two or more entries by the same author and year, i.e.: LastnameYearx)
+doi: 10.2307/2426560 # DOI of the publication where data is published
+entryAuthor: Agustín Sarquis # First and last name of the person who entered the data in this file
+entryCreationDate: 2019-01-29 # Date when the data was entered in this file. Format: YYYY-MM-DD
+contactName: Agustín Sarquis # First and last name of contact person (may be the principal investigator supervising the entryAuthor)
+contactEmail: agusarquis@agro.uba.ar # Email of the contact person
+entryNote: The coordinates on the paper were wrong. We used the one we had from previous papers at the same site. They provide elevation data for only two of 6 sites, so we use an average value
+study: Leaf litter from L. tridentata and one dominant species per site was incubated at six locations along a transect at the Chihuahuan Desert
+
+siteInfo:
+        site: Jornada Experimental Range # Names of individual sites, if one site, keep on this line, if multiple, use array format
+              # These fields should be arrays of equal length to site array
+        coordinates:
+          latitude: 32.5 # Latitude in decimal units (check for negative that denotes southern hemisphere)
+          longitude: -106.75 # Longitude in decimal units (check for negative that denotes western hemisphere)
+        country: USA # Name of country where site was conducted
+        MAT: 17.15 # Mean annual temperature in degrees Celsius
+        MAP: 225 # Mean annual precipitation in mm
+        rainySeason: summer
+        elevation: 1410 # Elevation of study site in meters above sea level
+        landCover: desert
+        vegNote: # Additional details about land cover such as species or functional type composition
+        cover:
+          plantCover: # Total plant cover percentage (if they report cover by specific plant types, fill the fields below)
+          bunchgrassCover:
+          shrubCover:
+          treeCover:
+          forbCover:
+          bareSoil:
+        soilTaxonomy:
+          soilOrder: # Soil order according to the classification system described below
+          soilFamily: # Soil family description (ex. 'Eutric' for a Eutric Cambisol)
+          soilSeries: # Soil series according to the classification system described below
+          classificationSystem: # Name of classification system used. Valid fields are: USDA, FAO, and WRB.
+
+experimentInfo:
+        incDesc: 5 species x 6 sites x 5 replicates x 22 harvests (but only 1 species was present at all 6 sites)
+        # These fields should all be one dimensional arrays. Values for experimental variables with multiple treatment levels should be entered in the variables section and left blank here
+        replicates: 5 # Number of replicates per treatment
+        duration: 500 # length of incubation in days
+        startingMonth: august # month during which the study started, all in lower case
+        litter: # plant species used as litter material for the experiment. All details related to the species must be specified in the initConditions.csv file
+        litterbag:
+          material: fiberglass
+          meshSize: 1.5 # mesh size in mm referring to one side of the net-square
+          dimentions: # size of the full litter bag in cm
+            width: 15
+            length: 15
+            height: # for 3-dimensional designs such as litter boxes in Austin2006NATURE
+          transmitance: # when reported, light transmitance of the mesh material as a percentage of full sunlight for each wavelength
+            total:
+            PAR:
+            UV:
+            UVA:
+            UVB:
+          position: under shrub
+
+variables: # These describe the columns of your timeSeries.csv file
+        V1: # column 1
+          name: Time
+          units: days
+        V2:
+          name: UPLt
+          units: organic matter remaining
+          varDesc: Mass loss of L. tridentata leaf litter at the Upper Piedmont site
+          site: Jornada Experimental Range
+          litter: Larrea tridentata
+          compTreat: different vegetation zones
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V3:
+          name: BLt
+          units: organic matter remaining
+          varDesc: Mass loss of L. tridentata leaf litter at the Bajada site
+          site: Jornada Experimental Range
+          litter: Larrea tridentata
+          compTreat: different vegetation zones
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V4:
+          name: PPo
+          units: organic matter remaining
+          varDesc: Mass loss of P. obtusum leaf litter at the Playa site
+          site: Jornada Experimental Range
+          litter: Panicum obtusum
+          compTreat: different vegetation zones
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V5:
+          name: PLt
+          units: organic matter remaining
+          varDesc: Mass loss of L. tridentata leaf litter at the Playa site
+          site: Jornada Experimental Range
+          litter: Larrea tridentata
+          compTreat: different vegetation zones
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V6:
+          name: PFPg
+          units: organic matter remaining
+          varDesc: Mass loss of P. glandulosa leaf litter at the Playa Fringe site
+          site: Jornada Experimental Range
+          litter: Prosopis glandulosa
+          compTreat: different vegetation zones
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V7:
+          name: PFLt
+          units: organic matter remaining
+          varDesc: Mass loss of L. tridentata leaf litter at the Playa Fringe site
+          site: Jornada Experimental Range
+          litter: Larrea tridentata
+          compTreat: different vegetation zones
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V8:
+          name: BSBm
+          units: organic matter remaining
+          varDesc: Mass loss of B. multiradiata leaf litter at the Basin Slope site
+          site: Jornada Experimental Range
+          litter: Baileya multiradiata
+          compTreat: different vegetation zones
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V9:
+          name: BSLt
+          units: organic matter remaining
+          varDesc: Mass loss of L. tridentata leaf litter at the Basin Slope site
+          site: Jornada Experimental Range
+          litter: Larrea tridentata
+          compTreat: different vegetation zones
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V10:
+          name: LPEp
+          units: organic matter remaining
+          varDesc: Mass loss of E. pulchellum leaf litter at the Lower Piedmont site
+          site: Jornada Experimental Range
+          litter: Erioneuron pulchellum
+          compTreat: different vegetation zones
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V11:
+          name: LPLt
+          units: organic matter remaining
+          varDesc: Mass loss of L. tridentata leaf litter at the Lower Piedmont site
+          site: Jornada Experimental Range
+          litter: Larrea tridentata
+          compTreat: different vegetation zones
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
