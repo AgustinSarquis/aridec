@@ -1,0 +1,9 @@
+species, type, N-fixer, material, amount, carbon, nitrogen, C:N, phosphorus, potassium, sodium, magnesium, manganese, copper, zinc, lead, calcium, sulfur, iron, lignin, cellulose, hemicellulose, cell solubles, SLA
+Pinus edulis1, evergreen, no, leaves, 2.5, 46.176, 0.48, 96.2, 0.11,,,,,,,,,,, 19.0,,,,
+Pinus edulis2, evergreen, no, prematurely senesced leaves, 2.5, 46.911, 0.57, 82.3, 0.11,,,,,,,,,,, 20.0,,,,
+Pinus edulis3, evergreen, no, live roots, 1.25, 46.35, 0.50, 92.7,  0.10,,,,,,,,,,, 15.8,,,,
+Pinus edulis4, evergreen, no, live roots, 1.25, 47.196, 0.46, 102.6, 0.10,,,,,,,,,,, 15.8,,,,
+Pinus edulis5, evergreen, no, leaves, 1.25, 54.945, 0.55, 99.9, 0.12,,,,,,,,,,, 19.4,,,,
+Pinus edulis6, evergreen, no, prematurely senesced leaves, 1.25, 50.718, 0.79, 64.2, 0.17,,,,,,,,,,, 18.2,,,,
+Pinus edulis7, evergreen, no, live roots, 0.625, 47.282, 0.47, 100.6, 0.11,,,,,,,,,,, 15.2,,,,
+Pinus edulis8, evergreen, no, live roots, 0.625, 49.025, 0.53, 92.5, 0.11,,,,,,,,,,, 18.2,,,,

@@ -1,334 +1,365 @@
-CitationKey: Classen2007
-doi: 10.1111/j.1365-2745.2007.01297.x
-EntryAuthor: Agustín Sarquis
+citationKey: Classen2007 # Unique identifier in the format: LastnameYear (lowercase letters must be added when there are two or more entries by the same author and year, i.e.: LastnameYearx)
+doi: 10.1111/j.1365-2745.2007.01297.x # DOI of the publication where data is published
+entryAuthor: Agustín Sarquis # First and last name of the person who entered the data in this file
+entryCreationDate: 2019-01-29 # Date when the data was entered in this file. Format: YYYY-MM-DD
+contactName: Agustín Sarquis # First and last name of contact person (may be the principal investigator supervising the entryAuthor)
+contactEmail: agusarquis@agro.uba.ar # Email of the contact person
+entryNote: # Any notes or comments related to this entry.
+study: Root and needle litter from four different genotypes of P. edulis were incubated under tree crowns of each one of those genotypes
 
-SiteInfo:
-  Name: "Sunset Crater National Monument, Arizona, USA"
-  EcosystemType: forest
-  MAP:
-    Value: 432
-    Units: mm
-  MAT:
-    Value: 8.6
-    Units: Celsius
-  Altitude:
-    Value: 2100
-    Units: masl
-  SoilType: Ustorthents
-  Coordinates:
-    Latitude: 35.37
-    Longitude: -111.55
+siteInfo:
+        site: Sunset Crater National Monument
+              # These fields should be arrays of equal length to site array
+        coordinates:
+          latitude: 35.37
+          longitude: -111.55
+        country: USA
+        MAT: 8.6
+        MAP: 432
+        rainySeason: # Period of the year during which most precipitation occurs, i.e.: whole year, spring, summer, autumn, winter (if more than one use array format)
+        elevation: 2100
+        landCover: forest
+        vegNote: piñon-juniper woodland (P. edulis constitutes 80% of total woody cover)
+        cover:
+          plantCover: # Total plant cover percentage (if they report cover by specific plant types, fill the fields below)
+          bunchgrassCover:
+          shrubCover:
+          treeCover:
+          forbCover:
+          bareSoil:
+        soilTaxonomy:
+          soilOrder: Ustorthents
+          soilFamily: Typic
+          soilSeries: # Soil series according to the classification system described below
+          classificationSystem: USDA
 
-ExperimentInfo:
- LitterInfo:
-  LitterType1:
-   Species: Pinus edulis
-   LifeForm: conifer
-   Material: recently senesced leaves
-   C:N:
-     Value: 96.2
-   Phosphorus:
-     Value: 0.11
-     Units: percentage
-   Nitrogen:
-     Value: 0.48
-     Units: percentage
-   Lignin:
-     Value: 19.0
-     Units: percentage
-   Lignin:N:
-     Value: 40.5
-   Amount:
-     Amount1:
-      Value: 2.5
-      Units: g
-     Amount2:
-      Value: 1.25
-      Units: g
-  LitterType2:
-   Species: Pinus edulis
-   LifeForm: conifer
-   Material: prematurely senesced leaves
-   C:N:
-     Value: 82.3
-   Phosphorus:
-     Value: 0.11
-     Units: percentage
-   Nitrogen:
-     Value: 0.57
-     Units: percentage
-   Lignin:
-     Value: 20.0
-     Units: percentage
-   Lignin:N:
-     Value: 35.5
-   Amount:
-     Amount1:
-      Value: 2.5
-      Units: g
-     Amount2:
-      Value: 1.25
-      Units: g
-  LitterType3:
-   Species: Pinus edulis
-   LifeForm: conifer
-   Material: live roots
-   C:N:
-     Value: 92.7
-   Phosphorus:
-     Value: 0.10
-     Units: percentage
-   Nitrogen:
-     Value: 0.50
-     Units: percentage
-   Lignin:
-     Value: 15.8
-     Units: percentage
-   Lignin:N:
-     Value: 31.6
-   Amount:
-     Value: 1.25
-     Units: g
-  LitterType4:
-   Species: Pinus edulis
-   LifeForm: conifer
-   Material: live roots
-   C:N:
-     Value: 102.6
-   Phosphorus:
-     Value: 0.10
-     Units: percentage
-   Nitrogen:
-     Value: 0.46
-     Units: percentage
-   Lignin:
-     Value: 15.8
-     Units: percentage
-   Lignin:N:
-     Value: 34.6
-   Amount:
-     Value: 1.25
-     Units: g
-  LitterType5:
-   Species: Pinus edulis
-   LifeForm: conifer
-   Material: recently senesced leaves
-   C:N:
-     Value: 99.9
-   Phosphorus:
-     Value: 0.12
-     Units: percentage
-   Nitrogen:
-     Value: 0.55
-     Units: percentage
-   Lignin:
-     Value: 19.4
-     Units: percentage
-   Lignin:N:
-     Value: 38.0
-   Amount:
-     Amount1:
-      Value: 2.5
-      Units: g
-     Amount2:
-      Value: 1.25
-      Units: g
-  LitterType6:
-   Species: Pinus edulis
-   LifeForm: conifer
-   Material: prematurely senesced leaves
-   C:N:
-     Value: 64.2
-   Phosphorus:
-     Value: 0.17
-     Units: percentage
-   Nitrogen:
-     Value: 0.79
-     Units: percentage
-   Lignin:
-     Value: 18.2
-     Units: percentage
-   Lignin:N:
-     Value: 22.5
-   Amount:
-     Amount1:
-      Value: 2.5
-      Units: g
-     Amount2:
-      Value: 1.25
-      Units: g
-  LitterType7:
-   Species: Pinus edulis
-   LifeForm: conifer
-   Material: live roots
-   C:N:
-     Value: 100.6
-   Phosphorus:
-     Value: 0.11
-     Units: percentage
-   Nitrogen:
-     Value: 0.47
-     Units: percentage
-   Lignin:
-     Value: 15.2
-     Units: percentage
-   Lignin:N:
-     Value: 33.0
-   Amount:
-     Value: 0.625
-     Units: g
-  LitterType8:
-   Species: Pinus edulis
-   LifeForm: conifer
-   Material: live roots
-   C:N:
-     Value: 92.5
-   Phosphorus:
-     Value: 0.11
-     Units: percentage
-   Nitrogen:
-     Value: 0.53
-     Units: percentage
-   Lignin:
-     Value: 18.2
-     Units: percentage
-   Lignin:N:
-     Value: 35.0
-   Amount:
-     Value: 0.625
-     Units: g
- Experiment1:
-    Description: "Root and needle litter from four different genotypes of P. edulis were incubated under tree crowns from each one of those genotypes"
-    LitterBagInfo:
-      Material:
-        - polyester
-        - polypropylene
-      MeshSize:
-       Value:
-         - 0.8
-         - 0.2
-       Units: mm
-      Dimentions:
-       Width: 10
-       Lenght: 10
-       Units: cm
-      Position:
-        Position1:
-          - under tree
-          - bare soil
-        Position2:
-          - bare soil
-          - under sparse tree crown
-        Position3:
-          - buried 15 cm deep
-          - under tree
-    Treatment:
-      - litter type
-      - location
-    StartingDate:
-      Month: may
-      Season: spring
-    Duration:
-      Time: 24
-      Units: months
+experimentInfo:
+        incDesc: 2 genotypes x 3 litter materials x 2 tree crown positions x 2 harvests x 20 replicates
+        # These fields should all be one dimensional arrays. Values for experimental variables with multiple treatment levels should be entered in the variables section and left blank here
+        replicates: 20
+        duration: 750
+        startingMonth: # month during which the study started, all in lower case
+        litter: # plant species used as litter material for the experiment. All details related to the species must be specified in the initConditions.csv file
+        litterbag:
+          material: # mesh type used to construct the litter bags, options are: wire, aluminum, window screening, net curtain, bolting cloth, plastic, fiberglass, nylon, polypropylene, polyester, polyethylene, polyamide
+          meshSize: # mesh size in mm referring to one side of the net-square
+          dimentions: # size of the full litter bag in cm
+            width: 10
+            length: 10
+            height: # for 3-dimensional designs such as litter boxes in Austin2006NATURE
+          transmitance: # when reported, light transmitance of the mesh material as a percentage of full sunlight for each wavelength
+            total:
+            PAR:
+            UV:
+            UVA:
+            UVB:
+          position: # position of litterbags in the field, valid options are: bare soil, decomposition bed, under litter, over litter, over lawn, next to grass, under tree/shrub/grass, buried X cm deep, underwater, under rainout shelter, under frame, suspended X cm, under shadecloth
 
-Variables:
-  V1:
-    Name: Time
-    Units: years
-  V2:
-    Name: MNRR
-    Units: mass remaining
-    Description: "Mass remaining from moth resistant P. edulis needle litter incubated under a moth resistant tree"
-    LitterType: LitterType1
-    Position: Position1
-  V3:
-    Name: MNRS
-    Units: mass remaining
-    Description: "Mass remaining from moth resistant P. edulis needle litter incubated under a moth susceptible tree"
-    LitterType: LitterType1
-    Position: Position2
-  V4:
-    Name: MNSR
-    Units: mass remaining
-    Description: "Mass remaining from moth susceptible P. edulis needle litter incubated under a moth resistant tree"
-    LitterType: LitterType2
-    Position: Position1
-  V5:
-    Name: MNSS
-    Units: mass remaining
-    Description: "Mass remaining from moth susceptible P. edulis needle litter incubated under a moth susceptible tree"
-    LitterType: LitterType2
-    Position: Position2
-  V6:
-    Name: MRRR
-    Units: mass remaining
-    Description: "Mass remaining from moth resistant P. edulis root litter incubated under a moth resistant tree"
-    LitterType: LitterType3
-    Position: Position3
-  V7:
-    Name: MRRS
-    Units: mass remaining
-    Description: "Mass remaining from moth resistant P. edulis root litter incubated under a moth susceptible tree"
-    LitterType: LitterType3
-    Position: Position3
-  V8:
-    Name: MRSR
-    Units: mass remaining
-    Description: "Mass remaining from moth susceptible P. edulis root litter incubated under a moth resistant tree"
-    LitterType: LitterType4
-    Position: Position3
-  V9:
-    Name: MRSS
-    Units: mass remaining
-    Description: "Mass remaining from moth susceptible P. edulis root litter incubated under a moth susceptible tree"
-    LitterType: LitterType4
-    Position: Position3
-  V10:
-    Name: SNRR
-    Units: mass remaining
-    Description: "Mass remaining from scale resistant P. edulis needle litter incubated under a scale resistant tree"
-    LitterType: LitterType5
-    Position: Position1
-  V11:
-    Name: SNRS
-    Units: mass remaining
-    Description: "Mass remaining from scale resistant P. edulis needle litter incubated under a scale susceptible tree"
-    LitterType: LitterType5
-    Position: Position2
-  V12:
-    Name: SNSR
-    Units: mass remaining
-    Description: "Mass remaining from scale susceptible P. edulis needle litter incubated under a scale resistant tree"
-    LitterType: LitterType6
-    Position: Position1
-  V13:
-    Name: SNSS
-    Units: mass remaining
-    Description: "Mass remaining from scale susceptible P. edulis needle litter incubated under a scale susceptible tree"
-    LitterType: LitterType6
-    Position: Position2
-  V14:
-    Name: SRRR
-    Units: mass remaining
-    Description: "Mass remaining from scale resistant P. edulis root litter incubated under a scale resistant tree"
-    LitterType: LitterType7
-    Position: Position3
-  V15:
-    Name: SRRS
-    Units: mass remaining
-    Description: "Mass remaining from scale resistant P. edulis root litter incubated under a scale susceptible tree"
-    LitterType: LitterType7
-    Position: Position2
-  V16:
-    Name: SRSR
-    Units: mass remaining
-    Description: "Mass remaining from scale susceptible P. edulis root litter incubated under a scale resistant tree"
-    LitterType: LitterType8
-    Position: Position3
-  V17:
-    Name: SRSS
-    Units: mass remaining
-    Description: "Mass remaining from scale susceptible P. edulis root litter incubated under a scale susceptible tree"
-    LitterType: LitterType8
-    Position: Position3
+variables: # These describe the columns of your timeSeries.csv file
+        V1: # column 1
+          name: Time
+          units: years
+        V2:
+          name: MNRR
+          units: mass remaining
+          varDesc: Moth resistant P. edulis needle litter incubated under a moth resistant tree
+          site: Sunset Crater National Monument
+          startingMonth: may
+          litter: Pinus edulis1
+          meshSize: 0.8
+          material: polyester
+          position: under tree
+          compTreat: herbivore resistant genotype
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V3:
+          name: MNRS
+          units: mass remaining
+          varDesc: Moth resistant P. edulis needle litter incubated under a moth susceptible tree
+          site: Sunset Crater National Monument
+          startingMonth: may
+          litter: Pinus edulis1
+          meshSize: 0.8
+          material: polyester
+          position: under tree
+          compTreat: herbivore resistant genotype
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V4:
+          name: MNSR
+          units: mass remaining
+          varDesc: Moth susceptible P. edulis needle litter incubated under a moth resistant tree
+          site: Sunset Crater National Monument
+          startingMonth: may
+          litter: Pinus edulis2
+          meshSize: 0.8
+          material: polyester
+          position: under tree
+          compTreat: herbivore susceptible genotype
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V5:
+          name: MNSS
+          units: mass remaining
+          varDesc: Moth susceptible P. edulis needle litter incubated under a moth susceptible tree
+          site: Sunset Crater National Monument
+          startingMonth: may
+          litter: Pinus edulis2
+          meshSize: 0.8
+          material: polyester
+          position: under tree
+          compTreat: herbivore susceptible genotype
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V6:
+          name: MRRR
+          units: mass remaining
+          varDesc: Moth resistant P. edulis root litter incubated under a moth resistant tree
+          site: Sunset Crater National Monument
+          startingMonth: june
+          litter: Pinus edulis3
+          meshSize: 0.2
+          material: polypropylene
+          position: buried 15 cm deep
+          compTreat: herbivore resistant genotype
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V7:
+          name: MRRS
+          units: mass remaining
+          varDesc: Moth resistant P. edulis root litter incubated under a moth susceptible tree
+          site: Sunset Crater National Monument
+          startingMonth: june
+          litter: Pinus edulis3
+          meshSize: 0.2
+          material: polypropylene
+          position: buried 15 cm deep
+          compTreat: herbivore resistant genotype
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V8:
+          name: MRSR
+          units: mass remaining
+          varDesc: Moth susceptible P. edulis root litter incubated under a moth resistant tree
+          site: Sunset Crater National Monument
+          startingMonth: june
+          litter: Pinus edulis4
+          meshSize: 0.2
+          material: polypropylene
+          position: buried 15 cm deep
+          compTreat: herbivore susceptible genotype
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V9:
+          name: MRSS
+          units: mass remaining
+          varDesc: Moth susceptible P. edulis root litter incubated under a moth susceptible tree
+          site: Sunset Crater National Monument
+          startingMonth: june
+          litter: Pinus edulis4
+          meshSize: 0.2
+          material: polypropylene
+          position: buried 15 cm deep
+          compTreat: herbivore susceptible genotype
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V10:
+          name: SNRR
+          units: mass remaining
+          varDesc: Scale resistant P. edulis needle litter incubated under a scale resistant tree
+          site: Sunset Crater National Monument
+          startingMonth: may
+          litter: Pinus edulis5
+          meshSize: 0.8
+          material: polyester
+          position: under tree
+          compTreat: herbivore resistant genotype
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V11:
+          name: SNRS
+          units: mass remaining
+          varDesc: Scale resistant P. edulis needle litter incubated under a scale susceptible tree
+          site: Sunset Crater National Monument
+          startingMonth: may
+          litter: Pinus edulis5
+          meshSize: 0.8
+          material: polyester
+          position: under tree
+          compTreat: herbivore resistant genotype
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V12:
+          name: SNSR
+          units: mass remaining
+          varDesc: Scale susceptible P. edulis needle litter incubated under a scale resistant tree
+          site: Sunset Crater National Monument
+          startingMonth: may
+          litter: Pinus edulis6
+          meshSize: 0.8
+          material: polyester
+          position: under tree
+          compTreat: herbivore susceptible genotype
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V13:
+          name: SNSS
+          units: mass remaining
+          varDesc: Scale susceptible P. edulis needle litter incubated under a scale susceptible tree
+          site: Sunset Crater National Monument
+          startingMonth: may
+          litter: Pinus edulis6
+          meshSize: 0.8
+          material: polyester
+          position: under tree
+          compTreat: herbivore susceptible genotype
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V14:
+          name: SRRR
+          units: mass remaining
+          varDesc: Scale resistant P. edulis root litter incubated under a scale resistant tree
+          site: Sunset Crater National Monument
+          startingMonth: june
+          litter: Pinus edulis7
+          meshSize: 0.2
+          material: polypropylene
+          position: buried 15 cm deep
+          compTreat: herbivore resistant genotype
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V15:
+          name: SRRS
+          units: mass remaining
+          varDesc: Scale resistant P. edulis root litter incubated under a scale susceptible tree
+          site: Sunset Crater National Monument
+          startingMonth: june
+          litter: Pinus edulis7
+          meshSize: 0.2
+          material: polypropylene
+          position: buried 15 cm deep
+          compTreat: herbivore resistant genotype
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V16:
+          name: SRSR
+          units: mass remaining
+          varDesc: Scale susceptible P. edulis root litter incubated under a scale resistant tree
+          site: Sunset Crater National Monument
+          startingMonth: june
+          litter: Pinus edulis8
+          meshSize: 0.2
+          material: polypropylene
+          position: buried 15 cm deep
+          compTreat: herbivore susceptible genotype
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V17:
+          name: SRSS
+          units: mass remaining
+          varDesc: Scale susceptible P. edulis root litter incubated under a scale susceptible tree
+          site: Sunset Crater National Monument
+          startingMonth: june
+          litter: Pinus edulis8
+          meshSize: 0.2
+          material: polypropylene
+          position: buried 15 cm deep
+          compTreat: herbivore susceptible genotype
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
