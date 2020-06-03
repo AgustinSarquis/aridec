@@ -1,312 +1,645 @@
-CitationKey: Davies2013
-doi: 10.1007/s10021-013-9657-0
-EntryAuthor: Ignacio Siebenhart
+citationKey: Davies2013 # Unique identifier in the format: LastnameYear (lowercase letters must be added when there are two or more entries by the same author and year, i.e.: LastnameYearx)
+doi: 10.1007/s10021-013-9657-0 # DOI of the publication where data is published
+entryAuthor: Ignacio Siebenhart # First and last name of the person who entered the data in this file
+entryCreationDate: 2019-06-03 # Date when the data was entered in this file. Format: YYYY-MM-DD
+contactName: Agustín Sarquis # First and last name of contact person (may be the principal investigator supervising the entryAuthor)
+contactEmail: agusarquis@agro.uba.ar # Email of the contact person
+entryNote: Pennisetum cenchroides' name was updated
+study: decomposition of four grass species that differed in litter quality under different fire regimes across a savanna rainfall gradient in South Africa
 
-SiteInfo:
- Name:
-  - Mopani, Krueger National Park, South Africa
-  - Satara, Krueger National Park, South Africa
-  - Pretoriuskop, Krueger National Park, South Africa
-  - Hluhluwe, Hluhluwe-iMfolozi Park, South Africa
- EcosystemType: savanna
- MAP:
-  Value:
-   - 450
-   - 550
-   - 750
-   - 900
-  Units: mm
- Coordinates:
-  Latitude:
-   - -22.417
-   - -24.392
-   - -25.166
-   - -28.017
-  Longitude:
-   - 30.833
-   - 31.783
-   - 31.267
-   - 32.250
+siteInfo:
+        site:
+         - Mopani
+         - Satara
+         - Pretoriuskop
+         - Hluhluwe
+              # These fields should be arrays of equal length to site array
+        coordinates:
+          latitude:
+             - -22.417
+             - -24.392
+             - -25.166
+             - -28.017 # Latitude in decimal units (check for negative that denotes southern hemisphere)
+          longitude:
+             - 30.833
+             - 31.783
+             - 31.267
+             - 32.250 # Longitude in decimal units (check for negative that denotes western hemisphere)
+        country:
+          - South Africa
+          - South Africa
+          - South Africa
+          - South Africa
+        MAT:
+          - 23.60
+          - 23.37
+          - 20.99
+          - 22.18
+        MAP:
+          - 450
+          - 550
+          - 750
+          - 900 # Mean annual precipitation in mm
+        rainySeason:
+          - summer
+          - summer
+          - summer
+          - summer
+        elevation:
+          - 387
+          - 264
+          - 600
+          - 80 # Elevation of study site in meters above sea level
+        landCover:
+          - savanna
+          - savanna
+          - savanna
+          - savanna
+        vegNote:
+         - Colophospermum mopane savanna
+         - Acacia savanna
+         - Terminalia savanna
+         - mesic Acacia savanna
+        cover:
+          plantCover: # Total plant cover percentage (if they report cover by specific plant types, fill the fields below)
+          bunchgrassCover:
+          shrubCover:
+          treeCover:
+          forbCover:
+          bareSoil:
+        soilTaxonomy:
+          soilOrder: # Soil order according to the classification system described below
+          soilFamily: # Soil family description (ex. 'Eutric' for a Eutric Cambisol)
+          soilSeries: # Soil series according to the classification system described below
+          classificationSystem: # Name of classification system used. Valid fields are: USDA, FAO, and WRB.
 
-ExperimentInfo:
- LitterInfo:
-  LitterType1:
-   Species: Urochloa trichopus
-   Lifeform: graminoid
-   Material: aboveground parts
-   Amount:
-    Value: 8
-    Units: g
-  LitterType2:
-   Species: Pennisetum ciliare
-   Lifeform: graminoid
-   Material: aboveground parts
-   Amount:
-    Value: 8
-    Units: g
-  LitterType3:
-   Species: Themeda triandra
-   Lifeform: graminoid
-   Material: aboveground parts
-   Amount:
-    Value: 8
-    Units: g
-  LitterType4:
-   Species: Cymbopogon caesius
-   Lifeform: graminoid
-   Material: aboveground parts
-   Amount:
-    Value: 8
-    Units: g
- Experiment1:
-  Description: "They measured the decomposition rates of four grass species that differed in litter quality, investigating them under different fire regimes across a savanna rainfall gradient in South Africa"
-  LitterBagInfo:
-   Material: aluminum
-   MeshSize:
-    Value: 2
-    Units: mm
-   Dimentions:
-    Width: 20
-    Lenght: 20
-    Units: cm
-   Position: bare soil
-  Treatment: seasonality
-  StartingDate:
-   StartingDate1:
-    Month: january
-    Season: summer
-   StartingDate2:
-    Month: june
-    Season: winter
-  Duration:
-   Time: 4
-   Units: months
+experimentInfo:
+        incDesc: 4 species x 4 sites x 2 seasons x 6 replicates x 3 or 4 harvests (depeding on the season)
+        # These fields should all be one dimensional arrays. Values for experimental variables with multiple treatment levels should be entered in the variables section and left blank here
+        replicates: 6 # Number of replicates per treatment
+        duration:
+        startingMonth: # month during which the study started, all in lower case
+        litter: # plant species used as litter material for the experiment. All details related to the species must be specified in the initConditions.csv file
+        litterbag:
+          material: aluminum
+          meshSize: 2
+          dimentions: # size of the full litter bag in cm
+            width: 20
+            length: 20
+            height: # for 3-dimensional designs such as litter boxes in Austin2006NATURE
+          transmitance: # when reported, light transmitance of the mesh material as a percentage of full sunlight for each wavelength
+            total:
+            PAR:
+            UV:
+            UVA:
+            UVB:
+          position: bare soil
 
-Variable:
- V1:
-   Name: Time
-   Units: months
- V2:
-   Name: UMW
-   Units: mass remaining
-   Description: "U. trichopus litter percentage remaining at harvest time decomposed during the wet season"
-   Site: Mopani, Krueger National Park, South Africa
-   LitterType: LitterType1
-   StartingDate: StartingDate1
- V3:
-   Name: USW
-   Units: mass remaining
-   Description: "U. trichopus litter percentage remaining at harvest time decomposed during the wet season"
-   Site: Satara, Krueger National Park, South Africa
-   LitterType: LitterType1
-   StartingDate: StartingDate1
- V4:
-   Name: UPW
-   Units: mass remaining
-   Description: "U. trichopus litter percentage remaining at harvest time decomposed during the wet season"
-   Site: Pretoriuskop, Krueger National Park, South Africa
-   LitterType: LitterType1
-   StartingDate: StartingDate1
- V5:
-   Name: UHW
-   Units: mass remaining
-   Description: "U. trichopus litter percentage remaining at harvest time decomposed during the wet season"
-   Site: Hluhluwe, Hluhluwe-iMfolozi National Park, South Africa
-   LitterType: LitterType1
-   StartingDate: StartingDate1
- V6:
-   Name: UMD
-   Units: mass remaining
-   Description: "U. trichopus litter percentage remaining at harvest time decomposed during the dry season"
-   Site: Mopani, Krueger National Park, South Africa
-   LitterType: LitterType1
-   StartingDate: StartingDate2
- V7:
-   Name: USD
-   Units: mass remaining
-   Description: "U. trichopus litter percentage remaining at harvest time decomposed during the dry season"
-   Site: Satara, Krueger National Park, South Africa
-   LitterType: LitterType1
-   StartingDate: StartingDate2
- V8:
-   Name: UPD
-   Units: mass remaining
-   Description: "U. trichopus litter percentage remaining at harvest time decomposed during the dry season"
-   Site: Pretoriuskop, Krueger National Park, South Africa
-   LitterType: LitterType1
-   StartingDate: StartingDate2
- V9:
-   Name: UHD
-   Units: mass remaining
-   Description: "U. trichopus litter percentage remaining at harvest time decomposed during the dry season"
-   Site: Hluhluwe, Hluhluwe-iMfolozi National Park, South Africa
-   LitterType: LitterType1
-   StartingDate: StartingDate2
- V10:
-    Name: CMW
-    Units: mass remaining
-    Description: "P. ciliare litter percentage remaining at harvest time decomposed during the wet season"
-    Site: Mopani, Krueger National Park, South Africa
-    LitterType: LitterType2
-    StartingDate: StartingDate1
- V11:
-    Name: CSW
-    Units: mass remaining
-    Description: "P. ciliare litter percentage remaining at harvest time decomposed during the wet season"
-    Site: Satara, Krueger National Park, South Africa
-    LitterType: LitterType2
-    StartingDate: StartingDate1
- V12:
-    Name: CPW
-    Units: mass remaining
-    Description: "P. ciliare litter percentage remaining at harvest time decomposed during the wet season"
-    Site: Pretoriuskop, Krueger National Park, South Africa
-    LitterType: LitterType2
-    StartingDate: StartingDate1
- V13:
-    Name: CHW
-    Units: mass remaining
-    Description: "P. ciliare litter percentage remaining at harvest time decomposed during the wet season"
-    Site: Hluhluwe, Hluhluwe-iMfolozi National Park, South Africa
-    LitterType: LitterType2
-    StartingDate: StartingDate1
- V14:
-    Name: CMD
-    Units: mass remaining
-    Description: "P. ciliare litter percentage remaining at harvest time decomposed during the dry season"
-    Site: Mopani, Krueger National Park, South Africa
-    LitterType: LitterType2
-    StartingDate: StartingDate2
- V15:
-    Name: CSD
-    Units: mass remaining
-    Description: "P. ciliare litter percentage remaining at harvest time decomposed during the dry season"
-    Site: Satara, Krueger National Park, South Africa
-    LitterType: LitterType2
-    StartingDate: StartingDate2
- V16:
-    Name: CPD
-    Units: mass remaining
-    Description: "P. ciliare litter percentage remaining at harvest time decomposed during the dry season"
-    Site: Pretoriuskop, Krueger National Park, South Africa
-    LitterType: LitterType2
-    StartingDate: StartingDate2
- V17:
-    Name: CHD
-    Units: mass remaining
-    Description: "P. ciliare litter percentage remaining at harvest time decomposed during the dry season"
-    Site: Hluhluwe, Hluhluwe-iMfolozi National Park, South Africa
-    LitterType: LitterType2
-    StartingDate: StartingDate2
- V18:
-    Name: TMW
-    Units: mass remaining
-    Description: "T. triandra litter percentage remaining at harvest time decomposed during the wet season"
-    Site: Mopani, Krueger National Park, South Africa
-    LitterType: LitterType3
-    StartingDate: StartingDate1
- V19:
-    Name: TSW
-    Units: mass remaining
-    Description: "T. triandra litter percentage remaining at harvest time decomposed during the wet season"
-    Site: Satara, Krueger National Park, South Africa
-    LitterType: LitterType3
-    StartingDate: StartingDate1
- V20:
-    Name: TPW
-    Units: mass remaining
-    Description: "T. triandra litter percentage remaining at harvest time decomposed during the wet season"
-    Site: Pretoriuskop, Krueger National Park, South Africa
-    LitterType: LitterType3
-    StartingDate: StartingDate1
- V21:
-    Name: THW
-    Units: mass remaining
-    Description: "T. triandra litter percentage remaining at harvest time decomposed during the wet season"
-    Site: Hluhluwe, Hluhluwe-iMfolozi National Park, South Africa
-    LitterType: LitterType3
-    StartingDate: StartingDate1
- V22:
-    Name: TMD
-    Units: mass remaining
-    Description: "T. triandra litter percentage remaining at harvest time decomposed during the dry season"
-    Site: Mopani, Krueger National Park, South Africa
-    LitterType: LitterType3
-    StartingDate: StartingDate2
- V23:
-    Name: TSD
-    Units: mass remaining
-    Description: "T. triandra litter percentage remaining at harvest time decomposed during the dry season"
-    Site: Satara, Krueger National Park, South Africa
-    LitterType: LitterType3
-    StartingDate: StartingDate2
- V24:
-    Name: TPD
-    Units: mass remaining
-    Description: "T. triandra litter percentage remaining at harvest time decomposed during the dry season"
-    Site: Pretoriuskop, Krueger National Park, South Africa
-    LitterType: LitterType3
-    StartingDate: StartingDate2
- V25:
-    Name: THD
-    Units: mass remaining
-    Description: "T. triandra litter percentage remaining at harvest time decomposed during the dry season"
-    Site: Hluhluwe, Hluhluwe-iMfolozi National Park, South Africa
-    LitterType: LitterType3
-    StartingDate: StartingDate2
- V26:
-    Name: CYMW
-    Units: mass remaining
-    Description: "C. caesius litter percentage remaining at harvest time decomposed during the wet season"
-    Site: Mopani, Krueger National Park, South Africa
-    LitterType: LitterType4
-    StartingDate: StartingDate1
- V27:
-    Name: CYSW
-    Units: mass remaining
-    Description: "C. caesius litter percentage remaining at harvest time decomposed during the wet season"
-    Site: Satara, Krueger National Park, South Africa
-    LitterType: LitterType4
-    StartingDate: StartingDate1
- V28:
-    Name: CYPW
-    Units: mass remaining
-    Description: "C. caesius litter percentage remaining at harvest time decomposed during the wet season"
-    Site: Pretoriuskop, Krueger National Park, South Africa
-    LitterType: LitterType4
-    StartingDate: StartingDate1
- V29:
-    Name: CYHW
-    Units: mass remaining
-    Description: "C. caesius litter percentage remaining at harvest time decomposed during the wet season"
-    Site: Hluhluwe, Hluhluwe-iMfolozi National Park, South Africa
-    LitterType: LitterType4
-    StartingDate: StartingDate1
- V30:
-    Name: CYMD
-    Units: mass remaining
-    Description: "C. caesius litter percentage remaining at harvest time decomposed during the dry season"
-    Site: Mopani, Krueger National Park, South Africa
-    LitterType: LitterType4
-    StartingDate: StartingDate2
- V31:
-    Name: CYSD
-    Units: mass remaining
-    Description: "C. caesius litter percentage remaining at harvest time decomposed during the dry season"
-    Site: Satara, Krueger National Park, South Africa
-    LitterType: LitterType4
-    StartingDate: StartingDate2
- V32:
-    Name: CYPD
-    Units: mass remaining
-    Description: "C. caesius litter percentage remaining at harvest time decomposed during the dry season"
-    Site: Pretoriuskop, Krueger National Park, South Africa
-    LitterType: LitterType4
-    StartingDate: StartingDate2
- V33:
-    Name: CYHD
-    Units: mass remaining
-    Description: "C. caesius litter percentage remaining at harvest time decomposed during the dry season"
-    Site: Hluhluwe, Hluhluwe-iMfolozi National Park, South Africa
-    LitterType: LitterType4
-    StartingDate: StartingDate2
+variables: # These describe the columns of your timeSeries.csv file
+        V1: # column 1
+          name: Time
+          units: months
+        V2:
+          name: UMW
+          units: mass remaining
+          varDesc: U. mosambicensis litter remaining during the wet season at Mopani
+          site: Mopani
+          duration: 90
+          startingMonth: january
+          litter: Urochloa mosambicensis
+          compTreat: wet season
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V3:
+          name: USW
+          units: mass remaining
+          varDesc: U. mosambicensis litter remaining during the wet season at Satara
+          site: Satara
+          duration: 90
+          startingMonth: january
+          litter: Urochloa mosambicensis
+          compTreat: wet season
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V4:
+          name: UPW
+          units: mass remaining
+          varDesc: U. mosambicensis litter remaining during the wet season at Pretoriuskop
+          site: Pretoriuskop
+          duration: 90
+          startingMonth: january
+          litter: Urochloa mosambicensis
+          compTreat: wet season
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V5:
+          name: UHW
+          units: mass remaining
+          varDesc: U. mosambicensis litter remaining during the wet season at Hluhluwe
+          site: Hluhluwe
+          duration: 90
+          startingMonth: january
+          litter: Urochloa mosambicensis
+          compTreat: wet season
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V6:
+          name: UMD
+          units: mass remaining
+          varDesc: U. mosambicensis litter remaining during the dry season at Mopani
+          site: Mopani
+          duration: 120
+          startingMonth: june
+          litter: Urochloa mosambicensis
+          compTreat: dry season
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V7:
+          name: USD
+          units: mass remaining
+          varDesc: U. mosambicensis litter remaining during the dry season at Satara
+          site: Satara
+          duration: 120
+          startingMonth: june
+          litter: Urochloa mosambicensis
+          compTreat: dry season
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V8:
+          name: UPD
+          units: mass remaining
+          varDesc: U. mosambicensis litter remaining during the dry season at Pretoriuskop
+          site: Pretoriuskop
+          duration: 120
+          startingMonth: june
+          litter: Urochloa mosambicensis
+          compTreat: dry season
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V9:
+          name: UHD
+          units: mass remaining
+          varDesc: U. mosambicensis litter remaining during the dry season at Hluhluwe
+          site: Hluhluwe
+          duration: 120
+          startingMonth: june
+          litter: Urochloa mosambicensis
+          compTreat: dry season
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V10:
+          name: CMW
+          units: mass remaining
+          varDesc: P. cenchroides litter remaining during the wet season at Mopani
+          site: Mopani
+          duration: 90
+          startingMonth: january
+          litter: Pennisetum cenchroides
+          compTreat: wet season
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V11:
+          name: CSW
+          units: mass remaining
+          varDesc: P. cenchroides litter remaining during the wet season at Satara
+          site: Satara
+          duration: 90
+          startingMonth: january
+          litter: Pennisetum cenchroides
+          compTreat: wet season
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V12:
+          name: CPW
+          units: mass remaining
+          varDesc: P. cenchroides litter remaining during the wet season at Pretoriuskop
+          site: Pretoriuskop
+          duration: 90
+          startingMonth: january
+          litter: Pennisetum cenchroides
+          compTreat: wet season
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V13:
+          name: CHW
+          units: mass remaining
+          varDesc: P. cenchroides litter remaining during the wet season at Hluhluwe
+          site: Hluhluwe
+          duration: 90
+          startingMonth: january
+          litter: Pennisetum cenchroides
+          compTreat: wet season
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V14:
+          name: CMD
+          units: mass remaining
+          varDesc: P. cenchroides litter remaining during the dry season at Mopani
+          site: Mopani
+          duration: 120
+          startingMonth: june
+          litter: Pennisetum cenchroides
+          compTreat: dry season
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V15:
+          name: CSD
+          units: mass remaining
+          varDesc: P. cenchroides litter remaining during the dry season at Satara
+          site: Satara
+          duration: 120
+          startingMonth: june
+          litter: Pennisetum cenchroides
+          compTreat: dry season
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V16:
+          name: CPD
+          units: mass remaining
+          varDesc: P. cenchroides litter remaining during the dry season at Pretoriuskop
+          site: Pretoriuskop
+          duration: 120
+          startingMonth: june
+          litter: Pennisetum cenchroides
+          compTreat: dry season
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        17:
+          name: CHD
+          units: mass remaining
+          varDesc: P. cenchroides litter remaining during the dry season at Hluhluwe
+          site: Hluhluwe
+          duration: 120
+          startingMonth:  june
+          litter: Pennisetum cenchroides
+          compTreat: dry season
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V18:
+          name: TMW
+          units: mass remaining
+          varDesc: T. triandra litter remaining during the wet season at Mopani
+          site: Mopani
+          duration: 90
+          startingMonth: january
+          litter: Themeda triandra
+          compTreat: wet season
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V19:
+          name: TSW
+          units: mass remaining
+          varDesc: T. triandra litter remaining during the wet season at Satara
+          site: Satara
+          duration: 90
+          startingMonth: january
+          litter: Themeda triandra
+          compTreat: wet season
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V20:
+          name: TPW
+          units: mass remaining
+          varDesc: T. triandra litter remaining during the wet season at Pretoriuskop
+          site: Pretoriuskop
+          duration: 90
+          startingMonth: january
+          litter: Themeda triandra
+          compTreat: wet season
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V21:
+          name: THW
+          units: mass remaining
+          varDesc: T. triandra litter remaining during the wet season at Hluhluwe
+          site: Hluhluwe
+          duration: 90
+          startingMonth: january
+          litter: Themeda triandra
+          compTreat: wet season
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V22:
+          name: TMD
+          units: mass remaining
+          varDesc: T. triandra litter remaining during the dry season at Mopani
+          site: Mopani
+          duration: 120
+          startingMonth: june
+          litter: Themeda triandra
+          compTreat: dry season
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V23:
+          name: TSD
+          units: mass remaining
+          varDesc: T. triandra litter remaining during the dry season at Satara
+          site: Satara
+          duration: 120
+          startingMonth: june
+          litter: Themeda triandra
+          compTreat: dry season
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V24:
+          name: TPD
+          units: mass remaining
+          varDesc: T. triandra litter remaining during the dry season at Pretoriuskop
+          site: Pretoriuskop
+          duration: 120
+          startingMonth: june
+          litter: Themeda triandra
+          compTreat: dry season
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V25:
+          name: THD
+          units: mass remaining
+          varDesc: T. triandra litter remaining during the dry season at Hluhluwe
+          site: Hluhluwe
+          duration: 120
+          startingMonth: june
+          litter: Themeda triandra
+          compTreat: dry season
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V26:
+          name: CYMW
+          units: mass remaining
+          varDesc: C. excavatus litter remaining during the wet season at Mopani
+          site: Mopani
+          duration: 90
+          startingMonth: january
+          litter: Cymbopogon excavatus
+          compTreat: wet season
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V27:
+          name: CYSW
+          units: mass remaining
+          varDesc: C. excavatus litter remaining during the wet season at Satara
+          site: Satara
+          duration: 90
+          startingMonth: january
+          litter: Cymbopogon excavatus
+          compTreat: wet season
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V28:
+          name: CYPW
+          units: mass remaining
+          varDesc: C. excavatus litter remaining during the wet season at Pretoriuskop
+          site: Pretoriuskop
+          duration: 90
+          startingMonth: january
+          litter: Cymbopogon excavatus
+          compTreat: wet season
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V29:
+          name: CYHW
+          units: mass remaining
+          varDesc: C. excavatus litter remaining during the wet season at Hluhluwe
+          site: Hluhluwe
+          duration: 90
+          startingMonth: january
+          litter: Cymbopogon excavatus
+          compTreat: wet season
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V30:
+          name: CYMD
+          units: mass remaining
+          varDesc: C. excavatus litter remaining during the dry season at Mopani
+          site: Mopani
+          duration: 120
+          startingMonth: june
+          litter: Cymbopogon excavatus
+          compTreat: dry season
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V31:
+          name: CYSD
+          units: mass remaining
+          varDesc: C. excavatus litter remaining during the dry season at Satara
+          site: Satara
+          duration: 120
+          startingMonth: june
+          litter: Cymbopogon excavatus
+          compTreat: dry season
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V32:
+          name: CYPD
+          units: mass remaining
+          varDesc: C. excavatus litter remaining during the dry season at Pretoriuskop
+          site: Pretoriuskop
+          duration: 120
+          startingMonth: june
+          litter: Cymbopogon excavatus
+          compTreat: dry season
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V33:
+          name: CYHD
+          units: mass remaining
+          varDesc: C. excavatus litter remaining during the dry season at Hluhluwe
+          site: Hluhluwe
+          duration: 120
+          startingMonth: june
+          litter: Cymbopogon excavatus
+          compTreat: dry season
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
