@@ -1,167 +1,241 @@
-CitationKey: Day2015
-doi: 10.1016/j.soilbio.2015.06.029
-EntryAuthor: Agustín Sarquis
+citationKey: Day2015 # Unique identifier in the format: LastnameYear (lowercase letters must be added when there are two or more entries by the same author and year, i.e.: LastnameYearx)
+doi: 10.1016/j.soilbio.2015.06.029 # DOI of the publication where data is published
+entryAuthor: Agustín Sarquis # First and last name of the person who entered the data in this file
+entryCreationDate: 2018-12-11 # Date when the data was entered in this file. Format: YYYY-MM-DD
+contactName: Agustín Sarquis # First and last name of contact person (may be the principal investigator supervising the entryAuthor)
+contactEmail: agusarquis@agro.uba.ar # Email of the contact person
+entryNote: Envelopes had 0.153-mm-opening bolting cloth on the bottom
+study: They used a light attenuation treatment (control, UV blocked, UV-B blocked and total blocked) to assess mass loss
 
-SiteInfo:
-  Name: Phoenix, Arizona, USA
-  EcosystemType: desert
-  MAP:
-    Value: 195
-    Units: mm
-  MAT:
-    Value: 22.5
-    Units: Celsius
-  RainySeason: summer
-  Altitude:
-    Value: 400
-    Units: masl
-  Cover:
-    ShrubCover: 18
-    BareSoil: 82
-    Units: percentage
-  Coordinates:
-    Latitude: 33.5
-    Longitude: -111.8
+siteInfo:
+        site: Phoenix
+              # These fields should be arrays of equal length to site array
+        coordinates:
+          latitude: 33.5 # Latitude in decimal units (check for negative that denotes southern hemisphere)
+          longitude: -111.8 # Longitude in decimal units (check for negative that denotes western hemisphere)
+        country: USA # Name of country where site was conducted
+        MAT: 22.5 # Mean annual temperature in degrees Celsius
+        MAP: 195 # Mean annual precipitation in mm
+        rainySeason: summer
+        elevation: 400 # Elevation of study site in meters above sea level
+        landCover: desert
+        vegNote: The plant community was composed of widely-spaced Larrea tridentata shrubs
+        cover:
+          plantCover: # Total plant cover percentage (if they report cover by specific plant types, fill the fields below)
+          bunchgrassCover:
+          shrubCover: 18
+          treeCover:
+          forbCover:
+          bareSoil: 82
+        soilTaxonomy:
+          soilOrder: # Soil order according to the classification system described below
+          soilFamily: # Soil family description (ex. 'Eutric' for a Eutric Cambisol)
+          soilSeries: # Soil series according to the classification system described below
+          classificationSystem: # Name of classification system used. Valid fields are: USDA, FAO, and WRB.
 
-ExperimentInfo:
- LitterInfo:
-  LitterType1:
-   Species: Capriola dactylon
-   LifeForm: graminoid
-   Material: recently senesced leaves
-   Amount:
-     Value: 2
-     Units: g
-  LitterType2:
-   Species: Larrea tridentata
-   LifeForm: shrub
-   Material: recently senesced leaves
-   Amount:
-     Value: 6
-     Units: g
-  LitterType3:
-   Species: Larrea tridentata
-   LifeForm: shrub
-   Material: recently senesced terminal shoots
-   Amount:
-     Value: 4
-     Units: g
- Description: "They used a light attenuation treatment (control, UV blocked, UV-B blocked and total blocked) to assess mass loss"
- LitterBagInfo:
-  Material: bolting cloth
-  MeshSize:
-   Value: 0.153
-   Units: mm
-  Dimentions:
-   Width: 10
-   Lenght: 10
-   Units: cm
-  Position: bare soil
- FilterInfo:
-   FilterType1:
-     Name: Aclar
-     Wavelenght:
-      Value: 280
-      Units: nm
-     Transmitance:
-      Value: 80
-      Units: percentage
-   FilterType2:
-     Name: Mylar
-     Wavelenght:
-      Value: 315
-      Units: nm
-   FilterType3:
-     Name: Courtgard
-     Wavelenght:
-      Value: 400
-      Units: nm
-   FilterType4:
-     Name: Mylar with paint
-     Wavelenght:
-      Value: 700
-      Units: nm
- Treatment: light attenuation
- StartingDate:
-    Month: december
-    Season: autumn
- Duration:
-    Time: 14
-    Units: months
+experimentInfo:
+        incDesc: 3 litter types x 4 light filters x 4 harvests x 10 replicates
+        # These fields should all be one dimensional arrays. Values for experimental variables with multiple treatment levels should be entered in the variables section and left blank here
+        replicates: 10 # Number of replicates per treatment
+        duration: 429 # length of incubation in days
+        startingMonth: december
+        litter: # plant species used as litter material for the experiment. All details related to the species must be specified in the initConditions.csv file
+        litterbag:
+          material:
+          meshSize:
+          dimentions: # size of the full litter bag in cm
+            width: 10
+            length: 10
+            height: # for 3-dimensional designs such as litter boxes in Austin2006NATURE
+          transmitance: # when reported, light transmitance of the mesh material as a percentage of full sunlight for each wavelength
+            total:
+            PAR:
+            UV:
+            UVA:
+            UVB:
+          position: bare soil
 
-Variables:
-  V1:
-    Name: Time
-    Units: months
-  V2:
-    Name: CDTR
-    Units: "Mass remaining"
-    Description: "C. dactylon litter mass percentage remaining at harvest time under total solar radiation"
-    FilterType: FilterType1
-    LitterType: LitterType1
-  V3:
-    Name: CDUVB
-    Units: "Mass remaining"
-    Description: "C. dactylon litter mass percentage remaining at harvest time with UV-B radiation blocked"
-    FilterType: FilterType2
-    LitterType: LitterType1
-  V4:
-    Name: CDUV
-    Units: "Mass remaining"
-    Description: "C. dactylon litter mass percentage remaining at harvest time with total UV radiation blocked"
-    FilterType: FilterType3
-    LitterType: LitterType1
-  V5:
-    Name: CDTB
-    Units: "Mass remaining"
-    Description: "C. dactylon litter mass percentage remaining at harvest time with total solar radiation blocked"
-    FilterType: FilterType4
-    LitterType: LitterType1
-  V6:
-    Name: LTLTR
-    Units: "Mass remaining"
-    Description: "L. tridentata leaf litter mass percentage remaining at harvest time under total solar radiation"
-    FilterType: FilterType1
-    LitterType: LitterType2
-  V7:
-    Name: LTLUVB
-    Units: "Mass remaining"
-    Description: "L. tridentata leaf litter mass percentage remaining at harvest time with UV-B radiation blocked"
-    FilterType: FilterType2
-    LitterType: LitterType2
-  V8:
-    Name: LTLUV
-    Units: "Mass remaining"
-    Description: "L. tridentata leaf litter mass percentage remaining at harvest time with total UV radiation blocked"
-    FilterType: FilterType3
-    LitterType: LitterType2
-  V9:
-    Name: LTLTB
-    Units: "Mass remaining"
-    Description: "L. tridentata leaf litter mass percentage remaining at harvest time with total solar radiation blocked"
-    FilterType: FilterType4
-    LitterType: LitterType2
-  V10:
-    Name: LTSTR
-    Units: "Mass remaining"
-    Description: "L. tridentata shoot litter mass percentage remaining at harvest time under total solar radiation"
-    FilterType: FilterType1
-    LitterType: LitterType3
-  V11:
-    Name: LTSUVB
-    Units: "Mass remaining"
-    Description: "L. tridentata shoot litter mass percentage remaining at harvest time with UV-B radiation blocked"
-    FilterType: FilterType2
-    LitterType: LitterType3
-  V12:
-    Name: LTSUV
-    Units: "Mass remaining"
-    Description: "L. tridentata shoot litter mass percentage remaining at harvest time with total UV radiation blocked"
-    FilterType: FilterType3
-    LitterType: LitterType3
-  V13:
-    Name: LTSTB
-    Units: "Mass remaining"
-    Description: "L. tridentata shoot litter mass percentage remaining at harvest time with total solar radiation blocked"
-    FilterType: FilterType4
-    LitterType: LitterType3
+variables: # These describe the columns of your timeSeries.csv file
+        V1: # column 1
+          name: Time
+          units: months
+        V2:
+          name: CDTR
+          units: mass remaining
+          varDesc: C. dactylon litter mass remaining under total solar radiation
+          site: Phoenix
+          litter: Cynodon dactylon
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: 0
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total: 80
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V3:
+          name: CDUVB
+          units: mass remaining
+          varDesc: C. dactylon litter mass remaining under blocked UV-B
+          site: Phoenix
+          litter: Cynodon dactylon
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: 315
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V4:
+          name: CDUV
+          units: mass remaining
+          varDesc: C. dactylon litter mass remaining under blocked UV
+          site: Phoenix
+          litter: Cynodon dactylon
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: 400
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V5:
+          name: CDTB
+          units: mass remaining
+          varDesc: C. dactylon litter mass remaining under blocked total radiation
+          site: Phoenix
+          litter: Cynodon dactylon
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: 700
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V6:
+          name: LTLTR
+          units: mass remaining
+          varDesc: L. tridentata leaf litter mass remaining under total solar radiation
+          site: Phoenix
+          litter: Larrea tridentata1
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: 0
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total: 80
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V7:
+          name: LTLUVB
+          units: mass remaining
+          varDesc: L. tridentata leaf litter mass remaining under blocked UV-B
+          site: Phoenix
+          litter: Larrea tridentata1
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: 315
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V8:
+          name: LTLUV
+          units: mass remaining
+          varDesc: L. tridentata leaf litter mass remaining under blocked UV
+          site: Phoenix
+          litter: Larrea tridentata1
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: 400
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V9:
+          name: LTLTB
+          units: mass remaining
+          varDesc: L. tridentata leaf litter mass remaining under blocked total radiation
+          site: Phoenix
+          litter: Larrea tridentata1
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: 700
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V10:
+          name: LTSTR
+          units: mass remaining
+          varDesc: L. tridentata shoot litter mass remaining under total radiation
+          site: Phoenix
+          litter: Larrea tridentata2
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: 0
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total: 80
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V11:
+          name: LTSUVB
+          units: mass remaining
+          varDesc: L. tridentata shoot litter mass remaining under blocked UV-B
+          site: Phoenix
+          litter: Larrea tridentata2
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: 315
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V12:
+          name: LTSUV
+          units: mass remaining
+          varDesc: L. tridentata shoot litter mass remaining under blocked UV
+          site: Phoenix
+          litter: Larrea tridentata2
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: 400
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V13:
+          name: LTSTB
+          units: mass remaining
+          varDesc: L. tridentata shoot litter mass remaining under blocked total radiation
+          site: Phoenix
+          litter: Larrea tridentata2
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: 700
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
