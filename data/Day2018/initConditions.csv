@@ -1,0 +1,13 @@
+species, type, N-fixer, material, amount, carbon, nitrogen, C:N, phosphorus, potassium, sodium, magnesium, manganese, copper, zinc, lead, calcium, sulfur, iron, lignin, cellulose, hemicellulose, cell solubles, SLA
+Simmondsia chinensis, evergreen, no, leaves, 2.39, 43.9, 1.7, 26.3,,,,,,,,,,,, 9.0, 6.4, 10.6,, 2.93
+Olneya tesota, evergreen, yes, leaves, 0.88, 42.7, 3.2, 13.6,,,,,,,,,,,, 8.9, 9.6, 7.0,, 9.10
+Prosopis velutina, evergreen, yes, leaves, 0.88, 46.9, 3.7, 12.9,,,,,,,,,,,, 13.5, 13.8, 9.7,, 11.32
+Larrea tridentata, evergreen, no, leaves, 1.34, 47.9, 2.3, 21.2,,,,,,,,,,,, 4.4, 6.7, 3.2,, 5.95
+Ambrosia deltoidea, deciduous, no, leaves, 1.22, 45.9, 2.4, 18.9,,,,,,,,,,,, 4.9, 10.7, 4.9,, 6.55
+Baileya multiradiata, evergreen, no, leaves, 1.71, 40.8, 1.4, 29.5,,,,,,,,,,,, 2.8, 22.2, 7.4,, 4.68
+Encelia farinosa, deciduous, no, leaves, 1.58, 38.8, 2.4, 16.2,,,,,,,,,,,, 5.0, 11.0, 12.5,, 5.05
+Encelia frutescens, evergreen, no, leaves, 1.16, 36.0, 2.1, 17.0,,,,,,,,,,,, 2.8, 10.6, 8.6,, 6.88
+Aristida purpurea, graminoid, no, leaves, 1.25, 41.5, 1.9, 22.4,,,,,,,,,,,, 1.3, 37.4, 31.0,, 6.42
+Bromus rubens, graminoid, no, leaves, 0.88, 41.7, 0.6, 72.1,,,,,,,,,,,, 2.0, 36.6, 26.1,, 10.67
+Cynodon dactylon, graminoid, no, leaves, 0.88, 41.8, 1.4, 30.8,,,,,,,,,,,, 2.4, 32.6, 35.6,, 11.42
+Eragrostis curvula, graminoid, no, leaves, 1.54, 45.3, 1.0, 43.7,,,,,,,,,,,, 2.0, 36.1, 39.6,, 5.19

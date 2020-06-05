@@ -1,641 +1,601 @@
-CitationKey: Day2018
-doi: 10.1111/gcb.14438
-EntryAuthor: Agustín Sarquis
+citationKey: Day2018 # Unique identifier in the format: LastnameYear (lowercase letters must be added when there are two or more entries by the same author and year, i.e.: LastnameYearx)
+doi: 10.1111/gcb.14438 # DOI of the publication where data is published
+entryAuthor: Agustín Sarquis # First and last name of the person who entered the data in this file
+entryCreationDate: 2019-04-10 # Date when the data was entered in this file. Format: YYYY-MM-DD
+contactName: Agustín Sarquis # First and last name of contact person (may be the principal investigator supervising the entryAuthor)
+contactEmail: agusarquis@agro.uba.ar # Email of the contact person
+entryNote: The amounts of litter in each sample are expressed on a surface basis, so we transformed them to grams. Their envelopes had bolting cloth on the bottom
+study: decay of 12 leaf litter types on the soil surface of the Sonoran Desert for 34 months assessing how exposure to different wavebands of sunlight influenced mass loss
 
-SiteInfo:
-  Name: Phoenix, AZ, USA
-  EcosystemType: desert
-  MAP:
-    Value: 195
-    Units: mm
-  MAT:
-    Value: 22.5
-    Units: Celsius
-  RainySeason: summer
-  Altitude:
-    Value: 400
-    Units: masl
-  SoilType: sandy loam
-  Cover:
-    Gravel: 35
-    BareSoil: 65
-    Units: percentage
-  Coordinates:
-    Latitude: 33.5
-    Longitude: -111.8
+siteInfo:
+        site: Phoenix
+              # These fields should be arrays of equal length to site array
+        coordinates:
+          latitude: 33.5 # Latitude in decimal units (check for negative that denotes southern hemisphere)
+          longitude: -111.8 # Longitude in decimal units (check for negative that denotes western hemisphere)
+        country: USA # Name of country where site was conducted
+        MAT: 22.5 # Mean annual temperature in degrees Celsius
+        MAP: 195 # Mean annual precipitation in mm
+        rainySeason: summer
+        elevation: 400 # Elevation of study site in meters above sea level
+        landCover: desert
+        vegNote: dominated by widely spaced Larrea tridentata shrubs
+        cover:
+          plantCover: # Total plant cover percentage (if they report cover by specific plant types, fill the fields below)
+          bunchgrassCover:
+          shrubCover: 18
+          treeCover:
+          forbCover:
+          bareSoil: 82
+        soilTaxonomy:
+          soilOrder: # Soil order according to the classification system described below
+          soilFamily: # Soil family description (ex. 'Eutric' for a Eutric Cambisol)
+          soilSeries: # Soil series according to the classification system described below
+          classificationSystem: # Name of classification system used. Valid fields are: USDA, FAO, and WRB.
 
-ExperimentInfo:
- LitterInfo:
-  LitterType1:
-   Species: Simmondsia chinensis
-   LifeForm: shrub
-   Material: recently senesced leaves
-   Carbon:
-     Value: 43.9
-     Units: percentage
-   Nitrogen:
-     Value: 1.7
-     Units: percentage
-   C:N:
-     Value: 26.3
-   Lignin:
-     Value: 9.0
-     Units: percentage
-   Cellulose:
-     Value: 6.4
-     Units: percentage
-   Hemicellulose:
-     Value: 10.6
-     Units: percentage
-   Lignin:N:
-     Value: 5.4
-   SLA:
-     Value: 2.93
-     Units: mm2.mg-1
-   Amount:
-     Value: 2.39
-     Units: g
-  LitterType2:
-   Species: Olneya tesota
-   LifeForm: tree
-   Material: recently senesced leaves
-   Carbon:
-     Value: 42.7
-     Units: percentage
-   Nitrogen:
-     Value: 3.2
-     Units: percentage
-   C:N:
-     Value: 13.6
-   Lignin:
-     Value: 8.9
-     Units: percentage
-   Cellulose:
-     Value: 9.6
-     Units: percentage
-   Hemicellulose:
-     Value: 7.0
-     Units: percentage
-   Lignin:N:
-     Value: 2.8
-   SLA:
-     Value: 9.10
-     Units: mm2.mg-1
-   Amount:
-     Value: 0.88
-     Units: g
-  LitterType3:
-   Species: Prosopis juliflora
-   LifeForm: tree
-   Material: recently senesced leaves
-   Carbon:
-     Value: 46.9
-     Units: percentage
-   Nitrogen:
-     Value: 3.7
-     Units: percentage
-   C:N:
-     Value: 12.9
-   Lignin:
-     Value: 13.5
-     Units: percentage
-   Cellulose:
-     Value: 13.8
-     Units: percentage
-   Hemicellulose:
-     Value: 9.7
-     Units: percentage
-   Lignin:N:
-     Value: 3.7
-   SLA:
-     Value: 11.32
-     Units: mm2.mg-1
-   Amount:
-     Value: 0.88
-     Units: g
-  LitterType4:
-   Species: Larrea tridentata
-   LifeForm: shrub
-   Material: recently senesced leaves
-   Carbon:
-     Value: 47.9
-     Units: percentage
-   Nitrogen:
-     Value: 2.3
-     Units: percentage
-   C:N:
-     Value: 21.2
-   Lignin:
-     Value: 4.4
-     Units: percentage
-   Cellulose:
-     Value: 6.7
-     Units: percentage
-   Hemicellulose:
-     Value: 3.2
-     Units: percentage
-   Lignin:N:
-     Value: 2.0
-   SLA:
-     Value: 5.95
-     Units: mm2.mg-1
-   Amount:
-     Value: 1.34
-     Units: g
-  LitterType5:
-   Species: Ambrosia deltoidea
-   LifeForm: shrub
-   Material: recently senesced leaves
-   Carbon:
-     Value: 45.9
-     Units: percentage
-   Nitrogen:
-     Value: 2.4
-     Units: percentage
-   C:N:
-     Value: 18.9
-   Lignin:
-     Value: 4.9
-     Units: percentage
-   Cellulose:
-     Value: 10.7
-     Units: percentage
-   Hemicellulose:
-     Value: 4.9
-     Units: percentage
-   Lignin:N:
-     Value: 2.0
-   SLA:
-     Value: 6.55
-     Units: mm2.mg-1
-   Amount:
-     Value: 1.22
-     Units: g
-  LitterType6:
-   Species: Baileya multiradiata
-   LifeForm: forb
-   Material: recently senesced leaves
-   Carbon:
-     Value: 40.8
-     Units: percentage
-   Nitrogen:
-     Value: 1.4
-     Units: percentage
-   C:N:
-     Value: 29.5
-   Lignin:
-     Value: 2.8
-     Units: percentage
-   Cellulose:
-     Value: 22.2
-     Units: percentage
-   Hemicellulose:
-     Value: 7.4
-     Units: percentage
-   Lignin:N:
-     Value: 2.1
-   SLA:
-     Value: 4.68
-     Units: mm2.mg-1
-   Amount:
-     Value: 1.71
-     Units: g
-  LitterType7:
-   Species: Encelia farinosa
-   LifeForm: shrub
-   Material: recently senesced leaves
-   Carbon:
-     Value: 38.8
-     Units: percentage
-   Nitrogen:
-     Value: 2.4
-     Units: percentage
-   C:N:
-     Value: 16.2
-   Lignin:
-     Value: 5.0
-     Units: percentage
-   Cellulose:
-     Value: 11.0
-     Units: percentage
-   Hemicellulose:
-     Value: 12.5
-     Units: percentage
-   Lignin:N:
-     Value: 2.1
-   SLA:
-     Value: 5.05
-     Units: mm2.mg-1
-   Amount:
-     Value: 1.58
-     Units: g
-  LitterType8:
-   Species: Encelia frutescens
-   LifeForm: shrub
-   Material: recently senesced leaves
-   Carbon:
-     Value: 36.0
-     Units: percentage
-   Nitrogen:
-     Value: 2.1
-     Units: percentage
-   C:N:
-     Value: 17.0
-   Lignin:
-     Value: 2.8
-     Units: percentage
-   Cellulose:
-     Value: 10.6
-     Units: percentage
-   Hemicellulose:
-     Value: 8.6
-     Units: percentage
-   Lignin:N:
-     Value: 1.3
-   SLA:
-     Value: 6.88
-     Units: mm2.mg-1
-   Amount:
-     Value: 1.16
-     Units: g
-  LitterType9:
-   Species: Aristida purpurea
-   LifeForm: graminoid
-   Material: recently senesced leaves
-   Carbon:
-     Value: 41.5
-     Units: percentage
-   Nitrogen:
-     Value: 1.9
-     Units: percentage
-   C:N:
-     Value: 22.4
-   Lignin:
-     Value: 1.3
-     Units: percentage
-   Cellulose:
-     Value: 37.4
-     Units: percentage
-   Hemicellulose:
-     Value: 31.0
-     Units: percentage
-   Lignin:N:
-     Value: 0.7
-   SLA:
-     Value: 6.42
-     Units: mm2.mg-1
-   Amount:
-     Value: 1.25
-     Units: g
-  LitterType10:
-   Species: Anisantha rubens
-   LifeForm: graminoid
-   Material: recently senesced leaves
-   Carbon:
-     Value: 41.7
-     Units: percentage
-   Nitrogen:
-     Value: 0.6
-     Units: percentage
-   C:N:
-     Value: 72.1
-   Lignin:
-     Value: 2.0
-     Units: percentage
-   Cellulose:
-     Value: 36.6
-     Units: percentage
-   Hemicellulose:
-     Value: 26.1
-     Units: percentage
-   Lignin:N:
-     Value: 3.4
-   SLA:
-     Value: 10.67
-     Units: mm2.mg-1
-   Amount:
-     Value: 0.88
-     Units: g
-  LitterType11:
-   Species: Capriola dactylon
-   LifeForm: graminoid
-   Material: recently senesced leaves
-   Carbon:
-     Value: 41.8
-     Units: percentage
-   Nitrogen:
-     Value: 1.4
-     Units: percentage
-   C:N:
-     Value: 30.8
-   Lignin:
-     Value: 2.4
-     Units: percentage
-   Cellulose:
-     Value: 32.6
-     Units: percentage
-   Hemicellulose:
-     Value: 35.6
-     Units: percentage
-   Lignin:N:
-     Value: 1.8
-   SLA:
-     Value: 11.42
-     Units: mm2.mg-1
-   Amount:
-     Value: 0.88
-     Units: g
-  LitterType12:
-   Species: Eragrostis curvula
-   LifeForm: graminoid
-   Material: recently senesced leaves
-   Carbon:
-     Value: 45.3
-     Units: percentage
-   Nitrogen:
-     Value: 1.0
-     Units: percentage
-   C:N:
-     Value: 43.7
-   Lignin:
-     Value: 2.0
-     Units: percentage
-   Cellulose:
-     Value: 36.1
-     Units: percentage
-   Hemicellulose:
-     Value: 39.6
-     Units: percentage
-   Lignin:N:
-     Value: 1.9
-   SLA:
-     Value: 5.19
-     Units: mm2.mg-1
-   Amount:
-     Value: 1.54
-     Units: g
-Experiment1:
-    Description: "They monitored the decay of 12 leaf litter types on the soil surface of the Sonoran Desert for 34 months and assessed how exposure to different wavebands of sunlight influenced mass loss"
-    LitterBagInfo:
-      Material: bolting cloth
-      MeshSize:
-       Value: 0.153
-       Units: mm
-      Dimentions:
-       Width: 10
-       Lenght: 10
-       Units: cm
-      Position: bare soil
-    FilterInfo:
-      FilterType1:
-        Name: Aclar
-        Wavelenght:
-          Value: 280
-          Units: nm
-        Transmitance:
-          Value: 80
-          Units: percentage
-      FilterType2:
-        Name: Clear UV Filter
-        Wavelenght:
-          Value: 387
-          Units: nm
-        Transmitance:
-          Value: 50
-          Units: percentage
-      FilterType3:
-        Name: Amber UV Filter
-        Wavelenght:
-          Value: 545
-          Units: nm
-        Transmitance:
-          Value: 50
-          Units: percentage
-    Treatment: light attenuation, litter type
-    StartingDate:
-      Month: december
-      Season: autumn
-    Duration:
-      Time: 34
-      Units: months
+experimentInfo:
+        incDesc: 12 species x 3 radiation levels x 7 harvests x 8 replicates
+        # These fields should all be one dimensional arrays. Values for experimental variables with multiple treatment levels should be entered in the variables section and left blank here
+        replicates: 8 # Number of replicates per treatment
+        duration: 1046 # length of incubation in days
+        startingMonth: december # month during which the study started, all in lower case
+        litter: # plant species used as litter material for the experiment. All details related to the species must be specified in the initConditions.csv file
+        litterbag:
+          material: # mesh type used to construct the litter bags, options are: wire, aluminum, window screening, net curtain, bolting cloth, plastic, fiberglass, nylon, polypropylene, polyester, polyethylene, polyamide
+          meshSize: # mesh size in mm referring to one side of the net-square
+          dimentions: # size of the full litter bag in cm
+            width: 10
+            length: 10
+            height: # for 3-dimensional designs such as litter boxes in Austin2006NATURE
+          transmitance: # when reported, light transmitance of the mesh material as a percentage of full sunlight for each wavelength
+            total:
+            PAR:
+            UV:
+            UVA:
+            UVB:
+          position: bare soil
 
-Variables:
-  V1:
-    Name: Time
-    Units: days
-  V2:
-    Name: Sc_fs
-    Units: organic dry mass remaining
-    Description: "Simmondsia chinensis leaf litter under full sun treatment"
-    FilterType: FilterType1
-    LitterType: LitterType1
-  V3:
-    Name: Sc_NoUV
-    Units: organic dry mass remaining
-    Description: "Simmondsia chinensis leaf litter under no UV treatment"
-    FilterType: FilterType2
-    LitterType: LitterType1
-  V4:
-    Name: Sc_NoUVbl
-    Units: organic dry mass remaining
-    Description: "Simmondsia chinensis leaf litter under no UV/blue treatment"
-    FilterType: FilterType3
-    LitterType: LitterType1
-  V5:
-    Name: Ot_fs
-    Units: organic dry mass remaining
-    Description: "Olneya tesota leaf litter under full sun treatment"
-    FilterType: FilterType1
-    LitterType: LitterType2
-  V6:
-    Name: Ot_NoUV
-    Units: organic dry mass remaining
-    Description: "Olneya tesota leaf litter under no UV treatment"
-    FilterType: FilterType2
-    LitterType: LitterType2
-  V7:
-    Name: Ot_NoUVbl
-    Units: organic dry mass remaining
-    Description: "Olneya tesota leaf litter under no UV/blue treatment"
-    FilterType: FilterType3
-    LitterType: LitterType2
-  V8:
-    Name: Pv_fs
-    Units: organic dry mass remaining
-    Description: "Prosopis juliflora leaf litter under full sun treatment"
-    FilterType: FilterType1
-    LitterType: LitterType3
-  V9:
-    Name: Pv_NoUV
-    Units: organic dry mass remaining
-    Description: "Prosopis juliflora leaf litter under no UV treatment"
-    FilterType: FilterType2
-    LitterType: LitterType3
-  V10:
-    Name: Pv_NoUVbl
-    Units: organic dry mass remaining
-    Description: "Prosopis juliflora leaf litter under no UV/blue treatment"
-    FilterType: FilterType3
-    LitterType: LitterType3
-  V11:
-    Name: Lt_fs
-    Units: organic dry mass remaining
-    Description: "Larrea tridentata leaf litter under full sun treatment"
-    FilterType: FilterType1
-    LitterType: LitterType4
-  V12:
-    Name: Lt_NoUV
-    Units: organic dry mass remaining
-    Description: "Larrea tridentata leaf litter under no UV treatment"
-    FilterType: FilterType2
-    LitterType: LitterType4
-  V13:
-    Name: Lt_NoUVbl
-    Units: organic dry mass remaining
-    Description: "Larrea tridentata leaf litter under no UV/blue treatment"
-    FilterType: FilterType3
-    LitterType: LitterType4
-  V14:
-    Name: Ad_fs
-    Units: organic dry mass remaining
-    Description: "Ambrosia deltoidea leaf litter under full sun treatment"
-    FilterType: FilterType1
-    LitterType: LitterType5
-  V15:
-    Name: Ad_NoUV
-    Units: organic dry mass remaining
-    Description: "Ambrosia deltoidea leaf litter under no UV treatment"
-    FilterType: FilterType2
-    LitterType: LitterType5
-  V16:
-    Name: Ad_NoUVbl
-    Units: organic dry mass remaining
-    Description: "Ambrosia deltoidea leaf litter under no UV/blue treatment"
-    FilterType: FilterType3
-    LitterType: LitterType5
-  V17:
-    Name: Bm_fs
-    Units: organic dry mass remaining
-    Description: "Baileya multiradiata leaf litter under full sun treatment"
-    FilterType: FilterType1
-    LitterType: LitterType6
-  V18:
-    Name: Bm_NoUV
-    Units: organic dry mass remaining
-    Description: "Baileya multiradiata leaf litter under no UV treatment"
-    FilterType: FilterType2
-    LitterType: LitterType6
-  V19:
-    Name: Bm_NoUVbl
-    Units: organic dry mass remaining
-    Description: "Baileya multiradiata leaf litter under no UV/blue treatment"
-    FilterType: FilterType3
-    LitterType: LitterType6
-  V20:
-    Name: Efa_fs
-    Units: organic dry mass remaining
-    Description: "Encelia farinosa leaf litter under full sun treatment"
-    FilterType: FilterType1
-    LitterType: LitterType7
-  V21:
-    Name: Efa_NoUV
-    Units: organic dry mass remaining
-    Description: "Encelia farinosa leaf litter under no UV treatment"
-    FilterType: FilterType2
-    LitterType: LitterType7
-  V22:
-    Name: Efa_NoUVbl
-    Units: organic dry mass remaining
-    Description: "Encelia farinosa leaf litter under no UV/blue treatment"
-    FilterType: FilterType3
-    LitterType: LitterType7
-  V23:
-    Name: Efr_fs
-    Units: organic dry mass remaining
-    Description: "Encelia frutescens leaf litter under full sun treatment"
-    FilterType: FilterType1
-    LitterType: LitterType8
-  V24:
-    Name: Efr_NoUV
-    Units: organic dry mass remaining
-    Description: "Encelia frutescens leaf litter under no UV treatment"
-    FilterType: FilterType2
-    LitterType: LitterType8
-  V25:
-    Name: Efr_NoUVbl
-    Units: organic dry mass remaining
-    Description: "Encelia frutescens leaf litter under no UV/blue treatment"
-    FilterType: FilterType3
-    LitterType: LitterType8
-  V26:
-    Name: Ap_fs
-    Units: organic dry mass remaining
-    Description: "Aristida purpurea leaf litter under full sun treatment"
-    FilterType: FilterType1
-    LitterType: LitterType9
-  V27:
-    Name: Ap_NoUV
-    Units: organic dry mass remaining
-    Description: "Aristida purpurea leaf litter under no UV treatment"
-    FilterType: FilterType2
-    LitterType: LitterType9
-  V28:
-    Name: Ap_NoUVbl
-    Units: organic dry mass remaining
-    Description: "Aristida purpurea leaf litter under no UV/blue treatment"
-    FilterType: FilterType3
-    LitterType: LitterType9
-  V29:
-    Name: Br_fs
-    Units: organic dry mass remaining
-    Description: "A. rubens leaf litter under full sun treatment"
-    FilterType: FilterType1
-    LitterType: LitterType10
-  V30:
-    Name: Br_NoUV
-    Units: organic dry mass remaining
-    Description: "A. rubens leaf litter under no UV treatment"
-    FilterType: FilterType2
-    LitterType: LitterType10
-  V31:
-    Name: Br_NoUVbl
-    Units: organic dry mass remaining
-    Description: "A. rubens leaf litter under no UV/blue treatment"
-    FilterType: FilterType3
-    LitterType: LitterType10
-  V32:
-    Name: Cd_fs
-    Units: organic dry mass remaining
-    Description: "Cynodon dactylon leaf litter under full sun treatment"
-    FilterType: FilterType1
-    LitterType: LitterType11
-  V33:
-    Name: Cd_NoUV
-    Units: organic dry mass remaining
-    Description: "Cynodon dactylon leaf litter under no UV treatment"
-    FilterType: FilterType2
-    LitterType: LitterType11
-  V34:
-    Name: Cd_NoUVbl
-    Units: organic dry mass remaining
-    Description: "Cynodon dactylon leaf litter under no UV/blue treatment"
-    FilterType: FilterType3
-    LitterType: LitterType11
-  V35:
-    Name: Ec_fs
-    Units: organic dry mass remaining
-    Description: "Eragrostis curvula leaf litter under full sun treatment"
-    FilterType: FilterType1
-    LitterType: LitterType12
-  V36:
-    Name: Ec_NoUV
-    Units: organic dry mass remaining
-    Description: "Eragrostis curvula leaf litter under no UV treatment"
-    FilterType: FilterType2
-    LitterType: LitterType12
-  V37:
-    Name: Ec_NoUVbl
-    Units: organic dry mass remaining
-    Description: "Eragrostis curvula leaf litter under no UV/blue treatment"
-    FilterType: FilterType3
-    LitterType: LitterType12
+variables: # These describe the columns of your timeSeries.csv file
+        V1: # column 1
+          name: Time
+          units: days
+        V2:
+          name: Sc_fs
+          units: organic matter remaining
+          varDesc: Simmondsia chinensis leaf litter under full sun treatment
+          site: Phoenix
+          litter: Simmondsia chinensis
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: 0
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total: 80
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V3:
+          name: Sc_NoUV
+          units: organic matter remaining
+          varDesc: Simmondsia chinensis leaf litter under no UV treatment
+          site: Phoenix
+          litter: Simmondsia chinensis
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: 387
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total: 50
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V4:
+          name: Sc_NoUVbl
+          units: organic matter remaining
+          varDesc: Simmondsia chinensis leaf litter under no UV/blue treatment
+          site: Phoenix
+          litter: Simmondsia chinensis
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: 545
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total: 50
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V5:
+          name: Ot_fs
+          units: organic matter remaining
+          varDesc: Olneya tesota leaf litter under full sun treatment
+          site: Phoenix
+          litter: Olneya tesota
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: 0
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total: 80
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V6:
+          name: Ot_NoUV
+          units: organic matter remaining
+          varDesc: Olneya tesota leaf litter under no UV treatment
+          site: Phoenix
+          litter: Olneya tesota
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: 387
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total: 50
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V7:
+          name: Ot_NoUVbl
+          units: organic matter remaining
+          varDesc: Olneya tesota leaf litter under no UV/blue treatment
+          site: Phoenix
+          litter: Olneya tesota
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: 545
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total: 50
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V8:
+          name: Pv_fs
+          units: organic matter remaining
+          varDesc: Prosopis velutina leaf litter under full sun treatment
+          site: Phoenix
+          litter: Prosopis velutina
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: 0
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total: 80
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V9:
+          name: Pv_NoUV
+          units: organic matter remaining
+          varDesc: Prosopis velutina leaf litter under no UV treatment
+          site: Phoenix
+          litter: Prosopis velutina
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: 387
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total: 50
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V10:
+          name: Pv_NoUVbl
+          units: organic matter remaining
+          varDesc: Prosopis velutina leaf litter under no UV/blue treatment
+          site: Phoenix
+          litter: Prosopis velutina
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: 545
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total: 50
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V11:
+          name: Lt_fs
+          units: organic matter remaining
+          varDesc: Larrea tridentata leaf litter under full sun treatment
+          site: Phoenix
+          litter: Larrea tridentata
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: 0
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total: 80
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V12:
+          name: Lt_NoUV
+          units: organic matter remaining
+          varDesc: Larrea tridentata leaf litter under no UV treatment
+          site: Phoenix
+          litter: Larrea tridentata
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: 387
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total: 50
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V13:
+          name: Lt_NoUVbl
+          units: organic matter remaining
+          varDesc: Larrea tridentata leaf litter under no UV/blue treatment
+          site: Phoenix
+          litter: Larrea tridentata
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: 545
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total: 50
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V14:
+          name: Ad_fs
+          units: organic matter remaining
+          varDesc: Ambrosia deltoidea leaf litter under full sun treatment
+          site: Phoenix
+          litter: Ambrosia deltoidea
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: 0
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total: 80
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V15:
+          name: Ad_NoUV
+          units: organic matter remaining
+          varDesc: Ambrosia deltoidea leaf litter under no UV treatment
+          site: Phoenix
+          litter: Ambrosia deltoidea
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: 387
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total: 50
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V16:
+          name: Ad_NoUVbl
+          units: organic matter remaining
+          varDesc: Ambrosia deltoidea leaf litter under no UV/blue treatment
+          site: Phoenix
+          litter: Ambrosia deltoidea
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: 545
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total: 50
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V17:
+          name: Bm_fs
+          units: organic matter remaining
+          varDesc: Baileya multiradiata leaf litter under full sun treatment
+          site: Phoenix
+          litter: Baileya multiradiata
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: 0
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total: 80
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V18:
+          name: Bm_NoUV
+          units: organic matter remaining
+          varDesc: Baileya multiradiata leaf litter under no UV treatment
+          site: Phoenix
+          litter: Baileya multiradiata
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: 387
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total: 50
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V19:
+          name: Bm_NoUVbl
+          units: organic matter remaining
+          varDesc: Baileya multiradiata leaf litter under no UV/blue treatment
+          site: Phoenix
+          litter: Baileya multiradiata
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: 545
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total: 50
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V20:
+          name: Efa_fs
+          units: organic matter remaining
+          varDesc: Encelia farinosa leaf litter under full sun treatment
+          site: Phoenix
+          litter: Encelia farinosa
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: 0
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total: 80
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V21:
+          name: Efa_NoUV
+          units: organic matter remaining
+          varDesc: Encelia farinosa leaf litter under no UV treatment
+          site: Phoenix
+          litter: Encelia farinosa
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: 387
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total: 50
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V22:
+          name: Efa_NoUVbl
+          units: organic matter remaining
+          varDesc: Encelia farinosa leaf litter under no UV/blue treatment
+          site: Phoenix
+          litter: Encelia farinosa
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: 545
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total: 50
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V23:
+          name: Efr_fs
+          units: organic matter remaining
+          varDesc: Encelia frutescens leaf litter under full sun treatment
+          site: Phoenix
+          litter: Encelia frutescens
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: 0
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total: 80
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V24:
+          name: Efr_NoUV
+          units: organic matter remaining
+          varDesc: Encelia frutescens leaf litter under no UV treatment
+          site: Phoenix
+          litter: Encelia frutescens
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: 387
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total: 50
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V25:
+          name: Efr_NoUVbl
+          units: organic matter remaining
+          varDesc: Encelia frutescens leaf litter under no UV/blue treatment
+          site: Phoenix
+          litter: Encelia frutescens
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: 545
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total: 50
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V26:
+          name: Ap_fs
+          units: organic matter remaining
+          varDesc: Aristida purpurea leaf litter under full sun treatment
+          site: Phoenix
+          litter: Aristida purpurea
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: 0
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total: 80
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V27:
+          name: Ap_NoUV
+          units: organic matter remaining
+          varDesc: Aristida purpurea leaf litter under no UV treatment
+          site: Phoenix
+          litter: Aristida purpurea
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: 387
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total: 50
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V28:
+          name: Ap_NoUVbl
+          units: organic matter remaining
+          varDesc: Aristida purpurea leaf litter under no UV/blue treatment
+          site: Phoenix
+          litter: Aristida purpurea
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: 545
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total: 50
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V29:
+          name: Br_fs
+          units: organic matter remaining
+          varDesc: B. rubens leaf litter under full sun treatment
+          site: Phoenix
+          litter: Bromus rubens
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: 0
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total: 80
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V30:
+          name: Br_NoUV
+          units: organic matter remaining
+          varDesc: B. rubens leaf litter under no UV treatment
+          site: Phoenix
+          litter: Bromus rubens
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: 387
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total: 50
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V31:
+          name: Br_NoUVbl
+          units: organic matter remaining
+          varDesc: B. rubens leaf litter under no UV/blue treatment
+          site: Phoenix
+          litter: Bromus rubens
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: 545
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total: 50
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V32:
+          name: Cd_fs
+          units: organic matter remaining
+          varDesc: Cynodon dactylon leaf litter under full sun treatment
+          site: Phoenix
+          litter: Cynodon dactylon
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: 0
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total: 80
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V33:
+          name: Cd_NoUV
+          units: organic matter remaining
+          varDesc: Cynodon dactylon leaf litter under no UV treatment
+          site: Phoenix
+          litter: Cynodon dactylon
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: 387
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total: 50
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V34:
+          name: Cd_NoUVbl
+          units: organic matter remaining
+          varDesc: Cynodon dactylon leaf litter under no UV/blue treatment
+          site: Phoenix
+          litter: Cynodon dactylon
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: 545
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total: 50
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V35:
+          name: Ec_fs
+          units: organic matter remaining
+          varDesc: Eragrostis curvula leaf litter under full sun treatment
+          site: Phoenix
+          litter: Eragrostis curvula
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: 0
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total: 80
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V36:
+          name: Ec_NoUV
+          units: organic matter remaining
+          varDesc: Eragrostis curvula leaf litter under no UV treatment
+          site: Phoenix
+          litter: Eragrostis curvula
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: 387
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total: 50
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V37:
+          name: Ec_NoUVbl
+          units: organic matter remaining
+          varDesc: Eragrostis curvula leaf litter under no UV/blue treatment
+          site: Phoenix
+          litter: Eragrostis curvula
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: 545
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total: 50
+             PAR:
+             UV:
+             UVA:
+             UVB:
