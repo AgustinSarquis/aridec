@@ -1,89 +1,95 @@
-CitationKey: Deshmukh1985
-doi: 10.1007/BF00378467
-EntryAuthor: Ignacio Siebenhart
+citationKey: Deshmukh1985 # Unique identifier in the format: LastnameYear (lowercase letters must be added when there are two or more entries by the same author and year, i.e.: LastnameYearx)
+doi: 10.1007/BF00378467 # DOI of the publication where data is published
+entryAuthor: Ignacio Siebenhart # First and last name of the person who entered the data in this file
+entryCreationDate: 2020-01-20 # Date when the data was entered in this file. Format: YYYY-MM-DD
+contactName: Agustín Sarquis # First and last name of contact person (may be the principal investigator supervising the entryAuthor)
+contactEmail: agusarquis@agro.uba.ar # Email of the contact person
+entryNote: soils are Vertisols but they don't specify the classification system. Andropogon gayanus and Ischaemum afrum names were corrected
+study: They evaluate decomposition rates of standing dead grass and grass litter at a grassland
 
-SiteInfo:
- Name: Nairobi National Park, Nairobi, Kenya
- EcosystemType: savanna
- MAP:
-  Value: 850
-  Units: mm
- MAT:
-  Value: 19.6
-  Units: Celsius
- RainySeason:
-  - autumn
-  - spring
- Altitude:
-  Value: 1600
-  Units: masl
- SoilType: Vertisol
- SoilTexture: fine
- Coordinates:
-  Latitude: -1.333
-  Longitude: 36.833
+siteInfo:
+        site:  Nairobi National Park
+              # These fields should be arrays of equal length to site array
+        coordinates:
+          latitude: -1.333 # Latitude in decimal units (check for negative that denotes southern hemisphere)
+          longitude: 36.833 # Longitude in decimal units (check for negative that denotes western hemisphere)
+        country: Kenya # Name of country where site was conducted
+        MAT: 19.6 # Mean annual temperature in degrees Celsius
+        MAP: 850 # Mean annual precipitation in mm
+        rainySeason:
+          - autumn
+          - spring
+        elevation: 1600 # Elevation of study site in meters above sea level
+        landCover: savanna
+        vegNote: Grasses formed 76% of the mass of herbaceous vegetation, with Themeda triandra being the most abundant by far. There were also scattered Acacia drepanolobium bushes.
+        cover:
+          plantCover: # Total plant cover percentage (if they report cover by specific plant types, fill the fields below)
+          bunchgrassCover:
+          shrubCover:
+          treeCover:
+          forbCover:
+          bareSoil:
+        soilTaxonomy:
+          soilOrder: # Soil order according to the classification system described below
+          soilFamily: # Soil family description (ex. 'Eutric' for a Eutric Cambisol)
+          soilSeries: # Soil series according to the classification system described below
+          classificationSystem: # Name of classification system used. Valid fields are: USDA, FAO, and WRB.
 
-ExperimentInfo:
- LitterInfo:
-  LitterType1:
-   Species:
-    - Themeda triandra
-    - Setaria phleoides
-    - Cenchrus mezianum
-    - Andropogon guyanus
-    - Ischaeum afrum
-   Lifeform: graminoid
-   Material: recently senesced aboveground parts
-   Amount:
-    Value: 4.41
-    Units: g
-  LitterType2:
-   Species:
-    - Themeda triandra
-    - Setaria phleoides
-    - Cenchrus mezianum
-    - Andropogon guyanus
-    - Ischaeum afrum
-   Lifeform: graminoid
-   Material: senesced aboveground parts
-   Amount:
-    Value: 4.60
-    Units: g
- Experiment1:
-  Description: "They evaluate decomposition rates of standing dead grass and grass litter at a grassland"
-  LitterBagInfo:
-   Material: plastic
-   MeshSize:
-    Value: 5
-    Units: mm
-   Dimentions:
-    Width: 10
-    Lenght: 30
-    Units: cm
-   Position:
-    Position1: suspended
-    Position2: covered in litter
-  Treatment: position
-  StartingDate:
-   Month: february
-   Season: summer
-  Duration:
-   Time: 22.69
-   Units: months
+experimentInfo:
+        incDesc: 2 litter types x 12 harvests x 5 replicates
+        # These fields should all be one dimensional arrays. Values for experimental variables with multiple treatment levels should be entered in the variables section and left blank here
+        replicates: 5 # Number of replicates per treatment
+        duration: 690 # length of incubation in days
+        startingMonth: february # month during which the study started, all in lower case
+        litter: # plant species used as litter material for the experiment. All details related to the species must be specified in the initConditions.csv file
+        litterbag:
+          material: plastic
+          meshSize: 2.24
+          dimentions: # size of the full litter bag in cm
+            width: 10
+            length: 30
+            height: # for 3-dimensional designs such as litter boxes in Austin2006NATURE
+          transmitance: # when reported, light transmitance of the mesh material as a percentage of full sunlight for each wavelength
+            total:
+            PAR:
+            UV:
+            UVA:
+            UVB:
+          position: # position of litterbags in the field, valid options are: bare soil, decomposition bed, under litter, over litter, over lawn, next to grass, under tree/shrub/grass, buried X cm deep, underwater, under rainout shelter, under frame, suspended X cm, under shadecloth
 
-Variables:
- V1:
-   Name: Time
-   Units: days
- V2:
-   Name: STD
-   Units: non-ash dry mass remaining
-   Description: "Standing dead litter mass remaining at harvest time positioned suspended"
-   LitterType: LitterType1
-   Position: Position1
- V3:
-   Name: GL
-   Units: non-ash dry mass remaining
-   Description: "Detached grass litter mass remaining at harvest time positioned covered in litter"
-   LitterType: LitterType2
-   Position: Position2
+variables: # These describe the columns of your timeSeries.csv file
+        V1: # column 1
+          name: Time
+          units: days
+        V2:
+          name: STD
+          units: organic matter remaining
+          varDesc: Standing dead Themeda triandra, Setaria phleoides, Pennisetum mezianum, Andropogon gayanus and Ischaemum afrum litter suspended
+          site: Nairobi National Park
+          position: suspended
+          litter: mixture1
+          compTreat: standing dead litter
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V3:
+          name: GL
+          units: organic matter remaining
+          varDesc: Themeda triandra, Setaria phleoides, Pennisetum mezianum, Andropogon gayanus and Ischaemum afrum detached litter covered in litter
+          site: Nairobi National Park
+          position: under litter
+          litter: mixture2
+          compTreat: detached litter
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
