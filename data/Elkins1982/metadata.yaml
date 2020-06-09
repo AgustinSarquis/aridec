@@ -1,84 +1,106 @@
-CitationKey: Elkins1982
-doi: https://doi.org/10.2307/1938973
-EntryAuthor: Ignacio Siebenhart
+citationKey: Elkins1982 # Unique identifier in the format: LastnameYear (lowercase letters must be added when there are two or more entries by the same author and year, i.e.: LastnameYearx)
+doi: https://doi.org/10.2307/1938973 # DOI of the publication where data is published
+entryAuthor: Ignacio Siebenhart # First and last name of the person who entered the data in this file
+entryCreationDate: 2019-05-24 # Date when the data was entered in this file. Format: YYYY-MM-DD
+contactName: Agustín Sarquis # First and last name of contact person (may be the principal investigator supervising the entryAuthor)
+contactEmail: agusarquis@agro.uba.ar # Email of the contact person
+entryNote: Quercus havardii and Bouteloua eriopoda names corrected. MAT obtained from power.larc.nasa.gov
+study: decomposition of three litter types in semi-arid ecosystems in southeastern New Mexico
 
-Site Info:
- Name: Carlsbad, New Mexico, United States
- MAP:
-  Units: 260
-  Value: mm
- Coordinates:
-  Latitude:
-   - 32.408
-  Longitude:
-   - -104.230
+siteInfo:
+        site: Carlsbad
+              # These fields should be arrays of equal length to site array
+        coordinates:
+          latitude: 32.408 # Latitude in decimal units (check for negative that denotes southern hemisphere)
+          longitude: -104.230 # Longitude in decimal units (check for negative that denotes western hemisphere)
+        country: USA # Name of country where site was conducted
+        MAT: 17.25 # Mean annual temperature in degrees Celsius
+        MAP: 260 # Mean annual precipitation in mm
+        rainySeason: summer
+        elevation: 946 # Elevation of study site in meters above sea level
+        landCover: # Land cover of the site. Valid fields are: greenbelt, (abbandoned) farmland, mangrove forest, subalpine, shrubland, urban, sandland, forest, steppe, desert, grassland, savanna
+        vegNote: # Additional details about land cover such as species or functional type composition
+        cover:
+          plantCover: # Total plant cover percentage (if they report cover by specific plant types, fill the fields below)
+          bunchgrassCover:
+          shrubCover:
+          treeCover:
+          forbCover:
+          bareSoil:
+        soilTaxonomy:
+          soilOrder: # Soil order according to the classification system described below
+          soilFamily: # Soil family description (ex. 'Eutric' for a Eutric Cambisol)
+          soilSeries: # Soil series according to the classification system described below
+          classificationSystem: # Name of classification system used. Valid fields are: USDA, FAO, and WRB.
 
-ExperimentInfo:
- LitterInfo:
-  LitterType1:
-   Species:
-    - Bouteloua eriopoda
-    - Scleropogon brevifolius
-   Lifeform: graminoid
-   Lignin:
-    Value:
-     - 7.26
-    Units: percentage
-   Amount:
-    Value: 10
-    Units: g
-  LitterType2:
-   Species: Larrea tridentata
-   Lifeform: shrub
-   Lignin:
-    Value: 9.5
-    Units: percentage
-   Amount:
-    Value: 10
-    Units: g
-   LitterType3:
-    Species: Quercus havardii
-    Lifeform: tree
-    Lignin:
-     Value: 10.8
-     Units: percentage
-    Amount:
-     Value: 10
-     Units: g
- Experiment1:
-  LitterBagInfo:
-   Material: fiberglass
-   MeshSize:
-    Value: 1.5
-    Units: mm
-   Dimentions:
-    Widht: 20
-    Lenght: 20
-    Units: cm
-   Position: on top of soil surface
-  StartingDate:
-   Month: february
-   Season: winter
-  Duration:
-   Time: 12
-   Units: months
+experimentInfo:
+        incDesc: 3 species x 4 harvests x 10 replicates
+        # These fields should all be one dimensional arrays. Values for experimental variables with multiple treatment levels should be entered in the variables section and left blank here
+        replicates: 10 # Number of replicates per treatment
+        duration: 365 # length of incubation in days
+        startingMonth: february # month during which the study started, all in lower case
+        litter: # plant species used as litter material for the experiment. All details related to the species must be specified in the initConditions.csv file
+        litterbag:
+          material: fiberglass
+          meshSize: 1.5
+          dimentions: # size of the full litter bag in cm
+            width: 20
+            length: 20
+            height: # for 3-dimensional designs such as litter boxes in Austin2006NATURE
+          transmitance: # when reported, light transmitance of the mesh material as a percentage of full sunlight for each wavelength
+            total:
+            PAR:
+            UV:
+            UVA:
+            UVB:
+          position: bare soil
 
-Variables:
-  V1:
-    Name: Time
-    Units: months
-  V2:
-    Name: Gram
-    Units: mass remaining
-    Description: "Graminoid litter organic matter percentage remaining at harvest time"
-    LitterType: LitterType1
-  V3:
-    Name: Creo
-    Units: mass remaining
-    Description: "Shrub litter organic matter percentage remaining at harvest time"
-    LitterType: LitterType2
-  V4:
-    Name: Oak
-    Units: mass remaining
-    Description: "Tree litter organic matter percentage remaining at harvest time"
-    LitterType: LitterType3
+variables: # These describe the columns of your timeSeries.csv file
+        V1: # column 1
+          name: Time
+          units: months
+        V2:
+          name: Gram
+          units: mass remaining
+          varDesc: Mixture of Bouteloua eriopoda and Scleropogon brevifolius litter decomposed
+          site: Carlsbad
+          litter: mixture
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V3:
+          name: Creo
+          units: mass remaining
+          varDesc: Larrea tridentata litter decomposed
+          site: Carlsbad
+          litter: Larrea tridentata
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V4:
+          name: Oak
+          units: mass remaining
+          varDesc: Quercus havardii litter decomposed
+          site: Carlsbad
+          litter: Quercus havardii
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:

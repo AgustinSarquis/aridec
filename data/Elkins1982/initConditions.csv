@@ -1,0 +1,4 @@
+species, type, N-fixer, material, amount, carbon, nitrogen, C:N, phosphorus, potassium, sodium, magnesium, manganese, copper, zinc, lead, calcium, sulfur, iron, lignin, cellulose, hemicellulose, cell solubles, SLA
+mixture, graminoid, no,, 10,,,,,,,,,,,,,,, 7.26,
+Larrea tridentata, evergreen, no,, 10,,,,,,,,,,,,,,, 9.5,
+Quercus havardii, deciduous, no,, 10,,,,,,,,,,,,,,, 10.8, 
