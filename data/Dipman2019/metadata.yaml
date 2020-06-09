@@ -1,188 +1,321 @@
-CitationKey: Dipman2019
-doi: 10.1016/j.apsoil.2019.07.005
-EntryAuthor: Agustín Sarquis
+citationKey: Dipman2019 # Unique identifier in the format: LastnameYear (lowercase letters must be added when there are two or more entries by the same author and year, i.e.: LastnameYearx)
+doi: 10.1016/j.apsoil.2019.07.005 # DOI of the publication where data is published
+entryAuthor: Agustín Sarquis # First and last name of the person who entered the data in this file
+entryCreationDate: 2020-02-17 # Date when the data was entered in this file. Format: YYYY-MM-DD
+contactName: Agustín Sarquis # First and last name of contact person (may be the principal investigator supervising the entryAuthor)
+contactEmail: agusarquis@agro.uba.ar # Email of the contact person
+entryNote: # Any notes or comments related to this entry.
+study: They examined the importance of litter quality, UV radiation and macroinvertebrate access in driving early decomposition in native sage scrub and in adjacent non-native grassland
 
-SiteInfo:
-  Name: Claremont, California, USA
-  EcosystemType:
-    - shrubland
-    - grassland
-  MAP:
-    Value: 313.9
-    Units: mm
-  MAT:
-    Value: 16.32
-    Units: Celsius
-  RainySeason: winter
-  Altitude:
-    Value: 378
-    Units: masl
-  Coordinates:
-    Latitude: 34.1
-    Longitude: -117.7
+siteInfo:
+        site:
+          - Claremont shrubland
+          - Claremont grassland
+              # These fields should be arrays of equal length to site array
+        coordinates:
+          latitude:
+            - 34.1
+            - 34.1 # Latitude in decimal units (check for negative that denotes southern hemisphere)
+          longitude:
+            - -117.7
+            - -117.7 # Longitude in decimal units (check for negative that denotes western hemisphere)
+        country:
+          - USA
+          - USA # Name of country where site was conducted
+        MAT:
+          - 16.32
+          - 16.32 # Mean annual temperature in degrees Celsius
+        MAP:
+          - 313.9
+          - 313.9 # Mean annual precipitation in mm
+        rainySeason:
+          - winter
+          - winter
+        elevation:
+          - 378
+          - 378 # Elevation of study site in meters above sea level
+        landCover:
+          - shrubland
+          - grassland
+        vegNote:
+          - native California sage scrub
+          - non-native grassland consisting predominantly (>95% cover) of annual European grasses (Bromus spp.)
+        cover:
+          plantCover: # Total plant cover percentage (if they report cover by specific plant types, fill the fields below)
+          bunchgrassCover:
+          shrubCover:
+          treeCover:
+          forbCover:
+          bareSoil:
+        soilTaxonomy:
+          soilOrder: # Soil order according to the classification system described below
+          soilFamily: # Soil family description (ex. 'Eutric' for a Eutric Cambisol)
+          soilSeries: # Soil series according to the classification system described below
+          classificationSystem: # Name of classification system used. Valid fields are: USDA, FAO, and WRB.
 
-ExperimentInfo:
- LitterInfo:
-  LitterType1:
-   Species: Ribes aureum
-   LifeForm: shrub
-   Material: leaves
-   C:N:
-     Value: 13.02
-  LitterType2:
-   Species: Bromus diandrus
-   LifeForm: graminoid
-   Material: leaves
-   C:N:
-     Value: 60.88
- Experiment1:
-  Description: "They examined the importance of various abiotic and biotic factors (litter quality, UV radiation and macroinvertebrate access) in driving early decomposition processes in native sage scrub and in adjacent non-native grassland"
-  LitterBagInfo:
-   MeshSize:
-    Value: 2
-    Units: mm
-   Dimentions:
-    Width: 9.5
-    Lenght: 11.4
-    Height: 6.6
-    Units: cm
-   Position:
-     Position1: under grass
-     Position2: under shrub
-  FilterInfo:
-   FilterType1:
-    Name: Gila UV-blocking
-    Wavelenght:
-     Value: 400
-     Units: nm
-    UVTransmitance:
-     Value: 3
-     Units: percentage
-  Treatment:
-    - radiation
-    - litter type
-    - location
-    - soil fauna exclusion
-  StartingDate:
-   Month: july
-   Season: summer
-  Duration:
-   Time: 7
-   Units: months
+experimentInfo:
+        incDesc: 2 species x 2 habitats x 2 UV treatments x 8 replicates x 4 harvests
+        # These fields should all be one dimensional arrays. Values for experimental variables with multiple treatment levels should be entered in the variables section and left blank here
+        replicates: 8 # Number of replicates per treatment
+        duration: 210 # length of incubation in days
+        startingMonth: july # month during which the study started, all in lower case
+        litter: # plant species used as litter material for the experiment. All details related to the species must be specified in the initConditions.csv file
+        litterbag:
+          material: # mesh type used to construct the litter bags, options are: wire, aluminum, window screening, net curtain, bolting cloth, plastic, fiberglass, nylon, polypropylene, polyester, polyethylene, polyamide
+          meshSize: 2 # mesh size in mm referring to one side of the net-square
+          dimentions: # size of the full litter bag in cm
+            width: 9.5
+            length: 11.4
+            height: 6.6
+          transmitance: # when reported, light transmitance of the mesh material as a percentage of full sunlight for each wavelength
+            total:
+            PAR:
+            UV:
+            UVA:
+            UVB:
+          position: over litter
 
-Variables:
-  V1:
-    Name: Time
-    Units: months
-  V2:
-    Name: GRaBMBUV
-    Units: non-ash dry mass remaining
-    Description: "R. aureum leaf litter decomposed at the non-native grassland with UV-blocking filter and macroinvertebrates excluded"
-    FilterType: FilterType1
-    LitterType: LitterType1
-    Position: Position1
-  V3:
-    Name: GRaAMBUV
-    Units: non-ash dry mass remaining
-    Description: "R. aureum leaf litter decomposed at the non-native grassland with UV-blocking filter and macroinvertebrates allowed"
-    FilterType: FilterType1
-    LitterType: LitterType1
-    Position: Position1
-  V4:
-    Name: GRaBMAUV
-    Units: non-ash dry mass remaining
-    Description: "R. aureum leaf litter decomposed at the non-native grassland without UV-blocking filter and macroinvertebrates excluded"
-    FilterType: none
-    LitterType: LitterType1
-    Position: Position1
-  V5:
-    Name: GRaAMAUV
-    Units: non-ash dry mass remaining
-    Description: "R. aureum leaf litter decomposed at the non-native grassland without UV-blocking filter and macroinvertebrates allowed"
-    FilterType: none
-    LitterType: LitterType1
-    Position: Position1
-  V6:
-    Name: GBBMBUV
-    Units: non-ash dry mass remaining
-    Description: "B. diandrus leaf litter decomposed at the non-native grassland with UV-blocking filter and macroinvertebrates excluded"
-    FilterType: FilterType1
-    LitterType: LitterType2
-    Position: Position1
-  V7:
-    Name: GBAMBUV
-    Units: non-ash dry mass remaining
-    Description: "B. diandrus leaf litter decomposed at the non-native grassland with UV-blocking filter and macroinvertebrates allowed"
-    FilterType: FilterType1
-    LitterType: LitterType2
-    Position: Position1
-  V8:
-    Name: GBBMAUV
-    Units: non-ash dry mass remaining
-    Description: "B. diandrus leaf litter decomposed at the non-native grassland without UV-blocking filter and macroinvertebrates excluded"
-    FilterType: none
-    LitterType: LitterType2
-    Position: Position1
-  V9:
-    Name: GBAMAUV
-    Units: non-ash dry mass remaining
-    Description: "B. diandrus leaf litter decomposed at the non-native grassland without UV-blocking filter and macroinvertebrates allowed"
-    FilterType: none
-    LitterType: LitterType2
-    Position: Position1
-  V10:
-    Name: SRaBMBUV
-    Units: non-ash dry mass remaining
-    Description: "R. aureum leaf litter decomposed at the native sage scrub with UV-blocking filter and macroinvertebrates excluded"
-    FilterType: FilterType1
-    LitterType: LitterType1
-    Position: Position2
-  V11:
-    Name: SRaAMBUV
-    Units: non-ash dry mass remaining
-    Description: "R. aureum leaf litter decomposed at the native sage scrub with UV-blocking filter and macroinvertebrates allowed"
-    FilterType: FilterType1
-    LitterType: LitterType1
-    Position: Position2
-  V12:
-    Name: SRaBMAUV
-    Units: non-ash dry mass remaining
-    Description: "R. aureum leaf litter decomposed at the native sage scrub without UV-blocking filter and macroinvertebrates excluded"
-    FilterType: none
-    LitterType: LitterType1
-    Position: Position2
-  V13:
-    Name: SRaAMAUV
-    Units: non-ash dry mass remaining
-    Description: "R. aureum leaf litter decomposed at the native sage scrub without UV-blocking filter and macroinvertebrates allowed"
-    FilterType: none
-    LitterType: LitterType1
-    Position: Position2
-  V14:
-    Name: SBBMBUV
-    Units: non-ash dry mass remaining
-    Description: "B. diandrus leaf litter decomposed at the native sage scrub with UV-blocking filter and macroinvertebrates excluded"
-    FilterType: FilterType1
-    LitterType: LitterType2
-    Position: Position2
-  V15:
-    Name: SBAMBUV
-    Units: non-ash dry mass remaining
-    Description: "B. diandrus leaf litter decomposed at the native sage scrub with UV-blocking filter and macroinvertebrates allowed"
-    FilterType: FilterType1
-    LitterType: LitterType2
-    Position: Position2
-  V16:
-    Name: SBBMAUV
-    Units: non-ash dry mass remaining
-    Description: "B. diandrus leaf litter decomposed at the native sage scrub without UV-blocking filter and macroinvertebrates excluded"
-    FilterType: none
-    LitterType: LitterType2
-    Position: Position2
-  V17:
-    Name: SBAMAUV
-    Units: non-ash dry mass remaining
-    Description: "B. diandrus leaf litter decomposed at the native sage scrub without UV-blocking filter and macroinvertebrates allowed"
-    FilterType: none
-    LitterType: LitterType2
-    Position: Position2
+variables: # These describe the columns of your timeSeries.csv file
+        V1: # column 1
+          name: Time
+          units: months
+        V2:
+          name: GRaBMBUV
+          units: organic matter remaining
+          varDesc: R. aureum leaf litter decomposed at the non-native grassland with UV-blocking filter and macroinvertebrates excluded
+          site: Claremont grassland
+          litter: Ribes aureum
+          compTreat: macroinvertebrate exclusion
+          filter: # for photodegradation experiments only
+           threshold: 400
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV: 3
+             UVA:
+             UVB:
+        V3:
+          name: GRaAMBUV
+          units: organic matter remaining
+          varDesc: R. aureum leaf litter decomposed at the non-native grassland with UV-blocking filter and macroinvertebrates allowed
+          site: Claremont grassland
+          litter: Ribes aureum
+          compTreat: macroinvertebrate inclusion
+          filter: # for photodegradation experiments only
+           threshold: 400
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV: 3
+             UVA:
+             UVB:
+        V4:
+          name: GRaBMAUV
+          units: organic matter remaining
+          varDesc: R. aureum leaf litter decomposed at the non-native grassland without UV-blocking filter and macroinvertebrates excluded
+          site: Claremont grassland
+          litter: Ribes aureum
+          compTreat: macroinvertebrate exclusion
+          filter: # for photodegradation experiments only
+           threshold:
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V5:
+          name: GRaAMAUV
+          units: organic matter remaining
+          varDesc: R. aureum leaf litter decomposed at the non-native grassland without UV-blocking filter and macroinvertebrates allowed
+          site: Claremont grassland
+          litter: Ribes aureum
+          compTreat: macroinvertebrate inclusion
+          filter: # for photodegradation experiments only
+           threshold:
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V6:
+          name: GBBMBUV
+          units: organic matter remaining
+          varDesc: B. diandrus leaf litter decomposed at the non-native grassland with UV-blocking filter and macroinvertebrates excluded
+          site: Claremont grassland
+          litter: Bromus diandrus
+          compTreat: macroinvertebrate exclusion
+          filter: # for photodegradation experiments only
+           threshold: 400
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV: 3
+             UVA:
+             UVB:
+        V7:
+          name: GBAMBUV
+          units: organic matter remaining
+          varDesc: B. diandrus leaf litter decomposed at the non-native grassland with UV-blocking filter and macroinvertebrates allowed
+          site: Claremont grassland
+          litter: Bromus diandrus
+          compTreat: macroinvertebrate inclusion
+          filter: # for photodegradation experiments only
+           threshold: 400
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV: 3
+             UVA:
+             UVB:
+        V8:
+          name: GBBMAUV
+          units: organic matter remaining
+          varDesc: B. diandrus leaf litter decomposed at the non-native grassland without UV-blocking filter and macroinvertebrates excluded
+          site: Claremont grassland
+          litter: Bromus diandrus
+          compTreat: macroinvertebrate exclusion
+          filter: # for photodegradation experiments only
+           threshold:
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V9:
+          name: GBAMAUV
+          units: organic matter remaining
+          varDesc: B. diandrus leaf litter decomposed at the non-native grassland without UV-blocking filter and macroinvertebrates allowed
+          site: Claremont grassland
+          litter: Bromus diandrus
+          compTreat: macroinvertebrate inclusion
+          filter: # for photodegradation experiments only
+           threshold:
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V10:
+          name: SRaBMBUV
+          units: organic matter remaining
+          varDesc: R. aureum leaf litter decomposed at the native sage scrub with UV-blocking filter and macroinvertebrates excluded
+          site: Claremont shrubland
+          litter: Ribes aureum
+          compTreat: macroinvertebrate exclusion
+          filter: # for photodegradation experiments only
+           threshold: 400
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV: 3
+             UVA:
+             UVB:
+        V11:
+          name: SRaAMBUV
+          units: organic matter remaining
+          varDesc: R. aureum leaf litter decomposed at the native sage scrub with UV-blocking filter and macroinvertebrates allowed
+          site: Claremont shrubland
+          litter: Ribes aureum
+          compTreat: macroinvertebrate inclusion
+          filter: # for photodegradation experiments only
+           threshold: 400
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV: 3
+             UVA:
+             UVB:
+        V12:
+          name: SRaBMAUV
+          units: organic matter remaining
+          varDesc: R. aureum leaf litter decomposed at the native sage scrub without UV-blocking filter and macroinvertebrates excluded
+          site: Claremont shrubland
+          litter: Ribes aureum
+          compTreat: macroinvertebrate exclusion
+          filter: # for photodegradation experiments only
+           threshold:
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V13:
+          name: SRaAMAUV
+          units: organic matter remaining
+          varDesc: R. aureum leaf litter decomposed at the native sage scrub without UV-blocking filter and macroinvertebrates allowed
+          site: Claremont shrubland
+          litter: Ribes aureum
+          compTreat: macroinvertebrate inclusion
+          filter: # for photodegradation experiments only
+           threshold:
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V14:
+          name: SBBMBUV
+          units: organic matter remaining
+          varDesc: B. diandrus leaf litter decomposed at the native sage scrub with UV-blocking filter and macroinvertebrates excluded
+          site: Claremont shrubland
+          litter: Bromus diandrus
+          compTreat: macroinvertebrate exclusion
+          filter: # for photodegradation experiments only
+           threshold: 400
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV: 3
+             UVA:
+             UVB:
+        V15:
+          name: SBAMBUV
+          units: organic matter remaining
+          varDesc: B. diandrus leaf litter decomposed at the native sage scrub with UV-blocking filter and macroinvertebrates allowed
+          site: Claremont shrubland
+          litter: Bromus diandrus
+          compTreat: macroinvertebrate inclusion
+          filter: # for photodegradation experiments only
+           threshold: 400
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV: 3
+             UVA:
+             UVB:
+        V16:
+          name: SBBMAUV
+          units: organic matter remaining
+          varDesc: B. diandrus leaf litter decomposed at the native sage scrub without UV-blocking filter and macroinvertebrates excluded
+          site: Claremont shrubland
+          litter: Bromus diandrus
+          compTreat: macroinvertebrate exclusion
+          filter: # for photodegradation experiments only
+           threshold:
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V17:
+          name: SBAMAUV
+          units: organic matter remaining
+          varDesc: B. diandrus leaf litter decomposed at the native sage scrub without UV-blocking filter and macroinvertebrates allowed
+          site: Claremont shrubland
+          litter: Bromus diandrus
+          compTreat: macroinvertebrate inclusion
+          filter: # for photodegradation experiments only
+           threshold: 
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
