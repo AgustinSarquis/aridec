@@ -1,5 +1,5 @@
 species, type, N-fixer, material, amount, carbon, nitrogen, C:N, phosphorus, potassium, sodium, magnesium, manganese, copper, zinc, lead, calcium, sulfur, iron, lignin, cellulose, hemicellulose, cell solubles, SLA
-Larrea tridentata, evergreen, no, green leaves, 10.35,,, 26.7,,,,,,,,,,,,10.6,,,,
+Larrea tridentata, evergreen, yes, green leaves, 10.35,,, 26.7,,,,,,,,,,,,10.6,,,,
 Panicum obtusum, graminoid, no, green leaves, 10.35,,,,,,,,,,,,,,, 7.9,,,,
 Prosopis glandulosa, deciduous, yes, green leaves, 10.35,,, 16.1,,,,,,,,,,,, 7.85,,,,
 Baileya multiradiata, forb, no, green leaves, 10.35,,, 24.2,,,,,,,,,,,, 6.9,,,,

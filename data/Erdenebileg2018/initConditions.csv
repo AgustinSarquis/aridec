@@ -1,0 +1,9 @@
+species, type, N-fixer, material, amount, carbon, nitrogen, C:N, phosphorus, potassium, sodium, magnesium, manganese, copper, zinc, lead, calcium, sulfur, iron, lignin, cellulose, hemicellulose, cell solubles, SLA
+Psammochloa villosa, graminoid, no, leaves, 5, 45.98, 0.90, 53.92,
+Pennisetum centrasiaticum, graminoid, no, leaves, 5, 38.87, 0.62, 62.54,
+Calamagrostis pseudophragmites, graminoid, no, leaves, 5, 44.25, 0.65, 70.03,
+Salix psammophila, evergreen, no, leaves, 5, 45.46, 1.36, 33.92,
+Caragana korshinskii, evergreen , yes, leaves, 5, 44.92, 1.96, 22.99,
+Atraphaxis bracteata, deciduous, no, leaves, 5, 42.23, 0.61, 69.56,
+Agriophyllum pungens, forb, no, leaves, 5, 38.05, 0.62, 61.26,
+Corispermum chinganicum, forb, no, leaves, 5, 40.54, 0.67, 60.40,
