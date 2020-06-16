@@ -1,74 +1,121 @@
-CitationKey: Gehrke1995
-doi: 10.2307/3546223
-EntryAuthor: Ignacio Siebenhart
+citationKey: Gehrke1995 # Unique identifier in the format: LastnameYear (lowercase letters must be added when there are two or more entries by the same author and year, i.e.: LastnameYearx)
+doi: 10.2307/3546223 # DOI of the publication where data is published
+entryAuthor: Ignacio Siebenhart # First and last name of the person who entered the data in this file
+entryCreationDate: 2019-05-24 # Date when the data was entered in this file. Format: YYYY-MM-DD
+contactName: Agustín Sarquis # First and last name of contact person (may be the principal investigator supervising the entryAuthor)
+contactEmail: agusarquis@agro.uba.ar # Email of the contact person
+entryNote: decomposition was carried out inside plastic tubes with mesh on the bottom. There are two experiments, therefore there are two controls (V2 and V4)
+study: V. myrtillus shrubs were grown under ambient and enhanced UV radiation and their leaf litter was incubated under ambient and enhanced UV radiation
 
-SiteInfo:
- Name: Abisko, Lapland, Sweden
- MAP:
-  Value: 304
-  Units: mm
- MAT:
-  Value: 11
-  Units: Celsius
- Altitude:
-  Value: 360
-  Units: masl
- Coordinates:
-  Latitude: 68.35
-  Longitude: 18.82
+siteInfo:
+        site: Abisko # Names of individual sites, if one site, keep on this line, if multiple, use array format
+              # These fields should be arrays of equal length to site array
+        coordinates:
+          latitude: 68.35 # Latitude in decimal units (check for negative that denotes southern hemisphere)
+          longitude: 18.82 # Longitude in decimal units (check for negative that denotes western hemisphere)
+        country: Sweden # Name of country where site was conducted
+        MAT: 11 # Mean annual temperature in degrees Celsius
+        MAP: 304 # Mean annual precipitation in mm
+        rainySeason: summer
+        elevation: 360 # Elevation of study site in meters above sea level
+        landCover: # Land cover of the site. Valid fields are: greenbelt, (abbandoned) farmland, mangrove forest, subalpine, shrubland, urban, sandland, forest, steppe, desert, grassland, savanna
+        vegNote: # Additional details about land cover such as species or functional type composition
+        cover:
+          plantCover: # Total plant cover percentage (if they report cover by specific plant types, fill the fields below)
+          bunchgrassCover:
+          shrubCover:
+          treeCover:
+          forbCover:
+          bareSoil:
+        soilTaxonomy:
+          soilOrder: # Soil order according to the classification system described below
+          soilFamily: # Soil family description (ex. 'Eutric' for a Eutric Cambisol)
+          soilSeries: # Soil series according to the classification system described below
+          classificationSystem: # Name of classification system used. Valid fields are: USDA, FAO, and WRB.
 
-ExperimentInfo:
- LitterInfo:
-   LitterType1:
-    Species: Vaccinium myrtillus
-    Lifeform: shrub
-    Material: recently senesced leaves
-    Amount:
-     Value: 0.25
-     Units: g
- Experiment1:
-  Description: "V. myrtillus shrubs were grown under ambient and enhanced UV radiation and its leaf litter was incubated under ambient and enhanced UV radiation for a year"
-  LitterBagInfo:
-  Material: plexiglass
-  Dimentions:
-   Diameter: 5
-   Hight: 2
-   Units: cm
-  Position: on the ground
-  Treatment:
-    - enhanced UV during growth
-    - enhanced UV during decomposition
-  StartingDate:
-   Season: autumn
-  Duration:
-   Time: 12
-   Units: months
+experimentInfo:
+        incDesc: one experiment with 2 radiation ambients during growth x 3 time points x 4 replicates; another experiment with 2 radiation levels during decomposition x 3 time points x 4 replicates
+        # These fields should all be one dimensional arrays. Values for experimental variables with multiple treatment levels should be entered in the variables section and left blank here
+        replicates: 4 # Number of replicates per treatment
+        duration: 365 # length of incubation in days
+        startingMonth: # month during which the study started, all in lower case
+        litter: Vaccinium myrtillus
+        litterbag:
+          material: plastic
+          meshSize: # mesh size in mm referring to one side of the net-square
+          dimentions: # size of the full litter bag in cm
+            width: 5
+            length:
+            height: 2 # for 3-dimensional designs such as litter boxes in Austin2006NATURE
+          transmitance: # when reported, light transmitance of the mesh material as a percentage of full sunlight for each wavelength
+            total:
+            PAR:
+            UV:
+            UVA:
+            UVB:
+          position: bare soil
 
-Variable:
- V1:
-   Name: Time
-   Units: months
- V2:
-   Name: CCO
-   Units: mass remaining
-   Description: "Litter organic matter percentage remaining at harvest time that had grown under ambient UV and decomposed without enhanced UV"
-   UVgrowth: No
-   UVdecomposition: No
- V3:
-   Name: UVC
-   Units: mass remaining
-   Description: "Litter organic matter percentage remaining at harvest time that grown under UV enhanced conditions and decomposed without enhanced UV"
-   UVgrowth: Yes
-   UVdecomposition: No
- V4:
-   Name: CCT
-   Units: mass remaining
-   Description: "Litter organic matter percentage remaining at harvest time that had grown under ambient UV and decomposed without field enhanced UV"
-   UVgrowth: No
-   UVdecomposition: No
- V5:
-   Name: CUV
-   Units: mass remaining
-   Description: "Litter organic matter percentage remaining at harvest time that had grown under ambient UV and decomposed with enhanced UV solar radiation"
-   UVgrowth: No
-   UVdecomposition: Yes
+variables: # These describe the columns of your timeSeries.csv file
+        V1: # column 1
+          name: Time
+          units: months
+        V2:
+          name: CCO
+          units: mass remaining
+          varDesc: V. myrtillus grown under ambient UV and decomposed under ambient UV
+          site: Abisko
+          experimentalTreatment: # 'experimentalTreatment' here is a place holder for treatments with multiple levels. Replace this word by any of the listed variables in incubationInfo above (startingMonth, duration, litter, litterbag, meshSize) and type treatment value (level) after colon. Note that units should be specified in the incubationInfo field above.
+          compTreat: growth under ambient UV x decomposition under ambient UV
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V3:
+          name: UVC
+          units: mass remaining
+          varDesc: V. myrtillus grown under enhanced UV and decomposed under ambient UV
+          site: Abisko
+          experimentalTreatment: # 'experimentalTreatment' here is a place holder for treatments with multiple levels. Replace this word by any of the listed variables in incubationInfo above (startingMonth, duration, litter, litterbag, meshSize) and type treatment value (level) after colon. Note that units should be specified in the incubationInfo field above.
+          compTreat: growth under enhanced UV x decomposition under ambient UV
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V4:
+          name: CCT
+          units: mass remaining
+          varDesc: V. myrtillus grown under ambient UV and decomposed under ambient UV
+          site: Abisko
+          experimentalTreatment: # 'experimentalTreatment' here is a place holder for treatments with multiple levels. Replace this word by any of the listed variables in incubationInfo above (startingMonth, duration, litter, litterbag, meshSize) and type treatment value (level) after colon. Note that units should be specified in the incubationInfo field above.
+          compTreat: growth under ambient UV x decomposition under ambient UV
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V5:
+          name: CUV
+          units: mass remaining
+          varDesc: V. myrtillus grown under ambient UV and decomposed under enhanced UV
+          site: Abisko
+          experimentalTreatment: # 'experimentalTreatment' here is a place holder for treatments with multiple levels. Replace this word by any of the listed variables in incubationInfo above (startingMonth, duration, litter, litterbag, meshSize) and type treatment value (level) after colon. Note that units should be specified in the incubationInfo field above.
+          compTreat: growth under ambient UV x decomposition under enhanced UV
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
