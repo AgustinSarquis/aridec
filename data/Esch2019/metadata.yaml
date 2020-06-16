@@ -1,182 +1,181 @@
-CitationKey: Esch2019
-doi: 10.1007/s11104-019-04069-y
-EntryAuthor: Ignacio Siebenhart
+citationKey: Esch2019 # Unique identifier in the format: LastnameYear (lowercase letters must be added when there are two or more entries by the same author and year, i.e.: LastnameYearx)
+doi: 10.1007/s11104-019-04069-y # DOI of the publication where data is published
+entryAuthor: Ignacio Siebenhart # First and last name of the person who entered the data in this file
+entryCreationDate: 2019-07-19 # Date when the data was entered in this file. Format: YYYY-MM-DD
+contactName: Agustín Sarquis # First and last name of contact person (may be the principal investigator supervising the entryAuthor)
+contactEmail: agusarquis@agro.uba.ar # Email of the contact person
+entryNote: soils are Vertisols but classification system was not specified
+study: effect of UV radiation on decomposition for two species in two different conditions of moisture
 
-SiteInfo:
- Name: La Jolla, California, USA
- RainySeason: winter
- Altitude:
-  Value: 85
-  Units: masl
- SoilType: Vertisol
- Soiltexture: fine
- Coordinates:
-  Latitude: 32.89
-  Longitude: -117.23
+siteInfo:
+        site: La Jolla # Names of individual sites, if one site, keep on this line, if multiple, use array format
+              # These fields should be arrays of equal length to site array
+        coordinates:
+          latitude: 32.89 # Latitude in decimal units (check for negative that denotes southern hemisphere)
+          longitude: -117.23 # Longitude in decimal units (check for negative that denotes western hemisphere)
+        country: USA # Name of country where site was conducted
+        MAT: 16.92 # Mean annual temperature in degrees Celsius
+        MAP: 292 # Mean annual precipitation in mm
+        rainySeason: winter
+        elevation: 85 # Elevation of study site in meters above sea level
+        landCover: # Land cover of the site. Valid fields are: greenbelt, (abbandoned) farmland, mangrove forest, subalpine, shrubland, urban, sandland, forest, steppe, desert, grassland, savanna
+        vegNote: # Additional details about land cover such as species or functional type composition
+        cover:
+          plantCover: # Total plant cover percentage (if they report cover by specific plant types, fill the fields below)
+          bunchgrassCover:
+          shrubCover:
+          treeCover:
+          forbCover:
+          bareSoil:
+        soilTaxonomy:
+          soilOrder: # Soil order according to the classification system described below
+          soilFamily: # Soil family description (ex. 'Eutric' for a Eutric Cambisol)
+          soilSeries: # Soil series according to the classification system described below
+          classificationSystem: # Name of classification system used. Valid fields are: USDA, FAO, and WRB.
 
-ExperimentInfo:
- LitterInfo:
-  LitterType1:
-   Species: Avena fatua
-   Lifeform: graminoid
-   Material: recently senesced leaves
-   Carbon:
-    Value: 41.67
-    Units: percentage
-   Nitrogen:
-    Value: 0.78
-    Units: percentage
-   C:N:
-    Value: 53.42
-   CellSolubles:
-    Value: 29.49
-    Units: percentage
-   Hemicellulose:
-    Value: 30.00
-    Units: percentage
-   Cellulose:
-    Value: 36.41
-    Units: percentage
-   Lignin:
-    Value: 4.09
-    Units: percentage
-   Amount:
-    Value: 2
-    Units: g
-  LitterType2:
-   Species: Salvia mellifera
-   Lifeform: shrub
-   Material: recently senesced leaves
-   Carbon:
-    Value: 48.19
-    Units: percentage
-   Nitrogen:
-    Value: 0.71
-    Units: percentage
-   C:N:
-    Value: 67.87
-   CellSolubles:
-    Value: 71.5
-    Units: percentage
-   Hemicellulose:
-    Value: 5.18
-    Units: percentage
-   Cellulose:
-    Value: 13.70
-    Units: percentage
-   Lignin:
-    Value: 9.96
-    Units: percentage
-   Amount:
-    Value: 2
-    Units: g
- Experiment1:
-  Description: "They assess the effect of UV radiation on decomposition for two species in two different conditions of moisture"
-  LitterBagInfo:
-   Material: aluminum
-   MeshSize:
-    Value: 1.5
-    Units: mm
-   Dimentions:
-    Width: 10
-    Lenght: 10
-    Units: cm
-  Position:
-   - bare soil
-   - under frames
-  FilterInfo:
-   FilterType1:
-    Name: Solacryl
-    UVATransmitance:
-     Value: 80
-     Units: percentage
-    UVBTransmitance:
-     Value: 79
-     Units: percentage
-    PARTransmitance:
-     Value: 87
-     Units: percentage
-   FilterType2:
-    Name: polycarbonate
-    WaveLenght:
-     Value: 400
-     Units: nm
-    UVATransmitance:
-     Value: 7
-     Units: percentage
-    UVBTransmitance:
-     Value: 92
-     Units: percentage
-    PARTransmitance:
-     Value: 83
-     Units: percentage
-  Treatment:
-   - UV attenuation
-   - Water addition
-  StartingDate:
-   Month: june
-   Season: autumn
-  Duration:
-   Time: 25.23
-   Units: months
+experimentInfo:
+        incDesc: 2 species x 2 radiation filters x 2 moisture levels x 5 harvests x 5 replicates
+        # These fields should all be one dimensional arrays. Values for experimental variables with multiple treatment levels should be entered in the variables section and left blank here
+        replicates: 5 # Number of replicates per treatment
+        duration: 757 # length of incubation in days
+        startingMonth: june # month during which the study started, all in lower case
+        litter: # plant species used as litter material for the experiment. All details related to the species must be specified in the initConditions.csv file
+        litterbag:
+          material: aluminum
+          meshSize: 1.5 # mesh size in mm referring to one side of the net-square
+          dimentions: # size of the full litter bag in cm
+            width: 10
+            length: 10
+            height: # for 3-dimensional designs such as litter boxes in Austin2006NATURE
+          transmitance: # when reported, light transmitance of the mesh material as a percentage of full sunlight for each wavelength
+            total:
+            PAR:
+            UV:
+            UVA:
+            UVB:
+          position: under frame
 
-Variables:
- V1:
-   Name: Time
-   Units: days
- V2:
-   Name: AUVPA
-   Units: mass remaining
-   Description: "Avena fatua litter mass remaining at harvest time with ambient rainfall and total UV"
-   LitterType: LitterType1
-   FilterType: FilterType1
-   Water addition: "No"
- V3:
-   Name: AUVPW
-   Units: mass remaining
-   Description: "Avena fatua litter mass remaining at harvest time with additional water and total UV"
-   LitterType: LitterType1
-   FilterType: FilterType1
-   Water addition: "Yes"
- V4:
-   Name: AUVBA
-   Units: mass remaining
-   Description: "Avena fatua litter mass remaining at harvest time with ambient rainfall and blocked UV"
-   LitterType: LitterType1
-   FilterType: FilterType2
-   Water addition: "No"
- V5:
-   Name: AUVBW
-   Units: mass remaining
-   Description: "Avena fatua litter mass remaining at harvest time with additional water and blocked UV"
-   LitterType: LitterType1
-   FilterType: FilterType2
-   Water addition: "Yes"
- V6:
-   Name: SUVPA
-   Units: mass remaining
-   Description: "Salvia mellifera litter mass remaining at harvest time with ambient rainfall and total UV"
-   LitterType: LitterType2
-   FilterType: FilterType1
-   Water addition: "No"
- V7:
-   Name: SUVPW
-   Units: mass remaining
-   Description: "Salvia mellifera litter mass remaining at harvest time with water addition and total UV"
-   LitterType: LitterType2
-   FilterType: FilterType1
-   Water addition: "Yes"
- V8:
-   Name: SUVBA
-   Units: mass remaining
-   Description: "Salvia mellifera litter mass remaining at harvest time with ambient rainfall and blocked UV"
-   LitterType: LitterType2
-   FilterType: FilterType2
-   Water addition: "No"
- V9:
-   Name: SUVBW
-   Units: mass remaining
-   Description: "Salvia mellifera litter mass remaining at harvest time with additional water and blocked UV"
-   LitterType: LitterType2
-   FilterType: FilterType2
-   Water addition: "Yes"
+variables: # These describe the columns of your timeSeries.csv file
+        V1: # column 1
+          name: Time
+          units: days
+        V2:
+          name: AUVPA
+          units: mass remaining
+          varDesc: Avena fatua litter with ambient rainfall and total UV
+          site: La Jolla
+          litter: Avena fatua
+          compTreat: no water addition
+          filter: # for photodegradation experiments only
+           threshold: 0
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR: 87
+             UV:
+             UVA: 80
+             UVB: 79
+        V3:
+          name: AUVPW
+          units: mass remaining
+          varDesc: Avena fatua litter with additional rainfall and total UV
+          site: La Jolla
+          litter: Avena fatua
+          compTreat: water addition
+          filter: # for photodegradation experiments only
+           threshold: 0
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR: 87
+             UV:
+             UVA: 80
+             UVB: 79
+        V4:
+          name: AUVBA
+          units: mass remaining
+          varDesc: Avena fatua litter with ambient rainfall and blocked UV
+          site: La Jolla
+          litter: Avena fatua
+          compTreat: no water addition
+          filter: # for photodegradation experiments only
+           threshold: 315
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR: 83
+             UV:
+             UVA: 7
+             UVB: 92
+        V5:
+          name: AUVBW
+          units: mass remaining
+          varDesc: Avena fatua litter with additional water and blocked UV
+          site: La Jolla
+          litter: Avena fatua
+          compTreat: water addition
+          filter: # for photodegradation experiments only
+           threshold: 315
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR: 83
+             UV:
+             UVA: 7
+             UVB: 92
+        V6:
+          name: SUVPA
+          units: mass remaining
+          varDesc: Salvia mellifera with ambient rainfall and total UV
+          site: La Jolla
+          litter: Salvia mellifera
+          compTreat: no water addition
+          filter: # for photodegradation experiments only
+           threshold: 0
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR: 87
+             UV:
+             UVA: 80
+             UVB: 79
+        V7:
+          name: SUVPW
+          units: mass remaining
+          varDesc: Salvia mellifera with water addition and total UV
+          site: La Jolla
+          litter: Salvia mellifera
+          compTreat: water addition
+          filter: # for photodegradation experiments only
+           threshold: 0
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR: 87
+             UV:
+             UVA: 80
+             UVB: 79
+        V8:
+          name: SUVBA
+          units: mass remaining
+          varDesc: Salvia mellifera with ambient rainfall and blocked UV
+          site: La Jolla
+          litter: Salvia mellifera
+          compTreat: no water addition
+          filter: # for photodegradation experiments only
+           threshold: 315
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR: 83
+             UV:
+             UVA: 7
+             UVB: 92
+        V9:
+          name: SUVBW
+          units: mass remaining
+          varDesc: Salvia mellifera with additional water and blocked UV
+          site: La Jolla
+          litter: Salvia mellifera
+          compTreat: water addition
+          filter: # for photodegradation experiments only
+           threshold: 315
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR: 83
+             UV:
+             UVA: 7
+             UVB: 92
