@@ -1,361 +1,701 @@
-CitationKey: Glassman2018
-doi: 10.1073/pnas.1811269115
-EntryAuthor: Agustín Sarquis
+citationKey: Glassman2018 # Unique identifier in the format: LastnameYear (lowercase letters must be added when there are two or more entries by the same author and year, i.e.: LastnameYearx)
+doi: 10.1073/pnas.1811269115 # DOI of the publication where data is published
+entryAuthor: Agustín Sarquis # First and last name of the person who entered the data in this file
+entryCreationDate: 2019-11-22 # Date when the data was entered in this file. Format: YYYY-MM-DD
+contactName: Agustín Sarquis # First and last name of contact person (may be the principal investigator supervising the entryAuthor)
+contactEmail: agusarquis@agro.uba.ar # Email of the contact person
+entryNote: # Any notes or comments related to this entry.
+study: They incubated a common litter substrate at five sites, litter being inoculated with microbes from each of the five sites
 
-SiteInfo:
-  Name: California, USA
-  EcosystemType:
-   - desert
-   - scrub
-   - grassland
-   - forest
-   - subalpine
-  MAP:
-    Value:
-      - 213.5
-      - 428.4
-      - 569.4
-      - 1415.8
-      - 1376.5
-    Units: mm
-  MAT:
-    Value:
-      - 26.3
-      - 17.4
-      - 18.8
-      - 11.4
-      - 11.0
-    Units: Celsius
-  RainySeason: winter
-  Altitude:
-    Value:
-      - 275
-      - 1280
-      - 470
-      - 1710
-      - 2250
-    Units: masl
-  Coordinates:
-    Latitude:
-      - 33.648
-      - 33.610
-      - 33.737
-      - 33.683
-      - 33.823
-    Longitude:
-      - -116.38
-      - -116.45
-      - -117.70
-      - -116.77
-      - -116.75
+siteInfo:
+        site:
+           - desert
+           - scrubland
+           - grassland
+           - pine-oak
+           - subalpine
+              # These fields should be arrays of equal length to site array
+        coordinates:
+          latitude:
+            - 33.648
+            - 33.610
+            - 33.737
+            - 33.683
+            - 33.823
+          longitude:
+            - -116.38
+            - -116.45
+            - -117.70
+            - -116.77
+            - -116.75
+        country:
+         - USA
+         - USA
+         - USA
+         - USA
+         - USA
+        MAT:
+          - 26.3
+          - 17.4
+          - 18.8
+          - 11.4
+          - 11.0
+        MAP:
+          - 213.5
+          - 428.4
+          - 569.4
+          - 1415.8
+          - 1376.5
+        rainySeason:
+         - winter
+         - winter
+         - winter
+         - winter
+         - winter
+        elevation:
+          - 275
+          - 1280
+          - 470
+          - 1710
+          - 2250
+        landCover:
+          - desert
+          - shrubland
+          - grassland
+          - forest
+          - forest # Land cover of the site. Valid fields are: greenbelt, (abbandoned) farmland, mangrove forest, subalpine, shrubland, urban, sandland, forest, steppe, desert, grassland, savanna
+        vegNote: # Additional details about land cover such as species or functional type composition
+        cover:
+          plantCover: # Total plant cover percentage (if they report cover by specific plant types, fill the fields below)
+          bunchgrassCover:
+          shrubCover:
+          treeCover:
+          forbCover:
+          bareSoil:
+        soilTaxonomy:
+          soilOrder: # Soil order according to the classification system described below
+          soilFamily: # Soil family description (ex. 'Eutric' for a Eutric Cambisol)
+          soilSeries: # Soil series according to the classification system described below
+          classificationSystem: # Name of classification system used. Valid fields are: USDA, FAO, and WRB.
 
-ExperimentInfo:
- LitterInfo:
-  LitterType1:
-   Species:
-     - Avena spp.
-     - Bromus spp.
-     - Lolium spp.
-     - Erodium spp.
-     - Lupinus spp.
-     - Nassella pulchra
-   LifeForm:
-      - graminoid
-      - graminoid
-      - graminoid
-      - forb
-      - forb
-      - graminoid
-   Material: homogenized leaves
-   Amount:
-     Value: 5
-     Units: g
-  LitterType2:
-   Species:
-     - Avena spp.
-     - Bromus spp.
-     - Lolium spp.
-     - Erodium spp.
-     - Lupinus spp.
-     - Nassella pulchra
-   LifeForm:
-      - graminoid
-      - graminoid
-      - graminoid
-      - forb
-      - forb
-      - graminoid
-   Material: leaves
-   Amount:
-     Value: 2
-     Units: g
- Experiment1:
-  Description: "They incubated a common litter substrate at five sites along a gradient inoculated with microbes from each of the five sites for 18 months"
-  LitterBagInfo:
-   LitterBag1:
-    Material: nylon
-    MeshSize:
-     Value: 0.00022
-     Units: mm
-   LitterBag2:
-    Material: window screening
-    MeshSize:
-     Value: 2
-     Units: mm
-  Treatment: location, microbial inoculum
-  StartingDate:
-   Month: october
-   Season: autumn
-  Duration:
-   Time: 18
-   Units: months
+experimentInfo:
+        incDesc: 5 sites × 5 inocula × 4 replicate × 3 time points
+        # These fields should all be one dimensional arrays. Values for experimental variables with multiple treatment levels should be entered in the variables section and left blank here
+        replicates: 4 # Number of replicates per treatment
+        duration: 540
+        startingMonth: october
+        litter: # plant species used as litter material for the experiment. All details related to the species must be specified in the initConditions.csv file
+        litterbag:
+          material:
+          meshSize:
+          dimentions: # size of the full litter bag in cm
+            width:
+            length:
+            height: # for 3-dimensional designs such as litter boxes in Austin2006NATURE
+          transmitance: # when reported, light transmitance of the mesh material as a percentage of full sunlight for each wavelength
+            total:
+            PAR:
+            UV:
+            UVA:
+            UVB:
+          position: # position of litterbags in the field, valid options are: bare soil, decomposition bed, under litter, over litter, over lawn, next to grass, under tree/shrub/grass, buried X cm deep, underwater, under rainout shelter, under frame, suspended X cm, under shadecloth
 
-Variables:
-  V1:
-    Name: Time
-    Units: months
-  V2:
-    Name: DD
-    Units: mass remaining
-    Description: "Homogenized litter incubated at the desert site inoculated with desert microbes in a closed bag"
-    LitterType: LitterType1
-    Site: desert
-    LitterBag: LitterBag1
-  V3:
-    Name: DSc
-    Units: mass remaining
-    Description: "Homogenized litter incubated at the desert site inoculated with scrubland microbes in a closed bag"
-    LitterType: LitterType1
-    Site: desert
-    LitterBag: LitterBag1
-  V4:
-    Name: DG
-    Units: mass remaining
-    Description: "Homogenized litter incubated at the desert site inoculated with grassland microbes in a closed bag"
-    LitterType: LitterType1
-    Site: desert
-    LitterBag: LitterBag1
-  V5:
-    Name: DP
-    Units: mass remaining
-    Description: "Homogenized litter incubated at the desert site inoculated with pine-oak forest microbes in a closed bag"
-    LitterType: LitterType1
-    Site: desert
-    LitterBag: LitterBag1
-  V6:
-    Name: DS
-    Units: mass remaining
-    Description: "Homogenized litter incubated at the desert site inoculated with subalpine microbes in a closed bag"
-    LitterType: LitterType1
-    Site: desert
-    LitterBag: LitterBag1
-  V7:
-    Name: Dc
-    Units: mass remaining
-    Description: "Clipped litter incubated at the desert site in a closed bag"
-    LitterType: LitterType2
-    Site: desert
-    LitterBag: LitterBag1
-  V8:
-    Name: Do
-    Units: mass remaining
-    Description: "Clipped litter incubated at the desert site in an open bag"
-    LitterType: LitterType2
-    Site: desert
-    LitterBag: LitterBag2
-  V9:
-    Name: ScD
-    Units: mass remaining
-    Description: "Homogenized litter incubated at the scrubland site inoculated with desert microbes in a closed bag"
-    LitterType: LitterType1
-    Site: scrub
-    LitterBag: LitterBag1
-  V10:
-    Name: ScSc
-    Units: mass remaining
-    Description: "Homogenized litter incubated at the scrubland site inoculated with scrubland microbes in a closed bag"
-    LitterType: LitterType1
-    Site: scrub
-    LitterBag: LitterBag1
-  V11:
-    Name: ScG
-    Units: mass remaining
-    Description: "Homogenized litter incubated at the scrubland site inoculated with grassland microbes in a closed bag"
-    LitterType: LitterType1
-    Site: scrub
-    LitterBag: LitterBag1
-  V12:
-    Name: ScP
-    Units: mass remaining
-    Description: "Homogenized litter incubated at the scrubland site inoculated with pine-oak forest microbes in a closed bag"
-    LitterType: LitterType1
-    Site: scrub
-    LitterBag: LitterBag1
-  V13:
-    Name: ScS
-    Units: mass remaining
-    Description: "Homogenized litter incubated at the scrubland site inoculated with subalpine microbes in a closed bag"
-    LitterType: LitterType1
-    Site: scrub
-    LitterBag: LitterBag1
-  V14:
-    Name: Scc
-    Units: mass remaining
-    Description: "Clipped litter incubated at the scrubland site in a closed bag"
-    LitterType: LitterType2
-    Site: scrub
-    LitterBag: LitterBag1
-  V15:
-    Name: Sco
-    Units: mass remaining
-    Description: "Clipped litter incubated at the scrubland site in an open bag"
-    LitterType: LitterType2
-    Site: scrub
-    LitterBag: LitterBag2
-  V16:
-    Name: GD
-    Units: mass remaining
-    Description: "Homogenized litter incubated at the grassland site inoculated with desert microbes in a closed bag"
-    LitterType: LitterType1
-    Site: grassland
-    LitterBag: LitterBag1
-  V17:
-    Name: GSc
-    Units: mass remaining
-    Description: "Homogenized litter incubated at the grassland site inoculated with scrubland microbes in a closed bag"
-    LitterType: LitterType1
-    Site: grassland
-    LitterBag: LitterBag1
-  V18:
-    Name: GG
-    Units: mass remaining
-    Description: "Homogenized litter incubated at the grassland site inoculated with grassland microbes in a closed bag"
-    LitterType: LitterType1
-    Site: grassland
-    LitterBag: LitterBag1
-  V19:
-    Name: GP
-    Units: mass remaining
-    Description: "Homogenized litter incubated at the grassland site inoculated with pine-oak forest microbes in a closed bag"
-    LitterType: LitterType1
-    Site: grassland
-    LitterBag: LitterBag1
-  V20:
-    Name: GS
-    Units: mass remaining
-    Description: "Homogenized litter incubated at the grassland site inoculated with subalpine microbes in a closed bag"
-    LitterType: LitterType1
-    Site: grassland
-    LitterBag: LitterBag1
-  V21:
-    Name: Gc
-    Units: mass remaining
-    Description: "Clipped litter incubated at the grassland site in a closed bag"
-    LitterType: LitterType2
-    Site: grassland
-    LitterBag: LitterBag1
-  V22:
-    Name: Go
-    Units: mass remaining
-    Description: "Clipped litter incubated at the grassland site in an open bag"
-    LitterType: LitterType2
-    Site: grassland
-    LitterBag: LitterBag2
-  V23:
-    Name: PD
-    Units: mass remaining
-    Description: "Homogenized litter incubated at the pine-oak forest site inoculated with desert microbes in a closed bag"
-    LitterType: LitterType1
-    Site: forest
-    LitterBag: LitterBag1
-  V24:
-    Name: PSc
-    Units: mass remaining
-    Description: "Homogenized litter incubated at the pine-oak forest site inoculated with scrubland microbes in a closed bag"
-    LitterType: LitterType1
-    Site: forest
-    LitterBag: LitterBag1
-  V25:
-    Name: PG
-    Units: mass remaining
-    Description: "Homogenized litter incubated at the pine-oak forest site inoculated with grassland microbes in a closed bag"
-    LitterType: LitterType1
-    Site: forest
-    LitterBag: LitterBag1
-  V26:
-    Name: PP
-    Units: mass remaining
-    Description: "Homogenized litter incubated at the pine-oak forest site inoculated with pine-oak forest microbes in a closed bag"
-    LitterType: LitterType1
-    Site: forest
-    LitterBag: LitterBag1
-  V27:
-    Name: PS
-    Units: mass remaining
-    Description: "Homogenized litter incubated at the pine-oak forest site inoculated with subalpine microbes in a closed bag"
-    LitterType: LitterType1
-    Site: forest
-    LitterBag: LitterBag1
-  V28:
-    Name: Pc
-    Units: mass remaining
-    Description: "Clipped litter incubated at the pine-oak forest site in a closed bag"
-    LitterType: LitterType2
-    Site: forest
-    LitterBag: LitterBag1
-  V29:
-    Name: Po
-    Units: mass remaining
-    Description: "Clipped litter incubated at the pine-oak forest site in an open bag"
-    LitterType: LitterType2
-    Site: forest
-    LitterBag: LitterBag2
-  V30:
-    Name: SD
-    Units: mass remaining
-    Description: "Homogenized litter incubated at the subalpine site inoculated with desert microbes in a closed bag"
-    LitterType: LitterType1
-    Site: subalpine
-    LitterBag: LitterBag1
-  V31:
-    Name: SSc
-    Units: mass remaining
-    Description: "Homogenized litter incubated at the subalpine site inoculated with scrubland microbes in a closed bag"
-    LitterType: LitterType1
-    Site: subalpine
-    LitterBag: LitterBag1
-  V32:
-    Name: SG
-    Units: mass remaining
-    Description: "Homogenized litter incubated at the subalpine site inoculated with grassland microbes in a closed bag"
-    LitterType: LitterType1
-    Site: subalpine
-    LitterBag: LitterBag1
-  V33:
-    Name: SP
-    Units: mass remaining
-    Description: "Homogenized litter incubated at the subalpine site inoculated with pine-oak forest microbes in a closed bag"
-    LitterType: LitterType1
-    Site: subalpine
-    LitterBag: LitterBag1
-  V34:
-    Name: SS
-    Units: mass remaining
-    Description: "Homogenized litter incubated at the subalpine site inoculated with subalpine microbes in a closed bag"
-    LitterType: LitterType1
-    Site: subalpine
-    LitterBag: LitterBag1
-  V35:
-    Name: Sc
-    Units: mass remaining
-    Description: "Clipped litter incubated at the subalpine sitein a closed bag"
-    LitterType: LitterType2
-    Site: subalpine
-    LitterBag: LitterBag1
-  V36:
-    Name: So
-    Units: mass remaining
-    Description: "Clipped litter incubated at the subalpine site in an open bag"
-    LitterType: LitterType2
-    Site: subalpine
-    LitterBag: LitterBag2
+variables: # These describe the columns of your timeSeries.csv file
+        V1: # column 1
+          name: Time
+          units: months
+        V2:
+          name: DD
+          units: mass remaining
+          varDesc: Homogenized litter incubated at the desert site inoculated with desert microbes in a closed bag
+          site: desert
+          litter: mixture1
+          material: nylon
+          meshSize: 0.00022
+          compTreat: local inoculum
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V3:
+          name: DSc
+          units: mass remaining
+          varDesc: Homogenized litter incubated at the desert site inoculated with scrubland microbes in a closed bag
+          site: desert
+          litter: mixture1
+          material: nylon
+          meshSize: 0.00022
+          compTreat: foreign inoculum
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V4:
+          name: DG
+          units: mass remaining
+          varDesc: Homogenized litter incubated at the desert site inoculated with grassland microbes in a closed bag
+          site: desert
+          litter: mixture1
+          material: nylon
+          meshSize: 0.00022
+          compTreat: foreign inoculum
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V5:
+          name: DP
+          units: mass remaining
+          varDesc: Homogenized litter incubated at the desert site inoculated with pine-oak forest microbes in a closed bag
+          site: desert
+          litter: mixture1
+          material: nylon
+          meshSize: 0.00022
+          compTreat: foreign inoculum
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V6:
+          name: DS
+          units: mass remaining
+          varDesc: Homogenized litter incubated at the desert site inoculated with subalpine microbes in a closed bag
+          site: desert
+          litter: mixture1
+          material: nylon
+          meshSize: 0.00022
+          compTreat: foreign inoculum
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V7:
+          name: Dc
+          units: mass remaining
+          varDesc: Clipped litter incubated at the desert site in a closed bag
+          site: desert
+          litter: mixture2
+          material: nylon
+          meshSize: 0.00022
+          compTreat:
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V8:
+          name: Do
+          units: mass remaining
+          varDesc: Clipped litter incubated at the desert site in an open bag
+          site: desert
+          litter: mixture2
+          material: window screening
+          meshSize: 2
+          compTreat:
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V9:
+          name: ScD
+          units: mass remaining
+          varDesc: Homogenized litter incubated at the scrubland site inoculated with desert microbes in a closed bag
+          site: scrubland
+          litter: mixture1
+          material: nylon
+          meshSize: 0.00022
+          compTreat: foreign inoculum
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V10:
+          name: ScSc
+          units: mass remaining
+          varDesc: Homogenized litter incubated at the scrubland site inoculated with scrubland microbes in a closed bag
+          site: scrubland
+          litter: mixture1
+          material: nylon
+          meshSize: 0.00022
+          compTreat: local inoculum
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V11:
+          name: ScG
+          units: mass remaining
+          varDesc: Homogenized litter incubated at the scrubland site inoculated with grassland microbes in a closed bag
+          site: scrubland
+          litter: mixture1
+          material: nylon
+          meshSize: 0.00022
+          compTreat: foreign inoculum
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V12:
+          name: ScP
+          units: mass remaining
+          varDesc: Homogenized litter incubated at the scrubland site inoculated with pine-oak forest microbes in a closed bag
+          site: scrubland
+          litter: mixture1
+          material: nylon
+          meshSize: 0.00022
+          compTreat: foreign inoculum
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V13:
+          name: ScS
+          units: mass remaining
+          varDesc: Homogenized litter incubated at the scrubland site inoculated with subalpine microbes in a closed bag
+          site: scrubland
+          litter: mixture1
+          material: nylon
+          meshSize: 0.00022
+          compTreat: foreign inoculum
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V14:
+          name: Scc
+          units: mass remaining
+          varDesc: Clipped litter incubated at the scrubland site in a closed bag
+          site: scrubland
+          litter: mixture2
+          material: nylon
+          meshSize: 0.00022
+          compTreat:
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V15:
+          name: Sco
+          units: mass remaining
+          varDesc: Clipped litter incubated at the scrubland site in an open bag
+          site: scrubland
+          litter: mixture2
+          material: window screening
+          meshSize: 2
+          compTreat:
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V16:
+          name: GD
+          units: mass remaining
+          varDesc: Homogenized litter incubated at the grassland site inoculated with desert microbes in a closed bag
+          site: grassland
+          litter: mixture1
+          material: nylon
+          meshSize: 0.00022
+          compTreat: foreign inoculum
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V17:
+          name: GSc
+          units: mass remaining
+          varDesc: Homogenized litter incubated at the grassland site inoculated with scrubland microbes in a closed bag
+          site: grassland
+          litter: mixture1
+          material: nylon
+          meshSize: 0.00022
+          compTreat: foreign inoculum
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V18:
+          name: GG
+          units: mass remaining
+          varDesc: Homogenized litter incubated at the grassland site inoculated with grassland microbes in a closed bag
+          site: grassland
+          litter: mixture1
+          material: nylon
+          meshSize: 0.00022
+          compTreat: local inoculum
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V19:
+          name: GP
+          units: mass remaining
+          varDesc: Homogenized litter incubated at the grassland site inoculated with pine-oak forest microbes in a closed bag
+          site: grassland
+          litter: mixture1
+          material: nylon
+          meshSize: 0.00022
+          compTreat: foreign inoculum
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V20:
+          name: GS
+          units: mass remaining
+          varDesc: Homogenized litter incubated at the grassland site inoculated with subalpine microbes in a closed bag
+          site: grassland
+          litter: mixture1
+          material: nylon
+          meshSize: 0.00022
+          compTreat: subalpine
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V21:
+          name: Gc
+          units: mass remaining
+          varDesc: Clipped litter incubated at the grassland site in a closed bag
+          site: grassland
+          litter: mixture2
+          material: nylon
+          meshSize: 0.00022
+          compTreat:
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V22:
+          name: Go
+          units: mass remaining
+          varDesc: Clipped litter incubated at the grassland site in an open bag
+          site: grassland
+          litter: mixture2
+          material: window screening
+          meshSize: 2
+          compTreat:
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V23:
+          name: PD
+          units: mass remaining
+          varDesc: Homogenized litter incubated at the pine-oak forest site inoculated with desert microbes in a closed bag
+          site: pine-oak
+          litter: mixture1
+          material: nylon
+          meshSize: 0.00022
+          compTreat: foreign inoculum
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V24:
+          name: PSc
+          units: mass remaining
+          varDesc: Homogenized litter incubated at the pine-oak forest site inoculated with scrubland microbes in a closed bag
+          site: pine-oak
+          litter: mixture1
+          material: nylon
+          meshSize: 0.00022
+          compTreat: foreign inoculum
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V25:
+          name: PG
+          units: mass remaining
+          varDesc: Homogenized litter incubated at the pine-oak forest site inoculated with grassland microbes in a closed bag
+          site: pine-oak
+          litter: mixture1
+          material: nylon
+          meshSize: 0.00022
+          compTreat: foreign inoculum
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V26:
+          name: PP
+          units: mass remaining
+          varDesc: Homogenized litter incubated at the pine-oak forest site inoculated with pine-oak forest microbes in a closed bag
+          site: pine-oak
+          litter: mixture1
+          material: nylon
+          meshSize: 0.00022
+          compTreat: local inoculum
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V27:
+          name: PS
+          units: mass remaining
+          varDesc: Homogenized litter incubated at the pine-oak forest site inoculated with subalpine microbes in a closed bag
+          site: pine-oak
+          litter: mixture1
+          material: nylon
+          meshSize: 0.00022
+          compTreat: foreign inoculum
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V28:
+          name: Pc
+          units: mass remaining
+          varDesc: Clipped litter incubated at the pine-oak forest site in a closed bag
+          site: pine-oak
+          litter: mixture2
+          material: nylon
+          meshSize: 0.00022
+          compTreat:
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V29:
+          name: Po
+          units: mass remaining
+          varDesc: Clipped litter incubated at the pine-oak forest site in an open bag
+          site: pine-oak
+          litter: mixture2
+          material: window screening
+          meshSize: 2
+          compTreat:
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V30:
+          name: SD
+          units: mass remaining
+          varDesc: Homogenized litter incubated at the subalpine site inoculated with desert microbes in a closed bag
+          site: subalpine
+          litter: mixture1
+          material: nylon
+          meshSize: 0.00022
+          compTreat: foreign inoculum
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V31:
+          name: SSc
+          units: mass remaining
+          varDesc: Homogenized litter incubated at the subalpine site inoculated with scrubland microbes in a closed bag
+          site: subalpine
+          litter: mixture1
+          material: nylon
+          meshSize: 0.00022
+          compTreat: foreign inoculum
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V32:
+          name: SG
+          units: mass remaining
+          varDesc: Homogenized litter incubated at the subalpine site inoculated with grassland microbes in a closed bag
+          site: subalpine
+          litter: mixture1
+          material: nylon
+          meshSize: 0.00022
+          compTreat: foreign inoculum
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V33:
+          name: SP
+          units: mass remaining
+          varDesc: Homogenized litter incubated at the subalpine site inoculated with pine-oak forest microbes in a closed bag
+          site: subalpine
+          litter: mixture1
+          material: nylon
+          meshSize: 0.00022
+          compTreat: foreign inoculum
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V34:
+          name: SS
+          units: mass remaining
+          varDesc: Homogenized litter incubated at the subalpine site inoculated with subalpine microbes in a closed bag
+          site: subalpine
+          litter: mixture1
+          material: nylon
+          meshSize: 0.00022
+          compTreat: local inoculum
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V35:
+          name: Sc
+          units: mass remaining
+          varDesc: Clipped litter incubated at the subalpine sitein a closed bag
+          site: subalpine
+          litter: mixture2
+          material: nylon
+          meshSize: 0.00022
+          compTreat:
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V36:
+          name: So
+          units: mass remaining
+          varDesc: Clipped litter incubated at the subalpine site in an open bag
+          site: subalpine
+          litter: mixture2
+          material: window screening
+          meshSize: 2
+          compTreat:
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
