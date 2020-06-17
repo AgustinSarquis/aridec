@@ -1,0 +1,5 @@
+species, type, N-fixer, material, amount, carbon, nitrogen, C:N, phosphorus, potassium, sodium, magnesium, manganese, copper, zinc, lead, calcium, sulfur, iron, lignin, cellulose, hemicellulose, cell solubles, SLA
+Phillyrea latifolia, evergreen, no, leaves, 2.5, 49.5, 0.88, 56.3,,,,,,,,,,,, 20.3,
+Calicotome villosa, deciduous, yes, leaves, 2.5, 46.2, 2.47, 18.7,,,,,,,,,,,, 18.9,
+Avena sterilis, graminoid, no, leaves, 2.5, 43.1, 0.82, 54.1,,,,,,,,,,,, 8.9,
+Triticum aestivum, graminoid, no, leaves, 2.5, 43.9, 0.62, 71.4,,,,,,,,,,,, 6.0,
