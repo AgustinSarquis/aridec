@@ -1,85 +1,106 @@
-CitationKey: Gliksman2018b
-doi: 10.1007/s11104-018-3696-4
-EntryAuthor: Ignacio Siebenhart
+citationKey: Gliksman2018b # Unique identifier in the format: LastnameYear (lowercase letters must be added when there are two or more entries by the same author and year, i.e.: LastnameYearx)
+doi: 10.1007/s11104-018-3696-4 # DOI of the publication where data is published
+entryAuthor: Ignacio Siebenhart # First and last name of the person who entered the data in this file
+entryCreationDate: 2019-07-30 # Date when the data was entered in this file. Format: YYYY-MM-DD
+contactName: Agustín Sarquis # First and last name of contact person (may be the principal investigator supervising the entryAuthor)
+contactEmail: agusarquis@agro.uba.ar # Email of the contact person
+entryNote: coordinates are wrong on the paper. They report soils are Chromic Luvisol or Rhodustalf but don't specify classification system
+study: decomposition of standing (at two different heights) and surface litter of T. aestivum
 
-SiteInfo:
- Name: Ramat Hanadiv Nature Park, Haifa, Israel
- MAP:
-  Value: 530
-  Units: mm
- MAT:
-  Value: 21.0
-  Units: celsius
- RainySeason: winter
- Altitude:
-  Value: 120
-  Units: masl
- Coordinates:
-  Latitude: 32.5
-  Longitude: 43.167
+siteInfo:
+        site: Ramat Hanadiv Nature Park # Names of individual sites, if one site, keep on this line, if multiple, use array format
+              # These fields should be arrays of equal length to site array
+        coordinates:
+          latitude: 32.552 # Latitude in decimal units (check for negative that denotes southern hemisphere)
+          longitude: 34.945 # Longitude in decimal units (check for negative that denotes western hemisphere)
+        country: Israel # Name of country where site was conducted
+        MAT: 21.0 # Mean annual temperature in degrees Celsius
+        MAP: 530 # Mean annual precipitation in mm
+        rainySeason: winter # Period of the year during which most precipitation occurs, i.e.: whole year, spring, summer, autumn, winter (if more than one use array format)
+        elevation: 120 # Elevation of study site in meters above sea level
+        landCover: shrubland # Land cover of the site. Valid fields are: greenbelt, (abbandoned) farmland, mangrove forest, subalpine, shrubland, urban, sandland, forest, steppe, desert, grassland, savanna
+        vegNote: Vegetation is a maquis-type shrubland dominated by evergreen shrubs and winter annuals
+        cover:
+          plantCover: # Total plant cover percentage (if they report cover by specific plant types, fill the fields below)
+          bunchgrassCover:
+          shrubCover:
+          treeCover:
+          forbCover:
+          bareSoil:
+        soilTaxonomy:
+          soilOrder: # Soil order according to the classification system described below
+          soilFamily: # Soil family description (ex. 'Eutric' for a Eutric Cambisol)
+          soilSeries: # Soil series according to the classification system described below
+          classificationSystem: # Name of classification system used. Valid fields are: USDA, FAO, and WRB.
 
-ExperimentInfo:
- LitterInfo:
-  LitterType1:
-   Species: Triticum aestivum
-   LifeForm: crop
-   Material: recently senesced leaves
-   Carbon:
-    Value: 43.4
-    Units: percentage
-   Nitrogen:
-    Value: 0.41
-    Units: percentage
-   C:N:
-    Value: 105.9
-   Amount:
-    Value: 2.5
-    Units: g
- Experiment1:
-  Description: "They evaluate decomposition of standing (at two different heights) and surface litter of T. aestivum"
-  LitterBagInfo:
-   Material:
-    - polyethylene
-    - fiberglass
-   MeshSize:
-    Value:
-     - 1
-    Units: mm
-   Dimentions:
-    Width: 12
-    Lenght: 12
-    Units: cm
-   Transmitance:
-    Value: 90.4
-    Units: percentage
-   Position:
-    Position1: on top of soil litter layer
-    Position2: suspended 5 cm
-    Position3: suspended 100 cm
-  Treatment: location
-  StartingDate:
-   Month: june
-   Season: winter
-  Duration:
-   Time: 7.5
-   Units: months
+experimentInfo:
+        incDesc: 3 positions x 5 harvests x 5 replicates
+        # These fields should all be one dimensional arrays. Values for experimental variables with multiple treatment levels should be entered in the variables section and left blank here
+        replicates: 5 # Number of replicates per treatment
+        duration: 225 # length of incubation in days
+        startingMonth: june # month during which the study started, all in lower case
+        litter: Triticum aestivum # plant species used as litter material for the experiment. All details related to the species must be specified in the initConditions.csv file
+        litterbag:
+          material: polyethylene # mesh type used to construct the litter bags, options are: wire, aluminum, window screening, net curtain, bolting cloth, plastic, fiberglass, nylon, polypropylene, polyester, polyethylene, polyamide
+          meshSize: 1 # mesh size in mm referring to one side of the net-square
+          dimentions: # size of the full litter bag in cm
+            width: 12
+            length: 12
+            height: # for 3-dimensional designs such as litter boxes in Austin2006NATURE
+          transmitance: # when reported, light transmitance of the mesh material as a percentage of full sunlight for each wavelength
+            total: 90.4
+            PAR:
+            UV:
+            UVA:
+            UVB:
+          position: # position of litterbags in the field, valid options are: bare soil, decomposition bed, under litter, over litter, over lawn, next to grass, under tree/shrub/grass, buried X cm deep, underwater, under rainout shelter, under frame, suspended X cm, under shadecloth
 
-Variables:
- V1:
-   Name: Time
-   Units: months
- V2:
-   Name: TAG
-   Units: mass remaining
-   Description: "Triticum aestivum litter mass remaining at harvest time positioned on the ground"
-   Position: Position1
- V3:
-   Name: TAS
-   Units: mass remaining
-   Description: "Triticum aestivum litter mass remaining at harvest time positioned suspended 5 cm over the ground"
-   Position: Position2
- V4:
-   Name: TASM
-   Units: mass remaining
-   Description: "Triticum aestivum litter mass remaining at harvest time positioned suspenden 100 cm over the ground"
-   Position: Position3
+variables: # These describe the columns of your timeSeries.csv file
+        V1: # column 1
+          name: Time
+          units: months
+        V2:
+          name: TAG
+          units: mass remaining
+          varDesc: T. aestivum litter on the ground
+          site: Ramat Hanadiv Nature Park
+          position: over litter
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V3:
+          name: TAS
+          units: mass remaining
+          varDesc: T. aestivum litter suspended 5 cm
+          site: Ramat Hanadiv Nature Park
+          position: suspended 5 cm
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V4:
+          name: TASM
+          units: mass remaining
+          varDesc: T. aestivum litter suspended 100 cm
+          site: Ramat Hanadiv Nature Park
+          position: suspended 100 cm
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
