@@ -1,0 +1,5 @@
+species, type, N-fixer, material, amount, carbon, nitrogen, C:N, phosphorus, potassium, sodium, magnesium, manganese, copper, zinc, lead, calcium, sulfur, iron, lignin, cellulose, hemicellulose, cell solubles, SLA
+Pinus halepensis1, evergreen, no, leaves, 2, 51.6, 0.79, 65.2,
+Avena sterilis, graminoid, no, leaves, 2, 44.3, 0.62, 71.2,
+Pinus halepensis2, evergreen, no, leaves, 2, 51.3, 0.67, 76.7,
+mixture, graminoid, no, leaves, 2, 44.1, 1.22, 36.4,

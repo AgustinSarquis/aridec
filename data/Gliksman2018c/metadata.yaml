@@ -1,356 +1,594 @@
-CitationKey: Gliksman2018C
-doi: 10.1007/s11104-017-3366-y
-EntryAuthor: Ignacio Siebenhart
+citationKey: Gliksman2018C # Unique identifier in the format: LastnameYear (lowercase letters must be added when there are two or more entries by the same author and year, i.e.: LastnameYearx)
+doi: 10.1007/s11104-017-3366-y # DOI of the publication where data is published
+entryAuthor: Ignacio Siebenhart # First and last name of the person who entered the data in this file
+entryCreationDate: 2020-02-10 # Date when the data was entered in this file. Format: YYYY-MM-DD
+contactName: Agustín Sarquis # First and last name of contact person (may be the principal investigator supervising the entryAuthor)
+contactEmail: agusarquis@agro.uba.ar # Email of the contact person
+entryNote: coordinates were wrong on the paper
+study: impact of canopy cover and seasonality on litter decay in Mediterranean pine forests that differ on precipitation
 
-SiteInfo:
- Name:
-  - "Kdoshim forest, Jerusalem, Israel"
-  - "Yatir forest, Negev, Israel"
- EcosystemType:
-  - forest
-  - forest
- MAP:
-  Value:
-   - 550
-   - 280
-  Units: mm
- MAT:
-   Value:
-   - 19.84
-   - 19.81
-   Units: Celsius
- RainySeason: winter
- Altitude:
-  Value:
-   - 450
-   - 650
-  Units: masl
- Coordinates:
-  Latitude:
-   - 32.3
-   - 31.35
-  Longitude:
-   - 35.03
-   - 35.35
+siteInfo:
+        site:
+          - Kdoshim
+          - Yatir # Names of individual sites, if one site, keep on this line, if multiple, use array format
+              # These fields should be arrays of equal length to site array
+        coordinates:
+          latitude:
+            - 31.8
+            - 31.347
+             # Latitude in decimal units (check for negative that denotes southern hemisphere)
+          longitude:
+            - 35.0333
+            - 35.0356 # Longitude in decimal units (check for negative that denotes western hemisphere)
+        country:
+         - Israel
+         - Israel # Name of country where site was conducted
+        MAT:
+         - 19.84
+         - 19.81 # Mean annual temperature in degrees Celsius
+        MAP:
+         - 550
+         - 280 # Mean annual precipitation in mm
+        rainySeason:
+         - winter
+         - winter # Period of the year during which most precipitation occurs, i.e.: whole year, spring, summer, autumn, winter (if more than one use array format)
+        elevation:
+           - 450
+           - 650 # Elevation of study site in meters above sea level
+        landCover:
+          - forest
+          - forest # Land cover of the site. Valid fields are: greenbelt, (abbandoned) farmland, mangrove forest, subalpine, shrubland, urban, sandland, forest, steppe, desert, grassland, savanna
+        vegNote:
+          - The forest canopy is composed of Aleppo pine trees, the understory by broad-leaf trees and shrubs dominated by Quercus calliprinos (tree), Pistacia lentiscus and Rhamnus lycioides (shrubs) and a variety of ephemeral herbaceous species
+          - The canopy is composed of Aleppo pine trees, the understory is sparse and dominated by dwarf shrubs, mainly Sarcopoterium spinosum and Phagnalon rupestre and a variety of ephemeral herbaceous species
+        cover:
+          plantCover: # Total plant cover percentage (if they report cover by specific plant types, fill the fields below)
+          bunchgrassCover:
+          shrubCover:
+          treeCover:
+          forbCover:
+          bareSoil:
+        soilTaxonomy:
+          soilOrder: # Soil order according to the classification system described below
+          soilFamily: # Soil family description (ex. 'Eutric' for a Eutric Cambisol)
+          soilSeries: # Soil series according to the classification system described below
+          classificationSystem: # Name of classification system used. Valid fields are: USDA, FAO, and WRB.
 
-ExperimentInfo:
- LitterInfo:
-  LitterType1:
-   Species: Pinus halepensis
-   Lifeform: tree
-   Material: recently senesced leaves
-   Carbon:
-    Value: 51.6
-    Units: percentage
-   Nitrogen:
-    Value: 0.79
-    Units: percentage
-   C:N:
-    Value: 65.2
-   Amount:
-    Value: 2
-    Units: g
-  LitterType2:
-   Species: Avena sterilis
-   Lifeform: graminoid
-   Material: aboveground parts
-   Carbon:
-    Value: 44.3
-    Units: percentage
-   Nitrogen:
-    Value: 0.62
-    Units: percentage
-   C:N:
-    Value: 71.2
-   Amount:
-    Value: 2
-    Units: g
-  LitterType3:
-   Species: Pinus halepensis
-   Lifeform: tree
-   Material: recently senesced leaves
-   Carbon:
-    Value: 51.3
-    Units: percentage
-   Nitrogen:
-    Value: 0.67
-    Units: percentage
-   C:N:
-    Value: 76.7
-   Amount:
-    Value: 2
-    Units: g
-  LitterType4:
-   Lifeform: graminoid
-   Material: aboveground parts
-   Carbon:
-    Value: 44.1
-    Units: percentage
-   Nitrogen:
-    Value: 1.22
-    Units: percentage
-   C:N:
-    Value: 36.4
-   Amount:
-    Value: 2
-    Units: g
- Experiment1:
-  Description: "They investigated the impact of canopy cover and seasonality on litter decay in Mediterranean pine forests that differ on precipitation"
-  LitterBagInfo:
-   Material:
-    - fiberglass
-    - polyethylene
-   MeshSize:
-    Value:
-     - 0.5
-     - 1
-    Units: mm
-   Dimentions:
-    Width: 10
-    Lenght: 10
-    Units: cm
-   Transmitance:
-    Value: 90
-    Units: percentage
-   Position:
-    Position1: bare soil
-    Position2: under tree
-  Treatment:
-   - location
-   - tree density
-   - littertype
-  StartingDate:
-   Month: july
-   Season: summer
-  Duration:
-   Time: 20.15
-   Units: months
+experimentInfo:
+        incDesc: 2 forests x 2 microsites x 2 litter types (per forest) x 3 tree densities x 4 harvests x 4 replicates
+        # These fields should all be one dimensional arrays. Values for experimental variables with multiple treatment levels should be entered in the variables section and left blank here
+        replicates: 4 # Number of replicates per treatment
+        duration: 613 # length of incubation in days
+        startingMonth: july # month during which the study started, all in lower case
+        litter: # plant species used as litter material for the experiment. All details related to the species must be specified in the initConditions.csv file
+        litterbag:
+          material: polyethylene # mesh type used to construct the litter bags, options are: wire, aluminum, window screening, net curtain, bolting cloth, plastic, fiberglass, nylon, polypropylene, polyester, polyethylene, polyamide
+          meshSize: 1 # mesh size in mm referring to one side of the net-square
+          dimentions: # size of the full litter bag in cm
+            width: 10
+            length: 10
+            height: # for 3-dimensional designs such as litter boxes in Austin2006NATURE
+          transmitance: # when reported, light transmitance of the mesh material as a percentage of full sunlight for each wavelength
+            total: 90
+            PAR:
+            UV:
+            UVA:
+            UVB:
+          position: # position of litterbags in the field, valid options are: bare soil, decomposition bed, under litter, over litter, over lawn, next to grass, under tree/shrub/grass, buried X cm deep, underwater, under rainout shelter, under frame, suspended X cm, under shadecloth
 
-Variables:
- V1:
-  Name: Time
-  Units: months
- V2:
-  Name: SPGLD
-  Units: mass remaining
-  Description: "Pine litter mass remaning at harvested time positioned on forest gap and with low tree density at the sub-humid forest"
-  LitterType: LitterType1
-  Position: Position1
-  Site: "Kdoshim forest, Jerusalem, Israel"
- V3:
-   Name: SPGMD
-   Units: mass remaining
-   Description: "Pine litter mass remaning at harvested time positioned on forest gap and with medium tree density at the sub-humid forest"
-   LitterType: LitterType1
-   Position: Position1
-   Site: "Kdoshim forest, Jerusalem, Israel"
- V4:
-   Name: SPGHD
-   Units: mass remaining
-   Description: "Pine litter mass remaning at harvested time positioned on forest gap and with high tree density at the sub-humid forest"
-   LitterType: LitterType1
-   Position: Position1
-   Site: "Kdoshim forest, Jerusalem, Israel"
- V5:
-   Name: SPCLD
-   Units: mass remaining
-   Description: "Pine litter mass remaning at harvested time positioned under canopy cover and with low tree density at the sub-humid forest"
-   LitterType: LitterType1
-   Position: Position2
-   Site: "Kdoshim forest, Jerusalem, Israel"
- V6:
-   Name: SPCMD
-   Units: mass remaining
-   Description: "Pine litter mass remaning at harvested time positioned under canopy cover and with medium tree density at the sub-humid forest"
-   LitterType: LitterType1
-   Position: Position2
-   Site: "Kdoshim forest, Jerusalem, Israel"
- V7:
-   Name: SPCHD
-   Units: mass remaining
-   Description: "Pine litter mass remaning at harvested time positioned under canopy cover and with high tree density at the sub-humid forest"
-   LitterType: LitterType1
-   Position: Position2
-   Site: "Kdoshim forest, Jerusalem, Israel"
- V8:
-   Name: SGGLD
-   Units: mass remaining
-   Description: "A. sterilis litter mass remaining at harvested time positioned on forest gap and with low tree density at the sub-humid forest"
-   LitterType: LitterType2
-   Position: Position1
-   Site: "Kdoshim forest, Jerusalem, Israel"
- V9:
-   Name: SGGMD
-   Units: mass remaining
-   Description: "A. sterilis litter mass remaining at harvested time positioned on forest gap and with medium tree density at the sub-humid forest"
-   LitterType: LitterType2
-   Position: Position1
-   Site: "Kdoshim forest, Jerusalem, Israel"
- V10:
-    Name: SGGHD
-    Units: mass remaining
-    Description: "A. sterilis litter mass remaining at harvested time positioned on forest gap and with high tree density at the sub-humid forest"
-    LitterType: LitterType2
-    Position: Position1
-    Site: "Kdoshim forest, Jerusalem, Israel"
- V11:
-    Name: SGCLD
-    Units: mass remaining
-    Description: "A. sterilis litter mass remaining at harvested time positioned under canopy cover and with low tree density at the sub-humid forest"
-    LitterType: LitterType2
-    Position: Position2
-    Site: "Kdoshim forest, Jerusalem, Israel"
- V12:
-    Name: SGCMD
-    Units: mass remaining
-    Description: "A. sterilis litter mass remaining at harvested time positioned under canopy cover and with medium tree density at the sub-humid forest"
-    LitterType: LitterType2
-    Position: Position2
-    Site: "Kdoshim forest, Jerusalem, Israel"
- V13:
-    Name: SGCHD
-    Units: mass remaining
-    Description: "A. sterilis litter mass remaining at harvested time positioned under canopy cover and with high tree density at the sub-humid forest"
-    LitterType: LitterType2
-    Position: Position2
-    Site: "Kdoshim forest, Jerusalem, Israel"
- V14:
-    Name: APGLD
-    Units: mass remaining
-    Description: "Pine litter mass remaining at harvested time positioned on forest gap and with low tree density at the dry forest"
-    LitterType: LitterType3
-    Position: Position1
-    Site: "Yatir forest, Negev, Israel"
- V15:
-    Name: APGMD
-    Units: mass remaining
-    Description: "Pine litter mass remaining at harvested time positioned on forest gap and with medium tree density at the dry forest"
-    LitterType: LitterType3
-    Position: Position1
-    Site: "Yatir forest, Negev, Israel"
- V16:
-    Name: APGHD
-    Units: mass remaining
-    Description: "Pine litter mass remaining at harvested time positioned on forest gap and with high tree density at the dry forest"
-    LitterType: LitterType3
-    Position: Position1
-    Site: "Yatir forest, Negev, Israel"
- V17:
-    Name: APCLD
-    Units: mass remaining
-    Description: "Pine litter mass remaining at harvested time positioned under canopy cover and with low tree density at the dry forest"
-    LitterType: LitterType3
-    Position: Position2
-    Site: "Yatir forest, Negev, Israel"
- V18:
-    Name: APCMD
-    Units: mass remaining
-    Description: "Pine litter mass remaining at harvested time positioned under canopy cover and with medium tree density at the dry forest"
-    LitterType: LitterType3
-    Position: Position2
-    Site: "Yatir forest, Negev, Israel"
- V19:
-    Name: APCHD
-    Units: mass remaining
-    Description: "Pine litter mass remaining at harvested time positioned under canopy cover and with high tree density at the dry forest"
-    LitterType: LitterType3
-    Position: Position2
-    Site: "Yatir forest, Negev, Israel"
- V20:
-    Name: AGGLD
-    Units: mass remaining
-    Description: "Grass litter mass remaining at harvested time positioned on forest gap and with low tree density at the dry forest"
-    LitterType: LitterType4
-    Position: Position1
-    Site: "Yatir forest, Negev, Israel"
- V21:
-    Name: AGGMD
-    Units: mass remaining
-    Description: "Grass litter mass remaining at harvested time positioned on forest gap and with medium tree density at the dry forest"
-    LitterType: LitterType4
-    Position: Position1
-    Site: "Yatir forest, Negev, Israel"
- V22:
-    Name: AGGHD
-    Units: mass remaining
-    Description: "Grass litter mass remaining at harvested time positioned on forest gap and with high tree density at the dry forest"
-    LitterType: LitterType4
-    Position: Position1
-    Site: "Yatir forest, Negev, Israel"
- V23:
-    Name: AGCLD
-    Units: mass remaining
-    Description: "Grass litter mass remaining at harvested time positioned under canopy cover and with low tree density at the dry forest"
-    LitterType: LitterType4
-    Position: Position2
-    Site: "Yatir forest, Negev, Israel"
- V24:
-    Name: AGCMD
-    Units: mass remaining
-    Description: "Grass litter mass remaining at harvested time positioned under canopy cover and with medium tree density at the dry forest"
-    LitterType: LitterType4
-    Position: Position2
-    Site: "Yatir forest, Negev, Israel"
- V25:
-    Name: AGCHD
-    Units: mass remaining
-    Description: "Grass litter mass remaining at harvested time positioned under canopy cover and high tree density at the dry forest"
-    LitterType: LitterType4
-    Position: Position2
-    Site: "Yatir forest, Negev, Israel"
- V26:
-    Name: CPGS
-    Units: mass remaining
-    Description: "Dry sub-humid forest's Pine litter mass remaining at harvested time positioned on forest gap at the sub-humid forest"
-    LitterType: LitterType1
-    Position: Position1
-    Site: "Kdoshim forest, Jerusalem, Israel"
- V27:
-    Name: CPCS
-    Units: mass remaining
-    Description: "Dry sub-humid forest's Pine litter mass remaining at harvested time positioned under canopy at the sub-humid forest"
-    LitterType: LitterType1
-    Position: Position2
-    Site: "Kdoshim forest, Jerusalem, Israel"
- V28:
-    Name: CGGS
-    Units: mass remaining
-    Description: "Dry sub-humid forest's A. sterilis litter mass remaining at harvested time positioned on forest gap at the sub-humid forest"
-    LitterType: LitterType2
-    Position: Position1
-    Site: "Kdoshim forest, Jerusalem, Israel"
- V29:
-    Name: CGCS
-    Units: mass remaining
-    Description: "Dry sub-humid forest's A. sterilis litter mass remaining at harvested time positioned under canopy at the sub-humid forest"
-    LitterType: LitterType2
-    Position: Position2
-    Site: "Kdoshim forest, Jerusalem, Israel"
- V30:
-    Name: CPGA
-    Units: mass remaining
-    Description: "Semi-arid forest's Pine litter mass remaining at harvested time positioned on forest gap at the sub-humid forest"
-    LitterType: LitterType3
-    Position: Position1
-    Site: "Kdoshim forest, Jerusalem, Israel"
- V31:
-    Name: CPCA
-    Units: mass remaining
-    Description: "Semiarid forest's Pine litter mass remaining at harvested time positioned under canopy at the sub-humid forest"
-    LitterType: LitterType3
-    Position: Position2
-    Site: "Kdoshim forest, Jerusalem, Israel"
- V32:
-    Name: CGGA
-    Units: mass remaining
-    Description: "Semiarid forest's grass litter mass remaining at harvested time positioned on forest gap at the sub-humid forest"
-    LitterType: LitterType4
-    Position: Position1
-    Site: "Kdoshim forest, Jerusalem, Israel"
- V33:
-    Name: CPCA
-    Units: mass remaining
-    Description: "Semiarid forest's grass litter mass remaining at harvested time positioned under canopy at the sub-humid forest"
-    LitterType: LitterType4
-    Position: Position2
-    Site: "Kdoshim forest, Jerusalem, Israel"
+variables: # These describe the columns of your timeSeries.csv file
+        V1: # column 1
+          name: Time
+          units: months
+        V2:
+          name: SPGLD
+          units: mass remaining
+          varDesc: Pine litter on forest gap with low tree density at Kdoshim
+          site: Kdoshim
+          litter: Pinus halepensis1
+          position: bare soil
+          compTreat: low tree density
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V3:
+          name: SPGMD
+          units: mass remaining
+          varDesc: Pine litter on forest gap with medium tree density at Kdoshim
+          site: Kdoshim
+          litter: Pinus halepensis1
+          position: bare soil
+          compTreat: medium tree density
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V4:
+          name: SPGHD
+          units: mass remaining
+          varDesc: Pine litter on forest gap with high tree density at Kdoshim
+          site: Kdoshim
+          litter: Pinus halepensis1
+          position: bare soil
+          compTreat: high tree density
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V5:
+          name: SPCLD
+          units: mass remaining
+          varDesc: Pine litter under forest canopy with low tree density at Kdoshim
+          site: Kdoshim
+          litter: Pinus halepensis1
+          position: under tree
+          compTreat: low tree density
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V6:
+          name: SPCMD
+          units: mass remaining
+          varDesc: Pine litter under forest canopy with medium tree density at Kdoshim
+          site: Kdoshim
+          litter: Pinus halepensis1
+          position: under tree
+          compTreat: medium tree density
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V7:
+          name: SPCHD
+          units: mass remaining
+          varDesc: Pine litter under forest canopy with high tree density at Kdoshim
+          site: Kdoshim
+          litter: Pinus halepensis1
+          position: under tree
+          compTreat: high tree density
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V8:
+          name: SGGLD
+          units: mass remaining
+          varDesc: A. sterilis litter on forest gap with low tree density at Kdoshim
+          site: Kdoshim
+          litter: Avena sterilis
+          position: bare soil
+          compTreat: low tree density
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V9:
+          name: SGGMD
+          units: mass remaining
+          varDesc: A. sterilis litter on forest gap with medium tree density at Kdoshim
+          site: Kdoshim
+          litter: Avena sterilis
+          position: bare soil
+          compTreat: medium tree density
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V10:
+          name: SGGHD
+          units: mass remaining
+          varDesc: A. sterilis litter on forest gap with high tree density at Kdoshim
+          site: Kdoshim
+          litter: Avena sterilis
+          position: bare soil
+          compTreat: high tree density
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V11:
+          name: SGCLD
+          units: mass remaining
+          varDesc: A. sterilis litter under forest canopy with low tree density at Kdoshim
+          site: Kdoshim
+          litter: Avena sterilis
+          position: under tree
+          compTreat: low tree density
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V12:
+          name: SGCMD
+          units: mass remaining
+          varDesc: A. sterilis litter under forest canopy with medium tree density at Kdoshim
+          site: Kdoshim
+          litter: Avena sterilis
+          position: under tree
+          compTreat: medium tree density
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V13:
+          name: SGCHD
+          units: mass remaining
+          varDesc: A. sterilis litter under forest canopy with high tree density at Kdoshim
+          site: Kdoshim
+          litter: Avena sterilis
+          position: under tree
+          compTreat: high tree density
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V14:
+          name: APGLD
+          units: mass remaining
+          varDesc: Pine litter on forest gap with low tree density at Yatir
+          site: Yatir
+          litter: Pinus halepensis2
+          position: bare soil
+          compTreat: low tree density
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V15:
+          name: APGMD
+          units: mass remaining
+          varDesc: Pine litter on forest gap with medium tree density at Yatir
+          site: Yatir
+          litter: Pinus halepensis2
+          position: bare soil
+          compTreat: medium tree density
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V16:
+          name: APGHD
+          units: mass remaining
+          varDesc: Pine litter on forest gap with high tree density at Yatir
+          site: Yatir
+          litter: Pinus halepensis2
+          position: bare soil
+          compTreat: high tree density
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V17:
+          name: APCLD
+          units: mass remaining
+          varDesc: Pine litter under forest canopy with low tree density at Yatir
+          site: Yatir
+          litter: Pinus halepensis2
+          position: under tree
+          compTreat: low tree density
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V18:
+          name: APCMD
+          units: mass remaining
+          varDesc: Pine litter under forest canopy with medium tree density at Yatir
+          site: Yatir
+          litter: Pinus halepensis2
+          position: under tree
+          compTreat: medium tree density
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V19:
+          name: APCHD
+          units: mass remaining
+          varDesc: Pine litter under forest canopy with high tree density at Yatir
+          site: Yatir
+          litter: Pinus halepensis2
+          position: under tree
+          compTreat: high tree density
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V20:
+          name: AGGLD
+          units: mass remaining
+          varDesc: Grass litter mixture on forest gap with low tree density at Yatir
+          site: Yatir
+          litter: mixture
+          position: bare soil
+          compTreat: low tree density
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V21:
+          name: AGGMD
+          units: mass remaining
+          varDesc: Grass litter mixture on forest gap with medium tree density at Yatir
+          site: Yatir
+          litter: mixture
+          position: bare soil
+          compTreat: medium tree density
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V22:
+          name: AGGHD
+          units: mass remaining
+          varDesc: Grass litter mixture on forest gap with high tree density at Yatir
+          site: Yatir
+          litter: mixture
+          position: bare soil
+          compTreat: high tree density
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V23:
+          name: AGCLD
+          units: mass remaining
+          varDesc: Grass litter mixture under forest canopy with low tree density at Yatir
+          site: Yatir
+          litter: mixture
+          position: under tree
+          compTreat: low tree density
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V24:
+          name: AGCMD
+          units: mass remaining
+          varDesc: Grass litter mixture under forest canopy with medium tree density at Yatir
+          site: Yatir
+          litter: mixture
+          position: under tree
+          compTreat: medium tree density
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V25:
+          name: AGCHD
+          units: mass remaining
+          varDesc: Grass litter mixture under forest canopy with high tree density at Yatir
+          site: Yatir
+          litter: mixture
+          position: under tree
+          compTreat: high tree density
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V26:
+          name: CPGS
+          units: mass remaining
+          varDesc: Pine litter from the same site on forest gap at Kdoshim
+          site: Kdoshim
+          litter: Pinus halepensis1
+          position: bare soil
+          compTreat: local litter
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V27:
+          name: CPCS
+          units: mass remaining
+          varDesc: Pine litter from the same site under forest canopy at Kdoshim
+          site: Kdoshim
+          litter: Pinus halepensis1
+          position: under tree
+          compTreat: local litter
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V28:
+          name: CGGS
+          units: mass remaining
+          varDesc: A. sterilis litter from the same site on forest gap at Kdoshim
+          site: Kdoshim
+          litter: Avena sterilis
+          position: bare soil
+          compTreat: local litter
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V29:
+          name: CGCS
+          units: mass remaining
+          varDesc: A. sterilis litter from the same site under forest canopy at Kdoshim
+          site: Kdoshim
+          litter: Avena sterilis
+          position: under tree
+          compTreat: local litter
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V30:
+          name: CPGA
+          units: mass remaining
+          varDesc: Pine litter from the other site on forest gap at Kdoshim
+          site: Kdoshim
+          litter: Pinus halepensis2
+          position: bare soil
+          compTreat: foreign litter
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V31:
+          name: CPCA
+          units: mass remaining
+          varDesc: Pine litter from the other site under forest canopy at Kdoshim
+          site: Kdoshim
+          litter: Pinus halepensis2
+          position: under tree
+          compTreat: foreign litter
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V32:
+          name: CGGA
+          units: mass remaining
+          varDesc: Grass litter mixture from the other site on forest gap at Kdoshim
+          site: Kdoshim
+          litter: mixture
+          position: bare soil
+          compTreat: foreign litter
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V33:
+          name: CPCA
+          units: mass remaining
+          varDesc: Grass litter mixture from the other site under forest canopy at Kdoshim
+          site: Kdoshim
+          litter: mixture
+          position: under tree
+          compTreat: foreign litter
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
