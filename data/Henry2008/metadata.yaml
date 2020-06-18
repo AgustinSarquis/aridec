@@ -1,125 +1,109 @@
-CitationKey: Henry2008
-doi: 10.1007/s10021-008-9141-4
-EntryAuthor: Agustín Sarquis
+citationKey: Henry2008 # Unique identifier in the format: LastnameYear (lowercase letters must be added when there are two or more entries by the same author and year, i.e.: LastnameYearx)
+doi: 10.1007/s10021-008-9141-4 # DOI of the publication where data is published
+entryAuthor: Agustín Sarquis # First and last name of the person who entered the data in this file
+entryCreationDate: 2019-01-21 # Date when the data was entered in this file. Format: YYYY-MM-DD
+contactName: Agustín Sarquis # First and last name of contact person (may be the principal investigator supervising the entryAuthor)
+contactEmail: agusarquis@agro.uba.ar # Email of the contact person
+entryNote: coordinates were wrong on the paper
+study: decomposition of sun-exposed litter over summer
 
-SiteInfo:
-  Name: Jasper Ridge Biological Preserve, California, USA
-  EcosystemType: grassland
-  MAP:
-    Value: 677
-    Units: mm
-  MAT:
-    Value: 16.25
-    Units: Celsius
-  RainySeason:
-   - autumn
-   - winter
-   - spring
-  Altitude:
-    Value: 120
-    Units: masl
-  Coordinates:
-    Latitude: 37.67
-    Longitude: -122.37
+siteInfo:
+        site: Jasper Ridge # Names of individual sites, if one site, keep on this line, if multiple, use array format
+              # These fields should be arrays of equal length to site array
+        coordinates:
+          latitude: 37.4029306 # Latitude in decimal units (check for negative that denotes southern hemisphere)
+          longitude: -122.244425 # Longitude in decimal units (check for negative that denotes western hemisphere)
+        country: USA # Name of country where site was conducted
+        MAT: 16.25 # Mean annual temperature in degrees Celsius
+        MAP: 677 # Mean annual precipitation in mm
+        rainySeason:
+           - autumn
+           - winter
+           - spring # Period of the year during which most precipitation occurs, i.e.: whole year, spring, summer, autumn, winter (if more than one use array format)
+        elevation: 120 # Elevation of study site in meters above sea level
+        landCover: grassland # Land cover of the site. Valid fields are: greenbelt, (abbandoned) farmland, mangrove forest, subalpine, shrubland, urban, sandland, forest, steppe, desert, grassland, savanna
+        vegNote: The annual non-native grasses A. barbata, A. fatua, B. hordeaceus and L. multiflorum dominate the site. Non-native forbs (G. dissectum, E. botrys and C. vesicaria) and native annual forbs (H. congesta and E. brachycarpum) also are present. Perennials constitute a low fraction of the biomass, with native grasses (D. californica and N. pulchra) often the most abundant perennials
+        cover:
+          plantCover: # Total plant cover percentage (if they report cover by specific plant types, fill the fields below)
+          bunchgrassCover:
+          shrubCover:
+          treeCover:
+          forbCover:
+          bareSoil:
+        soilTaxonomy:
+          soilOrder: # Soil order according to the classification system described below
+          soilFamily: # Soil family description (ex. 'Eutric' for a Eutric Cambisol)
+          soilSeries: # Soil series according to the classification system described below
+          classificationSystem: # Name of classification system used. Valid fields are: USDA, FAO, and WRB.
 
-ExperimentInfo:
- LitterInfo:
-  LitterType1:
-   Species: Crepis vesicaria
-   LifeForm: forb
-   Material: recently senesced leaves
-   Carbon:
-     Value: 39.6
-     Units: percentage
-   Lignin:
-     Value: 2.9
-     Units: percentage
-   Nitrogen:
-     Value: 1.04
-     Units: percentage
-   Amount:
-     Value: 0.4
-     Units: g
-  LitterType2:
-   Species:
-     - Avena barbata
-     - Avena fatua
-     - Bromus mollis
-     - Lolium perenne
-   LifeForm: graminoid
-   Material: recently senesced leaves
-   Carbon:
-     Value: 39.9
-     Units: percentage
-   Lignin:
-     Value: 8.0
-     Units: percentage
-   Nitrogen:
-     Value: 0.51
-     Units: percentage
-   Amount:
-     Value: 0.4
-     Units: g
-  LitterType3:
-   Species:
-     - Avena barbata
-     - Avena fatua
-     - Bromus mollis
-     - Lolium perenne
-   LifeForm: graminoid
-   Material: recently senesced stems
-   Carbon:
-     Value: 40.4
-     Units: percentage
-   Lignin:
-     Value: 12.1
-     Units: percentage
-   Nitrogen:
-     Value: 0.41
-     Units: percentage
-   Amount:
-     Value: 0.4
-     Units: g
- Experiment1:
-    Description: "They examined the decomposition of sun-exposed litter over summer and inferred the effects of photodegradation from changes in mass loss"
-    LitterBagInfo:
-      Material: polyester
-      MeshSize:
-       Value:
-        - 10
-        - 1
-       Units: mm
-      Dimentions:
-       Width: 10
-       Length: 10
-       Units: cm
-      Transmitance:
-        Value: 95
-        Units: percentage
-      Position: suspended 1 cm over bare soil
-    StartingDate:
-      Month: july
-      Season: summer
-    Duration:
-      Time: 2.5
-      Units: months
+experimentInfo:
+        incDesc: 3 litter types x 3 harvests x 8 replicates
+        # These fields should all be one dimensional arrays. Values for experimental variables with multiple treatment levels should be entered in the variables section and left blank here
+        replicates: 8 # Number of replicates per treatment
+        duration: 74 # length of incubation in days
+        startingMonth: july # month during which the study started, all in lower case
+        litter: # plant species used as litter material for the experiment. All details related to the species must be specified in the initConditions.csv file
+        litterbag:
+          material: polyester # mesh type used to construct the litter bags, options are: wire, aluminum, window screening, net curtain, bolting cloth, plastic, fiberglass, nylon, polypropylene, polyester, polyethylene, polyamide
+          meshSize: 10 # mesh size in mm referring to one side of the net-square
+          dimentions: # size of the full litter bag in cm
+            width: 10
+            length: 10
+            height: # for 3-dimensional designs such as litter boxes in Austin2006NATURE
+          transmitance: # when reported, light transmitance of the mesh material as a percentage of full sunlight for each wavelength
+            total: 95
+            PAR:
+            UV:
+            UVA:
+            UVB:
+          position: suspended 1 cm
 
-Variables:
-  V1:
-    Name: Time
-    Units: days
-  V2:
-    Name: FML
-    Units: mass remaining
-    Description: "Effects over time of ambient summer sunlight exposure on percentage mass loss for senesced tissue of annual forbs"
-    LitterType: LitterType1
-  V3:
-    Name: GLML
-    Units: mass remaining
-    Description: "Effects over time of ambient summer sunlight exposure on percentage mass loss for senesced tissue of annual grass leaves"
-    LitterType: LitterType2
-  V4:
-    Name: GSML
-    Units: mass remaining
-    Description: "Effects over time of ambient summer sunlight exposure on percentage mass loss for senesced tissue of annual grass stems"
-    LitterType: LitterType3
+variables: # These describe the columns of your timeSeries.csv file
+        V1: # column 1
+          name: Time
+          units: days
+        V2:
+          name: FML
+          units: mass remaining
+          varDesc: Effects of ambient summer sunlight exposure on mass loss for senesced forbs
+          site: Jasper Ridge
+          litter: Crepis vesicaria
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V3:
+          name: GLML
+          units: mass remaining
+          varDesc: Effects of ambient summer sunlight exposure on mass loss for senesced grass leaves (Avena barbata, A. fatua, Bromus hordeaceus and Lolium multiflorum)
+          site: Jasper Ridge
+          litter: mixture1
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V4:
+          name: GSML
+          units: mass remaining
+          varDesc: Effects of ambient summer sunlight exposure on mass loss for senesced grass stems (Avena barbata, A. fatua, Bromus hordeaceus and Lolium multiflorum)
+          site: Jasper Ridge
+          litter: mixture2
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:

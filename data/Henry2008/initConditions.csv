@@ -1,0 +1,4 @@
+species, type, N-fixer, material, amount, carbon, nitrogen, C:N, phosphorus, potassium, sodium, magnesium, manganese, copper, zinc, lead, calcium, sulfur, iron, lignin, cellulose, hemicellulose, cell solubles, SLA
+Crepis vesicaria, forb, no, leaves, 0.4, 39.6, 1.04, 38.077,,,,,,,,,,,, 2.9,
+mixture1, graminoid, no, leaves, 0.4, 39.9, 0.51, 78.235,,,,,,,,,,,, 8.0,
+mixture2, graminoid, no, stems, 0.4, 40.4, 0.41, 98.537,,,,,,,,,,,, 12.1,
