@@ -1,85 +1,106 @@
-CitationKey: Hewins2017
-doi: 10.1007/s11258-017-0703-4
-EntryAuthor: Agustín Sarquis
+citationKey: Hewins2017 # Unique identifier in the format: LastnameYear (lowercase letters must be added when there are two or more entries by the same author and year, i.e.: LastnameYearx)
+doi: 10.1007/s11258-017-0703-4 # DOI of the publication where data is published
+entryAuthor: Agustín Sarquis # First and last name of the person who entered the data in this file
+entryCreationDate: 2019-11-19 # Date when the data was entered in this file. Format: YYYY-MM-DD
+contactName: Agustín Sarquis # First and last name of contact person (may be the principal investigator supervising the entryAuthor)
+contactEmail: agusarquis@agro.uba.ar # Email of the contact person
+entryNote: # Any notes or comments related to this entry.
+study: They incubated P. glandulosa leaflets for 30 months in bare soil, grass and shrub patches
 
-SiteInfo:
-  Name: Jornada Experimental Range, New Mexico, USA
-  EcosystemType: desert
-  MAP:
-    Value: 245
-    Units: mm
-  MAT:
-    Value: 14.7
-    Units: Celsius
-  RainySeason: summer
-  Altitude:
-    Value: 1320
-    Units: masl
-  SoilTexture: coarse
-  Coordinates:
-    Latitude: 32.563
-    Longitude: -106.760
+siteInfo:
+        site: Jornada Experimental Range # Names of individual sites, if one site, keep on this line, if multiple, use array format
+              # These fields should be arrays of equal length to site array
+        coordinates:
+          latitude: 32.563 # Latitude in decimal units (check for negative that denotes southern hemisphere)
+          longitude: -106.760 # Longitude in decimal units (check for negative that denotes western hemisphere)
+        country: USA # Name of country where site was conducted
+        MAT: 14.7 # Mean annual temperature in degrees Celsius
+        MAP: 245 # Mean annual precipitation in mm
+        rainySeason: summer # Period of the year during which most precipitation occurs, i.e.: whole year, spring, summer, autumn, winter (if more than one use array format)
+        elevation: 1320 # Elevation of study site in meters above sea level
+        landCover: desert # Land cover of the site. Valid fields are: greenbelt, (abbandoned) farmland, mangrove forest, subalpine, shrubland, urban, sandland, forest, steppe, desert, grassland, savanna
+        vegNote: Land cover is a mosaic of native perennial bunch grasses (B. eriopoda and S. flexuosus), and native shrubs (P. glandulosa, honey mesquite; Ephedra spp.; G. sarothrae; and Yucca spp.), heterogeneously distributed within a matrix of bare ground
+        cover:
+          plantCover: # Total plant cover percentage (if they report cover by specific plant types, fill the fields below)
+          bunchgrassCover:
+          shrubCover:
+          treeCover:
+          forbCover:
+          bareSoil:
+        soilTaxonomy:
+          soilOrder: # Soil order according to the classification system described below
+          soilFamily: # Soil family description (ex. 'Eutric' for a Eutric Cambisol)
+          soilSeries: # Soil series according to the classification system described below
+          classificationSystem: # Name of classification system used. Valid fields are: USDA, FAO, and WRB.
 
-ExperimentInfo:
- LitterInfo:
-  LitterType1:
-   Species: Prosopis glandulosa
-   LifeForm: tree
-   Material: leaflets
-   Carbon:
-     Value: 47.97
-     Units: percentage
-   Nitrogen:
-     Value: 2.93
-     Units: percentage
-   Amount:
-     Value: 2
-     Units: g
- Experiment1:
-  Description: "They incubated P. glandulosa leaflets for 30 months in bare soil, grass and shrub patches"
-  LitterBagInfo:
-   Material: black fiberglass
-   MeshSize:
-    Value: 1
-    Units: mm
-   Dimentions:
-    Width: 10
-    Lenght: 10
-    Units: cm
-   UVBTransmitance:
-    Value: 51
-    Units: percentage
-   PARTransmitance:
-    Value: 50
-    Units: percentage
-   Position:
-     Position1: bare soil
-     Position2: under grass
-     Position3: under shrub
-  Treatment: location
-  StartingDate:
-   Month: april
-   Season: spring
-  Duration:
-   Time: 30
-   Units: months
+experimentInfo:
+        incDesc: 3 patch types x 5 harvest x 3 replicates
+        # These fields should all be one dimensional arrays. Values for experimental variables with multiple treatment levels should be entered in the variables section and left blank here
+        replicates: 3 # Number of replicates per treatment
+        duration: 900 # length of incubation in days
+        startingMonth: april # month during which the study started, all in lower case
+        litter: Prosopis glandulosa # plant species used as litter material for the experiment. All details related to the species must be specified in the initConditions.csv file
+        litterbag:
+          material: fiberglass # mesh type used to construct the litter bags, options are: wire, aluminum, window screening, net curtain, bolting cloth, plastic, fiberglass, nylon, polypropylene, polyester, polyethylene, polyamide
+          meshSize: 1 # mesh size in mm referring to one side of the net-square
+          dimentions: # size of the full litter bag in cm
+            width: 10
+            length: 10
+            height: # for 3-dimensional designs such as litter boxes in Austin2006NATURE
+          transmitance: # when reported, light transmitance of the mesh material as a percentage of full sunlight for each wavelength
+            total:
+            PAR: 50
+            UV:
+            UVA:
+            UVB: 51
+          position: # position of litterbags in the field, valid options are: bare soil, decomposition bed, under litter, over litter, over lawn, next to grass, under tree/shrub/grass, buried X cm deep, underwater, under rainout shelter, under frame, suspended X cm, under shadecloth
 
-Variables:
-  V1:
-    Name: Time
-    Units: months
-  V2:
-    Name: Bare
-    Units: non-ash dry mass remaining
-    Description: "P. glandulosa leaflets incubated for 30 months at bare soil patches"
-    Position: Position1
-  V3:
-    Name: Grass
-    Units: non-ash dry mass remaining
-    Description: "P. glandulosa leaflets incubated for 30 months at grass-cover patches"
-    Position: Position2
-  V4:
-    Name: Shrub
-    Units: non-ash dry mass remaining
-    Description: "P. glandulosa leaflets incubated for 30 months at shrub patches"
-    Position: Position3
+variables: # These describe the columns of your timeSeries.csv file
+        V1: # column 1
+          name: Time
+          units: months
+        V2:
+          name: Bare
+          units: organic matter remaining
+          varDesc: P. glandulosa leaflets incubated for 30 months at bare soil patches
+          site: Jornada Experimental Range
+          position: bare soil
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V3:
+          name: Grass
+          units: organic matter remaining
+          varDesc: P. glandulosa leaflets incubated for 30 months at grass patches
+          site: Jornada Experimental Range
+          position: under grass
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V4:
+          name: Shrub
+          units: organic matter remaining
+          varDesc: P. glandulosa leaflets incubated for 30 months at shrub patches
+          site: Jornada Experimental Range
+          position: under shrub
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
