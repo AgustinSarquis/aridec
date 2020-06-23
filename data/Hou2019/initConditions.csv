@@ -1,0 +1,4 @@
+species, type, N-fixer, material, amount, carbon, nitrogen, C:N, phosphorus, potassium, sodium, magnesium, manganese, copper, zinc, lead, calcium, sulfur, iron, lignin, cellulose, hemicellulose, cell solubles, SLA
+Zea mays1, graminoid, no, stems, 4, 45.39, 1.83, 24.9,,,,,,,,,,,, 14.76, 19.47,
+Zea mays2, graminoid, no, leaves, 4, 43.10, 2.23, 19.4,,,,,,,,,,,, 17.67, 25.59,
+Zea mays3, graminoid, no, sheaths, 4, 44.63, 1.08, 41.3,,,,,,,,,,,, 17.68, 27.33,

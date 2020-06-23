@@ -1,168 +1,206 @@
-CitationKey: Hou2019
-doi: 10.1080/03650340.2019.1639156
-EntryAuthor: Ignacio Siebenhart
+citationKey: Hou2019 # Unique identifier in the format: LastnameYear (lowercase letters must be added when there are two or more entries by the same author and year, i.e.: LastnameYearx)
+doi: 10.1080/03650340.2019.1639156 # DOI of the publication where data is published
+entryAuthor: Ignacio Siebenhart # First and last name of the person who entered the data in this file
+entryCreationDate: 2020-01-20 # Date when the data was entered in this file. Format: YYYY-MM-DD
+contactName: Agustín Sarquis # First and last name of contact person (may be the principal investigator supervising the entryAuthor)
+contactEmail: agusarquis@agro.uba.ar # Email of the contact person
+entryNote: soils are typical Loess
+study: mass loss of maize litters (culms, leaves and sheaths) at aerial, surficial and belowground positions
 
-SiteInfo:
- Name: Lingbao, Henan, China
- EcosystemType: cropland
- MAP:
-  Value: 640
-  Units: mm
- MAT:
-  Value: 13.8
-  Units: Celsius
- RainySeason: summer
- Coordinates:
-  Latitude: 34.52
-  Longitude: 110.98
+siteInfo:
+        site: Lingbao # Names of individual sites, if one site, keep on this line, if multiple, use array format
+              # These fields should be arrays of equal length to site array
+        coordinates:
+          latitude: 34.52 # Latitude in decimal units (check for negative that denotes southern hemisphere)
+          longitude: 110.98 # Longitude in decimal units (check for negative that denotes western hemisphere)
+        country: China # Name of country where site was conducted
+        MAT: 13.8 # Mean annual temperature in degrees Celsius
+        MAP: 640 # Mean annual precipitation in mm
+        rainySeason: summer # Period of the year during which most precipitation occurs, i.e.: whole year, spring, summer, autumn, winter (if more than one use array format)
+        elevation: 596 # Elevation of study site in meters above sea level
+        landCover: farmland
+        vegNote: single cropping of spring maize
+        cover:
+          plantCover: # Total plant cover percentage (if they report cover by specific plant types, fill the fields below)
+          bunchgrassCover:
+          shrubCover:
+          treeCover:
+          forbCover:
+          bareSoil:
+        soilTaxonomy:
+          soilOrder: # Soil order according to the classification system described below
+          soilFamily: # Soil family description (ex. 'Eutric' for a Eutric Cambisol)
+          soilSeries: # Soil series according to the classification system described below
+          classificationSystem: # Name of classification system used. Valid fields are: USDA, FAO, and WRB.
 
-ExperimentInfo:
- LitterInfo:
-  LitterType1:
-   Species: Zea mays
-   LifeForm: crop
-   Material: recently senesced stems
-   Carbon:
-    Value: 45.39
-    Units: percentage
-   Nitrogen:
-    Value: 1.83
-    Units: percentage
-   Cellulose:
-    Value: 19.47
-    Units: percentage
-   Lignin:
-    Value: 14.76
-    Units: percentage
-   C:N:
-    Value: 24.9
-   Lignin:N:
-    Value: 8.1
-   Amount:
-    Value: 4
-    Units: g
-  LitterType2:
-   Species: Zea mays
-   LifeForm: crop
-   Material: recently senesced leaves
-   Carbon:
-    Value: 43.10
-    Units: percentage
-   Nitrogen:
-    Value: 2.23
-    Units: percentage
-   Cellulose:
-    Value: 25.59
-    Units: percentage
-   Lignin:
-    Value: 17.67
-    Units: percentage
-   C:N:
-     Value: 19.4
-   Lignin:N:
-    Value: 7.9
-   Amount:
-    Value: 4
-    Units: g
-  LitterType3:
-   Species: Zea mays
-   LifeForm: crop
-   Material: recently senesced sheaths
-   Carbon:
-    Value: 44.63
-    Units: percentage
-   Nitrogen:
-    Value: 1.08
-    Units: percentage
-   Cellulose:
-    Value: 27.33
-    Units: percentage
-   Lignin:
-    Value: 176.8
-    Units: percentage
-   C:N:
-    Value: 41.3
-   Lignin:N:
-    Value: 16.4
-   Amount:
-    Value: 4
-    Units: g
- Experiment1:
-  Description: "They investigate the mass loss and nitrogen (N) dynamics of maize litters (culms, leaves and sheaths) at aerial, surficial and belowground positions in the initial 191 days of decomposition"
-  LitterBagInfo:
-   MeshSize:
-    Value: 1
-    Units: mm
-   Dimentions:
-    Width: 15
-    Lenght: 15
-    Units: cm
-   Position:
-    Position1: suspended 150 cm
-    Position2: bare soil
-    Position3: buried 15 cm deep
-   StartingDate:
-    Month: november
-    Season: autumn
-   Duration:
-    Time:  6.28
-    Units: months
+experimentInfo:
+        incDesc: 3 maize materials x 3 positions x 6 harvests x 3 replicates
+        # These fields should all be one dimensional arrays. Values for experimental variables with multiple treatment levels should be entered in the variables section and left blank here
+        replicates: 3 # Number of replicates per treatment
+        duration: 191 # length of incubation in days
+        startingMonth: november # month during which the study started, all in lower case
+        litter: # plant species used as litter material for the experiment. All details related to the species must be specified in the initConditions.csv file
+        litterbag:
+          material: # mesh type used to construct the litter bags, options are: wire, aluminum, window screening, net curtain, bolting cloth, plastic, fiberglass, nylon, polypropylene, polyester, polyethylene, polyamide
+          meshSize: 1 # mesh size in mm referring to one side of the net-square
+          dimentions: # size of the full litter bag in cm
+            width: 15
+            length: 15
+            radius:
+            height: # for 3-dimensional designs such as litter boxes in Austin2006NATURE
+          transmitance: # when reported, light transmitance of the mesh material as a percentage of full sunlight for each wavelength
+            total:
+            PAR:
+            UV:
+            UVA:
+            UVB:
+          position: # position of litterbags in the field, valid options are: bare soil, decomposition bed, under litter, over litter, over lawn, next to grass, under tree/shrub/grass, buried X cm deep, underwater, under rainout shelter, under frame, suspended X cm, under shadecloth
 
-Variables:
- V1:
-   Name: Time
-   Units: days
- V2:
-   Name: FRS
-   Units: mass remaining
-   Description: "Recently senesced culms mass remaining at harvest time positioned suspended 150 cm"
-   LitterType: LitterType1
-   Position: Position1
- V3:
-   Name: FRG
-   Units: mass remaining
-   Description: "Recently senesced culms mass remaining at harvest time positioned on the ground"
-   LitterType: LitterType1
-   Position: Position2
- V4:
-   Name: FRB
-   Units: mass remaining
-   Description: "Recently senesced culms mass remaining at harvest time buried 15 cm deep"
-   LitterType: LitterType1
-   Position: Position3
- V5:
-   Name: LS
-   Units: mass remaining
-   Description: "Recently senesced leaves mass remaining at harvest time positioned suspended 150 cm"
-   LitterType: LitterType2
-   Position: Position1
- V6:
-   Name: LG
-   Units: mass remaining
-   Description: "Recently senesced leaves mass remaining at harvest time positioned on the ground"
-   LitterType: LitterType2
-   Position: Position2
- V7:
-   Name: LB
-   Units: mass remaining
-   Description: "Recently senesced leaves mass remaining at harvest time buried 15 cm deep"
-   LitterType: LitterType2
-   Position: Position3
- V8:
-  Name: SS
-  Units: mass remaining
-  Description: "Recently senesced sheaths mass remaining at harvest time positioned suspended 150 cm"
-  LitterType: LitterType3
-  Position: Position1
- V9:
-   Name: SG
-   Units: mass remaining
-   Description: "Recently senesced sheaths mass remaining at harvest time positioned on the ground"
-   LitterType: LitterType3
-   Position: Position2
- V10:
-   Name: SB
-   Units: mass remaining
-   Description: "Recently senesced sheaths mass remaining at harvest time positioned buried 15 cm deep"
-   LitterType: LitterType3
-   Position: Position3
+variables: # These describe the columns of your timeSeries.csv file
+        V1: # column 1
+          name: Time
+          units: days
+        V2:
+          name: FRS
+          units: mass remaining
+          varDesc: Maize culms suspended 150 cm
+          site: Lingbao
+          litter: Zea mays1
+          position: suspended 150 cm
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V3:
+          name: FRG
+          units: mass remaining
+          varDesc: Maize culms on the ground
+          site: Lingbao
+          litter: Zea mays1
+          position: bare soil
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V4:
+          name: FRB
+          units: mass remaining
+          varDesc: Maize culms buried 15 cm deep
+          site: Lingbao
+          litter: Zea mays1
+          position: buried 15 cm deep
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V5:
+          name: LS
+          units: mass remaining
+          varDesc: Maize leaves suspended 150 cm
+          site: Lingbao
+          litter: Zea mays2
+          position: suspended 150 cm
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V6:
+          name: LG
+          units: mass remaining
+          varDesc: Maize leaves on the ground
+          site: Lingbao
+          litter: Zea mays2
+          position: bare soil
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V7:
+          name: LB
+          units: mass remaining
+          varDesc: Maize leaves buried 15 cm deep
+          site: Lingbao
+          litter: Zea mays2
+          position: buried 15 cm deep
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V8:
+          name: SS
+          units: mass remaining
+          varDesc: Maize sheaths suspended 150 cm
+          site: Lingbao
+          litter: Zea mays3
+          position: suspended 150 cm
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V9:
+          name: SG
+          units: mass remaining
+          varDesc: Maize sheaths on the ground
+          site: Lingbao
+          litter: Zea mays3
+          position: bare soil
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V10:
+          name: SB
+          units: mass remaining
+          varDesc: Maize sheaths buried 15 cm deep
+          site: Lingbao
+          litter: Zea mays3
+          position: buried 15 cm deep
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
