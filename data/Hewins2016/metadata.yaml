@@ -1,0 +1,191 @@
+citationKey: Hewins2016 # Unique identifier in the format: LastnameYear (lowercase letters must be added when there are two or more entries by the same author and year, i.e.: LastnameYearx)
+doi: 10.1016/j.jaridenv.2016.02.014 # DOI of the publication where data is published
+entryAuthor: Agustín Sarquis # First and last name of the person who entered the data in this file
+entryCreationDate: 2019-07-22 # Date when the data was entered in this file. Format: YYYY-MM-DD
+contactName: Agustín Sarquis # First and last name of contact person (may be the principal investigator supervising the entryAuthor)
+contactEmail: agusarquis@agro.uba.ar # Email of the contact person
+entryNote: soils at midpoint and eastern sites have a mix of the types described below. They used cilindrical litter cages
+study: placement of litter on either up or downwind sides of dunes combined with dune volume effect on litter decomposition
+
+siteInfo:
+        site:
+          - eastern site
+          - midpoint site
+          - western site  # Names of individual sites, if one site, keep on this line, if multiple, use array format
+              # These fields should be arrays of equal length to site array
+        coordinates:
+          latitude:
+            - 32.6188889
+            - 32.6113889
+            - 32.6061111 # Latitude in decimal units (check for negative that denotes southern hemisphere)
+          longitude:
+            - -106.78777777777778
+            - -106.7961111111111
+            - -106.85055555555554 # Longitude in decimal units (check for negative that denotes western hemisphere)
+        country:
+          - USA
+          - USA
+          - USA # Name of country where site was conducted
+        MAT:
+          - 14.7
+          - 14.7
+          - 14.7 # Mean annual temperature in degrees Celsius
+        MAP:
+          - 245
+          - 245
+          - 245 # Mean annual precipitation in mm
+        rainySeason:
+          - summer
+          - summer
+          - summer # Period of the year during which most precipitation occurs, i.e.: whole year, spring, summer, autumn, winter (if more than one use array format)
+        elevation:
+          - 1325
+          - 1325
+          - 1325 # Elevation of study site in meters above sea level
+        landCover:
+          - desert
+          - desert
+          - desert # Land cover of the site. Valid fields are: greenbelt, (abbandoned) farmland, mangrove forest, subalpine, shrubland, urban, sandland, forest, steppe, desert, grassland, savanna
+        vegNote:
+          - dominant woody vegetation is honey mesquite and herbaceous vegetation is a mix of native perennial grasses including Aristida spp. and Sporobolus spp. Less dominant woody plants, including Yucca spp. and Gutierrezia sarothrae
+          - dominant woody vegetation is honey mesquite and herbaceous vegetation is a mix of native perennial grasses including Aristida spp. and Sporobolus spp. Less dominant woody plants, including Yucca spp. and Gutierrezia sarothrae
+          - dominant woody vegetation is honey mesquite and herbaceous vegetation is a mix of native perennial grasses including Aristida spp. and Sporobolus spp. Less dominant woody plants, including Yucca spp. and Gutierrezia sarothrae
+        cover:
+          plantCover: # Total plant cover percentage (if they report cover by specific plant types, fill the fields below)
+          bunchgrassCover:
+          shrubCover:
+          treeCover:
+          forbCover:
+          bareSoil:
+        soilTaxonomy:
+          soilOrder:
+            - Torripsamment
+            - Haplargid
+            - Haplocambid # Soil order according to the classification system described below
+          soilFamily:
+            - Typic
+            - Typic
+            - Typic # Soil family description (ex. 'Eutric' for a Eutric Cambisol)
+          soilSeries:
+            - Onite
+            - Pintura
+            - Pajarito # Soil series according to the classification system described below
+          classificationSystem: USDA
+
+experimentInfo:
+        incDesc: 6 collections x 2 placements x 12 dunes x 3 exclosures
+        # These fields should all be one dimensional arrays. Values for experimental variables with multiple treatment levels should be entered in the variables section and left blank here
+        replicates: 12 # Number of replicates per treatment
+        duration: 730 # length of incubation in days
+        startingMonth: november # month during which the study started, all in lower case
+        litter: Prosopis glandulosa # plant species used as litter material for the experiment. All details related to the species must be specified in the initConditions.csv file
+        litterbag:
+          material: aluminum # mesh type used to construct the litter bags, options are: wire, aluminum, window screening, net curtain, bolting cloth, plastic, fiberglass, nylon, polypropylene, polyester, polyethylene, polyamide
+          meshSize: 1 # mesh size in mm referring to one side of the net-square
+          dimentions: # size of the full litter bag in cm
+            width:
+            length:
+            radius: 7.625
+            height: 15.25 # for 3-dimensional designs such as litter boxes in Austin2006NATURE
+          transmitance: # when reported, light transmitance of the mesh material as a percentage of full sunlight for each wavelength
+            total:
+            PAR:
+            UV:
+            UVA:
+            UVB: 78.5
+          position: bare soil # position of litterbags in the field, valid options are: bare soil, decomposition bed, under litter, over litter, over lawn, next to grass, under tree/shrub/grass, buried X cm deep, underwater, under rainout shelter, under frame, suspended X cm, under shadecloth
+
+variables: # These describe the columns of your timeSeries.csv file
+        V1: # column 1
+          name: Time
+          units: months
+        V2:
+          name: LU
+          units: organic matter remaining
+          varDesc: P. glandulosa leaflets incubated at large dunes upwind location
+          site: eastern site
+          experimentalTreatment: # 'experimentalTreatment' here is a place holder for treatments with multiple levels. Replace this word by any of the listed variables in incubationInfo above (startingMonth, duration, litter, litterbag, meshSize) and type treatment value (level) after colon. Note that units should be specified in the incubationInfo field above.
+          compTreat: large dune upwind
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V3:
+          name: LD
+          units: organic matter remaining
+          varDesc: P. glandulosa leaflets incubated at large dunes downwind location
+          site: eastern site
+          experimentalTreatment: # 'experimentalTreatment' here is a place holder for treatments with multiple levels. Replace this word by any of the listed variables in incubationInfo above (startingMonth, duration, litter, litterbag, meshSize) and type treatment value (level) after colon. Note that units should be specified in the incubationInfo field above.
+          compTreat: large dune downwind
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V4:
+          name: MU
+          units: organic matter remaining
+          varDesc: P. glandulosa leaflets incubated at medium dunes upwind location
+          site: midpoint site
+          experimentalTreatment: # 'experimentalTreatment' here is a place holder for treatments with multiple levels. Replace this word by any of the listed variables in incubationInfo above (startingMonth, duration, litter, litterbag, meshSize) and type treatment value (level) after colon. Note that units should be specified in the incubationInfo field above.
+          compTreat: medium dune upwind
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V5:
+          name: MD
+          units: organic matter remaining
+          varDesc: P. glandulosa leaflets incubated at medium dunes downwind location
+          site: midpoint site
+          experimentalTreatment: # 'experimentalTreatment' here is a place holder for treatments with multiple levels. Replace this word by any of the listed variables in incubationInfo above (startingMonth, duration, litter, litterbag, meshSize) and type treatment value (level) after colon. Note that units should be specified in the incubationInfo field above.
+          compTreat: medium dune downwind
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V6:
+          name: SU
+          units: organic matter remaining
+          varDesc: P. glandulosa leaflets incubated at small dunes upwind location
+          site: western site
+          experimentalTreatment: # 'experimentalTreatment' here is a place holder for treatments with multiple levels. Replace this word by any of the listed variables in incubationInfo above (startingMonth, duration, litter, litterbag, meshSize) and type treatment value (level) after colon. Note that units should be specified in the incubationInfo field above.
+          compTreat: small dune upwind
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V7:
+          name: SD
+          units: organic matter remaining
+          varDesc: P. glandulosa leaflets incubated at small dunes downwind location
+          site: western site
+          experimentalTreatment: # 'experimentalTreatment' here is a place holder for treatments with multiple levels. Replace this word by any of the listed variables in incubationInfo above (startingMonth, duration, litter, litterbag, meshSize) and type treatment value (level) after colon. Note that units should be specified in the incubationInfo field above.
+          compTreat: small dune downwind
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:

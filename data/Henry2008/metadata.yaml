@@ -4,7 +4,7 @@ entryAuthor: Agustín Sarquis # First and last name of the person who entered th
 entryCreationDate: 2019-01-21 # Date when the data was entered in this file. Format: YYYY-MM-DD
 contactName: Agustín Sarquis # First and last name of contact person (may be the principal investigator supervising the entryAuthor)
 contactEmail: agusarquis@agro.uba.ar # Email of the contact person
-entryNote: coordinates were wrong on the paper
+entryNote: coordinates were wrong on the paper. they used a circular litter bag
 study: decomposition of sun-exposed litter over summer
 
 siteInfo:
@@ -47,8 +47,9 @@ experimentInfo:
           material: polyester # mesh type used to construct the litter bags, options are: wire, aluminum, window screening, net curtain, bolting cloth, plastic, fiberglass, nylon, polypropylene, polyester, polyethylene, polyamide
           meshSize: 10 # mesh size in mm referring to one side of the net-square
           dimentions: # size of the full litter bag in cm
-            width: 10
-            length: 10
+            width:
+            length:
+            radius: 5
             height: # for 3-dimensional designs such as litter boxes in Austin2006NATURE
           transmitance: # when reported, light transmitance of the mesh material as a percentage of full sunlight for each wavelength
             total: 95

@@ -46,6 +46,7 @@ experimentInfo:
           dimentions: # size of the full litter bag in cm
             width:
             length:
+            radius: 
             height: # for 3-dimensional designs such as litter boxes in Austin2006NATURE
           transmitance: # when reported, light transmitance of the mesh material as a percentage of full sunlight for each wavelength
             total:
