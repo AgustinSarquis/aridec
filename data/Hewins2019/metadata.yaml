@@ -1,77 +1,108 @@
-CitationKey: Hewins2019
-doi: 10.1371/journal.pone.0210470
-EntryAuthor: Agustín Sarquis
+citationKey: Hewins2019 # Unique identifier in the format: LastnameYear (lowercase letters must be added when there are two or more entries by the same author and year, i.e.: LastnameYearx)
+doi: 10.1371/journal.pone.0210470 # DOI of the publication where data is published
+entryAuthor: Agustín Sarquis # First and last name of the person who entered the data in this file
+entryCreationDate: 2019-12-03 # Date when the data was entered in this file. Format: YYYY-MM-DD
+contactName: Agustín Sarquis # First and last name of contact person (may be the principal investigator supervising the entryAuthor)
+contactEmail: agusarquis@agro.uba.ar # Email of the contact person
+entryNote: they also use paper and basswood as decomposition substrates (not included)
+study: They incubated P. glandulosa leaflets previously irradiated with UV buried under three precipitation treatments
 
-SiteInfo:
-  Name: Sevilleta National Wildlife Refuge, New Mexico, USA
-  EcosystemType: woodland
-  MAP:
-    Value: 362.7
-    Units: mm
-  MAT:
-    Value: 12.7
-    Units: Celsius
-  RainySeason:
-    - summer
-    - winter
-  Altitude:
-    Value: 1858
-    Units: masl
-  Coordinates:
-    Latitude: 34.386
-    Longitude: -106.529
+siteInfo:
+        site: Sevilleta # Names of individual sites, if one site, keep on this line, if multiple, use array format
+              # These fields should be arrays of equal length to site array
+        coordinates:
+          latitude: 34.386 # Latitude in decimal units (check for negative that denotes southern hemisphere)
+          longitude: -106.529 # Longitude in decimal units (check for negative that denotes western hemisphere)
+        country: USA # Name of country where site was conducted
+        MAT: 12.7 # Mean annual temperature in degrees Celsius
+        MAP: 362.7 # Mean annual precipitation in mm
+        rainySeason:
+            - summer
+            - winter # Period of the year during which most precipitation occurs, i.e.: whole year, spring, summer, autumn, winter (if more than one use array format)
+        elevation: 1858 # Elevation of study site in meters above sea level
+        landCover: forest # Land cover of the site. Valid fields are: greenbelt, (abbandoned) farmland, mangrove forest, subalpine, shrubland, urban, sandland, forest, steppe, desert, grassland, savanna
+        vegNote: mixture of Pinus edulis (piñon pine) and Juniperus monosperma (one seed juniper)
+        cover:
+          plantCover: # Total plant cover percentage (if they report cover by specific plant types, fill the fields below)
+          bunchgrassCover:
+          shrubCover:
+          treeCover:
+          forbCover:
+          bareSoil:
+        soilTaxonomy:
+          soilOrder: # Soil order according to the classification system described below
+          soilFamily: # Soil family description (ex. 'Eutric' for a Eutric Cambisol)
+          soilSeries: # Soil series according to the classification system described below
+          classificationSystem: # Name of classification system used. Valid fields are: USDA, FAO, and WRB.
 
-ExperimentInfo:
- LitterInfo:
-  LitterType1:
-   Species: Prosopis glandulosa
-   LifeForm: tree
-   Material: leaflets
-   Carbon:
-     Value: 45.4
-     Units: percentage
-   Nitrogen:
-     Value: 2.5
-     Units: percentage
-   Amount:
-     Value: 3
-     Units: g
- Experiment1:
-  Description: "They incubated P. glandulosa leaflets previously irradiated with UV buried under three precipitation treatments"
-  LitterBagInfo:
-   Material: fiberglass
-   MeshSize:
-    Value: 0.9
-    Units: mm
-   Dimentions:
-    Width: 10
-    Lenght: 20
-    Units: cm
-   Position: buried 0.5 cm deep
-  Treatment: rainfall
-  StartingDate:
-   Month: october
-   Season: autumn
-  Duration:
-   Time: 12
-   Units: months
+experimentInfo:
+        incDesc: 3 precipitation levels x 4 harvests x 3 replicates # Short description of the incubation setup and main treatments
+        # These fields should all be one dimensional arrays. Values for experimental variables with multiple treatment levels should be entered in the variables section and left blank here
+        replicates: 3 # Number of replicates per treatment
+        duration: 365 # length of incubation in days
+        startingMonth: october # month during which the study started, all in lower case
+        litter: Prosopis glandulosa # plant species used as litter material for the experiment. All details related to the species must be specified in the initConditions.csv file
+        litterbag:
+          material: fiberglass # mesh type used to construct the litter bags, options are: wire, aluminum, window screening, net curtain, bolting cloth, plastic, fiberglass, nylon, polypropylene, polyester, polyethylene, polyamide
+          meshSize: 0.9 # mesh size in mm referring to one side of the net-square
+          dimentions: # size of the full litter bag in cm
+            width: 10
+            length: 20
+            height: # for 3-dimensional designs such as litter boxes in Austin2006NATURE
+          transmitance: # when reported, light transmitance of the mesh material as a percentage of full sunlight for each wavelength
+            total:
+            PAR:
+            UV:
+            UVA:
+            UVB:
+          position: buried 0.5 cm deep
 
-Variables:
-  V1:
-    Name: Time
-    Units: months
-  V2:
-    Name: MA
-    Units: non-ash dry mass remaining
-    Description: "UV-pre-treated P. glandulosa leaflets buried under ambient PPT"
-    Rainfall: ambient
-  V3:
-    Name: MD
-    Units: non-ash dry mass remaining
-    Description: "UV-pre-treated P. glandulosa leaflets buried under drought conditions"
-    Rainfall: 50% reduction
-  V4:
-    Name: MPA
-    Units: non-ash dry mass remaining
-    Description: "UV-pre-treated P. glandulosa leaflets buried under increased PPT"
-    Rainfall: 150% addition
+variables: # These describe the columns of your timeSeries.csv file
+        V1: # column 1
+          name: Time
+          units: months
+        V2:
+          name: MA
+          units: organic matter remaining
+          varDesc: UV-pre-treated P. glandulosa leaflets buried under ambient PPT
+          site: Sevilleta
+          experimentalTreatment: # 'experimentalTreatment' here is a place holder for treatments with multiple levels. Replace this word by any of the listed variables in incubationInfo above (startingMonth, duration, litter, litterbag, meshSize) and type treatment value (level) after colon. Note that units should be specified in the incubationInfo field above.
+          compTreat: ambient precipitation
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V3:
+          name: MD
+          units: organic matter remaining
+          varDesc: UV-pre-treated P. glandulosa leaflets buried under drought conditions
+          site: Sevilleta
+          experimentalTreatment: # 'experimentalTreatment' here is a place holder for treatments with multiple levels. Replace this word by any of the listed variables in incubationInfo above (startingMonth, duration, litter, litterbag, meshSize) and type treatment value (level) after colon. Note that units should be specified in the incubationInfo field above.
+          compTreat: reduced precipitation
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V4:
+          name: MPA
+          units: organic matter remaining
+          varDesc: UV-pre-treated P. glandulosa leaflets buried under increased PPT
+          site: Sevilleta
+          experimentalTreatment: # 'experimentalTreatment' here is a place holder for treatments with multiple levels. Replace this word by any of the listed variables in incubationInfo above (startingMonth, duration, litter, litterbag, meshSize) and type treatment value (level) after colon. Note that units should be specified in the incubationInfo field above.
+          compTreat: increased precipitation
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
