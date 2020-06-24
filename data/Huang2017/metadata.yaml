@@ -1,324 +1,371 @@
-CitationKey: Huang2017
-doi: 10.1016/j.scitotenv.2017.05.213
-EntryAuthor: Agustín Sarquis
+citationKey: Huang2017 # Unique identifier in the format: LastnameYear (lowercase letters must be added when there are two or more entries by the same author and year, i.e.: LastnameYearx)
+doi: 10.1016/j.scitotenv.2017.05.213 # DOI of the publication where data is published
+entryAuthor: Agustín Sarquis # First and last name of the person who entered the data in this file
+entryCreationDate: 2019-05-30 # Date when the data was entered in this file. Format: YYYY-MM-DD
+contactName: Agustín Sarquis # First and last name of contact person (may be the principal investigator supervising the entryAuthor)
+contactEmail: agusarquis@agro.uba.ar # Email of the contact person
+entryNote: they don't specify soil type classification system. According to the paper, elevation at Turpan is "-86 masl", but according to Google Earth it's 1525 masl
+study: Three litters decomposed under full sunlight and UV filtering at three sites with contrasting precipitation
 
-SiteInfo:
-  Name:
-    - Gurbantunggut Desert (margin), China
-    - Gurbantunggut Desert (center), China
-    - Turpan Desert, China
-  EcosystemType:
-    - desert
-    - desert
-    - desert
-  MAP:
-    Value:
-      - 144
-      - 76
-      - 16
-    Units: mm
-  MAT:
-    Value:
-      - 6.6
-      - 7.3
-      - 13.9
-    Units: Celsius
-  RainySeason:
-    - spring
-    - summer
-  Altitude:
-    Value:
-      - 460
-      - 507
-      - 86
-    Units: masl
-  SoilType:
-    - desert solonetz
-    - desert solonetz
-    - Aeolian
-  Cover:
-    ForbCover:
-      - 40
-      - 20
-    ShrubCover:
-      - 30
-      -
-      - 3
-    Units: percentage
-  Coordinates:
-    Latitude:
-      - 44.367
-      - 45.25
-      - 40.85
-    Longitude:
-      - 87.917
-      - 87.6
-      - 98.183
+siteInfo:
+        site:
+         - Gurbantunggut (margin)
+         - Gurbantunggut (center)
+         - Turpan # Names of individual sites, if one site, keep on this line, if multiple, use array format
+              # These fields should be arrays of equal length to site array
+        coordinates:
+          latitude:
+            - 44.367
+            - 45.25
+            - 40.85 # Latitude in decimal units (check for negative that denotes southern hemisphere)
+          longitude:
+            - 87.917
+            - 87.6
+            - 98.183 # Longitude in decimal units (check for negative that denotes western hemisphere)
+        country:
+          - China
+          - China
+          - China # Name of country where site was conducted
+        MAT:
+          - 6.6
+          - 7.3
+          - 13.9 # Mean annual temperature in degrees Celsius
+        MAP:
+          - 144
+          - 76
+          - 16 # Mean annual precipitation in mm
+        rainySeason:
+          - spring
+          - summer
+          - spring
+          - summer
+          - spring
+          - summer # Period of the year during which most precipitation occurs, i.e.: whole year, spring, summer, autumn, winter (if more than one use array format)
+        elevation:
+          - 460
+          - 507
+          - 1525 # Elevation of study site in meters above sea level
+        landCover:
+         - desert
+         - desert
+         - desert # Land cover of the site. Valid fields are: greenbelt, (abbandoned) farmland, mangrove forest, subalpine, shrubland, urban, sandland, forest, steppe, desert, grassland, savanna
+        vegNote:
+          - shrubs are primarily H. ammodendron, H. persicum,and T. ramosissima. The herbaceous layer is composed of E. oxyrrhynchum, A. linifolium, S. arabicus, L. undulate, S. subcrassa, C. arenarius, S. santolinum, and A. squarrosum. Interspaces are covered by cyanobacterial-lichen crusts
+          - E. distachya is the dominant semi-shrub, and annuals are composed of E. oxyrrhynchum, A. linifolium and A. squarrosum. Interspaces are covered by cyanobacterial-lichen crusts
+          - shrubs are A. mongolicus, A. sparsifolia and N. tangutorum
+        cover:
+          plantCover: # Total plant cover percentage (if they report cover by specific plant types, fill the fields below)
+          bunchgrassCover:
+          shrubCover:
+            - 40
+            -
+            - 3
+          treeCover:
+          forbCover:
+            - 40
+            - 20
+            -
+          bareSoil:
+        soilTaxonomy:
+          soilOrder: # Soil order according to the classification system described below
+          soilFamily: # Soil family description (ex. 'Eutric' for a Eutric Cambisol)
+          soilSeries: # Soil series according to the classification system described below
+          classificationSystem: # Name of classification system used. Valid fields are: USDA, FAO, and WRB.
 
-ExperimentInfo:
- LitterInfo:
-  LitterType1:
-   Species: Haloxylon ammodendron
-   LifeForm: shrub
-   Material: recently senesced leaves
-   Carbon:
-     Value: 29.07
-     Units: percentage
-   Nitrogen:
-     Value: 1.35
-     Units: percentage
-   Phosphorus:
-     Value: 0.077
-     Units: percentage
-   C:N:
-     Value: 21.4
-   CellSolubles:
-     Value: 34.7
-     Units: percentage
-   Hemicellulose:
-     Value: 13.0
-     Units: percentage
-   Cellulose:
-     Value: 20.6
-     Units: percentage
-   Lignin:
-     Value: 6.3
-     Units: percentage
-   Amount:
-     Value: 10
-     Units: g
-  LitterType2:
-   Species: Phragmites communis
-   LifeForm: graminoid
-   Material: recently senesced leaves
-   Carbon:
-     Value: 38.03
-     Units: percentage
-   Nitrogen:
-     Value: 1.21
-     Units: percentage
-   Phosphorus:
-     Value: 0.10
-     Units: percentage
-   C:N:
-     Value: 32.3
-   CellSolubles:
-     Value: 26.8
-     Units: percentage
-   Hemicellulose:
-     Value: 24.9
-     Units: percentage
-   Cellulose:
-     Value: 28.3
-     Units: percentage
-   Lignin:
-     Value: 3.1
-     Units: percentage
-   Amount:
-     Value: 10
-     Units: g
-  LitterType3:
-   Species: Tritricum aestivum
-   LifeForm: crop
-   Material: stems
-   Carbon:
-     Value: 39.04
-     Units: percentage
-   Nitrogen:
-     Value: 4.3
-     Units: percentage
-   Phosphorus:
-     Value: 0.08
-     Units: percentage
-   C:N:
-     Value: 89.1
-   CellSolubles:
-     Value: 15.3
-     Units: percentage
-   Hemicellulose:
-     Value: 28.8
-     Units: percentage
-   Cellulose:
-     Value: 40.8
-     Units: percentage
-   Lignin:
-     Value: 6.9
-     Units: percentage
-   Amount:
-     Value: 10
-     Units: g
- Experiment1:
-    Description: "Three litters were decomposed under full spectrum sun- light and UV filtering from solar radiation at three sites with contrasting precipitation amounts for 2.5 years."
-    LitterBagInfo:
-      Material: fiberglass
-      MeshSize:
-       Value: 1.22
-       Units: mm
-      Dimentions:
-       Width: 10
-       Lenght: 25
-       Units: cm
-      PARTransmitance:
-        Value: 87
-        Units: percentage
-      UVTransmitance:
-        Value: 80
-        Units: percentage
-      Position:
-        - under frames
-        - bare soil
-    FilterInfo:
-      FilterType1:
-        Name: Aclar
-        Wavelenght:
-          Value: 280
-          Units: nm
-        Transmitance:
-          Value: 90
-          Units: percentage
-      FilterType2:
-        Name: Plexiglass
-        Wavelenght:
-          Value: 380
-          Units: nm
-        PARTransmitance:
-          Value: 85
-          Units: percentage
-    Treatment: light attenuation, litter type, location
-    StartingDate:
-      Month: october
-      Season: spring
-    Duration:
-      Time: 30
-      Units: months
+experimentInfo:
+        incDesc: 3 species x 2 radiations levels x 3 sites x 8 harvests x 6 replicates # Short description of the incubation setup and main treatments
+        # These fields should all be one dimensional arrays. Values for experimental variables with multiple treatment levels should be entered in the variables section and left blank here
+        replicates: 6 # Number of replicates per treatment
+        duration: 912 # length of incubation in days
+        startingMonth: october # month during which the study started, all in lower case
+        litter: # plant species used as litter material for the experiment. All details related to the species must be specified in the initConditions.csv file
+        litterbag:
+          material: fiberglass # mesh type used to construct the litter bags, options are: wire, aluminum, window screening, net curtain, bolting cloth, plastic, fiberglass, nylon, polypropylene, polyester, polyethylene, polyamide
+          meshSize: 1.22 # mesh size in mm referring to one side of the net-square
+          dimentions: # size of the full litter bag in cm
+            width: 10
+            length: 25
+            radius: # for round or cilindrical structures
+            height: # for 3-dimensional designs such as litter boxes in Austin2006NATURE
+          transmitance: # when reported, light transmitance of the mesh material as a percentage of full sunlight for each wavelength
+            total:
+            PAR: 87
+            UV: 80
+            UVA:
+            UVB:
+          position: under frame
 
-Variables:
-  V1:
-    Name: Time
-    Units: years
-  V2:
-    Name: 144HaS
-    Units: non-ash dry mass remaining
-    Description: "H. ammodendron leaf litter was incubated for 2.5 years under full solar radiation at a site with 144 mm MAP"
-    FilterType: FilterType1
-    LitterType: LitterType1
-    Site: Gurbantunggut Desert (margin), China
-  V3:
-    Name: 144HaUVf
-    Units: non-ash dry mass remaining
-    Description: "H. ammodendron leaf litter was incubated for 2.5 years under UV filters at a site with 144 mm MAP"
-    FilterType: FilterType2
-    LitterType: LitterType1
-    Site: Gurbantunggut Desert (margin), China
-  V4:
-    Name: 144PaS
-    Units: non-ash dry mass remaining
-    Description: "P. communis leaf litter was incubated for 2.5 years under full solar radiation at a site with 144 mm MAP"
-    FilterType: FilterType1
-    LitterType: LitterType2
-    Site: Gurbantunggut Desert (margin), China
-  V5:
-    Name: 144PaUVf
-    Units: non-ash dry mass remaining
-    Description: "P. communis leaf litter was incubated for 2.5 years under UV filters at a site with 144 mm MAP"
-    FilterType: FilterType2
-    LitterType: LitterType2
-    Site: Gurbantunggut Desert (margin), China
-  V6:
-    Name: 144TaS
-    Units: non-ash dry mass remaining
-    Description: "T. aestivum stem litter was incubated for 2.5 years under full solar radiation at a site with 144 mm MAP"
-    FilterType: FilterType1
-    LitterType: LitterType3
-    Site: Gurbantunggut Desert (margin), China
-  V7:
-    Name: 144TaUVf
-    Units: non-ash dry mass remaining
-    Description: "T. aestivum stem litter was incubated for 2.5 years under UV filters at a site with 144 mm MAP"
-    FilterType: FilterType2
-    LitterType: LitterType3
-    Site: Gurbantunggut Desert (margin), China
-  V8:
-    Name: 76HaS
-    Units: non-ash dry mass remaining
-    Description: "H. ammodendron leaf litter was incubated for 2.5 years under full solar radiation at a site with 76 mm MAP"
-    FilterType: FilterType1
-    LitterType: LitterType1
-    Site: Gurbantunggut Desert (center), China
-  V9:
-    Name: 76HaUVf
-    Units: non-ash dry mass remaining
-    Description: "H. ammodendron leaf litter was incubated for 2.5 years under UV filters at a site with 76 mm MAP"
-    FilterType: FilterType2
-    LitterType: LitterType1
-    Site: Gurbantunggut Desert (center), China
-  V10:
-    Name: 76PaS
-    Units: non-ash dry mass remaining
-    Description: "P. communis leaf litter was incubated for 2.5 years under full solar radiation at a site with 76 mm MAP"
-    FilterType: FilterType1
-    LitterType: LitterType2
-    Site: Gurbantunggut Desert (center), China
-  V11:
-    Name: 76PaUVf
-    Units: non-ash dry mass remaining
-    Description: "P. communis leaf litter was incubated for 2.5 years under UV filters at a site with 76 mm MAP"
-    FilterType: FilterType2
-    LitterType: LitterType2
-    Site: Gurbantunggut Desert (center), China
-  V12:
-    Name: 76TaS
-    Units: non-ash dry mass remaining
-    Description: "T. aestivum stem litter was incubated for 2.5 years under full solar radiation at a site with 76 mm MAP"
-    FilterType: FilterType1
-    LitterType: LitterType3
-    Site: Gurbantunggut Desert (center), China
-  V13:
-    Name: 76TaUVf
-    Units: non-ash dry mass remaining
-    Description: "T. aestivum stem litter was incubated for 2.5 years under UV filters at a site with 76 mm MAP"
-    FilterType: FilterType2
-    LitterType: LitterType3
-    Site: Gurbantunggut Desert (center), China
-  V14:
-    Name: 16HaS
-    Units: non-ash dry mass remaining
-    Description: "H. ammodendron leaf litter was incubated for 2.5 years under full solar radiation at a site with 16 mm MAP"
-    FilterType: FilterType1
-    LitterType: LitterType1
-    Site: Turpan Desert, China
-  V15:
-    Name: 16HaUVf
-    Units: non-ash dry mass remaining
-    Description: "H. ammodendron leaf litter was incubated for 2.5 years under UV filters at a site with 16 mm MAP"
-    FilterType: FilterType2
-    LitterType: LitterType1
-    Site: Turpan Desert, China
-  V16:
-    Name: 16PaS
-    Units: non-ash dry mass remaining
-    Description: "P. communis leaf litter was incubated for 2.5 years under full solar radiation at a site with 16 mm MAP"
-    FilterType: FilterType1
-    LitterType: LitterType2
-    Site: Turpan Desert, China
-  V17:
-    Name: 16PaUVf
-    Units: non-ash dry mass remaining
-    Description: "P. communis leaf litter was incubated for 2.5 years under UV filters at a site with 16 mm MAP"
-    FilterType: FilterType2
-    LitterType: LitterType2
-    Site: Turpan Desert, China
-  V18:
-    Name: 16TaS
-    Units: non-ash dry mass remaining
-    Description: "T. aestivum stem litter was incubated for 2.5 years under full solar radiation at a site with 16 mm MAP"
-    FilterType: FilterType1
-    LitterType: LitterType3
-    Site: Turpan Desert, China
-  V19:
-    Name: 16TaUVf
-    Units: non-ash dry mass remaining
-    Description: "T. aestivum stem litter was incubated for 2.5 years under UV filters at a site with 16 mm MAP"
-    FilterType: FilterType2
-    LitterType: LitterType3
-    Site: Turpan Desert, China
+variables: # These describe the columns of your timeSeries.csv file
+        V1: # column 1
+          name: Time
+          units: years
+        V2:
+          name: 144HaS
+          units: organic matter remaining
+          varDesc: H. ammodendron leaf litter under full solar radiation at a site with 144 mm MAP
+          site: Gurbantunggut (margin)
+          litter: Haloxylon ammodendron
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: 0
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total: 90
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V3:
+          name: 144HaUVf
+          units: organic matter remaining
+          varDesc: H. ammodendron leaf litter under UV filters at a site with 144 mm MAP
+          site: Gurbantunggut (margin)
+          litter: Haloxylon ammodendron
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: 380
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR: 85
+             UV:
+             UVA:
+             UVB:
+        V4:
+          name: 144PaS
+          units: organic matter remaining
+          varDesc: P. australis litter under full solar radiation at a site with 144 mm MAP
+          site: Gurbantunggut (margin)
+          litter: Phragmites australis
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: 0
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total: 90
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V5:
+          name: 144PaUVf
+          units: organic matter remaining
+          varDesc: P. australis litter under UV filters at a site with 144 mm MAP
+          site: Gurbantunggut (margin)
+          litter: Phragmites australis
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: 380
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR: 85
+             UV:
+             UVA:
+             UVB:
+        V6:
+          name: 144TaS
+          units: organic matter remaining
+          varDesc: T. aestivum stem litter under full solar radiation at a site with 144 mm MAP
+          site: Gurbantunggut (margin)
+          litter: Triticum aestivum
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: 0
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total: 90
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V7:
+          name: 144TaUVf
+          units: organic matter remaining
+          varDesc: T. aestivum stem litter under UV filters at a site with 144 mm MAP
+          site: Gurbantunggut (margin)
+          litter: Triticum aestivum
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: 380
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR: 85
+             UV:
+             UVA:
+             UVB:
+        V8:
+          name: 76HaS
+          units: organic matter remaining
+          varDesc: H. ammodendron leaf litter under full solar radiation at a site with 76 mm MAP
+          site: Gurbantunggut (center)
+          litter: Haloxylon ammodendron
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: 0
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total: 90
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V9:
+          name: 76HaUVf
+          units: organic matter remaining
+          varDesc: H. ammodendron leaf litter under UV filters at a site with 76 mm MAP
+          site: Gurbantunggut (center)
+          litter: Haloxylon ammodendron
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: 380
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR: 85
+             UV:
+             UVA:
+             UVB:
+        V10:
+          name: 76PaS
+          units: organic matter remaining
+          varDesc: P. australis litter under full solar radiation at a site with 76 mm MAP
+          site: Gurbantunggut (center)
+          litter: Phragmites australis
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: 0
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total: 90
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V11:
+          name: 76PaUVf
+          units: organic matter remaining
+          varDesc: P. australis leaf litter under UV filters at a site with 76 mm MAP
+          site: Gurbantunggut (center)
+          litter: Phragmites australis
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: 380
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR: 85
+             UV:
+             UVA:
+             UVB:
+        V12:
+          name: 76TaS
+          units: organic matter remaining
+          varDesc: T. aestivum stem litter under full solar radiation at a site with 76 mm MAP
+          site: Gurbantunggut (center)
+          litter: Triticum aestivum
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: 0
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total: 90
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V13:
+          name: 76TaUVf
+          units: organic matter remaining
+          varDesc: T. aestivum stem litter under UV filters at a site with 76 mm MAP
+          site: Gurbantunggut (center)
+          litter: Triticum aestivum
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: 380
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR: 85
+             UV:
+             UVA:
+             UVB:
+        V14:
+          name: 16HaS
+          units: organic matter remaining
+          varDesc: H. ammodendron leaf litter under full solar radiation at a site with 16 mm MAP
+          site: Turpan
+          litter: Haloxylon ammodendron
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: 0
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total: 90
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V15:
+          name: 16HaUVf
+          units: organic matter remaining
+          varDesc: H. ammodendron leaf litter under UV filters at a site with 16 mm MAP
+          site: Turpan
+          litter: Haloxylon ammodendron
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: 380
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR: 85
+             UV:
+             UVA:
+             UVB:
+        V16:
+          name: 16PaS
+          units: organic matter remaining
+          varDesc: P. australis leaf litter under full solar radiation at a site with 16 mm MAP
+          site: Turpan
+          litter: Phragmites australis
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: 0
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total: 90
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V17:
+          name: 16PaUVf
+          units: organic matter remaining
+          varDesc: P. australis leaf litter under UV filters at a site with 16 mm MAP
+          site: Turpan
+          litter: Phragmites australis
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: 380
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR: 85
+             UV:
+             UVA:
+             UVB:
+        V18:
+          name: 16TaS
+          units: organic matter remaining
+          varDesc: T. aestivum stem litter under full solar radiation at a site with 16 mm MAP
+          site: Turpan
+          litter: Triticum aestivum
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: 0
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total: 90
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V19:
+          name: 16TaUVf
+          units: organic matter remaining
+          varDesc: T. aestivum stem litter under UV filters at a site with 16 mm MAP
+          site: Turpan
+          litter: Triticum aestivum
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: 380
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR: 85
+             UV:
+             UVA:
+             UVB:
