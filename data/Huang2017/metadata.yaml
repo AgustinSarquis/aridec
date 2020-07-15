@@ -35,11 +35,8 @@ siteInfo:
           - 76
           - 16 # Mean annual precipitation in mm
         rainySeason:
-          - spring
           - summer
-          - spring
           - summer
-          - spring
           - summer # Period of the year during which most precipitation occurs, i.e.: whole year, spring, summer, autumn, winter (if more than one use array format)
         elevation:
           - 460

@@ -4,7 +4,7 @@ entryAuthor: Agustín Sarquis # First and last name of the person who entered th
 entryCreationDate: 2019-07-11 # Date when the data was entered in this file. Format: YYYY-MM-DD
 contactName: Agustín Sarquis # First and last name of contact person (may be the principal investigator supervising the entryAuthor)
 contactEmail: agusarquis@agro.uba.ar # Email of the contact person
-entryNote: study was carried out in the field but on microcosms
+entryNote: study was carried out in the field but on microcosms. Soils are mixed-type (not shown)
 study: Litter from evergreen shrub patches and from perennial grasses and evergreen shrub patches was incubated in microcosms under field conditions with UV attenuation and water addition treatments
 
 siteInfo:
@@ -31,13 +31,9 @@ siteInfo:
           bareSoil: 60
         soilTaxonomy:
           soilOrder:
-              - Haplocalcids
-              - Petrocalcids
           soilFamily:
-              - Typic
-              - Typic
           soilSeries: # Soil series according to the classification system described below
-          classificationSystem: USDA
+          classificationSystem: 
 
 experimentInfo:
         incDesc: 2 litter types x 2 UV levels x 2 water levels x 5 harvests x 6 blocks
