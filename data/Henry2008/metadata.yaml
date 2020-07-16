@@ -4,7 +4,7 @@ entryAuthor: Agustín Sarquis # First and last name of the person who entered th
 entryCreationDate: 2019-01-21 # Date when the data was entered in this file. Format: YYYY-MM-DD
 contactName: Agustín Sarquis # First and last name of contact person (may be the principal investigator supervising the entryAuthor)
 contactEmail: agusarquis@agro.uba.ar # Email of the contact person
-entryNote: coordinates were wrong on the paper. they used a circular litter bag
+entryNote: coordinates were wrong on the paper. they used a circular litter bag. Rainys seasons are autumn, winter and spring
 study: decomposition of sun-exposed litter over summer
 
 siteInfo:
@@ -16,10 +16,7 @@ siteInfo:
         country: USA # Name of country where site was conducted
         MAT: 16.25 # Mean annual temperature in degrees Celsius
         MAP: 677 # Mean annual precipitation in mm
-        rainySeason:
-           - autumn
-           - winter
-           - spring # Period of the year during which most precipitation occurs, i.e.: whole year, spring, summer, autumn, winter (if more than one use array format)
+        rainySeason: # Period of the year during which most precipitation occurs, i.e.: whole year, spring, summer, autumn, winter (if more than one use array format)
         elevation: 120 # Elevation of study site in meters above sea level
         landCover: grassland # Land cover of the site. Valid fields are: greenbelt, (abbandoned) farmland, mangrove forest, subalpine, shrubland, urban, sandland, forest, steppe, desert, grassland, savanna
         vegNote: The annual non-native grasses A. barbata, A. fatua, B. hordeaceus and L. multiflorum dominate the site. Non-native forbs (G. dissectum, E. botrys and C. vesicaria) and native annual forbs (H. congesta and E. brachycarpum) also are present. Perennials constitute a low fraction of the biomass, with native grasses (D. californica and N. pulchra) often the most abundant perennials

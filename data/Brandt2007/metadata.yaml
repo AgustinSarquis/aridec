@@ -4,7 +4,7 @@ entryAuthor: Agustín Sarquis # First and last name of the person who entered th
 entryCreationDate: 2020-01-20 # Date when the data was entered in this file. Format: YYYY-MM-DD
 contactName: Agustín Sarquis # First and last name of contact person (may be the principal investigator supervising the entryAuthor)
 contactEmail: agusarquis@agro.uba.ar # Email of the contact person
-entryNote: They measured cellullose and hemicellulose but reported it as holocellulose. They say soils are Ustollic camborthids but don't specify the classification system
+entryNote: They measured cellullose and hemicellulose but reported it as holocellulose. They say soils are Ustollic camborthids but don't specify the classification system. Rainy seasons are spring and summer
 study: They examined the effect of altered levels of UV radiation and different amounts of precipitation on the decomposition rates of litter of contrasting C:N in a 3-year field experiment in a shortgrass steppe
 
 siteInfo:
@@ -16,9 +16,7 @@ siteInfo:
         country: USA # Name of country where site was conducted
         MAT: 9.26 # Mean annual temperature in degrees Celsius
         MAP: 321 # Mean annual precipitation in mm
-        rainySeason:
-          - spring
-          - summer # Period of the year during which most precipitation occurs, i.e.: whole year, spring, summer, autumn, winter (if more than one use array format)
+        rainySeason: # Period of the year during which most precipitation occurs, i.e.: whole year, spring, summer, autumn, winter (if more than one use array format)
         elevation: 1647 # Elevation of study site in meters above sea level
         landCover: steppe
         vegNote: The dominant plant species is Bouteloua gracilis. Other common species are Stipa comata and Aristida longiseta

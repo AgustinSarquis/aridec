@@ -4,7 +4,7 @@ entryAuthor: Ignacio Siebenhart # First and last name of the person who entered 
 entryCreationDate: 2019-05-24
 contactName: Agustín Sarquis # First and last name of contact person (may be the principal investigator supervising the entryAuthor)
 contactEmail: agusarquis@agro.uba.ar # Email of the contact person
-entryNote: # Any notes or comments related to this entry.
+entryNote: Rainy seasons are autumn and spring
 study: They used a fully factorial experiment to asses the efect of UV radiation, position, and litter quality # Overall study description
 
 siteInfo:
@@ -26,10 +26,6 @@ siteInfo:
          - 362
          - 248
         rainySeason:
-           - spring
-           - autumn
-           - spring
-           - autumn
         elevation:
           - 590
           - 397

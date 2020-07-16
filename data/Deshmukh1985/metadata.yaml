@@ -4,7 +4,7 @@ entryAuthor: Ignacio Siebenhart # First and last name of the person who entered 
 entryCreationDate: 2020-01-20 # Date when the data was entered in this file. Format: YYYY-MM-DD
 contactName: Agustín Sarquis # First and last name of contact person (may be the principal investigator supervising the entryAuthor)
 contactEmail: agusarquis@agro.uba.ar # Email of the contact person
-entryNote: soils are Vertisols but they don't specify the classification system. Andropogon gayanus and Ischaemum afrum names were corrected
+entryNote: soils are Vertisols but they don't specify the classification system. Andropogon gayanus and Ischaemum afrum names were corrected. Rainy seasons are autumn and spring
 study: They evaluate decomposition rates of standing dead grass and grass litter at a grassland
 
 siteInfo:
@@ -17,8 +17,6 @@ siteInfo:
         MAT: 19.6 # Mean annual temperature in degrees Celsius
         MAP: 850 # Mean annual precipitation in mm
         rainySeason:
-          - autumn
-          - spring
         elevation: 1600 # Elevation of study site in meters above sea level
         landCover: savanna
         vegNote: Grasses formed 76% of the mass of herbaceous vegetation, with Themeda triandra being the most abundant by far. There were also scattered Acacia drepanolobium bushes.

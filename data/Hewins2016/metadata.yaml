@@ -4,7 +4,7 @@ entryAuthor: Agustín Sarquis # First and last name of the person who entered th
 entryCreationDate: 2019-07-22 # Date when the data was entered in this file. Format: YYYY-MM-DD
 contactName: Agustín Sarquis # First and last name of contact person (may be the principal investigator supervising the entryAuthor)
 contactEmail: agusarquis@agro.uba.ar # Email of the contact person
-entryNote: soils at midpoint and eastern sites have a mix of soil types (not shown). They used cilindrical litter cages
+entryNote: soils at midpoint and eastern sites have a mix of soil types (not shown). They used cilindrical litter cages. Rainy seasons are spring and summer
 study: placement of litter on either up or downwind sides of dunes combined with dune volume effect on litter decomposition
 
 siteInfo:
@@ -34,13 +34,7 @@ siteInfo:
           - 245
           - 245
           - 245 # Mean annual precipitation in mm
-        rainySeason:
-          - spring
-          - summer
-          - spring
-          - summer
-          - spring
-          - summer # Period of the year during which most precipitation occurs, i.e.: whole year, spring, summer, autumn, winter (if more than one use array format)
+        rainySeason: # Period of the year during which most precipitation occurs, i.e.: whole year, spring, summer, autumn, winter (if more than one use array format)
         elevation:
           - 1325
           - 1325
@@ -71,7 +65,7 @@ siteInfo:
             - Typic # Soil family description (ex. 'Eutric' for a Eutric Cambisol)
           soilSeries:
             -
-            - 
+            -
             - Pajarito # Soil series according to the classification system described below
           classificationSystem: USDA
 

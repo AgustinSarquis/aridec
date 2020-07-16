@@ -4,7 +4,7 @@ entryAuthor: Agustín Sarquis # First and last name of the person who entered th
 entryCreationDate: 2018-12-11 # Date when the data was entered in this file. Format: YYYY-MM-DD
 contactName: Agustín Sarquis # First and last name of contact person (may be the principal investigator supervising the entryAuthor)
 contactEmail: agusarquis@agro.uba.ar # Email of the contact person
-entryNote: # Any notes or comments related to this entry.
+entryNote: Rainy seasons are autumn and winter
 study: One experiment with a light attenuation treatment plus a biocide treatment, and another one with labile C and N addition
 
 siteInfo:
@@ -17,8 +17,6 @@ siteInfo:
         MAT: 8
         MAP: 155
         rainySeason:
-         - autumn
-         - winter
         elevation: 500
         landCover: steppe
         vegNote: cover is discontinuous, dominant grass species is Stipa speciosa and dominant shrub species, Mulinum spinosum

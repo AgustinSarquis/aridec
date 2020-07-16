@@ -4,7 +4,7 @@ entryAuthor: Agustín Sarquis
 entryCreationDate: 2018-12-11
 contactName: Agustín Sarquis
 contactEmail: agusarquis@agro.uba.ar
-entryNote: # Any notes or comments related to this entry.
+entryNote: Rainy seasons are autumn and winter
 study: They measured litter decomposition with a nitrification inhibition treatment
 
 siteInfo:
@@ -17,8 +17,6 @@ siteInfo:
         MAT: 8
         MAP: 155
         rainySeason:
-          - autumn
-          - winter
         elevation: 500
         landCover: steppe
         vegNote: cover is discontinuous, dominant grass species is Stipa speciosa and dominant shrub species, Mulinum spinosum.

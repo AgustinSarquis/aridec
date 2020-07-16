@@ -4,7 +4,7 @@ entryAuthor: Agustín Sarquis # First and last name of the person who entered th
 entryCreationDate: 2019-01-23
 contactName: Agustín Sarquis # First and last name of contact person (may be the principal investigator supervising the entryAuthor)
 contactEmail: agusarquis@agro.uba.ar # Email of the contact person
-entryNote: # Any notes or comments related to this entry.
+entryNote: Rainy seasons are autumn and winter
 study: One experiment of macro and mesofauna exclusion and another one with fungicide application
 
 siteInfo:
@@ -17,8 +17,6 @@ siteInfo:
         MAT: 8 # Mean annual temperature in degrees Celsius
         MAP: 170 # Mean annual precipitation in mm
         rainySeason:
-          - autumn
-          - winter
         elevation: 500 # Elevation of study site in meters above sea level
         landCover: steppe
         vegNote: dominant grasses are Stipa speciosa, Stipa humilis and Poa ligularis, and in lesser proportion Bromus pictus and B. setifolius. The dominant shrubs are Mulinum spinosum, Adesmia volckmannii and Senecio filiginoides

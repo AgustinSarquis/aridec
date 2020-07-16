@@ -4,7 +4,7 @@ entryAuthor: Agustín Sarquis # First and last name of the person who entered th
 entryCreationDate: 2019-12-03 # Date when the data was entered in this file. Format: YYYY-MM-DD
 contactName: Agustín Sarquis # First and last name of contact person (may be the principal investigator supervising the entryAuthor)
 contactEmail: agusarquis@agro.uba.ar # Email of the contact person
-entryNote: they also use paper and basswood as decomposition substrates (not included)
+entryNote: they also use paper and basswood as decomposition substrates (not included). Rainy seasons are summer and winter
 study: They incubated P. glandulosa leaflets previously irradiated with UV buried under three precipitation treatments
 
 siteInfo:
@@ -16,9 +16,7 @@ siteInfo:
         country: USA # Name of country where site was conducted
         MAT: 12.7 # Mean annual temperature in degrees Celsius
         MAP: 362.7 # Mean annual precipitation in mm
-        rainySeason:
-            - summer
-            - winter # Period of the year during which most precipitation occurs, i.e.: whole year, spring, summer, autumn, winter (if more than one use array format)
+        rainySeason: # Period of the year during which most precipitation occurs, i.e.: whole year, spring, summer, autumn, winter (if more than one use array format)
         elevation: 1858 # Elevation of study site in meters above sea level
         landCover: forest # Land cover of the site. Valid fields are: greenbelt, (abbandoned) farmland, mangrove forest, subalpine, shrubland, urban, sandland, forest, steppe, desert, grassland, savanna
         vegNote: mixture of Pinus edulis (piñon pine) and Juniperus monosperma (one seed juniper)

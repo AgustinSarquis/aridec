@@ -4,7 +4,7 @@ entryAuthor: Ignacio Siebenhart # First and last name of the person who entered 
 entryCreationDate: 2019-05-17
 contactName: Agustín Sarquis # First and last name of contact person (may be the principal investigator supervising the entryAuthor)
 contactEmail: agusarquis@agro.uba.ar # Email of the contact person
-entryNote: Coordinates on the paper are wrong. We retrieved the correct ones from Google Earth # Any notes or comments related to this entry.
+entryNote: Coordinates on the paper are wrong. We retrieved the correct ones from Google Earth. Rainy seasons are autumn and spring
 study: They used a factorial experiment to evaluate climate change impacts (warming and rainfall reduction treatments) on litter decomposition and the interaction with photodegration (UV block and UV pass treatments) # Overall study description
 
 siteInfo:
@@ -17,8 +17,6 @@ siteInfo:
         MAT: 14.4 # Mean annual temperature in degrees Celsius
         MAP: 449 # Mean annual precipitation in mm
         rainySeason:
-          - autumn
-          - spring # Period of the year during which most precipitation occurs, i.e.: whole year, spring, summer, autumn, winter (if more than one use array format)
         elevation: 650 # Elevation of study site in meters above sea level
         landCover: grassland
         vegNote: # Additional details about land cover such as species or functional type composition

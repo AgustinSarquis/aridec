@@ -4,7 +4,7 @@ entryAuthor: Ignacio Siebenhart # First and last name of the person who entered 
 entryCreationDate: 2019-07-15 # Date when the data was entered in this file. Format: YYYY-MM-DD
 contactName: Agustín Sarquis # First and last name of contact person (may be the principal investigator supervising the entryAuthor)
 contactEmail: agusarquis@agro.uba.ar # Email of the contact person
-entryNote: # Any notes or comments related to this entry.
+entryNote: Rainy seasons are spring and summer
 study: They evaluate the effect of UV radiation and litter position on decomposition for eight different species
 
 siteInfo:
@@ -16,9 +16,7 @@ siteInfo:
         country: China # Name of country where site was conducted
         MAT: 6.2 # Mean annual temperature in degrees Celsius
         MAP: 369 # Mean annual precipitation in mm
-        rainySeason:
-          - spring
-          - summer # Period of the year during which most precipitation occurs, i.e.: whole year, spring, summer, autumn, winter (if more than one use array format)
+        rainySeason: # Period of the year during which most precipitation occurs, i.e.: whole year, spring, summer, autumn, winter (if more than one use array format)
         elevation: 1290 # Elevation of study site in meters above sea level
         landCover: steppe # Land cover of the site. Valid fields are: greenbelt, (abbandoned) farmland, mangrove forest, subalpine, shrubland, urban, sandland, forest, steppe, desert, grassland, savanna
         vegNote: mobile, semi-fixed and fixed inland dunes, where vegetation comprises perennial shrubs (dominated by Artemisia ordosica, Hedysarum mongolicum, Salix psammophila, Caragana korshinskii) and annual herbs (dominated by Agriophyllum pungens, Corispermum chinganicum)
