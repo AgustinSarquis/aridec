@@ -1,138 +1,112 @@
-CitationKey: Ilangovan1996
-doi:
-EntryAuthor: Agustín Sarquis
+citationKey: Ilangovan1996 # Unique identifier in the format: LastnameYear (lowercase letters must be added when there are two or more entries by the same author and year, i.e.: LastnameYearx)
+doi:  # DOI of the publication where data is published
+entryAuthor: Agustín Sarquis # First and last name of the person who entered the data in this file
+entryCreationDate: 2020-02-13 # Date when the data was entered in this file. Format: YYYY-MM-DD
+contactName: Agustín Sarquis # First and last name of contact person (may be the principal investigator supervising the entryAuthor)
+contactEmail: agusarquis@agro.uba.ar # Email of the contact person
+entryNote: # Any notes or comments related to this entry.
+study: L. leucocephala and C. citratus litter for a year at a L. leucocephala plantation and a grazing land, respectively
 
-SiteInfo:
-  Name: Madurai, Tamil Nadu, India
-  EcosystemType:
-   - plantation
-   - grassland
-  MAP:
-    Value: 575
-    Units: mm
-  MAT:
-    Value: 27.34
-    Units: Celsius
-  RainySeason: autumn
-  Altitude:
-    Value: 132.5
-    Units: masl
-  SoilType:
-    - Laterite loamy sand
-    - Sandy loam
-  Coordinates:
-    Latitude: 9.917
-    Longitude: 78.167
+siteInfo:
+        site:
+          - Madurai plantation
+          - Madurai grassland # Names of individual sites, if one site, keep on this line, if multiple, use array format
+              # These fields should be arrays of equal length to site array
+        coordinates:
+          latitude:
+            - 9.917
+            - 9.917 # Latitude in decimal units (check for negative that denotes southern hemisphere)
+          longitude:
+            - 78.167
+            - 78.167 # Longitude in decimal units (check for negative that denotes western hemisphere)
+        country:
+          - India
+          - India # Name of country where site was conducted
+        MAT:
+          - 27.34
+          - 27.34 # Mean annual temperature in degrees Celsius
+        MAP:
+          - 575
+          - 575 # Mean annual precipitation in mm
+        rainySeason:
+          - autumn
+          - autumn # Period of the year during which most precipitation occurs, i.e.: whole year, spring, summer, autumn, winter (if more than one use array format)
+        elevation:
+          - 132.5
+          - 132.5 # Elevation of study site in meters above sea level
+        landCover:
+          - farmland
+          - grassland # Land cover of the site. Valid fields are: greenbelt, (abbandoned) farmland, mangrove forest, subalpine, shrubland, urban, sandland, forest, steppe, desert, grassland, savanna
+        vegNote:
+          - L. leucocephala plantation with no other vegetation strata
+          - Grazing land comprised of grasses and only scattered trees. Cymbopogon citratus and Heteropogon contortus are the dominant grasses. Other species are Aristida adscensionis, Chrysopogon fulvus, Crotalaria angulata, Indigofera aspalathoides and Tephrosia purpurea. Woody species are Azadirachta indica and Hardwickia binata.
+        cover:
+          plantCover: # Total plant cover percentage (if they report cover by specific plant types, fill the fields below)
+          bunchgrassCover:
+          shrubCover:
+          treeCover:
+          forbCover:
+          bareSoil:
+        soilTaxonomy:
+          soilOrder: # Soil order according to the classification system described below
+          soilFamily: # Soil family description (ex. 'Eutric' for a Eutric Cambisol)
+          soilSeries: # Soil series according to the classification system described below
+          classificationSystem: # Name of classification system used. Valid fields are: USDA, FAO, and WRB.
 
-ExperimentInfo:
- LitterInfo:
-  LitterType1:
-   Species: Leucaena leucocephala
-   LifeForm: tree
-   Material: recently senesced leaves
-   Carbon:
-     Value: 64.491
-     Units: percentage
-   Nitrogen:
-     Value: 2.592
-     Units: percentage
-   Phosphorus:
-     Value: 0.112
-     Units: percentage
-   Potassium:
-     Value: 0.298
-     Units: percentage
-   Sodium:
-     Value: 0.116
-     Units: percentage
-   Magnesium:
-     Value: 0.638
-     Units: percentage
-   Manganese:
-     Value: 0.0034
-     Units: percentage
-   Copper:
-     Value: 0.0018
-     Units: percentage
-   Zinc:
-     Value: 0.2080
-     Units: percentage
-   Lead:
-     Value: 0.0024
-     Units: percentage
-   Amount:
-     Value: 10
-     Units: g
-  LitterType2:
-   Species: Cymbopogon citratus
-   LifeForm: graminoid
-   Material: aboveground parts
-   Carbon:
-     Value: 59.192
-     Units: percentage
-   Nitrogen:
-     Value: 1.114
-     Units: percentage
-   Phosphorus:
-     Value: 0.069
-     Units: percentage
-   Potassium:
-     Value: 1.004
-     Units: percentage
-   Sodium:
-     Value: 0.142
-     Units: percentage
-   Magnesium:
-     Value: 0.176
-     Units: percentage
-   Manganese:
-     Value: 0.0008
-     Units: percentage
-   Copper:
-     Value: 0.0014
-     Units: percentage
-   Zinc:
-     Value: 0.0584
-     Units: percentage
-   Lead:
-     Value: 0.0040
-     Units: percentage
-   Amount:
-     Value: 10
-     Units: g
- Experiment1:
-  Description: "Incubation of L. leucocephala and C. citratus litter for a year at a L. leucocephala plantation and a grazing land, respectively"
-  LitterBagInfo:
-   Material: nylon
-   MeshSize:
-    Value: 1
-    Units: mm
-   Dimentions:
-    Width: 20
-    Lenght: 20
-    Units: cm
-   Position: bare soil
-  Treatment: litter type
-  StartingDate:
-   Month: april
-   Season: spring
-  Duration:
-   Time: 12
-   Units: months
+experimentInfo:
+        incDesc: 2 species x 2 sites (but 1 species x site) x 10 replicates x 18 collections # Short description of the incubation setup and main treatments
+        # These fields should all be one dimensional arrays. Values for experimental variables with multiple treatment levels should be entered in the variables section and left blank here
+        replicates: 10 # Number of replicates per treatment
+        duration: 365 # length of incubation in days
+        startingMonth: april # month during which the study started, all in lower case
+        litter: # plant species used as litter material for the experiment. All details related to the species must be specified in the initConditions.csv file
+        litterbag:
+          material: nylon # mesh type used to construct the litter bags, options are: wire, aluminum, window screening, net curtain, bolting cloth, plastic, fiberglass, nylon, polypropylene, polyester, polyethylene, polyamide
+          meshSize: 1 # mesh size in mm referring to one side of the net-square
+          dimentions: # size of the full litter bag in cm
+            width: 20
+            length: 20
+            radius: # for round or cilindrical structures
+            height: # for 3-dimensional designs such as litter boxes in Austin2006NATURE
+          transmitance: # when reported, light transmitance of the mesh material as a percentage of full sunlight for each wavelength
+            total:
+            PAR:
+            UV:
+            UVA:
+            UVB:
+          position: bare soil
 
-Variables:
-  V1:
-    Name: Time
-    Units: months
-  V2:
-    Name: Ll
-    Units: mass remainingg
-    Description: "L. leucocephala leaf litter incubated at a L. leucocephala plantation for a year"
-    LitterType: LitterType1
-    EcosystemType: plantation
-  V3:
-    Name: Cc
-    Units: mass remaining
-    Description: "C. citratus standing dead litter incubated for a year at a grazing land"
-    LitterType: LitterType2
-    EcosystemType: grassland 
+variables: # These describe the columns of your timeSeries.csv file
+        V1: # column 1
+          name: Time
+          units: months
+        V2:
+          name: Ll
+          units: mass remaining
+          varDesc: L. leucocephala leaf litter incubated at a L. leucocephala plantation for a year
+          site: Madurai plantation
+          litter: Leucaena leucocephala
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V3:
+          name: Cc
+          units: mass remaining
+          varDesc: C. citratus standing dead litter incubated for a year at a grazing land
+          site: Madurai grassland
+          litter: Cymbopogon citratus
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
