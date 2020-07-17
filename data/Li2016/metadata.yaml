@@ -1,410 +1,386 @@
-CitationKey: Li2016
-doi: 10.1371/journal.pone.0162663
-EntryAuthor: Agustín Sarquis
+citationKey: Li2016 # Unique identifier in the format: LastnameYear (lowercase letters must be added when there are two or more entries by the same author and year, i.e.: LastnameYearx)
+doi: 10.1371/journal.pone.0162663 # DOI of the publication where data is published
+entryAuthor: Agustín Sarquis # First and last name of the person who entered the data in this file
+entryCreationDate: 2019-07-17 # Date when the data was entered in this file. Format: YYYY-MM-DD
+contactName: Agustín Sarquis # First and last name of contact person (may be the principal investigator supervising the entryAuthor)
+contactEmail: agusarquis@agro.uba.ar # Email of the contact person
+entryNote: rainy seasons are spring and summer
+study: Leaf and root litter from three species incubated on the ground and buried, respectively, for 3.5 years with a combination of water and N addition treatments
 
-SiteInfo:
-  Name: Horqin Sand Land, Inner Mongolia, China
-  EcosystemType: sandland
-  MAP:
-    Value: 362
-    Units: mm
-  MAT:
-    Value: 6.4
-    Units: Celsius
-  RainySeason:
-    - spring
-    - summer
-  Altitude:
-    Value: 350
-    Units: masl
-  SoilTexture: coarse
-  Coordinates:
-    Latitude: 42.917
-    Longitude: 120.683
+siteInfo:
+        site: Horqin # Names of individual sites, if one site, keep on this line, if multiple, use array format
+              # These fields should be arrays of equal length to site array
+        coordinates:
+          latitude: 42.917 # Latitude in decimal units (check for negative that denotes southern hemisphere)
+          longitude: 120.683 # Longitude in decimal units (check for negative that denotes western hemisphere)
+        country: China # Name of country where site was conducted
+        MAT: 6.4 # Mean annual temperature in degrees Celsius
+        MAP: 362 # Mean annual precipitation in mm
+        rainySeason: # Period of the year during which most precipitation occurs, i.e.: whole year, spring, summer, autumn, winter (if more than one use array format)
+        elevation: 350 # Elevation of study site in meters above sea level
+        landCover: sandland
+        vegNote: The vegetation is a shrubland of Artemisia halondendron with scattered trees and windbreak tree belts of Populus spp. The dominant plant species include A. halodendron, C. microphylla, A. scoparia, S. viridis, and P. australis.
+        cover:
+          plantCover: # Total plant cover percentage (if they report cover by specific plant types, fill the fields below)
+          bunchgrassCover:
+          shrubCover:
+          treeCover:
+          forbCover:
+          bareSoil:
+        soilTaxonomy:
+          soilOrder: # Soil order according to the classification system described below
+          soilFamily: # Soil family description (ex. 'Eutric' for a Eutric Cambisol)
+          soilSeries: # Soil series according to the classification system described below
+          classificationSystem: # Name of classification system used. Valid fields are: USDA, FAO, and WRB.
 
-ExperimentInfo:
- LitterInfo:
-  LitterType1:
-   Species: Artemisia halodendron
-   LifeForm: shrub
-   Material: fine roots
-   Carbon:
-     Value: 49.2
-     Units: percentage
-   Nitrogen:
-     Value: 0.6
-     Units: percentage
-   Lignin:
-     Value: 17.3
-     Units: percentage
-   Phosphorus:
-     Value: 0.19
-     Units: percentage
-   C:N:
-     Value: 89
-   Lignin:N:
-     Value: 31
-   Amount:
-     Value: 5
-     Units: g
-  LitterType2:
-   Species: Artemisia halodendron
-   LifeForm: shrub
-   Material: recently senesced leaves
-   Carbon:
-     Value: 44.6
-     Units: percentage
-   Nitrogen:
-     Value: 1.83
-     Units: percentage
-   Lignin:
-     Value: 6.3
-     Units: percentage
-   Phosphorus:
-     Value: 0.31
-     Units: percentage
-   C:N:
-     Value: 25
-   Lignin:N:
-     Value: 3
-   Amount:
-     Value: 5
-     Units: g
-  LitterType3:
-   Species: Setaria viridis
-   LifeForm: graminoid
-   Material: fine roots
-   Carbon:
-     Value: 47.3
-     Units: percentage
-   Nitrogen:
-     Value: 1.15
-     Units: percentage
-   Lignin:
-     Value: 11.4
-     Units: percentage
-   Phosphorus:
-     Value: 0.09
-     Units: percentage
-   C:N:
-     Value: 39
-   Lignin:N:
-     Value: 10
-   Amount:
-     Value: 5
-     Units: g
-  LitterType4:
-   Species: Setaria viridis
-   LifeForm: graminoid
-   Material: recently senesced leaves
-   Carbon:
-     Value: 42.3
-     Units: percentage
-   Nitrogen:
-     Value: 1.24
-     Units: percentage
-   Lignin:
-     Value: 10.5
-     Units: percentage
-   Phosphorus:
-     Value: 0.16
-     Units: percentage
-   C:N:
-     Value: 34
-   Lignin:N:
-     Value: 8
-   Amount:
-     Value: 5
-     Units: g
-  LitterType5:
-   Species: Phragmites communis
-   LifeForm: graminoid
-   Material: fine roots
-   Carbon:
-     Value: 41.4
-     Units: percentage
-   Nitrogen:
-     Value: 0.72
-     Units: percentage
-   Lignin:
-     Value: 12.6
-     Units: percentage
-   Phosphorus:
-     Value: 0.12
-     Units: percentage
-   C:N:
-     Value: 58
-   Lignin:N:
-     Value: 18
-   Amount:
-     Value: 5
-     Units: g
-  LitterType6:
-   Species: Phragmites communis
-   LifeForm: graminoid
-   Material: recently senesced leaves
-   Carbon:
-     Value: 39.6
-     Units: percentage
-   Nitrogen:
-     Value: 0.96
-     Units: percentage
-   Lignin:
-     Value: 15.7
-     Units: percentage
-   Phosphorus:
-     Value: 0.17
-     Units: percentage
-   C:N:
-     Value: 42
-   Lignin:N:
-     Value: 17
-   Amount:
-     Value: 5
-     Units: g
- Experiment1:
-    Description: "Leaf and root litter from three species was incubated on the ground and buried, respectively, for 3,5 years with a combination of water and N addition treatments"
-    LitterBagInfo:
-      Material: nylon
-      MeshSize:
-       MeshSize1: 0.1
-       MeshSize2: 1
-       Units: mm
-      Dimentions:
-       Width: 10
-       Lenght: 15
-       Units: cm
-      Position:
-        Position1: vegetated soil
-        Position2: buried 10 cm deep
-    Treatment:
-      - inorganic N addition
-      - litter type
-      - water addition
-    StartingDate:
-      Month: april
-      Season: spring
-    Duration:
-      Time: 43
-      Units: months
+experimentInfo:
+        incDesc: 2 N additions levels x 2 water additions levels × 5 replicates x 2 plant materials × 10 harvests
+        # These fields should all be one dimensional arrays. Values for experimental variables with multiple treatment levels should be entered in the variables section and left blank here
+        replicates: 5 # Number of replicates per treatment
+        duration: 1290 # length of incubation in days
+        startingMonth: april # month during which the study started, all in lower case
+        litter: # plant species used as litter material for the experiment. All details related to the species must be specified in the initConditions.csv file
+        litterbag:
+          material: nylon # mesh type used to construct the litter bags, options are: wire, aluminum, window screening, net curtain, bolting cloth, plastic, fiberglass, nylon, polypropylene, polyester, polyethylene, polyamide
+          meshSize: # mesh size in mm referring to one side of the net-square
+          dimentions: # size of the full litter bag in cm
+            width: 10
+            length: 15
+            radius: # for round or cilindrical structures
+            height: # for 3-dimensional designs such as litter boxes in Austin2006NATURE
+          transmitance: # when reported, light transmitance of the mesh material as a percentage of full sunlight for each wavelength
+            total:
+            PAR:
+            UV:
+            UVA:
+            UVB:
+          position: # position of litterbags in the field, valid options are: bare soil, decomposition bed, under litter, over litter, over lawn, next to grass, under tree/shrub/grass, buried X cm deep, underwater, under rainout shelter, under frame, suspended X cm, under shadecloth
 
-Variables:
-  V1:
-    Name: Time
-    Units: months
-  V2:
-    Name: ArCK
-    Units: mass remaining
-    Description: "Buried A. halodendron fine roots mass remaining without N or water addition"
-    LitterType: LitterType1
-    Position: Position1
-    MeshSize: MeshSize1
-    NitrogenAddition: No
-    WaterAddition: No
-  V3:
-    Name: ArW
-    Units: mass remaining
-    Description: "Buried A. halodendron fine roots mass remaining with only water addition"
-    LitterType: LitterType1
-    Position: Position1
-    MeshSize: MeshSize1
-    NitrogenAddition: No
-    WaterAddition: Yes
-  V4:
-    Name: ArN
-    Units: mass remaining
-    Description: "Buried A. halodendron fine roots mass remaining with only N addition"
-    LitterType: LitterType1
-    Position: Position1
-    MeshSize: MeshSize1
-    NitrogenAddition: Yes
-    WaterAddition: No
-  V5:
-    Name: ArNW
-    Units: mass remaining
-    Description: "Buried A. halodendron fine roots mass remaining with N and water addition"
-    LitterType: LitterType1
-    Position: Position1
-    MeshSize: MeshSize1
-    NitrogenAddition: Yes
-    WaterAddition: Yes
-  V6:
-    Name: AlCK
-    Units: mass remaining
-    Description: "A. halodendron leaf mass remaining without N or water addition"
-    LitterType: LitterType2
-    Position: Position2
-    MeshSize: MeshSize2
-    NitrogenAddition: No
-    WaterAddition: No
-  V7:
-    Name: AlW
-    Units: mass remaining
-    Description: "A. halodendron leaf mass remaining with only water addition"
-    LitterType: LitterType2
-    Position: Position2
-    MeshSize: MeshSize2
-    NitrogenAddition: No
-    WaterAddition: Yes
-  V8:
-    Name: AlN
-    Units: mass remaining
-    Description: "A. halodendron leaf mass remaining with only N addition"
-    LitterType: LitterType2
-    Position: Position2
-    MeshSize: MeshSize2
-    NitrogenAddition: Yes
-    WaterAddition: No
-  V9:
-    Name: AlNW
-    Units: mass remaining
-    Description: "A. halodendron leaf mass remaining with N and water addition"
-    LitterType: LitterType2
-    Position: Position2
-    MeshSize: MeshSize2
-    NitrogenAddition: Yes
-    WaterAddition: Yes
-  V10:
-    Name: SrCK
-    Units: mass remaining
-    Description: "Buried S. viridis fine roots mass remaining without N or water addition"
-    LitterType: LitterType3
-    Position: Position1
-    MeshSize: MeshSize1
-    NitrogenAddition: No
-    WaterAddition: No
-  V11:
-    Name: SrW
-    Units: mass remaining
-    Description: "Buried S. viridis fine roots mass remaining with only water addition"
-    LitterType: LitterType3
-    Position: Position1
-    MeshSize: MeshSize1
-    NitrogenAddition: No
-    WaterAddition: Yes
-  V12:
-    Name: SrN
-    Units: mass remaining
-    Description: "Buried S. viridis fine roots mass remaining with only N addition"
-    LitterType: LitterType3
-    Position: Position1
-    MeshSize: MeshSize1
-    NitrogenAddition: Yes
-    WaterAddition: No
-  V13:
-    Name: SrNW
-    Units: mass remaining
-    Description: "Buried S. viridis fine roots mass remaining with N and water addition"
-    LitterType: LitterType3
-    Position: Position1
-    MeshSize: MeshSize1
-    NitrogenAddition: Yes
-    WaterAddition: Yes
-  V14:
-    Name: SlCK
-    Units: mass remaining
-    Description: "S. viridis leaf mass remaining without N or water addition"
-    LitterType: LitterType4
-    Position: Position2
-    MeshSize: MeshSize2
-    NitrogenAddition: No
-    WaterAddition: No
-  V15:
-    Name: SlW
-    Units: mass remaining
-    Description: "S. viridis leaf mass remaining with only water addition"
-    LitterType: LitterType4
-    Position: Position2
-    MeshSize: MeshSize2
-    NitrogenAddition: No
-    WaterAddition: Yes
-  V16:
-    Name: SlN
-    Units: mass remaining
-    Description: "S. viridis leaf mass remaining with only N addition"
-    LitterType: LitterType4
-    Position: Position2
-    MeshSize: MeshSize2
-    NitrogenAddition: Yes
-    WaterAddition: No
-  V17:
-    Name: SlNW
-    Units: mass remaining
-    Description: "S. viridis leaf mass remaining with N and water addition"
-    LitterType: LitterType4
-    Position: Position2
-    MeshSize: MeshSize2
-    NitrogenAddition: Yes
-    WaterAddition: Yes
-  V18:
-    Name: PrCK
-    Units: mass remaining
-    Description: "Buried P. communis fine roots mass remaining without N or water addition"
-    LitterType: LitterType5
-    Position: Position1
-    MeshSize: MeshSize1
-    NitrogenAddition: No
-    WaterAddition: No
-  V19:
-    Name: PrW
-    Units: mass remaining
-    Description: "Buried P. communis fine roots mass remaining with only water addition"
-    LitterType: LitterType5
-    Position: Position1
-    MeshSize: MeshSize1
-    NitrogenAddition: No
-    WaterAddition: Yes
-  V20:
-    Name: PrN
-    Units: mass remaining
-    Description: "Buried P. communis fine roots mass remaining with only N addition"
-    LitterType: LitterType5
-    Position: Position1
-    MeshSize: MeshSize1
-    NitrogenAddition: Yes
-    WaterAddition: No
-  V21:
-    Name: PrNW
-    Units: mass remaining
-    Description: "Buried P. communis fine roots mass remaining with N and water addition"
-    LitterType: LitterType5
-    Position: Position1
-    MeshSize: MeshSize1
-    NitrogenAddition: Yes
-    WaterAddition: Yes
-  V22:
-    Name: PlCK
-    Units: mass remaining
-    Description: "P. communis leaf mass remaining without N or water addition"
-    LitterType: LitterType6
-    Position: Position2
-    MeshSize: MeshSize2
-    NitrogenAddition: No
-    WaterAddition: No
-  V23:
-    Name: PlW
-    Units: mass remaining
-    Description: "P. communis leaf mass remaining with only water addition"
-    LitterType: LitterType6
-    Position: Position2
-    MeshSize: MeshSize2
-    NitrogenAddition: No
-    WaterAddition: Yes
-  V24:
-    Name: PlN
-    Units: mass remaining
-    Description: "P. communis leaf mass remaining with only N addition"
-    LitterType: LitterType6
-    Position: Position2
-    MeshSize: MeshSize2
-    NitrogenAddition: Yes
-    WaterAddition: No
-  V25:
-    Name: PlNW
-    Units: mass remaining
-    Description: "P. communis leaf mass remaining with N and water addition"
-    LitterType: LitterType6
-    Position: Position2
-    MeshSize: MeshSize2
-    NitrogenAddition: Yes
-    WaterAddition: Yes
+variables: # These describe the columns of your timeSeries.csv file
+        V1: # column 1
+          name: Time
+          units: months
+        V2:
+          name: ArCK
+          units: mass remaining
+          varDesc: Buried A. halodendron fine roots without N or water addition
+          site: Horqin
+          litter: Artemisia halodendron1
+          meshSize: 0.1
+          position: buried 10 cm deep
+          compTreat: control
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V3:
+          name: ArW
+          units: mass remaining
+          varDesc: Buried A. halodendron fine roots with only water addition
+          site: Horqin
+          litter: Artemisia halodendron1
+          meshSize: 0.1
+          position: buried 10 cm deep
+          compTreat: water addition
+          filter: # for photodegradation experiments only
+        V4:
+          name: ArN
+          units: mass remaining
+          varDesc: Buried A. halodendron fine roots with only N addition
+          site: Horqin
+          litter: Artemisia halodendron1
+          meshSize: 0.1
+          position: buried 10 cm deep
+          compTreat: N addition
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V5:
+          name: ArNW
+          units: mass remaining
+          varDesc: Buried A. halodendron fine roots with N and water addition
+          site: Horqin
+          litter: Artemisia halodendron1
+          meshSize: 0.1
+          position: buried 10 cm deep
+          compTreat: N and water addition
+          filter: # for photodegradation experiments only
+        V6:
+          name: AlCK
+          units: mass remaining
+          varDesc: A. halodendron leaves without N or water addition
+          site: Horqin
+          litter: Artemisia halodendron2
+          meshSize: 1
+          position: bare soil
+          compTreat: control
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V7:
+          name: AlW
+          units: mass remaining
+          varDesc: A. halodendron leaves with only water addition
+          site: Horqin
+          litter: Artemisia halodendron2
+          meshSize: 1
+          position: bare soil
+          compTreat: water addition
+          filter: # for photodegradation experiments only
+        V8:
+          name: AlN
+          units: mass remaining
+          varDesc: A. halodendron leaves with only N addition
+          site: Horqin
+          litter: Artemisia halodendron2
+          meshSize: 1
+          position: bare soil
+          compTreat: N addition
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V9:
+          name: AlNW
+          units: mass remaining
+          varDesc: A. halodendron leaves with N and water addition
+          site: Horqin
+          litter: Artemisia halodendron2
+          meshSize: 1
+          position: bare soil
+          compTreat: N and water addition
+          filter: # for photodegradation experiments only
+        V10:
+          name: SrCK
+          units: mass remaining
+          varDesc: Buried S. viridis fine roots without N or water addition
+          site: Horqin
+          litter: Setaria viridis1
+          meshSize: 0.1
+          position: buried 10 cm deep
+          compTreat: control
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V11:
+          name: SrW
+          units: mass remaining
+          varDesc: Buried S. viridis fine roots with only water addition
+          site: Horqin
+          litter: Setaria viridis1
+          meshSize: 0.1
+          position: buried 10 cm deep
+          compTreat: water addition
+          filter: # for photodegradation experiments only
+        V12:
+          name: SrN
+          units: mass remaining
+          varDesc: Buried S. viridis fine roots with only N addition
+          site: Horqin
+          litter: Setaria viridis1
+          meshSize: 0.1
+          position: buried 10 cm deep
+          compTreat: N addition
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V13:
+          name: SrNW
+          units: mass remaining
+          varDesc: Buried S. viridis fine roots with N and water addition"
+          site: Horqin
+          litter: Setaria viridis1
+          meshSize: 0.1
+          position: buried 10 cm deep
+          compTreat: N and water addition
+          filter: # for photodegradation experiments only
+        V14:
+          name: SlCK
+          units: mass remaining
+          varDesc: S. viridis leaves without N or water addition
+          site: Horqin
+          litter: Setaria viridis2
+          meshSize: 1
+          position: bare soil
+          compTreat: control
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V15:
+          name: SlW
+          units: mass remaining
+          varDesc: S. viridis leaves with only water addition
+          site: Horqin
+          litter: Setaria viridis2
+          meshSize: 1
+          position: bare soil
+          compTreat: water addition
+          filter: # for photodegradation experiments only
+        V16:
+          name: SlN
+          units: mass remaining
+          varDesc: S. viridis leaves with only N addition
+          site: Horqin
+          litter: Setaria viridis2
+          meshSize: 1
+          position: bare soil
+          compTreat: N addition
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V17:
+          name: SlNW
+          units: mass remaining
+          varDesc: S. viridis leaves with N and water addition
+          site: Horqin
+          litter: Setaria viridis2
+          meshSize: 1
+          position: bare soil
+          compTreat: N and water additions
+          filter: # for photodegradation experiments only
+        V18:
+          name: PrCK
+          units: mass remaining
+          varDesc: Buried P. australis fine roots without N or water addition
+          site: Horqin
+          litter: Phragmites australis1
+          meshSize: 0.1
+          position: buried 10 cm deep
+          compTreat: control
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V19:
+          name: PrW
+          units: mass remaining
+          varDesc: Buried P. australis fine roots with only water addition
+          site: Horqin
+          litter: Phragmites australis1
+          meshSize: 0.1
+          position: buried 10 cm deep
+          compTreat: water addition
+          filter: # for photodegradation experiments only
+        V20:
+          name: PrN
+          units: mass remaining
+          varDesc: Buried P. australis fine roots with only N addition
+          site: Horqin
+          litter: Phragmites australis1
+          meshSize: 0.1
+          position: buried 10 cm deep
+          compTreat: N addition
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V21:
+          name: PrNW
+          units: mass remaining
+          varDesc: Buried P. australis fine roots with N and water addition
+          site: Horqin
+          litter: Phragmites australis1
+          meshSize: 0.1
+          position: buried 10 cm deep
+          compTreat: N and water addition
+          filter: # for photodegradation experiments only
+        V22:
+          name: PlCK
+          units: mass remaining
+          varDesc: P. australis leaves without N or water addition
+          site: Horqin
+          litter: Phragmites australis2
+          meshSize: 1
+          position: bare soil
+          compTreat: control
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V23:
+          name: PlW
+          units: mass remaining
+          varDesc: P. australis leaves with only water addition
+          site: Horqin
+          litter: Phragmites australis2
+          meshSize: 1
+          position: bare soil
+          compTreat: water addition
+          filter: # for photodegradation experiments only
+        V24:
+          name: PlN
+          units: mass remaining
+          varDesc: P. australis leaves with only N addition
+          site: Horqin
+          litter: Phragmites australis2
+          meshSize: 1
+          position: bare soil
+          compTreat: N addition
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V25:
+          name: PlNW
+          units: mass remaining
+          varDesc: P. australis leaves with N and water addition
+          site: Horqin
+          litter: Phragmites australis2
+          meshSize: 1
+          position: bare soil
+          compTreat: N and water addition
+          filter: # for photodegradation experiments only
