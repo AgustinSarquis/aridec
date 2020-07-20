@@ -1,0 +1,18 @@
+species, type, N-fixer, material, amount, carbon, nitrogen, C:N, phosphorus, potassium, sodium, magnesium, manganese, copper, zinc, lead, calcium, sulfur, iron, lignin, cellulose, hemicellulose, cell solubles, SLA
+Calligonum mongolicum, deciduous, no, leaves, 0.5, 48.5, 1.16, 41.83, 0.023,,,,,,,,,,, 39.06,,,, 8.44
+Tamarix chinensis, deciduous, no, leaves, 0.5, 46.7, 1.42, 32.83, 0.026,,,,,,,,,,, 52.95,,,, 10.789
+Phragmites communis, graminoid, no, leaves, 0.5, 53.8, 1.54, 34.83, 0.020,,,,,,,,,,, 47.42,,,, 11.68
+Aristida pennata, graminoid, no, leaves, 0.5, 56.7, 1.45, 39.18, 0.026,,,,,,,,,,, 52.59,,,, 20.93
+Echinops sphaerocephalus, forb, no, leaves, 0.5, 55.2, 1.14, 48.53, 0.035,,,,,,,,,,, 38.51,,,, 10.45
+Karelinia caspia, forb, no, leaves, 0.5, 55, 1.92, 28.62, 0.052,,,,,,,,,,, 60.68,,,, 14.82
+Mulgedium tataricum, forb, no, leaves, 0.5, 57.9, 1.21, 47.74, 0.048,,,,,,,,,,, 50.97,,,, 11.27
+Alhagi sparsifolia, deciduous, yes, leaves, 0.5, 56.2, 1.94, 29.03, 0.046,,,,,,,,,,, 41.14,,,, 9.88
+Ephedra distachya, evergreen, no, leaves, 0.5, 58.9, 1.65, 35.65, 0.073,,,,,,,,,,, 47.09,,,, 7.86
+Agriophyllum arenarium, forb, no, leaves, 0.5, 51.4, 1.06, 48.44, 0.017,,,,,,,,,,, 48.32,,,, 17.21
+Echinops gmelinii, forb, no, leaves, 0.5, 54.7, 2.23, 24.56, 0.063,,,,,,,,,,, 43.24,,,, 13.02
+Erodium oxyrhinchum, forb, no, leaves, 0.5, 53.3, 2.16, 24.73, 0.086,,,,,,,,,,, 51.29,,,, 11.64
+Euphorbia turczaninowii, forb, no, leaves, 0.5, 53.1, 1.64, 32.29, 0.052,,,,,,,,,,, 54.04,,,, 21.14
+Krascheninnikovia ceratoides, evergreen, no, leaves, 0.5, 44.7, 1.21, 37.07, 0.035,,,,,,,,,,, 55.24,,,, 20.07
+Cynanchum sibiricum, forb, no, leaves, 0.5, 56.2, 1.61, 34.85, 0.11,,,,,,,,,,, 53.62,,,, 20.66
+Peganum harmala, forb, no, leaves, 0.5, 44, 1.96, 22.44, 0.046,,,,,,,,,,,,,,, 17.66
+Nitraria sibirica, deciduous, no, leaves, 0.5, 47.1, 1.73, 27.60, 0.040,,,,,,,,,,, 61.28,,,, 17.25

@@ -1,772 +1,878 @@
-CitationKey: Liu2018
-doi: 10.1111/1365-2745.12868
-EntryAuthor: Agustín Sarquis
+citationKey: Liu2018 # Unique identifier in the format: LastnameYear (lowercase letters must be added when there are two or more entries by the same author and year, i.e.: LastnameYearx)
+doi: 10.1111/1365-2745.12868 # DOI of the publication where data is published
+entryAuthor: Agustín Sarquis # First and last name of the person who entered the data in this file
+entryCreationDate: 2019-04-17 # Date when the data was entered in this file. Format: YYYY-MM-DD
+contactName: Agustín Sarquis # First and last name of contact person (may be the principal investigator supervising the entryAuthor)
+contactEmail: agusarquis@agro.uba.ar # Email of the contact person
+entryNote: rainy seasons are spring and summer
+study: 17 desert species were incubated under strong solar exposure vs. shade conditions, or buried in the soil at 10 cm depth, for a whole year
 
-SiteInfo:
-  Name: Gurbantunggut desert, Xinjiang, China
-  EcosystemType: desert
-  MAP:
-    Value: 158.8
-    Units: mm
-  MAT:
-    Value: 6.5
-    Units: Celsius
-  RainySeason:
-   - spring
-   - summer
-  Altitude:
-    Value: 444
-    Units: masl
-  SoilType: aeolian sandy
-  Cover:
-    PlantCover: 23
-    BareSoil: 77
-    Units: percentage
-  Coordinates:
-    Latitude: 44.378
-    Longitude: 87.928
+siteInfo:
+        site: Gurbantunggut # Names of individual sites, if one site, keep on this line, if multiple, use array format
+              # These fields should be arrays of equal length to site array
+        coordinates:
+          latitude: 44.378 # Latitude in decimal units (check for negative that denotes southern hemisphere)
+          longitude: 87.928 # Longitude in decimal units (check for negative that denotes western hemisphere)
+        country: China # Name of country where site was conducted
+        MAT: 6.5 # Mean annual temperature in degrees Celsius
+        MAP: 158.8 # Mean annual precipitation in mm
+        rainySeason: # Period of the year during which most precipitation occurs, i.e.: whole year, spring, summer, autumn, winter (if more than one use array format)
+        elevation: 444 # Elevation of study site in meters above sea level
+        landCover: desert # Land cover of the site. Valid fields are: greenbelt, (abbandoned) farmland, mangrove forest, subalpine, shrubland, urban, sandland, forest, steppe, desert, grassland, savanna
+        vegNote: The dominant vegetation consists of shrub species such as Tamarix ramosissima, Haloxylon ammodendron and H. persicum with some perennials and annuals
+        cover:
+          plantCover: 23 # Total plant cover percentage (if they report cover by specific plant types, fill the fields below)
+          bunchgrassCover:
+          shrubCover:
+          treeCover:
+          forbCover:
+          bareSoil: 77
+        soilTaxonomy:
+          soilOrder: # Soil order according to the classification system described below
+          soilFamily: # Soil family description (ex. 'Eutric' for a Eutric Cambisol)
+          soilSeries: # Soil series according to the classification system described below
+          classificationSystem: # Name of classification system used. Valid fields are: USDA, FAO, and WRB.
 
-ExperimentInfo:
- LitterInfo:
-  LitterType1:
-   Species: Calligonum mongolicum
-   LifeForm: shrub
-   Material: recently senesced leaves
-   SLA:
-     Value: 8.44
-     Units: mm2.mg-1
-   Carbon:
-     Value: 48.5
-     Units: percentage
-   Nitrogen:
-     Value: 1.16
-     Units: percentage
-   C:N:
-     Value: 41.83
-   Phosphorus:
-     Value: 0.023
-     Units: percentage
-   Lignin:
-     Value: 39.06
-     Units: percentage
-   Amount:
-     Value: 0.5
-     Units: g
-  LitterType2:
-   Species: Tamarix chinensis
-   LifeForm: shrub
-   Material: recently senesced leaves
-   SLA:
-     Value: 10.789
-     Units: mm2.mg-1
-   Carbon:
-     Value: 46.7
-     Units: percentage
-   Nitrogen:
-     Value: 1.42
-     Units: percentage
-   C:N:
-     Value: 32.83
-   Phosphorus:
-     Value: 0.026
-     Units: percentage
-   Lignin:
-     Value: 52.95
-     Units: percentage
-   Amount:
-     Value: 0.5
-     Units: g
-  LitterType3:
-   Species: Phragmites communis
-   LifeForm: graminoid
-   Material: recently senesced leaves
-   SLA:
-     Value: 11.68
-     Units: mm2.mg-1
-   Carbon:
-     Value: 53.8
-     Units: percentage
-   Nitrogen:
-     Value: 1.54
-     Units: percentage
-   C:N:
-     Value: 34.83
-   Phosphorus:
-     Value: 0.020
-     Units: percentage
-   Lignin:
-     Value: 47.42
-     Units: percentage
-   Amount:
-     Value: 0.5
-     Units: g
-  LitterType4:
-   Species: Stipagrostis pennata
-   LifeForm: graminoid
-   Material: recently senesced leaves
-   SLA:
-     Value: 20.93
-     Units: mm2.mg-1
-   Carbon:
-     Value: 56.7
-     Units: percentage
-   Nitrogen:
-     Value: 1.45
-     Units: percentage
-   C:N:
-     Value: 39.18
-   Phosphorus:
-     Value: 0.026
-     Units: percentage
-   Lignin:
-     Value: 52.59
-     Units: percentage
-   Amount:
-     Value: 0.5
-     Units: g
-  LitterType5:
-   Species: Echinops sphaerocephalus
-   LifeForm: forb
-   Material: recently senesced leaves
-   SLA:
-     Value: 10.45
-     Units: mm2.mg-1
-   Carbon:
-     Value: 55.2
-     Units: percentage
-   Nitrogen:
-     Value: 1.14
-     Units: percentage
-   C:N:
-     Value: 48.53
-   Phosphorus:
-     Value: 0.035
-     Units: percentage
-   Lignin:
-     Value: 38.51
-     Units: percentage
-   Amount:
-     Value: 0.5
-     Units: g
-  LitterType6:
-   Species: Karelinia caspia
-   LifeForm: forb
-   Material: recently senesced leaves
-   SLA:
-     Value: 14.82
-     Units: mm2.mg-1
-   Carbon:
-     Value: 55
-     Units: percentage
-   Nitrogen:
-     Value: 1.92
-     Units: percentage
-   C:N:
-     Value: 28.62
-   Phosphorus:
-     Value: 0.052
-     Units: percentage
-   Lignin:
-     Value: 60.68
-     Units: percentage
-   Amount:
-     Value: 0.5
-     Units: g
-  LitterType7:
-   Species: Lactuca tatarica
-   LifeForm: forb
-   Material: recently senesced leaves
-   SLA:
-     Value: 11.27
-     Units: mm2.mg-1
-   Carbon:
-     Value: 57.9
-     Units: percentage
-   Nitrogen:
-     Value: 1.21
-     Units: percentage
-   C:N:
-     Value: 47.74
-   Phosphorus:
-     Value: 0.048
-     Units: percentage
-   Lignin:
-     Value: 50.97
-     Units: percentage
-   Amount:
-     Value: 0.5
-     Units: g
-  LitterType8:
-   Species: Alhagi sparsifolia
-   LifeForm: shrub
-   Material: recently senesced leaves
-   SLA:
-     Value: 9.88
-     Units: mm2.mg-1
-   Carbon:
-     Value: 56.2
-     Units: percentage
-   Nitrogen:
-     Value: 1.94
-     Units: percentage
-   C:N:
-     Value: 29.03
-   Phosphorus:
-     Value: 0.046
-     Units: percentage
-   Lignin:
-     Value: 41.15
-     Units: percentage
-   Amount:
-     Value: 0.5
-     Units: g
-  LitterType9:
-   Species: Ephedra gerardiana
-   LifeForm: shrub
-   Material: recently senesced leaves
-   SLA:
-     Value: 7.86
-     Units: mm2.mg-1
-   Carbon:
-     Value: 58.9
-     Units: percentage
-   Nitrogen:
-     Value: 1.65
-     Units: percentage
-   C:N:
-     Value: 35.65
-   Phosphorus:
-     Value: 0.073
-     Units: percentage
-   Lignin:
-     Value: 47.09
-     Units: percentage
-   Amount:
-     Value: 0.5
-     Units: g
-  LitterType10:
-   Species: Agriophyllum squarrosum
-   LifeForm: forb
-   Material: recently senesced leaves
-   SLA:
-     Value: 17.21
-     Units: mm2.mg-1
-   Carbon:
-     Value: 51.4
-     Units: percentage
-   Nitrogen:
-     Value: 1.06
-     Units: percentage
-   C:N:
-     Value: 48.44
-   Phosphorus:
-     Value: 0.017
-     Units: percentage
-   Lignin:
-     Value: 48.32
-     Units: percentage
-   Amount:
-     Value: 0.5
-     Units: g
-  LitterType11:
-   Species: Echinops gmelini
-   LifeForm: forb
-   Material: recently senesced leaves
-   SLA:
-     Value: 13.02
-     Units: mm2.mg-1
-   Carbon:
-     Value: 54.7
-     Units: percentage
-   Nitrogen:
-     Value: 2.23
-     Units: percentage
-   C:N:
-     Value: 24.56
-   Phosphorus:
-     Value: 0.063
-     Units: percentage
-   Lignin:
-     Value: 43.24
-     Units: percentage
-   Amount:
-     Value: 0.5
-     Units: g
-  LitterType12:
-   Species: Erodium oxyrhinchum
-   LifeForm: forb
-   Material: recently senesced leaves
-   SLA:
-     Value: 11.64
-     Units: mm2.mg-1
-   Carbon:
-     Value: 53.3
-     Units: percentage
-   Nitrogen:
-     Value: 2.16
-     Units: percentage
-   C:N:
-     Value: 24.73
-   Phosphorus:
-     Value: 0.086
-     Units: percentage
-   Lignin:
-     Value: 51.29
-     Units: percentage
-   Amount:
-     Value: 0.5
-     Units: g
-  LitterType13:
-   Species: Euphorbia turczaninowii
-   LifeForm: forb
-   Material: recently senesced leaves
-   SLA:
-     Value: 21.14
-     Units: mm2.mg-1
-   Carbon:
-     Value: 53.1
-     Units: percentage
-   Nitrogen:
-     Value: 1.64
-     Units: percentage
-   C:N:
-     Value: 32.29
-   Phosphorus:
-     Value: 0.052
-     Units: percentage
-   Lignin:
-     Value: 54.04
-     Units: percentage
-   Amount:
-     Value: 0.5
-     Units: g
-  LitterType14:
-   Species: Ceratoides papposa
-   LifeForm: shrub
-   Material: recently senesced leaves
-   SLA:
-     Value: 20.07
-     Units: mm2.mg-1
-   Carbon:
-     Value: 44.7
-     Units: percentage
-   Nitrogen:
-     Value: 1.21
-     Units: percentage
-   C:N:
-     Value: 37.07
-   Phosphorus:
-     Value: 0.035
-     Units: percentage
-   Lignin:
-     Value: 55.24
-     Units: percentage
-   Amount:
-     Value: 0.5
-     Units: g
-  LitterType15:
-   Species: Cynanchum acutum
-   LifeForm: forb
-   Material: recently senesced leaves
-   SLA:
-     Value: 20.66
-     Units: mm2.mg-1
-   Carbon:
-     Value: 56.2
-     Units: percentage
-   Nitrogen:
-     Value: 1.61
-     Units: percentage
-   C:N:
-     Value: 34.85
-   Phosphorus:
-     Value: 0.11
-     Units: percentage
-   Lignin:
-     Value: 53.62
-     Units: percentage
-   Amount:
-     Value: 0.5
-     Units: g
-  LitterType16:
-   Species: Peganum harmala
-   LifeForm: forb
-   Material: recently senesced leaves
-   SLA:
-     Value: 17.66
-     Units: mm2.mg-1
-   Carbon:
-     Value: 44
-     Units: percentage
-   Nitrogen:
-     Value: 1.96
-     Units: percentage
-   C:N:
-     Value: 22.44
-   Phosphorus:
-     Value: 0.046
-     Units: percentage
-   Amount:
-     Value: 0.5
-     Units: g
-  LitterType17:
-   Species: Nitraria sibirica
-   LifeForm: shrub
-   Material: recently senesced leaves
-   SLA:
-     Value: 17.25
-     Units: mm2.mg-1
-   Carbon:
-     Value: 47.1
-     Units: percentage
-   Nitrogen:
-     Value: 1.73
-     Units: percentage
-   C:N:
-     Value: 27.60
-   Phosphorus:
-     Value: 0.040
-     Units: percentage
-   Lignin:
-     Value: 61.28
-     Units: percentage
-   Amount:
-     Value: 0.5
-     Units: g
- Experiment1:
-    Description: "Leaf litter samples from 17 desert species were incubated under strong solar exposure vs. shade conditions, or buried in the soil at 10 cm depth, for a whole year"
-    LitterBagInfo:
-      Material: nylon
-      MeshSize:
-       Value:
-         - 2
-         - 0.5
-       Units: mm
-      Dimentions:
-       Width: 10
-       Lenght: 15
-       Units: cm
-      Position:
-        Position1: bare soil
-        Position2: under shadecloth
-        Position3: buried 10 cm deep
-    Treatment:
-      - litter type
-      - location
-    StartingDate:
-      Month: september
-      Season: autumn
-    Duration:
-      Time: 12
-      Units: months
+experimentInfo:
+        incDesc: 17 species x 3 positions x 3 harvests x 5 replicates
+        # These fields should all be one dimensional arrays. Values for experimental variables with multiple treatment levels should be entered in the variables section and left blank here
+        replicates: 5 # Number of replicates per treatment
+        duration: 365 # length of incubation in days
+        startingMonth: september # month during which the study started, all in lower case
+        litter: # plant species used as litter material for the experiment. All details related to the species must be specified in the initConditions.csv file
+        litterbag:
+          material: nylon # mesh type used to construct the litter bags, options are: wire, aluminum, window screening, net curtain, bolting cloth, plastic, fiberglass, nylon, polypropylene, polyester, polyethylene, polyamide
+          meshSize: 2 # mesh size in mm referring to one side of the net-square
+          dimentions: # size of the full litter bag in cm
+            width: 10
+            length: 15
+            radius: # for round or cilindrical structures
+            height: # for 3-dimensional designs such as litter boxes in Austin2006NATURE
+          transmitance: # when reported, light transmitance of the mesh material as a percentage of full sunlight for each wavelength
+            total:
+            PAR:
+            UV:
+            UVA:
+            UVB:
+          position: # position of litterbags in the field, valid options are: bare soil, decomposition bed, under litter, over litter, over lawn, next to grass, under tree/shrub/grass, buried X cm deep, underwater, under rainout shelter, under frame, suspended X cm, under shadecloth
 
-Variables:
-  V1:
-    Name: Time
-    Units: months
-  V2:
-    Name: Cm_L
-    Units: mass remaining
-    Description: "Calligonum mongolicum leaf litter incubated under light exposure"
-    LitterType: LitterType1
-    Position: Position1
-  V3:
-    Name: Tc_L
-    Units: mass remaining
-    Description: "Tamarix chinensis leaf litter incubated under light exposure"
-    LitterType: LitterType2
-    Position: Position1
-  V4:
-    Name: Pc_L
-    Units: mass remaining
-    Description: "Phragmites communis leaf litter incubated under light exposure"
-    LitterType: LitterType3
-    Position: Position1
-  V5:
-    Name: Ap_L
-    Units: mass remaining
-    Description: "S. pennata leaf litter incubated under light exposure"
-    LitterType: LitterType4
-    Position: Position1
-  V6:
-    Name: Es_L
-    Units: mass remaining
-    Description: "Echinops sphaerocephalus leaf litter incubated under light exposure"
-    LitterType: LitterType5
-    Position: Position1
-  V7:
-    Name: Kca_L
-    Units: mass remaining
-    Description: "Karelinia caspia leaf litter incubated under light exposure"
-    LitterType: LitterType6
-    Position: Position1
-  V8:
-    Name: Mt_L
-    Units: mass remaining
-    Description: "L. tatarica leaf litter incubated under light exposure"
-    LitterType: LitterType7
-    Position: Position1
-  V9:
-    Name: As_L
-    Units: mass remaining
-    Description: "Alhagi sparsifolia leaf litter incubated under light exposure"
-    LitterType: LitterType8
-    Position: Position1
-  V10:
-    Name: Ed_L
-    Units: mass remaining
-    Description: "Ephedra gerardiana leaf litter incubated under light exposure"
-    LitterType: LitterType9
-    Position: Position1
-  V11:
-    Name: Aa_L
-    Units: mass remaining
-    Description: "Agriophyllum squarrosum leaf litter incubated under light exposure"
-    LitterType: LitterType10
-    Position: Position1
-  V12:
-    Name: Eg_L
-    Units: mass remaining
-    Description: "Echinops gmelini leaf litter incubated under light exposure"
-    LitterType: LitterType11
-    Position: Position1
-  V13:
-    Name: Eo_L
-    Units: mass remaining
-    Description: "Erodium oxyrhinchum leaf litter incubated under light exposure"
-    LitterType: LitterType12
-    Position: Position1
-  V14:
-    Name: Et_L
-    Units: mass remaining
-    Description: "Euphorbia turczaninowii leaf litter incubated under light exposure"
-    LitterType: LitterType13
-    Position: Position1
-  V15:
-    Name: Kce_L
-    Units: mass remaining
-    Description: "Ceratoides papposa leaf litter incubated under light exposure"
-    LitterType: LitterType14
-    Position: Position1
-  V16:
-    Name: Cs_L
-    Units: mass remaining
-    Description: "Cynanchum acutum leaf litter incubated under light exposure"
-    LitterType: LitterType15
-    Position: Position1
-  V17:
-    Name: Ph_L
-    Units: mass remaining
-    Description: "Peganum harmala leaf litter incubated under light exposure"
-    LitterType: LitterType16
-    Position: Position1
-  V18:
-    Name: Ns_L
-    Units: mass remaining
-    Description: "Nitraria sibirica leaf litter incubated under light exposure"
-    LitterType: LitterType17
-    Position: Position1
-  V19:
-    Name: Cm_S
-    Units: mass remaining
-    Description: "Calligonum mongolicum leaf litter incubated under shadecloth"
-    LitterType: LitterType1
-    Position: Position2
-  V20:
-    Name: Tc_S
-    Units: mass remaining
-    Description: "Tamarix chinensis leaf litter incubated under shadecloth"
-    LitterType: LitterType2
-    Position: Position2
-  V21:
-    Name: Pc_S
-    Units: mass remaining
-    Description: "Phragmites communis leaf litter incubated under shadecloth"
-    LitterType: LitterType3
-    Position: Position2
-  V22:
-    Name: Ap_S
-    Units: mass remaining
-    Description: "S. pennata leaf litter incubated under shadecloth"
-    LitterType: LitterType4
-    Position: Position2
-  V23:
-    Name: Es_S
-    Units: mass remaining
-    Description: "Echinops sphaerocephalus leaf litter incubated under shadecloth"
-    LitterType: LitterType5
-    Position: Position2
-  V24:
-    Name: Kca_S
-    Units: mass remaining
-    Description: "Karelinia caspia leaf litter incubated under shadecloth"
-    LitterType: LitterType6
-    Position: Position2
-  V25:
-    Name: Mt_S
-    Units: mass remaining
-    Description: "L. tatarica leaf litter incubated under shadecloth"
-    LitterType: LitterType7
-    Position: Position2
-  V26:
-    Name: As_S
-    Units: mass remaining
-    Description: "Alhagi sparsifolia leaf litter incubated under shadecloth"
-    LitterType: LitterType8
-    Position: Position2
-  V27:
-    Name: Ed_S
-    Units: mass remaining
-    Description: "Ephedra gerardiana leaf litter incubated under shadecloth"
-    LitterType: LitterType9
-    Position: Position2
-  V28:
-    Name: Aa_S
-    Units: mass remaining
-    Description: "Agriophyllum squarrosum leaf litter incubated under shadecloth"
-    LitterType: LitterType10
-    Position: Position2
-  V29:
-    Name: Eg_S
-    Units: mass remaining
-    Description: "Echinops gmelini leaf litter incubated under shadecloth"
-    LitterType: LitterType11
-    Position: Position2
-  V30:
-    Name: Eo_S
-    Units: mass remaining
-    Description: "Erodium oxyrhinchum leaf litter incubated under shadecloth"
-    LitterType: LitterType12
-    Position: Position2
-  V31:
-    Name: Et_S
-    Units: mass remaining
-    Description: "Euphorbia turczaninowii leaf litter incubated under shadecloth"
-    LitterType: LitterType13
-    Position: Position2
-  V32:
-    Name: Kce_S
-    Units: mass remaining
-    Description: "Ceratoides papposa leaf litter incubated under shadecloth"
-    LitterType: LitterType14
-    Position: Position2
-  V33:
-    Name: Cs_S
-    Units: mass remaining
-    Description: "Cynanchum acutum leaf litter incubated under shadecloth"
-    LitterType: LitterType15
-    Position: Position2
-  V34:
-    Name: Ph_S
-    Units: mass remaining
-    Description: "Peganum harmala leaf litter incubated under shadecloth"
-    LitterType: LitterType16
-    Position: Position2
-  V35:
-    Name: Ns_S
-    Units: mass remaining
-    Description: "Nitraria sibirica leaf litter incubated under shadecloth"
-    LitterType: LitterType17
-    Position: Position2
-  V36:
-    Name: Cm_B
-    Units: mass remaining
-    Description: "Calligonum mongolicum leaf litter incubated buried 10 cm"
-    LitterType: LitterType1
-    Position: Position3
-  V37:
-    Name: Tc_B
-    Units: mass remaining
-    Description: "Tamarix chinensis leaf litter incubated buried 10 cm"
-    LitterType: LitterType2
-    Position: Position3
-  V38:
-    Name: Pc_B
-    Units: mass remaining
-    Description: "Phragmites communis leaf litter incubated buried 10 cm"
-    LitterType: LitterType3
-    Position: Position3
-  V39:
-    Name: Ap_B
-    Units: mass remaining
-    Description: "S. pennata leaf litter incubated buried 10 cm"
-    LitterType: LitterType4
-    Position: Position3
-  V40:
-    Name: Es_B
-    Units: mass remaining
-    Description: "Echinops sphaerocephalus leaf litter incubated buried 10 cm"
-    LitterType: LitterType5
-    Position: Position3
-  V41:
-    Name: Kca_B
-    Units: mass remaining
-    Description: "Karelinia caspia leaf litter incubated buried 10 cm"
-    LitterType: LitterType6
-    Position: Position3
-  V42:
-    Name: Mt_B
-    Units: mass remaining
-    Description: "L. tatarica leaf litter incubated buried 10 cm"
-    LitterType: LitterType7
-    Position: Position3
-  V43:
-    Name: As_B
-    Units: mass remaining
-    Description: "Alhagi sparsifolia leaf litter incubated buried 10 cm"
-    LitterType: LitterType8
-    Position: Position3
-  V44:
-    Name: Ed_B
-    Units: mass remaining
-    Description: "Ephedra gerardiana leaf litter incubated buried 10 cm"
-    LitterType: LitterType9
-    Position: Position3
-  V45:
-    Name: Aa_B
-    Units: mass remaining
-    Description: "Agriophyllum squarrosum leaf litter incubated buried 10 cm"
-    LitterType: LitterType10
-    Position: Position3
-  V46:
-    Name: Eg_B
-    Units: mass remaining
-    Description: "Echinops gmelini leaf litter incubated buried 10 cm"
-    LitterType: LitterType11
-    Position: Position3
-  V47:
-    Name: Eo_B
-    Units: mass remaining
-    Description: "Erodium oxyrhinchum leaf litter incubated buried 10 cm"
-    LitterType: LitterType12
-    Position: Position3
-  V48:
-    Name: Et_B
-    Units: mass remaining
-    Description: "Euphorbia turczaninowii leaf litter incubated buried 10 cm"
-    LitterType: LitterType13
-    Position: Position3
-  V49:
-    Name: Kce_B
-    Units: mass remaining
-    Description: "Ceratoides papposa leaf litter incubated buried 10 cm"
-    LitterType: LitterType14
-    Position: Position3
-  V50:
-    Name: Cs_B
-    Units: mass remaining
-    Description: "Cynanchum acutum leaf litter incubated buried 10 cm"
-    LitterType: LitterType15
-    Position: Position3
-  V51:
-    Name: Ph_B
-    Units: mass remaining
-    Description: "Peganum harmala leaf litter incubated buried 10 cm"
-    LitterType: LitterType16
-    Position: Position3
-  V52:
-    Name: Ns_B
-    Units: mass remaining
-    Description: "Nitraria sibirica leaf litter incubated buried 10 cm"
-    LitterType: LitterType17
-    Position: Position3
+variables: # These describe the columns of your timeSeries.csv file
+        V1: # column 1
+          name: Time
+          units: months
+        V2:
+          name: Cm_L
+          units: mass remaining
+          varDesc: Calligonum mongolicum leaf litter incubated under light exposure
+          site: Gurbantunggut
+          litter: Calligonum mongolicum
+          position: bare soil
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V3:
+          name: Tc_L
+          units: mass remaining
+          varDesc: Tamarix chinensis leaf litter incubated under light exposure
+          site: Gurbantunggut
+          litter: Tamarix chinensis
+          position: bare soil
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V4:
+          name: Pc_L
+          units: mass remaining
+          varDesc: Phragmites communis leaf litter incubated under light exposure
+          site: Gurbantunggut
+          litter: Phragmites communis
+          position: bare soil
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V5:
+          name: Ap_L
+          units: mass remaining
+          varDesc: Aristida pennata leaf litter incubated under light exposure
+          site: Gurbantunggut
+          litter: Aristida pennata
+          position: bare soil
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V6:
+          name: Es_L
+          units: mass remaining
+          varDesc: Echinops sphaerocephalus leaf litter incubated under light exposure
+          site: Gurbantunggut
+          litter: Echinops sphaerocephalus
+          position: bare soil
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V7:
+          name: Kca_L
+          units: mass remaining
+          varDesc: Karelinia caspia leaf litter incubated under light exposure
+          site: Gurbantunggut
+          litter: Karelinia caspia
+          position: bare soil
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V8:
+          name: Mt_L
+          units: mass remaining
+          varDesc: Mulgedium tataricum leaf litter incubated under light exposure
+          site: Gurbantunggut
+          litter: Mulgedium tataricum
+          position: bare soil
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V9:
+          name: As_L
+          units: mass remaining
+          varDesc: Alhagi sparsifolia leaf litter incubated under light exposure
+          site: Gurbantunggut
+          litter: Alhagi sparsifolia
+          position: bare soil
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V10:
+          name: Ed_L
+          units: mass remaining
+          varDesc: Ephedra distachya leaf litter incubated under light exposure
+          site: Gurbantunggut
+          litter: Ephedra distachya
+          position: bare soil
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V11:
+          name: Aa_L
+          units: mass remaining
+          varDesc: Agriophyllum arenarium leaf litter incubated under light exposure
+          site: Gurbantunggut
+          litter: Agriophyllum arenarium
+          position: bare soil
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V12:
+          name: Eg_L
+          units: mass remaining
+          varDesc: Echinops gmelinii leaf litter incubated under light exposure
+          site: Gurbantunggut
+          litter: Echinops gmelinii
+          position: bare soil
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V13:
+          name: Eo_L
+          units: mass remaining
+          varDesc: Erodium oxyrhinchum leaf litter incubated under light exposure
+          site: Gurbantunggut
+          litter: Erodium oxyrhinchum
+          position: bare soil
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V14:
+          name: Et_L
+          units: mass remaining
+          varDesc: Euphorbia turczaninowii leaf litter incubated under light exposure
+          site: Gurbantunggut
+          litter: Euphorbia turczaninowii
+          position: bare soil
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V15:
+          name: Kce_L
+          units: mass remaining
+          varDesc: Krascheninnikovia ceratoides leaf litter incubated under light exposure
+          site: Gurbantunggut
+          litter: Krascheninnikovia ceratoides
+          position: bare soil
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V16:
+          name: Cs_L
+          units: mass remaining
+          varDesc: Cynanchum sibiricum leaf litter incubated under light exposure
+          site: Gurbantunggut
+          litter: Cynanchum sibiricum
+          position: bare soil
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V17:
+          name: Ph_L
+          units: mass remaining
+          varDesc: Peganum harmala leaf litter incubated under light exposure
+          site: Gurbantunggut
+          litter: Peganum harmala
+          position: bare soil
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V18:
+          name: Ns_L
+          units: mass remaining
+          varDesc: Nitraria sibirica leaf litter incubated under light exposure
+          site: Gurbantunggut
+          litter: Nitraria sibirica
+          position: bare soil
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V19:
+          name: Cm_S
+          units: mass remaining
+          varDesc: Calligonum mongolicum leaf litter incubated under shadecloth
+          site: Gurbantunggut
+          litter: Calligonum mongolicum
+          position: under shadecloth
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V20:
+          name: Tc_S
+          units: mass remaining
+          varDesc: Tamarix chinensis leaf litter incubated under shadecloth
+          site: Gurbantunggut
+          litter: Tamarix chinensis
+          position: under shadecloth
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V21:
+          name: Pc_S
+          units: mass remaining
+          varDesc: Phragmites communis leaf litter incubated under shadecloth
+          site: Gurbantunggut
+          litter: Phragmites communis
+          position: under shadecloth
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V22:
+          name: Ap_S
+          units: mass remaining
+          varDesc: Aristida pennata leaf litter incubated under shadecloth
+          site: Gurbantunggut
+          litter: Aristida pennata
+          position: under shadecloth
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V23:
+          name: Es_S
+          units: mass remaining
+          varDesc: Echinops sphaerocephalus leaf litter incubated under shadecloth
+          site: Gurbantunggut
+          litter: Echinops sphaerocephalus
+          position: under shadecloth
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V24:
+          name: Kca_S
+          units: mass remaining
+          varDesc: Karelinia caspia leaf litter incubated under shadecloth
+          site: Gurbantunggut
+          litter: Karelinia caspia
+          position: under shadecloth
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V25:
+          name: Mt_S
+          units: mass remaining
+          varDesc: Mulgedium tataricum leaf litter incubated under shadecloth
+          site: Gurbantunggut
+          litter: Mulgedium tataricum
+          position: under shadecloth
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V26:
+          name: As_S
+          units: mass remaining
+          varDesc: Alhagi sparsifolia leaf litter incubated under shadecloth
+          site: Gurbantunggut
+          litter: Alhagi sparsifolia
+          position: under shadecloth
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V27:
+          name: Ed_S
+          units: mass remaining
+          varDesc: Ephedra distachya leaf litter incubated under shadecloth
+          site: Gurbantunggut
+          litter: Ephedra distachya
+          position: under shadecloth
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V28:
+          name: Aa_S
+          units: mass remaining
+          varDesc: Agriophyllum arenarium leaf litter incubated under shadecloth
+          site: Gurbantunggut
+          litter: Agriophyllum arenarium
+          position: under shadecloth
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V29:
+          name: Eg_S
+          units: mass remaining
+          varDesc: Echinops gmelinii leaf litter incubated under shadecloth
+          site: Gurbantunggut
+          litter: Echinops gmelinii
+          position: under shadecloth
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V30:
+          name: Eo_S
+          units: mass remaining
+          varDesc: Erodium oxyrhinchum leaf litter incubated under shadecloth
+          site: Gurbantunggut
+          litter: Erodium oxyrhinchum
+          position: under shadecloth
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V31:
+          name: Et_S
+          units: mass remaining
+          varDesc: Euphorbia turczaninowii leaf litter incubated under shadecloth
+          site: Gurbantunggut
+          litter: Euphorbia turczaninowii
+          position: under shadecloth
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V32:
+          name: Kce_S
+          units: mass remaining
+          varDesc: Krascheninnikovia ceratoides leaf litter incubated under shadecloth
+          site: Gurbantunggut
+          litter: Krascheninnikovia ceratoides
+          position: under shadecloth
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V33:
+          name: Cs_S
+          units: mass remaining
+          varDesc: Cynanchum sibiricum leaf litter incubated under shadecloth
+          site: Gurbantunggut
+          litter: Cynanchum sibiricum
+          position: under shadecloth
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V34:
+          name: Ph_S
+          units: mass remaining
+          varDesc: Peganum harmala leaf litter incubated under shadecloth
+          site: Gurbantunggut
+          litter: Peganum harmala
+          position: under shadecloth
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V35:
+          name: Ns_S
+          units: mass remaining
+          varDesc: Nitraria sibirica leaf litter incubated under shadecloth
+          site: Gurbantunggut
+          litter: Nitraria sibirica
+          position: under shadecloth
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V36:
+          name: Cm_B
+          units: mass remaining
+          varDesc: Calligonum mongolicum leaf litter buried 10 cm
+          site: Gurbantunggut
+          litter: Calligonum mongolicum
+          position: buried 10 cm deep
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V37:
+          name: Tc_B
+          units: mass remaining
+          varDesc: Tamarix chinensis leaf litter  buried 10 cm
+          site: Gurbantunggut
+          litter: Tamarix chinensis
+          position: buried 10 cm deep
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V38:
+          name: Pc_B
+          units: mass remaining
+          varDesc: Phragmites communis leaf litter  buried 10 cm
+          site: Gurbantunggut
+          litter: Phragmites communis
+          position: buried 10 cm deep
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V39:
+          name: Ap_B
+          units: mass remaining
+          varDesc: Aristida pennata leaf litter buried 10 cm
+          site: Gurbantunggut
+          litter: Aristida pennata
+          position: buried 10 cm deep
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V40:
+          name: Es_B
+          units: mass remaining
+          varDesc: Echinops sphaerocephalus leaf litter buried 10 cm
+          site: Gurbantunggut
+          litter: Echinops sphaerocephalus
+          position: buried 10 cm deep
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V41:
+          name: Kca_B
+          units: mass remaining
+          varDesc: Karelinia caspia leaf litter buried 10 cm
+          site: Gurbantunggut
+          litter: Karelinia caspia
+          position: buried 10 cm deep
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V42:
+          name: Mt_B
+          units: mass remaining
+          varDesc: Mulgedium tataricum leaf litter buried 10 cm
+          site: Gurbantunggut
+          litter: Mulgedium tataricum
+          position: buried 10 cm deep
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V43:
+          name: As_B
+          units: mass remaining
+          varDesc: Alhagi sparsifolia leaf litter buried 10 cm
+          site: Gurbantunggut
+          litter: Alhagi sparsifolia
+          position: buried 10 cm deep
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V44:
+          name: Ed_B
+          units: mass remaining
+          varDesc: Ephedra distachya leaf litter incubated buried 10 cm
+          site: Gurbantunggut
+          litter: Ephedra distachya
+          position: buried 10 cm deep
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V45:
+          name: Aa_B
+          units: mass remaining
+          varDesc: Agriophyllum arenarium leaf litter buried 10 cm
+          site: Gurbantunggut
+          litter: Agriophyllum arenarium
+          position: buried 10 cm deep
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V46:
+          name: Eg_B
+          units: mass remaining
+          varDesc: Echinops gmelinii leaf litter buried 10 cm
+          site: Gurbantunggut
+          litter: Echinops gmelinii
+          position: buried 10 cm deep
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V47:
+          name: Eo_B
+          units: mass remaining
+          varDesc: Erodium oxyrhinchum leaf litter buried 10 cm
+          site: Gurbantunggut
+          litter: Erodium oxyrhinchum
+          position: buried 10 cm deep
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V48:
+          name: Et_B
+          units: mass remaining
+          varDesc: Euphorbia turczaninowii leaf litter buried 10 cm
+          site: Gurbantunggut
+          litter: Euphorbia turczaninowii
+          position: buried 10 cm deep
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V49:
+          name: Kce_B
+          units: mass remaining
+          varDesc: Krascheninnikovia ceratoides leaf litter buried 10 cm
+          site: Gurbantunggut
+          litter: Krascheninnikovia ceratoides
+          position: buried 10 cm deep
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V50:
+          name: Cs_B
+          units: mass remaining
+          varDesc: Cynanchum sibiricum leaf litter buried 10 cm
+          site: Gurbantunggut
+          litter: Cynanchum sibiricum
+          position: buried 10 cm deep
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V51:
+          name: Ph_B
+          units: mass remaining
+          varDesc: Peganum harmala leaf litter buried 10 cm
+          site: Gurbantunggut
+          litter: Peganum harmala
+          position: buried 10 cm deep
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V52:
+          name: Ns_B
+          units: mass remaining
+          varDesc: Nitraria sibirica leaf litter buried 10 cm
+          site: Gurbantunggut
+          litter: Nitraria sibirica
+          position: buried 10 cm deep
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
