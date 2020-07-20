@@ -1,0 +1,122 @@
+citationKey: Lin2014 # Unique identifier in the format: LastnameYear (lowercase letters must be added when there are two or more entries by the same author and year, i.e.: LastnameYearx)
+doi: 10.1007/s10021-013-9712-x # DOI of the publication where data is published
+entryAuthor: Ignacio Siebenhart # First and last name of the person who entered the data in this file
+entryCreationDate: 2019-10-08 # Date when the data was entered in this file. Format: YYYY-MM-DD
+contactName: Agustín Sarquis # First and last name of contact person (may be the principal investigator supervising the entryAuthor)
+contactEmail: agusarquis@agro.uba.ar # Email of the contact person
+entryNote: They don't specify the amount of litter in bags nor the type of plant tissue. Coordinates on the paper are wrong (we corrected them). Soils range from xerorthents to haploxerolls
+study: ultraviolet (UV) radiation exposure and litter position effects on decomposition processes in a California annual grassland
+
+siteInfo:
+        site: Sedgwick Reserve # Names of individual sites, if one site, keep on this line, if multiple, use array format
+              # These fields should be arrays of equal length to site array
+        coordinates:
+          latitude: 34.7 # Latitude in decimal units (check for negative that denotes southern hemisphere)
+          longitude: -120.03 # Longitude in decimal units (check for negative that denotes western hemisphere)
+        country: USA # Name of country where site was conducted
+        MAT: 16.8 # Mean annual temperature in degrees Celsius
+        MAP: 380 # Mean annual precipitation in mm
+        rainySeason: winter # Period of the year during which most precipitation occurs, i.e.: whole year, spring, summer, autumn, winter (if more than one use array format)
+        elevation: 425 # Elevation of study site in meters above sea level
+        landCover: grassland
+        vegNote: grassland dominated by non-native B. diandrus, with scattered Quercus lobata and Q. agrifolia trees
+        cover:
+          plantCover: # Total plant cover percentage (if they report cover by specific plant types, fill the fields below)
+          bunchgrassCover:
+          shrubCover:
+          treeCover:
+          forbCover:
+          bareSoil:
+        soilTaxonomy:
+          soilOrder: # Soil order according to the classification system described below
+          soilFamily: # Soil family description (ex. 'Eutric' for a Eutric Cambisol)
+          soilSeries: # Soil series according to the classification system described below
+          classificationSystem: # Name of classification system used. Valid fields are: USDA, FAO, and WRB.
+
+experimentInfo:
+        incDesc: 2 radiation levels x 2 positions x 4 harvests x 10 replicates # Short description of the incubation setup and main treatments
+        # These fields should all be one dimensional arrays. Values for experimental variables with multiple treatment levels should be entered in the variables section and left blank here
+        replicates: 10 # Number of replicates per treatment
+        duration: 365 # length of incubation in days
+        startingMonth: august # month during which the study started, all in lower case
+        litter: Bromus diandrus # plant species used as litter material for the experiment. All details related to the species must be specified in the initConditions.csv file
+        litterbag:
+          material: aluminum # mesh type used to construct the litter bags, options are: wire, aluminum, window screening, net curtain, bolting cloth, plastic, fiberglass, nylon, polypropylene, polyester, polyethylene, polyamide
+          meshSize: 1.5 # mesh size in mm referring to one side of the net-square
+          dimentions: # size of the full litter bag in cm
+            width: 20
+            length: 20
+            radius: # for round or cilindrical structures
+            height: # for 3-dimensional designs such as litter boxes in Austin2006NATURE
+          transmitance: # when reported, light transmitance of the mesh material as a percentage of full sunlight for each wavelength
+            total: 70
+            PAR:
+            UV:
+            UVA:
+            UVB:
+          position: # position of litterbags in the field, valid options are: bare soil, decomposition bed, under litter, over litter, over lawn, next to grass, under tree/shrub/grass, buried X cm deep, underwater, under rainout shelter, under frame, suspended X cm, under shadecloth
+
+variables: # These describe the columns of your timeSeries.csv file
+        V1: # column 1
+          name: Time
+          units: months
+        V2:
+          name: BUVPC
+          units: organic matter remaining,
+          varDesc: Bromus diandrus litter under total UV radiation, on the soil covered in litter"
+          site: Sedgwick Reserve
+          position: under litter
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: 0
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR: 85
+             UV: 90
+             UVA:
+             UVB:
+        V3:
+          name: BUVBC
+          units: organic matter remaining,
+          varDesc: Bromus diandrus litter under blocked UV radiation, on the soil covered in litter
+          site: Sedgwick Reserve
+          position: under litter
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: 400
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR: 85
+             UV: 10
+             UVA:
+             UVB:
+        V4:
+          name: BUVPS
+          units: organic matter remaining,
+          varDesc: Bromus diandrus litter under total UV radiation, suspended 5 cm over the soil
+          site: Sedgwick Reserve
+          position: suspended 5 cm
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: 0
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR: 85
+             UV: 90
+             UVA:
+             UVB:
+        V5:
+          name: BUVBS
+          units: organic matter remaining,
+          varDesc: Bromus diandrus litter under blocked UV radiation, suspended 5 cm over the soil
+          site: Sedgwick Reserve
+          position: suspended 5 cm
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: 400
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR: 85
+             UV: 10
+             UVA:
+             UVB:
