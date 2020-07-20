@@ -1,98 +1,107 @@
-CitationKey: Liu2015
-doi: 10.1007/s11104-015-2595-1
-EntryAuthor: Agustín Sarquis
+citationKey: Liu2015 # Unique identifier in the format: LastnameYear (lowercase letters must be added when there are two or more entries by the same author and year, i.e.: LastnameYearx)
+doi: 10.1007/s11104-015-2595-1 # DOI of the publication where data is published
+entryAuthor: Agustín Sarquis # First and last name of the person who entered the data in this file
+entryCreationDate: 2019-04-24 # Date when the data was entered in this file. Format: YYYY-MM-DD
+contactName: Agustín Sarquis # First and last name of contact person (may be the principal investigator supervising the entryAuthor)
+contactEmail: agusarquis@agro.uba.ar # Email of the contact person
+entryNote: rainy seasons are spring and summer. Full list of species on the paper's supplementary material
+study: Incubation of litters from 51 species on the surface, sand-buried and suspended for a year
 
-SiteInfo:
-  Name: Mu Us sandland, Inner Mongolia, China
-  EcosystemType: sandland
-  MAP:
-    Value: 369
-    Units: mm
-  MAT:
-    Value: 6.2
-    Units: Celsius
-  RainySeason:
-   - spring
-   - summer
-  Altitude:
-    Value: 1290
-    Units: masl
-  SoilType: aeolian sand
-  Cover:
-    PlantCover: 40
-    BareSoil: 60
-    Units: percentage
-  Coordinates:
-    Latitude: 39.494
-    Longitude: 110.192
+siteInfo:
+        site: Mu Us # Names of individual sites, if one site, keep on this line, if multiple, use array format
+              # These fields should be arrays of equal length to site array
+        coordinates:
+          latitude: 39.494 # Latitude in decimal units (check for negative that denotes southern hemisphere)
+          longitude: 110.192 # Longitude in decimal units (check for negative that denotes western hemisphere)
+        country: China # Name of country where site was conducted
+        MAT: 6.2 # Mean annual temperature in degrees Celsius
+        MAP: 369 # Mean annual precipitation in mm
+        rainySeason: # Period of the year during which most precipitation occurs, i.e.: whole year, spring, summer, autumn, winter (if more than one use array format)
+        elevation: 1290 # Elevation of study site in meters above sea level
+        landCover: sandland
+        vegNote: The vegetation in this region comprises perennial subshrubs (dominated by Artemisia ordosica and Hedysarum mongolicum) and herbs.
+        cover:
+          plantCover: 40 # Total plant cover percentage (if they report cover by specific plant types, fill the fields below)
+          bunchgrassCover:
+          shrubCover:
+          treeCover:
+          forbCover:
+          bareSoil: 60
+        soilTaxonomy:
+          soilOrder: # Soil order according to the classification system described below
+          soilFamily: # Soil family description (ex. 'Eutric' for a Eutric Cambisol)
+          soilSeries: # Soil series according to the classification system described below
+          classificationSystem: # Name of classification system used. Valid fields are: USDA, FAO, and WRB.
 
-ExperimentInfo:
- LitterInfo:
-  Material: recently senesced leaves
-  LDMC:
-    Value: 284.039
-    Units: mg.g-1
-  SLA:
-    Value: 16.827
-    Units: mm2.mg-1
-  Carbon:
-    Value: 43.845
-    Units: percentage
-  Nitrogen:
-    Value: 1.458
-    Units: percentage
-  Phosphorus:
-    Value: 0.106
-    Units: percentage
-  Lignin:
-    Value: 33.949
-    Units: percentage
-  C:N:
-    Value: 36.914
-  Amount:
-   Value: 0.5
-   Units: g
- Experiment1:
-    Description: "They incubated litters from 51 species on the surface, sand-buried and suspended above the surface for a year"
-    LitterBagInfo:
-      MeshSize:
-       Value: 0.5
-       Units: mm
-      Dimentions:
-       Width: 10
-       Lenght: 15
-       Units: cm
-      Transmitance:
-        Value: 90
-        Units: percentage
-      Position:
-        Position1: suspended 60 cm over bare soil
-        Position2: decomposition bed
-        Position3: buried 10 cm deep
-    Treatment: position
-    StartingDate:
-      Month: november
-      Season: autumn
-    Duration:
-      Time: 12
-      Units: months
+experimentInfo:
+        incDesc: 3 positions x 51 species (averaged) x 3 harvests x 3 replicates # Short description of the incubation setup and main treatments
+        # These fields should all be one dimensional arrays. Values for experimental variables with multiple treatment levels should be entered in the variables section and left blank here
+        replicates: 3 # Number of replicates per treatment
+        duration: 365 # length of incubation in days
+        startingMonth: november # month during which the study started, all in lower case
+        litter: mean # plant species used as litter material for the experiment. All details related to the species must be specified in the initConditions.csv file
+        litterbag:
+          material: # mesh type used to construct the litter bags, options are: wire, aluminum, window screening, net curtain, bolting cloth, plastic, fiberglass, nylon, polypropylene, polyester, polyethylene, polyamide
+          meshSize: 0.5 # mesh size in mm referring to one side of the net-square
+          dimentions: # size of the full litter bag in cm
+            width: 10
+            length: 15
+            radius: # for round or cilindrical structures
+            height: # for 3-dimensional designs such as litter boxes in Austin2006NATURE
+          transmitance: # when reported, light transmitance of the mesh material as a percentage of full sunlight for each wavelength
+            total: 90
+            PAR:
+            UV:
+            UVA:
+            UVB:
+          position: # position of litterbags in the field, valid options are: bare soil, decomposition bed, under litter, over litter, over lawn, next to grass, under tree/shrub/grass, buried X cm deep, underwater, under rainout shelter, under frame, suspended X cm, under shadecloth
 
-Variables:
-  V1:
-    Name: Time
-    Units: months
-  V2:
-    Name: Standing
-    Units: mass remaining
-    Description: "They incubated litter from 51 species suspended 60 cm over soil simulating standing litter"
-    Position: Position1
-  V3:
-    Name: Surface
-    Units: mass remaining
-    Description: "They incubated litter from 51 species in a decomposition bed"
-    Position: Position2
-  V4:
-    Name: Burial
-    Units: mass remaining
-    Description: "They incubated litter from 51 species buried 10 cm deep"
-    Position: Position3
+variables: # These describe the columns of your timeSeries.csv file
+        V1: # column 1
+          name: Time
+          units: months
+        V2:
+          name: Standing
+          units: mass remaining
+          varDesc: litter from 51 species suspended 60 cm over soil simulating standing litter
+          site: Mu Us
+          position: suspended 60 cm
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V3:
+          name: Surface
+          units: mass remaining
+          varDesc: litter from 51 species in a decomposition bed
+          site: Mu Us
+          position: decomposition bed
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V4:
+          name: Burial
+          units: mass remaining
+          varDesc: litter from 51 species buried 10 cm deep
+          site: Mu Us
+          position: buried 10 cm deep
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
