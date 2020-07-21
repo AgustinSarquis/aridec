@@ -1,0 +1,7 @@
+species, type, N-fixer, material, amount, carbon, nitrogen, C:N, phosphorus, potassium, sodium, magnesium, manganese, copper, zinc, lead, calcium, sulfur, iron, lignin, cellulose, hemicellulose, cell solubles, SLA
+Pinus massoniana, evergreen, no, leaves, 10, 44.12, 1.072, 41.23, 0.081,,,,,,,,,,, 34.87, 20.03,
+Cunninghamia lanceolata, evergreen, no, leaves, 10, 42.51, 1.199, 35.48, 0.087,,,,,,,,,,, 36.23, 25.03,
+Cryptomeria fortunei, evergreen, no, leaves, 10, 39.395, 1.019, 39.25, 0.076,,,,,,,,,,, 38.92, 24.39,
+Cinnamomum camphora, evergreen, no, leaves, 10, 37.911, 1.051, 36.19, 0.123,,,,,,,,,,, 38.38, 22.09,
+Toona ciliata, deciduous, no, leaves, 10, 35.036, 1.223, 28.95, 0.098,,,,,,,,,,, 28.75, 17.65,
+Quercus acutissima, deciduous, no, leaves, 10, 42.859, 1.106, 38.78, 0.078,,,,,,,,,,, 38.80, 20.35,

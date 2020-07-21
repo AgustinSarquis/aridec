@@ -1,493 +1,638 @@
-CitationKey: Ma2017
-doi: 10.1002/ecs2.1770
-EntryAuthor: Agustín Sarquis
+citationKey: Ma2017 # Unique identifier in the format: LastnameYear (lowercase letters must be added when there are two or more entries by the same author and year, i.e.: LastnameYearx)
+doi: 10.1002/ecs2.1770 # DOI of the publication where data is published
+entryAuthor: Agustín Sarquis # First and last name of the person who entered the data in this file
+entryCreationDate: 2019-04-17 # Date when the data was entered in this file. Format: YYYY-MM-DD
+contactName: Agustín Sarquis # First and last name of contact person (may be the principal investigator supervising the entryAuthor)
+contactEmail: agusarquis@agro.uba.ar # Email of the contact person
+entryNote: this site is probably humid, with rainy spring and summer
+study: They incubated broadleaf and needle litter under different light intensity treatments in a field experiment
 
-SiteInfo:
-  Name: Chongzhou, Sichuan, China
-  EcosystemType: abbandoned farmland
-  MAP:
-    Value: 1015.2
-    Units: mm
-  MAT:
-    Value: 16
-    Units: Celsius
-  RainySeason:
-   - spring
-   - summer
-  Altitude:
-    Value: 516
-    Units: masl
-  SoilType: alluvium yellow
-  Coordinates:
-    Latitude: 30.92
-    Longitude: 103.82
+siteInfo:
+        site: Chongzhou # Names of individual sites, if one site, keep on this line, if multiple, use array format
+              # These fields should be arrays of equal length to site array
+        coordinates:
+          latitude: 30.92 # Latitude in decimal units (check for negative that denotes southern hemisphere)
+          longitude: 103.82 # Longitude in decimal units (check for negative that denotes western hemisphere)
+        country: China # Name of country where site was conducted
+        MAT: 16 # Mean annual temperature in degrees Celsius
+        MAP: 1015.2 # Mean annual precipitation in mm
+        rainySeason: # Period of the year during which most precipitation occurs, i.e.: whole year, spring, summer, autumn, winter (if more than one use array format)
+        elevation: 516 # Elevation of study site in meters above sea level
+        landCover: farmland # Land cover of the site. Valid fields are: greenbelt, (abbandoned) farmland, mangrove forest, subalpine, shrubland, urban, sandland, forest, steppe, desert, grassland, savanna
+        vegNote: Abbandoned farmland dominated by a herb community of Artemisia annua, Alternanthera philoxeroides, Setaria viridis, Echinochloa crusgalli, Leptochloa pana- cea, Malachium aquaticum, Chenopodium album,and Amaranthus viridis.
+        cover:
+          plantCover: # Total plant cover percentage (if they report cover by specific plant types, fill the fields below)
+          bunchgrassCover:
+          shrubCover:
+          treeCover:
+          forbCover:
+          bareSoil:
+        soilTaxonomy:
+          soilOrder: # Soil order according to the classification system described below
+          soilFamily: # Soil family description (ex. 'Eutric' for a Eutric Cambisol)
+          soilSeries: # Soil series according to the classification system described below
+          classificationSystem: # Name of classification system used. Valid fields are: USDA, FAO, and WRB.
 
-ExperimentInfo:
- LitterInfo:
-  LitterType1:
-   Species: Pinus massoniana
-   LifeForm: conifer
-   Material: recently senesced leaves
-   Carbon:
-     Value: 44.12
-     Units: percentage
-   Nitrogen:
-     Value: 1.072
-     Units: percentage
-   Phosphorus:
-     Value: 0.081
-     Units: percentage
-   C:N:
-     Value: 41.23
-   Lignin:
-     Value: 34.87
-     Units: percentage
-   Cellulose:
-     Value: 20.03
-     Units: percentage
-   Amount:
-     Value: 10
-     Units: g
-  LitterType2:
-   Species: Cunninghamia lanceolata
-   LifeForm: conifer
-   Material: recently senesced leaves
-   Carbon:
-     Value: 42.51
-     Units: percentage
-   Nitrogen:
-     Value: 1.199
-     Units: percentage
-   Phosphorus:
-     Value: 0.087
-     Units: percentage
-   C:N:
-     Value: 35.48
-   Lignin:
-     Value: 36.23
-     Units: percentage
-   Cellulose:
-     Value: 25.03
-     Units: percentage
-   Amount:
-     Value: 10
-     Units: g
-  LitterType3:
-   Species: Cryptomeria fortunei
-   LifeForm: conifer
-   Material: recently senesced leaves
-   Carbon:
-     Value: 39.395
-     Units: percentage
-   Nitrogen:
-     Value: 1.019
-     Units: percentage
-   Phosphorus:
-     Value: 0.076
-     Units: percentage
-   C:N:
-     Value: 39.25
-   Lignin:
-     Value: 38.92
-     Units: percentage
-   Cellulose:
-     Value: 24.39
-     Units: percentage
-   Amount:
-     Value: 10
-     Units: g
-  LitterType4:
-   Species: Cinnamomum camphora
-   LifeForm: tree
-   Material: recently senesced leaves
-   Carbon:
-     Value: 37.911
-     Units: percentage
-   Nitrogen:
-     Value: 1.051
-     Units: percentage
-   Phosphorus:
-     Value: 0.123
-     Units: percentage
-   C:N:
-     Value: 36.19
-   Lignin:
-     Value: 38.38
-     Units: percentage
-   Cellulose:
-     Value: 22.09
-     Units: percentage
-   Amount:
-     Value: 10
-     Units: g
-  LitterType5:
-   Species: Toona ciliata
-   LifeForm: tree
-   Material: recently senesced leaves
-   Carbon:
-     Value: 35.036
-     Units: percentage
-   Nitrogen:
-     Value: 1.223
-     Units: percentage
-   Phosphorus:
-     Value: 0.098
-     Units: percentage
-   C:N:
-     Value: 28.95
-   Lignin:
-     Value: 28.75
-     Units: percentage
-   Cellulose:
-     Value: 17.65
-     Units: percentage
-   Amount:
-     Value: 10
-     Units: g
-  LitterType6:
-   Species: Quercus acutissima
-   LifeForm: conifer
-   Material: recently senesced leaves
-   Carbon:
-     Value: 42.859
-     Units: percentage
-   Nitrogen:
-     Value: 1.106
-     Units: percentage
-   Phosphorus:
-     Value: 0.078
-     Units: percentage
-   C:N:
-     Value: 38.78
-   Lignin:
-     Value: 38.80
-     Units: percentage
-   Cellulose:
-     Value: 20.35
-     Units: percentage
-   Amount:
-     Value: 10
-     Units: g
- Experiment1:
-    Description: "They incubated broadleaf and needle litter under different light intensity treatments in a field experiment"
-    LitterBagInfo:
-      MeshSize:
-       Value:
-         - 1.0
-         - 0.5
-       Units: mm
-      Dimentions:
-       Width: 20
-       Lenght: 25
-       Units: cm
-      Position:
-        Position1:
-          - vegetated soil
-        Position2:
-          - vegetated soil
-          - under shadecloth
-    FilterInfo:
-      FilterType1:
-        Name: shadecloth
-        Wavelenght:
-          Value: 280
-          Units: nm
-        Intensity:
-          Value: 72
-          Units: percentage
-      FilterType2:
-        Name: shadecloth
-        Wavelenght:
-          Value: 280
-          Units: nm
-        Intensity:
-          Value: 62
-          Units: percentage
-      FilterType3:
-        Name: shadecloth
-        Wavelenght:
-          Value: 280
-          Units: nm
-        Intensity:
-          Value: 55
-          Units: percentage
-      FilterType4:
-        Name: shadecloth
-        Wavelenght:
-          Value: 280
-          Units: nm
-        Intensity:
-          Value: 45
-          Units: percentage
-      FilterType5:
-        Name: shadecloth
-        Wavelenght:
-          Value: 280
-          Units: nm
-        Intensity:
-          Value: 32
-          Units: percentage
-    Treatment: light attenuation, litter type
-    StartingDate:
-      Month: january
-      Season: winter
-    Duration:
-      Time: 24
-      Units: months
+experimentInfo:
+        incDesc: 6 species x 6 light intensity levels x 8 harvests x 3 replicates # Short description of the incubation setup and main treatments
+        # These fields should all be one dimensional arrays. Values for experimental variables with multiple treatment levels should be entered in the variables section and left blank here
+        replicates: 3 # Number of replicates per treatment
+        duration: 730 # length of incubation in days
+        startingMonth: january # month during which the study started, all in lower case
+        litter: # plant species used as litter material for the experiment. All details related to the species must be specified in the initConditions.csv file
+        litterbag:
+          material: # mesh type used to construct the litter bags, options are: wire, aluminum, window screening, net curtain, bolting cloth, plastic, fiberglass, nylon, polypropylene, polyester, polyethylene, polyamide
+          meshSize: 1 # mesh size in mm referring to one side of the net-square
+          dimentions: # size of the full litter bag in cm
+            width: 20
+            length: 25
+            radius: # for round or cilindrical structures
+            height: # for 3-dimensional designs such as litter boxes in Austin2006NATURE
+          transmitance: # when reported, light transmitance of the mesh material as a percentage of full sunlight for each wavelength
+            total:
+            PAR:
+            UV:
+            UVA:
+            UVB:
+          position: # position of litterbags in the field, valid options are: bare soil, decomposition bed, under litter, over litter, over lawn, next to grass, under tree/shrub/grass, buried X cm deep, underwater, under rainout shelter, under frame, suspended X cm, under shadecloth
 
-Variables:
-  V1:
-    Name: Time
-    Units: days
-  V2:
-    Name: Pm_CK
-    Units: mass remaining
-    Description: "Pinus massoniana litter was incubated under full sun radiation"
-    FilterType: NA
-    LitterType: LitterType1
-    Position: Position1
-  V3:
-    Name: Pm_L72
-    Units: mass remaining
-    Description: "Pinus massoniana litter was incubated under shadecloth with 72% relative light intensity"
-    FilterType: FilterType1
-    LitterType: LitterType1
-    Position: Position2
-  V4:
-    Name: Pm_L62
-    Units: mass remaining
-    Description: "Pinus massoniana litter was incubated under shadecloth with 62% relative light intensity"
-    FilterType: FilterType2
-    LitterType: LitterType1
-    Position: Position2
-  V5:
-    Name: Pm_L55
-    Units: mass remaining
-    Description: "Pinus massoniana litter was incubated under shadecloth with 55% relative light intensity"
-    FilterType: FilterType3
-    LitterType: LitterType1
-    Position: Position2
-  V6:
-    Name: Pm_L45
-    Units: mass remaining
-    Description: "Pinus massoniana litter was incubated under shadecloth with 45% relative light intensity"
-    FilterType: FilterType4
-    LitterType: LitterType1
-    Position: Position2
-  V7:
-    Name: Pm_L32
-    Units: mass remaining
-    Description: "Pinus massoniana litter was incubated under shadecloth with 32% relative light intensity"
-    FilterType: FilterType5
-    LitterType: LitterType1
-    Position: Position2
-  V8:
-    Name: Cl_CK
-    Units: mass remaining
-    Description: "Cunninghamia lanceolata litter was incubated under full sun radiation"
-    FilterType: NA
-    LitterType: LitterType2
-    Position: Position1
-  V9:
-    Name: Cl_L72
-    Units: mass remaining
-    Description: "Cunninghamia lanceolata litter was incubated under shadecloth with 72% relative light intensity"
-    FilterType: FilterType1
-    LitterType: LitterType2
-    Position: Position2
-  V10:
-    Name: Cl_L62
-    Units: mass remaining
-    Description: "Cunninghamia lanceolata litter was incubated under shadecloth with 62% relative light intensity"
-    FilterType: FilterType2
-    LitterType: LitterType2
-    Position: Position2
-  V11:
-    Name: Cl_L55
-    Units: mass remaining
-    Description: "Cunninghamia lanceolata litter was incubated under shadecloth with 55% relative light intensity"
-    FilterType: FilterType3
-    LitterType: LitterType2
-    Position: Position2
-  V12:
-    Name: Cl_L45
-    Units: mass remaining
-    Description: "Cunninghamia lanceolata litter was incubated under shadecloth with 45% relative light intensity"
-    FilterType: FilterType4
-    LitterType: LitterType2
-    Position: Position2
-  V13:
-    Name: Cl_L32
-    Units: mass remaining
-    Description: "Cunninghamia lanceolata litter was incubated under shadecloth with 32% relative light intensity"
-    FilterType: FilterType5
-    LitterType: LitterType2
-    Position: Position2
-  V14:
-    Name: Cf_CK
-    Units: mass remaining
-    Description: "Cryptomeria fortunei litter was incubated under full sun radiation"
-    FilterType: NA
-    LitterType: LitterType3
-    Position: Position1
-  V15:
-    Name: Cf_L72
-    Units: mass remaining
-    Description: "Cryptomeria fortunei litter was incubated under shadecloth with 72% relative light intensity"
-    FilterType: FilterType1
-    LitterType: LitterType3
-    Position: Position2
-  V16:
-    Name: Cf_L62
-    Units: mass remaining
-    Description: "Cryptomeria fortunei litter was incubated under shadecloth with 62% relative light intensity"
-    FilterType: FilterType2
-    LitterType: LitterType3
-    Position: Position2
-  V17:
-    Name: Cf_L55
-    Units: mass remaining
-    Description: "Cryptomeria fortunei litter was incubated under shadecloth with 55% relative light intensity"
-    FilterType: FilterType3
-    LitterType: LitterType3
-    Position: Position2
-  V18:
-    Name: Cf_L45
-    Units: mass remaining
-    Description: "Cryptomeria fortunei litter was incubated under shadecloth with 45% relative light intensity"
-    FilterType: FilterType4
-    LitterType: LitterType3
-    Position: Position2
-  V19:
-    Name: Cf_L32
-    Units: mass remaining
-    Description: "Cryptomeria fortunei litter was incubated under shadecloth with 32% relative light intensity"
-    FilterType: FilterType5
-    LitterType: LitterType3
-    Position: Position2
-  V20:
-    Name: Cc_CK
-    Units: mass remaining
-    Description: "Cinnamomum camphora litter was incubated under full sun radiation"
-    FilterType: NA
-    LitterType: LitterType4
-    Position: Position1
-  V21:
-    Name: Cc_L72
-    Units: mass remaining
-    Description: "Cinnamomum camphora litter was incubated under shadecloth with 72% relative light intensity"
-    FilterType: FilterType1
-    LitterType: LitterType4
-    Position: Position2
-  V22:
-    Name: Cc_L62
-    Units: mass remaining
-    Description: "Cinnamomum camphora litter was incubated under shadecloth with 62% relative light intensity"
-    FilterType: FilterType2
-    LitterType: LitterType4
-    Position: Position2
-  V23:
-    Name: Cc_L55
-    Units: mass remaining
-    Description: "Cinnamomum camphora litter was incubated under shadecloth with 55% relative light intensity"
-    FilterType: FilterType3
-    LitterType: LitterType4
-    Position: Position2
-  V24:
-    Name: Cc_L45
-    Units: mass remaining
-    Description: "Cinnamomum camphora litter was incubated under shadecloth with 45% relative light intensity"
-    FilterType: FilterType4
-    LitterType: LitterType4
-    Position: Position2
-  V25:
-    Name: Cc_L32
-    Units: mass remaining
-    Description: "Cinnamomum camphora litter was incubated under shadecloth with 32% relative light intensity"
-    FilterType: FilterType5
-    LitterType: LitterType4
-    Position: Position2
-  V26:
-    Name: Tc_CK
-    Units: mass remaining
-    Description: "Toona ciliata litter was incubated under full sun radiation"
-    FilterType: NA
-    LitterType: LitterType5
-    Position: Position1
-  V27:
-    Name: Tc_L72
-    Units: mass remaining
-    Description: "Toona ciliata litter was incubated under shadecloth with 72% relative light intensity"
-    FilterType: FilterType1
-    LitterType: LitterType5
-    Position: Position2
-  V28:
-    Name: Tc_L62
-    Units: mass remaining
-    Description: "Toona ciliata litter was incubated under shadecloth with 62% relative light intensity"
-    FilterType: FilterType2
-    LitterType: LitterType5
-    Position: Position2
-  V29:
-    Name: Tc_L55
-    Units: mass remaining
-    Description: "Toona ciliata litter was incubated under shadecloth with 55% relative light intensity"
-    FilterType: FilterType3
-    LitterType: LitterType5
-    Position: Position2
-  V30:
-    Name: Tc_L45
-    Units: mass remaining
-    Description: "Toona ciliata litter was incubated under shadecloth with 45% relative light intensity"
-    FilterType: FilterType4
-    LitterType: LitterType5
-    Position: Position2
-  V31:
-    Name: Tc_L32
-    Units: mass remaining
-    Description: "Toona ciliata litter was incubated under shadecloth with 32% relative light intensity"
-    FilterType: FilterType5
-    LitterType: LitterType5
-    Position: Position2
-  V32:
-    Name: Qa_CK
-    Units: mass remaining
-    Description: "Quercus acutissima litter was incubated under full sun radiation"
-    FilterType: NA
-    LitterType: LitterType6
-    Position: Position1
-  V33:
-    Name: Qa_L72
-    Units: mass remaining
-    Description: "Quercus acutissima litter was incubated under shadecloth with 72% relative light intensity"
-    FilterType: FilterType1
-    LitterType: LitterType6
-    Position: Position2
-  V34:
-    Name: Qa_L62
-    Units: mass remaining
-    Description: "Quercus acutissima litter was incubated under shadecloth with 62% relative light intensity"
-    FilterType: FilterType2
-    LitterType: LitterType6
-    Position: Position2
-  V35:
-    Name: Qa_L55
-    Units: mass remaining
-    Description: "Quercus acutissima litter was incubated under shadecloth with 55% relative light intensity"
-    FilterType: FilterType3
-    LitterType: LitterType6
-    Position: Position2
-  V36:
-    Name: Qa_L45
-    Units: mass remaining
-    Description: "Quercus acutissima litter was incubated under shadecloth with 45% relative light intensity"
-    FilterType: FilterType4
-    LitterType: LitterType6
-    Position: Position2
-  V37:
-    Name: Qa_L32
-    Units: mass remaining
-    Description: "Quercus acutissima litter was incubated under shadecloth with 32% relative light intensity"
-    FilterType: FilterType5
-    LitterType: LitterType6
-    Position: Position2
+variables: # These describe the columns of your timeSeries.csv file
+        V1: # column 1
+          name: Time
+          units: days
+        V2:
+          name: Pm_CK
+          units: mass remaining
+          varDesc: Pinus massoniana litter was incubated under full sun radiation
+          site: Chongzhou
+          litter: Pinus massoniana
+          position: over lawn
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold:
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V3:
+          name: Pm_L72
+          units: mass remaining
+          varDesc: Pinus massoniana litter was incubated under shadecloth with 72% relative light intensity
+          site: Chongzhou
+          litter: Pinus massoniana
+          position: under shadecloth
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: 700
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total: 72
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V4:
+          name: Pm_L62
+          units: mass remaining
+          varDesc: Pinus massoniana litter was incubated under shadecloth with 62% relative light intensity
+          site: Chongzhou
+          litter: Pinus massoniana
+          position: under shadecloth
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: 700
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total: 62
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V5:
+          name: Pm_L55
+          units: mass remaining
+          varDesc: Pinus massoniana litter was incubated under shadecloth with 55% relative light intensity
+          site: Chongzhou
+          litter: Pinus massoniana
+          position: under shadecloth
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: 700
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total: 55
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V6:
+          name: Pm_L45
+          units: mass remaining
+          varDesc: Pinus massoniana litter was incubated under shadecloth with 45% relative light intensity
+          site: Chongzhou
+          litter: Pinus massoniana
+          position: under shadecloth
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: 700
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total: 45
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V7:
+          name: Pm_L32
+          units: mass remaining
+          varDesc: Pinus massoniana litter was incubated under shadecloth with 32% relative light intensity
+          site: Chongzhou
+          litter: Pinus massoniana
+          position: under shadecloth
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: 700
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total: 32
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V8:
+          name: Cl_CK
+          units: mass remaining
+          varDesc: Cunninghamia lanceolata litter was incubated under full sun radiation
+          site: Chongzhou
+          litter: Cunninghamia lanceolata
+          position: over lawn
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold:
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V9:
+          name: Cl_L72
+          units: mass remaining
+          varDesc: Cunninghamia lanceolata litter was incubated under shadecloth with 72% relative light intensity
+          site: Chongzhou
+          litter: Cunninghamia lanceolata
+          position: under shadecloth
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: 700
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total: 72
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V10:
+          name: Cl_L62
+          units: mass remaining
+          varDesc: Cunninghamia lanceolata litter was incubated under shadecloth with 62% relative light intensity
+          site: Chongzhou
+          litter: Cunninghamia lanceolata
+          position: under shadecloth
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: 700
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total: 62
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V11:
+          name: Cl_L55
+          units: mass remaining
+          varDesc: Cunninghamia lanceolata litter was incubated under shadecloth with 55% relative light intensity
+          site: Chongzhou
+          litter: Cunninghamia lanceolata
+          position: under shadecloth
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: 700
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total: 55
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V12:
+          name: Cl_L45
+          units: mass remaining
+          varDesc: Cunninghamia lanceolata litter was incubated under shadecloth with 45% relative light intensity
+          site: Chongzhou
+          litter: Cunninghamia lanceolata
+          position: under shadecloth
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: 700
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total: 45
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V13:
+          name: Cl_L32
+          units: mass remaining
+          varDesc: Cunninghamia lanceolata litter was incubated under shadecloth with 32% relative light intensit
+          site: Chongzhou
+          litter: Cunninghamia lanceolata
+          position: under shadecloth
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: 700
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total: 32
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V14:
+          name: Cf_CK
+          units: mass remaining
+          varDesc: Cryptomeria fortunei litter was incubated under full sun radiation
+          site: Chongzhou
+          litter: Cryptomeria fortunei
+          position: over lawn
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold:
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V15:
+          name: Cf_L72
+          units: mass remaining
+          varDesc: Cryptomeria fortunei litter was incubated under shadecloth with 72% relative light intensity
+          site: Chongzhou
+          litter: Cryptomeria fortunei
+          position: under shadecloth
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: 700
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total: 72
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V16:
+          name: Cf_L62
+          units: mass remaining
+          varDesc: Cryptomeria fortunei litter was incubated under shadecloth with 62% relative light intensity
+          site: Chongzhou
+          litter: Cryptomeria fortunei
+          position: under shadecloth
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: 700
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total: 62
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V17:
+          name: Cf_L55
+          units: mass remaining
+          varDesc: Cryptomeria fortunei litter was incubated under shadecloth with 55% relative light intensity
+          site: Chongzhou
+          litter: Cryptomeria fortunei
+          position: under shadecloth
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: 700
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total: 55
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V18:
+          name: Cf_L45
+          units: mass remaining
+          varDesc: Cryptomeria fortunei litter was incubated under shadecloth with 45% relative light intensity
+          site: Chongzhou
+          litter: Cryptomeria fortunei
+          position: under shadecloth
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: 700
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total: 45
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V19:
+          name: Cf_L32
+          units: mass remaining
+          varDesc: Cryptomeria fortunei litter was incubated under shadecloth with 32% relative light intensity
+          site: Chongzhou
+          litter: Cryptomeria fortunei
+          position: under shadecloth
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: 700
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total: 32
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V20:
+          name: Cc_CK
+          units: mass remaining
+          varDesc: Cinnamomum camphora litter was incubated under full sun radiation
+          site: Chongzhou
+          litter: Cinnamomum camphora
+          position: over lawn
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold:
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V21:
+          name: Cc_L72
+          units: mass remaining
+          varDesc: Cinnamomum camphora litter was incubated under shadecloth with 72% relative light intensity
+          site: Chongzhou
+          litter: Cinnamomum camphora
+          position: under shadecloth
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: 700
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total: 72
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V22:
+          name: Cc_L62
+          units: mass remaining
+          varDesc: Cinnamomum camphora litter was incubated under shadecloth with 62% relative light intensity
+          site: Chongzhou
+          litter: Cinnamomum camphora
+          position: under shadecloth
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: 700
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total: 62
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V23:
+          name: Cc_L55
+          units: mass remaining
+          varDesc: Cinnamomum camphora litter was incubated under shadecloth with 55% relative light intensity
+          site: Chongzhou
+          litter: Cinnamomum camphora
+          position: under shadecloth
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: 700
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total: 55
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V24:
+          name: Cc_L45
+          units: mass remaining
+          varDesc: Cinnamomum camphora litter was incubated under shadecloth with 45% relative light intensity
+          site: Chongzhou
+          litter: Cinnamomum camphora
+          position: under shadecloth
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: 700
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total: 45
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V25:
+          name: Cc_L32
+          units: mass remaining
+          varDesc: Cinnamomum camphora litter was incubated under shadecloth with 32% relative light intensity
+          site: Chongzhou
+          litter: Cinnamomum camphora
+          position: under shadecloth
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: 700
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total: 32
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V26:
+          name: Tc_CK
+          units: mass remaining
+          varDesc: Toona ciliata litter was incubated under full sun radiation
+          site: Chongzhou
+          litter: Toona ciliata
+          position: over lawn
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold:
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V27:
+          name: Tc_L72
+          units: mass remaining
+          varDesc: Toona ciliata litter was incubated under shadecloth with 72% relative light intensity
+          site: Chongzhou
+          litter: Toona ciliata
+          position: under shadecloth
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: 700
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total: 72
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V28:
+          name: Tc_L62
+          units: mass remaining
+          varDesc: Toona ciliata litter was incubated under shadecloth with 62% relative light intensity
+          site: Chongzhou
+          litter: Toona ciliata
+          position: under shadecloth
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: 700
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total: 62
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V29:
+          name:  Tc_L55
+          units: mass remaining
+          varDesc: Toona ciliata litter was incubated under shadecloth with 55% relative light intensity
+          site: Chongzhou
+          litter: Toona ciliata
+          position: under shadecloth
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: 700
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total: 55
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V30:
+          name: Tc_L45
+          units: mass remaining
+          varDesc: Toona ciliata litter was incubated under shadecloth with 45% relative light intensity
+          site: Chongzhou
+          litter: Toona ciliata
+          position: under shadecloth
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: 700
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total: 45
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V31:
+          name: Tc_L32
+          units: mass remaining
+          varDesc: Toona ciliata litter was incubated under shadecloth with 32% relative light intensity
+          site: Chongzhou
+          litter: Toona ciliata
+          position: under shadecloth
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: 700
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total: 32
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V32:
+          name: Qa_CK
+          units: mass remaining
+          varDesc: Quercus acutissima litter was incubated under full sun radiation
+          site: Chongzhou
+          litter: Quercus acutissima
+          position: over lawn
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold:
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V33:
+          name: Qa_L72
+          units: mass remaining
+          varDesc: Quercus acutissima litter was incubated under shadecloth with 72% relative light intensity
+          site: Chongzhou
+          litter: Quercus acutissima
+          position: under shadecloth
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: 700
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total: 72
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V34:
+          name: Qa_L62
+          units: mass remaining
+          varDesc: Quercus acutissima litter was incubated under shadecloth with 62% relative light intensity
+          site: Chongzhou
+          litter: Quercus acutissima
+          position: under shadecloth
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: 700
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total: 62
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V35:
+          name: Qa_L55
+          units: mass remaining
+          varDesc: Quercus acutissima litter was incubated under shadecloth with 55% relative light intensity
+          site: Chongzhou
+          litter: Quercus acutissima
+          position: under shadecloth
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: 700
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total: 55
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V36:
+          name: Qa_L45
+          units: mass remaining
+          varDesc: Quercus acutissima litter was incubated under shadecloth with 45% relative light intensity
+          site: Chongzhou
+          litter:
+          position: under shadecloth
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: 700
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total: 45
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V37:
+          name: Qa_L32
+          units: mass remaining
+          varDesc: Quercus acutissima litter was incubated under shadecloth with 32% relative light intensity
+          site: Chongzhou
+          litter: Quercus acutissima
+          position: under shadecloth
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: 700
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total: 32
+             PAR:
+             UV:
+             UVA:
+             UVB:
