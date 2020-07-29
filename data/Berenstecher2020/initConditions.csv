@@ -1,0 +1,5 @@
+species,type,N-fixer,material,amount,carbon,nitrogen,C:N,phosphorus,potassium,sodium,magnesium,manganese,copper,zinc,lead,calcium,sulfur,iron,lignin,cellulose,hemicellulose,cell solubles,SLA
+Pappostipa spp,graminoid,no,leaves,1.5,41.4,0.45,92,,,,,,,,,,,,9.34,,,,3.56
+Mulinum spinosum,deciduous,no,leaves,1.5,41.25,0.75,55,,,,,,,,,,,,15.7,,,,61.79
+Nothofagus antarctica,deciduous,no,leaves,1.5,48.1,0.65,74,,,,,,,,,,,,35.63,,,,17.21
+Populus nigra,deciduous,no,leaves,1.5,39.04,0.61,64,,,,,,,,,,,,19.94,,,,14.25
