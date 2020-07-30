@@ -1,102 +1,167 @@
-CitationKey: MacAuley1975
-doi: https://doi.org/10.1016/0038-0717(75)90046-2
-EntryAuthor: Ignacio Siebenhart
+citationKey: MacAuley1975 # Unique identifier in the format: LastnameYear (lowercase letters must be added when there are two or more entries by the same author and year, i.e.: LastnameYearx)
+doi: doi.org/10.1016/0038-0717(75)90046-2 # DOI of the publication where data is published
+entryAuthor: Ignacio Siebenhart # First and last name of the person who entered the data in this file
+entryCreationDate: 2019-05-17 # Date when the data was entered in this file. Format: YYYY-MM-DD
+contactName: Agustín Sarquis # First and last name of contact person (may be the principal investigator supervising the entryAuthor)
+contactEmail: agusarquis@agro.uba.ar # Email of the contact person
+entryNote: # Any notes or comments related to this entry.
+study: Effect of insects and fungi in decomposition with three mesh size treatments and biocide application
 
-SiteInfo:
- Name: Kosciuszko National Park, New South Wales, Australia
- MAP:
-  Value: 827.88
-  Units: mm
- MAT:
-  Value: 10.4
-  Units: Celsius
- Altitude:
-  Value: 1500
-  Units: masl
- Coordinates:
-  Latitude: -36.5048
-  Longitude: 148.3021
+siteInfo:
+        site: Kosciuszko National Park # Names of individual sites, if one site, keep on this line, if multiple, use array format
+              # These fields should be arrays of equal length to site array
+        coordinates:
+          latitude: -36.5048 # Latitude in decimal units (check for negative that denotes southern hemisphere)
+          longitude: 148.3021 # Longitude in decimal units (check for negative that denotes western hemisphere)
+        country: Australia # Name of country where site was conducted
+        MAT: 10.4 # Mean annual temperature in degrees Celsius
+        MAP: 827.88 # Mean annual precipitation in mm
+        rainySeason: # Period of the year during which most precipitation occurs, i.e.: whole year, spring, summer, autumn, winter (if more than one use array format)
+        elevation: 1500 # Elevation of study site in meters above sea level
+        landCover: # Land cover of the site. Valid fields are: greenbelt, (abbandoned) farmland, mangrove forest, subalpine, shrubland, urban, sandland, forest, steppe, desert, grassland, savanna
+        vegNote: # Additional details about land cover such as species or functional type composition
+        cover:
+          plantCover: # Total plant cover percentage (if they report cover by specific plant types, fill the fields below)
+          bunchgrassCover:
+          shrubCover:
+          treeCover:
+          forbCover:
+          bareSoil:
+        soilTaxonomy:
+          soilOrder: # Soil order according to the classification system described below
+          soilFamily: # Soil family description (ex. 'Eutric' for a Eutric Cambisol)
+          soilSeries: # Soil series according to the classification system described below
+          classificationSystem: # Name of classification system used. Valid fields are: USDA, FAO, and WRB.
 
-ExperimentInfo:
- LitterInfo:
-  LitterType1:
-   Species: Eucalyptus pauciflora
-   LifeForm: tree
-   Material: leaves
- Experiment1:
-  Description: They evaluate the role of insects and fungi in decomposition through three mesh size treatments and biocide application.
-  LitterBagInfo:
-   Material: polyester
-   MeshSize:
-    MeshSize1:
-     Value: 0.5
-     Units: mm
-    MeshSize2:
-     Value: 1
-     Units: mm
-    MeshSize3:
-     Value: 5
-     Units: mm
-    Dimentions:
-     Width: 30
-     Lenght: 40
-     Units: cm
-   Position:
-    - on top of soil litter layer
-    - bare soil
-  Treatment: 4
-    - soil fauna exclusion
-    - biocide application
-  StartingDate:
-   Month: november
-   Season: spring
-  Duration:
-   Time: 12
-   Units: months
+experimentInfo:
+        incDesc: 2 experiments, one with 3 mesh sizes x 8 harvests and another one with 4 biocides x 7 harvests
+        # These fields should all be one dimensional arrays. Values for experimental variables with multiple treatment levels should be entered in the variables section and left blank here
+        replicates: 5 # Number of replicates per treatment
+        duration: 336 # length of incubation in days
+        startingMonth: november # month during which the study started, all in lower case
+        litter: Eucalyptus pauciflora # plant species used as litter material for the experiment. All details related to the species must be specified in the initConditions.csv file
+        litterbag:
+          material: polyester # mesh type used to construct the litter bags, options are: wire, aluminum, window screening, net curtain, bolting cloth, plastic, fiberglass, nylon, polypropylene, polyester, polyethylene, polyamide
+          meshSize: # mesh size in mm referring to one side of the net-square
+          dimentions: # size of the full litter bag in cm
+            width: 30
+            length: 40
+            radius: # for round or cilindrical structures
+            height: # for 3-dimensional designs such as litter boxes in Austin2006NATURE
+          transmitance: # when reported, light transmitance of the mesh material as a percentage of full sunlight for each wavelength
+            total:
+            PAR:
+            UV:
+            UVA:
+            UVB:
+          position: over litter
 
-Variables:
-  V1:
-    Name: Time
-    Units: weeks
-  V2:
-    Name: FM
-    Units: mass remaining
-    Description: "Litter organic matter percentage remaining at harvest time with a small mesh size"
-    MeshSize: MeshSize1
-    BiocideApplication: "none"
-  V3:
-    Name: MM
-    Units: mass remaining
-    Description: "Litter organic matter percentage remaining at harvest time with a medium mesh size"
-    MeshSize: MeshSize2
-    BiocideApplication: "none"
-  V4:
-    Name: LM
-    Units: mass remaining
-    Description: "Litter organic matter percentage remaining at harvest time with a large mesh size"
-    MeshSize: MeshSize3
-    BiocideApplication: "none"
-  V5:
-    Name: BEN
-    Units: mass remaining
-    Description: "Litter organic matter percentage remaining at harvest time with fungicide"
-    MeshSize: MeshSize3
-    BiocideApplication: "Benomyl fungicide"
-  V6:
-    Name: ZIN
-    Units: mass remaining
-    Description: "Litter organic matter percentage remaining at harvest time with fungicide "
-    MeshSize: MeshSize3
-    BiocideApplication: "Zineb fungicide"
-  V7:
-    Name: DDT
-    Units: mass remaining
-    Description: "Litter organic matter percentage remaining at harvest time with insecticide"
-    MeshSize: MeshSize3
-    BiocideApplication: "DDT insecticide"
-  V8:
-    Name: DIE
-    Units: mass remaining
-    Description: "Litter organic matter percentage remaining at harvest time with insecticide"
-    MeshSize: MeshSize3
-    BiocideApplication: "Dieldrin insecticide"
+variables: # These describe the columns of your timeSeries.csv file
+        V1: # column 1
+          name: Time
+          units: weeks
+        V2:
+          name: FM
+          units: mass remaining
+          varDesc: E. pauciflora with small mesh size litter bag
+          site: Kosciuszko National Park
+          meshSize: 0.5
+          compTreat: no biocide
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V3:
+          name: MM
+          units: mass remaining
+          varDesc: E. pauciflora with medium mesh size litter bag
+          site: Kosciuszko National Park
+          meshSize: 1
+          compTreat: no biocide
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V4:
+          name: LM
+          units: mass remaining
+          varDesc: E. pauciflora with large mesh size litter bag
+          site: Kosciuszko National Park
+          meshSize: 5
+          compTreat: no biocide
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V5:
+          name: BEN
+          units: mass remaining
+          varDesc: E. pauciflora with Benomyl fungicide
+          site: Kosciuszko National Park
+          meshSize: 5
+          compTreat: biocide
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V6:
+          name: ZIN
+          units: mass remaining
+          varDesc: E. pauciflora with Zineb fungicide
+          site: Kosciuszko National Park
+          meshSize: 5
+          compTreat: biocide
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V7:
+          name: DDT
+          units: mass remaining
+          varDesc: E. pauciflora with DDT insecticide
+          site: Kosciuszko National Park
+          meshSize: 5
+          compTreat: biocide
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V8:
+          name: DIE
+          units: mass remaining
+          varDesc: E. pauciflora with Dieldrin insecticide
+          site: Kosciuszko National Park
+          meshSize: 5
+          compTreat: biocide
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
