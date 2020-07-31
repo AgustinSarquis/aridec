@@ -1,205 +1,242 @@
-CitationKey: Mao2018
-doi: 10.1007/s40333-018-0054-6
-EntryAuthor: Ignacio Siebenhart
+citationKey: Mao2018 # Unique identifier in the format: LastnameYear (lowercase letters must be added when there are two or more entries by the same author and year, i.e.: LastnameYearx)
+doi: 10.1007/s40333-018-0054-6 # DOI of the publication where data is published
+entryAuthor: Ignacio Siebenhart # First and last name of the person who entered the data in this file
+entryCreationDate: 2019-07-19 # Date when the data was entered in this file. Format: YYYY-MM-DD
+contactName: Agustín Sarquis # First and last name of contact person (may be the principal investigator supervising the entryAuthor)
+contactEmail: agusarquis@agro.uba.ar # Email of the contact person
+entryNote: # Any notes or comments related to this entry.
+study: effects of UV radiation, litter layer thickness, and their interaction on mass loss of 2 species
 
-SiteInfo:
- Name: Horqin Sandy Land, Inner Mongolia, China
- EcosystemType: abbandoned farmland
- MAP:
-  Value: 450
-  Units: mm
- MAT:
-  Value: 6.4
-  Units: Celsius
- Altitude:
-  Value: 260
-  Units: masl
- Coordinates:
-  Latitude: 42.97
-  Longitude: 122.35
+siteInfo:
+        site: Horqin # Names of individual sites, if one site, keep on this line, if multiple, use array format
+              # These fields should be arrays of equal length to site array
+        coordinates:
+          latitude: 42.97 # Latitude in decimal units (check for negative that denotes southern hemisphere)
+          longitude: 122.35 # Longitude in decimal units (check for negative that denotes western hemisphere)
+        country: China # Name of country where site was conducted
+        MAT: 6.4 # Mean annual temperature in degrees Celsius
+        MAP: 450 # Mean annual precipitation in mm
+        rainySeason: # Period of the year during which most precipitation occurs, i.e.: whole year, spring, summer, autumn, winter (if more than one use array format)
+        elevation: 260 # Elevation of study site in meters above sea level
+        landCover: sandland
+        vegNote: # Additional details about land cover such as species or functional type composition
+        cover:
+          plantCover: # Total plant cover percentage (if they report cover by specific plant types, fill the fields below)
+          bunchgrassCover:
+          shrubCover:
+          treeCover:
+          forbCover:
+          bareSoil:
+        soilTaxonomy:
+          soilOrder: # Soil order according to the classification system described below
+          soilFamily: # Soil family description (ex. 'Eutric' for a Eutric Cambisol)
+          soilSeries: # Soil series according to the classification system described below
+          classificationSystem: # Name of classification system used. Valid fields are: USDA, FAO, and WRB.
 
-ExperimentInfo:
- LitterInfo:
-  LitterType1:
-   Species: Populus xiaozhuanica
-   Lifeform: tree
-   Material: senesced leaves
-   Carbon:
-    Value: 44.64
-    Units: percentage
-   Nitrogen:
-    Value: 1.05
-    Units: percentage
-   C:N:
-    Value: 42.4
-   Lignin:
-    Value: 27.3
-    Units: percentage
-   Lignin:N:
-    Value: 26
-   Amount:
-    Amount1:
-     Value: 1
-     Units: g
-    Amount2:
-     Value: 2
-     Units: g
-    Amount3:
-     Value: 4
-     Units: g
-  LitterType2:
-   Species: Pinus sylvestris
-   Lifeform: tree
-   Material: senesced leaves
-   Carbon:
-    Value: 55.05
-    Units: percentage
-   Nitrogen:
-    Value: 0.36
-    Units: percentage
-   C:N:
-    Value: 152.6
-   Lignin:
-    Value: 30.6
-    Units: percentage
-   Lignin:N:
-    Value: 84.8
-   Amount:
-    Amount1:
-     Value: 1
-     Units: g
-    Amount2:
-     Value: 2
-     Units: g
-    Amount3:
-     Value: 4
-     Units: g
- Experiment1:
-  Description: "They conducted a field-based experiment in 2011 in the southeastern Horqin Sandy
-Land, Northeast China, to investigate the effects of UV radiation, litter layer thickness, and their
-interaction on the mass loss and chemical properties of decomposing litter from Xiaozhuan poplar
-(Populus × xiaozhuanica) and Mongolian pine (Pinus sylvestris var. mongolica) plantation trees."
-  LitterBagInfo:
-   MeshSize:
-    Value: 2
-    Units: mm
-   Dimentions:
-    Width: 10
-    Lenght: 10
-    Height: 6
-    Units: cm
-   Position: bare soil
-  FilterType:
-   FilterType1:
-    Name: acrylic
-    Transmitance:
-     Value: 87
-     Units: percentage
-    UVtransmitance:
-     Value: 68
-     Units: percentage
-   FilterType2:
-    Transmitance:
-     Value: 76
-     Units: percentage
-    UVTransmitance:
-     Value: 1
-     Units: percentage
-  Treatment:
-   - UV attenuation
-   - litter layer thickness
-  StartingDate:
-   Month: may
-   Season: spring
-  Duration:
-   Time: 6
-   Units: months
+experimentInfo:
+        incDesc: 2 species x 3 amounts of litter x 2 radiation filters x 3 harvests x 4 replicates
+        # These fields should all be one dimensional arrays. Values for experimental variables with multiple treatment levels should be entered in the variables section and left blank here
+        replicates: 4 # Number of replicates per treatment
+        duration: 180 # length of incubation in days
+        startingMonth: may # month during which the study started, all in lower case
+        litter: # plant species used as litter material for the experiment. All details related to the species must be specified in the initConditions.csv file
+        litterbag:
+          material: # mesh type used to construct the litter bags, options are: wire, aluminum, window screening, net curtain, bolting cloth, plastic, fiberglass, nylon, polypropylene, polyester, polyethylene, polyamide
+          meshSize: 2 # mesh size in mm referring to one side of the net-square
+          dimentions: # size of the full litter bag in cm
+            width: 10
+            length: 10
+            radius: # for round or cilindrical structures
+            height: 6 # for 3-dimensional designs such as litter boxes in Austin2006NATURE
+          transmitance: # when reported, light transmitance of the mesh material as a percentage of full sunlight for each wavelength
+            total:
+            PAR:
+            UV:
+            UVA:
+            UVB:
+          position: bare soil
 
-Variables:
- V1:
-   Name: Time
-   Units: months
- V2:
-   Name: XUVPLT
-   Units: mass remaining
-   Description: "Populus xiaozhuanica litter mass remaining with total UV radiation and a low thickness level"
-   LitterType: LitterType1
-   Amount: Amount1
-   FilterType: FilterType1
- V3:
-   Name: XUVPMT
-   Units: mass remaining
-   Description: "Populus xiaozhuanica litter mass remaining with total UV radiation and a medium thickness level"
-   LitterType: LitterType1
-   Amount: Amount2
-   FilterType: FilterType1
- V4:
-   Name: XUVPHT
-   Units: mass remaining
-   Description: "Populus xiaozhuanica litter mass remaining with total UV radiation and a high thickness level"
-   LitterType: LitterType1
-   Amount: Amount3
-   FilterType: FilterType1
- V5:
-   Name: XUVBLT
-   Units: mass remaining
-   Description: "Populus xiaozhuanica litter mass remaining with blocked UV radiation and a low thickness level"
-   LitterType: LitterType1
-   Amount: Amount1
-   FilterType: FilterType2
- V6:
-   Name: XUVBMT
-   Units: mass remaining
-   Description: "Populus xiaozhuanica litter mass remaining with blocked UV radiation and a medium thickness level"
-   LitterType: LitterType1
-   Amount: Amount2
-   FilterType: FilterType2
- V7:
-   Name: XUVBHT
-   Units: mass remaining
-   Description: "Populus xiaozhuanica litter mass remaining with blocked UV radiation and a high thickness level"
-   LitterType: LitterType1
-   Amount: Amount3
-   FilterType: FilterType2
- V8:
-   Name: PUVPLT
-   Units: mass remaining
-   Description: "Pinus sylvestris litter mass remaining with total UV radiation and a low thickness level"
-   LitterType: LitterType2
-   Amount: Amount1
-   FilterType: FilterType1
- V9:
-   Name: PUVPMT
-   Units: mass remaining
-   Description: "Pinus sylvestris litter mass remaining with total UV radiation and a medium thickness level"
-   LitterType: LitterType2
-   Amount: Amount2
-   FilterType: FilterType1
- V10:
-   Name: PUVPHT
-   Units: mass remaining
-   Description: "Pinus sylvestris litter mass remaining with total UV radiation and a high thickness level"
-   LitterType: LitterType2
-   Amount: Amount3
-   FilterType: FilterType1
- V11:
-   Name: PUVBLT
-   Units: mass remaining
-   Description: "Pinus sylvestris litter mass remaining with blocked UV radiation and a low thickness level"
-   LitterType: LitterType2
-   Amount: Amount1
-   FilterType: FilterType2
- V12:
-   Name: PUVBMT
-   Units: mass remaining
-   Description: "Pinus sylvestris litter mass remaining with blocked UV radiation and a medium thickness level"
-   LitterType: LitterType2
-   Amount: Amount2
-   FilterType: FilterType2
- V13:
-   Name: PUVBHT
-   Units: mass remaining
-   Description: "Pinus sylvestris litter mass remaining with blocked UV radiation and a high thickness level"
-   LitterType: LitterType2
-   Amount: Amount3
-   FilterType: FilterType2
+variables: # These describe the columns of your timeSeries.csv file
+        V1: # column 1
+          name: Time
+          units: months
+        V2:
+          name: XUVPLT
+          units: mass remaining
+          varDesc: Populus x xiaozhuanica litter with total UV radiation and a low litter layer thickness
+          site: Horqin
+          litter: Populus x xiaozhuanica1
+          compTreat:
+          filter: # for photodegradation experiments only
+           threshold: 0
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total: 87
+             PAR:
+             UV: 68
+             UVA:
+             UVB:
+        V3:
+          name: XUVPMT
+          units: mass remaining
+          varDesc: Populus x xiaozhuanica litter with total UV radiation and a medium litter layer thickness
+          site: Horqin
+          litter: Populus x xiaozhuanica2
+          compTreat:
+          filter: # for photodegradation experiments only
+           threshold: 0
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total: 87
+             PAR:
+             UV: 68
+             UVA:
+             UVB:
+        V4:
+          name: XUVPHT
+          units: mass remaining
+          varDesc: Populus x xiaozhuanica litter with total UV radiation and a high litter layer thickness
+          site: Horqin
+          litter: Populus x xiaozhuanica3
+          compTreat:
+          filter: # for photodegradation experiments only
+           threshold: 0
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total: 87
+             PAR:
+             UV: 68
+             UVA:
+             UVB:
+        V5:
+          name: XUVBLT
+          units: mass remaining
+          varDesc: Populus x xiaozhuanica litter with blocked UV radiation and a low litter layer thickness
+          site: Horqin
+          litter: Populus x xiaozhuanica1
+          compTreat:
+          filter: # for photodegradation experiments only
+           threshold: 400
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total: 76
+             PAR:
+             UV: 1
+             UVA:
+             UVB:
+        V6:
+          name: XUVBMT
+          units: mass remaining
+          varDesc: Populus x xiaozhuanica litter with blocked UV radiation and a medium litter layer thickness
+          site: Horqin
+          litter: Populus x xiaozhuanica2
+          compTreat:
+          filter: # for photodegradation experiments only
+           threshold: 400
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total: 76
+             PAR:
+             UV: 1
+             UVA:
+             UVB:
+        V7:
+          name: XUVBHT
+          units: mass remaining
+          varDesc: Populus x xiaozhuanica litter with blocked UV radiation and a high litter layer thickness
+          site: Horqin
+          litter: Populus x xiaozhuanica3
+          compTreat:
+          filter: # for photodegradation experiments only
+           threshold: 400
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total: 76
+             PAR:
+             UV: 1
+             UVA:
+             UVB:
+        V8:
+          name: PUVPLT
+          units: mass remaining
+          varDesc: Pinus sylvestris litter with total UV radiation and a low litter layer thickness
+          site: Horqin
+          litter: Pinus sylvestris1
+          compTreat:
+          filter: # for photodegradation experiments only
+           threshold: 0
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total: 87
+             PAR:
+             UV: 68
+             UVA:
+             UVB:
+        V9:
+          name: PUVPMT
+          units: mass remaining
+          varDesc: Pinus sylvestris litter with total UV radiation and a medium litter layer thickness
+          site: Horqin
+          litter: Pinus sylvestris2
+          compTreat:
+          filter: # for photodegradation experiments only
+           threshold: 0
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total: 87
+             PAR:
+             UV: 68
+             UVA:
+             UVB:
+        V10:
+          name: PUVPHT
+          units: mass remaining
+          varDesc: Pinus sylvestris litter with total UV radiation and a high litter layer thickness
+          site: Horqin
+          litter: Pinus sylvestris3
+          compTreat:
+          filter: # for photodegradation experiments only
+           threshold: 0
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total: 87
+             PAR:
+             UV: 68
+             UVA:
+             UVB:
+        V11:
+          name: PUVBLT
+          units: mass remaining
+          varDesc: Pinus sylvestris litter with blocked UV radiation and a low litter layer thickness
+          site: Horqin
+          litter: Pinus sylvestris1
+          compTreat:
+          filter: # for photodegradation experiments only
+           threshold: 400
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total: 76
+             PAR:
+             UV: 1
+             UVA:
+             UVB:
+        V12:
+          name: PUVBMT
+          units: mass remaining
+          varDesc: Pinus sylvestris litter with blocked UV radiation and a medium litter layer thickness
+          site: Horqin
+          litter: Pinus sylvestris2
+          compTreat:
+          filter: # for photodegradation experiments only
+           threshold: 400
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total: 76
+             PAR:
+             UV: 1
+             UVA:
+             UVB:
+        V13:
+          name: PUVBHT
+          units: mass remaining
+          varDesc: Pinus sylvestris litter with blocked UV radiation and a high litter layer thickness
+          site: Horqin
+          litter: Pinus sylvestris3
+          compTreat:
+          filter: # for photodegradation experiments only
+           threshold: 400
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total: 76
+             PAR:
+             UV: 1
+             UVA:
+             UVB:

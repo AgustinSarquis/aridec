@@ -1,0 +1,7 @@
+species, type, N-fixer, material, amount, carbon, nitrogen, C:N, phosphorus, potassium, sodium, magnesium, manganese, copper, zinc, lead, calcium, sulfur, iron, lignin, cellulose, hemicellulose, cell solubles, SLA
+Populus x xiaozhuanica1, deciduous, no, leaves, 1, 44.64, 1.05, 42.4,,,,,,,,,,,, 27.3,
+Populus x xiaozhuanica2, deciduous, no, leaves, 2, 44.64, 1.05, 42.4,,,,,,,,,,,, 27.3,
+Populus x xiaozhuanica3, deciduous, no, leaves, 4, 44.64, 1.05, 42.4,,,,,,,,,,,, 27.3,
+Pinus sylvestris1, evergreen, no, leaves, 1, 55.05, 0.36, 152.6,,,,,,,,,,,, 30.6,
+Pinus sylvestris2, evergreen, no, leaves, 2, 55.05, 0.36, 152.6,,,,,,,,,,,, 30.6,
+Pinus sylvestris3, evergreen, no, leaves, 4, 55.05, 0.36, 152.6,,,,,,,,,,,, 30.6,
