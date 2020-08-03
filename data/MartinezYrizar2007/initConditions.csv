@@ -1,0 +1,4 @@
+species, type, N-fixer, material, amount, carbon, nitrogen, C:N, phosphorus, potassium, sodium, magnesium, manganese, copper, zinc, lead, calcium, sulfur, iron, lignin, cellulose, hemicellulose, cell solubles, SLA
+Encelia farinosa, forb, no, leaves, 3.5, 38.7, 1.09, 35.6, 0.23,,,,,,,,,,, 9.5,
+Olneya tesota, evergreen, yes, leaves, 7, 39.4, 1.66, 23.7, 0.24,,,,,,,,,,, 29.8,
+mixture,,,leaves, 4.5, 41.1, 1.26, 32.8, 0.28,,,,,,,,,,, 19.2,

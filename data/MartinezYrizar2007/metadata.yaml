@@ -1,208 +1,206 @@
-CitationKey: MartinezYrizar2007
-doi: 10.1016/j.actao.2007.05.010
-EntryAuthor: Ignacio Siebenhart
+citationKey: MartinezYrizar2007 # Unique identifier in the format: LastnameYear (lowercase letters must be added when there are two or more entries by the same author and year, i.e.: LastnameYearx)
+doi: 10.1016/j.actao.2007.05.010 # DOI of the publication where data is published
+entryAuthor: Ignacio Siebenhart # First and last name of the person who entered the data in this file
+entryCreationDate: 2019-07-30 # Date when the data was entered in this file. Format: YYYY-MM-DD
+contactName: Agustín Sarquis # First and last name of contact person (may be the principal investigator supervising the entryAuthor)
+contactEmail: agusarquis@agro.uba.ar # Email of the contact person
+entryNote: rainy seasons are summer and winter
+study: influence of litter quality on decomposition rates in three contrasting desert environments
 
-SiteInfo:
- Name: Sonoran Desert, Sonora, Mexico
- EcosystemType: desert
- MAP:
-  Value: 335
-  Units: mm
- MAT:
-  Value: 24.4
-  Units: celsius
- RainySeason:
-  - summer
-  - winter
- SoilType: Aridisol
- SoilTexture: coarse
- Altitude:
-  Value: 250
-  Units: m
- Coordinates:
-  Latitude: 29.017
-  Longitude: -110.95
+siteInfo:
+        site: Hermosillo # Names of individual sites, if one site, keep on this line, if multiple, use array format
+              # These fields should be arrays of equal length to site array
+        coordinates:
+          latitude: 29.017 # Latitude in decimal units (check for negative that denotes southern hemisphere)
+          longitude: -110.95 # Longitude in decimal units (check for negative that denotes western hemisphere)
+        country: Mexico # Name of country where site was conducted
+        MAT: 24.4 # Mean annual temperature in degrees Celsius
+        MAP: 335 # Mean annual precipitation in mm
+        rainySeason: # Period of the year during which most precipitation occurs, i.e.: whole year, spring, summer, autumn, winter (if more than one use array format)
+        elevation: 250 # Elevation of study site in meters above sea level
+        landCover: desert
+        vegNote: three vegetation types ranging from widely sparse trees in a grass matrix to a xeroparian vegetation
+        cover:
+          plantCover: # Total plant cover percentage (if they report cover by specific plant types, fill the fields below)
+          bunchgrassCover:
+          shrubCover:
+          treeCover:
+          forbCover:
+          bareSoil:
+        soilTaxonomy:
+          soilOrder: Aridisol
+          soilFamily: # Soil family description (ex. 'Eutric' for a Eutric Cambisol)
+          soilSeries: # Soil series according to the classification system described below
+          classificationSystem: USDA
 
-ExperimentInfo:
- LitterInfo:
-  LitterType1:
-   Species: Encelia farinosa
-   Lifeform: forb
-   Material: recently senesced leaves
-   Carbon:
-    Value: 38.7
-    Units: percentage
-   Nitrogen:
-    Value: 1.09
-    Units: percentage
-   Phosphorus:
-    Value: 0.23
-    Units: percentage
-   Lignin:
-    Value: 9.5
-    Units: percentage
-   C:N:
-    Value: 35.6
-   C:P:
-    Value: 166.3
-   N:P:
-    Value: 4.7
-   Lignin:N:
-    Value: 8.8
-   Lignin:P:
-    Value: 41.1
-   Amount:
-    Value: 3.5
-    Unis: g
-  LitterType2:
-   Species: Olneya tesota
-   LifeForm: tree
-   Material: recently senesced leaves
-   Carbon:
-    Value: 39.4
-    Units: percentage
-   Nitrogen:
-    Value: 1.66
-    Units: percentage
-   Phosphorus:
-    Value: 0.24
-    Units: percentage
-   Lignin:
-    Value: 29.8
-    Units: percentage
-   C:N:
-    Value: 23.7
-   C:P:
-    Value: 166.9
-   N:P:
-    Value: 7.0
-   Lignin:N:
-    Value: 17.9
-   Lignin:P:
-    Value: 126.1
-   Amount:
-    Value: 7.0
-    Units: g
-  LitterType3:
-   Species:
-    - Encelia farinosa
-    - Olneya tesota
-    - Jatropha cardiophylla
-    - Jatropha cordata
-    - Croton sonorae
-   LifeForm:
-    - forb
-    - tree
-    - shrub
-    - tree
-    - shrub
-   Material: recently senesced leaves
-   Carbon:
-    Value: 41.1
-    Units: percentage
-   Nitrogen:
-    Value: 1.26
-    Units: percentage
-   Phosphorus:
-    Value: 0.28
-    Units: percentage
-   Lignin:
-    Value: 19.2
-    Units: percentage
-   C:N:
-    Value: 32.8
-   C:P:
-    Value: 149.0
-   N:P:
-    Value: 4.5
-   Lignin:N:
-    Value: 15.3
-   Lignin:P:
-    Value: 69.7
-   Amount:
-    Value: 4.5
-    Unis: g
- Experiment1:
-  Description: "They assessed the influence of litter quality on decomposition rates in three contrasting desert environments"
-  LitterBagInfo:
-   Material: fiberglass
-   MeshSize:
-    Value: 1.4
-    Units: mm
-   Dimentions:
-    Width: 17
-    Lenght: 20
-    Units: cm
-   Position:
-     Position1: bare soil
-     Position2:
-      - bare soil
-      - under tree
-  Treatment:
-   - litter type
-   - location
-  StartingDate:
-   Month: april
-   Season: spring
-  Duration:
-   Time: 12
-   Units: months
+experimentInfo:
+        incDesc: 3 litter types x 3 sites x 6 harvests x 4 replicates
+        # These fields should all be one dimensional arrays. Values for experimental variables with multiple treatment levels should be entered in the variables section and left blank here
+        replicates: 4
+        duration: 365
+        startingMonth: april
+        litter: # plant species used as litter material for the experiment. All details related to the species must be specified in the initConditions.csv file
+        litterbag:
+          material: fiberglass
+          meshSize: 1.4
+          dimentions: # size of the full litter bag in cm
+            width: 17
+            length: 20
+            radius: # for round or cilindrical structures
+            height: # for 3-dimensional designs such as litter boxes in Austin2006NATURE
+          transmitance: # when reported, light transmitance of the mesh material as a percentage of full sunlight for each wavelength
+            total:
+            PAR:
+            UV:
+            UVA:
+            UVB:
+          position: # position of litterbags in the field, valid options are: bare soil, decomposition bed, under litter, over litter, over lawn, next to grass, under tree/shrub/grass, buried X cm deep, underwater, under rainout shelter, under frame, suspended X cm, under shadecloth
 
-Variables:
- V1:
-   Name: Time
-   Units: months
- V2:
-   Name: EP
-   Units: mass remaining
-   Description: "Encelia Farinosa litter mass remaining at harvest time decomposed in Plains"
-   LitterType: LitterType1
-   Position: Position1
- V3:
-   Name: EH
-   Units: mass remaining
-   Description: "Encelia Farinosa litter mass remaining at harvest time decomposed in Hillsides"
-   LitterType: LitterType1
-   Position: Position2
- V4:
-   Name: EA
-   Units: mass remaining
-   Description: "Encelia Farinosa litter mass remaining at harvest time decomposed in Arroyos"
-   LitterType: LitterType1
-   Position: Position2
- V5:
-   Name: OP
-   Units: mass remaining
-   Description: "Olneya tesota litter mass remaining at harvest time decomposed in Plains"
-   LitterType: LitterType2
-   Position: Position1
- V6:
-   Name: OH
-   Units: mass remaining
-   Description: "Olneya tesota litter mass remaining at harvest time decomposed in Hillsides"
-   LitterType: LitterType2
-   Position: Position2
- V7:
-   Name: OA
-   Units: mass remaining
-   Description: "Olneya tesota litter mass remaining at harvest time decomposed in Arroyos"
-   LitterType: LitterType2
-   Position: Position2
- V8:
-   Name: SMP
-   Units: mass remaining
-   Description: "Species mixture litter mass remaining at harvest time decomposed in Plains"
-   LitterType: LitterType3
-   Position: Position1
- V9:
-   Name: SMH
-   Units: mass remaining
-   Description: "Species mixture litter mass remaining at harvest time decomposed in Hillsides"
-   LitterType: LitterType3
-   Position: Position2
- V10:
-    Name: SMA
-    Units: mass remaining
-    Description: "Species mixture litter mass remaining at harvest time decomposed in Arroyos"
-    LitterType: LitterType3
-    Position: Position2
+variables: # These describe the columns of your timeSeries.csv file
+        V1: # column 1
+          name: Time
+          units: months
+        V2:
+          name: EP
+          units: mass remaining
+          varDesc: Encelia farinosa litter decomposed at Plains site
+          site: Hermosillo
+          litter: Encelia farinosa
+          position: bare soil
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V3:
+          name: EH
+          units: mass remaining
+          varDesc: Encelia farinosa litter decomposed at Hillsides site
+          site: Hermosillo
+          litter: Encelia farinosa
+          position: under tree
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V4:
+          name: EA
+          units: mass remaining
+          varDesc: Encelia farinosa litter decomposed at Arroyos site
+          site: Hermosillo
+          litter: Encelia farinosa
+          position: under tree
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V5:
+          name: OP
+          units: mass remaining
+          varDesc: Olneya tesota litter decomposed at Plains site
+          site: Hermosillo
+          litter: Olneya tesota
+          position: bare soil
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V6:
+          name: OH
+          units: mass remaining
+          varDesc: Olneya tesota litter decomposed at Hillsides site
+          site: Hermosillo
+          litter: Olneya tesota
+          position: under tree
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V7:
+          name: OA
+          units: mass remaining
+          varDesc: Olneya tesota litter decomposed at Arroyos site
+          site: Hermosillo
+          litter: Olneya tesota
+          position: under tree
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V8:
+          name: SMP
+          units: mass remaining
+          varDesc: E. farinosa, O. tesota, Jatropha cardiophylla, J. cordata and Croton sonorae litter decomposed at Plains site
+          site: Hermosillo
+          litter: mixture
+          position: bare soil
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V9:
+          name: SMH
+          units: mass remaining
+          varDesc: E. farinosa, O. tesota, Jatropha cardiophylla, J. cordata and Croton sonorae litter decomposed at Hillsides site
+          site: Hermosillo
+          litter: mixture
+          position: under tree
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V10:
+          name: SMA
+          units: mass remaining
+          varDesc: E. farinosa, O. tesota, Jatropha cardiophylla, J. cordata and Croton sonorae litter decomposed at Arroyos site
+          site: Hermosillo
+          litter: mixture
+          position: under tree
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
