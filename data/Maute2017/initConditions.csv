@@ -1,0 +1,5 @@
+species, type, N-fixer, material, amount, carbon, nitrogen, C:N, phosphorus, potassium, sodium, magnesium, manganese, copper, zinc, lead, calcium, sulfur, iron, lignin, cellulose, hemicellulose, cell solubles, SLA
+Astrebla1, graminoid, no, leaves, 45, 40.55, 0.762, 55.56
+Astrebla2, graminoid, no, leaves, 42, 40.55, 0.762, 55.56
+Astrebla3, graminoid, no, leaves, 45, 39.233, 0.478, 83.87
+Astrebla4, graminoid, no, leaves, 42, 39.233, 0.478, 83.87

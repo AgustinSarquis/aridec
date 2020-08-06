@@ -1,116 +1,126 @@
-CitationKey: Maute2017
-doi: http://dx.doi.org/10.1071/SR16002
-EntryAuthor: Agustín Sarquis
+citationKey: Maute2017 # Unique identifier in the format: LastnameYear (lowercase letters must be added when there are two or more entries by the same author and year, i.e.: LastnameYearx)
+doi: http://dx.doi.org/10.1071/SR16002 # DOI of the publication where data is published
+entryAuthor: Agustín Sarquis # First and last name of the person who entered the data in this file
+entryCreationDate: 2019-12-19 # Date when the data was entered in this file. Format: YYYY-MM-DD
+contactName: Agustín Sarquis # First and last name of contact person (may be the principal investigator supervising the entryAuthor)
+contactEmail: agusarquis@agro.uba.ar # Email of the contact person
+entryNote: the experiment was carried out in two phases, first year without pesticide application and the second year with pesticide
+study: They incubated Astrebla sp. dry gass using two types of mesh bags with a before-after, control-impact (BACI) design for the application of locust pest control
 
-SiteInfo:
-  Name: Broken Hill, New South Wales, Australia
-  EcosystemType: grassland
-  MAP:
-    Value: 240.5
-    Units: mm
-  MAT:
-    Value: 19.2
-    Units: Celsius
-  RainySeason: whole year
-  Altitude:
-    Value: 181
-    Units: masl
-  SoilType:
-    - Durisol
-    - Ferralsol
-    - Vertosol
-  Coordinates:
-    Latitude: -31.072
-    Longitude: 141.799
+siteInfo:
+        site: Broken Hill # Names of individual sites, if one site, keep on this line, if multiple, use array format
+              # These fields should be arrays of equal length to site array
+        coordinates:
+          latitude: -31.072 # Latitude in decimal units (check for negative that denotes southern hemisphere)
+          longitude: 141.799 # Longitude in decimal units (check for negative that denotes western hemisphere)
+        country: Australia # Name of country where site was conducted
+        MAT: 19.2 # Mean annual temperature in degrees Celsius
+        MAP: 240.5 # Mean annual precipitation in mm
+        rainySeason: whole year
+        elevation: 181 # Elevation of study site in meters above sea level
+        landCover: grassland
+        vegNote: Dominant grasses included Astrebla, Dycanthium, Panicum and Eragrostis species. The shrub layer was dominated by Chenopodiaceae species
+        cover:
+          plantCover: # Total plant cover percentage (if they report cover by specific plant types, fill the fields below)
+          bunchgrassCover:
+          shrubCover:
+          treeCover:
+          forbCover:
+          bareSoil:
+        soilTaxonomy:
+          soilOrder: # Soil order according to the classification system described below
+          soilFamily: # Soil family description (ex. 'Eutric' for a Eutric Cambisol)
+          soilSeries: # Soil series according to the classification system described below
+          classificationSystem: # Name of classification system used. Valid fields are: USDA, FAO, and WRB.
 
-ExperimentInfo:
- LitterInfo:
-  LitterType1:
-   Species: Astrebla sp.
-   LifeForm: graminoid
-   Material: leaves
-   Carbon:
-     Value: 40.55
-     Units: percentage
-   Nitrogen:
-     Value: 0.762
-     Units: percentage
-   C:N:
-     Value: 55.56
-   Amount:
-     Amount1:
-      Value: 42
-      Units: g
-     Amount2:
-      Value: 45
-      Units: g
-  LitterType2:
-   Species: Astrebla sp.
-   LifeForm: graminoid
-   Material: leaves
-   Carbon:
-     Value: 39.233
-     Units: percentage
-   Nitrogen:
-     Value: 0.478
-     Units: percentage
-   C:N:
-     Value: 83.87
-   Amount:
-     Amount1:
-      Value: 42
-      Units: g
-     Amount2:
-      Value: 45
-      Units: g
- Experiment1:
-  Description: "They incubated Astrebla sp. dry gass using two types of mesh bags with a before-after, control-impact (BACI) design for the application of locust pest control"
-  LitterBagInfo:
-   MeshSize:
-    MeshSize1:
-     Value: 5
-     Units: mm
-    MeshSize2:
-     Value: 0.28
-     Units: mm
-   Dimentions:
-    Width: 25
-    Lenght: 25
-    Units: cm
-   Position: under grass/shrub
-  Treatment: biocide application, soil fauna exclusion, fungi reduction
-  StartingDate:
-   Month: february
-   Season: summer
-  Duration:
-   Time: 12
-   Units: months
+experimentInfo:
+        incDesc: 2 pesticide levels x 2 mesh sizes x 9 replicates x 4 harvests
+        # These fields should all be one dimensional arrays. Values for experimental variables with multiple treatment levels should be entered in the variables section and left blank here
+        replicates: 9 # Number of replicates per treatment
+        duration: 365 # length of incubation in days
+        startingMonth: february # month during which the study started, all in lower case
+        litter: # plant species used as litter material for the experiment. All details related to the species must be specified in the initConditions.csv file
+        litterbag:
+          material: # mesh type used to construct the litter bags, options are: wire, aluminum, window screening, net curtain, bolting cloth, plastic, fiberglass, nylon, polypropylene, polyester, polyethylene, polyamide
+          meshSize: # mesh size in mm referring to one side of the net-square
+          dimentions: # size of the full litter bag in cm
+            width: 25
+            length: 25
+            radius: # for round or cilindrical structures
+            height: # for 3-dimensional designs such as litter boxes in Austin2006NATURE
+          transmitance: # when reported, light transmitance of the mesh material as a percentage of full sunlight for each wavelength
+            total:
+            PAR:
+            UV:
+            UVA:
+            UVB:
+          position: under grass
 
-Variables:
-  V1:
-    Name: Time
-    Units: months
-  V2:
-    Name: CB
-    Units: mass remaining
-    Description: "Astrebla leaf litter colected before application of pesticides incubated in coarse mesh bags"
-    LitterType: LitterType1
-    MeshSize: MeshSize1
-  V3:
-    Name: CA
-    Units: mass remaining
-    Description: "Astrebla leaf litter colected after application of pesticides incubated in coarse mesh bags"
-    LitterType: LitterType2
-    MeshSize: MeshSize1
-  V4:
-    Name: FB
-    Units: mass remaining
-    Description: "Astrebla leaf litter colected before application of pesticides incubated in fine mesh bags"
-    LitterType: LitterType1
-    MeshSize: MeshSize2
-  V5:
-    Name: FA
-    Units: mass remaining
-    Description: "Astrebla leaf litter colected after application of pesticides incubated in fine mesh bags"
-    LitterType: LitterType2
-    MeshSize: MeshSize2
+variables: # These describe the columns of your timeSeries.csv file
+        V1: # column 1
+          name: Time
+          units: months
+        V2:
+          name: CB
+          units: mass remaining
+          varDesc: Astrebla leaf litter colected before application of pesticides incubated in coarse mesh bags
+          site: Broken Hill
+          litter: Astrebla1
+          meshSize: 5
+          compTreat: no pesticide
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V3:
+          name: CA
+          units: mass remaining
+          varDesc: Astrebla leaf litter colected after application of pesticides incubated in coarse mesh bags
+          site: Broken Hill
+          litter: Astrebla3
+          meshSize: 5
+          compTreat: pesticide
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V4:
+          name: FB
+          units: mass remaining
+          varDesc: Astrebla leaf litter colected before application of pesticides incubated in fine mesh bags
+          site: Broken Hill
+          litter: Astrebla2
+          meshSize: 0.28
+          compTreat: no pesticide
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V5:
+          name: FA
+          units: mass remaining
+          varDesc: Astrebla leaf litter colected after application of pesticides incubated in fine mesh bags
+          site: Broken Hill
+          litter: Astrebla4
+          meshSize: 0.28
+          compTreat: pesticide
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
