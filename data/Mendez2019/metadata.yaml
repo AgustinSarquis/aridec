@@ -1,97 +1,92 @@
-CitationKey: Mendez2019
-doi: 10.1007/s11104-019-04325-1
-EntryAuthor: Agustín Sarquis
+citationKey: Mendez2019 # Unique identifier in the format: LastnameYear (lowercase letters must be added when there are two or more entries by the same author and year, i.e.: LastnameYearx)
+doi: 10.1007/s11104-019-04325-1 # DOI of the publication where data is published
+entryAuthor: Agustín Sarquis # First and last name of the person who entered the data in this file
+entryCreationDate: 2019-11-05 # Date when the data was entered in this file. Format: YYYY-MM-DD
+contactName: Agustín Sarquis # First and last name of contact person (may be the principal investigator supervising the entryAuthor)
+contactEmail: agusarquis@agro.uba.ar # Email of the contact person
+entryNote: soils are Mollisols but the classification system is not informed
+study: effect of solar radiation on P. nigra litter decomposition
 
-SiteInfo:
-  Name: Villa Meliquina, Neuquén, Argentina
-  EcosystemType: woodland
-  MAP:
-    Value: 1100
-    Units: mm
-  MAT:
-    Value: 8.9
-    Units: Celsius
-  RainySeason: winter
-  Altitude:
-    Value: 900
-    Units: masl
-  SoilType: Mollisols
-  Coordinates:
-    Latitude: -40.433
-    Longitude: -71.217
+siteInfo:
+        site: Meliquina # Names of individual sites, if one site, keep on this line, if multiple, use array format
+              # These fields should be arrays of equal length to site array
+        coordinates:
+          latitude: -40.433 # Latitude in decimal units (check for negative that denotes southern hemisphere)
+          longitude: -71.217 # Longitude in decimal units (check for negative that denotes western hemisphere)
+        country: Argentina # Name of country where site was conducted
+        MAT: 8.9 # Mean annual temperature in degrees Celsius
+        MAP: 1100 # Mean annual precipitation in mm
+        rainySeason: winter
+        elevation: 900 # Elevation of study site in meters above sea level
+        landCover: forest
+        vegNote: The area represents the ecotone between the Andean temperate forests and the grass shrub-steppe, where a big part of the land has been planted with exotic pines
+        cover:
+          plantCover: # Total plant cover percentage (if they report cover by specific plant types, fill the fields below)
+          bunchgrassCover:
+          shrubCover:
+          treeCover:
+          forbCover:
+          bareSoil:
+        soilTaxonomy:
+          soilOrder: # Soil order according to the classification system described below
+          soilFamily: # Soil family description (ex. 'Eutric' for a Eutric Cambisol)
+          soilSeries: # Soil series according to the classification system described below
+          classificationSystem: # Name of classification system used. Valid fields are: USDA, FAO, and WRB.
 
-ExperimentInfo:
- LitterInfo:
-  LitterType1:
-   Species: Populus nigra
-   LifeForm: tree
-   Material: recently senesced leaves
-   Amount:
-     Value: 2
-     Units: g
- Experiment1:
-  Description: "They established an experiment to evaluate the effects of solar radiation on litter decomposition in litter for a year"
-  LitterBagInfo:
-   Material: fiberglass
-   MeshSize:
-    Value: 4
-    Units: mm
-   Dimentions:
-    Width: 10
-    Lenght: 10
-    Units: cm
-   Transmitance:
-    Value: 90
-    Units: percentage
-   Position: bare soil
-  FilterInfo:
-   FilterType1:
-    Name: Rosco
-    Wavelenght:
-     Value: 550
-     Units: nm
-    PARTransmitance:
-     Value: 34.43
-     Units: percentage
-    UVBTransmitance:
-     Value: 1.24
-     Units: percentage
-    UVATransmitance:
-     Value: 1.92
-     Units: percentage
-   FilterType2:
-    Name: polyethylene
-    Wavelenght:
-     Value: 700
-     Units: nm
-    PARTransmitance:
-     Value: 76.3
-     Units: percentage
-    UVBTransmitance:
-     Value: 69.93
-     Units: percentage
-    UVATransmitance:
-     Value: 77.38
-     Units: percentage
-  Treatment: light attenuation
-  StartingDate:
-   Month: may
-   Season: autumn
-  Duration:
-   Time: 12
-   Units: months
+experimentInfo:
+        incDesc: 1 litter species x 2 radiations levels x 2 harvests x 5 replicates
+        # These fields should all be one dimensional arrays. Values for experimental variables with multiple treatment levels should be entered in the variables section and left blank here
+        replicates: 5 # Number of replicates per treatment
+        duration: 365 # length of incubation in days
+        startingMonth: may # month during which the study started, all in lower case
+        litter: Populus nigra # plant species used as litter material for the experiment. All details related to the species must be specified in the initConditions.csv file
+        litterbag:
+          material: fiberglass
+          meshSize: 4 # mesh size in mm referring to one side of the net-square
+          dimentions: # size of the full litter bag in cm
+            width: 10
+            length: 10
+            radius: # for round or cilindrical structures
+            height: # for 3-dimensional designs such as litter boxes in Austin2006NATURE
+          transmitance: # when reported, light transmitance of the mesh material as a percentage of full sunlight for each wavelength
+            total: 90
+            PAR:
+            UV:
+            UVA:
+            UVB:
+          position: bare soil
 
-Variables:
-  V1:
-    Name: Time
-    Units: months
-  V2:
-    Name: Blocked
-    Units: organic matter remaining
-    Description: "P. nigra organic matter remaining from leaf litter under UV and blue-green light attenuation treatment"
-    FilterType: FilterType1
-  V3:
-    Name: Full
-    Units: organic matter remaining
-    Description: "P. nigra organic matter remaining from leaf litter under full sun treatment"
-    FilterType: FilterType2
+variables: # These describe the columns of your timeSeries.csv file
+        V1: # column 1
+          name: Time
+          units: months
+        V2:
+          name: Blocked
+          units: organic matter remaining
+          varDesc: P. nigra leaf litter organic matter remaining under UV and blue-green light attenuation filters
+          site: Meliquina
+          experimentalTreatment: # 'experimentalTreatment' here is a place holder for treatments with multiple levels. Replace this word by any of the listed variables in incubationInfo above (startingMonth, duration, litter, litterbag, meshSize) and type treatment value (level) after colon. Note that units should be specified in the incubationInfo field above.
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: 550
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR: 34.43
+             UV:
+             UVA: 1.92
+             UVB: 1.24
+        V3:
+          name: Full
+          units: organic matter remaining
+          varDesc: P. nigral eaf litter organic matter remaining under full sun treatment
+          site: Meliquina
+          experimentalTreatment: # 'experimentalTreatment' here is a place holder for treatments with multiple levels. Replace this word by any of the listed variables in incubationInfo above (startingMonth, duration, litter, litterbag, meshSize) and type treatment value (level) after colon. Note that units should be specified in the incubationInfo field above.
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: 0
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total: 90
+             PAR: 76.3
+             UV:
+             UVA: 77.38
+             UVB: 69.93
