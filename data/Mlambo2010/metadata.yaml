@@ -1,0 +1,107 @@
+citationKey: Mlambo2010 # Unique identifier in the format: LastnameYear (lowercase letters must be added when there are two or more entries by the same author and year, i.e.: LastnameYearx)
+doi: 10.1111/j.1365-2028.2010.01208.x # DOI of the publication where data is published
+entryAuthor: Agustín Sarquis # First and last name of the person who entered the data in this file
+entryCreationDate: 2020-02-03
+contactName: Agustín Sarquis # First and last name of contact person (may be the principal investigator supervising the entryAuthor)
+contactEmail: agusarquis@agro.uba.ar # Email of the contact person
+entryNote: # Any notes or comments related to this entry.
+study: C. mopane leaf litter decomposed for a year under large and small tree canopy and on intercanopy area in a savanna
+
+siteInfo:
+        site: Bulawayo # Names of individual sites, if one site, keep on this line, if multiple, use array format
+              # These fields should be arrays of equal length to site array
+        coordinates:
+          latitude: -20.133 # Latitude in decimal units (check for negative that denotes southern hemisphere)
+          longitude: 28.6 # Longitude in decimal units (check for negative that denotes western hemisphere)
+        country: Zimbabwe # Name of country where site was conducted
+        MAT: 23.6 # Mean annual temperature in degrees Celsius
+        MAP: 600 # Mean annual precipitation in mm
+        rainySeason: summer
+        elevation: 1341 # Elevation of study site in meters above sea level
+        landCover: savanna
+        vegNote: dominant tree species is C. mopane, with lower frequencies of shrubs such as F. virosa, M. sericea and G. monticola. Dominatent perennial grasses are S. pappophoroides, H. contortus, B. radicans and Enneapogon scoparius and annuals such as C. virgata, T. berteronianus, A. adscensionis and D. aegyptium.
+        cover:
+          plantCover: # Total plant cover percentage (if they report cover by specific plant types, fill the fields below)
+          bunchgrassCover:
+          shrubCover:
+          treeCover: 35
+          forbCover:
+          bareSoil:
+        soilTaxonomy:
+          soilOrder: Luvisol # Soil order according to the classification system described below
+          soilFamily: Chromic # Soil family description (ex. 'Eutric' for a Eutric Cambisol)
+          soilSeries: # Soil series according to the classification system described below
+          classificationSystem: FAO
+
+experimentInfo:
+        incDesc: 3 positions x 6 harvests x 5 replicates
+        # These fields should all be one dimensional arrays. Values for experimental variables with multiple treatment levels should be entered in the variables section and left blank here
+        replicates: 5 # Number of replicates per treatment
+        duration: 365 # length of incubation in days
+        startingMonth: september # month during which the study started, all in lower case
+        litter: Colophospermum mopane # plant species used as litter material for the experiment. All details related to the species must be specified in the initConditions.csv file
+        litterbag:
+          material: nylon
+          meshSize: 2 # mesh size in mm referring to one side of the net-square
+          dimentions: # size of the full litter bag in cm
+            width: 30
+            length: 30
+            radius: # for round or cilindrical structures
+            height: # for 3-dimensional designs such as litter boxes in Austin2006NATURE
+          transmitance: # when reported, light transmitance of the mesh material as a percentage of full sunlight for each wavelength
+            total:
+            PAR:
+            UV:
+            UVA:
+            UVB:
+          position: # position of litterbags in the field, valid options are: bare soil, decomposition bed, under litter, over litter, over lawn, next to grass, under tree/shrub/grass, buried X cm deep, underwater, under rainout shelter, under frame, suspended X cm, under shadecloth
+
+variables: # These describe the columns of your timeSeries.csv file
+        V1: # column 1
+          name: Time
+          units: months
+        V2:
+          name: IC
+          units: organic matter remaining
+          varDesc: C. mopane leaf litter decomposed on the intercanopy area
+          site: Bulawayo
+          position: bare soil
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V3:
+          name: ST
+          units: organic matter remaining
+          varDesc: C. mopane leaf litter decomposed under small tree canopy
+          site: Bulawayo
+          position: under tree
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V4:
+          name: LT
+          units: organic matter remaining
+          varDesc: C. mopane leaf litter decomposed under large tree canopy
+          site: Bulawayo
+          position: under tree
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
