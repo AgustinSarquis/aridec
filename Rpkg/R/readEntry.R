@@ -7,12 +7,13 @@
 #' @import yaml
 #' @examples
 #' Adair2017=readEntry(entryName="Adair2017")
-readEntry <- function(path="~/Repos/aridec/data/", entryName) {
+readEntry <- function(path="~/aridec/data/", entryName) {
 
     entry=yaml::yaml.load_file(input=paste(path,entryName,"/metadata.yaml",sep=""))
-    csv=read.csv(file=paste(path,entryName,"/data.csv",sep=""))
-    entry[["data"]]<-csv
+    csv=read.csv(file=paste(path,entryName,"/timeSeries.csv",sep=""))
+    entry[["timeSeries"]]<-csv
     assign(entryName, entry)
 
     return(entry)
 }
+

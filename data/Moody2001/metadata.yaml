@@ -1,104 +1,137 @@
-CitationKey: Moody2001
-doi: 10.1023/A:1012965610170
-EntryAuthor: Ignacio Siebenhart
+citationKey: Moody2001 # Unique identifier in the format: LastnameYear (lowercase letters must be added when there are two or more entries by the same author and year, i.e.: LastnameYearx)
+doi: 10.1023/A:1012965610170 # DOI of the publication where data is published
+entryAuthor: Ignacio Siebenhart # First and last name of the person who entered the data in this file
+entryCreationDate: 2019-05-30 # Date when the data was entered in this file. Format: YYYY-MM-DD
+contactName: Agustín Sarquis # First and last name of contact person (may be the principal investigator supervising the entryAuthor)
+contactEmail: agusarquis@agro.uba.ar # Email of the contact person
+entryNote: elevation from Google Earth. Patras coordinates were wrong in the paper. There is one more site in the paper (excluded for its climate)
+study: B. pubescens was decomposed under ambient and elevated UV-B using outdoor irradiation facilities at Abisko, Sweden, and Patras, Greece
 
-SiteInfo:
- Name:
-  - Abisko, Lapland, Sweden
-  - Patra, Greece
- MAP:
-  Value:
-   - 304
-   - 774.62
-  Units: mm
- MAT:
-  Value:
-   - 11
-   - 18.02
-  Units: Celsius
- Altitude:
-  Value:
-   - 360
-  Units: masl
- Coordinates:
-  Latitude:
-   - 68.35
-   - 38.3
-  Longitude:
-   - 18.82
-   - 29.10
+siteInfo:
+        site:
+          - Abisko
+          - Patras
+              # These fields should be arrays of equal length to site array
+        coordinates:
+          latitude:
+           - 68.35
+           - 38.3 # Latitude in decimal units (check for negative that denotes southern hemisphere)
+          longitude:
+           - 18.82
+           - 21.9 # Longitude in decimal units (check for negative that denotes western hemisphere)
+        country:
+          - Sweden
+          - Greece # Name of country where site was conducted
+        MAT:
+         - 11
+         - 18.02   # Mean annual temperature in degrees Celsius
+        MAP:
+         - 304
+         - 774.62 # Mean annual precipitation in mm
+        rainySeason: # Period of the year during which most precipitation occurs, i.e.: whole year, spring, summer, autumn, winter (if more than one use array format)
+        elevation:
+          - 390
+          - 490
+           # Elevation of study site in meters above sea level
+        landCover: # Land cover of the site. Valid fields are: greenbelt, (abbandoned) farmland, mangrove forest, subalpine, shrubland, urban, sandland, forest, steppe, desert, grassland, savanna
+        vegNote: # Additional details about land cover such as species or functional type composition
+        cover:
+          plantCover: # Total plant cover percentage (if they report cover by specific plant types, fill the fields below)
+          bunchgrassCover:
+          shrubCover:
+          treeCover:
+          forbCover:
+          bareSoil:
+        soilTaxonomy:
+          soilOrder: # Soil order according to the classification system described below
+          soilFamily: # Soil family description (ex. 'Eutric' for a Eutric Cambisol)
+          soilSeries: # Soil series according to the classification system described below
+          classificationSystem: # Name of classification system used. Valid fields are: USDA, FAO, and WRB.
 
-ExperimentInfo:
- LitterInfo:
-  LitterType1:
-   Species: Betula pubescens
-   Lifeform: tree
-   Material: recently senesced leaves
-   Nitrogen:
-    Value: 1.08
-    Units: percentage
-   C:N:
-    Value: 44.0
-   Cellulose:
-    Value: 13.2
-    Units: percentage
-   Lignin:
-    Value: 14.0
-    Units: percentage
-   Amount:
-    Value: 0.7
-    Units: g
- Experiment1:
-  Description: "B. pubescens was decomposed under ambient and elevated UV-B using outdoor irradiation facilities at Abisko, Sweden, and Patras, Greece."
-  LitterBagInfo:
-  Material: plexiglass
-  MeshSize:
-   Value: 10
-   Units: mm
-  Dimentions:
-   Diameter: 6.4
-   Hight: 3
-   Units: cm
-  Transmitance:
-   Value: 91
-   Units: percentage
-  UVBTransmitance:
-   Value: 72
-   Units: percentage
-  Position: on the ground
-  Treatment: UV-B enhanced
-  StartingDate:
-   Month: june
-   Season: summer
-  Duration:
-   Time: 14
-   Units: months
+experimentInfo:
+        incDesc: 2 sites x 2 UV intensities x 3 harvests x 4 replicates
+        # These fields should all be one dimensional arrays. Values for experimental variables with multiple treatment levels should be entered in the variables section and left blank here
+        replicates: 4 # Number of replicates per treatment
+        duration: 420 # length of incubation in days
+        startingMonth: june # month during which the study started, all in lower case
+        litter: Betula pubescens # plant species used as litter material for the experiment. All details related to the species must be specified in the initConditions.csv file
+        litterbag:
+          material: # mesh type used to construct the litter bags, options are: wire, aluminum, window screening, net curtain, bolting cloth, plastic, fiberglass, nylon, polypropylene, polyester, polyethylene, polyamide
+          meshSize: 10 # mesh size in mm referring to one side of the net-square
+          dimentions: # size of the full litter bag in cm
+            width:
+            length:
+            radius: 3.2 # for round or cilindrical structures
+            height: 3 # for 3-dimensional designs such as litter boxes in Austin2006NATURE
+          transmitance: # when reported, light transmitance of the mesh material as a percentage of full sunlight for each wavelength
+            total: 91
+            PAR:
+            UV:
+            UVA:
+            UVB:
+          position: bare soil
 
-Variable:
- V1:
-   Name: Time
-   Units: months
- V2:
-   Name: AUVA
-   Units: mass remaining
-   Description: "B. pubescens litter organic matter percentage remaining at harvest time decomposed without enhanced UV"
-   UV-BEnhanced: "No"
-   Site: Abisko, Lapland, Sweden
- V3:
-   Name: AUVE
-   Units: mass remaining
-   Description: "B. pubescens litter organic matter percentage remaining at harvest time decomposed with enhanced UV"
-   UV-BEnhanced: "Yes"
-   Site: Abisko, Lapland, Sweden
- V4:
-   Name: PUVA
-   Units: mass remaining
-   Description: "B. pubescens litter organic matter percentage remaining at harvest time decomposed without enhanced UV"
-   UV-BEnhanced: "No"
-   Site: Patra, Greece
- V5:
-   Name: PUVE
-   Units: mass remaining
-   Description: "B. pubescens litter organic matter percentage remaining at harvest time decomposed with enhanced UV"
-   UV-BEnhanced: "Yes"
-   Site: Patra, Greece
+variables: # These describe the columns of your timeSeries.csv file
+        V1: # column 1
+          name: Time
+          units: months
+        V2:
+          name: AUVA
+          units: mass remaining
+          varDesc: B. pubescens litter decomposed under ambient UV in Sweden
+          site: Abisko
+          experimentalTreatment: # 'experimentalTreatment' here is a place holder for treatments with multiple levels. Replace this word by any of the listed variables in incubationInfo above (startingMonth, duration, litter, litterbag, meshSize) and type treatment value (level) after colon. Note that units should be specified in the incubationInfo field above.
+          compTreat: no UV enhancement
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V3:
+          name: AUVE
+          units: mass remaining
+          varDesc: B. pubescens litter decomposed under enhanced UV in Sweden
+          site: Abisko
+          experimentalTreatment: # 'experimentalTreatment' here is a place holder for treatments with multiple levels. Replace this word by any of the listed variables in incubationInfo above (startingMonth, duration, litter, litterbag, meshSize) and type treatment value (level) after colon. Note that units should be specified in the incubationInfo field above.
+          compTreat: UV enhancement
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V4:
+          name: PUVA
+          units: mass remaining
+          varDesc: B. pubescens litter decomposed under ambient UV in Greece
+          site: Patras
+          experimentalTreatment: # 'experimentalTreatment' here is a place holder for treatments with multiple levels. Replace this word by any of the listed variables in incubationInfo above (startingMonth, duration, litter, litterbag, meshSize) and type treatment value (level) after colon. Note that units should be specified in the incubationInfo field above.
+          compTreat: no UV enhancement
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V5:
+          name: PUVE
+          units: mass remaining
+          varDesc: B. pubescens litter decomposed under enhanced UV in Greece
+          site: Patras
+          experimentalTreatment: # 'experimentalTreatment' here is a place holder for treatments with multiple levels. Replace this word by any of the listed variables in incubationInfo above (startingMonth, duration, litter, litterbag, meshSize) and type treatment value (level) after colon. Note that units should be specified in the incubationInfo field above.
+          compTreat: UV enhancement
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:

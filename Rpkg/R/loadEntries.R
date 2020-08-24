@@ -5,7 +5,7 @@
 #' @export
 #' @examples
 #' aridec=loadEntries()
-loadEntries <- function(path="~/Repos/aridec/data/") {
+loadEntries <- function(path="~/aridec/data/") {
   entryNames=list.dirs(path, full.names=FALSE, recursive=FALSE)
 
   longList=lapply(entryNames, FUN=readEntry, path=path)
