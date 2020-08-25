@@ -1,224 +1,158 @@
-CitationKey: Moretto2001
-doi: 10.1016/S0929-1393(01)00151-2
-EntryAuthor: Agustín Sarquis
+citationKey: Moretto2001 # Unique identifier in the format: LastnameYear (lowercase letters must be added when there are two or more entries by the same author and year, i.e.: LastnameYearx)
+doi: 10.1016/S0929-1393(01)00151-2 # DOI of the publication where data is published
+entryAuthor: Agustín Sarquis # First and last name of the person who entered the data in this file
+entryCreationDate: 2019-01-17 # Date when the data was entered in this file. Format: YYYY-MM-DD
+contactName: Agustín Sarquis # First and last name of contact person (may be the principal investigator supervising the entryAuthor)
+contactEmail: agusarquis@agro.uba.ar # Email of the contact person
+entryNote: rainy seasons are spring and autumn. Elevation from Google Earth. Soils are Calciustolls but classification is unspecified
+study: decomposition experiment with leaf litter and roots from pallatable and unpallatable species
 
-SiteInfo:
-  Name: Caldén District, La Pampa, Argentina
-  EcosystemType: grassland
-  MAP:
-    Value: 400
-    Units: mm
-  MAT:
-    Value: 15
-    Units: Celsius
-  RainySeason:
-   - spring
-   - autumn
-  SoilType: Calciustolls
-  SoilTexture: coarse
-  Coordinates:
-    Latitude: -38.75
-    Longitude: -63.75
+siteInfo:
+        site: La Pampa # Names of individual sites, if one site, keep on this line, if multiple, use array format
+              # These fields should be arrays of equal length to site array
+        coordinates:
+          latitude: -38.75 # Latitude in decimal units (check for negative that denotes southern hemisphere)
+          longitude: -63.75 # Longitude in decimal units (check for negative that denotes western hemisphere)
+        country: Argentina # Name of country where site was conducted
+        MAT: 15 # Mean annual temperature in degrees Celsius
+        MAP: 400 # Mean annual precipitation in mm
+        rainySeason: # Period of the year during which most precipitation occurs, i.e.: whole year, spring, summer, autumn, winter (if more than one use array format)
+        elevation: 94 # Elevation of study site in meters above sea level
+        landCover: grassland # Land cover of the site. Valid fields are: greenbelt, (abbandoned) farmland, mangrove forest, subalpine, shrubland, urban, sandland, forest, steppe, desert, grassland, savanna
+        vegNote: The palatable grasses (S. clarazii, P. ligularis, S. tenuis, Piptochaetium napostaense) are the dominant species, but individuals and patches of unpalatable grasses (S. gynerioides, S. tenuissima, S. trichotoma, S. speciosa, S. brachichaeta) are common.
+        cover:
+          plantCover: # Total plant cover percentage (if they report cover by specific plant types, fill the fields below)
+          bunchgrassCover:
+          shrubCover:
+          treeCover:
+          forbCover:
+          bareSoil:
+        soilTaxonomy:
+          soilOrder: # Soil order according to the classification system described below
+          soilFamily: # Soil family description (ex. 'Eutric' for a Eutric Cambisol)
+          soilSeries: # Soil series according to the classification system described below
+          classificationSystem: # Name of classification system used. Valid fields are: USDA, FAO, and WRB.
 
-ExperimentInfo:
- LitterInfo:
-  LitterType1:
-   Species: Nassella tenuissima
-   LifeForm: graminoid
-   Material: recently senesced leaves
-   Lignin:
-     Value: 7.9
-     Units: percentage
-   Nitrogen:
-      Value: 0.9
-      Units: percentage
-   Phosphorus:
-      Value: 0.02
-      Units: percentage
-   C:N:
-      Value: 49
-   Lignin:N:
-      Value: 8.7
-   Lignin:P:
-      Value: 370
-   Amount:
-     Value: 5
-     Units: g
-  LitterType2:
-   Species: Nassella clarazii
-   LifeForm: graminoid
-   Material: recently senesced leaves
-   Lignin:
-     Value: 4.9
-     Units: percentage
-   Nitrogen:
-      Value:  1.8
-      Units: percentage
-   Phosphorus:
-      Value: 0.06
-      Units: percentage
-   C:N:
-      Value: 23
-   Lignin:N:
-      Value: 2.7
-   Lignin:P:
-      Value: 82
-   Amount:
-     Value: 5
-     Units: g
-  LitterType3:
-   Species: Poa ligularis
-   LifeForm: graminoid
-   Material: recently senesced leaves
-   Lignin:
-     Value: 3.9
-     Units: percentage
-   Nitrogen:
-      Value: 1.6
-      Units: percentage
-   Phosphorus:
-      Value: 0.06
-      Units: percentage
-   C:N:
-      Value: 26
-   Lignin:N:
-      Value: 2.4
-   Lignin:P:
-      Value: 63
-   Amount:
-     Value: 5
-     Units: g
-  LitterType4:
-   Species: Nassella tenuissima
-   LifeForm: graminoid
-   Material: roots
-   Lignin:
-     Value: 19
-     Units: percentage
-   Nitrogen:
-      Value: 1.1
-      Units: percentage
-   Phosphorus:
-      Value: 0.04
-      Units: percentage
-   C:N:
-      Value: 38
-   Lignin:N:
-      Value: 17
-   Lignin:P:
-      Value: 447
-   Amount:
-     Value: 5
-     Units: g
-  LitterType5:
-   Species: Nassella clarazii
-   LifeForm: graminoid
-   Material: roots
-   Lignin:
-     Value: 16
-     Units: percentage
-   Nitrogen:
-      Value: 1.4
-      Units: percentage
-   Phosphorus:
-      Value: 0.07
-      Units: percentage
-   C:N:
-      Value: 27
-   Lignin:N:
-      Value: 12
-   Lignin:P:
-      Value: 237
-   Amount:
-     Value: 5
-     Units: g
-  LitterType6:
-   Species: Poa ligularis
-   LifeForm: graminoid
-   Material: roots
-   Lignin:
-     Value: 13
-     Units: percentage
-   Nitrogen:
-      Value: 1.1
-      Units: percentage
-   Phosphorus:
-      Value: 0.06
-      Units: percentage
-   C:N:
-      Value: 35
-   Lignin:N:
-      Value: 11
-   Lignin:P:
-      Value: 227
-   Amount:
-     Value: 5
-     Units: g
- Experiment1:
-    Description: "Leaf litter of each species were incubated at their source sites"
-    LitterBagInfo:
-      Material: polyethylene gauze
-      MeshSize:
-       Value: 0.35
-       Units: mm
-      Dimentions:
-       Width: 10
-       Lenght: 15
-       Units: cm
-      Position: vegetated soil
-    Duration:
-      Time: 21
-      Units: months
- Experiment2:
-    Description: "Roots of each species were incubated at their source sites"
-    LitterBagInfo:
-      Material: polyethylene gauze
-      MeshSize:
-       Value: 0.35
-       Units: mm
-      Dimentions:
-       Width: 10
-       Lenght: 15
-       Units: cm
-      Position: buried 5 cm deep
-    StartingDate:
-      Month: march
-      Season: summer
-    Duration:
-      Time: 21
-      Units: months
+experimentInfo:
+        incDesc: 3 species x 2 plant parts x 3 harvests x 10 replicates
+        # These fields should all be one dimensional arrays. Values for experimental variables with multiple treatment levels should be entered in the variables section and left blank here
+        replicates: 10 # Number of replicates per treatment
+        duration: 629 # length of incubation in days
+        startingMonth: march # month during which the study started, all in lower case
+        litter: # plant species used as litter material for the experiment. All details related to the species must be specified in the initConditions.csv file
+        litterbag:
+          material: polyethylene
+          meshSize: 0.35
+          dimentions: # size of the full litter bag in cm
+            width: 10
+            length: 15
+            radius: # for round or cilindrical structures
+            height: # for 3-dimensional designs such as litter boxes in Austin2006NATURE
+          transmitance: # when reported, light transmitance of the mesh material as a percentage of full sunlight for each wavelength
+            total:
+            PAR:
+            UV:
+            UVA:
+            UVB:
+          position: # position of litterbags in the field, valid options are: bare soil, decomposition bed, under litter, over litter, over lawn, next to grass, under tree/shrub/grass, buried X cm deep, underwater, under rainout shelter, under frame, suspended X cm, under shadecloth
 
-Variables:
-  V1:
-    Name: Time
-    Units: days
-  V2:
-    Name: Ste_L
-    Units: Organic matter remaining
-    Description: "Ash-free mass remaining through time of leaf litter from N. tenuissima"
-    LitterType: LitterType1
-  V3:
-     Name: Scl_L
-     Units: Organic matter remaining
-     Description: "Ash-free mass remaining through time of leaf litter from N. clarazii"
-     LitterType: LitterType2
-  V4:
-     Name: Pli_L
-     Units: Organic matter remaining
-     Description: "Ash-free mass remaining through time of leaf litter from P. ligularis"
-     LitterType: LitterType3
-  V5:
-     Name: Ste_R
-     Units: Organic matter remaining
-     Description: "Ash-free mass remaining through time of roots from N. tenuissima"
-     LitterType: LitterType4
-  V6:
-     Name: Scl_R
-     Units: Organic matter remaining
-     Description: "Ash-free mass remaining through time of roots from N. clarazii"
-     LitterType: LitterType5
-  V7:
-     Name: Pli_R
-     Units: Organic matter remaining
-     Description: "Ash-free mass remaining through time of roots from P. ligularis"
-     LitterType: LitterType6
+variables: # These describe the columns of your timeSeries.csv file
+        V1: # column 1
+          name: Time
+          units: days
+        V2:
+          name: Ste_L
+          units: organic matter remaining
+          varDesc: S. tenuissima leaf litter incubated on the ground
+          site: La Pampa
+          litter: Stipa tenuissima1
+          position: bare soil
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V3:
+          name: Scl_L
+          units: organic matter remaining
+          varDesc: S. clarazii leaf litter incubated on the ground
+          site: La Pampa
+          litter: Stipa clarazii1
+          position: bare soil
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V4:
+          name: Pli_L
+          units: organic matter remaining
+          varDesc: P. ligularis leaf litter incubated on the ground
+          site: La Pampa
+          litter: Poa ligularis1
+          position: bare soil
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V5:
+          name: Ste_R
+          units: organic matter remaining
+          varDesc: S. tenuissima roots incubated buried 5 cm
+          site: La Pampa
+          litter: Stipa tenuissima2
+          position: buried 5 cm deep
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V6:
+          name: Scl_R
+          units: organic matter remaining
+          varDesc: S. clarazii roots incubated buried 5 cm
+          site: La Pampa
+          litter: Stipa clarazii2
+          position: buried 5 cm deep
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V7:
+          name: Pli_R
+          units: organic matter remaining
+          varDesc: P. ligularis roots incubated buried 5 cm
+          site: La Pampa
+          litter: Poa ligularis2
+          position: buried 5 cm deep
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:

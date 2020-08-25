@@ -1,0 +1,7 @@
+species, type, N-fixer, material, amount, carbon, nitrogen, C:N, phosphorus, potassium, sodium, magnesium, manganese, copper, zinc, lead, calcium, sulfur, iron, lignin, cellulose, hemicellulose, cell solubles, SLA
+Stipa tenuissima1, graminoid, no, leaves, 5, 44.1, 0.9, 49, 0.02,,,,,,,,,,, 7.9,
+Stipa clarazii1, graminoid, no, leaves, 5, 41.4, 1.8, 23, 0.06,,,,,,,,,,, 4.9,
+Poa ligularis1, graminoid, no, leaves, 5, 41.6, 1.6, 26, 0.06,,,,,,,,,,, 3.9,
+Stipa tenuissima2, graminoid, no, roots, 5, 41.8, 1.1, 38, 0.04,,,,,,,,,,, 19,
+Stipa clarazii2, graminoid, no, roots, 5, 37.8, 1.4, 27, 0.07,,,,,,,,,,, 16,
+Poa ligularis2, graminoid, no, roots, 5, 38.5, 1.1, 35, 0.06,,,,,,,,,,, 13,
