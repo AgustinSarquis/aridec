@@ -1,283 +1,137 @@
-CitationKey: Mubarak2008
-doi: 10.1080/00103620802292574
-EntryAuthor: Agustín Sarquis
+citationKey: Mubarak2008 # Unique identifier in the format: LastnameYear (lowercase letters must be added when there are two or more entries by the same author and year, i.e.: LastnameYearx)
+doi: 10.1080/00103620802292574 # DOI of the publication where data is published
+entryAuthor: Agustín Sarquis # First and last name of the person who entered the data in this file
+entryCreationDate: 2020-02-14 # Date when the data was entered in this file. Format: YYYY-MM-DD
+contactName: Agustín Sarquis # First and last name of contact person (may be the principal investigator supervising the entryAuthor)
+contactEmail: agusarquis@agro.uba.ar # Email of the contact person
+entryNote: soils are typic Chromustert (classification system not specified)
+study: Decomposition from leaves of some agroforestry trees (Eucalyptus microtheca, Ficus spp., and Leucaena leucocephala) and litter fall from guava (Psidium guajava) and mango (Magnifera indica) were monitored in a 12-week litter-bag experiment
 
-SiteInfo:
-  Name: Shambat, Khartoum, Sudan
-  EcosystemType: plantation
-  MAP:
-    Value: 155.5
-    Units: mm
-  MAT:
-    Value: 28.91
-    Units: Celsius
-  RainySeason: summer
-  Altitude:
-    Value: 385
-    Units: masl
-  SoilType: Chromustert
-  Coordinates:
-    Latitude: 15.667
-    Longitude: 32.367
+siteInfo:
+        site: Shambat # Names of individual sites, if one site, keep on this line, if multiple, use array format
+              # These fields should be arrays of equal length to site array
+        coordinates:
+          latitude: 15.667 # Latitude in decimal units (check for negative that denotes southern hemisphere)
+          longitude: 32.367 # Longitude in decimal units (check for negative that denotes western hemisphere)
+        country: Sudan # Name of country where site was conducted
+        MAT: 28.91 # Mean annual temperature in degrees Celsius
+        MAP: 155.5 # Mean annual precipitation in mm
+        rainySeason: summer # Period of the year during which most precipitation occurs, i.e.: whole year, spring, summer, autumn, winter (if more than one use array format)
+        elevation: 385 # Elevation of study site in meters above sea level
+        landCover: farmland
+        vegNote: # Additional details about land cover such as species or functional type composition
+        cover:
+          plantCover: # Total plant cover percentage (if they report cover by specific plant types, fill the fields below)
+          bunchgrassCover:
+          shrubCover:
+          treeCover:
+          forbCover:
+          bareSoil:
+        soilTaxonomy:
+          soilOrder: # Soil order according to the classification system described below
+          soilFamily: # Soil family description (ex. 'Eutric' for a Eutric Cambisol)
+          soilSeries: # Soil series according to the classification system described below
+          classificationSystem: # Name of classification system used. Valid fields are: USDA, FAO, and WRB.
 
-ExperimentInfo:
- LitterInfo:
-  LitterType1:
-   Species: Psidium guajava
-   LifeForm: tree
-   Material: crushed recently senesced leaves
-   Carbon:
-     Value: 41.82
-     Units: percentage
-   Nitrogen:
-     Value: 0.900
-     Units: percentage
-   Phosphorus:
-     Value: 0.136
-     Units: percentage
-   Potassium:
-     Value: 0.829
-     Units: percentage
-   Calcium:
-     Value: 2.765
-     Units: percentage
-   Sulfur:
-     Value: 0.237
-     Units: percentage
-   Magnesium:
-     Value: 0.419
-     Units: percentage
-   Iron:
-     Value: 0.3515
-     Units: percentage
-   Manganese:
-     Value: 0.0188
-     Units: percentage
-   Copper:
-     Value: 0.0012
-     Units: percentage
-   Zinc:
-     Value: 0.0024
-     Units: percentage
-   C:N:
-     Value: 59.7
-   Amount:
-     Value: 16
-     Units: g
-  LitterType2:
-   Species: Mangifera indica
-   LifeForm: tree
-   Material: crushed recently senesced leaves
-   Carbon:
-     Value: 35.60
-     Units: percentage
-   Nitrogen:
-     Value: 0.465
-     Units: percentage
-   Phosphorus:
-     Value: 0.067
-     Units: percentage
-   Potassium:
-     Value: 0.452
-     Units: percentage
-   Calcium:
-     Value: 3.012
-     Units: percentage
-   Sulfur:
-     Value: 0.201
-     Units: percentage
-   Magnesium:
-     Value: 0.373
-     Units: percentage
-   Iron:
-     Value: 0.1511
-     Units: percentage
-   Manganese:
-     Value: 0.0053
-     Units: percentage
-   Copper:
-     Value: 0.0004
-     Units: percentage
-   Zinc:
-     Value: 0.0014
-     Units: percentage
-   C:N:
-     Value: 76.6
-   Amount:
-     Value: 16
-     Units: g
-  LitterType3:
-   Species: Eucalyptus microtheca
-   LifeForm: tree
-   Material: crushed recently senesced aboveground parts
-   Carbon:
-     Value: 45.33
-     Units: percentage
-   Nitrogen:
-     Value: 1.274
-     Units: percentage
-   Phosphorus:
-     Value: 0.098
-     Units: percentage
-   Potassium:
-     Value: 1.277
-     Units: percentage
-   Calcium:
-     Value: 2.256
-     Units: percentage
-   Sulfur:
-     Value: 0.156
-     Units: percentage
-   Magnesium:
-     Value: 0.361
-     Units: percentage
-   Iron:
-     Value: 0.0442
-     Units: percentage
-   Manganese:
-     Value: 0.0071
-     Units: percentage
-   Copper:
-     Value: 0.0038
-     Units: percentage
-   Zinc:
-     Value: 0.0017
-     Units: percentage
-   C:N:
-     Value: 35.7
-   Amount:
-     Value: 16
-     Units: g
-  LitterType4:
-   Species: Ficus spp.
-   LifeForm: tree
-   Material: crushed recently senesced aboveground parts
-   Carbon:
-     Value: 39.21
-     Units: percentage
-   Nitrogen:
-     Value: 1.382
-     Units: percentage
-   Phosphorus:
-     Value: 0.096
-     Units: percentage
-   Potassium:
-     Value: 1.412
-     Units: percentage
-   Calcium:
-     Value: 3.807
-     Units: percentage
-   Sulfur:
-     Value: 0.132
-     Units: percentage
-   Magnesium:
-     Value: 0.406
-     Units: percentage
-   Iron:
-     Value: 0.0515
-     Units: percentage
-   Manganese:
-     Value: 0.0042
-     Units: percentage
-   Copper:
-     Value: 0.0011
-     Units: percentage
-   Zinc:
-     Value: 0.0007
-     Units: percentage
-   C:N:
-     Value: 28.4
-   Amount:
-     Value: 16
-     Units: g
-  LitterType5:
-   Species: Leucaena leucocephala
-   LifeForm: tree
-   Material: crushed recently senesced aboveground parts
-   Carbon:
-     Value: 45.30
-     Units: percentage
-   Nitrogen:
-     Value: 2.351
-     Units: percentage
-   Phosphorus:
-     Value: 0.117
-     Units: percentage
-   Potassium:
-     Value: 1.506
-     Units: percentage
-   Calcium:
-     Value: 1.962
-     Units: percentage
-   Sulfur:
-     Value: 0.251
-     Units: percentage
-   Magnesium:
-     Value: 0.250
-     Units: percentage
-   Iron:
-     Value: 0.0664
-     Units: percentage
-   Manganese:
-     Value: 0.0074
-     Units: percentage
-   Copper:
-     Value: 0.0010
-     Units: percentage
-   Zinc:
-     Value: 0.0016
-     Units: percentage
-   C:N:
-     Value: 19.3
-   Amount:
-     Value: 16
-     Units: g
- Experiment1:
-  Description: "Decomposition from leaves of some agroforestry trees (Eucalyptus microtheca, Ficus spp., and Leucaena leucocephala) and litter fall from guava (Psidium guajava) and mango (Magnifera indica) were monitored in a 12-week litter-bag experiment."
-  LitterBagInfo:
-   Material: nylon
-   MeshSize:
-    Value: 2
-    Units: mm
-   Dimentions:
-    Width: 20
-    Lenght: 30
-    Units: cm
-   Position: buried 20 cm deep
-  Treatment: litter type
-  StartingDate:
-   Month: june
-   Season: summer
-  Duration:
-   Time: 3
-   Units: months
+experimentInfo:
+        incDesc: 5 species x 11 harvests x 3 replicates
+        # These fields should all be one dimensional arrays. Values for experimental variables with multiple treatment levels should be entered in the variables section and left blank here
+        replicates: 3 # Number of replicates per treatment
+        duration: 84 # length of incubation in days
+        startingMonth: june # month during which the study started, all in lower case
+        litter: # plant species used as litter material for the experiment. All details related to the species must be specified in the initConditions.csv file
+        litterbag:
+          material: nylon
+          meshSize: 2 # mesh size in mm referring to one side of the net-square
+          dimentions: # size of the full litter bag in cm
+            width: 20
+            length: 30
+            radius: # for round or cilindrical structures
+            height: # for 3-dimensional designs such as litter boxes in Austin2006NATURE
+          transmitance: # when reported, light transmitance of the mesh material as a percentage of full sunlight for each wavelength
+            total:
+            PAR:
+            UV:
+            UVA:
+            UVB:
+          position: buried 20 cm deep
 
-Variables:
-  V1:
-    Name: Time
-    Units: weeks
-  V2:
-    Name: Gua
-    Units: mass remaining
-    Description: "Guava leaf litter dry mass after 12 weeks buried in the field"
-    LitterType: LitterType1
-  V3:
-    Name: Man
-    Units: mass remaining
-    Description: "Mango leaf litter dry mass after 12 weeks buried in the field"
-    LitterType: LitterType2
-  V4:
-    Name: Euc
-    Units: mass remaining
-    Description: "Eucalyptus leaf and stem litter dry mass after 12 weeks buried in the field"
-    LitterType: LitterType3
-  V5:
-    Name: Fic
-    Units: mass remaining
-    Description: "Ficus leaf and stem litter dry mass after 12 weeks buried in the field"
-    LitterType: LitterType4
-  V6:
-    Name: Leu
-    Units: mass remaining
-    Description: "Leucaena leaf and stem litter dry mass after 12 weeks buried in the field"
-    LitterType: LitterType5
+variables: # These describe the columns of your timeSeries.csv file
+        V1: # column 1
+          name: Time
+          units: weeks
+        V2:
+          name: Gua
+          units: mass remaining
+          varDesc: Guava leaf litter dry mass after 12 weeks buried in the field
+          site: Shambat
+          litter: Psidium guajava
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V3:
+          name: Man
+          units: mass remaining
+          varDesc: Mango leaf litter dry mass after 12 weeks buried in the field
+          site: Shambat
+          litter: Mangifera indica
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V4:
+          name: Euc
+          units: mass remaining
+          varDesc: Eucalyptus leaf and stem litter dry mass after 12 weeks buried in the field
+          site: Shambat
+          litter: Eucalyptus microtheca
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V5:
+          name: Fic
+          units: mass remaining
+          varDesc: Ficus leaf and stem litter dry mass after 12 weeks buried in the field
+          site: Shambat
+          litter: Ficus
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V6:
+          name: Leu
+          units: mass remaining
+          varDesc: Leucaena leaf and stem litter dry mass after 12 weeks buried in the field
+          site: Shambat
+          litter: Leucaena leucocephala
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:

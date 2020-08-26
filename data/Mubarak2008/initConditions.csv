@@ -1,0 +1,6 @@
+species, type, N-fixer, material, amount, carbon, nitrogen, C:N, phosphorus, potassium, sodium, magnesium, manganese, copper, zinc, lead, calcium, sulfur, iron, lignin, cellulose, hemicellulose, cell solubles, SLA
+Psidium guajava, evergreen, no, crushed leaves, 16, 41.82, 0.9, 59.7, 0.136, 0.829,, 0.419, 0.0188, 0.0012, 0.0024,, 2.765, 0.237, 0.3515,
+Mangifera indica, evergreen, no, crushed leaves, 16, 35.6, 0.465, 76.6, 0.067, 0.452,, 0.373, 0.0053, 0.0004, 0.0014,, 3.012, 0.201, 0.1511,
+Eucalyptus microtheca, evergreen, no, crushed aboveground parts, 16, 45.33, 1.274, 35.7, 0.098, 1.277,, 0.361, 0.0071, 0.0038, 0.0017,, 2.256, 0.156, 0.0442,
+Ficus, evergreen, no, crushed aboveground parts, 16, 39.21, 1.382, 28.4, 0.096, 1.412,, 0.406, 0.0042, 0.0011, 0.0007,, 3.807, 0.132, 0.0515,
+Leucaena leucocephala, deciduous, yes, crushed aboveground parts, 16, 45.3, 2.351, 19.3, 0.117, 1.506,, 0.25, 0.0074, 0.0010, 0.0016,, 1.962, 0.251, 0.0664,
