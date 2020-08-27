@@ -1,120 +1,122 @@
-CitationKey: Ndagurwa2015
-doi: 10.1111/aec.12191
-EntryAuthor: Agustín Sarquis
+citationKey: Ndagurwa2015 # Unique identifier in the format: LastnameYear (lowercase letters must be added when there are two or more entries by the same author and year, i.e.: LastnameYearx)
+doi: 10.1111/aec.12191 # DOI of the publication where data is published
+entryAuthor: Agustín Sarquis # First and last name of the person who entered the data in this file
+entryCreationDate: 2020-02-17 # Date when the data was entered in this file. Format: YYYY-MM-DD
+contactName: Agustín Sarquis # First and last name of contact person (may be the principal investigator supervising the entryAuthor)
+contactEmail: agusarquis@agro.uba.ar
+entryNote: they present C values but they are strange
+study: decomposition of litter of three mistletoe species and N-fixing Acacia karroo in a semi-arid savanna
 
-SiteInfo:
-  Name: Matobo, Bulawayo, Zimbabwe
-  EcosystemType: savanna
-  MAP:
-    Value: 600
-    Units: mm
-  MAT:
-    Value: 23.6
-    Units: Celsius
-  RainySeason: summer
-  Altitude:
-    Value: 1340
-    Units: masl
-  SoilType: siallitic red clay
-  Coordinates:
-    Latitude: -20.383
-    Longitude: 28.467
+siteInfo:
+        site: Matobo # Names of individual sites, if one site, keep on this line, if multiple, use array format
+              # These fields should be arrays of equal length to site array
+        coordinates:
+          latitude: -20.383 # Latitude in decimal units (check for negative that denotes southern hemisphere)
+          longitude: 28.467 # Longitude in decimal units (check for negative that denotes western hemisphere)
+        country: Zimbabwe # Name of country where site was conducted
+        MAT: 23.6 # Mean annual temperature in degrees Celsius
+        MAP: 600 # Mean annual precipitation in mm
+        rainySeason: summer # Period of the year during which most precipitation occurs, i.e.: whole year, spring, summer, autumn, winter (if more than one use array format)
+        elevation: 1340 # Elevation of study site in meters above sea level
+        landCover: savanna
+        vegNote: savanna dominated by A. karroo, A. nilotica, A. gerrardii, A. rehmanniana, A. nigrescens and M. senegalensis. Dominant grasses include H. contortus, T. triandra and C. plurinodes
+        cover:
+          plantCover: # Total plant cover percentage (if they report cover by specific plant types, fill the fields below)
+          bunchgrassCover:
+          shrubCover:
+          treeCover:
+          forbCover:
+          bareSoil:
+        soilTaxonomy:
+          soilOrder: # Soil order according to the classification system described below
+          soilFamily: # Soil family description (ex. 'Eutric' for a Eutric Cambisol)
+          soilSeries: # Soil series according to the classification system described below
+          classificationSystem: # Name of classification system used. Valid fields are: USDA, FAO, and WRB.
 
-ExperimentInfo:
- LitterInfo:
-  LitterType1:
-   Species: Erianthemum ngamicum
-   LifeForm: parasitic shrub
-   Material: recently senesced leaves
-   Nitrogen:
-     Value: 2.41
-     Units: percentage
-   Phosphorus:
-     Value: 0.07
-     Units: percentage
-   Amount:
-     Value: 25
-     Units: g
-  LitterType2:
-   Species: Plicosepalus kalachariensis
-   LifeForm: parasitic shrub
-   Material: recently senesced leaves
-   Nitrogen:
-     Value: 1.54
-     Units: percentage
-   Phosphorus:
-     Value: 0.08
-     Units: percentage
-   Amount:
-     Value: 25
-     Units: g
-  LitterType3:
-   Species: Viscum verrucosum
-   LifeForm: parasitic shrub
-   Material: recently senesced stems
-   Nitrogen:
-     Value: 1.81
-     Units: percentage
-   Phosphorus:
-     Value: 0.08
-     Units: percentage
-   Amount:
-     Value: 25
-     Units: g
-  LitterType4:
-   Species: Vachellia karroo
-   LifeForm: tree
-   Material: recently senesced leaves
-   Nitrogen:
-     Value: 1.35
-     Units: percentage
-   Phosphorus:
-     Value: 0.07
-     Units: percentage
-   Amount:
-     Value: 25
-     Units: g
- Experiment1:
-  Description: "They studied the decomposition of litter of three mistletoe species and N-fixing Acacia karroo in a semi-arid savanna"
-  LitterBagInfo:
-   Material: nylon
-   MeshSize:
-    Value: 2
-    Units: mm
-   Dimentions:
-    Width: 30
-    Lenght: 30
-    Units: cm
-   Position: under tree
-  Treatment: litter type
-  StartingDate:
-   Month: may
-   Season: autumn
-  Duration:
-   Time: 12
-   Units: months
+experimentInfo:
+        incDesc: 4 species x 6 harvests x ? replicates
+        # These fields should all be one dimensional arrays. Values for experimental variables with multiple treatment levels should be entered in the variables section and left blank here
+        replicates:  # Number of replicates per treatment
+        duration: 365 # length of incubation in days
+        startingMonth: may # month during which the study started, all in lower case
+        litter: # plant species used as litter material for the experiment. All details related to the species must be specified in the initConditions.csv file
+        litterbag:
+          material: nylon
+          meshSize: 2 # mesh size in mm referring to one side of the net-square
+          dimentions: # size of the full litter bag in cm
+            width: 30
+            length: 30
+            radius: # for round or cilindrical structures
+            height: # for 3-dimensional designs such as litter boxes in Austin2006NATURE
+          transmitance: # when reported, light transmitance of the mesh material as a percentage of full sunlight for each wavelength
+            total:
+            PAR:
+            UV:
+            UVA:
+            UVB:
+          position: under tree
 
-Variables:
-  V1:
-    Name: Time
-    Units: months
-  V2:
-    Name: En
-    Units: mass remaining
-    Description: "E. ngamicum leaf litter incubated for a year under V. karroo parasitized by E. nganicum"
-    LitterType: LitterType1
-  V3:
-    Name: Pk
-    Units: mass remaining
-    Description: "P. kalachariensis leaf litter incubated for a year under V. karroo parasitized by P. kalachariensis"
-    LitterType: LitterType2
-  V4:
-    Name: Vv
-    Units: mass remaining
-    Description: "V. verrucosum stem litter incubated for a year under V. karroo parasitized by V. verrucosum"
-    LitterType: LitterType3
-  V5:
-    Name: Ak
-    Units: mass remaining
-    Description: "V. karroo leaf litter incubated for a year under non-parasitized V. karroo canopy"
-    LitterType: LitterType4
+variables: # These describe the columns of your timeSeries.csv file
+        V1: # column 1
+          name: Time
+          units: months
+        V2:
+          name: En
+          units: mass remaining
+          varDesc: E. ngamicum leaf litter incubated for a year under A. karroo parasitized by E. nganicum
+          site: Matobo
+          litter: Erianthemum ngamicum
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V3:
+          name: Pk
+          units: mass remaining
+          varDesc: P. kalachariensis leaf litter incubated for a year under A. karroo parasitized by P. kalachariensis
+          site: Matobo
+          litter: Plicosepalus kalachariensis
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V4:
+          name: Vv
+          units: mass remaining
+          varDesc: V. verrucosum stem litter incubated for a year under A. karroo parasitized by V. verrucosum
+          site: Matobo
+          litter: Viscum verrucosum
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V5:
+          name: Ak
+          units: mass remaining
+          varDesc: A. karroo leaf litter incubated for a year under non-parasitized A. karroo canopy
+          site: Matobo
+          litter: Acacia karroo
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
