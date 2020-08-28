@@ -1,456 +1,478 @@
-CitationKey: Pan2015
-doi: 10.1038/srep13217
-EntryAuthor: Agustín Sarquis
+citationKey: Pan2015 # Unique identifier in the format: LastnameYear (lowercase letters must be added when there are two or more entries by the same author and year, i.e.: LastnameYearx)
+doi: 10.1038/srep13217 # DOI of the publication where data is published
+entryAuthor: Agustín Sarquis # First and last name of the person who entered the data in this file
+entryCreationDate: 2019-04-25 # Date when the data was entered in this file. Format: YYYY-MM-DD
+contactName: Agustín Sarquis # First and last name of contact person (may be the principal investigator supervising the entryAuthor)
+contactEmail: agusarquis@agro.uba.ar # Email of the contact person
+entryNote: # Any notes or comments related to this entry.
+study: They incubated leaf litter from 13 species on a decomposition bed under full sun or shade treatment for a year
 
-SiteInfo:
-  Name: Mu Us sandland, Inner Mongolia, China
-  EcosystemType: sandland
-  MAP:
-    Value: 369
-    Units: mm
-  MAT:
-    Value: 8.25
-    Units: Celsius
-  RainySeason: summer
-  Altitude:
-    Value: 1300
-    Units: masl
-  SoilType: aeolian sand
-  Cover:
-    PlantCover: 40
-    BareSoil: 60
-    Units: percentage
-  Coordinates:
-    Latitude: 39.494
-    Longitude: 110.192
+siteInfo:
+        site: Mu Us # Names of individual sites, if one site, keep on this line, if multiple, use array format
+              # These fields should be arrays of equal length to site array
+        coordinates:
+          latitude: 39.494 # Latitude in decimal units (check for negative that denotes southern hemisphere)
+          longitude: 110.192 # Longitude in decimal units (check for negative that denotes western hemisphere)
+        country: China # Name of country where site was conducted
+        MAT: 8.25 # Mean annual temperature in degrees Celsius
+        MAP: 369 # Mean annual precipitation in mm
+        rainySeason: summer # Period of the year during which most precipitation occurs, i.e.: whole year, spring, summer, autumn, winter (if more than one use array format)
+        elevation: 1300 # Elevation of study site in meters above sea level
+        landCover: sandland
+        vegNote: dominant vegetation consists of (semi-)shrubs such as A. ordosica, H. laeve, S. psammophila and S. vulgaris
+        cover:
+          plantCover: 40 # Total plant cover percentage (if they report cover by specific plant types, fill the fields below)
+          bunchgrassCover:
+          shrubCover:
+          treeCover:
+          forbCover:
+          bareSoil: 60
+        soilTaxonomy:
+          soilOrder: # Soil order according to the classification system described below
+          soilFamily: # Soil family description (ex. 'Eutric' for a Eutric Cambisol)
+          soilSeries: # Soil series according to the classification system described below
+          classificationSystem: # Name of classification system used. Valid fields are: USDA, FAO, and WRB.
 
-ExperimentInfo:
- LitterInfo:
-  LitterType1:
-   Species: Corethrodendron lignosum
-   LifeForm: shrub
-   Material: recently senesced leaves
-   Carbon:
-     Value: 50.19
-     Units: percentage
-   Nitrogen:
-     Value: 2.56
-     Units: percentage
-   C:N:
-     Value: 19.64
-   SLA:
-     Value: 9.98
-     Units: mm.mg-1
-   Amount:
-     Value: 0.5
-     Units: g
-  LitterType2:
-   Species: Lespedeza davurica
-   LifeForm: shrub
-   Material: recently senesced leaves
-   Carbon:
-     Value: 48.91
-     Units: percentage
-   Nitrogen:
-     Value: 1.84
-     Units: percentage
-   C:N:
-     Value: 26.64
-   SLA:
-     Value: 12.09
-     Units: mm.mg-1
-   Amount:
-     Value: 0.5
-     Units: g
-  LitterType3:
-   Species: Agriophyllum squarrosum
-   LifeForm: forb
-   Material: recently senesced leaves
-   Carbon:
-     Value: 43.70
-     Units: percentage
-   Nitrogen:
-     Value: 0.93
-     Units: percentage
-   C:N:
-     Value: 46.88
-   SLA:
-     Value: 14.03
-     Units: mm.mg-1
-   Amount:
-     Value: 0.5
-     Units: g
-  LitterType4:
-   Species: Salix cheilophila
-   LifeForm: shrub
-   Material: recently senesced leaves
-   Carbon:
-     Value: 54.66
-     Units: percentage
-   Nitrogen:
-     Value: 0.92
-     Units: percentage
-   C:N:
-     Value: 59.28
-   SLA:
-     Value: 9.41
-     Units: mm.mg-1
-   Amount:
-     Value: 0.5
-     Units: g
-  LitterType5:
-   Species: Leymus divaricatus
-   LifeForm: graminoid
-   Material: recently senesced leaves
-   Carbon:
-     Value: 50.22
-     Units: percentage
-   Nitrogen:
-     Value: 1.74
-     Units: percentage
-   C:N:
-     Value: 28.93
-   SLA:
-     Value: 10.49
-     Units: mm.mg-1
-   Amount:
-     Value: 0.5
-     Units: g
-  LitterType6:
-   Species: Stipa sibirica
-   LifeForm: graminoid
-   Material: recently senesced leaves
-   Carbon:
-     Value: 49.58
-     Units: percentage
-   Nitrogen:
-     Value: 1.63
-     Units: percentage
-   C:N:
-     Value: 30.50
-   SLA:
-     Value: 8.22
-     Units: mm.mg-1
-   Amount:
-     Value: 0.5
-     Units: g
-  LitterType7:
-   Species: Stipa sareptana
-   LifeForm: graminoid
-   Material: recently senesced leaves
-   Carbon:
-     Value: 51.36
-     Units: percentage
-   Nitrogen:
-     Value: 1.31
-     Units: percentage
-   C:N:
-     Value: 39.08
-   SLA:
-     Value: 5.00
-     Units: mm.mg-1
-   Amount:
-     Value: 0.5
-     Units: g
-  LitterType8:
-   Species: Agropyron cristatum
-   LifeForm: graminoid
-   Material: recently senesced leaves
-   Carbon:
-     Value: 52.38
-     Units: percentage
-   Nitrogen:
-     Value: 1.07
-     Units: percentage
-   C:N:
-     Value: 48.96
-   SLA:
-     Value: 6.52
-     Units: mm.mg-1
-   Amount:
-     Value: 0.5
-     Units: g
-  LitterType9:
-   Species: Caragana korshinskii
-   LifeForm: shrub
-   Material: recently senesced leaves
-   Carbon:
-     Value: 52.20
-     Units: percentage
-   Nitrogen:
-     Value: 2.93
-     Units: percentage
-   C:N:
-     Value: 17.79
-   SLA:
-     Value: 13.26
-     Units: mm.mg-1
-   Amount:
-     Value: 0.5
-     Units: g
-  LitterType10:
-   Species: Salix gordejevii
-   LifeForm: shrub
-   Material: recently senesced leaves
-   Carbon:
-     Value: 54.75
-     Units: percentage
-   Nitrogen:
-     Value: 2.00
-     Units: percentage
-   C:N:
-     Value: 27.37
-   SLA:
-     Value: 12.43
-     Units: mm.mg-1
-   Amount:
-     Value: 0.5
-     Units: g
-  LitterType11:
-   Species: Calligonum mongolicum
-   LifeForm: shrub
-   Material: recently senesced leaves
-   Carbon:
-     Value: 37.20
-     Units: percentage
-   Nitrogen:
-     Value: 1.34
-     Units: percentage
-   C:N:
-     Value: 27.81
-   SLA:
-     Value: 2.36
-     Units: mm.mg-1
-   Amount:
-     Value: 0.5
-     Units: g
-  LitterType12:
-   Species: Alhagi sparsifolia
-   LifeForm: shrub
-   Material: recently senesced leaves
-   Carbon:
-     Value: 47.42
-     Units: percentage
-   Nitrogen:
-     Value: 1.80
-     Units: percentage
-   C:N:
-     Value: 26.41
-   SLA:
-     Value: 6.57
-     Units: mm.mg-1
-   Amount:
-     Value: 0.5
-     Units: g
-  LitterType13:
-   Species: Nitraria tangutorum
-   LifeForm: shrub
-   Material: recently senesced leaves
-   Carbon:
-     Value: 35.43
-     Units: percentage
-   Nitrogen:
-     Value: 2.90
-     Units: percentage
-   C:N:
-     Value: 12.21
-   SLA:
-     Value: 7.84
-     Units: mm.mg-1
-   Amount:
-     Value: 0.5
-     Units: g
- Experiment1:
-    Description: "They incubated leaf litter from 13 species on a decomposition bed under full sun or shade treatment for a year"
-    LitterBagInfo:
-      Material: net curtain
-      MeshSize:
-       Value: 0.5
-       Units: mm
-      Dimentions:
-       Width: 6
-       Lenght: 6
-       Units: cm
-      Transmitance:
-        Value: 90
-        Units: percentage
-      Position: decomposition bed
-    FilterInfo:
-      FilterType1:
-        Name: shadecloth
-        Wavelenght:
-          Value: 700
-          Units: nm
-        Transmitance:
-          Value: 5
-          Units: percentage
-    Treatment:
-      - light attenuation
-      - litter type
-    StartingDate:
-      Month: december
-      Season: summer
-    Duration:
-      Time: 12
-      Units: months
+experimentInfo:
+        incDesc: 13 species x 2 radiation levels x 3 harvests x 5 replicates
+        # These fields should all be one dimensional arrays. Values for experimental variables with multiple treatment levels should be entered in the variables section and left blank here
+        replicates: 5 # Number of replicates per treatment
+        duration: 365 # length of incubation in days
+        startingMonth: december # month during which the study started, all in lower case
+        litter: # plant species used as litter material for the experiment. All details related to the species must be specified in the initConditions.csv file
+        litterbag:
+          material: net curtain
+          meshSize: 0.5
+          dimentions: # size of the full litter bag in cm
+            width: 6
+            length: 6
+            radius: # for round or cilindrical structures
+            height: # for 3-dimensional designs such as litter boxes in Austin2006NATURE
+          transmitance: # when reported, light transmitance of the mesh material as a percentage of full sunlight for each wavelength
+            total: 90
+            PAR:
+            UV:
+            UVA:
+            UVB:
+          position:
 
-Variables:
-  V1:
-    Name: Time
-    Units: months
-  V2:
-    Name: Hl_S
-    Units: mass remaining
-    Description: "Corethrodendron lignosum leaf litter was incubated on a decompositon bed under shade treatment"
-    FilterType: FilterType1
-    LitterType: LitterType1
-  V3:
-    Name: Hl_U
-    Units: mass remaining
-    Description: "Corethrodendron lignosum leaf litter was incubated on a decompositon bed under full sun treatment"
-    FilterType: NA
-    LitterType: LitterType1
-  V4:
-    Name: Ld_S
-    Units: mass remaining
-    Description: "Lespedeza davurica leaf litter was incubated on a decompositon bed under shade treatment"
-    FilterType: FilterType1
-    LitterType: LitterType2
-  V5:
-    Name: Ld_U
-    Units: mass remaining
-    Description: "Lespedeza davurica leaf litter was incubated on a decompositon bed under full sun treatment"
-    FilterType: NA
-    LitterType: LitterType2
-  V6:
-    Name: Ap_S
-    Units: mass remaining
-    Description: "Agriophyllum squarrosum leaf litter was incubated on a decompositon bed under shade treatment"
-    FilterType: FilterType1
-    LitterType: LitterType3
-  V7:
-    Name: Ap_U
-    Units: mass remaining
-    Description: "Agriophyllum squarrosum leaf litter was incubated on a decompositon bed under full sun treatment"
-    FilterType: NA
-    LitterType: LitterType3
-  V8:
-    Name: Sc_S
-    Units: mass remaining
-    Description: "Salix cheilophila leaf litter was incubated on a decompositon bed under shade treatment"
-    FilterType: FilterType1
-    LitterType: LitterType4
-  V9:
-    Name: Sc_U
-    Units: mass remaining
-    Description: "Salix cheilophila leaf litter was incubated on a decompositon bed under full sun treatment"
-    FilterType: NA
-    LitterType: LitterType4
-  V10:
-    Name: Lc_S
-    Units: mass remaining
-    Description: "Leymus divaricatus leaf litter was incubated on a decompositon bed under shade treatment"
-    FilterType: FilterType1
-    LitterType: LitterType5
-  V11:
-    Name: Lc_U
-    Units: mass remaining
-    Description: "Leymus divaricatus leaf litter was incubated on a decompositon bed under full sun treatment"
-    FilterType: NA
-    LitterType: LitterType5
-  V12:
-    Name: Asi_S
-    Units: mass remaining
-    Description: "Stipa sibirica leaf litter was incubated on a decompositon bed under shade treatment"
-    FilterType: FilterType1
-    LitterType: LitterType6
-  V13:
-    Name: Asi_U
-    Units: mass remaining
-    Description: "Stipa sibirica leaf litter was incubated on a decompositon bed under full sun treatment"
-    FilterType: NA
-    LitterType: LitterType6
-  V14:
-    Name: Sk_S
-    Units: mass remaining
-    Description: "Stipa sareptana leaf litter was incubated on a decompositon bed under shade treatment"
-    FilterType: FilterType1
-    LitterType: LitterType7
-  V15:
-    Name: Sk_U
-    Units: mass remaining
-    Description: "Stipa sareptana leaf litter was incubated on a decompositon bed under full sun treatment"
-    FilterType: NA
-    LitterType: LitterType7
-  V16:
-    Name: Ac_S
-    Units: mass remaining
-    Description: "Agropyron cristatum leaf litter was incubated on a decompositon bed under shade treatment"
-    FilterType: FilterType1
-    LitterType: LitterType8
-  V17:
-    Name: Ac_U
-    Units: mass remaining
-    Description: "Agropyron cristatum leaf litter was incubated on a decompositon bed under full sun treatment"
-    FilterType: NA
-    LitterType: LitterType8
-  V18:
-    Name: Ck_S
-    Units: mass remaining
-    Description: "Caragana korshinskii litter was incubated on a decompositon bed under shade treatment"
-    FilterType: FilterType1
-    LitterType: LitterType9
-  V19:
-    Name: Ck_U
-    Units: mass remaining
-    Description: "Caragana korshinskii leaf litter was incubated on a decompositon bed under full sun treatment"
-    FilterType: NA
-    LitterType: LitterType9
-  V20:
-    Name: Sg_S
-    Units: mass remaining
-    Description: "Salix gordejevii leaf litter was incubated on a decompositon bed under shade treatment"
-    FilterType: FilterType1
-    LitterType: LitterType10
-  V21:
-    Name: Sg_U
-    Units: mass remaining
-    Description: "Salix gordejevii leaf litter was incubated on a decompositon bed under full sun treatment"
-    FilterType: NA
-    LitterType: LitterType10
-  V22:
-    Name: Cm_S
-    Units: mass remaining
-    Description: "Calligonum mongolicum leaf litter was incubated on a decompositon bed under shade treatment"
-    FilterType: FilterType1
-    LitterType: LitterType11
-  V23:
-    Name: Cm_U
-    Units: mass remaining
-    Description: "Calligonum mongolicum leaf litter was incubated on a decompositon bed under full sun treatment"
-    FilterType: NA
-    LitterType: LitterType11
-  V24:
-    Name: Asp_S
-    Units: mass remaining
-    Description: "Alhagi sparsifolia leaf litter was incubated on a decompositon bed under shade treatment"
-    FilterType: FilterType1
-    LitterType: LitterType12
-  V25:
-    Name: Asp_U
-    Units: mass remaining
-    Description: "Alhagi sparsifolia leaf litter was incubated on a decompositon bed under full sun treatment"
-    FilterType: NA
-    LitterType: LitterType12
-  V26:
-    Name: Nt_S
-    Units: mass remaining
-    Description: "Nitraria tangutorum leaf litter was incubated on a decompositon bed under shade treatment"
-    FilterType: FilterType1
-    LitterType: LitterType13
-  V27:
-    Name: Nt_U
-    Units: mass remaining
-    Description: "Nitraria tangutorum leaf litter was incubated on a decompositon bed under full sun treatment"
-    FilterType: NA
-    LitterType: LitterType13
+variables: # These describe the columns of your timeSeries.csv file
+        V1: # column 1
+          name: Time
+          units: months
+        V2:
+          name: Hl_S
+          units: mass remaining
+          varDesc: H. laeve leaf litter was incubated on a decomposition bed under shade treatment
+          site: Mu Us
+          litter: Hedysarum laeve
+          position: under shadecloth
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: 700
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total: 5
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V3:
+          name: Hl_U
+          units: mass remaining
+          varDesc: H. laeve leaf litter was incubated on a decomposition bed under full sun treatment
+          site: Mu Us
+          litter: Hedysarum laeve
+          position: decomposition bed
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold:
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V4:
+          name: Ld_S
+          units: mass remaining
+          varDesc: L. davurica leaf litter was incubated on a decomposition bed under shade treatment
+          site: Mu Us
+          litter: Lespedeza davurica
+          position: under shadecloth
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: 700
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total: 5
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V5:
+          name: Ld_U
+          units: mass remaining
+          varDesc: L. davurica leaf litter was incubated on a decomposition bed under full sun treatment
+          site: Mu Us
+          litter: Lespedeza davurica
+          position: decomposition bed
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold:
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V6:
+          name: Ap_S
+          units: mass remaining
+          varDesc: A. pungens leaf litter was incubated on a decomposition bed under shade treatment
+          site: Mu Us
+          litter: Agriophyllum pungens
+          position: under shadecloth
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: 700
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total: 5
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V7:
+          name: Ap_U
+          units: mass remaining
+          varDesc: A. pungens leaf litter was incubated on a decomposition bed under full sun treatment
+          site: Mu Us
+          litter: Agriophyllum pungens
+          position: decomposition bed / under shadecloth
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold:
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V8:
+          name: Sc_S
+          units: mass remaining
+          varDesc: S. cheilophila leaf litter was incubated on a decomposition bed under shade treatment
+          site: Mu Us
+          litter: Salix cheilophila
+          position: under shadecloth
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: 700
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total: 5
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V9:
+          name: Sc_U
+          units: mass remaining
+          varDesc: S. cheilophila leaf litter was incubated on a decomposition bed under full sun treatment
+          site: Mu Us
+          litter: Salix cheilophila
+          position: decomposition bed
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold:
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V10:
+          name: Lc_S
+          units: mass remaining
+          varDesc: L. chinensis leaf litter was incubated on a decomposition bed under shade treatment
+          site: Mu Us
+          litter: Leymus chinensis
+          position: under shadecloth
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: 700
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total: 5
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V11:
+          name: Lc_U
+          units: mass remaining
+          varDesc: L. chinensis leaf litter was incubated on a decomposition bed under full sun treatment
+          site: Mu Us
+          litter: Leymus chinensis
+          position: decomposition bed
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold:
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V12:
+          name: Asi_S
+          units: mass remaining
+          varDesc: A. sibiricum leaf litter was incubated on a decomposition bed under shade treatment
+          site: Mu Us
+          litter: Achnatherum sibiricum
+          position: under shadecloth
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: 700
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total: 5
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V13:
+          name: Asi_U
+          units: mass remaining
+          varDesc: A. sibiricum leaf litter was incubated on a decomposition bed under full sun treatment
+          site: Mu Us
+          litter: Achnatherum sibiricum
+          position: decomposition bed
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold:
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V14:
+          name: Sk_S
+          units: mass remaining
+          varDesc: S. krylovii leaf litter was incubated on a decomposition bed under shade treatment
+          site: Mu Us
+          litter: Stipa krylovii
+          position: under shadecloth
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: 700
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total: 5
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V15:
+          name: Sk_U
+          units: mass remaining
+          varDesc: S. krylovii leaf litter was incubated on a decomposition bed under full sun treatment
+          site: Mu Us
+          litter: Stipa krylovii
+          position: decomposition bed
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold:
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V16:
+          name: Ac_S
+          units: mass remaining
+          varDesc: A. cristatum leaf litter was incubated on a decomposition bed under shade treatment
+          site: Mu Us
+          litter: Agropyron cristatum
+          position: under shadecloth
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: 700
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total: 5
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V17:
+          name: Ac_U
+          units: mass remaining
+          varDesc: A. cristatum leaf litter was incubated on a decomposition bed under full sun treatment
+          site: Mu Us
+          litter: Agropyron cristatum
+          position: decomposition bed
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold:
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V18:
+          name: Ck_S
+          units: mass remaining
+          varDesc: C. korshinskii leaf litter was incubated on a decomposition bed under shade treatment
+          site: Mu Us
+          litter: Caragana korshinskii
+          position: under shadecloth
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: 700
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total: 5
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V19:
+          name: Ck_U
+          units: mass remaining
+          varDesc: C. korshinskii leaf litter was incubated on a decomposition bed under full sun treatment
+          site: Mu Us
+          litter: Caragana korshinskii
+          position: decomposition bed
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold:
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V20:
+          name: Sg_S
+          units: mass remaining
+          varDesc: S. gordejevii leaf litter was incubated on a decomposition bed under shade treatment
+          site: Mu Us
+          litter: Salix gordejevii
+          position: under shadecloth
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: 700
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total: 5
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V21:
+          name: Sg_U
+          units: mass remaining
+          varDesc: S. gordejevii leaf litter was incubated on a decomposition bed under full sun treatment
+          site: Mu Us
+          litter: Salix gordejevii
+          position: decomposition bed
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold:
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V22:
+          name: Cm_S
+          units: mass remaining
+          varDesc: C. mongolicum leaf litter was incubated on a decomposition bed under shade treatment
+          site: Mu Us
+          litter: Calligonum mongolicum
+          position: under shadecloth
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: 700
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total: 5
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V23:
+          name: Cm_U
+          units: mass remaining
+          varDesc: C. mongolicum leaf litter was incubated on a decomposition bed under full sun treatment
+          site: Mu Us
+          litter: Calligonum mongolicum
+          position: decomposition bed
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold:
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V24:
+          name: Asp_S
+          units: mass remaining
+          varDesc: A. sparsifolia leaf litter was incubated on a decomposition bed under shade treatment
+          site: Mu Us
+          litter: Alhagi sparsifolia
+          position: under shadecloth
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: 700
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total: 5
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V25:
+          name: Asp_U
+          units: mass remaining
+          varDesc: A. sparsifolia leaf litter was incubated on a decomposition bed under full sun treatment
+          site: Mu Us
+          litter: Alhagi sparsifolia
+          position: decomposition bed
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold:
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V26:
+          name: Nt_S
+          units: mass remaining
+          varDesc: N. tangutorum leaf litter was incubated on a decomposition bed under shade treatment
+          site: Mu Us
+          litter: Nitraria tangutorum
+          position: under shadecloth
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: 700
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total: 5
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V27:
+          name: Nt_U
+          units: mass remaining
+          varDesc: N. tangutorum leaf litter was incubated on a decomposition bed under full sun treatment
+          site: Mu Us
+          litter: Nitraria tangutorum
+          position: decomposition bed
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold:
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
