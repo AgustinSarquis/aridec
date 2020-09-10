@@ -1,0 +1,150 @@
+citationKey: Leitner2018 # Unique identifier in the format: LastnameYear (lowercase letters must be added when there are two or more entries by the same author and year, i.e.: LastnameYearx)
+doi:  10.1111/gcb.14118 # DOI of the publication where data is published
+entryAuthor: Ignacio Siebenhart # First and last name of the person who entered the data in this file
+entryCreationDate: 2020-07-30 # Date when the data was entered in this file. Format: YYYY-MM-DD
+contactName:  Agustín Sarquis # First and last name of contact person (may be the principal investigator supervising the entryAuthor)
+contactEmail: agusarquis@agro.uba.ar # Email of the contact person
+entryNote: Rainy seasons are summer and spring. Elevation from Google Earth
+study:  "They compared grass litter decay rates of heavily encroached areas with adjacent non encroached open areas in a semi-arid South African savanna using litter bags that allowed or excluded invertebrates."
+
+siteInfo:
+        site: # Names of individual sites, if one site, keep on this line, if multiple, use array format
+             - open savanna
+             - woody encroached savanna
+              # These fields should be arrays of equal length to site array
+        coordinates:
+          latitude:  # Latitude in decimal units (check for negative that denotes southern hemisphere)
+                  - -24.78
+                  - -24.78
+          longitude:
+                  - 26.17 # Longitude in decimal units (check for negative that denotes western hemisphere)
+                  - 26.17
+        country:
+               - South Africa # Name of country where site was conducted
+               - South Africa
+        MAT:
+           - 15.05
+           - 15.05 # Mean annual temperature in degrees Celsius
+        MAP:
+           - 540 # Mean annual precipitation in mm
+           - 540
+        rainySeason: # Period of the year during which most precipitation occurs, i.e.: whole year, spring, summer, autumn, winter (if more than one use array format)
+        elevation:
+          - 1200
+          - 1200
+        landCover:
+                 - savanna
+                 - savanna # Land cover of the site. Valid fields are: greenbelt, (abbandoned) farmland, mangrove forest, subalpine, shrubland, urban, sandland, forest, steppe, desert, grassland, savanna
+        vegNote:
+          - semi-arid savanna dominated by grasses
+          - semi-arid savanna dominated by grasses but with a substantial encroachment by an indigenous woody plant, Dichrostachys cinerea.
+        cover:
+          plantCover:
+                    - 26.82
+                    - 29.93  # Total plant cover percentage (if they report cover by specific plant types, fill the fields below)
+          bunchgrassCover:
+                         - 17.59
+                         - 11.56
+          shrubCover:
+            - 5.61
+            - 14.76
+          treeCover:
+          forbCover:
+                   - 3.62
+                   - 3.61
+          bareSoil:
+                  - 65.69
+                  - 64.79
+        soilTaxonomy:
+          soilOrder: # Soil order according to the classification system described below
+          soilFamily: # Soil family description (ex. 'Eutric' for a Eutric Cambisol)
+          soilSeries: # Soil series according to the classification system described below
+          classificationSystem: # Name of classification system used. Valid fields are: USDA, FAO, and WRB.
+
+experimentInfo:
+        incDesc: 2 sites (open and encroached) x 2 leves of invertebrate (control and supression) x 20 replicates x 6 harvests # Short description of the incubation setup and main treatments
+        # These fields should all be one dimensional arrays. Values for experimental variables with multiple treatment levels should be entered in the variables section and left blank here
+        replicates: 20 # Number of replicates per treatment
+        duration: 365 # length of incubation in days
+        startingMonth: july # month during which the study started, all in lower case
+        litter: Themeda triandra # plant species used as litter material for the experiment. All details related to the species must be specified in the initConditions.csv file
+        litterbag:
+          material: aluminum # mesh type used to construct the litter bags, options are: wire, aluminum, window screening, net curtain, bolting cloth, plastic, fiberglass, nylon, polypropylene, polyester, polyethylene, polyamide
+          meshSize: 2 # mesh size in mm referring to one side of the net-square
+          dimentions: # size of the full litter bag in cm
+            width: 15
+            length: 15
+            radius: # for round or cilindrical structures
+            height: # for 3-dimensional designs such as litter boxes in Austin2006NATURE
+          transmitance: # when reported, light transmitance of the mesh material as a percentage of full sunlight for each wavelength
+            total:
+            PAR:
+            UV:
+            UVA:
+            UVB:
+          position: bare soil
+
+variables: # These describe the columns of your timeSeries.csv file
+        V1: # column 1
+          name: Time
+          units: months # Time units used in accompanying file. Possible options are: days, weeks, months, years
+        V2: # column 2
+          name: EC
+          units: mass remaining # units in which litter mass loss was reported. Valid options are: mass remaining, organic matter remaining, C remaining
+          varDesc:  "T. triandra located at encroached patch and without biocide" # Description of the variable
+          site: woody encroached savanna # Site where the experiment was conducted
+          experimentalTreatment: # 'experimentalTreatment' here is a place holder for treatments with multiple levels. Replace this word by any of the listed variables in incubationInfo above (startingMonth, duration, litter, litterbag, meshSize) and type treatment value (level) after colon. Note that units should be specified in the incubationInfo field above.
+          compTreat: no biocide # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V3: # column 3
+          name: EIS
+          units: mass remaining # units in which litter mass loss was reported. Valid options are: mass remaining, organic matter remaining, C remaining
+          varDesc: "T. triandra located at encroached patch and with biocide"
+          site: woody encroached savanna # Site where the experiment was conducted
+          experimentalTreatment: # 'experimentalTreatment' here is a place holder for treatments with multiple levels. Replace this word by any of the listed variables in incubationInfo above (startingMonth, duration, litter, litterbag, meshSize) and type treatment value (level) after colon. Note that units should be specified in the incubationInfo field above.
+          compTreat: biocide # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V4: # column 4
+          name: OSC # Name of second variable in accompanying file
+          units: mass remaining # units in which litter mass loss was reported. Valid options are: mass remaining, organic matter remaining, C remaining
+          varDesc:  "T. triandra located at open savanna patch and without biocide"
+          site: open savanna # Site where the experiment was conducted
+          experimentalTreatment: # 'experimentalTreatment' here is a place holder for treatments with multiple levels. Replace this word by any of the listed variables in incubationInfo above (startingMonth, duration, litter, litterbag, meshSize) and type treatment value (level) after colon. Note that units should be specified in the incubationInfo field above.
+          compTreat: no biocide # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V5: # column 5
+          name: OSIS
+          units: mass remaining # units in which litter mass loss was reported. Valid options are: mass remaining, organic matter remaining, C remaining
+          varDesc:  "T. triandra located at open savanna patch and with biocide"
+          site: open savanna
+          experimentalTreatment: # 'experimentalTreatment' here is a place holder for treatments with multiple levels. Replace this word by any of the listed variables in incubationInfo above (startingMonth, duration, litter, litterbag, meshSize) and type treatment value (level) after colon. Note that units should be specified in the incubationInfo field above.
+          compTreat: biocide # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
