@@ -1,0 +1,5 @@
+species, type, N-fixer, material, amount, carbon, nitrogen, C:N, phosphorus, potassium, sodium, magnesium, manganese, copper, zinc, lead, calcium, sulfur, iron, lignin, cellulose, hemicellulose, cell solubles, SLA
+mixture,,, leaves, 10,,, 51
+Brachiaria, graminoid, no, aboveground parts, 10,,, 142
+Glycine max, forb, yes, aboveground parts, 10,,, 57
+Zea mays, graminoid, no, leaves, 10,,, 72

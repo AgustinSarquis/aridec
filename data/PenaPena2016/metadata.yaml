@@ -1,289 +1,497 @@
-CitationKey: PenaPena2016
-doi: 10.1016/j.apsoil.2016.05.007
-EntryAuthor: Agustín Sarquis
+citationKey: PenaPena2016 # Unique identifier in the format: LastnameYear (lowercase letters must be added when there are two or more entries by the same author and year, i.e.: LastnameYearx)
+doi: 10.1016/j.apsoil.2016.05.007 # DOI of the publication where data is published
+entryAuthor: Agustín Sarquis # First and last name of the person who entered the data in this file
+entryCreationDate: 2019-11-12 # Date when the data was entered in this file. Format: YYYY-MM-DD
+contactName: Agustín Sarquis # First and last name of contact person (may be the principal investigator supervising the entryAuthor)
+contactEmail: agusarquis@agro.uba.ar # Email of the contact person
+entryNote: rainy seasons are spring and summer. Coarse mesh made of polyester (20x20cm) and fine mesh made of polyamide (20x15 cm).
+study: factorial experiment including season (dry/rainy), land use (cropland/grassland/Cerrado), litter type (original/standard) and litterbag mesh size (coarse/fine)
 
-SiteInfo:
-  Name: Mato Grosso, Brazil
-  EcosystemType:
-    - savanna
-    - grassland
-    - cropland
-  MAP:
-    Value: 1591
-    Units: mm
-  MAT:
-    Value: 24.60
-    Units: Celsius
-  RainySeason:
-    - autumn
-    - winter
-  Altitude:
-    Value: 670
-    Units: masl
-  SoilType: Oxisols
-  Coordinates:
-    Latitude: -15.700
-    Longitude: -55.357
+siteInfo:
+        site:
+          - Cerrado
+          - grassland
+          - cropland # Names of individual sites, if one site, keep on this line, if multiple, use array format
+              # These fields should be arrays of equal length to site array
+        coordinates:
+          latitude:
+            - -15.700
+            - -15.700
+            - -15.700 # Latitude in decimal units (check for negative that denotes southern hemisphere)
+          longitude:
+            - -55.357
+            - -55.357
+            - -55.357 # Longitude in decimal units (check for negative that denotes western hemisphere)
+        country:
+          - Brazil
+          - Brazil
+          - Brazil # Name of country where site was conducted
+        MAT:
+          - 24.6
+          - 24.6
+          - 24.6
+        MAP:
+          - 1591
+          - 1591
+          - 1591 # Mean annual precipitation in mm
+        rainySeason: # Period of the year during which most precipitation occurs, i.e.: whole year, spring, summer, autumn, winter (if more than one use array format)
+        elevation:
+          - 670
+          - 670
+          - 670 # Elevation of study site in meters above sea level
+        landCover:
+          - forest
+          - grassland
+          - farmland
+        vegNote: # Additional details about land cover such as species or functional type composition
+        cover:
+          plantCover: # Total plant cover percentage (if they report cover by specific plant types, fill the fields below)
+          bunchgrassCover:
+          shrubCover:
+          treeCover:
+          forbCover:
+          bareSoil:
+        soilTaxonomy:
+          soilOrder:
+            - Oxisols
+            -
+            - # Soil order according to the classification system described below
+          soilFamily: # Soil family description (ex. 'Eutric' for a Eutric Cambisol)
+          soilSeries: # Soil series according to the classification system described below
+          classificationSystem: USDA
 
-ExperimentInfo:
- LitterInfo:
-  LitterType1:
-   LifeForm:
-     - tree
-     - shrub
-   Material: recently senesced leaves
-   C:N:
-    Value: 51
-   Amount:
-    Value: 10
-    Units: g
-  LitterType2:
-   Species: Brachiaria
-   LifeForm: graminoid
-   Material:
-     - recently senesced leaves
-     - recently senesced stems
-   C:N:
-    Value: 142
-   Amount:
-    Value: 10
-    Units: g
-  LitterType3:
-   Species: Glycine max
-   LifeForm: crop
-   Material:
-    - stems
-    - pods
-   C:N:
-    Value: 57
-   Amount:
-    Value: 10
-    Units: g
-  LitterType4:
-   Species: Zea mays
-   LifeForm: crop
-   Material: recently senesced leaves
-   C:N:
-    Value: 72
-   Amount:
-    Value: 10
-    Units: g
- Experiment1:
-  Description: "The experiment consisted of a full factorial design including: season (dry/rainy), land use (cropland/grassland/Cerrado), litter type (original/standard) and litterbag mesh size (coarse/fine)"
-  LitterBagInfo:
-   LitterBag1:
-    Material: polyester
-    MeshSize:
-     Value: 5
-     Units: mm
-    Dimentions:
-     Width: 20
-     Lenght: 20
-     Units: cm
-    Position: covered in litter
-   LitterBag2:
-    Material: polyamide
-    MeshSize:
-     Value: 0.02
-     Units: mm
-    Dimentions:
-     Width: 20
-     Lenght: 15
-     Units: cm
-    Position: covered in litter
-  Treatment:
-    - litter type
-    - location
-    - soil fauna exclusion
-    - season
-  StartingDate:
-   StartingDate1:
-    Month: may
-    Season: autumn
-   StartingDate2:
-    Month: november
-    Season: spring
-  Duration:
-   Time: 5
-   Units: months
+experimentInfo:
+        incDesc: 2 seasons x 3 land use types x 2 litter types x 2 mesh sizes x 5 harvests x 3 replicates
+        # These fields should all be one dimensional arrays. Values for experimental variables with multiple treatment levels should be entered in the variables section and left blank here
+        replicates: 3 # Number of replicates per treatment
+        duration: 140 # length of incubation in days
+        startingMonth: # month during which the study started, all in lower case
+        litter: # plant species used as litter material for the experiment. All details related to the species must be specified in the initConditions.csv file
+        litterbag:
+          material:
+          meshSize: # mesh size in mm referring to one side of the net-square
+          dimentions: # size of the full litter bag in cm
+            width: 20
+            length: 17.5
+            radius: # for round or cilindrical structures
+            height: # for 3-dimensional designs such as litter boxes in Austin2006NATURE
+          transmitance: # when reported, light transmitance of the mesh material as a percentage of full sunlight for each wavelength
+            total:
+            PAR:
+            UV:
+            UVA:
+            UVB:
+          position: under litter
 
-Variables:
-  V1:
-    Name: Time
-    Units: weeks
-  V2:
-    Name: CDOC
-    Units: mass remaining
-    Description: "Tree and shrub mixture litter incubated in the dry season with a coarse mesh at Cerrado site."
-    LitterType: LitterType1
-    LitterBag: LitterBag1
-    Site: savanna
-    StartingDate: StartingDate1
-  V3:
-    Name: CDOF
-    Units: mass remaining
-    Description: "Tree and shrub mixture litter incubated in the dry season with a fine mesh at Cerrado site."
-    LitterType: LitterType1
-    LitterBag: LitterBag2
-    StartingDate: StartingDate1
-    Site: savanna
-  V4:
-    Name: CDSC
-    Units: mass remaining
-    Description: "Z. mays litter incubated in the dry season with a coarse mesh at Cerrado site."
-    LitterType: LitterType4
-    LitterBag: LitterBag1
-    StartingDate: StartingDate1
-    Site: savanna
-  V5:
-    Name: CDSF
-    Units: mass remaining
-    Description: "Z. mays litter incubated in the dry season with a fine mesh at Cerrado site."
-    LitterType: LitterType4
-    LitterBag: LitterBag2
-    StartingDate: StartingDate1
-    Site: savanna
-  V6:
-    Name: CROC
-    Units: mass remaining
-    Description: "Tree and shrub mixture litter incubated in the rainy season with a coarse mesh at Cerrado site."
-    LitterType: LitterType1
-    LitterBag: LitterBag1
-    StartingDate: StartingDate2
-    Site: savanna
-  V7:
-    Name: CROF
-    Units: mass remaining
-    Description: "Tree and shrub mixture litter incubated in the rainy season with a fine mesh at Cerrado site."
-    LitterType: LitterType1
-    LitterBag: LitterBag2
-    StartingDate: StartingDate2
-    Site: savanna
-  V8:
-    Name: CRSC
-    Units: mass remaining
-    Description: "Z. mays litter incubated in the rainy season with a coarse mesh at Cerrado site."
-    LitterType: LitterType4
-    LitterBag: LitterBag1
-    StartingDate: StartingDate2
-    Site: savanna
-  V9:
-    Name: CRSF
-    Units: mass remaining
-    Description: "Z. mays litter incubated in the rainy season with a fine mesh at Cerrado site."
-    LitterType: LitterType4
-    LitterBag: LitterBag2
-    StartingDate: StartingDate2
-    Site: savanna
-  V10:
-    Name: GDOC
-    Units: mass remaining
-    Description: "Brachiaria litter incubated in the dry season with a coarse mesh at grassland site."
-    LitterType: LitterType2
-    LitterBag: LitterBag1
-    Site: grassland
-  V11:
-    Name: GDOF
-    Units: mass remaining
-    Description: "Brachiaria litter incubated in the dry season with a fine mesh at grassland site."
-    LitterType: LitterType2
-    LitterBag: LitterBag2
-    Site: grassland
-  V12:
-    Name: GDSC
-    Units: mass remaining
-    Description: "Z. mays litter incubated in the dry season with a coarse mesh at grassland site."
-    LitterType: LitterType4
-    LitterBag: LitterBag1
-    Site: grassland
-  V13:
-    Name: GDSF
-    Units: mass remaining
-    Description: "Z. mays litter incubated in the dry season with a fine mesh at grassland site."
-    LitterType: LitterType4
-    LitterBag: LitterBag2
-    Site: grassland
-  V14:
-    Name: GROC
-    Units: mass remaining
-    Description: "Brachiaria litter incubated in the rainy season with a coarse mesh at grassland site."
-    LitterType: LitterType2
-    LitterBag: LitterBag1
-    Site: grassland
-  V15:
-    Name: GROF
-    Units: mass remaining
-    Description: "Brachiaria litter incubated in the rainy season with a fine mesh at grassland site."
-    LitterType: LitterType2
-    LitterBag: LitterBag2
-    Site: grassland
-  V16:
-    Name: GRSC
-    Units: mass remaining
-    Description: "Z. mays litter incubated in the rainy season with a coarse mesh at grassland site."
-    LitterType: LitterType4
-    LitterBag: LitterBag1
-    Site: grassland
-  V17:
-    Name: GRSF
-    Units: mass remaining
-    Description: "Z. mays litter incubated in the rainy season with a fine mesh at grassland site."
-    LitterType: LitterType4
-    LitterBag: LitterBag2
-    Site: grassland
-  V18:
-    Name: CrDOC
-    Units: mass remaining
-    Description: "G. max litter incubated in the dry season with a coarse mesh at cropland site."
-    LitterType: LitterType3
-    LitterBag: LitterBag1
-    Site: cropland
-  V19:
-    Name: CrDOF
-    Units: mass remaining
-    Description: "G. max litter incubated in the dry season with a fine mesh at cropland site."
-    LitterType: LitterType3
-    LitterBag: LitterBag2
-    Site: cropland
-  V20:
-    Name: CrDSC
-    Units: mass remaining
-    Description: "Z.mays litter incubated in the dry season with a coarse mesh at cropland site."
-    LitterType: LitterType4
-    LitterBag: LitterBag1
-    Site: cropland
-  V21:
-    Name: CrDSF
-    Units: mass remaining
-    Description: "Z. mays litter incubated in the dry season with a fine mesh at cropland site."
-    LitterType: LitterType4
-    LitterBag: LitterBag2
-    Site: cropland
-  V22:
-    Name: CrROC
-    Units: mass remaining
-    Description: "G. max litter incubated in the rainy season with a coarse mesh at cropland site."
-    LitterType: LitterType3
-    LitterBag: LitterBag1
-    Site: cropland
-  V23:
-    Name: CrROF
-    Units: mass remaining
-    Description: "G. max litter incubated in the rainy season with a fine mesh at cropland site."
-    LitterType: LitterType3
-    LitterBag: LitterBag2
-    Site: cropland
-  V24:
-    Name: CrRSC
-    Units: mass remaining
-    Description: "Z. mays litter incubated in the rainy season with a coarse mesh at cropland site."
-    LitterType: LitterType4
-    LitterBag: LitterBag1
-    Site: cropland
-  V25:
-    Name: CrRSF
-    Units: mass remaining
-    Description: "Z. mays litter incubated in the rainy season with a fine mesh at cropland site."
-    LitterType: LitterType4
-    LitterBag: LitterBag2
-    Site: cropland
+variables: # These describe the columns of your timeSeries.csv file
+        V1: # column 1
+          name: Time
+          units: weeks
+        V2:
+          name: CDOC
+          units: mass remaining
+          varDesc: Tree and shrub mixture litter incubated in the dry season with a coarse mesh at Cerrado site
+          site: Cerrado
+          startingMonth: may
+          litter: mixture
+          meshSize: 5
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V3:
+          name: CDOF
+          units: mass remaining
+          varDesc: Tree and shrub mixture litter incubated in the dry season with a fine mesh at Cerrado site
+          site: Cerrado
+          startingMonth: may
+          litter: mixture
+          meshSize: 0.02
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V4:
+          name: CDSC
+          units: mass remaining
+          varDesc: Z. mays litter incubated in the dry season with a coarse mesh at Cerrado site
+          site: Cerrado
+          startingMonth: may
+          litter: Zea mays
+          meshSize: 5
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V5:
+          name: CDSF
+          units: mass remaining
+          varDesc: Z. mays litter incubated in the dry season with a fine mesh at Cerrado site
+          site: Cerrado
+          startingMonth: may
+          litter: Zea mays
+          meshSize: 0.02
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V6:
+          name: CROC
+          units: mass remaining
+          varDesc: Tree and shrub mixture litter incubated in the rainy season with a coarse mesh at Cerrado site
+          site: Cerrado
+          startingMonth: november
+          litter: mixture
+          meshSize: 5
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V7:
+          name: CROF
+          units: mass remaining
+          varDesc: Tree and shrub mixture litter incubated in the rainy season with a fine mesh at Cerrado site
+          site: Cerrado
+          startingMonth: november
+          litter: mixture
+          meshSize: 0.02
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V8:
+          name: CRSC
+          units: mass remaining
+          varDesc: Z. mays litter incubated in the rainy season with a coarse mesh at Cerrado site
+          site: Cerrado
+          startingMonth: november
+          litter: Zea mays
+          meshSize: 5
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V9:
+          name: CRSF
+          units: mass remaining
+          varDesc: Z. mays litter incubated in the rainy season with a fine mesh at Cerrado site
+          site: Cerrado
+          startingMonth: november
+          litter: Zea mays
+          meshSize: 0.02
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V10:
+          name: GDOC
+          units: mass remaining
+          varDesc: Brachiaria litter incubated in the dry season with a coarse mesh at grassland site
+          site: grassland
+          startingMonth: may
+          litter: Brachiaria
+          meshSize: 5
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V11:
+          name: GDOF
+          units: mass remaining
+          varDesc: Brachiaria litter incubated in the dry season with a fine mesh at grassland site
+          site: grassland
+          startingMonth: may
+          litter: Brachiaria
+          meshSize: 0.02
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V12:
+          name: GDSC
+          units: mass remaining
+          varDesc: Z. mays litter incubated in the dry season with a coarse mesh at grassland site
+          site: grassland
+          startingMonth: may
+          litter: Zea mays
+          meshSize: 5
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V13:
+          name: GDSF
+          units: mass remaining
+          varDesc: Z. mays litter incubated in the dry season with a fine mesh at grassland site
+          site: grassland
+          startingMonth: may
+          litter: Zea mays
+          meshSize: 0.02
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V14:
+          name: GROC
+          units: mass remaining
+          varDesc: Brachiaria litter incubated in the rainy season with a coarse mesh at grassland site
+          site: grassland
+          startingMonth: november
+          litter: Brachiaria
+          meshSize: 5
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V15:
+          name: GROF
+          units: mass remaining
+          varDesc: Brachiaria litter incubated in the rainy season with a fine mesh at grassland site
+          site: grassland
+          startingMonth: november
+          litter: Brachiaria
+          meshSize: 0.02
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V16:
+          name: GRSC
+          units: mass remaining
+          varDesc: Z. mays litter incubated in the rainy season with a coarse mesh at grassland site
+          site: grassland
+          startingMonth: november
+          litter: Zea mays
+          meshSize: 5
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V17:
+          name: GRSF
+          units: mass remaining
+          varDesc: Z. mays litter incubated in the rainy season with a fine mesh at grassland site
+          site: grassland
+          startingMonth: november
+          litter: Zea mays
+          meshSize: 0.02
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V18:
+          name: CrDOC
+          units: mass remaining
+          varDesc: G. max litter incubated in the dry season with a coarse mesh at cropland site
+          site: cropland
+          startingMonth: may
+          litter: Glycine max
+          meshSize: 5
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V19:
+          name: CrDOF
+          units: mass remaining
+          varDesc: G. max litter incubated in the dry season with a fine mesh at cropland site
+          site: cropland
+          startingMonth: may
+          litter: Glycine max
+          meshSize: 0.02
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V20:
+          name: CrDSC
+          units: mass remaining
+          varDesc: Z. mays litter incubated in the dry season with a coarse mesh at cropland site
+          site: cropland
+          startingMonth: may
+          litter: Zea mays
+          meshSize: 5
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V21:
+          name: CrDSF
+          units: mass remaining
+          varDesc: Z. mays litter incubated in the dry season with a fine mesh at cropland site
+          site: cropland
+          startingMonth: may
+          litter: Zea mays
+          meshSize: 0.02
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V22:
+          name: CrROC
+          units: mass remaining
+          varDesc: G. max litter incubated in the rainy season with a coarse mesh at cropland site
+          site: cropland
+          startingMonth: november
+          litter:  Glycine max
+          meshSize: 5
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V23:
+          name: CrROF
+          units: mass remaining
+          varDesc: G. max litter incubated in the rainy season with a fine mesh at cropland site
+          site: cropland
+          startingMonth: november
+          litter: Glycine max
+          meshSize: 0.02
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V24:
+          name: CrRSC
+          units: mass remaining
+          varDesc: Z. mays litter incubated in the rainy season with a coarse mesh at cropland site
+          site: cropland
+          startingMonth: november
+          litter: Zea mays
+          meshSize: 5
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V25:
+          name: CrRSF
+          units: mass remaining
+          varDesc: Z. mays litter incubated in the rainy season with a fine mesh at cropland site
+          site: cropland
+          startingMonth: november
+          litter: Zea mays
+          meshSize: 0.02
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
