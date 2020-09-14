@@ -1,1218 +1,842 @@
-CitationKey: PerezHarguindeguy1997
-EntryAuthor: Agustín Sarquis
+citationKey: PerezHarguindeguy1997 # Unique identifier in the format: LastnameYear (lowercase letters must be added when there are two or more entries by the same author and year, i.e.: LastnameYearx)
+doi:  # DOI of the publication where data is published
+entryAuthor: Agustín Sarquis # First and last name of the person who entered the data in this file
+entryCreationDate: 2019-06-19 # Date when the data was entered in this file. Format: YYYY-MM-DD
+contactName: Agustín Sarquis # First and last name of contact person (may be the principal investigator supervising the entryAuthor)
+contactEmail: agusarquis@agro.uba.ar # Email of the contact person
+entryNote: # Any notes or comments related to this entry.
+study: Litter of 52 species were buried simultaneously in an experimental decomposition bed during 18 summer weeks
 
-SiteInfo:
-  Name: Córdoba, Córdoba, Argentina
-  EcosystemType: urban
-  MAP:
-    Value: 843
-    Units: mm
-  MAT:
-    Value: 16.32
-    Units: Celsius
-  RainySeason: summer
-  Altitude:
-    Value: 440
-    Units: masl
-  Coordinates:
-    Latitude: -31.441
-    Longitude: -64.185
+siteInfo:
+        site: Cordoba # Names of individual sites, if one site, keep on this line, if multiple, use array format
+              # These fields should be arrays of equal length to site array
+        coordinates:
+          latitude: -31.441 # Latitude in decimal units (check for negative that denotes southern hemisphere)
+          longitude: -64.185 # Longitude in decimal units (check for negative that denotes western hemisphere)
+        country: Argentina # Name of country where site was conducted
+        MAT: 16.32 # Mean annual temperature in degrees Celsius
+        MAP: 843 # Mean annual precipitation in mm
+        rainySeason: summer # Period of the year during which most precipitation occurs, i.e.: whole year, spring, summer, autumn, winter (if more than one use array format)
+        elevation: 440 # Elevation of study site in meters above sea level
+        landCover: urban
+        vegNote: # Additional details about land cover such as species or functional type composition
+        cover:
+          plantCover: # Total plant cover percentage (if they report cover by specific plant types, fill the fields below)
+          bunchgrassCover:
+          shrubCover:
+          treeCover:
+          forbCover:
+          bareSoil:
+        soilTaxonomy:
+          soilOrder: # Soil order according to the classification system described below
+          soilFamily: # Soil family description (ex. 'Eutric' for a Eutric Cambisol)
+          soilSeries: # Soil series according to the classification system described below
+          classificationSystem: # Name of classification system used. Valid fields are: USDA, FAO, and WRB.
 
-ExperimentInfo:
- LitterInfo:
-  LitterType1:
-   Species: Deinacanthon urbanianum
-   LifeForm: bromeliad
-   Material: recently senesced leaves
-   Amount:
-     Value: 1
-     Units: g
-  LitterType2:
-   Species: Tillandsia duratii
-   LifeForm: bromeliad
-   Material: recently senesced leaves
-   Carbon:
-     Value: 49.0
-     Units: percentage
-   Nitrogen:
-     Value: 0.52
-     Units: percentage
-   Phosphorus:
-     Value: 0.03
-     Units: percentage
-   C:N:
-     Value: 94.5
-   Amount:
-     Value: 1
-     Units: g
-  LitterType3:
-   Species: Tillandsia capillaris
-   LifeForm: bromeliad
-   Material: recently senesced leaves
-   Carbon:
-     Value: 44.1
-     Units: percentage
-   Nitrogen:
-     Value: 1.23
-     Units: percentage
-   Phosphorus:
-     Value: 0.05
-     Units: percentage
-   C:N:
-     Value: 35.8
-   Amount:
-     Value: 1
-     Units: g
-  LitterType4:
-   Species: Lachemilla pinnata
-   LifeForm: forb
-   Material: recently senesced leaves
-   Carbon:
-     Value: 44.4
-     Units: percentage
-   Nitrogen:
-     Value: 2.08
-     Units: percentage
-   Phosphorus:
-     Value: 0.27
-     Units: percentage
-   C:N:
-     Value: 21.3
-   Amount:
-     Value: 1
-     Units: g
-  LitterType5:
-   Species: Alternanthera pungens
-   LifeForm: forb
-   Material: recently senesced leaves
-   Carbon:
-     Value: 39.1
-     Units: percentage
-   Nitrogen:
-     Value: 3.90
-     Units: percentage
-   Phosphorus:
-     Value: 0.40
-     Units: percentage
-   C:N:
-     Value: 10.0
-   Amount:
-     Value: 1
-     Units: g
-  LitterType6:
-   Species: Carduus thoermeri
-   LifeForm: forb
-   Material: recently senesced leaves
-   Carbon:
-     Value: 41.6
-     Units: percentage
-   Nitrogen:
-     Value: 3.30
-     Units: percentage
-   Phosphorus:
-     Value: 0.17
-     Units: percentage
-   C:N:
-     Value: 12.6
-   Amount:
-     Value: 1
-     Units: g
-  LitterType7:
-   Species: Eryngium agavifolium
-   LifeForm: forb
-   Material: recently senesced leaves
-   Carbon:
-     Value: 43.7
-     Units: percentage
-   Nitrogen:
-     Value: 1.58
-     Units: percentage
-   Phosphorus:
-     Value: 0.13
-     Units: percentage
-   C:N:
-     Value: 27.6
-   Amount:
-     Value: 1
-     Units: g
-  LitterType8:
-   Species: Gentianella parviflora
-   LifeForm: forb
-   Material: recently senesced leaves
-   Nitrogen:
-     Value: 1.97
-     Units: percentage
-   Phosphorus:
-     Value: 0.18
-     Units: percentage
-   Amount:
-     Value: 1
-     Units: g
-  LitterType9:
-   Species: Gomphrena pulchella
-   LifeForm: forb
-   Material: recently senesced leaves
-   Carbon:
-     Value: 40.0
-     Units: percentage
-   Nitrogen:
-     Value: 2.65
-     Units: percentage
-   Phosphorus:
-     Value: 0.37
-     Units: percentage
-   C:N:
-     Value: 15.1
-   Amount:
-     Value: 1
-     Units: g
-  LitterType10:
-   Species: Pithecoctenium cynanchoides
-   LifeForm: forb
-   Material: recently senesced leaves
-   Carbon:
-     Value: 45.8
-     Units: percentage
-   Nitrogen:
-     Value: 3.46
-     Units: percentage
-   Phosphorus:
-     Value: 0.33
-     Units: percentage
-   C:N:
-     Value: 13.2
-   Amount:
-     Value: 1
-     Units: g
-  LitterType11:
-   Species: Aristida achalensis
-   LifeForm: graminoid
-   Material: recently senesced leaves
-   Carbon:
-     Value: 47.9
-     Units: percentage
-   Nitrogen:
-     Value: 1.01
-     Units: percentage
-   Phosphorus:
-     Value: 0.08
-     Units: percentage
-   C:N:
-     Value: 47.4
-   Amount:
-     Value: 1
-     Units: g
-  LitterType12:
-   Species: Bouteloua aristidoides
-   LifeForm: graminoid
-   Material: recently senesced leaves
-   Carbon:
-     Value: 46.8
-     Units: percentage
-   Nitrogen:
-     Value: 1.59
-     Units: percentage
-   Phosphorus:
-     Value: 0.16
-     Units: percentage
-   C:N:
-     Value: 29.4
-   Amount:
-     Value: 1
-     Units: g
-  LitterType13:
-   Species: Carex fuscula
-   LifeForm: graminoid
-   Material: recently senesced leaves
-   Carbon:
-     Value: 47.4
-     Units: percentage
-   Nitrogen:
-     Value: 2.11
-     Units: percentage
-   Phosphorus:
-     Value: 0.15
-     Units: percentage
-   C:N:
-     Value: 22.5
-   Amount:
-     Value: 1
-     Units: g
-  LitterType14:
-   Species: Cortaderia speciosa
-   LifeForm: graminoid
-   Material: recently senesced leaves
-   Carbon:
-     Value: 47.5
-     Units: percentage
-   Nitrogen:
-     Value: 1.12
-     Units: percentage
-   Phosphorus:
-     Value: 0.16
-     Units: percentage
-   C:N:
-     Value: 42.4
-   Amount:
-     Value: 1
-     Units: g
-  LitterType15:
-   Species: Festuca lilloi
-   LifeForm: graminoid
-   Material: recently senesced leaves
-   Carbon:
-     Value: 47.2
-     Units: percentage
-   Nitrogen:
-     Value: 1.44
-     Units: percentage
-   Phosphorus:
-     Value: 0.11
-     Units: percentage
-   C:N:
-     Value: 32.8
-   Amount:
-     Value: 1
-     Units: g
-  LitterType16:
-   Species: Juncus uruguensis
-   LifeForm: graminoid
-   Material: recently senesced leaves
-   Carbon:
-     Value: 47.6
-     Units: percentage
-   Nitrogen:
-     Value: 1.49
-     Units: percentage
-   Phosphorus:
-     Value: 0.13
-     Units: percentage
-   C:N:
-     Value: 31.9
-   Amount:
-     Value: 1
-     Units: g
-  LitterType17:
-   Species: Distichlis littoralis
-   LifeForm: graminoid
-   Material: recently senesced leaves
-   Carbon:
-     Value: 44.0
-     Units: percentage
-   Nitrogen:
-     Value: 1.19
-     Units: percentage
-   Phosphorus:
-     Value: 0.06
-     Units: percentage
-   C:N:
-     Value: 36.9
-   Amount:
-     Value: 1
-     Units: g
-  LitterType18:
-   Species: Muhlenbergia peruviana
-   LifeForm: graminoid
-   Material: recently senesced leaves
-   Carbon:
-     Value: 44.3
-     Units: percentage
-   Nitrogen:
-     Value: 1.76
-     Units: percentage
-   Phosphorus:
-     Value: 0.12
-     Units: percentage
-   C:N:
-     Value: 25.2
-   Amount:
-     Value: 1
-     Units: g
-  LitterType19:
-   Species: Neobouteloua lophostachya
-   LifeForm: graminoid
-   Material: recently senesced leaves
-   Carbon:
-     Value: 45.4
-     Units: percentage
-   Nitrogen:
-     Value: 1.37
-     Units: percentage
-   Phosphorus:
-     Value: 0.10
-     Units: percentage
-   C:N:
-     Value: 33.2
-   Amount:
-     Value: 1
-     Units: g
-  LitterType20:
-   Species: Nothoscordum gracile
-   LifeForm: graminoid
-   Material: recently senesced leaves
-   Carbon:
-     Value: 42.2
-     Units: percentage
-   Nitrogen:
-     Value: 4.10
-     Units: percentage
-   Phosphorus:
-     Value: 0.32
-     Units: percentage
-   C:N:
-     Value: 10.3
-   Amount:
-     Value: 1
-     Units: g
-  LitterType21:
-   Species: Pappophorum caespitosum
-   LifeForm: graminoid
-   Material: recently senesced leaves
-   Carbon:
-     Value: 46.3
-     Units: percentage
-   Nitrogen:
-     Value: 2.07
-     Units: percentage
-   Phosphorus:
-     Value: 0.19
-     Units: percentage
-   C:N:
-     Value: 22.4
-   Amount:
-     Value: 1
-     Units: g
-  LitterType22:
-   Species: Paspalum quadrifarium
-   LifeForm: graminoid
-   Material: recently senesced leaves
-   Carbon:
-     Value: 47.3
-     Units: percentage
-   Nitrogen:
-     Value: 1.00
-     Units: percentage
-   Phosphorus:
-     Value: 0.09
-     Units: percentage
-   C:N:
-     Value: 48.0
-   Amount:
-     Value: 1
-     Units: g
-  LitterType23:
-   Species: Poa stuckertii
-   LifeForm: graminoid
-   Material: recently senesced leaves
-   Carbon:
-     Value: 47.9
-     Units: percentage
-   Nitrogen:
-     Value: 1.14
-     Units: percentage
-   Phosphorus:
-     Value: 0.14
-     Units: percentage
-   C:N:
-     Value: 42.0
-   Amount:
-     Value: 1
-     Units: g
-  LitterType24:
-   Species: Schizachyrium microstachyum
-   LifeForm: graminoid
-   Material: recently senesced leaves
-   Carbon:
-     Value: 46.2
-     Units: percentage
-   Nitrogen:
-     Value: 1.22
-     Units: percentage
-   Phosphorus:
-     Value: 0.13
-     Units: percentage
-   C:N:
-     Value: 38.0
-   Amount:
-     Value: 1
-     Units: g
-  LitterType25:
-   Species: Setaria pampeana
-   LifeForm: graminoid
-   Material: recently senesced leaves
-   Nitrogen:
-     Value: 2.47
-     Units: percentage
-   Phosphorus:
-     Value: 0.28
-     Units: percentage
-   Amount:
-     Value: 1
-     Units: g
-  LitterType26:
-   Species: Sorghum halepense
-   LifeForm: graminoid
-   Material: recently senesced leaves
-   Carbon:
-     Value: 45.6
-     Units: percentage
-   Nitrogen:
-     Value: 2.22
-     Units: percentage
-   Phosphorus:
-     Value: 0.20
-     Units: percentage
-   C:N:
-     Value: 20.5
-   Amount:
-     Value: 1
-     Units: g
-  LitterType27:
-   Species: Leptochloa crinita
-   LifeForm: graminoid
-   Material: recently senesced leaves
-   Carbon:
-     Value: 44.1
-     Units: percentage
-   Nitrogen:
-     Value: 1.89
-     Units: percentage
-   Phosphorus:
-     Value: 0.15
-     Units: percentage
-   C:N:
-     Value: 23.3
-   Amount:
-     Value: 1
-     Units: g
-  LitterType28:
-   Species: Baccharis articulata
-   LifeForm: shrub
-   Material: senesced photosynthetic stems
-   Carbon:
-     Value: 46.3
-     Units: percentage
-   Nitrogen:
-     Value: 1.13
-     Units: percentage
-   Phosphorus:
-     Value: 0.10
-     Units: percentage
-   C:N:
-     Value: 41.1
-   Amount:
-     Value: 1
-     Units: g
-  LitterType29:
-   Species: Senna aphylla
-   LifeForm: shrub
-   Material: senesced photosynthetic stems
-   Carbon:
-     Value: 46.7
-     Units: percentage
-   Nitrogen:
-     Value: 2.06
-     Units: percentage
-   Phosphorus:
-     Value: 0.20
-     Units: percentage
-   C:N:
-     Value: 22.7
-   Amount:
-     Value: 1
-     Units: g
-  LitterType30:
-   Species: Vachellia aroma
-   LifeForm: tree
-   Material: recently senesced leaves
-   Carbon:
-     Value: 47.1
-     Units: percentage
-   Nitrogen:
-     Value: 3.46
-     Units: percentage
-   Phosphorus:
-     Value: 0.21
-     Units: percentage
-   C:N:
-     Value: 13.6
-   Amount:
-     Value: 1
-     Units: g
-  LitterType31:
-   Species: Vachellia caven
-   LifeForm: tree
-   Material: recently senesced leaves
-   Carbon:
-     Value: 45.3
-     Units: percentage
-   Nitrogen:
-     Value: 2.70
-     Units: percentage
-   Phosphorus:
-     Value: 0.16
-     Units: percentage
-   C:N:
-     Value: 16.8
-   Amount:
-     Value: 1
-     Units: g
-  LitterType32:
-   Species: Acalypha communis
-   LifeForm: shrub
-   Material: recently senesced leaves
-   Carbon:
-     Value: 44.1
-     Units: percentage
-   Nitrogen:
-     Value: 4.13
-     Units: percentage
-   Phosphorus:
-     Value: 0.21
-     Units: percentage
-   C:N:
-     Value: 10.7
-   Amount:
-     Value: 1
-     Units: g
-  LitterType33:
-   Species: Buddleja stachyoides
-   LifeForm: shrub
-   Material: recently senesced leaves
-   Carbon:
-     Value: 48.0
-     Units: percentage
-   Nitrogen:
-     Value: 1.52
-     Units: percentage
-   Phosphorus:
-     Value: 0.14
-     Units: percentage
-   C:N:
-     Value: 31.7
-   Amount:
-     Value: 1
-     Units: g
-  LitterType34:
-   Species: Celtis pallida
-   LifeForm: tree
-   Material: recently senesced leaves
-   Carbon:
-     Value: 39.5
-     Units: percentage
-   Nitrogen:
-     Value: 3.39
-     Units: percentage
-   Phosphorus:
-     Value: 0.17
-     Units: percentage
-   C:N:
-     Value: 11.7
-   Amount:
-     Value: 1
-     Units: g
-  LitterType35:
-   Species: Celtis tala
-   LifeForm: tree
-   Material: recently senesced leaves
-   Carbon:
-     Value: 38.6
-     Units: percentage
-   Nitrogen:
-     Value: 3.97
-     Units: percentage
-   Phosphorus:
-     Value: 0.13
-     Units: percentage
-   C:N:
-     Value: 9.7
-   Amount:
-     Value: 1
-     Units: g
-  LitterType36:
-   Species: Croton lachnostachyus
-   LifeForm: shrub
-   Material: recently senesced leaves
-   Carbon:
-     Value: 43.5
-     Units: percentage
-   Nitrogen:
-     Value: 3.27
-     Units: percentage
-   Phosphorus:
-     Value: 0.40
-     Units: percentage
-   C:N:
-     Value: 13.3
-   Amount:
-     Value: 1
-     Units: g
-  LitterType37:
-   Species: Lorentzianthus viscidus
-   LifeForm: shrub
-   Material: recently senesced leaves
-   Carbon:
-     Value: 43.6
-     Units: percentage
-   Nitrogen:
-     Value: 3.25
-     Units: percentage
-   Phosphorus:
-     Value: 0.18
-     Units: percentage
-   C:N:
-     Value: 13.4
-   Amount:
-     Value: 1
-     Units: g
-  LitterType38:
-   Species: Flourensia thurifera
-   LifeForm: shrub
-   Material: recently senesced leaves
-   Carbon:
-     Value: 45.7
-     Units: percentage
-   Nitrogen:
-     Value: 2.57
-     Units: percentage
-   Phosphorus:
-     Value: 0.30
-     Units: percentage
-   C:N:
-     Value: 17.8
-   Amount:
-     Value: 1
-     Units: g
-  LitterType39:
-   Species: Mimozyganthus carinatus
-   LifeForm: tree
-   Material: recently senesced leaves
-   Carbon:
-     Value: 44.4
-     Units: percentage
-   Nitrogen:
-     Value: 1.96
-     Units: percentage
-   Phosphorus:
-     Value: 0.13
-     Units: percentage
-   C:N:
-     Value: 22.6
-   Amount:
-     Value: 1
-     Units: g
-  LitterType40:
-   Species: Polylepis australis
-   LifeForm: tree
-   Material: recently senesced leaves
-   Carbon:
-     Value: 44.2
-     Units: percentage
-   Nitrogen:
-     Value: 1.89
-     Units: percentage
-   Phosphorus:
-     Value: 0.15
-     Units: percentage
-   C:N:
-     Value: 23.3
-   Amount:
-     Value: 1
-     Units: g
-  LitterType41:
-   Species: Prosopis flexuosa
-   LifeForm: tree
-   Material: recently senesced leaves
-   Carbon:
-     Value: 46.1
-     Units: percentage
-   Nitrogen:
-     Value: 3.28
-     Units: percentage
-   Phosphorus:
-     Value: 0.12
-     Units: percentage
-   C:N:
-     Value: 14.0
-   Amount:
-     Value: 1
-     Units: g
-  LitterType42:
-   Species: Schinopsis marginata
-   LifeForm: tree
-   Material: recently senesced leaves
-   Carbon:
-     Value: 45.4
-     Units: percentage
-   Nitrogen:
-     Value: 1.79
-     Units: percentage
-   Phosphorus:
-     Value: 0.16
-     Units: percentage
-   C:N:
-     Value: 25.3
-   Amount:
-     Value: 1
-     Units: g
-  LitterType43:
-   Species: Ziziphus mistol
-   LifeForm: tree
-   Material: recently senesced leaves
-   Carbon:
-     Value: 45.5
-     Units: percentage
-   Nitrogen:
-     Value: 3.06
-     Units: percentage
-   Phosphorus:
-     Value: 0.16
-     Units: percentage
-   C:N:
-     Value: 14.8
-   Amount:
-     Value: 1
-     Units: g
-  LitterType44:
-   Species: Aspidosperma quebracho-blanco
-   LifeForm: tree
-   Material: recently senesced leaves
-   Carbon:
-     Value: 47.0
-     Units: percentage
-   Nitrogen:
-     Value: 1.67
-     Units: percentage
-   Phosphorus:
-     Value: 0.12
-     Units: percentage
-   C:N:
-     Value: 28.2
-   Amount:
-     Value: 1
-     Units: g
-  LitterType45:
-   Species: Atamisquea emarginata
-   LifeForm: shrub
-   Material: recently senesced leaves
-   Carbon:
-     Value: 43.8
-     Units: percentage
-   Nitrogen:
-     Value: 2.58
-     Units: percentage
-   Phosphorus:
-     Value: 0.12
-     Units: percentage
-   C:N:
-     Value: 17.0
-   Amount:
-     Value: 1
-     Units: g
-  LitterType46:
-   Species: Baccharis aliena
-   LifeForm: shrub
-   Material: recently senesced leaves
-   Carbon:
-     Value: 45.2
-     Units: percentage
-   Nitrogen:
-     Value: 1.49
-     Units: percentage
-   Phosphorus:
-     Value: 0.14
-     Units: percentage
-   C:N:
-     Value: 30.4
-   Amount:
-     Value: 1
-     Units: g
-  LitterType47:
-   Species: Larrea divaricata
-   LifeForm: shrub
-   Material: recently senesced leaves
-   Carbon:
-     Value: 44.3
-     Units: percentage
-   Nitrogen:
-     Value: 2.29
-     Units: percentage
-   Phosphorus:
-     Value: 0.14
-     Units: percentage
-   C:N:
-     Value: 19.3
-   Amount:
-     Value: 1
-     Units: g
-  LitterType48:
-   Species: Lithraea molleoides
-   LifeForm: tree
-   Material: recently senesced leaves
-   Carbon:
-     Value: 45.5
-     Units: percentage
-   Nitrogen:
-     Value: 1.67
-     Units: percentage
-   Phosphorus:
-     Value: 0.20
-     Units: percentage
-   C:N:
-     Value: 27.2
-   Amount:
-     Value: 1
-     Units: g
-  LitterType49:
-   Species: Allenrolfea patagonica
-   LifeForm: succulent
-   Material: recently senesced leaves
-   Carbon:
-     Value: 31.2
-     Units: percentage
-   Nitrogen:
-     Value: 1.15
-     Units: percentage
-   Phosphorus:
-     Value: 0.08
-     Units: percentage
-   C:N:
-     Value: 27.1
-   Amount:
-     Value: 1
-     Units: g
-  LitterType50:
-   Species: Maytenus vitis-idaea
-   LifeForm: succulent
-   Material: recently senesced leaves
-   Carbon:
-     Value: 39.3
-     Units: percentage
-   Nitrogen:
-     Value: 1.52
-     Units: percentage
-   Phosphorus:
-     Value: 0.12
-     Units: percentage
-   C:N:
-     Value: 25.9
-   Amount:
-     Value: 1
-     Units: g
-  LitterType51:
-   Species: Opuntia sulphurea
-   LifeForm: succulent
-   Material: senesced photosynthetic stems
-   Carbon:
-     Value: 39.2
-     Units: percentage
-   Nitrogen:
-     Value: 1.51
-     Units: percentage
-   Phosphorus:
-     Value: 0.12
-     Units: percentage
-   C:N:
-     Value: 25.9
-   Amount:
-     Value: 1
-     Units: g
-  LitterType52:
-   Species: Tephrocactus articulatus
-   LifeForm: succulent
-   Material: senesced photosynthetic stems
-   Carbon:
-     Value: 41.0
-     Units: percentage
-   Nitrogen:
-     Value: 1.40
-     Units: percentage
-   Phosphorus:
-     Value: 0.12
-     Units: percentage
-   C:N:
-     Value: 29.3
-   Amount:
-     Value: 1
-     Units: g
- Experiment1:
-    Description: "Litter of 52 species were buried simultaneously in an experimental decomposition bed during 9 and 18 summer weeks"
-    LitterBagInfo:
-      Material: nylon
-      MeshSize:
-       Value: 0.3
-       Units: mm
-      Position:
-        - decomposition bed
-        - buried
-    StartingDate:
-      Month: november
-      Season: spring
-    Duration:
-      Time: 4.5
-      Units: months
+experimentInfo:
+        incDesc: 52 species x 2 harvests x 10 replicates
+        # These fields should all be one dimensional arrays. Values for experimental variables with multiple treatment levels should be entered in the variables section and left blank here
+        replicates: 10 # Number of replicates per treatment
+        duration: 126 # length of incubation in days
+        startingMonth: november # month during which the study started, all in lower case
+        litter: # plant species used as litter material for the experiment. All details related to the species must be specified in the initConditions.csv file
+        litterbag:
+          material: nylon
+          meshSize: 0.3 # mesh size in mm referring to one side of the net-square
+          dimentions: # size of the full litter bag in cm
+            width:
+            length:
+            radius: # for round or cilindrical structures
+            height: # for 3-dimensional designs such as litter boxes in Austin2006NATURE
+          transmitance: # when reported, light transmitance of the mesh material as a percentage of full sunlight for each wavelength
+            total:
+            PAR:
+            UV:
+            UVA:
+            UVB:
+          position: decomposition bed
 
-Variables:
-  V1:
-    Name: Time
-    Units: weeks
-  V2:
-    Name: Du
-    Units: mass remaining
-    Description: "Deinacanthon urbanianum litter incubated for 18 weeks in a decomposition bed"
-    LitterType: LitterType1
-  V3:
-    Name: Td
-    Units: mass remaining
-    Description: "Tillandsia duratii litter incubated for 18 weeks in a decomposition bed"
-    LitterType: LitterType2
-  V4:
-    Name: Tc
-    Units: mass remaining
-    Description: "Tillandsia capillaris litter incubated for 18 weeks in a decomposition bed"
-    LitterType: LitterType3
-  V5:
-    Name: Lp
-    Units: mass remaining
-    Description: "Lachemilla pinnata litter incubated for 18 weeks in a decomposition bed"
-    LitterType: LitterType4
-  V6:
-    Name: Ap
-    Units: mass remaining
-    Description: "Alternanthera pungens litter incubated for 18 weeks in a decomposition bed"
-    LitterType: LitterType5
-  V7:
-    Name: Ct
-    Units: mass remaining
-    Description: "Carduus thoermeri litter incubated for 18 weeks in a decomposition bed"
-    LitterType: LitterType6
-  V8:
-    Name: Ea
-    Units: mass remaining
-    Description: "Eryngium agavifolium litter incubated for 18 weeks in a decomposition bed"
-    LitterType: LitterType7
-  V9:
-    Name: Gpa
-    Units: mass remaining
-    Description: "Gentianella parviflora litter incubated for 18 weeks in a decomposition bed"
-    LitterType: LitterType8
-  V10:
-    Name: Gpu
-    Units: mass remaining
-    Description: "Gomphrena pulchella litter incubated for 18 weeks in a decomposition bed"
-    LitterType: LitterType9
-  V11:
-    Name: Pcy
-    Units: mass remaining
-    Description: "Pithecoctenium cynanchoides litter incubated for 18 weeks in a decomposition bed"
-    LitterType: LitterType10
-  V12:
-    Name: Aa
-    Units: mass remaining
-    Description: "Aristida achalensis litter incubated for 18 weeks in a decomposition bed"
-    LitterType: LitterType11
-  V13:
-    Name: Bari
-    Units: mass remaining
-    Description: "Bouteloua aristidoides litter incubated for 18 weeks in a decomposition bed"
-    LitterType: LitterType12
-  V14:
-    Name: Cf
-    Units: mass remaining
-    Description: "Carex fuscula litter incubated for 18 weeks in a decomposition bed"
-    LitterType: LitterType13
-  V15:
-    Name: Cs
-    Units: mass remaining
-    Description: "Cortaderia speciosa litter incubated for 18 weeks in a decomposition bed"
-    LitterType: LitterType14
-  V16:
-    Name: Fl
-    Units: mass remaining
-    Description: "Festuca lilloi litter incubated for 18 weeks in a decomposition bed"
-    LitterType: LitterType15
-  V17:
-    Name: Ju
-    Units: mass remaining
-    Description: "Juncus uruguensis litter incubated for 18 weeks in a decomposition bed"
-    LitterType: LitterType16
-  V18:
-    Name: Dl
-    Units: mass remaining
-    Description: "Distichlis littoralis litter incubated for 18 weeks in a decomposition bed"
-    LitterType: LitterType17
-  V19:
-    Name: Mp
-    Units: mass remaining
-    Description: "Muhlenbergia peruviana litter incubated for 18 weeks in a decomposition bed"
-    LitterType: LitterType18
-  V20:
-    Name: Nl
-    Units: mass remaining
-    Description: "Neobouteloua lophostachya litter incubated for 18 weeks in a decomposition bed"
-    LitterType: LitterType19
-  V21:
-    Name: Ng
-    Units: mass remaining
-    Description: "Nothoscordum gracile litter incubated for 18 weeks in a decomposition bed"
-    LitterType: LitterType20
-  V22:
-    Name: Pca
-    Units: mass remaining
-    Description: "Pappophorum caespitosum litter incubated for 18 weeks in a decomposition bed"
-    LitterType: LitterType21
-  V23:
-    Name: Pq
-    Units: mass remaining
-    Description: "Paspalum quadrifarium litter incubated for 18 weeks in a decomposition bed"
-    LitterType: LitterType22
-  V24:
-    Name: Ps
-    Units: mass remaining
-    Description: "Poa stuckertii litter incubated for 18 weeks in a decomposition bed"
-    LitterType: LitterType23
-  V25:
-    Name: Smi
-    Units: mass remaining
-    Description: "Schizachyrium microstachyum litter incubated for 18 weeks in a decomposition bed"
-    LitterType: LitterType24
-  V26:
-    Name: Sp
-    Units: mass remaining
-    Description: "Setaria pampeana litter incubated for 18 weeks in a decomposition bed"
-    LitterType: LitterType25
-  V27:
-    Name: Sh
-    Units: mass remaining
-    Description: "Sorghum halepense litter incubated for 18 weeks in a decomposition bed"
-    LitterType: LitterType26
-  V28:
-    Name: Lc
-    Units: mass remaining
-    Description: "Leptochloa crinita litter incubated for 18 weeks in a decomposition bed"
-    LitterType: LitterType27
-  V29:
-    Name: Bart
-    Units: mass remaining
-    Description: "Baccharis articulata litter incubated for 18 weeks in a decomposition bed"
-    LitterType: LitterType28
-  V30:
-    Name: Sa
-    Units: mass remaining
-    Description: "Senna aphylla litter incubated for 18 weeks in a decomposition bed"
-    LitterType: LitterType29
-  V31:
-    Name: Va
-    Units: mass remaining
-    Description: "Vachellia aroma litter incubated for 18 weeks in a decomposition bed"
-    LitterType: LitterType30
-  V32:
-    Name: Vc
-    Units: mass remaining
-    Description: "Vachellia caven litter incubated for 18 weeks in a decomposition bed"
-    LitterType: LitterType31
-  V33:
-    Name: Ac
-    Units: mass remaining
-    Description: "Acalypha communis litter incubated for 18 weeks in a decomposition bed"
-    LitterType: LitterType32
-  V34:
-    Name: Bs
-    Units: mass remaining
-    Description: "Buddleja stachyoides litter incubated for 18 weeks in a decomposition bed"
-    LitterType: LitterType33
-  V35:
-    Name: Cp
-    Units: mass remaining
-    Description: "Celtis pallida litter incubated for 18 weeks in a decomposition bed"
-    LitterType: LitterType34
-  V36:
-    Name: Ct
-    Units: mass remaining
-    Description: "Celtis tala litter incubated for 18 weeks in a decomposition bed"
-    LitterType: LitterType35
-  V37:
-    Name: Cl
-    Units: mass remaining
-    Description: "Croton lachnostachyus litter incubated for 18 weeks in a decomposition bed"
-    LitterType: LitterType36
-  V38:
-    Name: Lv
-    Units: mass remaining
-    Description: "Lorentzianthus viscidus litter incubated for 18 weeks in a decomposition bed"
-    LitterType: LitterType37
-  V39:
-    Name: Ft
-    Units: mass remaining
-    Description: "Flourensia thurifera litter incubated for 18 weeks in a decomposition bed"
-    LitterType: LitterType38
-  V40:
-    Name: Mc
-    Units: mass remaining
-    Description: "Mimozyganthus carinatus litter incubated for 18 weeks in a decomposition bed"
-    LitterType: LitterType39
-  V41:
-    Name: Pa
-    Units: mass remaining
-    Description: "Polylepis australis litter incubated for 18 weeks in a decomposition bed"
-    LitterType: LitterType40
-  V42:
-    Name: Pf
-    Units: mass remaining
-    Description: "Prosopis flexuosa litter incubated for 18 weeks in a decomposition bed"
-    LitterType: LitterType41
-  V43:
-    Name: Sma
-    Units: mass remaining
-    Description: "Schinopsis marginata litter incubated for 18 weeks in a decomposition bed"
-    LitterType: LitterType42
-  V44:
-    Name: Zm
-    Units: mass remaining
-    Description: "Ziziphus mistol litter incubated for 18 weeks in a decomposition bed"
-    LitterType: LitterType43
-  V45:
-    Name: Aqb
-    Units: mass remaining
-    Description: "Aspidosperma quebracho-blanco litter incubated for 18 weeks in a decomposition bed"
-    LitterType: LitterType44
-  V46:
-    Name: Ae
-    Units: mass remaining
-    Description: "Atamisquea emarginata litter incubated for 18 weeks in a decomposition bed"
-    LitterType: LitterType45
-  V47:
-    Name: Bal
-    Units: mass remaining
-    Description: "Baccharis aliena litter incubated for 18 weeks in a decomposition bed"
-    LitterType: LitterType46
-  V48:
-    Name: Ld
-    Units: mass remaining
-    Description: "Larrea divaricata litter incubated for 18 weeks in a decomposition bed"
-    LitterType: LitterType47
-  V49:
-    Name: Lm
-    Units: mass remaining
-    Description: "Lithraea molleoides litter incubated for 18 weeks in a decomposition bed"
-    LitterType: LitterType48
-  V50:
-    Name: Ap
-    Units: mass remaining
-    Description: "Allenrolfea patagonica litter incubated for 18 weeks in a decomposition bed"
-    LitterType: LitterType49
-  V51:
-    Name: Mvi
-    Units: mass remaining
-    Description: "Maytenus vitis-idaea litter incubated for 18 weeks in a decomposition bed"
-    LitterType: LitterType50
-  V52:
-    Name: Os
-    Units: mass remaining
-    Description: "Opuntia sulphurea litter incubated for 18 weeks in a decomposition bed"
-    LitterType: LitterType51
-  V53:
-    Name: Ta
-    Units: mass remaining
-    Description: "Tephrocactus articulatus litter incubated for 18 weeks in a decomposition bed"
-    LitterType: LitterType52
+variables: # These describe the columns of your timeSeries.csv file
+        V1: # column 1
+          name: Time
+          units: weeks
+        V2:
+          name: Du
+          units: mass remaining
+          varDesc: Deinacanthon urbanianum litter incubated for 18 weeks in a decomposition bed
+          site: Cordoba
+          litter: Deinacanthon urbanianum
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V3:
+          name: Td
+          units: mass remaining
+          varDesc: Tillandsia duratii litter incubated for 18 weeks in a decomposition bed
+          site: Cordoba
+          litter: Tillandsia duratii
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V4:
+          name: Tc
+          units: mass remaining
+          varDesc: Tillandsia capillaris litter incubated for 18 weeks in a decomposition bed
+          site: Cordoba
+          litter: Tillandsia capillaris
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V5:
+          name: Lp
+          units: mass remaining
+          varDesc: Lachemilla pinnata litter incubated for 18 weeks in a decomposition bed
+          site: Cordoba
+          litter: Lachemilla pinnata
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V6:
+          name: Ap
+          units: mass remaining
+          varDesc: Alternanthera pungens litter incubated for 18 weeks in a decomposition bed
+          site: Cordoba
+          litter: Alternanthera pungens
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V7:
+          name: Ct
+          units: mass remaining
+          varDesc: Carduus thoermeri litter incubated for 18 weeks in a decomposition bed
+          site: Cordoba
+          litter: Carduus thoermeri
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V8:
+          name: Ea
+          units: mass remaining
+          varDesc: Eryngium agavifolium litter incubated for 18 weeks in a decomposition bed
+          site: Cordoba
+          litter: Eryngium agavifolium
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V9:
+          name: Gpa
+          units: mass remaining
+          varDesc: Gentianella parviflora litter incubated for 18 weeks in a decomposition bed
+          site: Cordoba
+          litter: Gentianella parviflora
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V10:
+          name: Gpu
+          units: mass remaining
+          varDesc: Gomphrena pulchella litter incubated for 18 weeks in a decomposition bed
+          site: Cordoba
+          litter: Gomphrena pulchella
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V11:
+          name: Pcy
+          units: mass remaining
+          varDesc: Pithecoctenium cynanchoides litter incubated for 18 weeks in a decomposition bed
+          site: Cordoba
+          litter: Pithecoctenium cynanchoides
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V12:
+          name: Aa
+          units: mass remaining
+          varDesc: Aristida achalensis litter incubated for 18 weeks in a decomposition bed
+          site: Cordoba
+          litter: Aristida achalensis
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V13:
+          name: Bari
+          units: mass remaining
+          varDesc: Bouteloua aristidoides litter incubated for 18 weeks in a decomposition bed
+          site: Cordoba
+          litter: Bouteloua aristidoides
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V14:
+          name: Cf
+          units: mass remaining
+          varDesc: Carex fuscula litter incubated for 18 weeks in a decomposition bed
+          site: Cordoba
+          litter: Carex fuscula
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V15:
+          name: Cs
+          units: mass remaining
+          varDesc: Cortaderia speciosa litter incubated for 18 weeks in a decomposition bed
+          site: Cordoba
+          litter: Cortaderia speciosa
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V16:
+          name: Ft
+          units: mass remaining
+          varDesc: Festuca tucumanica litter incubated for 18 weeks in a decomposition bed
+          site: Cordoba
+          litter: Festuca tucumanica
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V17:
+          name: Ju
+          units: mass remaining
+          varDesc: Juncus uruguensis litter incubated for 18 weeks in a decomposition bed
+          site: Cordoba
+          litter: Juncus uruguensis
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V18:
+          name: Ml
+          units: mass remaining
+          varDesc: Monanthochloe littoralis litter incubated for 18 weeks in a decomposition bed
+          site: Cordoba
+          litter: Monanthochloe littoralis
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V19:
+          name: Mp
+          units: mass remaining
+          varDesc: Muhlenbergia peruviana litter incubated for 18 weeks in a decomposition bed
+          site: Cordoba
+          litter: Muhlenbergia peruviana
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V20:
+          name: Nl
+          units: mass remaining
+          varDesc: Neobouteloua lophostachya litter incubated for 18 weeks in a decomposition bed
+          site: Cordoba
+          litter: Neobouteloua lophostachya
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V21:
+          name: Ni
+          units: mass remaining
+          varDesc: Nothoscordum inodorum litter incubated for 18 weeks in a decomposition bed
+          site: Cordoba
+          litter: Nothoscordum inodorum
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V22:
+          name: Pca
+          units: mass remaining
+          varDesc: Pappophorum caespitosum litter incubated for 18 weeks in a decomposition bed
+          site: Cordoba
+          litter: Pappophorum caespitosum
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V23:
+          name: Pq
+          units: mass remaining
+          varDesc: Paspalum quadrifarium litter incubated for 18 weeks in a decomposition bed
+          site: Cordoba
+          litter: Paspalum quadrifarium
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V24:
+          name: Ps
+          units: mass remaining
+          varDesc: Poa stuckertii litter incubated for 18 weeks in a decomposition bed
+          site: Cordoba
+          litter: Poa stuckertii
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V25:
+          name: Smi
+          units: mass remaining
+          varDesc: Schizachyrium microstachyum litter incubated for 18 weeks in a decomposition bed
+          site: Cordoba
+          litter: Schizachyrium microstachyum
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V26:
+          name: Sp
+          units: mass remaining
+          varDesc: Setaria pampeana litter incubated for 18 weeks in a decomposition bed
+          site: Cordoba
+          litter: Setaria pampeana
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V27:
+          name: Sh
+          units: mass remaining
+          varDesc: Sorghum halepense litter incubated for 18 weeks in a decomposition bed
+          site: Cordoba
+          litter: Sorghum halepense
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V28:
+          name: Tcr
+          units: mass remaining
+          varDesc: Trichloris crinita litter incubated for 18 weeks in a decomposition bed
+          site: Cordoba
+          litter: Trichloris crinita
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V29:
+          name: Bart
+          units: mass remaining
+          varDesc: Baccharis articulata litter incubated for 18 weeks in a decomposition bed
+          site: Cordoba
+          litter: Baccharis articulata
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V30:
+          name: Sa
+          units: mass remaining
+          varDesc: Senna aphylla litter incubated for 18 weeks in a decomposition be
+          site: Cordoba
+          litter: Senna aphylla
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V31:
+          name: Aar
+          units: mass remaining
+          varDesc: Acacia aroma litter incubated for 18 weeks in a decomposition bed
+          site: Cordoba
+          litter: Acacia aroma
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V32:
+          name: Aca
+          units: mass remaining
+          varDesc: Acacia caven litter incubated for 18 weeks in a decomposition bed
+          site: Cordoba
+          litter: Acacia caven
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V33:
+          name: Ac
+          units: mass remaining
+          varDesc: Acalypha communis litter incubated for 18 weeks in a decomposition bed
+          site: Cordoba
+          litter: Acalypha communis
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V34:
+          name: Bs
+          units: mass remaining
+          varDesc: Buddleja stachyoides litter incubated for 18 weeks in a decomposition bed
+          site: Cordoba
+          litter: Buddleja stachyoides
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V35:
+          name: Cp
+          units: mass remaining
+          varDesc: Celtis pallida litter incubated for 18 weeks in a decomposition bed
+          site: Cordoba
+          litter: Celtis pallida
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V36:
+          name: Cta
+          units: mass remaining
+          varDesc: Celtis tala litter incubated for 18 weeks in a decomposition bed
+          site: Cordoba
+          litter: Celtis tala
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V37:
+          name: Csa
+          units: mass remaining
+          varDesc: Croton sarcopetalus litter incubated for 18 weeks in a decomposition bed
+          site: Cordoba
+          litter: Croton sarcopetalus
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V38:
+          name: Ev
+          units: mass remaining
+          varDesc: Eupatorium viscidum litter incubated for 18 weeks in a decomposition bed
+          site: Cordoba
+          litter: Eupatorium viscidum
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V39:
+          name: Fc
+          units: mass remaining
+          varDesc: Flourensia campestris litter incubated for 18 weeks in a decomposition bed
+          site: Cordoba
+          litter: Flourensia campestris
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V40:
+          name: Mc
+          units: mass remaining
+          varDesc: Mimozyganthus carinatus litter incubated for 18 weeks in a decomposition bed
+          site: Cordoba
+          litter: Mimozyganthus carinatus
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V41:
+          name: Pa
+          units: mass remaining
+          varDesc: Polylepis australis litter incubated for 18 weeks in a decomposition bed
+          site: Cordoba
+          litter: Polylepis australis
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V42:
+          name: Pf
+          units: mass remaining
+          varDesc: Prosopis flexuosa litter incubated for 18 weeks in a decomposition bed
+          site: Cordoba
+          litter: Prosopis flexuosa
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V43:
+          name: Sha
+          units: mass remaining
+          varDesc: Schinopsis haenkeana litter incubated for 18 weeks in a decomposition bed
+          site: Cordoba
+          litter: Schinopsis haenkeana
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V44:
+          name: Zm
+          units: mass remaining
+          varDesc: Ziziphus mistol litter incubated for 18 weeks in a decomposition bed
+          site: Cordoba
+          litter: Ziziphus mistol
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V45:
+          name: Aqb
+          units: mass remaining
+          varDesc: Aspidosperma quebracho-blanco litter incubated for 18 weeks in a decomposition bed
+          site: Cordoba
+          litter: Aspidosperma quebracho-blanco
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V46:
+          name: Cat
+          units: mass remaining
+          varDesc: Capparis atamisquea litter incubated for 18 weeks in a decomposition bed
+          site: Cordoba
+          litter: Capparis atamisquea
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V47:
+          name: Hal
+          units: mass remaining
+          varDesc: Heterothalamus alienus litter incubated for 18 weeks in a decomposition bed
+          site: Cordoba
+          litter: Heterothalamus alienus
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V48:
+          name: Ld
+          units: mass remaining
+          varDesc: Larrea divaricata litter incubated for 18 weeks in a decomposition bed
+          site: Cordoba
+          litter: Larrea divaricata
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V49:
+          name: Lte
+          units: mass remaining
+          varDesc: Lithraea ternifolia litter incubated for 18 weeks in a decomposition bed
+          site: Cordoba
+          litter: Lithraea ternifolia
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V50:
+          name: Apat
+          units: mass remaining
+          varDesc: Allenrolfea patagonica litter incubated for 18 weeks in a decomposition bed
+          site: Cordoba
+          litter: Allenrolfea patagonica
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V51:
+          name: Mvi
+          units: mass remaining
+          varDesc: Maytenus vitis-idaea litter incubated for 18 weeks in a decomposition bed
+          site: Cordoba
+          litter: Maytenus vitis-idaea
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V52:
+          name: Os
+          units: mass remaining
+          varDesc: Opuntia sulphurea litter incubated for 18 weeks in a decomposition bed
+          site: Cordoba
+          litter: Opuntia sulphurea
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V53:
+          name: Ta
+          units: mass remaining
+          varDesc: Tephrocactus articulatus litter incubated for 18 weeks in a decomposition bed
+          site: Cordoba
+          litter: Tephrocactus articulatus
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:

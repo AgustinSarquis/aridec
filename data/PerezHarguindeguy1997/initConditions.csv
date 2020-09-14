@@ -1,0 +1,53 @@
+species, type, N-fixer, material, amount, carbon, nitrogen, C:N, phosphorus, potassium, sodium, magnesium, manganese, copper, zinc, lead, calcium, sulfur, iron, lignin, cellulose, hemicellulose, cell solubles, SLA
+Deinacanthon urbanianum, forb, no, leaves, 1
+Tillandsia duratii, forb, no, leaves, 1, 49, 0.52, 94.5, 0.03
+Tillandsia capillaris, forb, no, leaves, 1, 44.1, 1.23, 35.8, 0.05
+Lachemilla pinnata, forb, no, leaves, 1, 44.4, 2.08, 21.3, 0.27
+Alternanthera pungens, forb, no, leaves, 1, 39.1, 3.9, 10, 0.4
+Carduus thoermeri, forb, no, leaves, 1, 41.6, 3.3, 12.6, 0.17
+Eryngium agavifolium, forb, no, leaves, 1, 43.7, 1.58, 27.6, 0.13
+Gentianella parviflora, forb, no, leaves, 1,, 1.97,, 0.18
+Gomphrena pulchella, forb, no, leaves, 1, 40, 2.65, 15.1, 0.37
+Pithecoctenium cynanchoides, forb, no, leaves, 1, 45.8, 3.46, 13.2, 0.33
+Aristida achalensis, graminoid, no, leaves, 1, 47.9, 1.01, 47.4, 0.08
+Bouteloua aristidoides, graminoid, no, leaves, 1, 46.8, 1.59, 29.4, 0.16
+Carex fuscula, graminoid, no, leaves, 1, 47.4, 2.11, 22.5, 0.15
+Cortaderia speciosa, graminoid, no, leaves, 1, 47.5, 1.12, 42.4, 0.16
+Festuca tucumanica, graminoid, no, leaves, 1, 47.2, 1.44, 32.8, 0.11
+Juncus uruguensis, graminoid, no, leaves, 1, 47.6, 1.49, 31.9, 0.13
+Monanthochloe littoralis, graminoid, no, leaves, 1, 44, 1.19, 36.9, 0.06
+Muhlenbergia peruviana, graminoid, no, leaves, 1, 44.3, 1.76, 25.2, 0.12
+Neobouteloua lophostachya, graminoid, no, leaves, 1, 45.4, 1.37, 33.2, 0.1
+Nothoscordum inodorum, graminoid, no, leaves, 1, 42.2, 4.1, 10.3, 0.32
+Pappophorum caespitosum, graminoid, no, leaves, 1, 46.3, 2.07, 22.4, 0.19
+Paspalum quadrifarium, graminoid, no, leaves, 1, 47.3, 1, 48, 0.09
+Poa stuckertii, graminoid, no, leaves, 1, 47.9, 1.14, 42, 0.14
+Schizachyrium microstachyum, graminoid, no, leaves, 1, 46.2, 1.22, 38, 0.13
+Setaria pampeana, graminoid, no, leaves, 1, , 2.47, , 0.28
+Sorghum halepense, graminoid, no, leaves, 1, 45.6, 2.22, 20.5, 0.2
+Trichloris crinita, graminoid, no, leaves, 1, 44.1, 1.89, 23.3, 0.15
+Baccharis articulata, , no, photosynthetic stems, 1, 46.3, 1.13, 41.1, 0.1
+Senna aphylla, , no, photosynthetic stems, 1, 46.7, 2.06, 22.7, 0.2
+Acacia aroma, deciduous, yes, leaves, 1, 47.1, 3.46, 13.6, 0.21
+Acacia caven, deciduous, yes, leaves, 1, 45.3, 2.7, 16.8, 0.16
+Acalypha communis, deciduous, no, leaves, 1, 44.1, 4.13, 10.7, 0.21
+Buddleja stachyoides, deciduous, no, leaves, 1, 48, 1.52, 31.7, 0.14
+Celtis pallida, deciduous, no, leaves, 1, 39.5, 3.39, 11.7, 0.17
+Celtis tala, deciduous, no, leaves, 1, 38.6, 3.97, 9.7, 0.13
+Croton sarcopetalus, deciduous, no, leaves, 1, 43.5, 3.27, 13.3, 0.4
+Eupatorium viscidum, deciduous, no, leaves, 1, 43.6, 3.25, 13.4, 0.18
+Flourensia campestris, deciduous, no, leaves, 1, 45.7, 2.57, 17.8, 0.3
+Mimozyganthus carinatus, deciduous, yes, leaves, 1, 44.4, 1.96, 22.6, 0.13
+Polylepis australis, deciduous, no, leaves, 1, 44.2, 1.89, 23.3, 0.15
+Prosopis flexuosa, deciduous, yes, leaves, 1, 46.1, 3.28, 14, 0.12
+Schinopsis haenkeana, deciduous, no, leaves, 1, 45.4, 1.79, 25.3, 0.16
+Ziziphus mistol, deciduous, no, leaves, 1, 45.5, 3.06, 14.8, 0.16
+Aspidosperma quebracho-blanco, evergreen, no, leaves, 1, 47, 1.67, 28.2, 0.12
+Capparis atamisquea, evergreen, no, leaves, 1, 43.8, 2.58, 17, 0.12
+Heterothalamus alienus , evergreen, no, leaves, 1, 45.2, 1.49, 30.4, 0.14
+Larrea divaricata, evergreen, yes, leaves, 1, 44.3, 2.29, 19.3, 0.14
+Lithraea ternifolia, evergreen, no, leaves, 1, 45.5, 1.67, 27.2, 0.2
+Allenrolfea patagonica, forb, no, leaves, 1, 31.2, 1.15, 27.1, 0.08
+Maytenus vitis-idaea, forb, no, leaves, 1, 39.3, 1.52, 25.9, 0.12
+Opuntia sulphurea, , no, photosynthetic stems, 1, 39.2, 1.51, 25.9, 0.12
+Tephrocactus glomeratus, ,no, photosynthetic stems, 1, 41 ,1.4, 29.3, 0.12
