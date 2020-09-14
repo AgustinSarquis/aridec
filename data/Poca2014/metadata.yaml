@@ -1,695 +1,422 @@
-CitationKey: Poca2014
-EntryAuthor: Agustín Sarquis
+citationKey: Poca2014 # Unique identifier in the format: LastnameYear (lowercase letters must be added when there are two or more entries by the same author and year, i.e.: LastnameYearx)
+doi:  # DOI of the publication where data is published
+entryAuthor: Agustín Sarquis # First and last name of the person who entered the data in this file
+entryCreationDate: 2019-01-09 # Date when the data was entered in this file. Format: YYYY-MM-DD
+contactName: Agustín Sarquis # First and last name of contact person (may be the principal investigator supervising the entryAuthor)
+contactEmail: agusarquis@agro.uba.ar # Email of the contact person
+entryNote: rainy seasons are spring and summer. Soils are molisols
+study: Leaf litter from 24 herbaceous species from a highland grassland were used in a common garden decomposition experiment
 
-SiteInfo:
-  Name: Pampa de Achala, Córdoba, Argentina
-  EcosystemType: mountain grassland
-  MAP:
-    Value: 900
-    Units: mm
-  MAT:
-    Value: 8
-    Units: Celsius
-  RainySeason:
-   - spring
-   - summer
-  Altitude:
-    Value: 2200
-    Units: masl
-  SoilType: molisol
-  SoilTexture: fine
-  Coordinates:
-    Latitude: -31.57
-    Longitude: -64.83
+siteInfo:
+        site: Achala # Names of individual sites, if one site, keep on this line, if multiple, use array format
+              # These fields should be arrays of equal length to site array
+        coordinates:
+          latitude: -31.57 # Latitude in decimal units (check for negative that denotes southern hemisphere)
+          longitude: -64.83 # Longitude in decimal units (check for negative that denotes western hemisphere)
+        country: Argentina # Name of country where site was conducted
+        MAT: 8 # Mean annual temperature in degrees Celsius
+        MAP: 900 # Mean annual precipitation in mm
+        rainySeason: # Period of the year during which most precipitation occurs, i.e.: whole year, spring, summer, autumn, winter (if more than one use array format)
+        elevation: 2200 # Elevation of study site in meters above sea level
+        landCover: grassland # Land cover of the site. Valid fields are: greenbelt, (abbandoned) farmland, mangrove forest, subalpine, shrubland, urban, sandland, forest, steppe, desert, grassland, savanna
+        vegNote: lawns dominated by forbs and graminoids like L. pinnata, C. fuscula and E. pseudoalbibracteata, and tusscok grasslands doinated by P. stuckertii and D. hieronymi
+        cover:
+          plantCover: # Total plant cover percentage (if they report cover by specific plant types, fill the fields below)
+          bunchgrassCover:
+          shrubCover:
+          treeCover:
+          forbCover:
+          bareSoil:
+        soilTaxonomy:
+          soilOrder: # Soil order according to the classification system described below
+          soilFamily: # Soil family description (ex. 'Eutric' for a Eutric Cambisol)
+          soilSeries: # Soil series according to the classification system described below
+          classificationSystem: # Name of classification system used. Valid fields are: USDA, FAO, and WRB.
 
-ExperimentInfo:
- LitterInfo:
-  LitterType1:
-   Species: Bidens triplinervia
-   LifeForm: forb
-   Material: recently senesced leaves
-   cellulose:
-     Value: 20.7
-     Units: percentage
-   Hemicellulose:
-     Value: 0.0
-     Units: percentage
-   Lignin:
-     Value: 18.6
-     Units: percentage
-   Nitrogen:
-     Value: 2.1
-     Units: percentage
-   SLA:
-     Value: 20
-     Units: mm2.mg-1
-   Amount:
-     Value: 1
-     Units: g
- LitterType2:
-  Species: Eryngium agavifolium
-  LifeForm: forb
-  Material: recently senesced leaves
-  cellulose:
-    Value: 37.5
-    Units: percentage
-  Hemicellulose:
-    Value: 2.7
-    Units: percentage
-  Lignin:
-    Value: 9.2
-    Units: percentage
-  Nitrogen:
-    Value: 0.8
-    Units: percentage
-  SLA:
-    Value: 6
-    Units: mm2.mg-1
-  Amount:
-     Value: 1
-     Units: g
- LitterType3:
-  Species: Eryngium nudicaule
-  LifeForm: forb
-  Material: recently senesced leaves
-  cellulose:
-    Value: 28.5
-    Units: percentage
-  Hemicellulose:
-    Value: 0.0
-    Units: percentage
-  Lignin:
-    Value: 8.9
-    Units: percentage
-  Nitrogen:
-    Value: 1.2
-    Units: percentage
-  SLA:
-   Value: 7
-   Units: mm2.mg-1
-  Amount:
-   Value: 1
-   Units: g
- LitterType4:
-  Species: Verbena dissecta
-  LifeForm: forb
-  Material: recently senesced leaves
-  cellulose:
-    Value: 21.6
-    Units: percentage
-  Hemicellulose:
-    Value: 0.0
-    Units: percentage
-  Lignin:
-    Value: 18.8
-    Units: percentage
-  Nitrogen:
-    Value: 1.6
-    Units: percentage
-  SLA:
-    Value: 20
-    Units: mm2.mg-1
-  Amount:
-   Value: 1
-   Units: g
- LitterType5:
-  Species: Grindelia globularifolia
-  LifeForm: forb
-  Material: recently senesced leaves
-  cellulose:
-    Value: 20.9
-    Units: percentage
-  Hemicellulose:
-    Value: 0.0
-    Units: percentage
-  Lignin:
-    Value: 10.7
-    Units: percentage
-  Nitrogen:
-    Value: 1.2
-    Units: percentage
-  SLA:
-    Value: 9
-    Units: mm2.mg-1
-  Amount:
-   Value: 1
-   Units: g
- LitterType6:
-  Species: Lachemilla pinnata
-  LifeForm: forb
-  Material: recently senesced leaves
-  cellulose:
-    Value: 28.4
-    Units: percentage
-  Hemicellulose:
-    Value: 3.8
-    Units: percentage
-  Lignin:
-    Value: 9.9
-    Units: percentage
-  Nitrogen:
-    Value: 1.1
-    Units: percentage
-  SLA:
-    Value: 14
-    Units: mm2.mg-1
-  Amount:
-   Value: 1
-   Units: g
- LitterType7:
-  Species: Plantago argentina
-  LifeForm: forb
-  Material: recently senesced leaves
-  cellulose:
-    Value: 28.9
-    Units: percentage
-  Hemicellulose:
-    Value: 0.0
-    Units: percentage
-  Lignin:
-    Value: 19.2
-    Units: percentage
-  Nitrogen:
-    Value: 1.0
-    Units: percentage
-  SLA:
-    Value: 7
-    Units: mm2.mg-1
-  Amount:
-   Value: 1
-   Units: g
- LitterType8:
-  Species: Bromus catharticus
-  LifeForm: graminoid
-  Material: recently senesced leaves
-  cellulose:
-    Value: 44.9
-    Units: percentage
-  Hemicellulose:
-    Value: 20.9
-    Units: percentage
-  Lignin:
-    Value: 5.3
-    Units: percentage
-  Nitrogen:
-    Value: 0.7
-    Units: percentage
-  SLA:
-    Value: 18
-    Units: mm2.mg-1
-  Amount:
-   Value: 1
-   Units: g
- LitterType9:
-  Species: Carex fuscula
-  LifeForm: graminoid
-  Material: recently senesced leaves
-  cellulose:
-    Value: 31.3
-    Units: percentage
-  Hemicellulose:
-    Value: 25.1
-    Units: percentage
-  Lignin:
-    Value: 9.8
-    Units: percentage
-  Nitrogen:
-    Value: 0.8
-    Units: percentage
-  SLA:
-    Value: 18
-    Units: mm2.mg-1
-  Amount:
-   Value: 1
-   Units: g
- LitterType10:
-  Species: Briza subaristatum
-  LifeForm: graminoid
-  Material: recently senesced leaves
-  cellulose:
-    Value: 42.3
-    Units: percentage
-  Hemicellulose:
-    Value: 22.3
-    Units: percentage
-  Lignin:
-    Value: 6.1
-    Units: percentage
-  Nitrogen:
-    Value: 0.8
-    Units: percentage
-  SLA:
-    Value: 12
-    Units: mm2.mg-1
-  Amount:
-   Value: 1
-   Units: g
- LitterType11:
-  Species: Eleocharis pseudoalbibracteata
-  LifeForm: graminoid
-  Material: recently senesced leaves
-  cellulose:
-    Value: 38.5
-    Units: percentage
-  Hemicellulose:
-    Value: 18.1
-    Units: percentage
-  Lignin:
-    Value: 8.4
-    Units: percentage
-  Nitrogen:
-    Value: 1.4
-    Units: percentage
-  SLA:
-    Value: 27
-    Units: mm2.mg-1
-  Amount:
-   Value: 1
-   Units: g
- LitterType12:
-  Species: Eragrostis polytrichia
-  LifeForm: graminoid
-  Material: recently senesced leaves
-  cellulose:
-    Value: 34.7
-    Units: percentage
-  Hemicellulose:
-    Value: 25.0
-    Units: percentage
-  Lignin:
-    Value: 5.3
-    Units: percentage
-  Nitrogen:
-    Value: 1.0
-    Units: percentage
-  SLA:
-    Value: 8
-    Units: mm2.mg-1
-  Amount:
-   Value: 1
-   Units: g
- LitterType13:
-  Species: Festuca rigescens
-  LifeForm: graminoid
-  Material: recently senesced leaves
-  cellulose:
-    Value: 38.4
-    Units: percentage
-  Hemicellulose:
-    Value: 24.4
-    Units: percentage
-  Lignin:
-    Value: 4.4
-    Units: percentage
-  Nitrogen:
-    Value: 0.7
-    Units: percentage
-  SLA:
-    Value: 12
-    Units: mm2.mg-1
-  Amount:
-   Value: 1
-   Units: g
- LitterType14:
-  Species: Luzula pallescens
-  LifeForm: graminoid
-  Material: recently senesced leaves
-  cellulose:
-    Value: 37.1
-    Units: percentage
-  Hemicellulose:
-    Value: 19.6
-    Units: percentage
-  Lignin:
-    Value: 10.2
-    Units: percentage
-  Nitrogen:
-    Value: 1.6
-    Units: percentage
-  SLA:
-    Value: 7
-    Units: mm2.mg-1
-  Amount:
-   Value: 1
-   Units: g
- LitterType15:
-  Species: Juncus uruguensis
-  LifeForm: graminoid
-  Material: recently senesced leaves
-  cellulose:
-    Value: 35.4
-    Units: percentage
-  Hemicellulose:
-    Value: 29.5
-    Units: percentage
-  Lignin:
-    Value: 6.7
-    Units: percentage
-  Nitrogen:
-    Value: 1.4
-    Units: percentage
-  SLA:
-    Value: 8
-    Units: mm2.mg-1
-  Amount:
-   Value: 1
-   Units: g
- LitterType16:
-  Species: Muhlenbergia peruviana
-  LifeForm: graminoid
-  Material: recently senesced leaves
-  cellulose:
-    Value: 33.5
-    Units: percentage
-  Hemicellulose:
-    Value: 34.4
-    Units: percentage
-  Lignin:
-    Value: 4.7
-    Units: percentage
-  Nitrogen:
-    Value: 0.9
-    Units: percentage
-  SLA:
-    Value: 14
-    Units: mm2.mg-1
-  Amount:
-   Value: 1
-   Units: g
- LitterType17:
-  Species: Poa hubbardiana
-  LifeForm: graminoid
-  Material: recently senesced leaves
-  cellulose:
-    Value: 42.5
-    Units: percentage
-  Hemicellulose:
-    Value: 23.5
-    Units: percentage
-  Lignin:
-    Value: 5.2
-    Units: percentage
-  Nitrogen:
-    Value: 0.6
-    Units: percentage
-  SLA:
-    Value: 21
-    Units: mm2.mg-1
-  Amount:
-   Value: 1
-   Units: g
- LitterType18:
-  Species: Sisyrinchium unguiculatum
-  LifeForm: graminoid
-  Material: recently senesced leaves
-  cellulose:
-    Value: 35.4
-    Units: percentage
-  Hemicellulose:
-    Value: 5.6
-    Units: percentage
-  Lignin:
-    Value: 11.8
-    Units: percentage
-  Nitrogen:
-    Value: 1.2
-    Units: percentage
-  SLA:
-    Value: 9
-    Units: mm2.mg-1
-  Amount:
-   Value: 1
-   Units: g
- LitterType19:
-  Species: Sorghastrum nutans
-  LifeForm: graminoid
-  Material: recently senesced leaves
-  cellulose:
-    Value: 37.9
-    Units: percentage
-  Hemicellulose:
-    Value: 19.8
-    Units: percentage
-  Lignin:
-    Value: 7.6
-    Units: percentage
-  Nitrogen:
-    Value: 0.8
-    Units: percentage
-  SLA:
-    Value: 7
-    Units: mm2.mg-1
-  Amount:
-   Value: 1
-   Units: g
- LitterType20:
-  Species: Sporobolus jacquemontii
-  LifeForm: graminoid
-  Material: recently senesced leaves
-  cellulose:
-    Value: 34.7
-    Units: percentage
-  Hemicellulose:
-    Value: 31.8
-    Units: percentage
-  Lignin:
-    Value: 3.8
-    Units: percentage
-  Nitrogen:
-    Value: 1.2
-    Units: percentage
-  SLA:
-    Value: 10
-    Units: mm2.mg-1
-  Amount:
-   Value: 1
-   Units: g
- LitterType21:
-  Species: Deyeuxia hieronymi
-  LifeForm: graminoid
-  Material: recently senesced leaves
-  cellulose:
-    Value: 39.7
-    Units: percentage
-  Hemicellulose:
-    Value: 26.9
-    Units: percentage
-  Lignin:
-    Value: 7.2
-    Units: percentage
-  Nitrogen:
-    Value: 0.5
-    Units: percentage
-  SLA:
-    Value: 10
-    Units: mm2.mg-1
-  Amount:
-   Value: 1
-   Units: g
- LitterType22:
-  Species: Festuca lilloi
-  LifeForm: graminoid
-  Material: recently senesced leaves
-  cellulose:
-    Value: 47.9
-    Units: percentage
-  Hemicellulose:
-    Value: 18.8
-    Units: percentage
-  Lignin:
-    Value: 7.7
-    Units: percentage
-  Nitrogen:
-    Value: 0.5
-    Units: percentage
-  SLA:
-    Value: 6
-    Units: mm2.mg-1
-  Amount:
-   Value: 1
-   Units: g
- LitterType23:
-  Species: Nassella nidulans
-  LifeForm: graminoid
-  Material: recently senesced leaves
-  cellulose:
-    Value: 41.0
-    Units: percentage
-  Hemicellulose:
-    Value: 20.5
-    Units: percentage
-  Lignin:
-    Value: 6.5
-    Units: percentage
-  Nitrogen:
-    Value: 0.7
-    Units: percentage
-  SLA:
-    Value: 12
-    Units: mm2.mg-1
-  Amount:
-   Value: 1
-   Units: g
- LitterType24:
-  Species: Poa stuckertii
-  LifeForm: graminoid
-  Material: recently senesced leaves
-  cellulose:
-    Value: 44.4
-    Units: percentage
-  Hemicellulose:
-    Value: 23.8
-    Units: percentage
-  Lignin:
-    Value: 7.7
-    Units: percentage
-  Nitrogen:
-    Value: 0.4
-    Units: percentage
-  SLA:
-    Value: 6
-    Units: mm2.mg-1
-  Amount:
-   Value: 1
-   Units: g
- Experiment1:
-  Description: "Leaf litter from 24 herbaceous species from a highland grassland were used in a common garden decomposition experiment with two retrieval dates"
-  LitterBagInfo:
-    Material: nylon
-    MeshSize:
-      Value: 0.3
-      Units: mm
-    Position:
-      - decomposition bed
-      - covered in litter
-  StartingDate:
-    Month: december
-    Season: summer
-  Duration:
-    Time: 6.5
-    Units: months
+experimentInfo:
+        incDesc: 24 species x 2 harvests x 10 replicates
+        # These fields should all be one dimensional arrays. Values for experimental variables with multiple treatment levels should be entered in the variables section and left blank here
+        replicates: 10 # Number of replicates per treatment
+        duration: 196 # length of incubation in days
+        startingMonth: december # month during which the study started, all in lower case
+        litter: # plant species used as litter material for the experiment. All details related to the species must be specified in the initConditions.csv file
+        litterbag:
+          material: nylon
+          meshSize: 0.3
+          dimentions: # size of the full litter bag in cm
+            width:
+            length:
+            radius: # for round or cilindrical structures
+            height: # for 3-dimensional designs such as litter boxes in Austin2006NATURE
+          transmitance: # when reported, light transmitance of the mesh material as a percentage of full sunlight for each wavelength
+            total:
+            PAR:
+            UV:
+            UVA:
+            UVB:
+          position: decomposition bed
 
-Variables:
-  V1:
-    Name: Time
-    Units: days
-  V2:
-    Name: Ban
-    Units: "Mass remaining"
-    Description: "B. triplinervia leaf litter mass percentage remaining at harvest time"
-    LitterType: LitterType1
-  V3:
-    Name: Eag
-    Units: "Mass remaining"
-    Description: "E. agavifolium leaf litter mass percentage remaining at harvest time"
-    LitterType: LitterType2
-  V4:
-    Name: Enu
-    Units: "Mass remaining"
-    Description: "E. nudicaule leaf litter mass percentage remaining at harvest time"
-    LitterType: LitterType3
-  V5:
-    Name: Gdi
-    Units: "Mass remaining"
-    Description: "V. dissecta leaf litter mass percentage remaining at harvest time"
-    LitterType: LitterType4
-  V6:
-    Name: Ggl
-    Units: "Mass remaining"
-    Description: "G. globularifolia leaf litter mass percentage remaining at harvest time"
-    LitterType: LitterType5
-  V7:
-    Name: Lpi
-    Units: "Mass remaining"
-    Description: "L. pinnata leaf litter mass percentage remaining at harvest time"
-    LitterType: LitterType6
-  V8:
-    Name: Par
-    Units: "Mass remaining"
-    Description: "P. argentina leaf litter mass percentage remaining at harvest time"
-    LitterType: LitterType7
-  V9:
-    Name: Bca
-    Units: "Mass remaining"
-    Description: "B. catharticus leaf litter mass percentage remaining at harvest time"
-    LitterType: LitterType8
-  V10:
-    Name: Cfu
-    Units: "Mass remaining"
-    Description: "C. fuscula leaf litter mass percentage remaining at harvest time"
-    LitterType: LitterType9
-  V11:
-    Name: Csu
-    Units: "Mass remaining"
-    Description: "B. subaristatum leaf litter mass percentage remaining at harvest time"
-    LitterType: LitterType10
-  V12:
-    Name: Eps
-    Units: "Mass remaining"
-    Description: "E. pseudoalbibracteata leaf litter mass percentage remaining at harvest time"
-    LitterType: LitterType11
-  V13:
-    Name: Elu
-    Units: "Mass remaining"
-    Description: "E. polytrichia leaf litter mass percentage remaining at harvest time"
-    LitterType: LitterType12
-  V14:
-    Name: Fdi
-    Units: "Mass remaining"
-    Description: "F. rigescens leaf litter mass percentage remaining at harvest time"
-    LitterType: LitterType13
-  V15:
-    Name: Jpa
-    Units: "Mass remaining"
-    Description: "L. pallescens leaf litter mass percentage remaining at harvest time"
-    LitterType: LitterType14
-  V16:
-    Name: Jur
-    Units: "Mass remaining"
-    Description: "J. uruguensis leaf litter mass percentage remaining at harvest time"
-    LitterType: LitterType15
-  V17:
-    Name: Mpe
-    Units: "Mass remaining"
-    Description: "M. peruviana leaf litter mass percentage remaining at harvest time"
-    LitterType: LitterType16
-  V18:
-    Name: Phu
-    Units: "Mass remaining"
-    Description: "P. hubbardiana leaf litter mass percentage remaining at harvest time"
-    LitterType: LitterType17
-  V19:
-    Name: Sun
-    Units: "Mass remaining"
-    Description: "S. unguiculatum leaf litter mass percentage remaining at harvest time"
-    LitterType: LitterType18
-  V20:
-    Name: Spe
-    Units: "Mass remaining"
-    Description: "S. nutans leaf litter mass percentage remaining at harvest time"
-    LitterType: LitterType19
-  V21:
-    Name: Sin
-    Units: "Mass remaining"
-    Description: "S. jacquemontii leaf litter mass percentage remaining at harvest time"
-    LitterType: LitterType20
-  V22:
-    Name: Dhi
-    Units: "Mass remaining"
-    Description: "D. hieronymi leaf litter mass percentage remaining at harvest time"
-    LitterType: LitterType21
-  V23:
-    Name: Fli
-    Units: "Mass remaining"
-    Description: "F. lilloi leaf litter mass percentage remaining at harvest time"
-    LitterType: LitterType22
-  V24:
-    Name: Nni
-    Units: "Mass remaining"
-    Description: "N. nidulans leaf litter mass percentage remaining at harvest time"
-    LitterType: LitterType23
-  V25:
-    Name: Pst
-    Units: "Mass remaining"
-    Description: "P. stuckertii leaf litter mass percentage remaining at harvest time"
-    LitterType: LitterType24
+variables: # These describe the columns of your timeSeries.csv file
+        V1: # column 1
+          name: Time
+          units: days
+        V2:
+          name: Ban,
+          units: mass remaining
+          varDesc: B. andicola litter decomposed in a decomposition bed in Pampa de Achala
+          site: Achala
+          litter: Bidens andicola
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V3:
+          name: Eag
+          units: mass remaining
+          varDesc: Eryngium agavifolium
+          site: Achala
+          litter: E. agavifolium litter decomposed in a decomposition bed in Pampa de Achala
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V4:
+          name: Enu
+          units: mass remaining
+          varDesc: E. nudicaule litter decomposed in a decomposition bed in Pampa de Achala
+          site: Achala
+          litter: Eryngium nudicaule
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V5:
+          name: Gdi
+          units: mass remaining
+          varDesc: G. dissecta litter decomposed in a decomposition bed in Pampa de Achala
+          site: Achala
+          litter: Glandularia dissecta
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V6:
+          name: Ggl
+          units: mass remaining
+          varDesc: G. globularifolia litter decomposed in a decomposition bed in Pampa de Achala
+          site: Achala
+          litter: Grindelia globularifolia
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V7:
+          name: Lpi
+          units: mass remaining
+          varDesc: L. pinnata litter decomposed in a decomposition bed in Pampa de Achala
+          site: Achala
+          litter: Lachemilla pinnata
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V8:
+          name: Par
+          units: mass remaining
+          varDesc: P. argentina litter decomposed in a decomposition bed in Pampa de Achala
+          site: Achala
+          litter: Plantago argentina
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V9:
+          name: Bca
+          units: mass remaining
+          varDesc: B. catharticus litter decomposed in a decomposition bed in Pampa de Achala
+          site: Achala
+          litter: Bromus catharticus
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V10:
+          name: Cfu
+          units: mass remaining
+          varDesc: C. fuscula litter decomposed in a decomposition bed in Pampa de Achala
+          site: Achala
+          litter: Carex fuscula
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V11:
+          name: Csu
+          units: mass remaining
+          varDesc: Chascolytrum subaristatum litter decomposed in a decomposition bed in Pampa de Achala
+          site: Achala
+          litter: Chascolytrum subaristatum
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V12:
+          name: Eps
+          units: mass remaining
+          varDesc: E. pseudoalbibracteata litter decomposed in a decomposition bed in Pampa de Achala
+          site: Achala
+          litter: Eleocharis pseudoalbibracteata
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V13:
+          name: Elu
+          units: mass remaining
+          varDesc: E. lugens litter decomposed in a decomposition bed in Pampa de Achala
+          site: Achala
+          litter: Eragrostis lugens
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V14:
+          name: Fdi
+          units: mass remaining
+          varDesc: F. dissitiflora litter decomposed in a decomposition bed in Pampa de Achala
+          site: Achala
+          litter: Festuca dissitiflora
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V15:
+          name: Jpa
+          units: mass remaining
+          varDesc: J. pallescens litter decomposed in a decomposition bed in Pampa de Achala
+          site: Achala
+          litter: Juncus pallescens
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V16:
+          name: Jur
+          units: mass remaining
+          varDesc: J. uruguensis litter decomposed in a decomposition bed in Pampa de Achala
+          site: Achala
+          litter: Juncus uruguensis
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V17:
+          name: Mpe
+          units: mass remaining
+          varDesc: M. peruviana litter decomposed in a decomposition bed in Pampa de Achala
+          site: Achala
+          litter: Muhlenbergia peruviana
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V18:
+          name: Phu
+          units: mass remaining
+          varDesc: P. hubbardiana litter decomposed in a decomposition bed in Pampa de Achala
+          site: Achala
+          litter: Poa hubbardiana
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V19:
+          name: Sun
+          units: mass remaining
+          varDesc: S. unguiculatum litter decomposed in a decomposition bed in Pampa de Achala
+          site: Achala
+          litter: Sisyrinchium unguiculatum
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V20:
+          name: Spe
+          units: mass remaining
+          varDesc: S. pellitum litter decomposed in a decomposition bed in Pampa de Achala
+          site: Achala
+          litter: Sorghastrum pellitum
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V21:
+          name: Sin
+          units: mass remaining
+          varDesc: S. indicus litter decomposed in a decomposition bed in Pampa de Achala
+          site: Achala
+          litter: Sporobolus indicus
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V22:
+          name: Dhi
+          units: mass remaining
+          varDesc: D. hieronymi litter decomposed in a decomposition bed in Pampa de Achala
+          site: Achala
+          litter: Deyeuxia hieronymi
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V23:
+          name: Fli
+          units: mass remaining
+          varDesc: F. lilloi litter decomposed in a decomposition bed in Pampa de Achala
+          site: Achala
+          litter: Festuca lilloi
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V24:
+          name: Nni
+          units: mass remaining
+          varDesc: Nassella nidulans litter decomposed in a decomposition bed in Pampa de Achala
+          site: Achala
+          litter: Nassella nidulans
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V25:
+          name: Pst
+          units: mass remaining
+          varDesc: P. stuckertii litter decomposed in a decomposition bed in Pampa de Achala
+          site: Achala
+          litter: Poa stuckertii
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:

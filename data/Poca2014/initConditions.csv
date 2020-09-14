@@ -1,0 +1,25 @@
+species, type, N-fixer, material, amount, carbon, nitrogen, C:N, phosphorus, potassium, sodium, magnesium, manganese, copper, zinc, lead, calcium, sulfur, iron, lignin, cellulose, hemicellulose, cell solubles, SLA
+Bidens andicola, forb, no, leaves, 1, , 2.1,,,,,,,,,,,,, 18.6, 20.7, 0,, 20
+Eryngium agavifolium, forb, no, leaves, 1, , 0.8,,,,,,,,,,,,, 9.2, 37.5, 2.7,, 6
+Eryngium nudicaule, forb, no, leaves, 1, , 1.2,,,,,,,,,,,,, 8.9, 28.5, 0,, 7
+Glandularia dissecta, forb, no, leaves, 1, , 1.6,,,,,,,,,,,,, 18.8, 21.6, 0,, 20
+Grindelia globularifolia, forb, no, leaves, 1, , 1.2,,,,,,,,,,,,, 10.7, 20.9, 0, , 9
+Lachemilla pinnata, forb, no, leaves, 1, , 1.1,,,,,,,,,,,,, 9.9, 28.4, 3.8, , 14
+Plantago argentina, forb, no, leaves, 1, , 1,,,,,,,,,,,,, 19.2, 28.9, 0, , 7
+Bromus catharticus, graminoid, no, leaves, 1, , 0.7,,,,,,,,,,,,, 5.3, 44.9, 20.9, , 18
+Carex fuscula, graminoid, no, leaves, 1, , 0.8,,,,,,,,,,,,, 9.8, 31.3, 25.1, , 18
+Chascolytrum subaristatum, graminoid, no, leaves, 1, , 0.8,,,,,,,,,,,,, 6.1, 42.3, 22.3, , 12
+Eleocharis pseudoalbibracteata, graminoid, no, leaves, 1, , 1.4,,,,,,,,,,,,, 8.4, 38.5, 18.1, , 27
+Eragrostis lugens, graminoid, no, leaves, 1, , 1,,,,,,,,,,,,, 5.3, 34.7, 25, , 8
+Festuca dissitiflora, graminoid, no, leaves, 1, , 0.7,,,,,,,,,,,,, 4.4, 38.4, 24.4, , 12
+Juncus pallescens, graminoid, no, leaves, 1, , 1.6,,,,,,,,,,,,, 10.2, 37.1, 19.6, , 7
+Juncus uruguensis, graminoid, no, leaves, 1, , 1.4,,,,,,,,,,,,, 6.7, 35.4, 29.5, , 8
+Muhlenbergia peruviana, graminoid, no, leaves, 1, , 0.9,,,,,,,,,,,,, 4.7, 33.5, 34.4, , 14
+Poa hubbardiana, graminoid, no, leaves, 1, , 0.6,,,,,,,,,,,,, 5.2, 42.5, 23.5, , 21
+Sisyrinchium unguiculatum, graminoid, no, leaves, 1, , 1.2,,,,,,,,,,,,, 11.8, 35.4, 5.6, , 9
+Sorghastrum pellitum, graminoid, no, leaves, 1, , 0.8,,,,,,,,,,,,, 7.6, 37.9, 19.8,, 7
+Sporobolus indicus, graminoid, no, leaves, 1, , 1.2,,,,,,,,,,,,, 3.8, 34.7, 31.8, , 10
+Deyeuxia hieronymi, graminoid, no, leaves, 1, , 0.5,,,,,,,,,,,,,7.2, 39.7, 26.9, , 10
+Festuca lilloi, graminoid, no, leaves, 1, , 0.5,,,,,,,,,,,,, 7.7, 47.9, 18.8, , 6
+Nassella nidulans, graminoid, no, leaves, 1, , 0.7,,,,,,,,,,,,, 6.5, 41, 20.5, , 12
+Poa stuckertii, graminoid, no, leaves, 1, , 0.4,,,,,,,,,,,,, 7.7, 44.4, 23.8, , 6
