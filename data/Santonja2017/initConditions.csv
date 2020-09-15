@@ -1,0 +1,4 @@
+species, type, N-fixer, material, amount, carbon, nitrogen, C:N, phosphorus, potassium, sodium, magnesium, manganese, copper, zinc, lead, calcium, sulfur, iron, lignin, cellulose, hemicellulose, cell solubles, SLA
+Quercus pubescens, deciduous, no, leaves, 10, 46.64, 0.7, 66.1,,,,,,,,,,,, 12.51, 18.76
+mixture1, deciduous, no, leaves, 10, 45.98, 0.78, 58.9,,,,,,,,,,,, 10, 14.97
+mixture2, deciduous, no, leaves, 10, 46.18, 0.76, 60.7,,,,,,,,,,,, 7.95, 12.84

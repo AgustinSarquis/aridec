@@ -1,173 +1,152 @@
-CitationKey: Santonja2017
-doi: 10.1111/1365-2745.12711
-EntryAuthor: Ignacio Siebenhart
+citationKey: Santonja2017 # Unique identifier in the format: LastnameYear (lowercase letters must be added when there are two or more entries by the same author and year, i.e.: LastnameYearx)
+doi: 10.1111/1365-2745.12711 # DOI of the publication where data is published
+entryAuthor: Ignacio Siebenhart # First and last name of the person who entered the data in this file
+entryCreationDate: 2020-01-20 # Date when the data was entered in this file. Format: YYYY-MM-DD
+contactName: Agustin Sarquis # First and last name of contact person (may be the principal investigator supervising the entryAuthor)
+contactEmail: agusarquis@agro.uba.ar # Email of the contact person
+entryNote: # Any notes or comments related to this entry.
+study: They studied the relative effects of enhanced drought and plant species mixture on litter decomposition in a Mediterranean oak forest
 
-SiteInfo:
- Name: Observatoire de Haute Provence, Provence-Alpes-Côte d'Azur, France
- EcosystemType: forest
- MAP:
-  Value: 830
-  Units: mm
- MAT:
-  Value: 12.3
-  Units: Celsius
- Altitude:
-  Value: 650
-  Units: masl
- SoilType: Mollic Leptosol
- SoilTexture: coarse
- Coordinates:
-  Latitude: 43.97
-  Longitude: 5.88
+siteInfo:
+        site: OHP # Names of individual sites, if one site, keep on this line, if multiple, use array format
+              # These fields should be arrays of equal length to site array
+        coordinates:
+          latitude: 43.97 # Latitude in decimal units (check for negative that denotes southern hemisphere)
+          longitude: 5.88 # Longitude in decimal units (check for negative that denotes western hemisphere)
+        country: France # Name of country where site was conducted
+        MAT: 12.3 # Mean annual temperature in degrees Celsius
+        MAP: 830 # Mean annual precipitation in mm
+        rainySeason: # Period of the year during which most precipitation occurs, i.e.: whole year, spring, summer, autumn, winter (if more than one use array format)
+        elevation: 650 # Elevation of study site in meters above sea level
+        landCover: forest # Land cover of the site. Valid fields are: greenbelt, (abbandoned) farmland, mangrove forest, subalpine, shrubland, urban, sandland, forest, steppe, desert, grassland, savanna
+        vegNote: Q. pubescens and A. monspessulanum are the two dominant tree species, with understory vegetation often dominated by C. coggygria
+        cover:
+          plantCover: # Total plant cover percentage (if they report cover by specific plant types, fill the fields below)
+          bunchgrassCover:
+          shrubCover: 30
+          treeCover: 100
+          forbCover:
+          bareSoil:
+        soilTaxonomy:
+          soilOrder: Leptosol
+          soilFamily: Mollic
+          soilSeries: # Soil series according to the classification system described below
+          classificationSystem: WRB
 
-ExperimentInfo:
- LitterInfo:
-  LitterType1:
-   Species: Quercus pubescens
-   LifeForm: tree
-   Material: recently senesced leaves
-   Carbon:
-    Value: 46.64
-    Units: percentage
-   Nitrogen:
-    Value: 0.7
-    Units: percentage
-   Lignin:
-    Value: 12.51
-    Units: percentage
-   Cellulose:
-    Value: 18.76
-    Units: percentage
-   Phenolics:
-    Value: 6.71
-    Units: percentage
-   C:N:
-    Value: 66.1
-   Lignin:N:
-    Value: 17.8
-   Amount:
-     Value: 10
-     Units: g
-  LitterType2:
-   Species:
-    - Quercus pubescens
-    - Acer monspessulanum
-   LifeForm:
-    - tree
-    - tree
-   Material: recently senesced leaves
-   Carbon:
-    Value: 45.98
-    Units: percentage
-   Nitrogen:
-    Value: 0.78
-    Units: percentage
-   Lignin:
-    Value: 10
-    Units: percentage
-   Cellulose:
-    Value: 14.97
-    Units: percentage
-   Phenolics:
-    Value: 8.44
-    Units: percentage
-   C:N:
-    Value: 58.9
-   Lignin:N:
-    Value: 12.9
-   Amount:
-     Value: 10
-     Units: g
-  LitterType3:
-   Species:
-    - Quercus pubescens
-    - Acer monspessulanum
-    - Cotinus coggygria
-   LifeForm:
-    - tree
-    - tree
-    - shrub
-   Material: recently senesced leaves
-   Carbon:
-    Value: 46.18
-    Units: percentage
-   Nitrogen:
-    Value: 0.76
-    Units: percentage
-   Lignin:
-    Value: 7.95
-    Units: percentage
-   Cellulose:
-    Value: 12.84
-    Units: percentage
-   Phenolics:
-    Value: 13.24
-    Units: percentage
-   C:N:
-    Value: 60.7
-   Lignin:N:
-    Value: 10.5
-   Amount:
-    Value: 10
-    Units: g
- Experiment1:
-  Description: "They studied the relative effects of enhanced drought and of plant species mixture on soil biota and on litter decomposition in a Mediterranean oak forest."
-  LitterBagInfo:
-   MeshSize:
-    Value: 4
-    Units: mm
-   Dimentions:
-    Width: 20
-    Lenght: 20
-    Units: cm
-   Position: bare soil
-  Treatment:
-   - rainfall interception
-   - litter mixture
-  StartingDate:
-   Month: february
-   Season: winter
-  Duration:
-   Time: 24
-   Units: months
+experimentInfo:
+        incDesc: 3 levels of litter mixture x 2 levels of rainfall x 6 harvests x 4 replicates
+        # These fields should all be one dimensional arrays. Values for experimental variables with multiple treatment levels should be entered in the variables section and left blank here
+        replicates: 4 # Number of replicates per treatment
+        duration: 365 # length of incubation in days
+        startingMonth: february # month during which the study started, all in lower case
+        litter: # plant species used as litter material for the experiment. All details related to the species must be specified in the initConditions.csv file
+        litterbag:
+          material: # mesh type used to construct the litter bags, options are: wire, aluminum, window screening, net curtain, bolting cloth, plastic, fiberglass, nylon, polypropylene, polyester, polyethylene, polyamide
+          meshSize: 4 # mesh size in mm referring to one side of the net-square
+          dimentions: # size of the full litter bag in cm
+            width: 20
+            length: 20
+            radius: # for round or cilindrical structures
+            height: # for 3-dimensional designs such as litter boxes in Austin2006NATURE
+          transmitance: # when reported, light transmitance of the mesh material as a percentage of full sunlight for each wavelength
+            total:
+            PAR:
+            UV:
+            UVA:
+            UVB:
+          position: bare soil
 
-Variables:
-  V1:
-    Name: Time
-    Units: months
-  V2:
-    Name: QC
-    Units: mass remaining
-    Description: "Quercus pubescens mass remaining at harvest time without rainfaill interception"
-    LitterType: LitterType1
-    RainfallInterception: No
-  V3:
-    Name: QR
-    Units: mass remaining
-    Description: "Quercus pubescens mass remaining at harvest time with rainfaill interception"
-    LitterType: LitterType1
-    RainfallInterception: Yes
-  V4:
-    Name: QAC
-    Units: mass remaining
-    Description: "Mass remaining at harvest time of mixture of Quercus pubescens and Acer monspessulanum without rainfaill interception"
-    LitterType: LitterType2
-    RainfallInterception: No
-  V5:
-    Name: QAR
-    Units: mass remaining
-    Description: "Mass remaining at harvest time of mixture of Quercus pubescens and Acer monspessulanum with rainfaill interception"
-    LitterType: LitterType2
-    RainfallInterception: Yes
-  V6:
-    Name: QACC
-    Units: mass remaining
-    Description: "Mass remaining at harvest time of mixture of Quercus pubescens, Acer monspessulanum and Cotinus coggygria without rainfaill interception"
-    LitterType: LitterType3
-    RainfallInterception:  No
-  V7:
-   Name: QACR
-   Units: mass remaining
-   Description: "Mass remaining at harvest time of mixture of Quercus pubescens, Acer monspessulanum and Cotinus coggygria with rainfaill interception"
-   LitterType: LitterType3
-   RainfallInterception: Yes
+variables: # These describe the columns of your timeSeries.csv file
+        V1: # column 1
+          name: Time
+          units: months
+        V2:
+          name: QC
+          units: mass remaining
+          varDesc: Quercus pubescens mass remaining without rainfall interception
+          site: OHP
+          litter: Quercus pubescens
+          compTreat: total rainfall
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V3:
+          name: QR
+          units: mass remaining
+          varDesc: Quercus pubescens mass remaining with rainfall interception
+          site: OHP
+          litter: Quercus pubescens
+          compTreat: reduced rainfall
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V4:
+          name: QAC
+          units: mass remaining
+          varDesc: Quercus pubescens and Acer monspessulanum mass remaining without rainfall interception
+          site: OHP
+          litter: mixture1
+          compTreat: total rainfall
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V5:
+          name: QAR
+          units: mass remaining
+          varDesc: Quercus pubescens and Acer monspessulanum mass remaining with rainfall interception
+          site: OHP
+          litter: mixture1
+          compTreat: reduced rainfall
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V6:
+          name: QACC
+          units: mass remaining
+          varDesc: Quercus pubescens, Acer monspessulanum and Cotinus coggygria mass remaining without rainfall interception
+          site: OHP
+          litter: mixture2
+          compTreat: total rainfall
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V7:
+          name: QACR
+          units: mass remaining
+          varDesc: Quercus pubescens, Acer monspessulanum and Cotinus coggygria mass remaining with rainfall interception
+          site: OHP
+          litter: mixture2
+          compTreat: reduced rainfall
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
