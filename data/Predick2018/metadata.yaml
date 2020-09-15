@@ -1,98 +1,122 @@
-CitationKey: Predick2018
-doi: 10.1016/j.jaridenv.2018.06.007
-EntryAuthor: Ignacio Siebenhart
+citationKey: Predick2018 # Unique identifier in the format: LastnameYear (lowercase letters must be added when there are two or more entries by the same author and year, i.e.: LastnameYearx)
+doi: 10.1016/j.jaridenv.2018.06.007 # DOI of the publication where data is published
+entryAuthor: Ignacio Siebenhart # First and last name of the person who entered the data in this file
+entryCreationDate: 2019-07-16 # Date when the data was entered in this file. Format: YYYY-MM-DD
+contactName: Agustín Sarquis # First and last name of contact person (may be the principal investigator supervising the entryAuthor)
+contactEmail: agusarquis@agro.uba.ar # Email of the contact person
+entryNote: MAT from POWER. Rainy seasons are summer and winter. Envelopes with plastic filter top and fiberglass mesh bottom (not shown)
+study: effect of UV radiation on decomposition in diferent microsites
 
-SiteInfo:
- Name: Santa Rita Experimental Range, Arizona, United States
- MAP:
-  Value: 370
-  Units: mm
- RainySeason:
-  - summer
-  - winter
- Altitude:
-  Value: 1150
-  Units: masl
- SoilType: Entisol
- SoilTexture: coarse
- Cover:
-  BareSoil: 30
-  ShrubCover: 30
-  GraminoidCover: 30
-  Units: percentage
- Coordinates:
-  Latitude: 31.803
-  Longitude: 110.863
+siteInfo:
+        site: Santa Rita # Names of individual sites, if one site, keep on this line, if multiple, use array format
+              # These fields should be arrays of equal length to site array
+        coordinates:
+          latitude: 31.803 # Latitude in decimal units (check for negative that denotes southern hemisphere)
+          longitude: -110.863 # Longitude in decimal units (check for negative that denotes western hemisphere)
+        country: USA # Name of country where site was conducted
+        MAT: 17.1  # Mean annual temperature in degrees Celsius
+        MAP: 370 # Mean annual precipitation in mm
+        rainySeason: # Period of the year during which most precipitation occurs, i.e.: whole year, spring, summer, autumn, winter (if more than one use array format)
+        elevation: 1150 # Elevation of study site in meters above sea level
+        landCover: grassland
+        vegNote: matrix of bare soil and non-native E. lehmanniana interspersed with P. velutina and cacti (Opuntia spp.).
+        cover:
+          plantCover: # Total plant cover percentage (if they report cover by specific plant types, fill the fields below)
+          bunchgrassCover: 30
+          shrubCover: 30
+          treeCover:
+          forbCover:
+          bareSoil: 30
+        soilTaxonomy:
+          soilOrder: Entisol
+          soilFamily: # Soil family description (ex. 'Eutric' for a Eutric Cambisol)
+          soilSeries: # Soil series according to the classification system described below
+          classificationSystem: USDA
 
-ExperimentInfo:
- LitterInfo:
-  LitterType1:
-   Species: Prosopis juliflora
-   Lifeform: shrub
-   Material: leaflet
-   Amount:
-    Value: 1.3
-    Units: g
- Experiment1:
-  Description: "They evaluate the effect of UV radiation on decomposition in diferent microsites"
-  LitterBagInfo:
-   Material: fiberglass
-   MeshSize:
-    Value: 0.9
-    Units: mm
-   Dimentions:
-    Width: 10
-    Lenght: 10
-    Units: cm
-   Position:
-    Position1: under shrub
-    Position2: bare soil
-  FilterInfo:
-   FilterType1:
-    Name: Aclar
-    UVBTransmitance:
-     Value: 90
-     Units: percentage
-   FilterType2:
-    Name: Mylar
-    WaveLenght:
-     Value: 325
-     Units: nm
-  Treatment:
-   - UV-B attenuation
-   - microsite
-  StartingDate:
-   Month: july
-   Season: summer
-  Duration:
-   Time: 10.7
-   Units: months
+experimentInfo:
+        incDesc: 2 positions x 2 light filters x 8 harvests x 5 replicates
+        # These fields should all be one dimensional arrays. Values for experimental variables with multiple treatment levels should be entered in the variables section and left blank here
+        replicates: 5 # Number of replicates per treatment
+        duration: 320 # length of incubation in days
+        startingMonth: july # month during which the study started, all in lower case
+        litter: Prosopis velutina # plant species used as litter material for the experiment. All details related to the species must be specified in the initConditions.csv file
+        litterbag:
+          material:
+          meshSize: # mesh size in mm referring to one side of the net-square
+          dimentions: # size of the full litter bag in cm
+            width: 10
+            length: 10
+            radius: # for round or cilindrical structures
+            height: # for 3-dimensional designs such as litter boxes in Austin2006NATURE
+          transmitance: # when reported, light transmitance of the mesh material as a percentage of full sunlight for each wavelength
+            total:
+            PAR:
+            UV:
+            UVA:
+            UVB:
+          position: # position of litterbags in the field, valid options are: bare soil, decomposition bed, under litter, over litter, over lawn, next to grass, under tree/shrub/grass, buried X cm deep, underwater, under rainout shelter, under frame, suspended X cm, under shadecloth
 
-Variables:
- V1:
-   Name: Time
-   Units: days
- V2:
-   Name: SUVP
-   Units: non-ash dry mass remaining
-   Description: "Prosopis juliflora litter mass remaining at harvest time positioned under shrub with total UV-B radiation"
-   Position: Position1
-   FilterType: FilterType1
- V3:
-   Name: SUVB
-   Units: non-ash dry mass remaining
-   Description: "Prosopis juliflora litter mass remaining at harvest time positioned under shrub with blocked UV-B radiation"
-   Position: Position1
-   FilterType: FilterType2
- V4:
-   Name: IUVP
-   Units: non-ash dry mass remaining
-   Description: "Prosopis juliflora litter mass remaining at harvest time positioned intercanopy with total UV-B radiation"
-   Position: Position2
-   FilterType: FilterType1
- V5:
-   Name: IUVB
-   Units: non-ash dry mass remaining
-   Description: "Prosopis juliflora litter mass remaining at harvest time positioned intercanopy with blocked UV-B radiation"
-   Position: Position2
-   FilterType: FilterType2
+variables: # These describe the columns of your timeSeries.csv file
+        V1: # column 1
+          name: Time
+          units: days
+        V2:
+          name: SUVP
+          units: organic matter remaining
+          varDesc: Prosopis velutina litter under shrub with total UV-B radiation
+          site: Santa Rita
+          position: under shrub
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter:
+           threshold: 0
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB: 90
+        V3:
+          name: SUVB
+          units: organic matter remaining
+          varDesc: Prosopis velutina litter under shrub with blocked UV-B radiation
+          site: Santa Rita
+          position: under shrub
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter:
+           threshold: 325
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V4:
+          name: IUVP
+          units: organic matter remaining
+          varDesc: Prosopis velutina litter at an intercanopy position with total UV-B radiation
+          site: Santa Rita
+          position: bare soil
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter:
+           threshold: 0
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB: 90
+        V5:
+          name: IUVB
+          units: organic matter remaining
+          varDesc: Prosopis velutina litter at an intercanopy position with blocked UV-B radiation
+          site: Santa Rita
+          position: bare soil
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter:
+           threshold: 325
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
