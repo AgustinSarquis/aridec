@@ -1,69 +1,107 @@
-CitationKey: Pucheta2006
-doi: 10.1111/j.1442-9993.2006.01635.x
-EntryAuthor: Agustín Sarquis
+citationKey: Pucheta2006 # Unique identifier in the format: LastnameYear (lowercase letters must be added when there are two or more entries by the same author and year, i.e.: LastnameYearx)
+doi: 10.1111/j.1442-9993.2006.01635.x # DOI of the publication where data is published
+entryAuthor: Agustín Sarquis # First and last name of the person who entered the data in this file
+entryCreationDate: 2019-11-14 # Date when the data was entered in this file. Format: YYYY-MM-DD
+contactName: Agustín Sarquis # First and last name of contact person (may be the principal investigator supervising the entryAuthor)
+contactEmail: agusarquis@agro.uba.ar # Email of the contact person
+entryNote: Rainy seasons are summer and autumn
+study: They incubated L. divaricata leaf litter buried 5 cm deep for 163 days under L. divaricata, Bulnesia retama and open patches
 
-SiteInfo:
-  Name: Médanos Grandes, San Juan, Argentina
-  EcosystemType: desert
-  MAP:
-    Value: 140
-    Units: mm
-  MAT:
-    Value: 18.46
-    Units: Celsius
-  RainySeason:
-    - summer
-    - autumn
-  Altitude:
-    Value: 557
-    Units: masl
-  SoilTexture: coarse
-  Cover:
-    ShrubCover: 25
-    Units: percentage
-  Coordinates:
-    Latitude: -31.86
-    Longitude: -68.227
+siteInfo:
+        site: Medanos Grandes # Names of individual sites, if one site, keep on this line, if multiple, use array format
+              # These fields should be arrays of equal length to site array
+        coordinates:
+          latitude: -31.86 # Latitude in decimal units (check for negative that denotes southern hemisphere)
+          longitude: -68.227 # Longitude in decimal units (check for negative that denotes western hemisphere)
+        country: Argentina # Name of country where site was conducted
+        MAT: 18.46 # Mean annual temperature in degrees Celsius
+        MAP: 140 # Mean annual precipitation in mm
+        rainySeason: # Period of the year during which most precipitation occurs, i.e.: whole year, spring, summer, autumn, winter (if more than one use array format)
+        elevation: 557 # Elevation of study site in meters above sea level
+        landCover: desert # Land cover of the site. Valid fields are: greenbelt, (abbandoned) farmland, mangrove forest, subalpine, shrubland, urban, sandland, forest, steppe, desert, grassland, savanna
+        vegNote: vegetation is mainly concentrated between sandy dunes. The dominant shrubs are B. retama and L. divaricata and are interspersed with a low-cover matrix of summer annuals (mainly dicots) and other shrub species
+        cover:
+          plantCover: # Total plant cover percentage (if they report cover by specific plant types, fill the fields below)
+          bunchgrassCover:
+          shrubCover: 25
+          treeCover:
+          forbCover:
+          bareSoil:
+        soilTaxonomy:
+          soilOrder: # Soil order according to the classification system described below
+          soilFamily: # Soil family description (ex. 'Eutric' for a Eutric Cambisol)
+          soilSeries: # Soil series according to the classification system described below
+          classificationSystem: # Name of classification system used. Valid fields are: USDA, FAO, and WRB.
 
-ExperimentInfo:
- LitterInfo:
-  LitterType1:
-   Species: Larrea divaricata
-   LifeForm: shrub
-   Material: recently senesced leaves
-   Amount:
-     Value: 4
-     Units: g
- Experiment1:
-  Description: "They incubated L. divaricata leaf litter buried 5 cm deep for 163 days under L. divaricata, Bulnesia retama and open patches"
-  LitterBagInfo:
-   MeshSize:
-    Value: .4
-    Units: mm
-  Treatment: location
-  StartingDate:
-   Month: december
-   Season: summer
-  Duration:
-   Time: 5.4
-   Units: months
+experimentInfo:
+        incDesc: 3 patch types x 4 harvests x 10 replicates
+        # These fields should all be one dimensional arrays. Values for experimental variables with multiple treatment levels should be entered in the variables section and left blank here
+        replicates: 10 # Number of replicates per treatment
+        duration: 163 # length of incubation in days
+        startingMonth: december # month during which the study started, all in lower case
+        litter: Larrea divaricata # plant species used as litter material for the experiment. All details related to the species must be specified in the initConditions.csv file
+        litterbag:
+          material: # mesh type used to construct the litter bags, options are: wire, aluminum, window screening, net curtain, bolting cloth, plastic, fiberglass, nylon, polypropylene, polyester, polyethylene, polyamide
+          meshSize: 4 # mesh size in mm referring to one side of the net-square
+          dimentions: # size of the full litter bag in cm
+            width:
+            length:
+            radius: # for round or cilindrical structures
+            height: # for 3-dimensional designs such as litter boxes in Austin2006NATURE
+          transmitance: # when reported, light transmitance of the mesh material as a percentage of full sunlight for each wavelength
+            total:
+            PAR:
+            UV:
+            UVA:
+            UVB:
+          position: buried 5 cm deep
 
-Variables:
-  V1:
-    Name: Time
-    Units: days
-  V2:
-    Name: Larrea
-    Units: mass remaining
-    Description: "L. divaricata leaf litter incubated for 163 days buried under a L. divaricata patch"
-    Position: L. divaricata patch
-  V3:
-    Name: Bulnesia
-    Units: mass remaining
-    Description: "L. divaricata leaf litter incubated for 163 days buried under a B. retama patch"
-    Position: B. retama patch
-  V4:
-    Name: Open
-    Units: mass remaining
-    Description: "L. divaricata leaf litter incubated for 163 days buried under an open patch"
-    Position: open patch
+variables: # These describe the columns of your timeSeries.csv file
+        V1: # column 1
+          name: Time
+          units: days
+        V2:
+          name: Larrea
+          units: mass remaining
+          varDesc: L. divaricata leaf litter incubated for 163 days buried under a L. divaricata patch
+          site: Medanos Grandes
+          experimentalTreatment: # 'experimentalTreatment' here is a place holder for treatments with multiple levels. Replace this word by any of the listed variables in incubationInfo above (startingMonth, duration, litter, litterbag, meshSize) and type treatment value (level) after colon. Note that units should be specified in the incubationInfo field above.
+          compTreat: shrub patch
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V3:
+          name: Bulnesia
+          units: mass remaining
+          varDesc: L. divaricata leaf litter incubated for 163 days buried under a B. retama patch
+          site: Medanos Grandes
+          experimentalTreatment: # 'experimentalTreatment' here is a place holder for treatments with multiple levels. Replace this word by any of the listed variables in incubationInfo above (startingMonth, duration, litter, litterbag, meshSize) and type treatment value (level) after colon. Note that units should be specified in the incubationInfo field above.
+          compTreat: shrub patch
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V4:
+          name: Open
+          units: mass remaining
+          varDesc: L. divaricata leaf litter incubated for 163 days buried under an open patch
+          site: Medanos Grandes
+          experimentalTreatment: # 'experimentalTreatment' here is a place holder for treatments with multiple levels. Replace this word by any of the listed variables in incubationInfo above (startingMonth, duration, litter, litterbag, meshSize) and type treatment value (level) after colon. Note that units should be specified in the incubationInfo field above.
+          compTreat: open patch
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
