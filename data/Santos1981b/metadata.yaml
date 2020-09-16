@@ -1,0 +1,182 @@
+citationKey: Santos1981b # Unique identifier in the format: LastnameYear (lowercase letters must be added when there are two or more entries by the same author and year, i.e.: LastnameYearx)
+doi: https://doi.org/10.2307/1937733 # DOI of the publication where data is published
+entryAuthor: Ignacio Siebenhart # First and last name of the person who entered the data in this file
+entryCreationDate: 2019-05-24 # Date when the data was entered in this file. Format: YYYY-MM-DD
+contactName: Agustin Sarquis # First and last name of contact person (may be the principal investigator supervising the entryAuthor)
+contactEmail: agusarquis@agro.uba.ar # Email of the contact person
+entryNote: elevation calculated as an average value according to the elevation range they report (1200-2000 masl)
+study: they compared decomposition of buried, untreated, mixed desert shrub litter to that of insecticide- and fungicide-treated litter
+
+siteInfo:
+        site: Jornada # Names of individual sites, if one site, keep on this line, if multiple, use array format
+              # These fields should be arrays of equal length to site array
+        coordinates:
+          latitude: 32.5 # Latitude in decimal units (check for negative that denotes southern hemisphere)
+          longitude: -106.75 # Longitude in decimal units (check for negative that denotes western hemisphere)
+        country: USA # Name of country where site was conducted
+        MAT: 17.15 # Mean annual temperature in degrees Celsius
+        MAP: 211 # Mean annual precipitation in mm
+        rainySeason: summer # Period of the year during which most precipitation occurs, i.e.: whole year, spring, summer, autumn, winter (if more than one use array format)
+        elevation: 1600 # Elevation of study site in meters above sea level
+        landCover: desert # Land cover of the site. Valid fields are: greenbelt, (abbandoned) farmland, mangrove forest, subalpine, shrubland, urban, sandland, forest, steppe, desert, grassland, savanna
+        vegNote: L. tridentata is the dominant shrub
+        cover:
+          plantCover: # Total plant cover percentage (if they report cover by specific plant types, fill the fields below)
+          bunchgrassCover:
+          shrubCover:
+          treeCover:
+          forbCover:
+          bareSoil:
+        soilTaxonomy:
+          soilOrder: # Soil order according to the classification system described below
+          soilFamily: # Soil family description (ex. 'Eutric' for a Eutric Cambisol)
+          soilSeries: # Soil series according to the classification system described below
+          classificationSystem: # Name of classification system used. Valid fields are: USDA, FAO, and WRB.
+
+experimentInfo:
+        incDesc: 2 starting dates x 4 biocide levels x 2 harvests x 8 replicates
+        # These fields should all be one dimensional arrays. Values for experimental variables with multiple treatment levels should be entered in the variables section and left blank here
+        replicates: 8 # Number of replicates per treatment
+        duration: 90 # length of incubation in days
+        startingMonth: # month during which the study started, all in lower case
+        litter: mixture # plant species used as litter material for the experiment. All details related to the species must be specified in the initConditions.csv file
+        litterbag:
+          material: fiberglass
+          meshSize: 1.5 # mesh size in mm referring to one side of the net-square
+          dimentions: # size of the full litter bag in cm
+            width:
+            length:
+            radius: # for round or cilindrical structures
+            height: # for 3-dimensional designs such as litter boxes in Austin2006NATURE
+          transmitance: # when reported, light transmitance of the mesh material as a percentage of full sunlight for each wavelength
+            total:
+            PAR:
+            UV:
+            UVA:
+            UVB:
+          position: buried
+
+variables: # These describe the columns of your timeSeries.csv file
+        V1: # column 1
+          name: Time
+          units: days
+        V2:
+          name: CTRA
+          units: mass remaining
+          varDesc: Naturally mixed Prosopis glandulosa, Larrea tridentata, Yucca elata and Fallugia paradoxa litter without biocide and starting on april
+          site: Jornada
+          startingMonth: april
+          compTreat: no biocide
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V3:
+          name: INA
+          units: mass remaining
+          varDesc: Naturally mixed Prosopis glandulosa, Larrea tridentata, Yucca elata and Fallugia paradoxa litter with insecticide and starting on april
+          site: Jornada
+          startingMonth: april
+          compTreat: biocide
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V4:
+          name: FGA
+          units: mass remaining
+          varDesc: Naturally mixed Prosopis glandulosa, Larrea tridentata, Yucca elata and Fallugia paradoxa litter with fungicide and starting on april
+          site: Jornada
+          startingMonth: april
+          compTreat: biocide
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V5:
+          name: FGINA
+          units: mass remaining
+          varDesc: Naturally mixed Prosopis glandulosa, Larrea tridentata, Yucca elata and Fallugia paradoxa litter with insecticide and fungicide, starting on april
+          site: Jornada
+          startingMonth: april
+          compTreat: biocide
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V6:
+          name: CTRJ
+          units: mass remaining
+          varDesc: Naturally mixed Prosopis glandulosa, Larrea tridentata, Yucca elata and Fallugia paradoxa litter without biocide and starting on july
+          site: Jornada
+          startingMonth: july
+          compTreat: no biocide
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V7:
+          name: INJ
+          units: mass remaining
+          varDesc: Naturally mixed Prosopis glandulosa, Larrea tridentata, Yucca elata and Fallugia paradoxa litter with insecticide and starting on july
+          site: Jornada
+          startingMonth: july
+          compTreat: biocide
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V8:
+          name: FGJ
+          units: mass remaining
+          varDesc: Naturally mixed Prosopis glandulosa, Larrea tridentata, Yucca elata and Fallugia paradoxa litter with fungicide and starting on july
+          site: Jornada
+          startingMonth: july
+          compTreat: biocide
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V9:
+          name: FGINJ
+          units: mass remaining
+          varDesc: Naturally mixed Prosopis glandulosa, Larrea tridentata, Yucca elata and Fallugia paradoxa litter with insecticide and fungicide, starting on july
+          site: Jornada
+          startingMonth: july
+          compTreat: biocide
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
