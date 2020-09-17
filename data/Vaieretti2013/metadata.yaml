@@ -1,332 +1,301 @@
-CitationKey: Vaieretti2013
-doi: 10.1007/s11104-013-1831-9
-EntryAuthor: Agustín Sarquis
+citationKey: Vaieretti2013 # Unique identifier in the format: LastnameYear (lowercase letters must be added when there are two or more entries by the same author and year, i.e.: LastnameYearx)
+doi: 10.1007/s11104-013-1831-9 # DOI of the publication where data is published
+entryAuthor: Agustin Sarquis # First and last name of the person who entered the data in this file
+entryCreationDate: 2019-01-09 # Date when the data was entered in this file. Format: YYYY-MM-DD
+contactName: Agustin Sarquis # First and last name of contact person (may be the principal investigator supervising the entryAuthor)
+contactEmail: agusarquis@agro.uba.ar # Email of the contact person
+entryNote: rainy seasons are spring and summer. Soils are molisols (classification system unspecified)
+study: three experiments, litter mixtures from three patch types decomposed in a common garden; same mixtures incubated in situ; and litter from two species incubated in the three vegetation patches
 
-SiteInfo:
-  Name: Pampa de Achala, Córdoba, Argentina
-  EcosystemType: mountain grassland
-  MAP:
-    Value: 900
-    Units: mm
-  MAT:
-    Value: 8
-    Units: Celsius
-  RainySeason:
-   - spring
-   - summer
-  Altitude:
-    Value: 2200
-    Units: masl
-  SoilType: molisol
-  SoilTexture: fine
-  Cover:
-    PatchType1:
-      Name: Lawn
-      BunchgrassCover: 2.7
-      ForbCover: 44.1
-      GraminoidCover: 53.2
-      Units: percentage
-    PatchType2:
-      Name: Open Tussock grassland
-      BunchgrassCover: 58
-      ForbCover: 19
-      GraminoidCover: 23
-      Units: percentage
-    PatchType3:
-      Name: Closed Tussock grassland
-      BunchgrassCover: 92.3
-      ForbCover: 5.4
-      GraminoidCover: 2.3
-      Units: percentage
-  Coordinates:
-    Latitude: -31.57
-    Longitude: -64.83
+siteInfo:
+        site:
+          - garden
+          - lawn
+          - open tussock
+          - closed tussock
+              # These fields should be arrays of equal length to site array
+        coordinates:
+          latitude:
+            - -31.57
+            - -31.57
+            - -31.57
+            - -31.57
+             # Latitude in decimal units (check for negative that denotes southern hemisphere)
+          longitude:
+            - -64.83
+            - -64.83
+            - -64.83
+            - -64.83 # Longitude in decimal units (check for negative that denotes western hemisphere)
+        country:
+          - Argentina
+          - Argentina
+          - Argentina
+          - Argentina # Name of country where site was conducted
+        MAT:
+          - 8
+          - 8
+          - 8
+          - 8 # Mean annual temperature in degrees Celsius
+        MAP:
+          - 900
+          - 900
+          - 900
+          - 900 # Mean annual precipitation in mm
+        rainySeason: # Period of the year during which most precipitation occurs, i.e.: whole year, spring, summer, autumn, winter (if more than one use array format)
+        elevation:
+          - 2200
+          - 2200
+          - 2200
+          - 2200 # Elevation of study site in meters above sea level
+        landCover:
+          - grassland
+          - grassland
+          - grassland
+          - grassland
+        vegNote:
+          -
+          - Lawn patches are dominated by short palatable plants (forbs, annual and perennial short grasses, rushes and sedges)
+          - open tussock grasslands comprise a mixture of short vegetation and tussock species
+          - Closed tussock grassland patches are dominated by tall tussock grass species, such as Festuca lilloi, Deyeuxia hieronymi and Poa stuckertii
+        cover:
+          plantCover: # Total plant cover percentage (if they report cover by specific plant types, fill the fields below)
+          bunchgrassCover:
+            -
+            - 2.7
+            - 58
+            - 92.3
+          forbCover:
+            -
+            - 44.1
+            - 19
+            - 5.4
+          graminoidCover:
+            -
+            - 53.2
+            - 23
+            - 2.3
+        soilTaxonomy:
+          soilOrder: # Soil order according to the classification system described below
+          soilFamily: # Soil family description (ex. 'Eutric' for a Eutric Cambisol)
+          soilSeries: # Soil series according to the classification system described below
+          classificationSystem: # Name of classification system used. Valid fields are: USDA, FAO, and WRB.
 
-ExperimentInfo:
- LitterInfo:
-   LitterType1:
-    PatchType: PatchType1
-    LifeForm:
-      -forb
-      -graminoid
-    Material: recently senesced leaves
-    Carbon:
-      Value: 45.7
-      Units: percentage
-    Nitrogen:
-      Value: 1.3
-      Units: percentage
-    Phosphorus:
-      Value: 0.06
-      Units: percentage
-    Lignin:
-      Value: 9.2
-      Units: percentage
-    Cellulose:
-      Value: 33.8
-      Units: percentage
-    Hemicellulose:
-      Value: 22.8
-      Units: percentage
-    C:N:
-      Value: 35.7
-    Lignin:N:
-      Value: 7.1
-    LHC:
-      Value: 65.8
-      Units: percentage
-    Amount:
-      Value: 3
-      Units: g
-   LitterType2:
-    PatchType: PatchType2
-    LifeForm:
-      -forb
-      -graminoid
-    Material: recently senesced leaves
-    Carbon:
-      Value: 46
-      Units: percentage
-    Nitrogen:
-      Value: 0.9
-      Units: percentage
-    Phosphorus:
-      Value: 0.05
-      Units: percentage
-    Lignin:
-      Value: 6.9
-      Units: percentage
-    Cellulose:
-      Value: 37.5
-      Units: percentage
-    Hemicellulose:
-      Value: 27.7
-      Units: percentage
-    C:N:
-      Value: 50.8
-    Lignin:N:
-      Value: 7.5
-    LHC:
-      Value: 72.1
-      Units: percentage
-    Amount:
-      Value: 3
-      Units: g
-   LitterType3:
-    PatchType: PatchType3
-    Species:
-      -Festuca lilloi
-      -Poa stuckertii
-      -Deyeuxia hieronymi
-    LifeForm: graminoid
-    Material: recently senesced leaves
-    Carbon:
-      Value: 46.7
-      Units: percentage
-    Nitrogen:
-      Value: 1
-      Units: percentage
-    Phosphorus:
-      Value: 0.06
-      Units: percentage
-    Lignin:
-      Value: 8.2
-      Units: percentage
-    Cellulose:
-      Value: 39.1
-      Units: percentage
-    Hemicellulose:
-      Value: 27.3
-      Units: percentage
-    C:N:
-      Value: 49.5
-    Lignin:N:
-      Value: 8.5
-    LHC:
-      Value: 74.5
-      Units: percentage
-    Amount:
-      Value: 3
-      Units: g
-   LitterType4:
-    Material: cattle faeces
-    Carbon:
-      Value: 43.3
-      Units: percentage
-    Nitrogen:
-      Value: 1.3
-      Units: percentage
-    Phosphorus:
-      Value: 0.16
-      Units: percentage
-    Lignin:
-      Value: 14.5
-      Units: percentage
-    Cellulose:
-      Value: 32.6
-      Units: percentage
-    Hemicellulose:
-      Value: 18.3
-      Units: percentage
-    C:N:
-      Value: 32.8
-      Units: percentage
-    Lignin:N:
-      Value: 10.9
-      Units: percentage
-    LHC:
-      Value: 65.4
-      Units: percentage
-    Amount:
-      Value: 3
-      Units: g
-   LitterType5:
-    Species: Muhlenbergia peruviana
-    LifeForm: graminoid
-    Material: recently senesced leaves
-    Amount:
-     Value: 3
-     Units: g
-   LitterType6:
-    Species: Poa stuckertii
-    LifeForm: graminoid
-    Material: recently senesced leaves
-    Amount:
-     Value: 3
-     Units: g
- Experiment1:
-  Description: "Leaf litter from three different vegetation patches was used in a common garden decomposition experiment with two sampling dates"
-  LitterBagInfo:
-    Material: nylon
-    MeshSize:
-      Value: 0.3
-      Units: mm
-      Position:
-        -decomposition bed
-        -covered in litter
-  StartingDate:
-    Month: january
-    Season: summer
-  Duration:
-    Time: 6.5
-    Units: months
- Experiment2:
-  Description: "Leaf litter from three distinct vegetation patches and faeces were incubated in situ with two sampling dates"
-  LitterBagInfo:
-    Material: nylon
-    MeshSize:
-      Value: 0.3
-      Units: mm
-    Position: vegetated soil
-  StartingDate:
-    Month: january
-    Season: summer
-  Duration:
-    Time: 6.5
-    Units: months
- Experiment3:
-  Description: "Muhlenbergia peruviana and Poa stuckertii leaf litter were incubated in each of three distinct vegetation patches with two sampling dates"
-  LitterBagInfo:
-    Material: nylon
-    MeshSize:
-      Value: 0.3
-      Units: mm
-    Position: vegetated soil
-  StartingDate:
-    Month: january
-    Season: summer
-  Duration:
-    Time: 6.5
-    Units: months
+experimentInfo:
+        incDesc: 3 experiments (3 litter mixtures in common garden x 2 harvests; 3 litter mixtures in their own patches x 2 harvests; 2 species x 3 patch types x 2 harvests)
+        # These fields should all be one dimensional arrays. Values for experimental variables with multiple treatment levels should be entered in the variables section and left blank here
+        replicates: 10 # Number of replicates per treatment
+        duration: 198 # length of incubation in days
+        startingMonth: january # month during which the study started, all in lower case
+        litter: # plant species used as litter material for the experiment. All details related to the species must be specified in the initConditions.csv file
+        litterbag:
+          material: nylon
+          meshSize: 0.3
+          dimentions: # size of the full litter bag in cm
+            width:
+            length:
+            radius: # for round or cilindrical structures
+            height: # for 3-dimensional designs such as litter boxes in Austin2006NATURE
+          transmitance: # when reported, light transmitance of the mesh material as a percentage of full sunlight for each wavelength
+            total:
+            PAR:
+            UV:
+            UVA:
+            UVB:
+          position: # position of litterbags in the field, valid options are: bare soil, decomposition bed, under litter, over litter, over lawn, next to grass, under tree/shrub/grass, buried X cm deep, underwater, under rainout shelter, under frame, suspended X cm, under shadecloth
 
-Variables:
-  V1:
-    Name: Time
-    Units: days
-  V2:
-    Name: CGL
-    Units: Mass remaining
-    Description: "Percentage of dry weight remaining of litter belonging to lawns incubated in a common garden"
-    LitterType: LitterType1
-  V3:
-    Name: CGOTG
-    Units: Mass remaining
-    Description: "Percentage of dry weight remaining of litter belonging to open tussock grasslands incubated in a common garden"
-    LitterType: LitterType2
-  V4:
-    Name: CGCTG
-    Units: Mass remaining
-    Description: "Percentage of dry weight remaining of litter belonging to closed tussock grasslands incubated in a common garden"
-    LitterType: LitterType3
-  V5:
-    Name: LL
-    Units: Mass remaining
-    Description: "Percentage of dry weight remaining of litter belonging to lawns incubated in situ"
-    LitterType: LitterType1
-    PatchType: PatchType1
-  V6:
-    Name: LF
-    Units: Mass remaining
-    Description: "Percentage of dry weight remaining of faeces incubated in lawns"
-    LitterType: LitterType4
-    PatchType: PatchType1
-  V7:
-    Name: OTGL
-    Units: Mass remaining
-    Description: "Percentage of dry weight remaining of litter belonging to open tussock grasslands incubated in situ"
-    LitterType: LitterType2
-    PatchType: PatchType2
-  V8:
-    Name: OTGF
-    Units: Mass remaining
-    Description: "Percentage of dry weight remaining of faeces incubated in open tussock grasslands"
-    LitterType: LitterType4
-    PatchType: PatchType2
-  V9:
-    Name: CTGL
-    Units: Mass remaining
-    Description: "Percentage of dry weight remaining of litter belonging to closed tussock grasslands incubated in situ"
-    LitterType: LitterType3
-    PatchType: PatchType3
-  V10:
-    Name: CTGF
-    Units: Mass remaining
-    Description: "Percentage of dry weight remaining of faeces incubated in closed tussock grasslands"
-    LitterType: LitterType4
-    PatchType: PatchType3
-  V11:
-    Name: LMp
-    Units: Mass remaining
-    Description: "Percentage of dry weight remaining of M. peruviana incubated in lawns"
-    LitterType: LitterType5
-    PatchType: PatchType1
-  V12:
-    Name: LPs
-    Units: Mass remaining
-    Description: "Percentage of dry weight remaining of P. stuckertii incubated in lawns"
-    LitterType: LitterType6
-    PatchType: PatchType1
-  V13:
-    Name: OTGMp
-    Units: Mass remaining
-    Description: "Percentage of dry weight remaining of M. peruviana incubated in open tussock grasslands"
-    LitterType: LitterType5
-    PatchType: PatchType2
-  V14:
-    Name: OTGPs
-    Units: Mass remaining
-    Description: "Percentage of dry weight remaining of P. stuckertii incubated in open tussock grasslands"
-    LitterType: LitterType6
-    PatchType: PatchType2
-  V15:
-    Name: CTGMp
-    Units: Mass remaining
-    Description: "Percentage of dry weight remaining of M. peruviana incubated in closed tussock grasslands"
-    LitterType: LitterType5
-    PatchType: PatchType3
-  V16:
-    Name: CTGPs
-    Units: Mass remaining
-    Description: "Percentage of dry weight remaining of P. stuckertii incubated in closed tussock grasslands"
-    LitterType: LitterType6
-    PatchType: PatchType3
+variables: # These describe the columns of your timeSeries.csv file
+        V1: # column 1
+          name: Time
+          units: days
+        V2:
+          name: CGL
+          units: mass remaining
+          varDesc: litter from lawn patches incubated in a common garden
+          site: garden
+          litter: mixture1
+          position: decomposition bed
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V3:
+          name: CGOTG
+          units: mass remaining
+          varDesc: litter from open tussock patches incubated in a common garden
+          site: garden
+          litter: mixture2
+          position: decomposition bed
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V4:
+          name: CGCTG
+          units: mass remaining
+          varDesc: litter from closed tussock patches incubated in a common garden
+          site: garden
+          litter: mixture3
+          position: decomposition bed
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V5:
+          name: LL
+          units: mass remaining
+          varDesc: litter from lawn patches incubated in lawn patches
+          site: lawn
+          litter: mixture1
+          position: over lawn
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V6:
+          name: OTGL
+          units: mass remaining
+          varDesc: litter from open tussock patches incubated in open tussock patches
+          site: open tussock
+          litter: mixture2
+          position: next to grass
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V7:
+          name: CTGL
+          units: mass remaining
+          varDesc: litter from closed tussock patches incubated in closed tussock patches
+          site: closed tussock
+          litter: mixture3
+          position: next to grass
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V8:
+          name: LMp
+          units: mass remaining
+          varDesc: M. peruviana litter incubated in lawn patches
+          site: lawn
+          litter: Muhlenbergia peruviana
+          position: over lawn
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V9:
+          name: LPs
+          units: mass remaining
+          varDesc: P. stuckertii litter incubated in lawn patches
+          site: lawn
+          litter: Poa stuckertii
+          position: over lawn
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V10:
+          name: OTGMp
+          units: mass remaining
+          varDesc: M. peruviana litter incubated in open tussock patches
+          site: open tussock
+          litter: Muhlenbergia peruviana
+          position: next to grass
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V11:
+          name: OTGPs
+          units: mass remaining
+          varDesc: P. stuckertii litter incubated in open tussock patches
+          site: open tussock
+          litter: Poa stuckertii
+          position: next to grass
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V12:
+          name: CTGMp
+          units: mass remaining
+          varDesc: M. peruviana litter incubated in closed tussock patches
+          site: closed tussock
+          litter: Muhlenbergia peruviana
+          position: next to grass
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V13:
+          name: CTGPs
+          units: mass remaining
+          varDesc: P. stuckertii litter incubated in closed tussock patches
+          site: closed tussock
+          litter: Poa stuckertii
+          position: next to grass
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
