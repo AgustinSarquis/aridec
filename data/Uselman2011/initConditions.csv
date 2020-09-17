@@ -1,0 +1,4 @@
+species, type, N-fixer, material, amount, carbon, nitrogen, C:N, phosphorus, potassium, sodium, magnesium, manganese, copper, zinc, lead, calcium, sulfur, iron, lignin, cellulose, hemicellulose, cell solubles, SLA
+Tamarix chinensis1, deciduous, no, leaves, 3, 40.63, 1.26, 32, 0.048,,,,,,,, 2.24,,, 10.57, 12.26
+Tamarix chinensis2, deciduous, no, leaves, 3, 38.68, 2.23, 17, 0.142,,,,,,,, 2.01,,, 9.57, 12.36
+Lepidium latifolium, forb, no, leaves, 3, 36.96, 1.14, 32, 0.256,,,,,,,, 3.38,,, 11.29, 12.29

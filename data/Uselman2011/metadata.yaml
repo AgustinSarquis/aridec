@@ -1,227 +1,206 @@
-CitationKey: Uselman2011
-doi: 10.1016/j.soilbio.2011.02.016
-EntryAuthor: Agustín Sarquis
+citationKey: Uselman2011 # Unique identifier in the format: LastnameYear (lowercase letters must be added when there are two or more entries by the same author and year, i.e.: LastnameYearx)
+doi: 10.1016/j.soilbio.2011.02.016 # DOI of the publication where data is published
+entryAuthor: Agustin Sarquis # First and last name of the person who entered the data in this file
+entryCreationDate: 2019-01-22 # Date when the data was entered in this file. Format: YYYY-MM-DD
+contactName: Agustin Sarquis  # First and last name of contact person (may be the principal investigator supervising the entryAuthor)
+contactEmail: agusarquis@agro.uba.ar # Email of the contact person
+entryNote: # Any notes or comments related to this entry.
+study: Three leaf litter types differing in substrate quality were decomposed in the field and subjected to one of three light attenuation treatments
 
-SiteInfo:
-  Name: Great Basin Desert, Nevada, USA
-  EcosystemType: desert
-  MAP:
-    Value: 173
-    Units: mm
-  MAT:
-    Value: 13.5
-    Units: Celsius
-  RainySeason: winter
-  Altitude:
-    Value: 1175
-    Units: masl
-  SoilType: beach
-  Coordinates:
-    Latitude: 39.85
-    Longitude: -119.38
+siteInfo:
+        site: Great Basin # Names of individual sites, if one site, keep on this line, if multiple, use array format
+              # These fields should be arrays of equal length to site array
+        coordinates:
+          latitude: 39.85 # Latitude in decimal units (check for negative that denotes southern hemisphere)
+          longitude: -119.38 # Longitude in decimal units (check for negative that denotes western hemisphere)
+        country: USA # Name of country where site was conducted
+        MAT: 13.5 # Mean annual temperature in degrees Celsius
+        MAP: 173 # Mean annual precipitation in mm
+        rainySeason: winter # Period of the year during which most precipitation occurs, i.e.: whole year, spring, summer, autumn, winter (if more than one use array format)
+        elevation: 1175 # Elevation of study site in meters above sea level
+        landCover: desert # Land cover of the site. Valid fields are: greenbelt, (abbandoned) farmland, mangrove forest, subalpine, shrubland, urban, sandland, forest, steppe, desert, grassland, savanna
+        vegNote: invaded by Tamarix, which is currently the dominant tree, although remnant populations of Populus fremontii and Salix exigua continue to persist
+        cover:
+          plantCover: # Total plant cover percentage (if they report cover by specific plant types, fill the fields below)
+          bunchgrassCover:
+          shrubCover:
+          treeCover:
+          forbCover:
+          bareSoil:
+        soilTaxonomy:
+          soilOrder: beaches # Soil order according to the classification system described below
+          soilFamily: # Soil family description (ex. 'Eutric' for a Eutric Cambisol)
+          soilSeries: # Soil series according to the classification system described below
+          classificationSystem: USDA
 
-ExperimentInfo:
- LitterInfo:
-  LitterType1:
-   Species: Tamarix chinensis
-   LifeForm: tree
-   Material: recently senesced leaves
-   Nitrogen:
-     Value: 1.26
-     Units: percentage
-   Phosphorus:
-     Value: 0.048
-     Units: percentage
-   Carbon:
-     Value: 40.63
-     Units: percentage
-   C:N:
-     Value: 32
-   Calcium:
-     Value: 2.24
-     Units: percentage
-   Lignin:
-     Value: 10.57
-     Units: percentage
-   Cellulose:
-     Value: 12.26
-     Units: percentage
-   Lignin:N:
-     Value: 8.4
-   Amount:
-     Value: 3
-     Units: g
-  LitterType2:
-   Species: Tamarix chinensis
-   LifeForm: tree
-   Material: prematurely senesced leaves
-   Nitrogen:
-     Value: 2.23
-     Units: percentage
-   Phosphorus:
-     Value: 0.142
-     Units: percentage
-   Carbon:
-     Value: 38.68
-     Units: percentage
-   C:N:
-     Value: 17
-   Calcium:
-     Value: 2.01
-     Units: percentage
-   Lignin:
-     Value: 9.57
-     Units: percentage
-   Cellulose:
-     Value: 12.36
-     Units: percentage
-   Lignin:N:
-     Value: 4.3
-   Amount:
-     Value: 3
-     Units: g
-  LitterType3:
-   Species: Lepidium latifolium
-   LifeForm: forb
-   Material: recently senesced leaves
-   Nitrogen:
-     Value: 1.14
-     Units: percentage
-   Phosphorus:
-     Value: 0.256
-     Units: percentage
-   Carbon:
-     Value: 36.96
-     Units: percentage
-   C:N:
-     Value: 32
-   Calcium:
-     Value: 3.38
-     Units: percentage
-   Lignin:
-     Value: 11.29
-     Units: percentage
-   Cellulose:
-     Value: 12.29
-     Units: percentage
-   Lignin:N:
-     Value: 9.9
-   Amount:
-     Value: 3
-     Units: g
- Experiment1:
-    Description: "Three leaf litter types differing in substrate quality were decomposed in litterbags for one year in the field and subjected to one of three light attenuation treatments"
-    LitterBagInfo:
-      Material:
-        - white nylon
-        - nylon tent netting fabric
-      MeshSize:
-       Value: 1
-       Units: mm
-      Dimentions:
-       Width: 10
-       Lenght: 15
-       Units: cm
-      UVBTransmitance:
-        Value: 90
-        Units: percentage
-      Position:
-        - bare soil
-        - under plastic frames
-    FilterInfo:
-      FilterType1:
-        Name: Aclar
-        Wavelenght:
-          Value: 280
-          Units: nm
-        UVBTransmitance:
-          Value: 89
-          Units: percentage
-        UVATransmitance:
-          Value: 91
-          Units: percentage
-        PARTransmitance:
-          Value: 99
-          Units: percentage
-      FilterType2:
-        Name: Mylar
-        Wavelenght:
-          Value: 315
-          Units: nm
-        UVBTransmitance:
-          Value: 11
-          Units: percentage
-        UVATransmitance:
-          Value: 84
-          Units: percentage
-        PARTransmitance:
-          Value: 97
-          Units: percentage
-    Treatment:
-      - litter type
-      - filter type
-    StartingDate:
-      Month: january
-      Season: winter
-    Duration:
-      Time: 12
-      Units: months
+experimentInfo:
+        incDesc: 3 litter types x 3 radiation levels x 4 harvests x 8 replicates
+        # These fields should all be one dimensional arrays. Values for experimental variables with multiple treatment levels should be entered in the variables section and left blank here
+        replicates: 8 # Number of replicates per treatment
+        duration: 365 # length of incubation in days
+        startingMonth: january # month during which the study started, all in lower case
+        litter: # plant species used as litter material for the experiment. All details related to the species must be specified in the initConditions.csv file
+        litterbag:
+          material: nylon
+          meshSize: 1 # mesh size in mm referring to one side of the net-square
+          dimentions: # size of the full litter bag in cm
+            width: 10
+            length: 15
+            radius: # for round or cilindrical structures
+            height: # for 3-dimensional designs such as litter boxes in Austin2006NATURE
+          transmitance: # when reported, light transmitance of the mesh material as a percentage of full sunlight for each wavelength
+            total:
+            PAR:
+            UV:
+            UVA:
+            UVB: 90
+          position: # position of litterbags in the field, valid options are: bare soil, decomposition bed, under litter, over litter, over lawn, next to grass, under tree/shrub/grass, buried X cm deep, underwater, under rainout shelter, under frame, suspended X cm, under shadecloth
 
-Variables:
-  V1:
-    Name: Time
-    Units: days
-  V2:
-    Name: TraC_N
-    Units: mass remaining
-    Description: "Mass remaining over time for control Tamarix without plastic cover"
-    FilterType: None
-    LitterType: LitterType1
-  V3:
-    Name: TraC_A
-    Units: mass remaining
-    Description: "Mass remaining over time for control Tamarix under ambient UVB radiation"
-    FilterType: FilterType1
-    LitterType: LitterType1
-  V4:
-    Name: TraC_R
-    Units: mass remaining
-    Description: "Mass remaining over time for control Tamarix under reduced UVB radiation"
-    FilterType: FilterType2
-    LitterType: LitterType1
-  V5:
-    Name: TraB_N
-    Units: mass remaining
-    Description: "Mass remaining over time for beettle-affected Tamarix without plastic cover"
-    FilterType: None
-    LitterType: LitterType2
-  V6:
-    Name: TraB_A
-    Units: mass remaining
-    Description: "Mass remaining over time for beettle-affected Tamarix under ambient UVB radiation"
-    FilterType: FilterType1
-    LitterType: LitterType2
-  V7:
-    Name: TraB_R
-    Units: mass remaining
-    Description: "Mass remaining over time for beettle-affected Tamarix under reduced UVB radiation"
-    FilterType: FilterType2
-    LitterType: LitterType2
-  V8:
-    Name: Lla_N
-    Units: mass remaining
-    Description: "Mass remaining over time for L. latifolium without plastic cover"
-    FilterType: None
-    LitterType: LitterType3
-  V9:
-    Name: Lla_A
-    Units: mass remaining
-    Description: "Mass remaining over time for L. latifolium under ambient UVB radiation"
-    FilterType: FilterType1
-    LitterType: LitterType3
-  V10:
-    Name: Lla_R
-    Units: mass remaining
-    Description: "Mass remaining over time for L. latifolium under reduced UVB radiation"
-    FilterType: FilterType2
-    LitterType: LitterType3
+variables: # These describe the columns of your timeSeries.csv file
+        V1: # column 1
+          name: Time
+          units: days
+        V2:
+          name: TraC_N
+          units: mass remaining
+          varDesc: control Tamarix litter without plastic filter
+          site: Great Basin
+          litter: Tamarix chinensis1
+          position: bare soil
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter:
+           threshold:
+           transmitance:
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V3:
+          name: TraC_A
+          units: mass remaining
+          varDesc: control Tamarix litter under UVB-pass plastic filter
+          site: Great Basin
+          litter: Tamarix chinensis1
+          position: under frame
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter:
+           threshold: 0
+           transmitance:
+             total:
+             PAR: 99
+             UV:
+             UVA: 91
+             UVB: 89
+        V4:
+          name: TraC_R
+          units: mass remaining
+          varDesc: control Tamarix litter under UVB-block plastic filter
+          site: Great Basin
+          litter: Tamarix chinensis1
+          position: under frame
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter:
+           threshold: 315
+           transmitance:
+             total:
+             PAR: 97
+             UV:
+             UVA: 84
+             UVB: 11
+        V5:
+          name: TraB_N
+          units: mass remaining
+          varDesc: beettle-affected Tamarix litter without plastic filter
+          site: Great Basin
+          litter: Tamarix chinensis2
+          position: bare soil
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter:
+           threshold:
+           transmitance:
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V6:
+          name: TraB_A
+          units: mass remaining
+          varDesc: beettle-affected Tamarix litter under UVB-pass plastic filter
+          site: Great Basin
+          litter: Tamarix chinensis2
+          position: under frame
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter:
+           threshold: 0
+           transmitance:
+             total:
+             PAR: 99
+             UV:
+             UVA: 91
+             UVB: 89
+        V7:
+          name: TraB_R
+          units: mass remaining
+          varDesc: beettle-affected Tamarix litter under UVB-block plastic filter
+          site: Great Basin
+          litter: Tamarix chinensis2
+          position: under frame
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter:
+           threshold: 315
+           transmitance:
+             total:
+             PAR: 97
+             UV:
+             UVA: 84
+             UVB: 11
+        V8:
+          name: Lla_N
+          units: mass remaining
+          varDesc: L. latifolium litter without plastic filter
+          site: Great Basin
+          litter: Lepidium latifolium
+          position: bare soil
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter:
+           threshold:
+           transmitance:
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V9:
+          name: Lla_A
+          units: mass remaining
+          varDesc: L. latifolium litter under UVB-pass plastic filter
+          site: Great Basin
+          litter: Lepidium latifolium
+          position: under frame
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter:
+           threshold: 0
+           transmitance:
+             total:
+             PAR: 99
+             UV:
+             UVA: 91
+             UVB: 89
+        V10:
+          name: Lla_R
+          units: mass remaining
+          varDesc: L. latifolium litter under UVB-block plastic filter
+          site: Great Basin
+          litter: Lepidium latifolium
+          position: under frame
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter:
+           threshold: 315
+           transmitance:
+             total:
+             PAR: 97
+             UV:
+             UVA: 84
+             UVB: 11
