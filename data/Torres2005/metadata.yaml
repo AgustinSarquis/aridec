@@ -1,78 +1,77 @@
-CitationKey: Torres2008
-doi: 10.1016/j.soilbio.2004.04.042
-EntryAuthor: Agustín Sarquis
+citationKey: Torres2008 # Unique identifier in the format: LastnameYear (lowercase letters must be added when there are two or more entries by the same author and year, i.e.: LastnameYearx)
+doi: 10.1016/j.soilbio.2004.04.042 # DOI of the publication where data is published
+entryAuthor: Agustín Sarquis # First and last name of the person who entered the data in this file
+entryCreationDate: 2019-01-21 # Date when the data was entered in this file. Format: YYYY-MM-DD
+contactName: Agustín Sarquis # First and last name of contact person (may be the principal investigator supervising the entryAuthor)
+contactEmail: agusarquis@agro.uba.ar # Email of the contact person
+entryNote: rainy seasons are spring and summer. Elevation from Google Earth. Soils are Mollic Ustifluvents (classification system unspecified)
+study: They placed 200 g of freshly shed litter in metallic cages for 1 year
 
-SiteInfo:
-  Name: Chancaní Provincial Reserve, Córdoba, Argentina
-  EcosystemType: woodland
-  MAP:
-    Value: 450
-    Units: mm
-  MAT:
-    Value: 17
-    Units: Celsius
-  RainySeason:
-  - spring
-  - summer
-  SoilType: Mollic Ustifluvent
-  Coordinates:
-    Latitude: -31.4
-    Longitude: -65.55
+siteInfo:
+        site: Chancani # Names of individual sites, if one site, keep on this line, if multiple, use array format
+              # These fields should be arrays of equal length to site array
+        coordinates:
+          latitude: -31.4 # Latitude in decimal units (check for negative that denotes southern hemisphere)
+          longitude: -65.55 # Longitude in decimal units (check for negative that denotes western hemisphere)
+        country: Argentina # Name of country where site was conducted
+        MAT: 17 # Mean annual temperature in degrees Celsius
+        MAP: 450 # Mean annual precipitation in mm
+        rainySeason: # Period of the year during which most precipitation occurs, i.e.: whole year, spring, summer, autumn, winter (if more than one use array format)
+        elevation: 310 # Elevation of study site in meters above sea level
+        landCover: forest
+        vegNote: Dominant tree species include A. quebracho-blanco and P. flexuosa. The shrub layer is dominated by species of Larrea, Celtis, Mimozyganthus,and Acacia, with intermingled grasses and herbs
+        cover:
+          plantCover: # Total plant cover percentage (if they report cover by specific plant types, fill the fields below)
+          bunchgrassCover:
+          shrubCover:
+          treeCover:
+          forbCover:
+          bareSoil:
+        soilTaxonomy:
+          soilOrder: # Soil order according to the classification system described below
+          soilFamily: # Soil family description (ex. 'Eutric' for a Eutric Cambisol)
+          soilSeries: # Soil series according to the classification system described below
+          classificationSystem: # Name of classification system used. Valid fields are: USDA, FAO, and WRB.
 
-ExperimentInfo:
- LitterInfo:
-  LitterType1:
-   Species:
-    - Aspidosperma quebracho-blanco
-    - Ziziphus mistol
-    - Celtis sp.
-    - Mimozyganthus carinatus
-    - Geoffroea decorticans
-    - Prosopis sp.
-    - Vachellia sp.
-   LifeForm:
-    - tree
-    - shrub
-   Material: recently senesced leaves
-   Carbon:
-     Value: 61.1
-     Units: percentage
-   Nitrogen:
-     Value: 1.52
-     Units: percentage
-   SolublePhenols:
-     Value: 2.48
-     Units: percentage
-   LigninCelulose:
-     Value: 44.7
-     Units: percentage
-   Amount:
-     Value: 200
-     Units: g
- Experiment1:
-    Description: "They placed 200 g of freshly shed litter in metallic cages for 1 year"
-    LitterBagInfo:
-      MeshSize:
-       Value: 10
-       Units: mm
-      Dimentions:
-       Width: 50
-       Lenght: 50
-       Height: 10
-       Units: cm
-    StartingDate:
-      Month: july
-      Season: winter
-    Duration:
-      Time: 12
-      Units: months
+experimentInfo:
+        incDesc: 4 harvests x 10 replicates
+        # These fields should all be one dimensional arrays. Values for experimental variables with multiple treatment levels should be entered in the variables section and left blank here
+        replicates: 10 # Number of replicates per treatment
+        duration: 365
+        startingMonth: july
+        litter: mixture # plant species used as litter material for the experiment. All details related to the species must be specified in the initConditions.csv file
+        litterbag:
+          material: # mesh type used to construct the litter bags, options are: wire, aluminum, window screening, net curtain, bolting cloth, plastic, fiberglass, nylon, polypropylene, polyester, polyethylene, polyamide
+          meshSize: 10 # mesh size in mm referring to one side of the net-square
+          dimentions: # size of the full litter bag in cm
+            width: 50
+            length: 50
+            radius: # for round or cilindrical structures
+            height: 10 # for 3-dimensional designs such as litter boxes in Austin2006NATURE
+          transmitance: # when reported, light transmitance of the mesh material as a percentage of full sunlight for each wavelength
+            total:
+            PAR:
+            UV:
+            UVA:
+            UVB:
+          position: bare soil
 
-Variables:
-  V1:
-    Name: Time
-    Units: months
-  V2:
-    Name: ML
-    Units: mass remaining
-    Description: "Seasonal litter mass loss for leaf litter from a mixture of woody species"
-    LitterType: LitterType1
+variables: # These describe the columns of your timeSeries.csv file
+        V1: # column 1
+          name: Time
+          units: months
+        V2: # column 2
+          name: ML
+          units: mass remaining
+          varDesc: Mixture of woody species decomposed in a Chacho forest (Aspidosperma quebracho-blanco, Ziziphus mistol, Celtis sp., Mimozyganthus carinatus, Geoffroea decorticans, Prosopis sp. and Acacia sp.)
+          site: Chancani
+          experimentalTreatment: # 'experimentalTreatment' here is a place holder for treatments with multiple levels. Replace this word by any of the listed variables in incubationInfo above (startingMonth, duration, litter, litterbag, meshSize) and type treatment value (level) after colon. Note that units should be specified in the incubationInfo field above.
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
