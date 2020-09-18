@@ -1,100 +1,122 @@
-CitationKey: Zheng2010
-EntryAuthor: Agustín Sarquis
+citationKey: Zheng2010 # Unique identifier in the format: LastnameYear (lowercase letters must be added when there are two or more entries by the same author and year, i.e.: LastnameYearx)
+doi: # DOI of the publication where data is published
+entryAuthor: Agustin Sarquis # First and last name of the person who entered the data in this file
+entryCreationDate: 2020-02-17 # Date when the data was entered in this file. Format: YYYY-MM-DD
+contactName:  Agustin Sarquis # First and last name of contact person (may be the principal investigator supervising the entryAuthor)
+contactEmail: agusarquis@agro.uba.ar # Email of the contact person
+entryNote: # Any notes or comments related to this entry.
+study: inoculation of three kinds of microbial agents on leaf litter of a mixture of species from a protective greenbelt
 
-SiteInfo:
-  Name: Karamay, Xinjiang, China
-  EcosystemType: greenbelt
-  MAP:
-    Value: 101.7
-    Units: mm
-  MAT:
-    Value: 8
-    Units: Celsius
-  RainySeason: summer
-  Altitude:
-    Value: 280
-    Units: masl
-  SoilTexture: coarse
-  Coordinates:
-    Latitude: 45.608
-    Longitude: 84.834
+siteInfo:
+        site: Karamay # Names of individual sites, if one site, keep on this line, if multiple, use array format
+              # These fields should be arrays of equal length to site array
+        coordinates:
+          latitude: 45.608 # Latitude in decimal units (check for negative that denotes southern hemisphere)
+          longitude: 84.834 # Longitude in decimal units (check for negative that denotes western hemisphere)
+        country: China # Name of country where site was conducted
+        MAT: 8 # Mean annual temperature in degrees Celsius
+        MAP: 101.7 # Mean annual precipitation in mm
+        rainySeason: summer # Period of the year during which most precipitation occurs, i.e.: whole year, spring, summer, autumn, winter (if more than one use array format)
+        elevation: 280 # Elevation of study site in meters above sea level
+        landCover: forest
+        vegNote: protective greenbelt of P. alba, P. euphratica, A. fruticosa, E. oxycarpa and U. pumila
+        cover:
+          plantCover: # Total plant cover percentage (if they report cover by specific plant types, fill the fields below)
+          bunchgrassCover:
+          shrubCover:
+          treeCover:
+          forbCover:
+          bareSoil:
+        soilTaxonomy:
+          soilOrder: # Soil order according to the classification system described below
+          soilFamily: # Soil family description (ex. 'Eutric' for a Eutric Cambisol)
+          soilSeries: # Soil series according to the classification system described below
+          classificationSystem: # Name of classification system used. Valid fields are: USDA, FAO, and WRB.
 
-ExperimentInfo:
- LitterInfo:
-  LitterType1:
-   Species:
-     - Populus alba var. pyramidalis
-     - Populus euphratica
-     - Amorpha fruticosa
-     - Elaeagnus oxycarpa
-     - Ulmus pumila
-   LifeForm:
-     - tree
-     - tree
-     - shrub
-     - tree
-     - tree
-   Material: recently senesced aboveground parts
-   Carbon:
-     Value: 43.239
-     Units: percentage
-   Nitrogen:
-     Value: 0.504
-     Units: percentage
-   Phosphorus:
-     Value: 0.242
-     Units: percentage
-   Potassium:
-     Value: 0.846
-     Units: percentage
-   Magnesium:
-     Value: 0.641
-     Units: percentage
-   Calcium:
-     Value: 3.793
-     Units: percentage
-   C:N:
-     Value: 85.792
-   Amount:
-     Value: 10
-     Units: g
- Experiment1:
-  Description: "They did a composting experiment with the inoculation of three kinds of microbial agents on leaf litter of a mixture of species from a protective greenbelt"
-  LitterBagInfo:
-   Material: nylon
-   MeshSize:
-    Value: 1
-    Units: mm
-   Dimentions:
-    Width: 12
-    Lenght: 20
-    Units: cm
-   Position: decomposition bed
-  Treatment:  microbial inoculum
-  StartingDate:
-   Month: november
-   Season: autumn
-  Duration:
-   Time: 6.6
-   Units: months
+experimentInfo:
+        incDesc: 4 levels of microbial inoculation x 5 harvests x 6 replicates
+        # These fields should all be one dimensional arrays. Values for experimental variables with multiple treatment levels should be entered in the variables section and left blank here
+        replicates: 6 # Number of replicates per treatment
+        duration: 198 # length of incubation in days
+        startingMonth: november # month during which the study started, all in lower case
+        litter: mixture # plant species used as litter material for the experiment. All details related to the species must be specified in the initConditions.csv file
+        litterbag:
+          material: nylon # mesh type used to construct the litter bags, options are: wire, aluminum, window screening, net curtain, bolting cloth, plastic, fiberglass, nylon, polypropylene, polyester, polyethylene, polyamide
+          meshSize: 1 # mesh size in mm referring to one side of the net-square
+          dimentions: # size of the full litter bag in cm
+            width: 12
+            length: 20
+            radius: # for round or cilindrical structures
+            height: # for 3-dimensional designs such as litter boxes in Austin2006NATURE
+          transmitance: # when reported, light transmitance of the mesh material as a percentage of full sunlight for each wavelength
+            total:
+            PAR:
+            UV:
+            UVA:
+            UVB:
+          position: decomposition bed
 
-Variables:
-  V1:
-    Name: Time
-    Units: days
-  V2:
-    Name: CK
-    Units: mass remaining
-    Description: "Mass remaining of species mixture from protective greenbelt without microbial inoculum (control)"
-  V3:
-    Name: QZ
-    Units: mass remaining
-    Description: "Mass remaining of species mixture from protective greenbelt with soilage microbial inoculum"
-  V4:
-    Name: QZ
-    Units: mass remaining
-    Description: "Mass remaining of species mixture from protective greenbelt with straw microbial inoculum"
-  V5:
-    Name: QZ
-    Units: mass remaining
-    Description: "Mass remaining of species mixture from protective greenbelt with a decomposition synergist microbial inoculum"
+variables: # These describe the columns of your timeSeries.csv file
+        V1: # column 1
+          name: Time
+          units: days
+        V2:
+          name: CK
+          units: mass remaining
+          varDesc: Litter from P. alba, P. euphratica, A. fruticosa, E. oxycarpa and U. pumila with control treatment
+          site: Karamay
+          experimentalTreatment: # 'experimentalTreatment' here is a place holder for treatments with multiple levels. Replace this word by any of the listed variables in incubationInfo above (startingMonth, duration, litter, litterbag, meshSize) and type treatment value (level) after colon. Note that units should be specified in the incubationInfo field above.
+          compTreat: control
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V3:
+          name: QZ
+          units: mass remaining
+          varDesc: Litter from P. alba, P. euphratica, A. fruticosa, E. oxycarpa and U. pumila with soilage microbial inoculum
+          site: Karamay
+          experimentalTreatment: # 'experimentalTreatment' here is a place holder for treatments with multiple levels. Replace this word by any of the listed variables in incubationInfo above (startingMonth, duration, litter, litterbag, meshSize) and type treatment value (level) after colon. Note that units should be specified in the incubationInfo field above.
+          compTreat: microbial inoculum
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V4:
+          name: JG
+          units: mass remaining
+          varDesc: Litter from P. alba, P. euphratica, A. fruticosa, E. oxycarpa and U. pumila with straw microbial inoculum
+          site: Karamay
+          experimentalTreatment: # 'experimentalTreatment' here is a place holder for treatments with multiple levels. Replace this word by any of the listed variables in incubationInfo above (startingMonth, duration, litter, litterbag, meshSize) and type treatment value (level) after colon. Note that units should be specified in the incubationInfo field above.
+          compTreat: microbial inoculum
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V5:
+          name: SF
+          units: mass remaining
+          varDesc: Litter from P. alba, P. euphratica, A. fruticosa, E. oxycarpa and U. pumila with decomposition synergist microbial inoculum
+          site: Karamay
+          experimentalTreatment: # 'experimentalTreatment' here is a place holder for treatments with multiple levels. Replace this word by any of the listed variables in incubationInfo above (startingMonth, duration, litter, litterbag, meshSize) and type treatment value (level) after colon. Note that units should be specified in the incubationInfo field above.
+          compTreat: microbial inoculum
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
