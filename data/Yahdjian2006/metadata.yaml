@@ -1,101 +1,122 @@
-CitationKey: Yahdjian2006
-doi: 10.1007/s10021-004-0118-7
-EntryAuthor: Agustín Sarquis
+citationKey: Yahdjian2006 # Unique identifier in the format: LastnameYear (lowercase letters must be added when there are two or more entries by the same author and year, i.e.: LastnameYearx)
+doi: 10.1007/s10021-004-0118-7 # DOI of the publication where data is published
+entryAuthor: Agustin Sarquis # First and last name of the person who entered the data in this file
+entryCreationDate: 2019-01-17 # Date when the data was entered in this file. Format: YYYY-MM-DD
+contactName: Agustin Sarquis # First and last name of contact person (may be the principal investigator supervising the entryAuthor)
+contactEmail: agusarquis@agro.uba.ar  # Email of the contact person
+entryNote: autumn and winter are the rainy seasons
+study: litter decomposition under four levels of precipitation input, control and three levels (30, 55 and 80%) of precipitation interception
 
-SiteInfo:
-  Name: Río Mayo, Chubut, Argentina
-  EcosystemType: steppe
-  MAP:
-    Value: 168
-    Units: mm
-  MAT:
-    Value: 8
-    Units: Celsius
-  RainySeason:
-   - autumn
-   - winter
-  Altitude:
-    Value: 500
-    Units: masl
-  SoilType: Aridisol
-  SoilTexture: coarse
-  Cover:
-    BunchgrassCover: 32
-    ShrubCover: 15
-    BareSoil: 53
-    Units: percentage
-  ANPP:
-    Value: 56
-    Units: g.m-2.y-1
-  Coordinates:
-    Latitude: -45.683333
-    Longitude: -70.266667
+siteInfo:
+        site: Rio Mayo # Names of individual sites, if one site, keep on this line, if multiple, use array format
+              # These fields should be arrays of equal length to site array
+        coordinates:
+          latitude: -45.683333 # Latitude in decimal units (check for negative that denotes southern hemisphere)
+          longitude: -70.266667 # Longitude in decimal units (check for negative that denotes western hemisphere)
+        country: Argentina # Name of country where site was conducted
+        MAT: 8 # Mean annual temperature in degrees Celsius
+        MAP: 168 # Mean annual precipitation in mm
+        rainySeason: # Period of the year during which most precipitation occurs, i.e.: whole year, spring, summer, autumn, winter (if more than one use array format)
+        elevation: 500 # Elevation of study site in meters above sea level
+        landCover: steppe # Land cover of the site. Valid fields are: greenbelt, (abbandoned) farmland, mangrove forest, subalpine, shrubland, urban, sandland, forest, steppe, desert, grassland, savanna
+        vegNote: Tussock grasses are represented principally by Pappostipa speciosa, S. humilis, and Poa ligularis. The dominant shrubs are Mulinum spinosum, Adesmia campestris, and Senecio filaginoides
+        cover:
+          plantCover: # Total plant cover percentage (if they report cover by specific plant types, fill the fields below)
+          bunchgrassCover: 32
+          shrubCover: 15
+          treeCover:
+          forbCover:
+          bareSoil: 53
+        soilTaxonomy:
+          soilOrder: # Soil order according to the classification system described below
+          soilFamily: # Soil family description (ex. 'Eutric' for a Eutric Cambisol)
+          soilSeries: # Soil series according to the classification system described below
+          classificationSystem: # Name of classification system used. Valid fields are: USDA, FAO, and WRB.
 
-ExperimentInfo:
- LitterInfo:
-  LitterType1:
-   Species: Pappostipa speciosa
-   LifeForm: graminoid
-   Material: recently senesced leaves
-   Amount:
-     Value: 1
-     Units: g
- Experiment1:
-    Description: "They created four levels of precipitation input: control and three levels (30, 55 and 80%) of precipitation interception and they examined litter decomposition of a dominant grass species, Pappostipa speciosa, over two consecutive years."
-    LitterBagInfo:
-      Material: fiberglass
-      MeshSize:
-       Value: 2
-       Units: mm
-      Dimentions:
-       Width: 10
-       Lenght: 10
-       Units: cm
-      Position:
-        -bare soil
-        -under shrub
-        -under rainout shelter
-    Treatment: rainfall interception
-    StartingDate:
-      Month: october
-      Season: spring
-    Duration:
-      Time: 20
-      Units: months
+experimentInfo:
+        incDesc: 4 levels of rainfall x 4 harvests x 10 replicates
+        # These fields should all be one dimensional arrays. Values for experimental variables with multiple treatment levels should be entered in the variables section and left blank here
+        replicates: 10 # Number of replicates per treatment
+        duration: 600 # length of incubation in days
+        startingMonth: october # month during which the study started, all in lower case
+        litter: Pappostipa speciosa # plant species used as litter material for the experiment. All details related to the species must be specified in the initConditions.csv file
+        litterbag:
+          material: fiberglass # mesh type used to construct the litter bags, options are: wire, aluminum, window screening, net curtain, bolting cloth, plastic, fiberglass, nylon, polypropylene, polyester, polyethylene, polyamide
+          meshSize: 2 # mesh size in mm referring to one side of the net-square
+          dimentions: # size of the full litter bag in cm
+            width: 10
+            length: 10
+            radius: # for round or cilindrical structures
+            height: # for 3-dimensional designs such as litter boxes in Austin2006NATURE
+          transmitance: # when reported, light transmitance of the mesh material as a percentage of full sunlight for each wavelength
+            total:
+            PAR:
+            UV:
+            UVA:
+            UVB:
+          position: # position of litterbags in the field, valid options are: bare soil, decomposition bed, under litter, over litter, over lawn, next to grass, under tree/shrub/grass, buried X cm deep, underwater, under rainout shelter, under frame, suspended X cm, under shadecloth
 
-Variables:
-  V1:
-    Name: Time
-    Units: months
-  V2:
-    Name: Ctrl
-    Units: Organic matter remaining
-    Description: "Mass loss through time of leaf litter of the grass Pappostipa speciosa without any rainfall interception treatment"
-    LitterType: LitterType1
-    RainfallInterception:
-      Value: 0
-      Units: percentage
-  V3:
-    Name: RI_30
-    Units: Organic matter remaining
-    Description: "Mass loss through time of leaf litter of the grass Pappostipa speciosa for the 30% rainfall interception treatment"
-    LitterType: LitterType1
-    RainfallInterception:
-      Value: 30
-      Units: percentage
-  V4:
-    Name: RI_55
-    Units: Organic matter remaining
-    Description: "Mass loss through time of leaf litter of the grass Pappostipa speciosa for the 55% rainfall interception treatment"
-    LitterType: LitterType1
-    RainfallInterception:
-      Value: 55
-      Units: percentage
-  V5:
-    Name: RI_80
-    Units: Organic matter remaining
-    Description: "Mass loss through time of leaf litter of the grass Pappostipa speciosa for the 80% rainfall interception treatment"
-    LitterType: LitterType1
-    RainfallInterception:
-      Value: 80
-      Units: percentage
+variables: # These describe the columns of your timeSeries.csv file
+        V1: # column 1
+          name: Time
+          units: months
+        V2:
+          name: Ctrl
+          units: organic matter remaining
+          varDesc: control P. speciosa litter
+          site: Rio Mayo
+          position: under shrub
+          compTreat: control
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V3:
+          name: RI_30
+          units: organic matter remaining
+          varDesc: P. speciosa litter under rainout shelter with a 30% reduction in rainfall
+          site: Rio Mayo
+          position: under rainout shelter
+          compTreat: rainfall interception
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V4:
+          name: RI_55
+          units: organic matter remaining
+          varDesc: P. speciosa litter under rainout shelter with a 55% reduction in rainfall
+          site: Rio Mayo
+          position: under rainout shelter
+          compTreat: rainfall interception
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V5:
+          name: RI_80
+          units: organic matter remaining
+          varDesc: P. speciosa litter under rainout shelter with a 80% reduction in rainfall
+          site: Rio Mayo
+          position: under rainout shelter
+          compTreat: rainfall interception
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
