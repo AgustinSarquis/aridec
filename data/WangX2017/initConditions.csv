@@ -1,0 +1,4 @@
+species, type, N-fixer, material, amount, carbon, nitrogen, C:N, phosphorus, potassium, sodium, magnesium, manganese, copper, zinc, lead, calcium, sulfur, iron, lignin, cellulose, hemicellulose, cell solubles, SLA
+Agropyron cristatum, graminoid, no, leaves, 15, 44.473, 0.629, 70.98, 0.029, 0.27,, 0.042,,,,, 0.232
+Stipa krylovii, graminoid, no, leaves, 15, 45.014, 0.889, 50.91, 0.033, 0.306,, 0.059,,,,, 0.256
+Artemisia frigida, forb, no, leaves, 15, 46.087, 0.878, 52.72, 0.09, 0.846,, 0.099,,,,, 0.42
