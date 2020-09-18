@@ -1,84 +1,92 @@
-CitationKey: Wang2017b
-doi: 10.1111/1365-2435.12854
-EntryAuthor: Agustín Sarquis
+citationKey: Wang2017b # Unique identifier in the format: LastnameYear (lowercase letters must be added when there are two or more entries by the same author and year, i.e.: LastnameYearx)
+doi: 10.1111/1365-2435.12854 # DOI of the publication where data is published
+entryAuthor: Agustin Sarquis # First and last name of the person who entered the data in this file
+entryCreationDate: 2019-05-28 # Date when the data was entered in this file. Format: YYYY-MM-DD
+contactName: Agustin Sarquis # First and last name of contact person (may be the principal investigator supervising the entryAuthor)
+contactEmail: agusarquis@agro.uba.ar # Email of the contact person
+entryNote: spring and summer are the rainy seasons
+study: simulation of standing litter and soil surface litter decomposition
 
-SiteInfo:
-  Name: Duolun, Inner Mongolia, China
-  EcosystemType: steppe
-  MAP:
-    Value: 378
-    Units: mm
-  MAT:
-    Value: 2.1
-    Units: Celsius
-  RainySeason:
-   - spring
-   - summer
-  Altitude:
-    Value: 1324
-    Units: masl
-  SoilType: Haplic Calcisols
-  Coordinates:
-    Latitude: 42.03
-    Longitude: 116.283
+siteInfo:
+        site: Duolun # Names of individual sites, if one site, keep on this line, if multiple, use array format
+              # These fields should be arrays of equal length to site array
+        coordinates:
+          latitude: 42.03 # Latitude in decimal units (check for negative that denotes southern hemisphere)
+          longitude: 116.283 # Longitude in decimal units (check for negative that denotes western hemisphere)
+        country: China # Name of country where site was conducted
+        MAT: 2.1 # Mean annual temperature in degrees Celsius
+        MAP: 378 # Mean annual precipitation in mm
+        rainySeason: # Period of the year during which most precipitation occurs, i.e.: whole year, spring, summer, autumn, winter (if more than one use array format)
+        elevation: 1324 # Elevation of study site in meters above sea level
+        landCover: steppe # Land cover of the site. Valid fields are: greenbelt, (abbandoned) farmland, mangrove forest, subalpine, shrubland, urban, sandland, forest, steppe, desert, grassland, savanna
+        vegNote: The dominant vegetation consists of perennial herbs such as Stipa krylovii, Agropyron cristatum and Cleistogenes squarrosa
+        cover:
+          plantCover: # Total plant cover percentage (if they report cover by specific plant types, fill the fields below)
+          bunchgrassCover:
+          shrubCover:
+          treeCover:
+          forbCover:
+          bareSoil:
+        soilTaxonomy:
+          soilOrder: Calcisols # Soil order according to the classification system described below
+          soilFamily: Haplic # Soil family description (ex. 'Eutric' for a Eutric Cambisol)
+          soilSeries: # Soil series according to the classification system described below
+          classificationSystem: FAO
 
-ExperimentInfo:
- LitterInfo:
-  LitterType1:
-   Species: Kengia squarrosa
-   LifeForm: graminoid
-   Material: recently senesced leaves
-   DOC:
-     Value: 12.44
-     Units: mg.g-1
-   Nitrogen:
-     Value: 0.64
-     Units: percentage
-   C:N:
-     Value: 65.8
-   Carbon:
-     Value: 42.11
-     Units: percentage
-   Amount:
-     Value: 2
-     Units: g
- Experiment1:
-    Description: "An in situ litter decomposition experiment simulating standing lit- ter and soil surface litter was conducted in Inner Mongolia, China."
-    LitterBagInfo:
-      Material: nylon
-      MeshSize:
-       Value: 1.22
-       Units: mm
-      Dimentions:
-       Width: 10
-       Lenght: 15
-       Units: cm
-      Position:
-        Position1:
-          - under frames
-          - suspended 10 cm
-        Position2:
-          - under frames
-          - bare soil
-    Treatment: position
-    StartingDate:
-      Month: may
-      Season: spring
-    Duration:
-      Time: 26
-      Units: months
+experimentInfo:
+        incDesc: 2 positions x 11 harvests x 3 replicates
+        # These fields should all be one dimensional arrays. Values for experimental variables with multiple treatment levels should be entered in the variables section and left blank here
+        replicates: 3 # Number of replicates per treatment
+        duration: 787 # length of incubation in days
+        startingMonth: may # month during which the study started, all in lower case
+        litter: Cleistogenes squarrosa # plant species used as litter material for the experiment. All details related to the species must be specified in the initConditions.csv file
+        litterbag:
+          material: nylon # mesh type used to construct the litter bags, options are: wire, aluminum, window screening, net curtain, bolting cloth, plastic, fiberglass, nylon, polypropylene, polyester, polyethylene, polyamide
+          meshSize: 1.22 # mesh size in mm referring to one side of the net-square
+          dimentions: # size of the full litter bag in cm
+            width: 10
+            length: 15
+            radius: # for round or cilindrical structures
+            height: # for 3-dimensional designs such as litter boxes in Austin2006NATURE
+          transmitance: # when reported, light transmitance of the mesh material as a percentage of full sunlight for each wavelength
+            total:
+            PAR:
+            UV: 95
+            UVA:
+            UVB:
+          position: # position of litterbags in the field, valid options are: bare soil, decomposition bed, under litter, over litter, over lawn, next to grass, under tree/shrub/grass, buried X cm deep, underwater, under rainout shelter, under frame, suspended X cm, under shadecloth
 
-Variables:
-  V1:
-    Name: Time
-    Units: days
-  V2:
-    Name: Standing
-    Units: mass remaining
-    Description: "K. squarrosa leaf litter was incubated suspended 10 cm for 787 days"
-    Position: Position1
-  V3:
-    Name: Surface
-    Units: mass remaining
-    Description: "K. squarrosa leaf litter was incubated on the soil surface for 787 days"
-    Position: Position2
+variables: # These describe the columns of your timeSeries.csv file
+        V1: # column 1
+          name: Time
+          units: days
+        V2:
+          name: Standing
+          units: mass remaining
+          varDesc: C. squarrosa leaf litter was incubated suspended 10 cm for 787 days
+          site: Duolun
+          position: suspended 10 cm
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V3:
+          name: Surface
+          units: mass remaining
+          varDesc: C. squarrosa leaf litter was incubated on the soil surface for 787 days
+          site: Duolun
+          position: bare soil
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
