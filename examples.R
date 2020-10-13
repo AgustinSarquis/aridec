@@ -10,17 +10,18 @@ length(aridec)
 aridec[[1]]
 
 # How can I see entries by name?
-aridec[["Austin2006"]]
+aridec[["Austin2006a"]]
+readEntry("~/aridec/data/", "Austin2006a") # another way 
 
 # List all entry names
 names(aridec)
 
 # How can I see the time-series data only?
-aridec[[1]]$data
+aridec[[1]]$timeSeries
 
 # How can I see the nested variables, e.g. latitude?
-aridec[[1]]$SiteInfo$Coordinates$Latitude
+aridec[[1]]$siteInfo$coordinates$latitude
 
 # Plot data from one entry
 # It runs out of colors and it shows only the first few references when there are too many variables.
-plotEntry(entry=aridec[["Poca2014"]])
+plotEntry(entry=aridec[["Austin2006a"]])
