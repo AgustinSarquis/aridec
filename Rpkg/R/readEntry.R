@@ -13,6 +13,7 @@ readEntry <- function(path="~/aridec/data/", entryName) {
     csv=read.csv(file=paste(path,entryName,"/timeSeries.csv",sep=""))
     entry[["timeSeries"]]<-csv
     init=read.csv(file=paste(path,entryName,"/initConditions.csv",sep=""))
+    entry[["initConditions"]]<-init
     assign(entryName, entry)
 
     return(entry)
