@@ -1,0 +1,104 @@
+citationKey: Campos2017
+doi: 10.1007/s11104-017-3221-1
+entryAuthor: Agustin Sarquis
+entryCreationDate: 2020-11-03
+contactName: Agustin Sarquis
+contactEmail: agusarquis@agro.uba.ar
+entryNote: data are averaged for litter from three precipitation treatments. They used a double layer of 1.5 mm mesh for bags
+study: decomposition of sagebrush leaf litter under precipitation treatments that consisted of a doubling of +200 mm added either in the cold-dormant season or in the growing season
+
+siteInfo:
+        site: Snake River Plain
+              # These fields should be arrays of equal length to site array
+        coordinates:
+          latitude: 43 # Latitude in decimal units (check for negative that denotes southern hemisphere)
+          longitude: -112 # Longitude in decimal units (check for negative that denotes western hemisphere)
+        country: USA # Name of country where site was conducted
+        MAT: 5.5 # Mean annual temperature in degrees Celsius
+        MAP: 220 # Mean annual precipitation in mm
+        rainySeason: # Period of the year during which most precipitation occurs, i.e.: whole year, spring, summer, autumn, winter (if more than one use array format)
+        elevation: 1500 # Elevation of study site in meters above sea level
+        landCover: steppe
+        vegNote: dominated by sagebrush and crested wheatgrass
+        cover:
+          plantCover: # Total plant cover percentage (if they report cover by specific plant types, fill the fields below)
+          bunchgrassCover:
+          shrubCover:
+          treeCover:
+          forbCover:
+          bareSoil:
+        soilTaxonomy:
+          soilOrder: # Soil order according to the classification system described below
+          soilFamily: # Soil family description (ex. 'Eutric' for a Eutric Cambisol)
+          soilSeries: # Soil series according to the classification system described below
+          classificationSystem: # Name of classification system used. Valid fields are: USDA, FAO, and WRB.
+
+experimentInfo:
+        incDesc: 3 precipitation levels x 4 harvests x 3 replicates
+        # These fields should all be one dimensional arrays. Values for experimental variables with multiple treatment levels should be entered in the variables section and left blank here
+        replicates: 3
+        duration: 371
+        startingMonth: february
+        litter: Artemisia tridentata
+        litterbag:
+          material: fiberglass
+          meshSize: # mesh size in mm referring to one side of the net-square
+          dimentions: # size of the full litter bag in cm
+            width: 7
+            length: 7
+            radius: # for round or cilindrical structures
+            height: # for 3-dimensional designs such as litter boxes in Austin2006NATURE
+          transmitance: # when reported, light transmitance of the mesh material as a percentage of full sunlight for each wavelength
+            total:
+            PAR:
+            UV:
+            UVA:
+            UVB:
+          position: under shrub
+
+variables: # These describe the columns of your timeSeries.csv file
+        V1: # column 1
+          name: Time
+          units: days
+        V2:
+          name: AP
+          units: mass remaining
+          varDesc: A. tridentata litter decomposed under ambient precipitation
+          site: Snake River Plain
+          compTreat: control
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V3:
+          name: SP
+          units: mass remaining
+          varDesc: A. tridentata litter decomposed under summer precipitation addition
+          site: Snake River Plain
+          compTreat: precipitation addition
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V4:
+          name: WP
+          units: mass remaining
+          varDesc: A. tridentata litter decomposed under winter precipitation addition
+          site: Snake River Plain
+          compTreat: precipitation addition
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:

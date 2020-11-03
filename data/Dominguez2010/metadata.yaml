@@ -1,4 +1,4 @@
-citationKey: Campos2010 # Unique identifier in the format: LastnameYear (lowercase letters must be added when there are two or more entries by the same author and year, i.e.: LastnameYearx)
+citationKey: Dominguez2010 # Unique identifier in the format: LastnameYear (lowercase letters must be added when there are two or more entries by the same author and year, i.e.: LastnameYearx)
 doi: 10.1016/j.still.2010.06.008 # DOI of the publication where data is published
 entryAuthor: Agustin Sarquis # First and last name of the person who entered the data in this file
 entryCreationDate: 2020-10-14 # Date when the data was entered in this file. Format: YYYY-MM-DD
