@@ -1,0 +1,524 @@
+citationKey: Araujo2015
+doi: 10.1111/1365-2745.12433
+entryAuthor: Agustin Sarquis
+entryCreationDate: 2020-11-09
+contactName: Agustin Sarquis
+contactEmail: agusarquis@agro.uba.ar
+entryNote: They present data for two humid sites (not included). initConditions data averaged for each species. Only one species per site included
+study: decomposition experiment along a precipitation gradient in paired native vegetation vs. pinus plantation plots using local and common substrates
+
+siteInfo:
+        site:
+          - NV250
+          - PP250
+          - NV650
+          - PP650
+          - NV1100
+          - PP1100
+              # These fields should be arrays of equal length to site array
+        coordinates:
+          latitude:
+            - -40.25
+            - -40.25
+            - -39.95
+            - -39.95
+            - -40.43
+            - -40.43
+          longitude:
+            - -70.8
+            - -70.8
+            - -71.1
+            - -71.1
+            - -71.216
+            - -71.216
+        country:
+          - Argentina
+          - Argentina
+          - Argentina
+          - Argentina
+          - Argentina
+          - Argentina
+        MAT:
+          - 12
+          - 12
+          - 9.5
+          - 9.5
+          - 8.9
+          - 8.9
+        MAP:
+          - 250
+          - 250
+          - 650
+          - 650
+          - 1100
+          - 1100 # Mean annual precipitation in mm
+        rainySeason: # Period of the year during which most precipitation occurs, i.e.: whole year, spring, summer, autumn, winter (if more than one use array format)
+        elevation:
+          - 851
+          - 851
+          - 1024
+          - 1024
+          - 906
+          - 906 # Elevation of study site in meters above sea level
+        landCover:
+          - steppe
+          - forest
+          - steppe
+          - forest
+          - shrubland
+          - forest
+        vegNote:
+          - Grass-shrub steppe dominated by Pappostipa spp., Poa ligularis, Mulinum spinosum, Adesmia volckmannii and Philippi campestris
+          - Pinus ponderosa plantation
+          - Grass-shrub steppe dominated by Pappostipa spp., Festuca spp., Poa lanuginosa, M. spinosum, Senecio spp., Adesmia spp. and Acaena spp.
+          - Pinus ponderosa plantation
+          - Scrubland dominated by Pappostipa spp., Festuca spp., Acaena spp., M. Spinosum, Nothofagus antarctica and Schinus patagonicus
+          - Pinus ponderosa plantation
+        cover:
+          plantCover: # Total plant cover percentage (if they report cover by specific plant types, fill the fields below)
+          bunchgrassCover:
+          shrubCover:
+          treeCover:
+          forbCover:
+          bareSoil:
+        soilTaxonomy:
+          soilOrder: # Soil order according to the classification system described below
+          soilFamily: # Soil family description (ex. 'Eutric' for a Eutric Cambisol)
+          soilSeries: # Soil series according to the classification system described below
+          classificationSystem: # Name of classification system used. Valid fields are: USDA, FAO, and WRB.
+
+experimentInfo:
+        incDesc: 3 precipitation levels x 4 species x 2 vegetation types  x 4 harvests x 5 replicates
+        # These fields should all be one dimensional arrays. Values for experimental variables with multiple treatment levels should be entered in the variables section and left blank here
+        replicates: 5 # Number of replicates per treatment
+        duration: 730 # length of incubation in days
+        startingMonth: # month during which the study started, all in lower case
+        litter: # plant species used as litter material for the experiment. All details related to the species must be specified in the initConditions.csv file
+        litterbag:
+          material: fiberglass
+          meshSize: 5 # mesh size in mm referring to one side of the net-square
+          dimentions: # size of the full litter bag in cm
+            width:
+            length:
+            radius: # for round or cilindrical structures
+            height: # for 3-dimensional designs such as litter boxes in Austin2006NATURE
+          transmitance: # when reported, light transmitance of the mesh material as a percentage of full sunlight for each wavelength
+            total: 85
+            PAR:
+            UV:
+            UVA:
+            UVB:
+          position: over litter
+
+variables: # These describe the columns of your timeSeries.csv file
+        V1: # column 1
+          name: Time
+          units: months
+        V2:
+          name: NV250PN
+          units: organic matter remaining
+          varDesc: P. nigra litter at the 250 mm MAP native vegetation site
+          site: NV250
+          litter: Populus nigra
+          dimentions:
+            width: 15
+            length: 15
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V3:
+          name: NV250SP
+          units: organic matter remaining
+          varDesc: Pappostipa litter at the 250 mm MAP native vegetation site
+          site: NV250
+          litter: Pappostipa spp.
+          dimentions:
+            width: 10
+            length: 25
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V4:
+          name: NV250MS
+          units: organic matter remaining
+          varDesc: M. spinosum litter at the 250 mm MAP native vegetation site
+          site: NV250
+          litter: Mulinum spinosum
+          dimentions:
+            width: 15
+            length: 15
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V5:
+          name: NV250PP
+          units: organic matter remaining
+          varDesc: P. ponderosa litter at the 250 mm MAP native vegetation site
+          site: NV250
+          litter: Pinus ponderosa
+          dimentions:
+            width: 10
+            length: 25
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V6:
+          name: PP250PN
+          units: organic matter remaining
+          varDesc: P. nigra litter at the 250 mm MAP Pinus plantation site
+          site: PP250
+          litter: Populus nigra
+          dimentions:
+            width: 15
+            length: 15
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V7:
+          name: PP250SP
+          units: organic matter remaining
+          varDesc: Pappostipa spp. litter at the 250 mm MAP Pinus plantation site
+          site: PP250
+          litter: Pappostipa spp.
+          dimentions:
+            width: 10
+            length: 25
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V8:
+          name: PP250MS
+          units: organic matter remaining
+          varDesc: M. spinosum litter at the 250 mm MAP Pinus plantation site
+          site: PP250
+          litter: Mulinum spinosum
+          dimentions:
+            width: 15
+            length: 15
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V9:
+          name: PP250PP
+          units: organic matter remaining
+          varDesc: P. ponderosa litter at the 250 mm MAP Pinus plantation site
+          site: PP250
+          litter: Pinus ponderosa
+          dimentions:
+            width: 10
+            length: 25
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V10:
+          name: NV650PN
+          units: organic matter remaining
+          varDesc: P. nigra litter at the 650 mm MAP native vegetation site
+          site: NV650
+          litter: Populus nigra
+          dimentions:
+            width: 15
+            length: 15
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V11:
+          name: NV650SP
+          units: organic matter remaining
+          varDesc: Pappostipa spp. litter at the 650 mm MAP native vegetation site
+          site: NV650
+          litter: Pappostipa spp.
+          dimentions:
+            width: 10
+            length: 25
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V12:
+          name: NV650MS
+          units: organic matter remaining
+          varDesc: M. spinosum litter at the 650 mm MAP native vegetation site
+          site: NV650
+          litter: Mulinum spinosum
+          dimentions:
+            width: 15
+            length: 15
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V13:
+          name: NV650PP
+          units: organic matter remaining
+          varDesc: P. ponderosa litter at the 650 mm MAP native vegetation site
+          site: NV650
+          litter: Pinus ponderosa
+          dimentions:
+            width: 10
+            length: 25
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V14:
+          name: PP650PN
+          units: organic matter remaining
+          varDesc: P. nigra litter at the 650 mm MAP Pinus plantation site
+          site: PP650
+          litter: Populus nigra
+          dimentions:
+            width: 15
+            length: 15
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V15:
+          name: PP650SP
+          units: organic matter remaining
+          varDesc: Pappostipa spp. litter at the 650 mm MAP Pinus plantation site
+          site: PP650
+          litter: Pappostipa spp.
+          dimentions:
+            width: 10
+            length: 15
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V16:
+          name: PP650MS
+          units: organic matter remaining
+          varDesc: M. spinosum litter at the 650 mm MAP Pinus plantation site
+          site: PP650
+          litter: Mulinum spinosum
+          dimentions:
+            width: 15
+            length: 15
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V17:
+          name: PP650PP
+          units: organic matter remaining
+          varDesc: P. ponderosa litter at the 650 mm MAP Pinus plantation site
+          site: PP650
+          litter: Pinus ponderosa
+          dimentions:
+            width: 10
+            length: 25
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V18:
+          name: NV1100PN
+          units: organic matter remaining
+          varDesc: P. nigra litter at the 1100 mm MAP native vegetation site
+          site: NV1100
+          litter: Populus nigra
+          dimentions:
+            width: 15
+            length: 15
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V19:
+          name: NV1100SP
+          units: organic matter remaining
+          varDesc: Pappostipa spp. litter at the 1100 mm MAP native vegetation site
+          site: NV1100
+          litter: Pappostipa spp.
+          dimentions:
+            width: 10
+            length: 25
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V20:
+          name: NV1100PP
+          units: organic matter remaining
+          varDesc: P. ponderosa litter at the 1100 mm MAP native vegetation site
+          site: NV1100
+          litter: Pinus ponderosa
+          dimentions:
+            width: 10
+            length: 25
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V21:
+          name: NV1100NA
+          units: organic matter remaining
+          varDesc: N. antarctica litter at the 1100 mm MAP native vegetation site
+          site: NV1100
+          litter: Nothofagus antarctica
+          dimentions:
+            width: 12
+            length: 12
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V22:
+          name: PP1100PN
+          units: organic matter remaining
+          varDesc: P. nigra litter at the 1100 mm MAP Pinus plantation site
+          site: PP1100
+          litter: Populus nigra
+          dimentions:
+            width: 15
+            length: 15
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V23:
+          name: PP1100SP
+          units: organic matter remaining
+          varDesc: Pappostipa spp. litter at the 1100 mm MAP Pinus plantation site
+          site: PP1100
+          litter: Pappostipa spp.
+          dimentions:
+            width: 10
+            length: 25
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V24:
+          name: PP1100PP
+          units: organic matter remaining
+          varDesc: P. ponderosa litter at the 1100 mm MAP Pinus plantation site
+          site: PP1100
+          litter: Pinus ponderosa
+          dimentions:
+            width: 10
+            length: 25
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V25:
+          name: PP1100NA
+          units: organic matter remaining
+          varDesc: N. antarctica litter at the 1100 mm MAP Pinus plantation site
+          site: PP1100
+          litter: Nothofagus antarctica
+          dimentions:
+            width: 12
+            length: 12
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:

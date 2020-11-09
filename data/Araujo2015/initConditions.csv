@@ -1,0 +1,6 @@
+species, type, N-fixer, material, amount, carbon, nitrogen, C:N, phosphorus, potassium, sodium, magnesium, manganese, copper, zinc, lead, calcium, sulfur, iron, lignin, cellulose, hemicellulose, cell solubles, SLA
+Populus nigra, deciduous, no, leaves, 1.5, 38.71, 0.61, 63.46,,,,,,,,,,,, 18.67
+Pappostipa spp., graminoid, no, leaves, 1.5, 40.92, 0.44, 93,,,,,,,,,,,,8.79
+Mulinum spinosum, deciduous, no, leaves, 1.5, 48.1, 0.65, 74,,,,,,,,,,,, 31.97
+Pinus ponderosa, evergreen, no, leaves, 2, 45.59, 0.52, 87.67,,,,,,,,,,,, 32.98
+Nothofagus antarctica, deciduous, no, leaves, 1.5, 45.2, 0.62, 73.5,,,,,,,,,,,,32
