@@ -1,0 +1,6 @@
+species, type, N-fixer, material, amount, carbon, nitrogen, C:N, phosphorus, potassium, sodium, magnesium, manganese, copper, zinc, lead, calcium, sulfur, iron, lignin, cellulose, hemicellulose, cell solubles, SLA
+Gliricidia sepium, deciduous, yes, leaves, 45, 47.3, 4.8, 9.9, 0.21,,,,,,,,,,, 9.12
+Senna siamea, evergreen, no, leaves, 45, 44, 2.78, 15.8, 0.16,,,,,,,,,,, 7.19
+Alchornea cordifolia, evergreen, no, leaves, 45, 46.2, 2.64, 17.5, 0.18,,,,,,,,,,, 7.49
+Pterocarpus santalinoides, evergreen, yes, leaves, 45, 45.5, 3.24, 14, 0.17,,,,,,,,,,, 14
+Dactyladenia barteri, evergreen, no, leaves, 45, 45.1, 1.56, 28.9, 0.09,,,,,,,,,,, 28.9

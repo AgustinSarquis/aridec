@@ -1,0 +1,569 @@
+citationKey: Tian2007
+doi: 10.1007/s10533-007-9158-3
+entryAuthor: Agustin Sarquis
+entryCreationDate: 2020-11-17
+contactName: Agustin Sarquis
+contactEmail: agusarquis@agro.uba.ar
+entryNote: humid site data not included. Altitude from Google Earth
+study: Field litterbag studies were conducted in the 2000 rainy season and the 2000/2001 dry season along the transect of West African major agroecological zones to measure the decomposition of 5 plant residues
+
+siteInfo:
+        site:
+          - Minna
+          - Kano
+          - Zinder
+              # These fields should be arrays of equal length to site array
+        coordinates:
+          latitude:
+            - 9.6166667
+            - 12.05
+            - 13.9666667
+          longitude:
+            - 6.533333333333333
+            - 8.533333333333333
+            - 8.883333333333333
+        country:
+          - Nigeria
+          - Nigeria
+          - Niger
+        MAT:
+          - 27.4
+          - 26.7
+          - 28.7
+        MAP:
+          - 1188
+          - 686
+          - 402
+        rainySeason: # Period of the year during which most precipitation occurs, i.e.: whole year, spring, summer, autumn, winter (if more than one use array format)
+        elevation:
+          - 250
+          - 463
+          - 491
+        landCover:
+         - farmland
+         - farmland
+         - farmland
+        vegNote:
+          - maize field
+          - sorghum field
+          - sorghum field
+        cover:
+          plantCover: # Total plant cover percentage (if they report cover by specific plant types, fill the fields below)
+          bunchgrassCover:
+          shrubCover:
+          treeCover:
+          forbCover:
+          bareSoil:
+        soilTaxonomy:
+          soilOrder: # Soil order according to the classification system described below
+          soilFamily: # Soil family description (ex. 'Eutric' for a Eutric Cambisol)
+          soilSeries: # Soil series according to the classification system described below
+          classificationSystem: # Name of classification system used. Valid fields are: USDA, FAO, and WRB.
+
+experimentInfo:
+        incDesc: 5 species x 3 sites x 2 seasons x 5 harvests x 3 replicates
+        # These fields should all be one dimensional arrays. Values for experimental variables with multiple treatment levels should be entered in the variables section and left blank here
+        replicates: 3
+        duration: 98
+        startingMonth: # month during which the study started, all in lower case
+        litter: # plant species used as litter material for the experiment. All details related to the species must be specified in the initConditions.csv file
+        litterbag:
+          material: nylon
+          meshSize: 5
+          dimentions: # size of the full litter bag in cm
+            width: 30
+            length: 30
+            radius: # for round or cilindrical structures
+            height: # for 3-dimensional designs such as litter boxes in Austin2006NATURE
+          transmitance: # when reported, light transmitance of the mesh material as a percentage of full sunlight for each wavelength
+            total:
+            PAR:
+            UV:
+            UVA:
+            UVB:
+          position: bare soil
+
+variables: # These describe the columns of your timeSeries.csv file
+        V1: # column 1
+          name: Time
+          units: weeks
+        V2:
+          name: RGSH
+          units: organic matter remaining
+          varDesc: Gliricidia sepium litter at the subhumid site during the rainy season
+          site: Minna
+          startingMonth: june
+          litter: Gliricidia sepium
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V3:
+          name: RGSA
+          units: organic matter remaining
+          varDesc: Gliricidia sepium litter at the semiarid site during the rainy season
+          site: Kano
+          startingMonth: june
+          litter: Gliricidia sepium
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V4:
+          name: RGA
+          units: organic matter remaining
+          varDesc: Gliricidia sepium litter at the arid site during the rainy season
+          site: Zinder
+          startingMonth: june
+          litter: Gliricidia sepium
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V5:
+          name: RSSH
+          units: organic matter remaining
+          varDesc: Senna siamea litter at the subhumid site during the rainy season
+          site: Minna
+          startingMonth: june
+          litter: Senna siamea
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V6:
+          name: RSSA
+          units: organic matter remaining
+          varDesc: Senna siamea litter at the semiarid site during the rainy season
+          site: Kano
+          startingMonth: june
+          litter: Senna siamea
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V7:
+          name: RSA
+          units: organic matter remaining
+          varDesc: Senna siamea litter at the arid site during the rainy season
+          site: Zinder
+          startingMonth: june
+          litter: Senna siamea
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V8:
+          name: RASH
+          units: organic matter remaining
+          varDesc: Alchornea cordifolia litter at the subhumid site during the rainy season
+          site: Minna
+          startingMonth: june
+          litter: Alchornea cordifolia
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V9:
+          name: RASA
+          units: organic matter remaining
+          varDesc: Alchornea cordifolia litter at the semiarid site during the rainy season
+          site: Kano
+          startingMonth: june
+          litter: Alchornea cordifolia
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V10:
+          name: RAA
+          units: organic matter remaining
+          varDesc: Alchornea cordifolia litter at the arid site during the rainy season
+          site: Zinder
+          startingMonth: june
+          litter: Alchornea cordifolia
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V11:
+          name: RPSH
+          units: organic matter remaining
+          varDesc: Pterocarpus santalinoides litter at the subhumid site during the rainy season
+          site: Minna
+          startingMonth: june
+          litter: Pterocarpus santalinoides
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V12:
+          name: RPSA
+          units: organic matter remaining
+          varDesc: Pterocarpus santalinoides litter at the semiarid site during the rainy season
+          site: Kano
+          startingMonth: june
+          litter: Pterocarpus santalinoides
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V13:
+          name: RPA
+          units: organic matter remaining
+          varDesc: Pterocarpus santalinoides litter at the arid site during the rainy season
+          site: Zinder
+          startingMonth: june
+          litter: Pterocarpus santalinoides
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V14:
+          name: RDSH
+          units: organic matter remaining
+          varDesc: Dactyladenia barteri litter at the subhumid site during the rainy season
+          site: Minna
+          startingMonth: june
+          litter: Dactyladenia barteri
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V15:
+          name: RDSA
+          units: organic matter remaining
+          varDesc: Dactyladenia barteri litter at the semiarid site during the rainy season
+          site: Kano
+          startingMonth: june
+          litter: Dactyladenia barteri
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V16:
+          name: RDA
+          units: organic matter remaining
+          varDesc: Dactyladenia barteri litter at the arid site during the rainy season
+          site: Zinder
+          startingMonth: june
+          litter: Dactyladenia barteri
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V17:
+          name: DGSH
+          units: organic matter remaining
+          varDesc: Gliricidia sepium litter at the subhumid site during the dry season
+          site: Minna
+          startingMonth: february
+          litter: Gliricidia sepium
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V18:
+          name: DGSA
+          units: organic matter remaining
+          varDesc: Gliricidia sepium litter at the semiarid site during the dry season
+          site: Kano
+          startingMonth: february
+          litter: Gliricidia sepium
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V19:
+          name: DGA
+          units: organic matter remaining
+          varDesc: Gliricidia sepium litter at the arid site during the dry season
+          site: Zinder
+          startingMonth: february
+          litter: Gliricidia sepium
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V20:
+          name: DSSH
+          units: organic matter remaining
+          varDesc: Senna siamea litter at tha subhumid site during the dry season
+          site: Minna
+          startingMonth: february
+          litter: Senna siamea
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V21:
+          name: DSSA
+          units: organic matter remaining
+          varDesc: Senna siamea litter at the semiarid site during the dry season
+          site: Kano
+          startingMonth: february
+          litter: Senna siamea
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V22:
+          name: DSA
+          units: organic matter remaining
+          varDesc: Senna siamea litter at the arid site during the dry season
+          site: Zinder
+          startingMonth: february
+          litter: Senna siamea
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V23:
+          name: DASH
+          units: organic matter remaining
+          varDesc: Alchornea cordifolia litter at the subhumid site during the dry season
+          site: Minna
+          startingMonth: february
+          litter: Alchornea cordifolia
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V24:
+          name: DASA
+          units: organic matter remaining
+          varDesc: Alchornea cordifolia litter at the semiarid site during the dry season
+          site: Kano
+          startingMonth: february
+          litter: Alchornea cordifolia
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V25:
+          name: DAA
+          units: organic matter remaining
+          varDesc: Alchornea cordifolia litter at the arid site during the dry season
+          site: Zinder
+          startingMonth: february
+          litter: Alchornea cordifolia
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V26:
+          name: DPSH
+          units: organic matter remaining
+          varDesc: Pterocarpus santalinoides litter at the subhumid site during the dry season
+          site: Minna
+          startingMonth: february
+          litter: Pterocarpus santalinoides
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V27:
+          name: DPSA
+          units: organic matter remaining
+          varDesc: Pterocarpus santalinoides litter at the semiarid site during the dry season
+          site: Kano
+          startingMonth: february
+          litter: Pterocarpus santalinoides
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V28:
+          name: DPA
+          units: organic matter remaining
+          varDesc: Pterocarpus santalinoides litter at the arid site during the dry season
+          site: Zinder
+          startingMonth: february
+          litter: Pterocarpus santalinoides
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V29:
+          name: DDSH
+          units: organic matter remaining
+          varDesc: Dactyladenia barteri litter at the subhumid site during the dry season
+          site: Minna
+          startingMonth: february
+          litter: Dactyladenia barteri
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V30:
+          name: DDSA
+          units: organic matter remaining
+          varDesc: Dactyladenia barteri litter at the semiarid site during the dry season
+          site: Kano
+          startingMonth: february
+          litter: Dactyladenia barteri
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V31:
+          name: DDA
+          units: organic matter remaining
+          varDesc: Dactyladenia barteri litter at the arid stie during the dry season
+          site: Zinder
+          startingMonth: february
+          litter: Dactyladenia barteri
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
