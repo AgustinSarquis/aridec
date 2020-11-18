@@ -8,7 +8,7 @@ type: valid options are "deciduous" or "evergreen" (for woody plants) and "forb"
 
 N-fixer: yes or no. Check this information on the NodDB: https://doi.org/10.1111/jvs.12627
 
-material: valid options are leaves, green leaves, homogenized leaves, crushed leaves, prematurely senesced leaves, leaves, leaflets, sheaths, stems, photosynthetic stems, terminal shoots, pods, aboveground parts, roots, fine roots, live roots. If they report the material used was recently senesced, leave unspecified. If they report otherwise, use the specific options here detailed. When they don't report whether the material is senesced or not, just use the organ name (leaves, roots, shots, etc.). If they use a mixture of aboveground parts (e.g.: leaves and shoots), use aboveground parts.
+material: valid options are leaves, green leaves, cut leaves, homogenized leaves, crushed leaves, prematurely senesced leaves, leaflets, sheaths, stems, photosynthetic stems, terminal shoots, pods, aboveground parts, roots, fine roots, live roots. If they report the material used was recently senesced, leave unspecified. If they report otherwise, use the specific options here detailed. When they don't report whether the material is senesced or not, just use the organ name (leaves, roots, shots, etc.). If they use a mixture of aboveground parts (e.g.: leaves and shoots), use aboveground parts.
 
 amount: amount of litter inside litter bags in grams.
 
