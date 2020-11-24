@@ -1,0 +1,281 @@
+citationKey: Hamadi2000
+doi: 10.1006/jare.2000.0672
+entryAuthor: Agustin Sarquis
+entryCreationDate: 2020-11-24
+contactName: Agustin Sarquis
+contactEmail: agusarquis@agro.uba.ar
+entryNote: Exact coordinates weren't supplied on the paper, they come from Google Earth
+study: The influence of abiotic conditions on Avena sterilis plant litter decomposition was studied at three sites along a topoclimatic gradient in the Judean Desert, Israel
+
+siteInfo:
+        site:
+          - Givat Ye’arim
+          - Mishor Adumim
+          - Kalia
+              # These fields should be arrays of equal length to site array
+        coordinates:
+          latitude:
+            - 31.7845778
+            - 31.7987861
+            - 31.715
+          longitude:
+            - 35.08880277777778
+            - 35.337208333333336
+            - 35.42496388888889
+        country:
+          - Israel
+          - Israel
+          - Israel
+        MAT:
+          - 13
+          - 17
+          - 20
+        MAP:
+          - 620
+          - 260
+          - 110
+        rainySeason: # Period of the year during which most precipitation occurs, i.e.: whole year, spring, summer, autumn, winter (if more than one use array format)
+        elevation:
+          - 650
+          - 320
+          - -60
+        landCover:
+          - shrubland
+          - desert
+          - desert # Land cover of the site. Valid fields are: greenbelt, (abbandoned) farmland, mangrove forest, subalpine, shrubland, urban, sandland, forest, steppe, desert, grassland, savanna
+        vegNote:
+          - dominated by Quercus calliprinos}Pinus halepensis shrubland, accompanied by other Mediterranean sclerophyll phanerophytes and chamaephytes such as Sarcopoterium spinosum, Cistus salvifolius, Fumana arabica and F. thymifolid
+          - dominated by an Anabais articulata and Halogetan alopecuroides association, accompanied by Salsola vermiculata and Reaumuria hirtella
+          - Zygophyllum dumosum and Reaumuria hirtella association
+        cover:
+          plantCover: # Total plant cover percentage (if they report cover by specific plant types, fill the fields below)
+          bunchgrassCover:
+          shrubCover:
+          treeCover:
+          forbCover:
+          bareSoil:
+        soilTaxonomy:
+          soilOrder: # Soil order according to the classification system described below
+          soilFamily: # Soil family description (ex. 'Eutric' for a Eutric Cambisol)
+          soilSeries: # Soil series according to the classification system described below
+          classificationSystem: # Name of classification system used. Valid fields are: USDA, FAO, and WRB.
+
+experimentInfo:
+        incDesc: 3 sites x 2 positions x 2 starting dates
+        # These fields should all be one dimensional arrays. Values for experimental variables with multiple treatment levels should be entered in the variables section and left blank here
+        replicates: 4
+        duration: 450
+        startingMonth: # month during which the study started, all in lower case
+        litter: Avena sterilis
+        litterbag:
+          material: fiberglass
+          meshSize: 1.5 # mesh size in mm referring to one side of the net-square
+          dimentions: # size of the full litter bag in cm
+            width: 20
+            length: 20
+            radius: # for round or cilindrical structures
+            height: # for 3-dimensional designs such as litter boxes in Austin2006NATURE
+          transmitance: # when reported, light transmitance of the mesh material as a percentage of full sunlight for each wavelength
+            total:
+            PAR:
+            UV:
+            UVA:
+            UVB:
+          position: # position of litterbags in the field, valid options are: bare soil, decomposition bed, under litter, over litter, over lawn, next to grass, under tree/shrub/grass, buried X cm deep, underwater, under rainout shelter, under frame, suspended X cm, under shadecloth
+
+variables: # These describe the columns of your timeSeries.csv file
+        V1: # column 1
+          name: Time
+          units: days
+        V2:
+          name: GS1
+          units: organic matter remaining
+          varDesc: Decomposition at the Mediterranean site on the soil surface starting november 1991
+          site: Givat Ye’arim
+          startingMonth: november
+          position: bare soil
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V3:
+          name: GB1
+          units: organic matter remaining
+          varDesc: Decomposition at the Mediterranean site buried starting november 1991
+          site: Givat Ye’arim
+          startingMonth: november
+          position: buried 10 cm deep
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V4:
+          name: GS2
+          units: organic matter remaining
+          varDesc: Decomposition at the Mediterranean site on the soil surface starting october 1992
+          site: Givat Ye’arim
+          startingMonth: october
+          position: bare soil
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V5:
+          name: GB2
+          units: organic matter remaining
+          varDesc: Decomposition at the Mediterranean site buried starting october 1992
+          site: Givat Ye’arim
+          startingMonth: october
+          position: buried 10 cm deep
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V6:
+          name: MS1
+          units: organic matter remaining
+          varDesc: Decomposition at the mildly arid site on the soil surface starting november 1991
+          site: Mishor Adumim
+          startingMonth: november
+          position: bare soil
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V7:
+          name: MB1
+          units: organic matter remaining
+          varDesc: Decomposition at the mildly arid site buried starting november 1991
+          site: Mishor Adumim
+          startingMonth: november
+          position: buried 10 cm deep
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V8:
+          name: MS2
+          units: organic matter remaining
+          varDesc: Decomposition at the mildly arid site on the soil surface starting october 1992
+          site: Mishor Adumim
+          startingMonth: october
+          position: bare soil
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V9:
+          name: MB2
+          units: organic matter remaining
+          varDesc: Decomposition at the mildly arid site buried starting october 1992
+          site: Mishor Adumim
+          startingMonth: october
+          position: buried 10 cm deep
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V10:
+          name: KS1
+          units: organic matter remaining
+          varDesc: Decomposition at the arid site on the soil surface starting november 1991
+          site: Kalia
+          startingMonth: november
+          position: bare soil
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V11:
+          name: KB1
+          units: organic matter remaining
+          varDesc: Decomposition at the arid site buried starting november 1991
+          site: Kalia
+          startingMonth: november
+          position: buried 10 cm deep
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V12:
+          name: KS2
+          units: organic matter remaining
+          varDesc: Decomposition at the arid site on the soil surface starting october 1992
+          site: Kalia
+          startingMonth: october
+          position: bare soil
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V13:
+          name: KB2
+          units: organic matter remaining
+          varDesc: Decomposition at the arid site buried starting october 1992
+          site: Kalia
+          startingMonth: october
+          position: buried 10 cm deep
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
