@@ -1,0 +1,177 @@
+citationKey: Steinberger1990
+doi: 10.1007/BF00317478
+entryAuthor: Agustin Sarquis
+entryCreationDate: 2020-11-25
+contactName: Agustin Sarquis
+contactEmail: agusarquis@agro.uba.ar
+entryNote: the paper claims the location to be in Israel, but the sites are in the West Bank. Coordinates were obtained from Google Earth. MAT comes from POWER
+study: The effect of a rainfall gradient, from a semiarid to extremely arid, on decomposition, was studied in the Judean desert
+
+siteInfo:
+        site:
+          - Har-Gilo
+          - Teqoa
+          - Naaka Junction
+          - Metzukei Dragot
+          - Gruya
+              # These fields should be arrays of equal length to site array
+        coordinates:
+          latitude:
+            - 31.7206583
+            - 31.6516528
+            - 31.5625
+            - 31.5947944
+            - 31.5918444
+          longitude:
+            - 35.17476111111111
+            - 35.227125
+            - 35.28593333333333
+            - 35.38825
+            - 35.40586388888889
+        country:
+            - Israel
+            - Israel
+            - Israel
+            - Israel
+            - Israel
+        MAT:
+            - 19.94
+            - 19.94
+            - 19.94
+            - 19.94
+            - 19.94
+        MAP:
+            - 550
+            - 300
+            - 152
+            - 125
+            - 61
+        rainySeason: # Period of the year during which most precipitation occurs, i.e.: whole year, spring, summer, autumn, winter (if more than one use array format)
+        elevation:
+            - 914
+            - 675
+            - 425
+            - 25
+            - -375
+        landCover:
+         - desert
+         - desert
+         - desert
+         - desert
+         - desert
+        vegNote: # Additional details about land cover such as species or functional type composition
+        cover:
+          plantCover: # Total plant cover percentage (if they report cover by specific plant types, fill the fields below)
+          bunchgrassCover:
+          shrubCover:
+          treeCover:
+          forbCover:
+          bareSoil:
+        soilTaxonomy:
+          soilOrder: # Soil order according to the classification system described below
+          soilFamily: # Soil family description (ex. 'Eutric' for a Eutric Cambisol)
+          soilSeries: # Soil series according to the classification system described below
+          classificationSystem: # Name of classification system used. Valid fields are: USDA, FAO, and WRB.
+
+experimentInfo:
+        incDesc: 5 sites x 2 harvests x 8 replicates
+        # These fields should all be one dimensional arrays. Values for experimental variables with multiple treatment levels should be entered in the variables section and left blank here
+        replicates: 8
+        duration: 313
+        startingMonth: november
+        litter: Triticum aestivum
+        litterbag:
+          material: fiberglass
+          meshSize: 1.5
+          dimentions: # size of the full litter bag in cm
+            width: 20
+            length: 20
+            radius: # for round or cilindrical structures
+            height: # for 3-dimensional designs such as litter boxes in Austin2006NATURE
+          transmitance: # when reported, light transmitance of the mesh material as a percentage of full sunlight for each wavelength
+            total:
+            PAR:
+            UV:
+            UVA:
+            UVB:
+          position: bare soil
+
+variables: # These describe the columns of your timeSeries.csv file
+        V1: # column 1
+          name: Time
+          units: days
+        V2:
+          name: HG
+          units: organic matter remaining
+          varDesc: Wheat straw decomposition at Har-Gilo
+          site: Har-Gilo
+          experimentalTreatment: # 'experimentalTreatment' here is a place holder for treatments with multiple levels. Replace this word by any of the listed variables in incubationInfo above (startingMonth, duration, litter, litterbag, meshSize) and type treatment value (level) after colon. Note that units should be specified in the incubationInfo field above.
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V3:
+          name: Te
+          units: organic matter remaining
+          varDesc: Wheat straw decomposition at Teqoa
+          site: Teqoa
+          experimentalTreatment: # 'experimentalTreatment' here is a place holder for treatments with multiple levels. Replace this word by any of the listed variables in incubationInfo above (startingMonth, duration, litter, litterbag, meshSize) and type treatment value (level) after colon. Note that units should be specified in the incubationInfo field above.
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V4:
+          name: NJ
+          units: organic matter remaining
+          varDesc: Wheat straw decomposition at Naaka Junction
+          site: Naaka Junction
+          experimentalTreatment: # 'experimentalTreatment' here is a place holder for treatments with multiple levels. Replace this word by any of the listed variables in incubationInfo above (startingMonth, duration, litter, litterbag, meshSize) and type treatment value (level) after colon. Note that units should be specified in the incubationInfo field above.
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V5:
+          name: MD
+          units: organic matter remaining
+          varDesc: Wheat straw decomposition at Metzukei Dragot
+          site: Metzukei Dragot
+          experimentalTreatment: # 'experimentalTreatment' here is a place holder for treatments with multiple levels. Replace this word by any of the listed variables in incubationInfo above (startingMonth, duration, litter, litterbag, meshSize) and type treatment value (level) after colon. Note that units should be specified in the incubationInfo field above.
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V6:
+          name: Gr
+          units: organic matter remaining
+          varDesc: Wheat straw decomposition at Gruya
+          site: Gruya
+          experimentalTreatment: # 'experimentalTreatment' here is a place holder for treatments with multiple levels. Replace this word by any of the listed variables in incubationInfo above (startingMonth, duration, litter, litterbag, meshSize) and type treatment value (level) after colon. Note that units should be specified in the incubationInfo field above.
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
