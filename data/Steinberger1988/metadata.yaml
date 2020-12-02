@@ -1,0 +1,386 @@
+citationKey: Steinberger1988 # Unique identifier in the format: LastnameYear (lowercase letters must be added when there are two or more entries by the same author and year, i.e.: LastnameYearx)
+doi: 10.1007/BF00378814 # DOI of the publication where data is published
+entryAuthor: Agustin Sarquis # First and last name of the person who entered the data in this file
+entryCreationDate: 2020-12-02 # Date when the data was entered in this file. Format: YYYY-MM-DD
+contactName: Agustin Sarquis # First and last name of contact person (may be the principal investigator supervising the entryAuthor)
+contactEmail: agusarquis@agro.uba.ar # Email of the contact person
+entryNote: approximate coordinates from Google Earth. MAT from POWER
+study: Two experiments with different litter substrates, one comparing buried vs. surface litter decomposition, and another one assessing the effect of water addition
+
+siteInfo:
+        site: Negev # Names of individual sites, if one site, keep on this line, if multiple, use array format
+              # These fields should be arrays of equal length to site array
+        coordinates:
+          latitude: 30.8166667 # Latitude in decimal units (check for negative that denotes southern hemisphere)
+          longitude: 34.733333333333334 # Longitude in decimal units (check for negative that denotes western hemisphere)
+        country: Israel # Name of country where site was conducted
+        MAT: 19.7 # Mean annual temperature in degrees Celsius
+        MAP: 89.5 # Mean annual precipitation in mm
+        rainySeason: winter # Period of the year during which most precipitation occurs, i.e.: whole year, spring, summer, autumn, winter (if more than one use array format)
+        elevation: 600  # Elevation of study site in meters above sea level
+        landCover: desert
+        vegNote: The study area has perennial shrubs, Hammada scoparia and the annual herb, Salsola inermis on the loess plain and the shrubs Zygophyllum dumosum and Artemisia herba-alba on the hill slopes
+        cover:
+          plantCover: # Total plant cover percentage (if they report cover by specific plant types, fill the fields below)
+          bunchgrassCover:
+          shrubCover:
+          treeCover:
+          forbCover:
+          bareSoil:
+        soilTaxonomy:
+          soilOrder: # Soil order according to the classification system described below
+          soilFamily: # Soil family description (ex. 'Eutric' for a Eutric Cambisol)
+          soilSeries: # Soil series according to the classification system described below
+          classificationSystem: # Name of classification system used. Valid fields are: USDA, FAO, and WRB.
+
+experimentInfo:
+        incDesc: one experiment with 2 speces x 2 mesh sizes x 2 positions and another one with 2 water addition levels x 3 locations x 2 starting dates
+        # These fields should all be one dimensional arrays. Values for experimental variables with multiple treatment levels should be entered in the variables section and left blank here
+        replicates: 5 # Number of replicates per treatment
+        duration: 425 # length of incubation in days
+        startingMonth: # month during which the study started, all in lower case
+        litter: # plant species used as litter material for the experiment. All details related to the species must be specified in the initConditions.csv file
+        litterbag:
+          material: # mesh type used to construct the litter bags, options are: wire, aluminum, window screening, net curtain, bolting cloth, plastic, fiberglass, nylon, polypropylene, polyester, polyethylene, polyamide
+          meshSize: # mesh size in mm referring to one side of the net-square
+          dimentions: # size of the full litter bag in cm
+            width: 20
+            length: 20
+            radius: # for round or cilindrical structures
+            height: # for 3-dimensional designs such as litter boxes in Austin2006NATURE
+          transmitance: # when reported, light transmitance of the mesh material as a percentage of full sunlight for each wavelength
+            total:
+            PAR:
+            UV:
+            UVA:
+            UVB:
+          position: # position of litterbags in the field, valid options are: bare soil, decomposition bed, under litter, over litter, over lawn, next to grass, under tree/shrub/grass, buried X cm deep, underwater, under rainout shelter, under frame, suspended X cm, under shadecloth
+
+variables: # These describe the columns of your timeSeries.csv file
+        V1: # column 1
+          name: Time
+          units: days
+        V2:
+          name: HBFg
+          units: organic matter remaining
+          varDesc: H. scoparia litter buried in 1.5 mm opening fiberglass mesh bags
+          site: Negev
+          startingMonth: october
+          litter: Hammada scoparia
+          meshSize: 1.5
+          position: buried 10 cm deep
+          compTreat: control
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V3:
+          name: HBFm
+          units: organic matter remaining
+          varDesc: H. scoparia litter buried in 0.008 mm opening nylon mesh bags
+          site: Negev
+          startingMonth: october
+          litter: Hammada scoparia
+          meshSize: 0.008
+          position: buried 10 cm deep
+          compTreat: microarthropods exclusion
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V4:
+          name: HSFg
+          units: organic matter remaining
+          varDesc: H. scoparia litter on the soil surface in 1.5 mm opening fiberglass mesh bags
+          site: Negev
+          startingMonth: october
+          litter: Hammada scoparia
+          meshSize: 1.5
+          position: bare soil
+          compTreat: control
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V5:
+          name: SiBFg
+          units: organic matter remaining
+          varDesc: S. inermis litter buried in 1.5 mm opening fiberglass mesh bags
+          site: Negev
+          startingMonth: october
+          litter: Salsola inermis
+          meshSize: 1.5
+          position: buried 10 cm deep
+          compTreat: control
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V6:
+          name: SiBFm
+          units: organic matter remaining
+          varDesc: S. inermis litter buried in 0.008 mm opening nylon mesh bags
+          site: Negev
+          startingMonth: october
+          litter: Salsola inermis
+          meshSize: 0.008
+          position: buried 10 cm deep
+          compTreat: microarthropods exclusion
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V7:
+          name: SiSFg
+          units: organic matter remaining
+          varDesc: S. inermis litter on the soil surface in 1.5 mm opening fiberglass mesh bags
+          site: Negev
+          startingMonth: october
+          litter: Salsola inermis
+          meshSize: 1.5
+          position: bare soil
+          compTreat: control
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V8:
+          name: ScJTW
+          units: organic matter remaining
+          varDesc: S. capensis litter decomposed on the hill top starting october 1983 with water addition
+          site: Negev
+          startingMonth: october
+          litter: Stipa capensis
+          meshSize: 1.5
+          position: bare soil
+          compTreat: water addition
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V9:
+          name: ScJTC
+          units: organic matter remaining
+          varDesc: S. capensis litter decomposed on the hill top starting october 1983 without water addition
+          site: Negev
+          startingMonth: october
+          litter: Stipa capensis
+          meshSize: 1.5
+          position: bare soil
+          compTreat: control
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V10:
+          name: ScJSW
+          units: organic matter remaining
+          varDesc: S. capensis litter decomposed mid slope starting october 1983 with water addition
+          site: Negev
+          startingMonth: october
+          litter: Stipa capensis
+          meshSize: 1.5
+          position: bare soil
+          compTreat: water addition
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V11:
+          name: ScJSC
+          units: organic matter remaining
+          varDesc: S. capensis litter decomposed mid slope starting october 1983 without water addition
+          site: Negev
+          startingMonth: october
+          litter: Stipa capensis
+          meshSize: 1.5
+          position: bare soil
+          compTreat: control
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V12:
+          name: ScJLW
+          units: organic matter remaining
+          varDesc: S. capensis litter decomposed on a loess plain starting october 1983 with water addition
+          site: Negev
+          startingMonth: october
+          litter: Stipa capensis
+          meshSize: 1.5
+          position: bare soil
+          compTreat: water addition
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V13:
+          name: ScJLC
+          units: organic matter remaining
+          varDesc: S. capensis litter decomposed on a loess plain starting october 1983 without water addition
+          site: Negev
+          startingMonth: october
+          litter: Stipa capensis
+          meshSize: 1.5
+          position: bare soil
+          compTreat: control
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V14:
+          name: ScSTW
+          units: organic matter remaining
+          varDesc: S. capensis litter decomposed on the hill top starting september 1984 with water addition
+          site: Negev
+          startingMonth: september
+          litter: Stipa capensis
+          meshSize: 1.5
+          position: bare soil
+          compTreat: water addition
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V15:
+          name: ScSTC
+          units: organic matter remaining
+          varDesc: S. capensis litter decomposed on the hill top starting september 1984 without water addition
+          site: Negev
+          startingMonth: september
+          litter: Stipa capensis
+          meshSize: 1.5
+          position: bare soil
+          compTreat: control
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V16:
+          name: ScSSW
+          units: organic matter remaining
+          varDesc: S. capensis litter decomposed mid slope starting september 1984 with water addition
+          site: Negev
+          startingMonth: september
+          litter: Stipa capensis
+          meshSize: 1.5
+          position: bare soil
+          compTreat: water addition
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V17:
+          name: ScSSC
+          units: organic matter remaining
+          varDesc: S. capensis litter decomposed mid slope starting september 1984 without water addition
+          site: Negev
+          startingMonth: september
+          litter: Stipa capensis
+          meshSize: 1.5
+          position: bare soil
+          compTreat: control
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V18:
+          name: ScSLW
+          units: organic matter remaining
+          varDesc: S. capensis litter decomposed on a loess plain starting september 1984 with water addition
+          site: Negev
+          startingMonth: september
+          litter: Stipa capensis
+          meshSize: 1.5
+          position: bare soil
+          compTreat: water addition
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V19:
+          name: ScSLC
+          units: organic matter remaining
+          varDesc: S. capensis litter decomposed on a loess plain starting september 1984 without water addition
+          site: Negev
+          startingMonth: september
+          litter: Stipa capensis
+          meshSize: 1.5
+          position: bare soil
+          compTreat: control
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
