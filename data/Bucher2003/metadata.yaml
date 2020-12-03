@@ -1,0 +1,137 @@
+citationKey: Bucher2003 # Unique identifier in the format: LastnameYear (lowercase letters must be added when there are two or more entries by the same author and year, i.e.: LastnameYearx)
+doi: 10.1017/S0266467403003377 # DOI of the publication where data is published
+entryAuthor: Agustin Sarquis # First and last name of the person who entered the data in this file
+entryCreationDate: 2020-12-03 # Date when the data was entered in this file. Format: YYYY-MM-DD
+contactName: Agustin Sarquis # First and last name of contact person (may be the principal investigator supervising the entryAuthor)
+contactEmail: agusarquis@agro.uba.ar # Email of the contact person
+entryNote: altitude from Google Earth and MAT from POWER
+study: Assessment of fauna contribution to decomposition in a Chaco system
+
+siteInfo:
+        site: Chancani # Names of individual sites, if one site, keep on this line, if multiple, use array format
+              # These fields should be arrays of equal length to site array
+        coordinates:
+          latitude: -31.4 # Latitude in decimal units (check for negative that denotes southern hemisphere)
+          longitude: -65.55 # Longitude in decimal units (check for negative that denotes western hemisphere)
+        country: Argentina # Name of country where site was conducted
+        MAT: 19.91 # Mean annual temperature in degrees Celsius
+        MAP: 450 # Mean annual precipitation in mm
+        rainySeason: # Period of the year during which most precipitation occurs, i.e.: whole year, spring, summer, autumn, winter (if more than one use array format)
+        elevation: 300 # Elevation of study site in meters above sea level
+        landCover: forest
+        vegNote: Western Chaco xerophyllous woodland dominated by Aspidosperma quebracho-blanco and Prosopis flexuosa. The shrub layer is dominated by species of Larrea, Celtis, Mimozyganthus and Acacia, with intermingled grasses and herbs
+        cover:
+          plantCover: # Total plant cover percentage (if they report cover by specific plant types, fill the fields below)
+          bunchgrassCover:
+          shrubCover:
+          treeCover:
+          forbCover:
+          bareSoil:
+        soilTaxonomy:
+          soilOrder: # Soil order according to the classification system described below
+          soilFamily: # Soil family description (ex. 'Eutric' for a Eutric Cambisol)
+          soilSeries: # Soil series according to the classification system described below
+          classificationSystem: # Name of classification system used. Valid fields are: USDA, FAO, and WRB.
+
+experimentInfo:
+        incDesc: 5 mesh types x 4 harvests x 5 replicates
+        # These fields should all be one dimensional arrays. Values for experimental variables with multiple treatment levels should be entered in the variables section and left blank here
+        replicates: 5 # Number of replicates per treatment
+        duration: 365 # length of incubation in days
+        startingMonth: july # month during which the study started, all in lower case
+        litter: Mixture # plant species used as litter material for the experiment. All details related to the species must be specified in the initConditions.csv file
+        litterbag:
+          material: metal
+          meshSize: # mesh size in mm referring to one side of the net-square
+          dimentions: # size of the full litter bag in cm
+            width: 50
+            length: 50
+            radius: # for round or cilindrical structures
+            height: 10 # for 3-dimensional designs such as litter boxes in Austin2006NATURE
+          transmitance: # when reported, light transmitance of the mesh material as a percentage of full sunlight for each wavelength
+            total:
+            PAR:
+            UV:
+            UVA:
+            UVB:
+          position: bare soil
+
+variables: # These describe the columns of your timeSeries.csv file
+        V1: # column 1
+          name: Time
+          units:  months
+        V2:
+          name: Control
+          units: mass remaining
+          varDesc: Aspidosperma, Zyzyphus, Celtis, Mimozyganthus, Geoffroea, Prosopis and Acacia litter mixture in cages with 0.1 cm mesh on all sides
+          site: Chancani
+          meshSize: 0.1
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V3:
+          name: E1cm
+          units: mass remaining
+          varDesc: Aspidosperma, Zyzyphus, Celtis, Mimozyganthus, Geoffroea, Prosopis and Acacia litter mixture in cages with 1 cm mesh on all sides
+          site: Chancani
+          meshSize: 1
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V4:
+          name: E5cm
+          units: mass remaining
+          varDesc: Aspidosperma, Zyzyphus, Celtis, Mimozyganthus, Geoffroea, Prosopis and Acacia litter mixture in cages with 5 cm mesh on all sides
+          site: Chancani
+          meshSize: 5
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V5:
+          name: E10cm
+          units: mass remaining
+          varDesc: Aspidosperma, Zyzyphus, Celtis, Mimozyganthus, Geoffroea, Prosopis and Acacia litter mixture in cages with 10 cm mesh on all sides
+          site: Chancani
+          meshSize: 10
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V6:
+          name: OT
+          units: mass remaining
+          varDesc: Aspidosperma, Zyzyphus, Celtis, Mimozyganthus, Geoffroea, Prosopis and Acacia litter mixture in cages with an open top and 0.1 cm mesh on the sides
+          site: Chancani
+          meshSize: 0.1
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
