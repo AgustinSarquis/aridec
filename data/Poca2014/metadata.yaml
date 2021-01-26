@@ -1,5 +1,5 @@
 citationKey: Poca2014 # Unique identifier in the format: LastnameYear (lowercase letters must be added when there are two or more entries by the same author and year, i.e.: LastnameYearx)
-doi:  # DOI of the publication where data is published
+doi: https://doi.org/10.25260/EA.14.24.2.0.28 # DOI of the publication where data is published
 entryAuthor: Agustín Sarquis # First and last name of the person who entered the data in this file
 entryCreationDate: 2019-01-09 # Date when the data was entered in this file. Format: YYYY-MM-DD
 contactName: Agustín Sarquis # First and last name of contact person (may be the principal investigator supervising the entryAuthor)
