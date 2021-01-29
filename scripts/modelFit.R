@@ -11,6 +11,8 @@ months=M1$SoilRmodel@times
 Ct=getC(M1$SoilRmodel)
 matplot(months,Ct, type="l",lty=1, col=1, ylab="Carbon remaining (%)")
 
+SA1=1/FMEmodel$par[1] # in this case mean system age and transit time are equal
+
 # Run a Two Pool Parallel Model
 M2=twoppFit(deco$timeSeries[,c(1,2)], initialCarbon = 100) 
 months=M2$SoilRmodel@times
