@@ -9,7 +9,7 @@ deco=db[["Arriaga2007"]]
 
 # load necessary functions
 # One pool function
-onepFit=function(timeSeries, initialCarbon){
+onepFit=function(timeSeries, initialCarbon=100){
   complete=data.frame(time=timeSeries[complete.cases(timeSeries),1],Ct=timeSeries[complete.cases(timeSeries),2])
   n=nrow(complete)
   if(n < 3) stop("Time series is too short. No degrees of freedom")
@@ -33,7 +33,7 @@ onepFit=function(timeSeries, initialCarbon){
 }
 
 # Two pool parallel function
-twoppFit=function(timeSeries, initialCarbon, inipars=c(1, 0.5, 0.5)){
+twoppFit=function(timeSeries, initialCarbon=100, inipars=c(1, 0.5, 0.5)){
   complete=data.frame(time=timeSeries[complete.cases(timeSeries),1],Ct=timeSeries[complete.cases(timeSeries),2])
   n=nrow(complete)
   if(n < 5) stop("Time series is too short. No degrees of freedom")
@@ -57,7 +57,7 @@ twoppFit=function(timeSeries, initialCarbon, inipars=c(1, 0.5, 0.5)){
 }
 
 # Two Pool Series Function
-twopsFit=function(timeSeries, initialCarbon, inipars=c(1, 0.5, 0.5, 0.3)){
+twopsFit=function(timeSeries, initialCarbon=100, inipars=c(0.5, 0.25, 0.25, 0.15)){
   complete=data.frame(time=timeSeries[complete.cases(timeSeries),1],Ct=timeSeries[complete.cases(timeSeries),2])
   n=nrow(complete)
   if(n < 5) stop("Time series is too short. No degrees of freedom")
@@ -81,7 +81,7 @@ twopsFit=function(timeSeries, initialCarbon, inipars=c(1, 0.5, 0.5, 0.3)){
 }
 
 # Two Pool Model with Feedback Function
-twopfFit=function(timeSeries, initialCarbon, inipars=c(1, 0.5, 0.5, 0.5, 0.3)){
+twopfFit=function(timeSeries, initialCarbon=100, inipars=c(1, 0.5, 0.5, 0.5, 0.3)){
   complete=data.frame(time=timeSeries[complete.cases(timeSeries),1],Ct=timeSeries[complete.cases(timeSeries),2])
   n=nrow(complete)
   if(n < 6) stop("Time series is too short. No degrees of freedom")
@@ -100,16 +100,13 @@ twopfFit=function(timeSeries, initialCarbon, inipars=c(1, 0.5, 0.5, 0.5, 0.3)){
   
   Fit=modFit(f=costFunc, p=inipars, method="Marq", lower=rep(0, 5), upper=c(Inf, Inf, 1, 1, 1))
   bestMod=Func(pars=Fit$par)
-  print(paste(c("k1=", "k2=", "a21=", "a12=", "Proportion of C0 in pool 1="),Fit$par))
-  AIC=(2*length(Fit$par))-2*log(Fit$ms)
-  print(paste("AIC = ",AIC))
   SoilRmodel=SoilR::TwopFeedbackModel(t=tt,ks=Fit$par[1:2], a21=Fit$par[1]*Fit$par[3], a12=Fit$par[2]*Fit$par[4],
                                       C0=initialCarbon*c(Fit$par[5], 1-Fit$par[5]), In=0)
   return(list(FMEmodel=Fit, SoilRmodel=SoilRmodel, AIC=AIC))
 }
 
 # Three Pool Parallel Function
-threeppFit=function(timeSeries, initialCarbon, inipars=c(1, 0.5, 0.5, 0.5, 0.5)){
+threeppFit=function(timeSeries, initialCarbon=100, inipars=c(0.25, 0.125, 0.125, 0.125, 0.125)){
   complete=data.frame(time=timeSeries[complete.cases(timeSeries),1],Ct=timeSeries[complete.cases(timeSeries),2])
   n=nrow(complete)
   if(n < 6) stop("Time series is too short. No degrees of freedom")
@@ -128,15 +125,12 @@ threeppFit=function(timeSeries, initialCarbon, inipars=c(1, 0.5, 0.5, 0.5, 0.5))
   
   Fit=modFit(f=costFunc, p=inipars, method="Marq", lower=rep(0,5), upper=c(3, 3, 3, 1, 1))
   bestMod=Func(pars=Fit$par)
-  print(paste(c("k1=", "k2=", "k3=","proportion of C0 in pool 1=", "Proportion of C0 in pool 2="),Fit$par[1:5]))
-  AIC=(2*length(Fit$par))-2*log(Fit$ms)
-  print(paste("AIC = ",AIC))
   SoilRmodel=SoilR::ThreepParallelModel(t=tt,ks=Fit$par[1:3], C0=initialCarbon*c(Fit$par[4], Fit$par[5], 1-sum(Fit$par[4:5])), In=0, gam1=0, gam2=0)
   return(list(FMEmodel=Fit, SoilRmodel=SoilRmodel, AIC=AIC))
 }
 
 # Three Pool series Function
-threepsFit=function(timeSeries, initialCarbon, inipars=c(1, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5)){
+threepsFit=function(timeSeries, initialCarbon=100, inipars=c(0.5, 0.25, 0.25, 0.25, 0.25, 0.25, 0.25)){
   complete=data.frame(time=timeSeries[complete.cases(timeSeries),1],Ct=timeSeries[complete.cases(timeSeries),2])
   n=nrow(complete)
   if(n < 8) stop("Time series is too short. No degrees of freedom")
@@ -155,9 +149,6 @@ threepsFit=function(timeSeries, initialCarbon, inipars=c(1, 0.5, 0.5, 0.5, 0.5, 
   
   Fit=modFit(f=costFunc, p=inipars, method="Marq", lower=rep(0,7), upper=c(Inf, Inf, Inf, 1, 1, 1,1))
   bestMod=Func(pars=Fit$par)
-  print(paste(c("k1=", "k2=", "k3=","alpha21", "alpha32","proportion of C0 in pool 1=", "Proportion of C0 in pool 2="),Fit$par[1:7]))
-  AIC=(2*length(Fit$par))-2*log(Fit$ms)
-  print(paste("AIC = ",AIC))
   SoilRmodel=SoilR::ThreepSeriesModel(t=tt,ks=Fit$par[1:3], a21=Fit$par[1]*Fit$par[4], a32=Fit$par[2]*Fit$par[5], C0=initialCarbon*c(Fit$par[6], Fit$par[7], 1-sum(Fit$par[6:7])), In=0)
   return(list(FMEmodel=Fit, SoilRmodel=SoilRmodel, AIC=AIC))
 }
@@ -174,17 +165,17 @@ M3output=list()
 n=ncol(deco$timeSeries)
 for (i in 2:n){
   names=paste(colnames(deco$timeSeries[i]))
-  M1=onepFit(deco$timeSeries[,c(1,i)], initialCarbon = 100)
+  M1=onepFit(deco$timeSeries[,c(1,i)])
   M1list[[names]]=M1output[[i]]=list("k"=M1$FMEmodel$par, "AIC"=2-2*log(M1$FMEmodel$ms), "System age"=-1/M1$FMEmodel$par)
-  M2=twoppFit(deco$timeSeries[,c(1,i)], initialCarbon = 100)
+  M2=twoppFit(deco$timeSeries[,c(1,i)])
   M2list[[names]]=M2output[[i]]=list("k1"=-(M2$FMEmodel$par[1]),
                                      "k2"=-(M2$FMEmodel$par[2]),
                                      "Proportion of C in pool 1"=M2$FMEmodel$par[3],
                                      "AIC"=(2*length(M2$FMEmodel$par))-2*log(M2$FMEmodel$ms),
                                      "System age"=systemAge(A=diag(-(M2$FMEmodel$par[c(1,2)])),u=matrix(c(M2$FMEmodel$par[3], 1-M2$FMEmodel$par[3]), ncol=1)),
                                      "Transit Time"=transitTime(A=diag(-(M2$FMEmodel$par[c(1,2)])),u=matrix(c(M2$FMEmodel$par[3], 1-M2$FMEmodel$par[3]), ncol=1))
-  )
-  M3=twopsFit(deco$timeSeries[,c(1,2)], initialCarbon = 100)
+                                     )
+  M3=twopsFit(deco$timeSeries[,c(1,i)]) # le cambie los inipars
   M3list[[names]]=M3output[[i]]=list("k1"=-(M3$FMEmodel$par[1]),
                                      "k2"=-(M3$FMEmodel$par[2]),
                                      "a21"=(M3$FMEmodel$par[3]),
@@ -196,34 +187,58 @@ for (i in 2:n){
   Arriaga2007=list("One pool"=M1list,"Two pools parallel"=M2list,"Two pools series"=M3list)
 }
 
+M4list=list()
+M4output=list()
+for (i in 2:n){ # no funciona: "Error in 1:s : el resultado seria un vector muy largo"
+  names=paste(colnames(deco$timeSeries[i]))
+  M4=twopfFit(deco$timeSeries[,c(1,i)])
+  M4list[[names]]=M4output[[i]]=list("k1"=-(M4$FMEmodel$par[1]),
+                                   "k2"=-(M4$FMEmodel$par[2]),
+                                   "a21"=(M4$FMEmodel$par[3]),
+                                   "a12"=(M4$FMEmodel$par[4]),
+                                   "Proportion of C in pool 1"=M4$FMEmodel$par[5],
+                                   "AIC"=(2*length(M4$FMEmodel$par))-2*log(M4$FMEmodel$ms),
+                                   "System age"= systemAge(A=matrix(c(-M4$FMEmodel$par[1],M4$FMEmodel$par[3],M4$FMEmodel$par[4],-M4$FMEmodel$par[2]),ncol=2),u=matrix(c(M4$FMEmodel$par[5], 1-M4$FMEmodel$par[5]), ncol=1)),
+                                   "Transit time"=transitTime(A=matrix(c(-M4$FMEmodel$par[1],M4$FMEmodel$par[3],M4$FMEmodel$par[4],-M4$FMEmodel$par[2]),ncol=2),u=matrix(c(M4$FMEmodel$par[5], 1-M4$FMEmodel$par[5]), ncol=1))
+)
+}
 
-# Run a Two Pool Model with feedback
-M4=twopfFit(deco$timeSeries[,c(1,2)], initialCarbon = 100)
-k=M4$FMEmodel$par[c(1,2)]
-A4=diag(-k)
-A4[2,1]=M4$FMEmodel$par[3]
-A4[1,2]=M4$FMEmodel$par[4]
-u4=matrix(c(M4$FMEmodel$par[5], 1-M4$FMEmodel$par[5]), ncol=1)
-SA4=systemAge(A=A4, u=u4)
-TT4=transitTime(A=A4, u=u4)
+# M5 me daba valores de C0 para los pools 1 y 2 cercanos a 1. Al cambiar inipars se soluciono en casi todos los casos
+M5list=list()
+M5output=list()
+for (i in 2:n){ 
+ names=paste(colnames(deco$timeSeries[i]))
+ M5=threeppFit(deco$timeSeries[,c(1,i)])
+ M5list[[names]]=M5output[[i]]=list("k1"=-(M5$FMEmodel$par[1]),
+                                   "k2"=-(M5$FMEmodel$par[2]),
+                                   "k3"=-(M5$FMEmodel$par[3]),
+                                   "Proportion of C in pool 1"=M5$FMEmodel$par[4],
+                                   "Proportion of C in pool 2"=M5$FMEmodel$par[5],
+                                   "AIC"=(2*length(M5$FMEmodel$par))-2*log(M5$FMEmodel$ms),
+                                   "System age"=systemAge(A=diag(-(M5$FMEmodel$par[c(1:3)])),u=matrix(c(M5$FMEmodel$par[4],M5$FMEmodel$par[5], 1-M5$FMEmodel$par[4]-M5$FMEmodel$par[5]), ncol=1)),
+                                   "Transit Time"=transitTime(A=diag(-(M5$FMEmodel$par[c(1:3)])),u=matrix(c(M5$FMEmodel$par[4],M5$FMEmodel$par[5], 1-M5$FMEmodel$par[4]-M5$FMEmodel$par[5]), ncol=1))
+)
+}
 
-# Run a Three Pool Parallel Model
-M5=threeppFit(deco$timeSeries[,c(1,2)], initialCarbon = 100)
-k=M5$FMEmodel$par[c(1,2,3)]
-A5=diag(-k)
-u5=matrix(c(M5$FMEmodel$par[4], M5$FMEmodel$par[5], 1-M5$FMEmodel$par[4]-M5$FMEmodel$par[5]), ncol=1)
-SA5=systemAge(A=A5, u=u5)
-TT5=transitTime(A=A5, u=u5)
+# M6 me genera 6 modelos donde la proporcion total de C es mayor que 1. La baje los inipars porque no corria, pero si se los bajo mas tampoco corre. 
+M6output=list()
+M6list=list()
+for (i in 2:n){ 
+  names=paste(colnames(deco$timeSeries[i]))
+  M6=threepsFit(deco$timeSeries[,c(1,i)])
+  M6list[[names]]=M6output[[i]]=list("k1"=-(M6$FMEmodel$par[1]),
+                                     "k2"=-(M6$FMEmodel$par[2]),
+                                     "k3"=-(M6$FMEmodel$par[3]),
+                                     "a21"=M6$FMEmodel$par[4],
+                                     "a32"=M6$FMEmodel$par[5],
+                                     "Proportion of C in pool 1"=M6$FMEmodel$par[6],
+                                     "Proportion of C in pool 2"=M6$FMEmodel$par[7],
+                                     "AIC"=(2*length(M6$FMEmodel$par))-2*log(M6$FMEmodel$ms),
+                                     "System age"=systemAge(A=matrix(c(-M6$FMEmodel$par[1], M6$FMEmodel$par[4], 0, 0, -M6$FMEmodel$par[2], M6$FMEmodel$par[5], 0, 0, -M6$FMEmodel$par[3]), ncol=3) ,u=matrix(c(M6$FMEmodel$par[6],M6$FMEmodel$par[7], 1-M6$FMEmodel$par[6]-M6$FMEmodel$par[7]), ncol=1)),
+                                     "Transit Time"=transitTime(A=matrix(c(-M6$FMEmodel$par[1], M6$FMEmodel$par[4], 0, 0, -M6$FMEmodel$par[2], M6$FMEmodel$par[5], 0, 0, -M6$FMEmodel$par[3]), ncol=3),u=matrix(c(M6$FMEmodel$par[6],M6$FMEmodel$par[7], 1-M6$FMEmodel$par[6]-M6$FMEmodel$par[7]), ncol=1))
+  )
+  }
 
-# Run a Three Pool Series Model
-M6=threepsFit(deco$timeSeries[,c(1,2)], initialCarbon = 100)
-k=M6$FMEmodel$par[c(1,2,3)]
-A6=diag(-k)
-A6[2,1]=M6$FMEmodel$par[4]
-A6[3,2]=M6$FMEmodel$par[5]
-u6=matrix(c(M6$FMEmodel$par[6], M6$FMEmodel$par[7], 1-M6$FMEmodel$par[6]-M6$FMEmodel$par[7]), ncol=1)
-SA6=systemAge(A=A6, u=u6)
-TT6=transitTime(A=A6, u=u6)
 
 
 
