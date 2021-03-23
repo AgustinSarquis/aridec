@@ -5,8 +5,8 @@ library(aridec)
 
 # load single entry
 db=loadEntries()
-df=db[["Arriaga2007"]]
-Ct=df$timeSeries[-1]
+entry=db[["Arriaga2007"]]
+Ct=entry$timeSeries[-1]
 
 # load necessary functions
 # One pool function
