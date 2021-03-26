@@ -1,0 +1,4 @@
+species,type,N-fixer,material,amount,carbon,nitrogen,C:N,phosphorus,potassium,sodium,magnesium,manganese,copper,zinc,lead,calcium,sulfur,iron,lignin,cellulose,hemicellulose,cell solubles,SLA
+Plathymenia reticulata,deciduous,yes,prematurely senesced leaves,12,,1.322,,0.040,,,,,,,,,,26.44,18.88,,,,
+Eucalyptus camaldulensis,deciduous,no,prematurely senesced leaves,12,,0.705,,0.031,,,,,,,,,,16.35,15.16,,,,
+mixture,deciduous,,prematurely senesced leaves,12,,1.046,,0.039,,,,,,,,,,19.56,16.36,,,,

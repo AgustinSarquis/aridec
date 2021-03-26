@@ -1,0 +1,484 @@
+citationKey: Correa2016 # Unique identifier in the format: LastnameYear (lowercase letters must be added when there are two or more entries by the same author and year, i.e.: LastnameYearx)
+doi: 10.3832/ifor1459-008 # DOI of the publication where data is published
+entryAuthor: Ignacio Siebenhart # First and last name of the person who entered the data in this file
+entryCreationDate: 2021-03-20 # Date when the data was entered in this file. Format: YYYY-MM-DD
+contactName: Agustin Sarquis # First and last name of contact person (may be the principal investigator supervising the entryAuthor)
+contactEmail: agusarquis@agro.uba.ar # Email of the contact person
+entryNote: MAT and MAP data from POWER DATA (Larc NASA) # Any notes or comments related to this entry.
+study: Roles of litter decomposition and microbial activity on phosphorus release in the disturbed, preserved and experimental sites. # Overall study description
+
+siteInfo:
+        site: Jaiba # Names of individual sites, if one site, keep on this line, if multiple, use array format
+              # These fields should be arrays of equal length to site array
+        coordinates:
+          latitude: -15.1508333 # Latitude in decimal units (check for negative that denotes southern hemisphere)
+          longitude: -43.823888888888895 # Longitude in decimal units (check for negative that denotes western hemisphere)
+        country: Brazil # Name of country where site was conducted
+        MAT: 25.8 # Mean annual temperature in degrees Celsius
+        MAP: 827 # Mean annual precipitation in mm
+        rainySeason: # Period of the year during which most precipitation occurs, i.e.: whole year, spring, summer, autumn, winter (if more than one use array format)
+        elevation: 503.73  # Elevation of study site in meters above sea level
+        landCover: forest  # Land cover of the site. Valid fields are: greenbelt, (abbandoned) farmland, mangrove forest, subalpine, shrubland, urban, sandland, forest, steppe, desert, grassland, savanna
+        vegNote:
+         - Native woody dominant species (Plathymenia reticulata, Tabebuia heptaphylla, Myracrodruon urundeuva, Machaerium stipitatum, Enterolobium contortisiliquum, Anadenanthera pergrina, Aspidosperma multiflorum, Schinopsis brasiliensis, Terminalia argentea).
+         - Dense and invasive community of spinny shrubs (Piptadenia moniliformis, Mimosa sp, Croton glandulosus, Platymiscium praecox, Acacia monacantha, Thiloa glaucocarpa and Tabebuia serratifolia)
+        cover:
+          plantCover: # Total plant cover percentage (if they report cover by specific plant types, fill the fields below)
+          bunchgrassCover:
+          shrubCover:
+          treeCover:
+          forbCover:
+          bareSoil:
+        soilTaxonomy:
+          soilOrder: # Soil order according to the classification system described below
+          soilFamily: # Soil family description (ex. 'Eutric' for a Eutric Cambisol)
+          soilSeries: # Soil series according to the classification system described below
+          classificationSystem: # Name of classification system used. Valid fields are: USDA, FAO, and WRB.
+
+experimentInfo:
+        incDesc: 3 site x 2 inoculation x 3 littertype x 2 harvests x 3 replicates # Short description of the incubation setup and main treatments
+        # These fields should all be one dimensional arrays. Values for experimental variables with multiple treatment levels should be entered in the variables section and left blank here
+        replicates: 3 # Number of replicates per treatment
+        duration: 243.334 # length of incubation in days
+        startingMonth: # month during which the study started, all in lower case
+        litter: # plant species used as litter material for the experiment. All details related to the species must be specified in the initConditions.csv file
+        litterbag:
+          material: nylon # mesh type used to construct the litter bags, options are: wire, aluminum, window screening, net curtain, bolting cloth, plastic, fiberglass, nylon, polypropylene, polyester, polyethylene, polyamide
+          meshSize: 1 # mesh size in mm referring to one side of the net-square
+          dimentions: # size of the full litter bag in cm
+            width: 12
+            length: 13
+            radius: # for round or cilindrical structures
+            height: # for 3-dimensional designs such as litter boxes in Austin2006NATURE
+          transmitance: # when reported, light transmitance of the mesh material as a percentage of full sunlight for each wavelength
+            total:
+            PAR:
+            UV:
+            UVA:
+            UVB:
+          position: under litter # position of litterbags in the field, valid options are: bare soil, decomposition bed, under litter, over litter, over lawn, next to grass, under tree/shrub/grass, buried X cm deep, underwater, under rainout shelter, under frame, suspended X cm, under shadecloth
+
+variables: # These describe the columns of your timeSeries.csv file
+        V1: # column 1
+          name: Time
+          units: months # Time units used in accompanying file. Possible options are: days, weeks, months, years
+        V2: #
+          name: PP
+          units: mass remaining # units in which litter mass loss was reported. Valid options are: mass remaining, organic matter remaining, C remaining
+          varDesc: P. reticulata litter at P. reticulata site without inoculation # Description of the variable
+          site: Jaiba # Site where the experiment was conducted
+          litter: Plathymenia reticulata
+          compTreat:
+           - P. reticulata site
+           - no inoculation
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V3: #
+          name: PPI
+          units: mass remaining # units in which litter mass loss was reported. Valid options are: mass remaining, organic matter remaining, C remaining
+          varDesc: P. reticulata litter at P. reticulata site with rizhobium inoculation # Description of the variable
+          site: Jaiba # Site where the experiment was conducted
+          litter: Plathymenia reticulata
+          compTreat:
+           - P. reticulata site
+           - Rizhobium inoculation # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V4: #
+          name: PE
+          units: mass remaining # units in which litter mass loss was reported. Valid options are: mass remaining, organic matter remaining, C remaining
+          varDesc: P. reticulata litter at E. camaldulensis site without inoculation # Description of the variable
+          site: Jaiba # Site where the experiment was conducted
+          litter: Plathymenia reticulata
+          compTreat:
+           - E. camaldulensis site
+           - no inoculation
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V5: #
+          name: PEI
+          units: mass remaining # units in which litter mass loss was reported. Valid options are: mass remaining, organic matter remaining, C remaining
+          varDesc: P. reticulata litter at E. camaldulensis site with AMF inoculation # Description of the variable
+          site: Jaiba  # Site where the experiment was conducted
+          litter: Plathymenia reticulata
+          compTreat:
+           - E. camaldulensis site
+           - AMF inoculation
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V6: #
+          name: PM
+          units: mass remaining # units in which litter mass loss was reported. Valid options are: mass remaining, organic matter remaining, C remaining
+          varDesc: P. reticulata litter at Mixed site without inoculation # Description of the variable
+          site: Jaiba # Site where the experiment was conducted
+          litter: Plathymenia reticulata
+          compTreat:
+           - Mixed site
+           - no inoculation
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V7: #
+          name: PMI
+          units: mass remaining # units in which litter mass loss was reported. Valid options are: mass remaining, organic matter remaining, C remaining
+          varDesc: P. reticulata litter at Mixed site with AMF and Rhizobium inoculation # Description of the variable
+          site: Jaiba # Site where the experiment was conducted
+          litter: Plathymenia reticulata
+          compTreat:
+           - Mixed site
+           - AMF and Rhizobium inoculation
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V8: #
+          name: PC
+          units: mass remaining  # units in which litter mass loss was reported. Valid options are: mass remaining, organic matter remaining, C remaining
+          varDesc: P. reticulata litter at invaded site # Description of the variable
+          site: # Site where the experiment was conducted
+          litter: Plathymenia reticulata
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+           - invaded site
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V9: #
+          name: PPr
+          units: mass remaining # units in which litter mass loss was reported. Valid options are: mass remaining, organic matter remaining, C remaining
+          varDesc: P. reticulata litter at preserved site # Description of the variable
+          site: # Site where the experiment was conducted
+          litter: Plathymenia reticulata
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+           - Preserved site
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V10: #
+          name: EP
+          units: mass remaining # units in which litter mass loss was reported. Valid options are: mass remaining, organic matter remaining, C remaining
+          varDesc: E. camaldulensis litter at P. reticulata site without inoculation # Description of the variable
+          site: Jaiba # Site where the experiment was conducted
+          litter: Eucalyptus camaldulensis
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+           - P. reticulata site
+           - no inoculation
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V11: #
+          name: EPI
+          units: mass remaining # units in which litter mass loss was reported. Valid options are: mass remaining, organic matter remaining, C remaining
+          varDesc: E. camaldulensis litter at P. reticulata site with rizhobium inoculation # Description of the variable
+          site: Jaiba # Site where the experiment was conducted
+          litter: Eucalyptus camaldulensis
+          compTreat:
+           - P. reticulata site
+           - Rhizobium inoculation
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V12: #
+          name: EE
+          units: mass remaining # units in which litter mass loss was reported. Valid options are: mass remaining, organic matter remaining, C remaining
+          varDesc: E. camaldulensis litter at E. camaldulensis site without inoculation # Description of the variable
+          site: Jaiba # Site where the experiment was conducted
+          litter: Eucalyptus camaldulensis
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+           - E. camaldulensis site
+           - no inoculation
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V13: #
+          name: EEI
+          units: mass remaining # units in which litter mass loss was reported. Valid options are: mass remaining, organic matter remaining, C remaining
+          varDesc: E. camaldulensis litter at E. camaldulensis site with AMF inoculation # Description of the variable
+          site: Jaiba # Site where the experiment was conducted
+          litter: Eucalyptus camaldulensis
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+           - E. camaldulensis site
+           - AMF inoculation
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V14: #
+          name: EM
+          units: mass remaining # units in which litter mass loss was reported. Valid options are: mass remaining, organic matter remaining, C remaining
+          varDesc: E. camaldulensis litter at E. camaldulensis site without inoculation # Description of the variable
+          site: Jaiba # Site where the experiment was conducted
+          litter: Eucalyptus camaldulensis
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+           - Mixed site
+           - no inoculation
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V15: #
+          name: EMI
+          units: mass remaining # units in which litter mass loss was reported. Valid options are: mass remaining, organic matter remaining, C remaining
+          varDesc: E. camaldulensis litter at Mixed site with AMF and Rhizobium inoculation # Description of the variable
+          site: Jaiba # Site where the experiment was conducted
+          litter: Eucalyptus camaldulensis
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+           - Mixed site
+           - AMF and Rhizobium inoculation
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V16: #
+          name: EC
+          units: mass remaining # units in which litter mass loss was reported. Valid options are: mass remaining, organic matter remaining, C remaining
+          varDesc: E. camaldulensis litter at invaded site  # Description of the variable
+          site: Jaiba # Site where the experiment was conducted
+          litter: Eucalyptus camaldulensis
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+           - invaded site
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V17: #
+          name: EPr
+          units: mass remaining # units in which litter mass loss was reported. Valid options are: mass remaining, organic matter remaining, C remaining
+          varDesc:  E. camaldulensis litter at preserved site # Description of the variable
+          site: Jaiba # Site where the experiment was conducted
+          litter: Eucalyptus camaldulensis
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+           - Preserved site
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V18: #
+          name: MP
+          units: mass remaining # units in which litter mass loss was reported. Valid options are: mass remaining, organic matter remaining, C remaining
+          varDesc: Mixed litter at P. reticulata site without inoculation # Description of the variable
+          site: Jaiba # Site where the experiment was conducted
+          litter:
+           - Plathymenia reticulata
+           - Eucalyptus camaldulensis
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+           - P. reticulata site
+           - no inoculation
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V19: #
+          name: MPI
+          units: mass remaining # units in which litter mass loss was reported. Valid options are: mass remaining, organic matter remaining, C remaining
+          varDesc: Mixed litter at P. reticulata site with Rhizobium inoculation # Description of the variable
+          site: Jaiba # Site where the experiment was conducted
+          litter:
+           - Plathymenia reticulata
+           - Eucalyptus camaldulensis
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+           - P. reticulata site
+           - Rhizobium inoculation
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V20: #
+          name: ME
+          units: mass remaining # units in which litter mass loss was reported. Valid options are: mass remaining, organic matter remaining, C remaining
+          varDesc: Mixed litter at E. camaldulensis site without inoculation # Description of the variable
+          site: Jaiba # Site where the experiment was conducted
+          litter:
+           - Plathymenia reticulata
+           - Eucalyptus camaldulensis
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+           - E. camaldulensis site
+           - no inoculation
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V21: #
+          name: MEI
+          units: mass remaining # units in which litter mass loss was reported. Valid options are: mass remaining, organic matter remaining, C remaining
+          varDesc: Mixed litter at E. camaldulensis site with AMF inoculation # Description of the variable
+          site: Jaiba # Site where the experiment was conducted
+          litter:
+           - Plathymenia reticulata
+           - Eucalyptus camaldulensis
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+           - E. camaldulensis site
+           - AMF inoculation
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V22: #
+          name: MM
+          units: mass remaining # units in which litter mass loss was reported. Valid options are: mass remaining, organic matter remaining, C remaining
+          varDesc: Mixed litter at mixed site without inoculation # Description of the variable
+          site: Jaiba # Site where the experiment was conducted
+          litter:
+           - Plathymenia reticulata
+           - Eucalyptus camaldulensis
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+           - Mixed site
+           - no inoculation
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V23: #
+          name: MMI
+          units: mass remaining # units in which litter mass loss was reported. Valid options are: mass remaining, organic matter remaining, C remaining
+          varDesc: Mixed litter at mixed site with AMF and Rhizobium inoculation # Description of the variable
+          site: Jaiba # Site where the experiment was conducted
+          litter:
+           - Plathymenia reticulata
+           - Eucalyptus camaldulensis
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+           - Mixed site
+           - AMF and Rhizobium inoculation
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V24: #
+          name: MC
+          units: mass remaining # units in which litter mass loss was reported. Valid options are: mass remaining, organic matter remaining, C remaining
+          varDesc: Mixed litter at invaded site # Description of the variable
+          site: Jaiba # Site where the experiment was conducted
+          litter:
+           - Plathymenia reticulata
+           - Eucalyptus camaldulensis
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+           - invaded site
+           - no inoculation           
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V25: #
+          name: MPr
+          units: mass remaining # units in which litter mass loss was reported. Valid options are: mass remaining, organic matter remaining, C remaining
+          varDesc: Mixed litter at Preserved site # Description of the variable
+          site: Jaiba # Site where the experiment was conducted
+          litter:
+           - Plathymenia reticulata
+           - Eucalyptus camaldulensis
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+           - Preserved site
+           - no inoculation
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
