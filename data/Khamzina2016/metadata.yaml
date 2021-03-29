@@ -59,7 +59,7 @@ experimentInfo:
 variables: # These describe the columns of your timeSeries.csv file
         V1: # column 1
           name: Time
-          units: months # Time units used in accompanying file. Possible options are: days, weeks, months, years
+          units: days # Time units used in accompanying file. Possible options are: days, weeks, months, years
         V2:
           name: EL1
           units: mass remaining # units in which litter mass loss was reported. Valid options are: mass remaining, organic matter remaining, C remaining
