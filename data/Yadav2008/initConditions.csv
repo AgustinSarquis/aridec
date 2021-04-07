@@ -1,0 +1,5 @@
+species, type, N-fixer, material, amount, carbon, nitrogen, C:N, phosphorus, potassium, sodium, magnesium, manganese, copper, zinc, lead, calcium, sulfur, iron, lignin, cellulose, hemicellulose, cell solubles, SLA
+Prosopis cineraria, evergreen, yes, leaves, 20, 48.7, 2.68, 18.2, 0.22, 0.89,,,,,,,,,,21.6
+Dalbergia sissoo, evergreen, yes, leaves, 20, 49.3, 2.31, 21.3, 0.19, 0.72,,,,,,,,,, 7.94
+Vachellia leucophloea, deciduous, yes, leaves, 20, 51.2, 1.87, 27.4, 0.23, 0.33,,,,,,,,,, 14.3
+Vachellia nilotica, evergreen, yes, leaves, 20, 48.9, 2.12, 23.1, 0.12, 0.68,,,,,,,,,, 7.9
