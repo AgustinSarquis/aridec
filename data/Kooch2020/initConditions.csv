@@ -1,0 +1,17 @@
+species,type,N-fixer,material,amount,carbon,nitrogen,C:N,phosphorus,potassium,sodium,magnesium,manganese,copper,zinc,lead,calcium,sulfur,iron,lignin,cellulose,hemicellulose,cell solubles,SLA
+Artemisia aucheri1,forb,no,shoot,3,44.21,1.70,26.02,0.25,1.74
+Astragalus podolobus1,forb,yes,shoot,3,47.54,1.55,30.69,0.23,1.60
+Eurotia lanata1,forb,no,shoot,3,48.10,1.47,32.56,0.20,1.49
+Artemisia aucheri2,forb,no,shoot,3,45.56,1.63,28.01,0.21,1.72
+Astragalus podolobus2,forb,yes,shoot,3,44.89,1.42,31.54,0.22,1.51
+Eurotia lanata2,forb,no,shoot,3,46.87,1.41,33.20,0.19,1.39
+Artemisia aucheri3,forb,no,shoot,3,50.89,1.59,31.89,0.20,1.65
+Astragalus podolobus3,forb,yes,shoot,3,44.06,1.35,32.47,0.15,1.31
+Eurotia lanata3,forb,no,shoot,3,44.63,1.33,33.46,0.18,1.35
+Artemisia aucheri4,forb,no,shoot,3,43.13,1.19,35.79,0.17,1.26
+Astragalus podolobus4,forb,yes,shoot,3,39.72,1.05,37.67,0.11,1.09
+Eurotia lanata4,forb,no,shoot,3,31.85,0.88,35.94,0.16,0.91
+Mean1,forb,,shoot,3,46.62,1.57,29.76,0.23,1.61
+Mean2,forb,,shoot,3,45.77,1.48,30.92,0.21,1.54
+Mean3,forb,,shoot,3,46.52,1.42,32.61,0.18,1.44
+Mean4,forb,,shoot,3,38.23,1.04,36.47,0.15,1.09
