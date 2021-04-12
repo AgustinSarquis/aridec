@@ -116,7 +116,8 @@ twopfFit=function(Ct, time, C0=100, inipars=c(1, 0.5, 0.5, 0.5, 0.3)){
 }
 
 # Three Pool Parallel Function
-threeppFit=function(Ct, time, C0=100, inipars=c(0.25, 0.125, 0.125, 0.125, 0.125)){
+# threeppFit=function(Ct, time, C0=100, inipars=c(0.25, 0.125, 0.125, 0.125, 0.125)){
+threeppFit=function(Ct, time, C0=100, inipars=c(0.125, 0.0625, 0.0625, 0.0625, 0.0625)){
   complete=data.frame(time,Ct)
   n=nrow(complete)
   if(n < 6) stop("Time series is too short. No degrees of freedom")
@@ -139,7 +140,7 @@ threeppFit=function(Ct, time, C0=100, inipars=c(0.25, 0.125, 0.125, 0.125, 0.125
   SystemAge=systemAge(A=diag(-(Fit$par[c(1:3)])),u=matrix(c(Fit$par[4],Fit$par[5], 1-Fit$par[4]-Fit$par[5]), ncol=1), a=0, q=0.5)
   TransitTime=transitTime(A=diag(-(Fit$par[c(1:3)])),u=matrix(c(Fit$par[4],Fit$par[5], 1-Fit$par[4]-Fit$par[5]), ncol=1), a=0, q=0.5)
   AIC=(2*length(Fit$par))-2*log(Fit$ms)
-  return(list(k1=-(Fit$par[1]), k2=-(Fit$par[2]), k3=-(Fit$par[3]), Pool1C=Fit$par[4], Pool2C=Fit$par[5],
+  return(list(k1=(Fit$par[1]), k2=(Fit$par[2]), k3=(Fit$par[3]), Pool1C=Fit$par[4], Pool2C=Fit$par[5],
     SystemAge=SystemAge, TransitTime=TransitTime, AIC=AIC))
 }
 
@@ -173,11 +174,11 @@ threepsFit=function(Ct, time, C0=100, inipars=c(0.5, 0.25, 0.25, 0.25, 0.25, 0.2
 
 ##########################################################################################################################################################################################
 
-onePoutput=lapply(Ct, onepFit, time=df$timeSeries[,1])
-twoPPoutput=lapply(Ct, twoppFit, time=df$timeSeries[,1])
-twoPSoutput=lapply(Ct, twopsFit, time=df$timeSeries[,1])
-twoPFoutput=lapply(Ct, twopfFit, time=df$timeSeries[,1]) # agregando transit time y system age el vector se hace muy grande e imposible de procesar
+onePoutput=lapply(Ct, onepFit, time=entry$timeSeries[,1])
+twoPPoutput=lapply(Ct, twoppFit, time=entry$timeSeries[,1])
+twoPSoutput=lapply(Ct, twopsFit, time=entry$timeSeries[,1])
+twoPFoutput=lapply(Ct, twopfFit, time=entry$timeSeries[,1]) # agregando transit time y system age el vector se hace muy grande e imposible de procesar
 #SystemAge=systemAge(A=matrix(c(-Fit$par[1],Fit$par[3],Fit$par[4],-Fit$par[2]),ncol=2),u=matrix(c(Fit$par[5], 1-Fit$par[5]), ncol=1), a=0, q=0.5)
 #TransitTime=transitTime(A=matrix(c(-Fit$par[1],Fit$par[3],Fit$par[4],-Fit$par[2]),ncol=2),u=matrix(c(Fit$par[5], 1-Fit$par[5]), ncol=1), a=0, q=0.5)
-threePPoutput=lapply(Ct, threeppFit, time=df$timeSeries[,1])
-threePSoutput=lapply(Ct, threepsFit, time=df$timeSeries[,1]) # modifique los inipars
+threePPoutput=lapply(Ct, threeppFit, time=entry$timeSeries[,1])
+threePSoutput=lapply(Ct, threepsFit, time=entry$timeSeries[,1]) # modifique los inipars
