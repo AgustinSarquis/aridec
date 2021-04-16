@@ -1,0 +1,491 @@
+citationKey: DiedhiouSall2013 # Unique identifier in the format: LastnameYear (lowercase letters must be added when there are two or more entries by the same author and year, i.e.: LastnameYearx)
+doi: 10.2136/sssaj2012.0284 # DOI of the publication where data is published
+entryAuthor: Ignacio Siebenhart # First and last name of the person who entered the data in this file
+entryCreationDate: 2021-04-15 # Date when the data was entered in this file. Format: YYYY-MM-DD
+contactName: Agustin Sarquis # First and last name of contact person (may be the principal investigator supervising the entryAuthor)
+contactEmail: agusarquis@agro.uba.ar # Email of the contact person
+entryNote: Same incDesc for each site ; MAT from NASA POWER # Any notes or comments related to this entry.
+study: They evaluate the effect of canopy and macrofauna in litter decomposition of stem and leaf litter of two native shrubs species # Overall study description
+
+siteInfo:
+        site:
+         - Keur Mata Aram
+         - Nioro du Rip
+        coordinates:
+          latitude: # Latitude in decimal units (check for negative that denotes southern hemisphere)
+           - 14.75
+           - 13.75
+          longitude: # Longitude in decimal units (check for negative that denotes western hemisphere)
+           - -16.85
+           - -15.783
+        country: # Name of country where site was conducted
+         - Senegal
+         - Senegal
+        MAT: # Mean annual temperature in degrees Celsius
+         - 26.16
+         - 27.34
+        MAP: # Mean annual precipitation in mm
+         - 450
+         - 750
+        rainySeason: # Period of the year during which most precipitation occurs, i.e.: whole year, spring, summer, autumn, winter (if more than one use array format)
+        elevation:  # Elevation of study site in meters above sea level
+         - 43
+         - 18
+        landCover:  # Land cover of the site. Valid fields are: greenbelt, (abbandoned) farmland, mangrove forest, subalpine, shrubland, urban, sandland, forest, steppe, desert, grassland, savanna
+         - farmland
+         - farmland
+        vegNote: # Additional details about land cover such as species or functional type composition
+         - Guiera senegalensis is the dominant shrub
+         - Piliostigma reticulatum is the dominant shrub
+        cover:
+          plantCover: # Total plant cover percentage (if they report cover by specific plant types, fill the fields below)
+          bunchgrassCover:
+          shrubCover:
+          treeCover:
+          forbCover:
+          bareSoil:
+        soilTaxonomy:
+          soilOrder: # Soil order according to the classification system described below
+           - Aeronosol
+           - Lixisol
+          soilFamily: # Soil family description (ex. 'Eutric' for a Eutric Cambisol)
+           - Rubic
+           - Haplic Ferric
+          soilSeries: # Soil series according to the classification system described below
+          classificationSystem: FAO # Name of classification system used. Valid fields are: USDA, FAO, and WRB.
+
+experimentInfo:
+        incDesc: 6 litter type x 2 meshsize x 3 position x 6 replicates # Short description of the incubation setup and main treatments
+        # These fields should all be one dimensional arrays. Values for experimental variables with multiple treatment levels should be entered in the variables section and left blank here
+        replicates: 6 # Number of replicates per treatment
+        duration: 210 # length of incubation in days
+        startingMonth: july # month during which the study started, all in lower case
+        litter: # plant species used as litter material for the experiment. All details related to the species must be specified in the initConditions.csv file
+        litterbag:
+          material: # mesh type used to construct the litter bags, options are: wire, aluminum, window screening, net curtain, bolting cloth, plastic, fiberglass, nylon, polypropylene, polyester, polyethylene, polyamide
+          meshSize: # mesh size in mm referring to one side of the net-square
+          dimentions: # size of the full litter bag in cm
+            width: 15
+            length: 15
+            radius: # for round or cilindrical structures
+            height: # for 3-dimensional designs such as litter boxes in Austin2006NATURE
+          transmitance: # when reported, light transmitance of the mesh material as a percentage of full sunlight for each wavelength
+            total:
+            PAR:
+            UV:
+            UVA:
+            UVB:
+          position: # position of litterbags in the field, valid options are: bare soil, decomposition bed, under litter, over litter, over lawn, next to grass, under tree/shrub/grass, buried X cm deep, underwater, under rainout shelter, under frame, suspended X cm, under shadecloth
+
+variables: # These describe the columns of your timeSeries.csv file
+        V1: # column 1
+          name: Time
+          units: days # Time units used in accompanying file. Possible options are: days, weeks, months, years
+        V2: # column 2
+          name: GLNMB # Name of second variable in accompanying file
+          units: mass remaining # units in which litter mass loss was reported. Valid options are: mass remaining, organic matter remaining, C remaining
+          varDesc: G. senegalensis leaf litter with macrofauna exclusion positioned under shrub # Description of the variable
+          site: Keur Mata Aram # Site where the experiment was conducted
+          litter: Guiera senegalensis1
+          meshSize: 0.7
+          position: under shrub
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V3: #
+          name: GLNMO
+          units: mass remaining # units in which litter mass loss was reported. Valid options are: mass remaining, organic matter remaining, C remaining
+          varDesc: G. senegalensis leaf litter with macrofauna exclusion positioned out canopy # Description of the variable
+          site: Keur Mata Aram # Site where the experiment was conducted
+          litter: Guiera senegalensis1
+          meshSize: 0.7
+          position: bare soil
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V4: #
+          name: GSNMB
+          units: mass remaining # units in which litter mass loss was reported. Valid options are: mass remaining, organic matter remaining, C remaining
+          varDesc: G. senegalensis stem litter with macrofauna exclusion positioned under shrub # Description of the variable
+          site: Keur Mata Aram # Site where the experiment was conducted
+          litter: Guiera senegalensis2
+          meshSize: 0.7
+          position: under shrub
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V5: #
+          name: GSNMO
+          units: mass remaining # units in which litter mass loss was reported. Valid options are: mass remaining, organic matter remaining, C remaining
+          varDesc: G. senegalensis stem litter with macrofauna exclusion positioned on bare soil # Description of the variable
+          site: Keur Mata Aram # Site where the experiment was conducted
+          litter: Guiera senegalensis2
+          meshSize: 0.7
+          position: bare soil
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V6: #
+          name: GMNMB
+          units: mass remaining # units in which litter mass loss was reported. Valid options are: mass remaining, organic matter remaining, C remaining
+          varDesc: G. senegalensis stem and leaf litter with macrofauna exclusion positioned under shrub # Description of the variable
+          site: Keur Mata Aram # Site where the experiment was conducted
+          litter: Guiera senegalensis3
+          meshSize: 0.7
+          position: under shrub
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V7: #
+          name: GMNMO
+          units: mass remaining # units in which litter mass loss was reported. Valid options are: mass remaining, organic matter remaining, C remaining
+          varDesc: G. senegalensis stem and leaf litter with macrofauna exclusion positioned out canopy # Description of the variable
+          site: Keur Mata Aram # Site where the experiment was conducted
+          litter: Guiera senegalensis3
+          meshSize: 0.7
+          position: bare soil
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V8: #
+          name: GLMB
+          units: mass remaining # units in which litter mass loss was reported. Valid options are: mass remaining, organic matter remaining, C remaining
+          varDesc: G. senegalensis leaf litter with macrofauna positioned under shrub # Description of the variable
+          site: Keur Mata Aram # Site where the experiment was conducted
+          litter: Guiera senegalensis1
+          meshSize: 2
+          position: under shrub
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V9: #
+          name: GLMO
+          units: mass remaining # units in which litter mass loss was reported. Valid options are: mass remaining, organic matter remaining, C remaining
+          varDesc: G. senegalensis leaf litter with macrofauna positioned out canopy # Description of the variable
+          site: Keur Mata Aram # Site where the experiment was conducted
+          litter: Guiera senegalensis1
+          meshSize: 2
+          position: bare soil
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V10: #
+          name: GSMB
+          units: mass remaining # units in which litter mass loss was reported. Valid options are: mass remaining, organic matter remaining, C remaining
+          varDesc: G. senegalensis stem litter with macrofauna positioned under shrub # Description of the variable
+          site: Keur Mata Aram # Site where the experiment was conducted
+          litter: Guiera senegalensis2
+          meshSize: 2
+          position: under shrub
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V11: #
+          name: GSMO
+          units: mass remaining # units in which litter mass loss was reported. Valid options are: mass remaining, organic matter remaining, C remaining
+          varDesc: G. senegalensis stem litter with macrofauna positioned out canopy # Description of the variable
+          site: Keur Mata Aram # Site where the experiment was conducted
+          litter: Guiera senegalensis2
+          meshSize: 2
+          position: bare soil
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V12: #
+          name: GMMB
+          units: mass remaining # units in which litter mass loss was reported. Valid options are: mass remaining, organic matter remaining, C remaining
+          varDesc: G. senegalensis stem and leaf litter with macrofauna positioned under shrub # Description of the variable
+          site: Keur Mata Aram # Site where the experiment was conducted
+          litter: Guiera senegalensis3
+          meshSize: 2
+          position: under shrub
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V13: #
+          name: GMMO
+          units: mass remaining # units in which litter mass loss was reported. Valid options are: mass remaining, organic matter remaining, C remaining
+          varDesc: G. senegalensis stem and leaf litter with macrofauna positioned out canopy # Description of the variable
+          site: Keur Mata Aram # Site where the experiment was conducted
+          litter: Guiera senegalensis3
+          meshSize: 2
+          position: bare soil
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V14: #
+          name: PLNMB
+          units: mass remaining # units in which litter mass loss was reported. Valid options are: mass remaining, organic matter remaining, C remaining
+          varDesc: P. reticulatum leaf litter with macrofauna exclusion positioned under shrub # Description of the variable
+          site: Nioro du Rip # Site where the experiment was conducted
+          litter: Piliostigma reticulatum1
+          meshSize: 0.7
+          position: under shrub
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V15: #
+          name: PLNMO
+          units: mass remaining # units in which litter mass loss was reported. Valid options are: mass remaining, organic matter remaining, C remaining
+          varDesc: P. reticulatum leaf litter with macrofauna exclusion positioned out canopy # Description of the variable
+          site: Nioro du Rip # Site where the experiment was conducted
+          litter: Piliostigma reticulatum1
+          meshSize: 0.7
+          position: bare soil
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V16: #
+          name: PSNMB
+          units: mass remaining # units in which litter mass loss was reported. Valid options are: mass remaining, organic matter remaining, C remaining
+          varDesc: P. reticulatum stem litter with macrofauna exclusion positioned under shrub # Description of the variable
+          site: Nioro du Rip # Site where the experiment was conducted
+          litter: Piliostigma reticulatum2
+          meshSize: 0.7
+          position: under shrub
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V17: #
+          name: PSNMO
+          units: mass remaining # units in which litter mass loss was reported. Valid options are: mass remaining, organic matter remaining, C remaining
+          varDesc: P. reticulatum stem litter with macrofauna exclusion positioned out canopy # Description of the variable
+          site: Nioro du Rip # Site where the experiment was conducted
+          litter: Piliostigma reticulatum2
+          meshSize: 0.7
+          position: bare soil
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V18: #
+          name: PMNMB
+          units: mass remaining # units in which litter mass loss was reported. Valid options are: mass remaining, organic matter remaining, C remaining
+          varDesc: P. reticulatum stem and leaf litter with macrofauna exclusion positioned under shrub # Description of the variable
+          site: Nioro du Rip # Site where the experiment was conducted
+          litter: Piliostigma reticulatum3
+          meshSize: 0.7
+          position: under shrub
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V19: #
+          name: PMNMO
+          units: mass remaining # units in which litter mass loss was reported. Valid options are: mass remaining, organic matter remaining, C remaining
+          varDesc: P. reticulatum stem and leaf litter with macrofauna exclusion positioned out canopy # Description of the variable
+          site: Nioro du Rip # Site where the experiment was conducted
+          litter: Piliostigma reticulatum3
+          meshSize: 0.7
+          position: bare soil
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V20: #
+          name: PLMB
+          units: mass remaining # units in which litter mass loss was reported. Valid options are: mass remaining, organic matter remaining, C remaining
+          varDesc: P. reticulatum leaf litter with macrofauna positioned under shrub # Description of the variable
+          site: Nioro du Rip # Site where the experiment was conducted
+          litter: Piliostigma reticulatum1
+          meshSize: 2
+          position: under shrub
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V21: #
+          name: PLMO
+          units: mass remaining # units in which litter mass loss was reported. Valid options are: mass remaining, organic matter remaining, C remaining
+          varDesc: P. reticulatum leaf litter with macrofauna positioned out canopy # Description of the variable
+          site: Nioro du Rip # Site where the experiment was conducted
+          litter: Piliostigma reticulatum1
+          meshSize: 2
+          position: bare soil
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V22: #
+          name: PSMB
+          units: mass remaining # units in which litter mass loss was reported. Valid options are: mass remaining, organic matter remaining, C remaining
+          varDesc: P. reticulatum stem litter with macrofauna positioned under shrub # Description of the variable
+          site: Nioro du Rip # Site where the experiment was conducted
+          litter: Piliostigma reticulatum2
+          meshSize: 2
+          position: under shrub
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V23: #
+          name: PSMO
+          units: mass remaining # units in which litter mass loss was reported. Valid options are: mass remaining, organic matter remaining, C remaining
+          varDesc: P. reticulatum stem litter with macrofauna positioned out canopy # Description of the variable
+          site: Nioro du Rip # Site where the experiment was conducted
+          litter: Piliostigma reticulatum2
+          meshSize: 2
+          position: bare soil
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V24: #
+          name: PMMB
+          units: mass remaining # units in which litter mass loss was reported. Valid options are: mass remaining, organic matter remaining, C remaining
+          varDesc: P. reticulatum stem and leaf litter with macrofauna positioned under shrub # Description of the variable
+          site: Nioro du Rip # Site where the experiment was conducted
+          litter: Piliostigma reticulatum3
+          meshSize: 2
+          position: under shrub
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V25: #
+          name: PMMO
+          units: mass remaining # units in which litter mass loss was reported. Valid options are: mass remaining, organic matter remaining, C remaining
+          varDesc: P. reticulatum stem and leaf litter with macrofauna positioned out canopy # Description of the variable
+          site: Nioro du Rip # Site where the experiment was conducted
+          litter: Piliostigma reticulatum3
+          meshSize: 2
+          position: bare soil
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
