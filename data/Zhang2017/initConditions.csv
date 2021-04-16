@@ -1,0 +1,6 @@
+species,type,N-fixer,material,amount,carbon,nitrogen,C:N,phosphorus,potassium,sodium,magnesium,manganese,copper,zinc,lead,calcium,sulfur,iron,lignin,cellulose,hemicellulose,cell solubles,SLA
+Calligonum arborescens1,evergreen,no,shoots,20,40.11,0.45,89,0.07,0.49,,,,,,,,,27.5,29.75
+Calligonum arborescens2,evergreen,no,seeds,20,43.77,1.2,34,0.15,0.46,,,,,,,,,31.20,40.95
+Haloxylon ammodendron1,evergreen,no,shoots,20,34.94,1.03,35,0.04,0.84,,,,,,,,,15.00,18.35
+Haloxylon ammodendron2,evergreen,no,shoots,20,49.27,0.57,87,0.02,0.46,,,,,,,,,33.70,48.50
+Tamarix ramossisima,deciduous,no,shoots,20,40.17,0.84,49,0.02,0.42,,,,,,,,,26.55,30.05
