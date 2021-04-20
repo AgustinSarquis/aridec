@@ -116,8 +116,7 @@ twopfFit=function(Ct, time, C0=100, inipars=c(1, 0.5, 0.5, 0.5, 0.3)){
 }
 
 # Three Pool Parallel Function
-# threeppFit=function(Ct, time, C0=100, inipars=c(0.25, 0.125, 0.125, 0.125, 0.125)){
-threeppFit=function(Ct, time, C0=100, inipars=c(0.125, 0.0625, 0.0625, 0.0625, 0.0625)){
+ threeppFit=function(Ct, time, C0=100, inipars=c(0.25, 0.125, 0.125, 0.125, 0.125)){
   complete=data.frame(time,Ct)
   n=nrow(complete)
   if(n < 6) stop("Time series is too short. No degrees of freedom")
