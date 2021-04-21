@@ -1,0 +1,4 @@
+species, type, N-fixer, material, amount, carbon, nitrogen, C:N, phosphorus, potassium, sodium, magnesium, manganese, copper, zinc, lead, calcium, sulfur, iron, lignin, cellulose, hemicellulose, cell solubles, SLA
+Balanites aegyptiaca, evergreen, yes, aboveground parts, 20,, 3.74,, 0.36, 1.2
+Azadirachta indica, evergreen, no, aboveground parts, 20,, 4.24,, 1.14, 0.71
+Acacia senegal, deciduous, yes, aboveground parts, 20,, 4.82,, 0.4, 0.42

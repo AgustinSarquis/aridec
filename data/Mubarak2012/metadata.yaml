@@ -1,0 +1,107 @@
+citationKey: Mubarak2012 # Unique identifier in the format: LastnameYear (lowercase letters must be added when there are two or more entries by the same author and year, i.e.: LastnameYearx)
+doi: 10.1016/j.jaridenv.2011.10.008 # DOI of the publication where data is published
+entryAuthor: Agustin Sarquis # First and last name of the person who entered the data in this file
+entryCreationDate: 2021-04-21 # Date when the data was entered in this file. Format: YYYY-MM-DD
+contactName: Agustin Sarquis # First and last name of contact person (may be the principal investigator supervising the entryAuthor)
+contactEmail: agusarquis@agro.uba.ar # Email of the contact person
+entryNote: altitude from Google Earth; MAT from NASA POWERS
+study: decomposition of three tree litters in plots sown with millet crops
+
+siteInfo:
+        site: Eldibibat # Names of individual sites, if one site, keep on this line, if multiple, use array format
+              # These fields should be arrays of equal length to site array
+        coordinates:
+          latitude: 12.05 # Latitude in decimal units (check for negative that denotes southern hemisphere)
+          longitude: 29.649722222222223 # Longitude in decimal units (check for negative that denotes western hemisphere)
+        country: Sudan # Name of country where site was conducted
+        MAT: 26.78 # Mean annual temperature in degrees Celsius
+        MAP: 525 # Mean annual precipitation in mm
+        rainySeason: summer
+        elevation: 688 # Elevation of study site in meters above sea level
+        landCover: farmland
+        vegNote: plots sown with millet crops beside trees of B. aegyptiaca, A. indica and A. senegal
+        cover:
+          plantCover: # Total plant cover percentage (if they report cover by specific plant types, fill the fields below)
+          bunchgrassCover:
+          shrubCover:
+          treeCover:
+          forbCover:
+          bareSoil:
+        soilTaxonomy:
+          soilOrder: # Soil order according to the classification system described below
+          soilFamily: # Soil family description (ex. 'Eutric' for a Eutric Cambisol)
+          soilSeries: # Soil series according to the classification system described below
+          classificationSystem: # Name of classification system used. Valid fields are: USDA, FAO, and WRB.
+
+experimentInfo:
+        incDesc: 3 species x 5 harvests x 4 replicates
+        # These fields should all be one dimensional arrays. Values for experimental variables with multiple treatment levels should be entered in the variables section and left blank here
+        replicates: 4 # Number of replicates per treatment
+        duration: 70 # length of incubation in days
+        startingMonth: # month during which the study started, all in lower case
+        litter: # plant species used as litter material for the experiment. All details related to the species must be specified in the initConditions.csv file
+        litterbag:
+          material: nylon
+          meshSize: 2 # mesh size in mm referring to one side of the net-square
+          dimentions: # size of the full litter bag in cm
+            width: 15
+            length: 20
+            radius: # for round or cilindrical structures
+            height: # for 3-dimensional designs such as litter boxes in Austin2006NATURE
+          transmitance: # when reported, light transmitance of the mesh material as a percentage of full sunlight for each wavelength
+            total:
+            PAR:
+            UV:
+            UVA:
+            UVB:
+          position: buried 30 cm deep
+
+variables: # These describe the columns of your timeSeries.csv file
+        V1: # column 1
+          name: Time
+          units: weeks
+        V2:
+          name: Ba
+          units: mass remaining
+          varDesc: B. aegyptiaca branches with leaves decomposed in millet crop plots
+          site: Eldibibat
+          litter: Balanites aegyptiaca
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V3:
+          name: Ai
+          units: mass remaining
+          varDesc: Azadirachta indica branches with leaves decomposed in millet crop plots
+          site: Eldibibat
+          litter: Azadirachta indica
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V4:
+          name: As
+          units: mass remaining
+          varDesc: Acacia senegal branches with leaves decomposed in millet crop plots
+          site: Eldibibat
+          litter: Acacia senegal
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
