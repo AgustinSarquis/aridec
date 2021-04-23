@@ -6,12 +6,12 @@ library(aridec)
 # load single entry
 db=loadEntries()
 entry=db[["Arriaga2007"]]
-Ct=entry$timeSeries[-1]
+Ct=entry$timeSeries[,c(1,6)]
+colnames(Ct)=c("time", "Ct")
 
 # 2 pool parallel model 
 inipars=c(1, 0.5, 0.5)
-Ct=entry$timeSeries[,1:2]
-colnames(Ct)=c("time", "Ct")
+
 tt=seq(from=0, to=tail(entry$timeSeries[,1],1), length.out = 500)
   
 Func=function(pars){
@@ -48,8 +48,7 @@ pairs(MCMC, nsample = 1000)
 ###########################################################################################
 # 2 pool series model
 inipars=c(0.5, 0.25, 0.25, 0.15)
-Ct=entry$timeSeries[,1:2]
-colnames(Ct)=c("time", "Ct")
+
 tt=seq(from=0, to=tail(entry$timeSeries[,1],1), length.out = 500)
 
 Func=function(pars){
@@ -86,8 +85,7 @@ pairs(MCMC, nsample = 1000)
 ###########################################################################################
 # 2 pool model with feedback
 inipars=c(1, 0.5, 0.5, 0.5, 0.3)
-Ct=entry$timeSeries[,1:2]
-colnames(Ct)=c("time", "Ct")
+
 tt=seq(from=0, to=tail(entry$timeSeries[,1],1), length.out = 500)
 
 Func=function(pars){
@@ -124,8 +122,7 @@ pairs(MCMC, nsample = 1000)
 #############################################################################################
 # 3 pool parallel model 
 inipars=c(0.25, 0.125, 0.125, 0.125, 0.125)
-Ct=entry$timeSeries[,1:2]
-colnames(Ct)=c("time", "Ct")
+
 tt=seq(from=0, to=tail(entry$timeSeries[,1],1), length.out = 500)
 
 Func=function(pars){
@@ -162,8 +159,7 @@ pairs(MCMC, nsample = 1000)
 #############################################################################################
 # 3 pool series model 
 inipars=c(0.5, 0.25, 0.25, 0.25, 0.25, 0.25, 0.25)
-Ct=entry$timeSeries[,1:2]
-colnames(Ct)=c("time", "Ct")
+
 tt=seq(from=0, to=tail(entry$timeSeries[,1],1), length.out = 500)
 
 Func=function(pars){
@@ -185,7 +181,6 @@ plot(Sfun)
 pairs(Sfun)
 
 # cuales parametros pueden ser estimados simultaneamente?
-getOption("max.print")
 collin(Sfun) # colinearidad
 
 # cual es el set de parametros optimos con el mejor ajuste?
