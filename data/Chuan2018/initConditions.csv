@@ -1,0 +1,10 @@
+species,type,N-fixer,material,amount,carbon,nitrogen,C:N,phosphorus,potassium,sodium,magnesium,manganese,copper,zinc,lead,calcium,sulfur,iron,lignin,cellulose,hemicellulose,cell solubles,SLA
+Pascopyrum smithii,graminoid,no,aboveground parts,2,46.4,0.89,56.5,,,,,,,,,,,,12.2,
+Festuca scabrella1,graminoid,no,aboveground parts,2,47.5,1.00,52.3,,,,,,,,,,,,9.2,
+Festuca scabrella2,graminoid,no,aboveground parts,2,46.9,0.99,47.5,,,,,,,,,,,,7.4,
+Bouteloua gracilis,graminoid,no,aboveground parts,2,47.1,1.07,43.9,,,,,,,,,,,,11.7,
+Stipa comata,graminoid,no,aboveground parts,2,47.1,0.83,56.7,,,,,,,,,,,,7.5,
+Koeleria pyramidata,graminoid,no,aboveground parts,2,45.5,0.74,61.1,,,,,,,,,,,,8.1,
+Poa pratensis,graminoid,no,aboveground parts,2,44.6,1.17,38.2,,,,,,,,,,,,9.0,
+mean1,graminoid,no,aboveground parts,2
+mean2,graminoid,no,aboveground parts,2

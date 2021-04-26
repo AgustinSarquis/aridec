@@ -1,0 +1,346 @@
+citationKey: Chuan2018 # Unique identifier in the format: LastnameYear (lowercase letters must be added when there are two or more entries by the same author and year, i.e.: LastnameYearx)
+doi: doi.org/10.1007/s10021-018-0221-9 # DOI of the publication where data is published
+entryAuthor: Ignacio Siebenhart # First and last name of the person who entered the data in this file
+entryCreationDate: 2021-04-26 # Date when the data was entered in this file. Format: YYYY-MM-DD
+contactName: Agustin Sarquis # First and last name of contact person (may be the principal investigator supervising the entryAuthor)
+contactEmail: agusarquis@agro.uba.ar # Email of the contact person
+entryNote: Only plant species present within a subregion were placed in litterbags at each site. The mean effect of grazing on litter decomposition at mixed-grass Prairie isn't available. # Any notes or comments related to this entry.
+study:  They evaluate the effects of grazing on litter decomposition over 18 months across the Mixed-grass Prairie, Central Parkland, and Foothills Fescue natural subregions at Alberta, Canada # Overall study description
+
+siteInfo:
+        site: # Names of individual sites, if one site, keep on this line, if multiple, use array format
+         - Foothills Fescue
+         - Central Parkland
+         - Mixed Prairie
+        coordinates:
+          latitude: # Latitude in decimal units (check for negative that denotes southern hemisphere)
+           - 50
+           - 53
+           - 51
+          longitude: # Longitude in decimal units (check for negative that denotes western hemisphere)
+           - -114
+           - -111
+           - -112
+        country:  # Name of country where site was conducted
+         - Canada
+         - Canada
+         - Canada
+        MAT: # Mean annual temperature in degrees Celsius
+         - 3.9
+         - 2.3
+         - 4.1
+        MAP: # Mean annual precipitation in mm
+         - 470
+         - 441
+         - 333
+        rainySeason: # Period of the year during which most precipitation occurs, i.e.: whole year, spring, summer, autumn, winter (if more than one use array format)
+        elevation:  # Elevation of study site in meters above sea level
+         - 1264
+         - 598
+         - 732
+        landCover:  # Land cover of the site. Valid fields are: greenbelt, (abbandoned) farmland, mangrove forest, subalpine, shrubland, urban, sandland, forest, steppe, desert, grassland, savanna
+        vegNote: # Additional details about land cover such as species or functional type composition
+         - Native grasslands are dominated by Festuca campestris and Danthonia parryi
+         - A mosaic of Populus tremuloides forest, Symphoricarpos occidentalis shrublands and grasslands comprised of C3 grasses such as Festuca , stipa curtiseta, Pascopyrum smithii, and Koeleria pyramidata
+         - A mixture of drought-tolerant C3 and C4 species, including stipa comata, Bouteloua gracilis and Pascopyrum smithii
+        cover:
+          plantCover: # Total plant cover percentage (if they report cover by specific plant types, fill the fields below)
+           - 83.4
+           - 59.2
+           - 91.0
+          bunchgrassCover:
+          shrubCover:
+          treeCover:
+          forbCover:
+          bareSoil:
+           - 16.6
+           - 40.8
+           - 9.0
+        soilTaxonomy:
+          soilOrder: # Soil order according to the classification system described below
+          soilFamily: # Soil family description (ex. 'Eutric' for a Eutric Cambisol)
+          soilSeries: # Soil series according to the classification system described below
+          classificationSystem: # Name of classification system used. Valid fields are: USDA, FAO, and WRB.
+
+experimentInfo:
+        incDesc: 3 site x 2 grazing management x 7 litter type x 5 harvests x 5 replicates # Short description of the incubation setup and main treatments
+        # These fields should all be one dimensional arrays. Values for experimental variables with multiple treatment levels should be entered in the variables section and left blank here
+        replicates: 5 # Number of replicates per treatment
+        duration: 547.50 # length of incubation in days
+        startingMonth: # month during which the study started, all in lower case
+        litter: # plant species used as litter material for the experiment. All details related to the species must be specified in the initConditions.csv file
+        litterbag:
+          material: nylon # mesh type used to construct the litter bags, options are: wire, aluminum, window screening, net curtain, bolting cloth, plastic, fiberglass, nylon, polypropylene, polyester, polyethylene, polyamide
+          meshSize: 1 # mesh size in mm referring to one side of the net-square
+          dimentions: # size of the full litter bag in cm
+            width: 10
+            length: 10
+            radius: # for round or cilindrical structures
+            height: # for 3-dimensional designs such as litter boxes in Austin2006NATURE
+          transmitance: # when reported, light transmitance of the mesh material as a percentage of full sunlight for each wavelength
+            total:
+            PAR:
+            UV:
+            UVA:
+            UVB:
+          position: # position of litterbags in the field, valid options are: bare soil, decomposition bed, under litter, over litter, over lawn, next to grass, under tree/shrub/grass, buried X cm deep, underwater, under rainout shelter, under frame, suspended X cm, under shadecloth
+
+variables: # These describe the columns of your timeSeries.csv file
+        V1: # column 1
+          name: Time
+          units: months # Time units used in accompanying file. Possible options are: days, weeks, months, years
+        V2: # column 2
+          name: FPs # Name of second variable in accompanying file
+          units: mass remaining # units in which litter mass loss was reported. Valid options are: mass remaining, organic matter remaining, C remaining
+          varDesc: P. smithii litter at Foothills Fescue # Description of the variable
+          site: Foothills Fescue # Site where the experiment was conducted
+          litter: Pascopyrum smithii
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V3: #
+          name: FF
+          units: mass remaining # units in which litter mass loss was reported. Valid options are: mass remaining, organic matter remaining, C remaining
+          varDesc: F. scabrella litter at Foothills Fescue # Description of the variable
+          site: Foothills Fescue # Site where the experiment was conducted
+          litter: Festuca scabrella1
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V4: #
+          name: FK # Name of second variable in accompanying file
+          units: mass remaining # units in which litter mass loss was reported. Valid options are: mass remaining, organic matter remaining, C remaining
+          varDesc: K. pyramidata litter at Foothills Fescue # Description of the variable
+          site: Foothills Fescue # Site where the experiment was conducted
+          litter: Koeleria pyramidata
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V5: #
+          name: FPp #
+          units: mass remaining # units in which litter mass loss was reported. Valid options are: mass remaining, organic matter remaining, C remaining
+          varDesc: P. pratensis litter at Foothills Fescue # Description of the variable
+          site: Foothills Fescue # Site where the experiment was conducted
+          litter: Poa pratensis
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V6: #
+          name: MPs #
+          units: mass remaining # units in which litter mass loss was reported. Valid options are: mass remaining, organic matter remaining, C remaining
+          varDesc: P. smithii litter at Mixed Prairie # Description of the variable
+          site: Mixed Prairie # Site where the experiment was conducted
+          litter: Pascopyrum smithii
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V7: #
+          name: MB #
+          units: mass remaining # units in which litter mass loss was reported. Valid options are: mass remaining, organic matter remaining, C remaining
+          varDesc: B. gracilis litter at Mixed Prairie # Description of the variable
+          site: Mixed Prairie # Site where the experiment was conducted
+          litter: Bouteloua gracilis
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V8: #
+          name: MH #
+          units: mass remaining # units in which litter mass loss was reported. Valid options are: mass remaining, organic matter remaining, C remaining
+          varDesc: S. comata litter at Mixed Prairie # Description of the variable
+          site: Mixed Prairie # Site where the experiment was conducted
+          litter: Stipa comata
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V9: #
+          name: MK #
+          units: mass remaining # units in which litter mass loss was reported. Valid options are: mass remaining, organic matter remaining, C remaining
+          varDesc: K. piramydata litter at Mixed Prairie # Description of the variable
+          site: Mixed Prairie # Site where the experiment was conducted
+          litter: Koeleria piramydata
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V10: #
+          name: CPs #
+          units: mass remaining # units in which litter mass loss was reported. Valid options are: mass remaining, organic matter remaining, C remaining
+          varDesc: P. smithii slitter at Central Parkland # Description of the variable
+          site: Central Parkland # Site where the experiment was conducted
+          litter: Pascopyrum smithii
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V11: #
+          name: CF #
+          units: mass remaining # units in which litter mass loss was reported. Valid options are: mass remaining, organic matter remaining, C remaining
+          varDesc: F. scabrella litter at Central Parkland # Description of the variable
+          site: Central Parkland # Site where the experiment was conducted
+          litter: Festuca scabrella2
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V12: #
+          name: CH #
+          units: mass remaining # units in which litter mass loss was reported. Valid options are: mass remaining, organic matter remaining, C remaining
+          varDesc: S. comata slitter at Central Parkland # Description of the variable
+          site: Central Parkland # Site where the experiment was conducted
+          litter: Stipa comata
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V13: #
+          name: CK #
+          units: mass remaining # units in which litter mass loss was reported. Valid options are: mass remaining, organic matter remaining, C remaining
+          varDesc: K. pyramidata slitter at Central Parkland # Description of the variable
+          site: Central Parkland # Site where the experiment was conducted
+          litter: Koeleria pyramidata
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V14: #
+          name: CPp #
+          units: mass remaining # units in which litter mass loss was reported. Valid options are: mass remaining, organic matter remaining, C remaining
+          varDesc: P. pratensis slitter at Central Parkland # Description of the variable
+          site: Central Parkland # Site where the experiment was conducted
+          litter: Poa pratensis
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V15: #
+          name: FNG #
+          units: mass remaining # units in which litter mass loss was reported. Valid options are: mass remaining, organic matter remaining, C remaining
+          varDesc: Mean litter decomposition without grazing management at Foothills Fescue # Description of the variable
+          site: Foothills Fescue # Site where the experiment was conducted
+          litter: Mean1
+          compTreat: non-grazed # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V16:
+          name: FN #
+          units: mass remaining # units in which litter mass loss was reported. Valid options are: mass remaining, organic matter remaining, C remaining
+          varDesc: Mean litter decomposition with grazing management at Foothills Fescue # Description of the variable
+          site: Foothills fescue # Site where the experiment was conducted
+          litter: Mean1
+          compTreat: grazed # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V17:
+          name: CNG #
+          units: mass remaining # units in which litter mass loss was reported. Valid options are: mass remaining, organic matter remaining, C remaining
+          varDesc: Mean litter decomposition without grazing management at Central Parkland # Description of the variable
+          site: Central Parkland # Site where the experiment was conducted
+          litter: Mean2
+          compTreat: non-grazed # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V18:
+          name: CG #
+          units: mass remaining # units in which litter mass loss was reported. Valid options are: mass remaining, organic matter remaining, C remaining
+          varDesc: Mean litter decomposition with grazing management at Central Parkland # Description of the variable
+          site: Central Parkland # Site where the experiment was conducted
+          litter: Mean2
+          compTreat: grazed # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
