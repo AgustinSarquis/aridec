@@ -1,0 +1,7 @@
+species, type, N-fixer, material, amount, carbon, nitrogen, C:N, phosphorus, potassium, sodium, magnesium, manganese, copper, zinc, lead, calcium, sulfur, iron, lignin, cellulose, hemicellulose, cell solubles, SLA
+Vachellia karroo, evergreen, yes, leaves, 25, , 1.32, , 0.07
+Erianthemum ngamicum, evergreen, no, leaves, 25,, 2.16,, 0.13
+Plicosepalus kalachariensis, evergreen, no, leaves, 25,, 1.74,, 0.16
+Viscum verrucosum, evergreen, no, stems, 25,, 1.96,, 0.09
+mixture1, evergreen,, leaves, 25,
+mixture2, evergreen,, aboveground parts, 25,

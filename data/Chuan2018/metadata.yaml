@@ -4,7 +4,7 @@ entryAuthor: Ignacio Siebenhart # First and last name of the person who entered 
 entryCreationDate: 2021-04-26 # Date when the data was entered in this file. Format: YYYY-MM-DD
 contactName: Agustin Sarquis # First and last name of contact person (may be the principal investigator supervising the entryAuthor)
 contactEmail: agusarquis@agro.uba.ar # Email of the contact person
-entryNote: Only plant species present within a subregion were placed in litterbags at each site. The mean effect of grazing on litter decomposition at mixed-grass Prairie isn't available. # Any notes or comments related to this entry.
+entryNote: Coordinates and siteInfo data were obtained from dx.doi.org/10.1016/j.pedobi.2015.10.003. Only plant species present within a subregion were placed in litterbags at each site. The mean effect of grazing on litter decomposition at mixed-grass Prairie isn't available.
 study:  They evaluate the effects of grazing on litter decomposition over 18 months across the Mixed-grass Prairie, Central Parkland, and Foothills Fescue natural subregions at Alberta, Canada # Overall study description
 
 siteInfo:

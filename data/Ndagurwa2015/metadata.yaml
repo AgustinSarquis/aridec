@@ -5,7 +5,7 @@ entryCreationDate: 2020-02-17 # Date when the data was entered in this file. For
 contactName: Agustín Sarquis # First and last name of contact person (may be the principal investigator supervising the entryAuthor)
 contactEmail: agusarquis@agro.uba.ar
 entryNote: they present C values but they are strange
-study: decomposition of litter of three mistletoe species and N-fixing Acacia karroo in a semi-arid savanna
+study: decomposition of litter of three mistletoe species and N-fixing Vachellia karroo in a semi-arid savanna
 
 siteInfo:
         site: Matobo # Names of individual sites, if one site, keep on this line, if multiple, use array format
@@ -110,7 +110,7 @@ variables: # These describe the columns of your timeSeries.csv file
           units: mass remaining
           varDesc: A. karroo leaf litter incubated for a year under non-parasitized A. karroo canopy
           site: Matobo
-          litter: Acacia karroo
+          litter: Vachellia karroo
           compTreat: # combination of complementary treatments not included in the rest of the variables
           filter: # for photodegradation experiments only
            threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
