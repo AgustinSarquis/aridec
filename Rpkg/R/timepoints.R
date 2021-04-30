@@ -29,3 +29,7 @@ totalnrow <- function(db){
 }
 
 # totalpointsaridec=totalnrow(aridec)
+
+# to identify which entries have a certain number of time points (change number)
+
+which(timePoints$timePoints==7)

@@ -2,17 +2,21 @@
 library(SoilR)
 library(FME)
 library(aridec)
+library(dplyr)
 
 # load single entry
 db=loadEntries()
-entry=db[["Arriaga2007"]]
-Ct=entry$timeSeries[,c(1,6)]
+entry=db[[53]]
+Ct=entry$timeSeries[,c(1,2)] 
 colnames(Ct)=c("time", "Ct")
+
+Ct=mutate(Ct, time=time*30) # transformo meses a dias
+Ct=mutate(Ct, time=time*365) # anos a dias
 
 # 2 pool parallel model 
 inipars=c(1, 0.5, 0.5)
 
-tt=seq(from=0, to=tail(entry$timeSeries[,1],1), length.out = 500)
+tt=seq(from=0, to=tail(Ct[,1],1), length.out = 500)
   
 Func=function(pars){
     mod=SoilR::TwopParallelModel(t=tt,ks=pars[1:2], C0=100*c(pars[3], 1-pars[3]), In=0, gam=0)
@@ -49,7 +53,7 @@ pairs(MCMC, nsample = 1000)
 # 2 pool series model
 inipars=c(0.5, 0.25, 0.25, 0.15)
 
-tt=seq(from=0, to=tail(entry$timeSeries[,1],1), length.out = 500)
+tt=seq(from=0, to=tail(Ct[,1],1), length.out = 500)
 
 Func=function(pars){
   mod=SoilR::TwopSeriesModel(t=tt,ks=pars[1:2], a21=pars[1]*pars[3], C0=100*c(pars[4], 1-pars[4]), In=0)
@@ -86,7 +90,7 @@ pairs(MCMC, nsample = 1000)
 # 2 pool model with feedback
 inipars=c(1, 0.5, 0.5, 0.5, 0.3)
 
-tt=seq(from=0, to=tail(entry$timeSeries[,1],1), length.out = 500)
+tt=seq(from=0, to=tail(Ct[,1],1), length.out = 500)
 
 Func=function(pars){
   mod=SoilR::TwopFeedbackModel(t=tt,ks=pars[1:2], a21=pars[1]*pars[3], a12=pars[2]*pars[4],C0=100*c(pars[5], 1-pars[5]), In=0)
@@ -123,7 +127,7 @@ pairs(MCMC, nsample = 1000)
 # 3 pool parallel model 
 inipars=c(0.25, 0.125, 0.125, 0.125, 0.125)
 
-tt=seq(from=0, to=tail(entry$timeSeries[,1],1), length.out = 500)
+tt=seq(from=0, to=tail(Ct[,1],1), length.out = 500)
 
 Func=function(pars){
   mod=SoilR::ThreepParallelModel(t=tt,ks=pars[1:3], C0=100*c(pars[4], pars[5], 1-sum(pars[4:5])), In=0, gam1=0, gam2=0)
@@ -160,7 +164,7 @@ pairs(MCMC, nsample = 1000)
 # 3 pool series model 
 inipars=c(0.5, 0.25, 0.25, 0.25, 0.25, 0.25, 0.25)
 
-tt=seq(from=0, to=tail(entry$timeSeries[,1],1), length.out = 500)
+tt=seq(from=0, to=tail(Ct[,1],1), length.out = 500)
 
 Func=function(pars){
   mod=SoilR::ThreepSeriesModel(t=tt,ks=pars[1:3], a21=pars[1]*pars[4], a32=pars[2]*pars[5], C0=100*c(pars[6], pars[7], 1-sum(pars[6:7])), In=0)
