@@ -32,7 +32,7 @@ totalnrow <- function(db){
 
 # to identify which entries have a certain number of time points (change number)
 
-which(timePoints$timePoints==13)
+which(timePoints$timePoints==4)
 
 # maximum value?
 max(timePoints$timePoints, na.rm=TRUE)

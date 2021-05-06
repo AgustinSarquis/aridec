@@ -6,10 +6,11 @@ library(dplyr)
 
 # load single entry
 db=loadEntries()
-entry=db[[8]]
+entry=db[[48]]
 Ct=entry$timeSeries[,c(1,2)] 
 colnames(Ct)=c("time", "Ct")
 
+Ct=mutate(Ct, time=time*7) # semanas a dias
 Ct=mutate(Ct, time=time*30) # transformo meses a dias
 Ct=mutate(Ct, time=time*365) # anos a dias
 
