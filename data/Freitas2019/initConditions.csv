@@ -1,0 +1,4 @@
+species, type, N-fixer, material, amount, carbon, nitrogen, C:N, phosphorus, potassium, sodium, magnesium, manganese, copper, zinc, lead, calcium, sulfur, iron, lignin, cellulose, hemicellulose, cell solubles, SLA
+mixture1,,, aboveground parts, 280, 45.991, 1.934, 25.01, 0.304, 2.696,,0.514,,,,,1.092,,, 11.837, 29.879, 7.788
+mixture2,,, aboveground parts, 280, 45.704, 1.558, 30.18, 0.35, 2.847,,0.543,,,,,1.11,,, 10.819, 29.882, 7.093
+mixture3,,, aboveground parts, 280, 44.595, 1.538, 31.64, 0.31, 2.735,,0.565,,,,,1.575,,, 12.221, 33.933, 5.006
