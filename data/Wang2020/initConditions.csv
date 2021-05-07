@@ -1,0 +1,13 @@
+species,type,N-fixer,material,amount,carbon,nitrogen,C:N,phosphorus,potassium,sodium,magnesium,manganese,copper,zinc,lead,calcium,sulfur,iron,lignin,cellulose,hemicellulose,cell solubles,SLA
+Leymus divaricatus1,graminoid,no,aboveground parts,10,46.07,1.46,31.64,,,,,,,,,,,,4.70,,,,
+Leymus divaricatus2,graminoid,no,aboveground parts,10,45.47,1.03,44.06,,,,,,,,,,,,5.11,,,,
+Leymus divaricatus3,graminoid,no,aboveground parts,10,47.70,0.81,58.83,,,,,,,,,,,,4.66,,,,
+Stipa sareptana1,graminoid,no,aboveground parts,10,46.45,0.78,59.61,,,,,,,,,,,,5.84,,,,
+Stipa sareptana2,graminoid,no,aboveground parts,10,44.05,0.96,45.73,,,,,,,,,,,,6.12,,,,
+Stipa sareptana3,graminoid,no,aboveground parts,9,46.39,0.84,55.44,,,,,,,,,,,,5.88,,,,
+Kengia squarrosa1,graminoid,no,aboveground parts,9,43.90,1.55,28.29,,,,,,,,,,,,4.42,,,,
+Kengia squarrosa2,graminoid,no,aboveground parts,9,45.63,1.36,33.62,,,,,,,,,,,,5.03,,,,
+Kengia squarrosa3,graminoid,no,aboveground parts,9,44.41,1.15,38.62,,,,,,,,,,,,4.05,,,,
+mean1,graminoid,no,aboveground parts,
+mean2,graminoid,no,aboveground parts,
+mean3,graminoid,no,aboveground parts,
