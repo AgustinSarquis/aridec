@@ -1,0 +1,333 @@
+citationKey: Tripathi2011 # Unique identifier in the format: LastnameYear (lowercase letters must be added when there are two or more entries by the same author and year, i.e.: LastnameYearx)
+doi: # DOI of the publication where data is published
+entryAuthor: Ignacio Siebenhart # First and last name of the person who entered the data in this file
+entryCreationDate: 2021-04-30 # Date when the data was entered in this file. Format: YYYY-MM-DD
+contactName: Agustin Sarquis # First and last name of contact person (may be the principal investigator supervising the entryAuthor)
+contactEmail: agusarquis@agro.uba.ar # Email of the contact person
+entryNote: MAT and MAP from NASA POWER. Silvipasture system. They didn't include litter quality data # Any notes or comments related to this entry.
+study: Evaluate decomposition of different litter type in different positions (surface and buried) and different microsite (outside and inside canopy).  # Overall study description
+
+siteInfo:
+        site: Jodhpur # Names of individual sites, if one site, keep on this line, if multiple, use array format
+              # These fields should be arrays of equal length to site array
+        coordinates:
+          latitude: 26.75 # Latitude in decimal units (check for negative that denotes southern hemisphere)
+          longitude: 72.05 # Longitude in decimal units (check for negative that denotes western hemisphere)
+        country: India # Name of country where site was conducted
+        MAT: 27.15 # Mean annual temperature in degrees Celsius
+        MAP: 314 # Mean annual precipitation in mm
+        rainySeason: summer # Period of the year during which most precipitation occurs, i.e.: whole year, spring, summer, autumn, winter (if more than one use array format)
+        elevation: 249  # Elevation of study site in meters above sea level
+        landCover: farmland # Land cover of the site. Valid fields are: greenbelt, (abbandoned) farmland, mangrove forest, subalpine, shrubland, urban, sandland, forest, steppe, desert, grassland, savanna
+        vegNote: Tecomella undulata (tree) inmersed on Cenchrus ciliaris and Lesiurus sindicus (grasses) mosaic. # Additional details about land cover such as species or functional type composition
+        cover:
+          plantCover: # Total plant cover percentage (if they report cover by specific plant types, fill the fields below)
+          bunchgrassCover:
+          shrubCover:
+          treeCover:
+          forbCover:
+          bareSoil:
+        soilTaxonomy:
+          soilOrder: # Soil order according to the classification system described below
+          soilFamily: # Soil family description (ex. 'Eutric' for a Eutric Cambisol)
+          soilSeries: # Soil series according to the classification system described below
+          classificationSystem: # Name of classification system used. Valid fields are: USDA, FAO, and WRB.
+
+experimentInfo:
+        incDesc: 3 litter type x 3 positions x 2 microsites x 3 harvests x 6 replicates # Short description of the incubation setup and main treatments
+        # These fields should all be one dimensional arrays. Values for experimental variables with multiple treatment levels should be entered in the variables section and left blank here
+        replicates: 6 # Number of replicates per treatment
+        duration: 365 # length of incubation in days
+        startingMonth: # month during which the study started, all in lower case
+        litter: # plant species used as litter material for the experiment. All details related to the species must be specified in the initConditions.csv file
+        litterbag:
+          material: nylon # mesh type used to construct the litter bags, options are: wire, aluminum, window screening, net curtain, bolting cloth, plastic, fiberglass, nylon, polypropylene, polyester, polyethylene, polyamide
+          meshSize: 7 # mesh size in mm referring to one side of the net-square
+          dimentions: # size of the full litter bag in cm
+            width:
+            length:
+            radius: # for round or cilindrical structures
+            height: # for 3-dimensional designs such as litter boxes in Austin2006NATURE
+          transmitance: # when reported, light transmitance of the mesh material as a percentage of full sunlight for each wavelength
+            total:
+            PAR:
+            UV:
+            UVA:
+            UVB:
+          position: # position of litterbags in the field, valid options are: bare soil, decomposition bed, under litter, over litter, over lawn, next to grass, under tree/shrub/grass, buried X cm deep, underwater, under rainout shelter, under frame, suspended X cm, under shadecloth
+
+variables: # These describe the columns of your timeSeries.csv file
+        V1: # column 1
+          name: Time
+          units: months # Time units used in accompanying file. Possible options are: days, weeks, months, years
+        V2: # column 2
+          name: TOS # Name of second variable in accompanying file
+          units: mass remaining # units in which litter mass loss was reported. Valid options are: mass remaining, organic matter remaining, C remaining
+          varDesc: T. undulata leaf litter positioned on surface and outside canopy  # Description of the variable
+          site: Jodhpur # Site where the experiment was conducted
+          litter: Tecomella undulata
+          position: bare soil
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V3: #
+          name: TCOS #
+          units: mass remaining # units in which litter mass loss was reported. Valid options are: mass remaining, organic matter remaining, C remaining
+          varDesc: T. undulata and C. ciliaris mixed leaf litter positioned on surface and outside canopy. # Description of the variable
+          site: Jodhpur # Site where the experiment was conducted
+          litter: mixture1
+          position: bare soil
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V4: #
+          name: TLOS #
+          units: mass remaining  # units in which litter mass loss was reported. Valid options are: mass remaining, organic matter remaining, C remaining
+          varDesc: T. undulata and L. scindicus mixed leaf litter positioned on surface and outside canopy. # Description of the variable
+          site: Jodhpur # Site where the experiment was conducted
+          litter: mixture2
+          position: bare soil
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V5: #
+          name: TIS #
+          units: mass remaining # units in which litter mass loss was reported. Valid options are: mass remaining, organic matter remaining, C remaining
+          varDesc: T. undulata leaf litter positioned on surface and inside canopy  # Description of the variable
+          site: Jodhpur # Site where the experiment was conducted
+          litter: Tecomella undulata
+          position: under tree
+          comptreat:
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V6: #
+          name: TCIS #
+          units: mass remaining # units in which litter mass loss was reported. Valid options are: mass remaining, organic matter remaining, C remaining
+          varDesc: T. undulata and C. ciliaris mixed leaf litter positioned on surface and inside canopy. # Description of the variable
+          site: Jodhpur # Site where the experiment was conducted
+          litter: mixture1
+          position: under tree
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V7: #
+          name: TLIS #
+          units: mass remaining  # units in which litter mass loss was reported. Valid options are: mass remaining, organic matter remaining, C remaining
+          varDesc: T. undulata and L. scindicus mixed leaf litter positioned on surface and inside canopy. # Description of the variable
+          site: Jodhpur # Site where the experiment was conducted
+          litter: mixture2
+          position: under tree
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V8: #
+          name: TO5B #
+          units: mass remaining # units in which litter mass loss was reported. Valid options are: mass remaining, organic matter remaining, C remaining
+          varDesc: T. undulata leaf litter positioned buried and outside canopy  # Description of the variable
+          site: Jodhpur # Site where the experiment was conducted
+          litter: Tecomella undulata
+          position: buried 5 cm deep
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V9: #
+          name: TCO5B #
+          units: mass remaining # units in which litter mass loss was reported. Valid options are: mass remaining, organic matter remaining, C remaining
+          varDesc: T. undulata and C. ciliaris mixed leaf litter positioned buried and outside canopy  # Description of the variable
+          site: Jodhpur # Site where the experiment was conducted
+          litter: mixture1
+          position: buried 5 cm deep
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V10: #
+          name: TLO5B #
+          units: mass remaining # units in which litter mass loss was reported. Valid options are: mass remaining, organic matter remaining, C remaining
+          varDesc: T. undulata and L. scindicus mixed leaf litter positioned buried and outside canopy  # Description of the variable
+          site: Jodhpur # Site where the experiment was conducted
+          litter: mixture2
+          position: buried 5 cm deep
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V11: #
+          name: TI5B #
+          units: mass remaining # units in which litter mass loss was reported. Valid options are: mass remaining, organic matter remaining, C remaining
+          varDesc: T. undulata leaf litter positioned buried and inside canopy  # Description of the variable
+          site: Jodhpur # Site where the experiment was conducted
+          litter: Tecomella undulata
+          position: buried 5 cm deep
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V12: #
+          name: TCI5B #
+          units: mass remaining # units in which litter mass loss was reported. Valid options are: mass remaining, organic matter remaining, C remaining
+          varDesc: T. undulata and C. ciliaris mixed leaf litter positioned buried and inside canopy  # Description of the variable
+          site: Jodhpur # Site where the experiment was conducted
+          litter: mixture1
+          position: buried 5 cm deep
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V13: #
+          name: TLI5B #
+          units: mass remaining # units in which litter mass loss was reported. Valid options are: mass remaining, organic matter remaining, C remaining
+          varDesc: T. undulata and L. scindicus mixed leaf litter positioned buried and outside canopy  # Description of the variable
+          site: Jodhpur # Site where the experiment was conducted
+          litter: mixture2
+          position: buried 5 cm deep
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V14: #
+          name: TO10B #
+          units: mass remaining # units in which litter mass loss was reported. Valid options are: mass remaining, organic matter remaining, C remaining
+          varDesc: T. undulata and L. scindicus mixed leaf litter positioned buried and outside canopy  # Description of the variable
+          site: Jodhpur # Site where the experiment was conducted
+          litter: Tecomella undulata
+          position: buried 10 cm deep
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V15: #
+          name: TCO10B #
+          units: mass remaining # units in which litter mass loss was reported. Valid options are: mass remaining, organic matter remaining, C remaining
+          varDesc: T. undulata and C. ciliaris mixed leaf litter positioned buried and outside canopy  # Description of the variable
+          site: Jodhpur # Site where the experiment was conducted
+          litter: mixture1
+          position: buried 10 cm deep
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V16: #
+          name: TLO10B #
+          units: mass remaining # units in which litter mass loss was reported. Valid options are: mass remaining, organic matter remaining, C remaining
+          varDesc: T. undulata and L. scindicus mixed leaf litter positioned buried and outside canopy  # Description of the variable
+          site: Jodhpur # Site where the experiment was conducted
+          litter: mixture2
+          position: buried 10 cm deep
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V17: #
+          name: TI10B #
+          units: mass remaining # units in which litter mass loss was reported. Valid options are: mass remaining, organic matter remaining, C remaining
+          varDesc: T. undulata leaf litter positioned buried and inside canopy  # Description of the variable
+          site: Jodhpur # Site where the experiment was conducted
+          litter: Tecomella undulata
+          position: buried 10 cm deep
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V18: #
+          name: TCI10B  #
+          units: mass remaining # units in which litter mass loss was reported. Valid options are: mass remaining, organic matter remaining, C remaining
+          varDesc: T. undulata and C. ciliaris mixed leaf litter positioned buried and inside canopy  # Description of the variable
+          site: Jodhpur # Site where the experiment was conducted
+          litter: mixture1
+          position: buried 10 cm deep
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V19: #
+          name: TL10B #
+          units: mass remaining # units in which litter mass loss was reported. Valid options are: mass remaining, organic matter remaining, C remaining
+          varDesc: T. undulata and L. scindicus mixed leaf litter positioned buried and inside canopy  # Description of the variable
+          site: Jodhpur # Site where the experiment was conducted
+          litter: mixture2
+          position: buried 10 cm deep
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
