@@ -1,0 +1,4 @@
+species,type,N-fixer,material,amount,carbon,nitrogen,C:N,phosphorus,potassium,sodium,magnesium,manganese,copper,zinc,lead,calcium,sulfur,iron,lignin,cellulose,hemicellulose,cell solubles,SLA
+Zea mays,graminoid,no,aboveground parts,20,42.89,0.613,69.96,,,,,,,,,,,,5.30,37.81,23.68
+Tree,,,leaves,20,39.76,0.872,45.59,,,,,,,,,,,,11.50,13.47,8.89
+Fodder grass,graminoid,,aboveground parts,20,34.67,1.675,20.70,,,,,,,,,,,,8.49,25.64,16.25
