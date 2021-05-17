@@ -1,0 +1,6 @@
+species,type,N-fixer,material,amount,carbon,nitrogen,C:N,phosphorus,potassium,sodium,magnesium,manganese,copper,zinc,lead,calcium,sulfur,iron,lignin,cellulose,hemicellulose,cell solubles,SLA
+Piscidia piscipula,deciduous,yes,leaves,10,
+mixture1,deciduous,,leaves,10,43.7,1.83,32.4,,,,,,,,,,,,,,,,15.5
+mixture2,deciduous,,leaves,10,43.4,1.93,29.3,,,,,,,,,,,,,,,,17.1
+mixture3,deciduous,,leaves,10,43.4,1.85,30.8,,,,,,,,,,,,,,,,15
+mixture4,deciduous,,leaves,10,43.2,1.55,36.2,,,,,,,,,,,,,,,,12.3

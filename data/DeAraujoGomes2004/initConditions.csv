@@ -1,0 +1,7 @@
+species,type,N-fixer,material,amount,carbon,nitrogen,C:N,phosphorus,potassium,sodium,magnesium,manganese,copper,zinc,lead,calcium,sulfur,iron,lignin,cellulose,hemicellulose,cell solubles,SLA
+Cenchrus americanus1,graminoid,no,leaves,20,,2.9,,0.226,3.964,,0.373,,,,,1.41,,,,,,,
+Cenchrus americanus2,graminoid,no,aboveground parts,20,,2.075,,0.24,2.743,,0.195,,,,,0.608,,,,,,,
+Sorghum bicolor1,graminoid,no,leaves,20,,2.517,,0.26,2.804,,0.34,,,,,0.883,,,,,,,
+Sorghum bicolor2,graminoid,no,aboveground parts,20,,2.27,,0.261,2.394,,0.278,,,,,0.83,,,,,,,
+Crotalaria juncea1,forb,yes,leaves,20,,3.613,,0.288,1.822,,0.46,,,,,2.68,,,,,,,
+Crotalaria juncea2,forb,yes,aboveground parts,20,,2.467,,0.226,1.884,,0.32,,,,,1.342,,,,,,,
