@@ -1,0 +1,470 @@
+citationKey: Manlay2004
+doi: 10.1023/B:PLSO.0000030176.41624.d7
+entryAuthor: Agustin Sarquis
+entryCreationDate: 2021-05-21
+contactName: Agustin Sarquis
+contactEmail: agusarquis@agro.uba.ar
+entryNote: they used 2-5 g of roots per bag (left unspecified). We assume the second Combretum glutinosum in Table 3 is actually Combretum geitonophyllum. Altitude from Google Earth. They put soil in litter bags togerther with roots to avoid void spaces
+study: Two mesh-bag experiments were conducted in two sites (dry and sub-humid tropical climates) in Senegal to assess the role of site-related factors (climate, macrofaunal activity) and root-related factors (tree species, root diameter) on the decomposition of tree roots after clearing of fallow vegetation
+
+siteInfo:
+        site:
+          - Sonkorong
+          - Sare Yorobana
+              # These fields should be arrays of equal length to site array
+        coordinates:
+          latitude:
+            - 13.75
+            - 12.8166667
+          longitude:
+            - -15.666666666666666
+            - -14.883333333333333
+        country:
+          - Senegal
+          - Senegal
+        MAT:
+          - 28.2
+          - 28
+        MAP:
+          - 720
+          - 960
+        rainySeason: # Period of the year during which most precipitation occurs, i.e.: whole year, spring, summer, autumn, winter (if more than one use array format)
+        elevation:
+          - 11
+          - 36
+        landCover:
+          - abbandoned farmland
+          - abbandoned farmland
+        vegNote:
+          - 15 year old fallow plots cleared for the experiment
+          - 15 year old fallow plots cleared for the experiment
+        cover:
+          plantCover: # Total plant cover percentage (if they report cover by specific plant types, fill the fields below)
+          bunchgrassCover:
+          shrubCover:
+          treeCover:
+          forbCover:
+          bareSoil:
+        soilTaxonomy:
+          soilOrder:
+            - Lixisol
+            - Lixisol
+          soilFamily:
+            - Haplic-ferric
+            - Ferric
+          soilSeries: # Soil series according to the classification system described below
+          classificationSystem:
+            - FAO
+            - FAO
+
+experimentInfo:
+        incDesc: (2 sites x 3 root diameters x 5 harvests) + (2 macrofauna exclusion levels x 3 root diameters x 4 harvests) + (4 species x 3 root diameters x 3 harvests)
+        # These fields should all be one dimensional arrays. Values for experimental variables with multiple treatment levels should be entered in the variables section and left blank here
+        replicates: 20
+        duration: 900
+        startingMonth: # month during which the study started, all in lower case
+        litter: # plant species used as litter material for the experiment. All details related to the species must be specified in the initConditions.csv file
+        litterbag:
+          material: stainless steel
+          meshSize: # mesh size in mm referring to one side of the net-square
+          dimentions: # size of the full litter bag in cm
+            width:
+            length:
+            radius: # for round or cilindrical structures
+            height: # for 3-dimensional designs such as litter boxes in Austin2006NATURE
+          transmitance: # when reported, light transmitance of the mesh material as a percentage of full sunlight for each wavelength
+            total:
+            PAR:
+            UV:
+            UVA:
+            UVB:
+          position: buried 15 cm deep
+
+variables: # These describe the columns of your timeSeries.csv file
+        V1: # column 1
+          name: Time
+          units: months
+        V2:
+          name: So2
+          units: organic matter remaining
+          varDesc: C. glutinosum roots 0-2 mm in diameter at the dry site
+          site: Sonkorong
+          litter: Combretum glutinosum1
+          meshSize: 3
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V3:
+          name: So5
+          units: organic matter remaining
+          varDesc: C. glutinosum roots 2-5 mm in diameter at the dry site
+          site: Sonkorong
+          litter: Combretum glutinosum2
+          meshSize: 3
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V4:
+          name: So10
+          units: organic matter remaining
+          varDesc: C. glutinosum roots 5-10 mm in diameter at the dry site
+          site: Sonkorong
+          litter: Combretum glutinosum3
+          meshSize: 3
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V5:
+          name: SY2
+          units: organic matter remaining
+          varDesc: C. glutinosum roots 0-2 mm in diameter at the sub-humid site
+          site: Sare Yorobana
+          litter: Combretum glutinosum1
+          meshSize: 3
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V6:
+          name: SY5
+          units: organic matter remaining
+          varDesc: C. glutinosum roots 2-5 mm in diameter at the sub-humid site
+          site: Sare Yorobana
+          litter: Combretum glutinosum2
+          meshSize: 3
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V7:
+          name: SY10
+          units: organic matter remaining
+          varDesc: C. glutinosum roots 5-10 mm in diameter at the sub-humid site
+          site: Sare Yorobana
+          litter: Combretum glutinosum3
+          meshSize: 3
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V8:
+          name: wo2
+          units: organic matter remaining
+          varDesc: C. glutinosum roots 0-2 mm in diameter with macrofauna exclusion
+          site: Sare Yorobana
+          litter: Combretum glutinosum1
+          meshSize: 0.5
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V9:
+          name: wo5
+          units: organic matter remaining
+          varDesc: C. glutinosum roots 2-5 mm in diameter with macrofauna exclusion
+          site: Sare Yorobana
+          litter: Combretum glutinosum2
+          meshSize: 0.5
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V10:
+          name: wo10
+          units: organic matter remaining
+          varDesc: C. glutinosum roots 5-10 mm in diameter with macrofauna exclusion
+          site: Sare Yorobana
+          litter: Combretum glutinosum3
+          meshSize: 0.5
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V11:
+          name: w2
+          units: organic matter remaining
+          varDesc: C. glutinosum roots 0-2 mm in diameter without macrofauna exclusion
+          site: Sare Yorobana
+          litter: Combretum glutinosum1
+          meshSize: 3
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V12:
+          name: w5
+          units: organic matter remaining
+          varDesc: C. glutinosum roots 2-5 mm in diameter without macrofauna exclusion
+          site: Sare Yorobana
+          litter: Combretum glutinosum2
+          meshSize: 3
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V13:
+          name: w10
+          units: organic matter remaining
+          varDesc: C. glutinosum roots 5-10 mm in diameter without macrofauna exclusion
+          site: Sare Yorobana
+          litter: Combretum glutinosum3
+          meshSize: 3
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V14:
+          name: 2Cge
+          units: organic matter remaining
+          varDesc: C. geitonophyllum roots 0-2 mm in diameter buried 15 cm deep
+          site: Sare Yorobana
+          litter: Combretum geitonophyllum1
+          meshSize: 3
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V15:
+          name: 2Cgl
+          units: organic matter remaining
+          varDesc: C. glutinosum roots 0-2 mm in diameter buried 15 cm deep
+          site: Sare Yorobana
+          litter: Combretum glutinosum4
+          meshSize: 3
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V16:
+          name: 2Dc
+          units: organic matter remaining
+          varDesc: D. cinerea roots 0-2 mm in diameter buried 15 cm deep
+          site: Sare Yorobana
+          litter: Dichrostachys cinerea1
+          meshSize: 3
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V17:
+          name: 2Tm
+          units: organic matter remaining
+          varDesc: T. macroptera roots 0-2 mm in diameter buried 15 cm deep
+          site: Sare Yorobana
+          litter: Terminalia macroptera1
+          meshSize: 3
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V18:
+          name: 5Cge
+          units: organic matter remaining
+          varDesc: C. geitonophyllum roots 2-5 mm in diameter buried 15 cm deep
+          site: Sare Yorobana
+          litter: Combretum geitonophyllum2
+          meshSize: 3
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V19:
+          name: 5Cgl
+          units: organic matter remaining
+          varDesc: C. glutinosum roots 2-5 mm in diameter buried 15 cm deep
+          site: Sare Yorobana
+          litter: Combretum glutinosum5
+          meshSize: 3
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V20:
+          name: 5Dc
+          units: organic matter remaining
+          varDesc: D. cinerea roots 2-5 mm in diameter buried 15 cm deep
+          site: Sare Yorobana
+          litter: Dichrostachys cinerea2
+          meshSize: 3
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V21:
+          name: 5Tm
+          units: organic matter remaining
+          varDesc: T. macroptera roots 2-5 mm in diameter buried 15 cm deep
+          site: Sare Yorobana
+          litter: Terminalia macroptera2
+          meshSize: 3
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V22:
+          name: 10Cge
+          units: organic matter remaining
+          varDesc: C. geitonophyllum roots 5-10 mm in diameter buried 15 cm deep
+          site: Sare Yorobana
+          litter: Combretum geitonophyllum3
+          meshSize: 3
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V23:
+          name: 10Cgl
+          units: organic matter remaining
+          varDesc: C. glutinosum roots 5-10 mm in diameter buried 15 cm deep
+          site: Sare Yorobana
+          litter: Combretum glutinosum6
+          meshSize: 3
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V24:
+          name: 10Dc
+          units: organic matter remaining
+          varDesc: D. cinerea roots 5-10 mm in diameter buried 15 cm deep
+          site: Sare Yorobana
+          litter: Dichrostachys cinerea3
+          meshSize: 3
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V25:
+          name: 10Tm
+          units: organic matter remaining
+          varDesc: T. macroptera roots 5-10 mm in diameter buried 15 cm deep
+          site: Sare Yorobana
+          litter: Terminalia macroptera3
+          meshSize: 3
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
