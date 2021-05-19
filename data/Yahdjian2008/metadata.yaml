@@ -1,0 +1,92 @@
+citationKey: Yahdjian2008
+doi: 10.1016/j.jaridenv.2007.09.005
+entryAuthor: Agustin Sarquis
+entryCreationDate: 2021-05-19
+contactName: Agustin Sarquis
+contactEmail: agusarquis@agro.uba.ar
+entryNote: # Any notes or comments related to this entry.
+study: they assessed litter decomposition response to precipitation excess in the Patagonian steppe
+
+siteInfo:
+        site: Rio Mayo
+              # These fields should be arrays of equal length to site array
+        coordinates:
+          latitude: -45.6833333
+          longitude: -70.26666666666667
+        country: Argentina
+        MAT: 8
+        MAP: 168
+        rainySeason: # Period of the year during which most precipitation occurs, i.e.: whole year, spring, summer, autumn, winter (if more than one use array format)
+        elevation: 500
+        landCover:  steppe
+        vegNote: Tussock grasses are represented mainly by S. speciosa, S. humilis, and Poa ligularis. The dominant shrubs are Mulinum spinosum, Adesmia volckmanni, and Senecio filaginoide
+        cover:
+          plantCover: # Total plant cover percentage (if they report cover by specific plant types, fill the fields below)
+          bunchgrassCover: 32
+          shrubCover: 15
+          treeCover:
+          forbCover:
+          bareSoil: 53
+        soilTaxonomy:
+          soilOrder: # Soil order according to the classification system described below
+          soilFamily: # Soil family description (ex. 'Eutric' for a Eutric Cambisol)
+          soilSeries: # Soil series according to the classification system described below
+          classificationSystem: # Name of classification system used. Valid fields are: USDA, FAO, and WRB.
+
+experimentInfo:
+        incDesc: 2 irrigation levels x 4 harvests x 5 replicates
+        # These fields should all be one dimensional arrays. Values for experimental variables with multiple treatment levels should be entered in the variables section and left blank here
+        replicates: 5
+        duration: 600
+        startingMonth: # month during which the study started, all in lower case
+        litter: Pappostipa speciosa
+        litterbag:
+          material: fiberglass
+          meshSize: 2
+          dimentions: # size of the full litter bag in cm
+            width: 10
+            length: 10
+            radius: # for round or cilindrical structures
+            height: # for 3-dimensional designs such as litter boxes in Austin2006NATURE
+          transmitance: # when reported, light transmitance of the mesh material as a percentage of full sunlight for each wavelength
+            total:
+            PAR:
+            UV:
+            UVA:
+            UVB:
+          position: bare soil
+
+variables: # These describe the columns of your timeSeries.csv file
+        V1: # column 1
+          name: Time
+          units: # Time units used in accompanying file. Possible options are: days, weeks, months, years
+        V2:
+          name: control
+          units: organic matter remaining
+          varDesc: P. speciosa litter incubated without irrigation
+          site: Rio Mayo
+          experimentalTreatment: # 'experimentalTreatment' here is a place holder for treatments with multiple levels. Replace this word by any of the listed variables in incubationInfo above (startingMonth, duration, litter, litterbag, meshSize) and type treatment value (level) after colon. Note that units should be specified in the incubationInfo field above.
+          compTreat: control
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V3:
+          name: irrigated
+          units: organic matter remaining
+          varDesc: P. speciosa litter incubated with an irrigation treatment
+          site: Rio Mayo
+          experimentalTreatment: # 'experimentalTreatment' here is a place holder for treatments with multiple levels. Replace this word by any of the listed variables in incubationInfo above (startingMonth, duration, litter, litterbag, meshSize) and type treatment value (level) after colon. Note that units should be specified in the incubationInfo field above.
+          compTreat: water addition
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
