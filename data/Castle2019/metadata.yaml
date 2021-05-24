@@ -4,7 +4,7 @@ entryAuthor: Agustin Sarquis
 entryCreationDate: 2021-05-19
 contactName: Agustin Sarquis
 contactEmail: agusarquis@agro.uba.ar
-entryNote: elevation from Google Earth
+entryNote: elevation from Google Earth. MAT from NASA POWER
 study: they conducted a field experiment testing the effect of moisture level on plant decay rate under multiple hydrologic regimes to understand how hydrologic alteration and litter decay ultimately influences marsh regeneration.
 
 siteInfo:
@@ -14,7 +14,7 @@ siteInfo:
           latitude: 35.8722222
           longitude: -116.2325
         country: USA
-        MAT: # Mean annual temperature in degrees Celsius
+        MAT: 18.81
         MAP: 120
         rainySeason: # Period of the year during which most precipitation occurs, i.e.: whole year, spring, summer, autumn, winter (if more than one use array format)
         elevation: 424
