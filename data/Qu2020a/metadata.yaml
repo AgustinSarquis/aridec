@@ -1,4 +1,4 @@
-citationKey: Qu2020 # Unique identifier in the format: LastnameYear (lowercase letters must be added when there are two or more entries by the same author and year, i.e.: LastnameYearx)
+citationKey: Qu2020a # Unique identifier in the format: LastnameYear (lowercase letters must be added when there are two or more entries by the same author and year, i.e.: LastnameYearx)
 doi: https://doi.org/10.3389/fenvs.2020.00088 # DOI of the publication where data is published
 entryAuthor: Ignacio Siebenhart # First and last name of the person who entered the data in this file
 entryCreationDate: 2021-04-27 # Date when the data was entered in this file. Format: YYYY-MM-DD

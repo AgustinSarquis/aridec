@@ -1,0 +1,318 @@
+citationKey: Berenstecher2021
+doi: 10.1111/1365-2745.13688
+entryAuthor: Agustin Sarquis
+entryCreationDate: 2021-07-01
+contactName: Agustin Sarquis
+contactEmail: agusarquis@agro.uba.ar
+entryNote: # Any notes or comments related to this entry.
+study: three treatments in a factorial design, (a) litter type (leaf or root litter); (b) position (soil surface or buried at 5 cm); and (c) soil resources with addition of labile C, N and their combination (C + N)
+
+siteInfo:
+        site: Rio Mayo
+              # These fields should be arrays of equal length to site array
+        coordinates:
+          latitude: -45.683333
+          longitude: -70.266667
+        country: Argentina
+        MAT: 7.8
+        MAP: 168
+        rainySeason: winter
+        elevation: 500
+        landCover: steppe
+        vegNote: # Additional details about land cover such as species or functional type composition
+        cover:
+          plantCover: 50
+          bunchgrassCover: 32
+          shrubCover: 15
+          treeCover:
+          forbCover: 3
+          bareSoil: 50
+        soilTaxonomy:
+          soilOrder: Aridisol
+          soilFamily: # Soil family description (ex. 'Eutric' for a Eutric Cambisol)
+          soilSeries: # Soil series according to the classification system described below
+          classificationSystem: USDA
+
+experimentInfo:
+        incDesc: 2 litter types x 2 positions x 4 nutrient addition levels x 5 harvests x 5 replicates
+        # These fields should all be one dimensional arrays. Values for experimental variables with multiple treatment levels should be entered in the variables section and left blank here
+        replicates: 5
+        duration: 1140
+        startingMonth: # month during which the study started, all in lower case
+        litter: # plant species used as litter material for the experiment. All details related to the species must be specified in the initConditions.csv file
+        litterbag:
+          material: fiberglass
+          meshSize: 5
+          dimentions: # size of the full litter bag in cm
+            width:
+            length:
+            radius: # for round or cilindrical structures
+            height: # for 3-dimensional designs such as litter boxes in Austin2006NATURE
+          transmitance: # when reported, light transmitance of the mesh material as a percentage of full sunlight for each wavelength
+            total: 85
+            PAR:
+            UV:
+            UVA:
+            UVB:
+          position: # position of litterbags in the field, valid options are: bare soil, decomposition bed, under litter, over litter, over lawn, next to grass, under tree/shrub/grass, buried X cm deep, underwater, under rainout shelter, under frame, suspended X cm, under shadecloth
+
+variables: # These describe the columns of your timeSeries.csv file
+        V1: # column 1
+          name: Time
+          units: months
+        V2:
+          name: ALctrl
+          units: organic matter remaining
+          varDesc: Pappostipa humilis, P. speciosa and Poa ligularis leaf litter decomposed above ground without any substrate addition
+          site: Rio Mayo
+          litter: mean1
+          position: bare soil
+          compTreat: control
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V3:
+          name: ALC
+          units: organic matter remaining
+          varDesc: Pappostipa humilis, P. speciosa and Poa ligularis leaf litter decomposed above ground with a labile C substrate addition
+          site: Rio Mayo
+          litter: mean1
+          position: bare soil
+          compTreat: substrate addition
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V4:
+          name: ALN
+          units: organic matter remaining
+          varDesc: Pappostipa humilis, P. speciosa and Poa ligularis leaf litter decomposed above ground with an inorganic N substrate addition
+          site: Rio Mayo
+          litter: mean1
+          position: bare soil
+          compTreat: substrate addition
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V5:
+          name: ALCN
+          units: organic matter remaining
+          varDesc: Pappostipa humilis, P. speciosa and Poa ligularis leaf litter decomposed above ground with a labile C and inorganic N substrate addition
+          site: Rio Mayo
+          litter: mean1
+          position: bare soil
+          compTreat: substrate addition
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V6:
+          name: ARctrl
+          units: organic matter remaining
+          varDesc: Pappostipa humilis, P. speciosa and Poa ligularis root litter decomposed above ground without any substrate addition
+          site: Rio Mayo
+          litter: mean2
+          position: bare soil
+          compTreat: control
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V7:
+          name: ARC
+          units: organic matter remaining
+          varDesc: Pappostipa humilis, P. speciosa and Poa ligularis root litter decomposed above ground with a labile C substrate addition
+          site: Rio Mayo
+          litter: mean2
+          position: bare soil
+          compTreat: substrate addition
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V8:
+          name: ARN
+          units: organic matter remaining
+          varDesc: Pappostipa humilis, P. speciosa and Poa ligularis root litter decomposed above ground with an inorganic N substrate addition
+          site: Rio Mayo
+          litter: mean2
+          position: bare soil
+          compTreat: substrate addition
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V9:
+          name: ARCN
+          units: organic matter remaining
+          varDesc: Pappostipa humilis, P. speciosa and Poa ligularis root litter decomposed above ground with a labile C and inorganic N substrate addition
+          site: Rio Mayo
+          litter: mean2
+          position: bare soil
+          compTreat: substrate addition
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V10:
+          name: BLctrl
+          units: organic matter remaining
+          varDesc: Pappostipa humilis, P. speciosa and Poa ligularis leaf litter decomposed below ground without any substrate addition
+          site: Rio Mayo
+          litter: mean1
+          position: buried 5 cm deep
+          compTreat: control
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V11:
+          name: BLC
+          units: organic matter remaining
+          varDesc: Pappostipa humilis, P. speciosa and Poa ligularis leaf litter decomposed below ground with a labile C substrate addition
+          site: Rio Mayo
+          litter: mean1
+          position: buried 5 cm deep
+          compTreat: substrate addition
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V12:
+          name: BLN
+          units: organic matter remaining
+          varDesc: Pappostipa humilis, P. speciosa and Poa ligularis leaf litter decomposed below ground with an inorganic N substrate addition
+          site: Rio Mayo
+          litter: mean1
+          position: buried 5 cm deep
+          compTreat: substrate addition
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V13:
+          name: BLCN
+          units: organic matter remaining
+          varDesc: Pappostipa humilis, P. speciosa and Poa ligularis leaf litter decomposed below ground with a labile C and inorganic N substrate addition
+          site: Rio Mayo
+          litter: mean1
+          position: buried 5 cm deep
+          compTreat: substrate addition
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V14:
+          name: BRctrl
+          units: organic matter remaining
+          varDesc: Pappostipa humilis, P. speciosa and Poa ligularis root litter decomposed below ground without any substrate addition
+          site: Rio Mayo
+          litter: mean2
+          position: buried 5 cm deep
+          compTreat: control
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V15:
+          name: BRC
+          units: organic matter remaining
+          varDesc: Pappostipa humilis, P. speciosa and Poa ligularis root litter decomposed below ground with a labile C substrate addition
+          site: Rio Mayo
+          litter: mean2
+          position: buried 5 cm deep
+          compTreat: substrate addition
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V16:
+          name: BRN
+          units: organic matter remaining
+          varDesc: Pappostipa humilis, P. speciosa and Poa ligularis root litter decomposed below ground with an inorganic N substrate addition
+          site: Rio Mayo
+          litter: mean2
+          position: buried 5 cm deep
+          compTreat: substrate addition
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V17:
+          name: BRCN
+          units: organic matter remaining
+          varDesc: Pappostipa humilis, P. speciosa and Poa ligularis root litter decomposed below ground with a labile C and inorganic N substrate addition
+          site: Rio Mayo
+          litter: mean2
+          position: buried 5 cm deep
+          compTreat: substrate addition
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:

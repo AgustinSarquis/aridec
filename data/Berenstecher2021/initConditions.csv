@@ -1,0 +1,3 @@
+species, type, N-fixer, material, amount, carbon, nitrogen, C:N, phosphorus, potassium, sodium, magnesium, manganese, copper, zinc, lead, calcium, sulfur, iron, lignin, cellulose, hemicellulose, cell solubles, SLA
+mean1, graminoid, no, leaves, 0.75,,,,,,,,,,,,,,, 5.71, 34.06, 54.28
+mean2, graminoid, no, roots, 0.75,,,,,,,,,,,,,,, 16.42, 37.99, 44.17
