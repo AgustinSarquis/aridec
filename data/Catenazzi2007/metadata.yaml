@@ -1,0 +1,152 @@
+citationKey: Catenazzi2007
+doi: 10.3354/meps07106
+entryAuthor: Agustin Sarquis
+entryCreationDate: 2021-07-05
+contactName: Agustin Sarquis
+contactEmail: agusarquis@agro.uba.ar
+entryNote: MAT and altitude missing
+study: They examined the effects of supratidal invertebrates on the decomposition of the green alga Ulva sp. in Paracas Bay, southern Peru.
+
+siteInfo:
+        site: Paracas
+              # These fields should be arrays of equal length to site array
+        coordinates:
+          latitude: -13.8666667
+          longitude: -76.29999972222222
+        country: Peru
+        MAT:
+        MAP: 2
+        rainySeason: # Period of the year during which most precipitation occurs, i.e.: whole year, spring, summer, autumn, winter (if more than one use array format)
+        elevation:  # Elevation of study site in meters above sea level
+        landCover: beach
+        vegNote: The desert is devoid of vegetation except for the halophyte Sesuvium portulacastrum that colonizes small supralittoral dunes
+        cover:
+          plantCover: 0
+          bunchgrassCover:
+          shrubCover:
+          treeCover:
+          forbCover:
+          bareSoil:
+        soilTaxonomy:
+          soilOrder: # Soil order according to the classification system described below
+          soilFamily: # Soil family description (ex. 'Eutric' for a Eutric Cambisol)
+          soilSeries: # Soil series according to the classification system described below
+          classificationSystem: # Name of classification system used. Valid fields are: USDA, FAO, and WRB.
+
+experimentInfo:
+        incDesc: 2 trials x 3 mesh sizes x 3 or 4 harvests x 4 replicates
+        # These fields should all be one dimensional arrays. Values for experimental variables with multiple treatment levels should be entered in the variables section and left blank here
+        replicates: 4
+        duration: 18
+        startingMonth: may
+        litter: Ulva sp.
+        litterbag:
+          material: # mesh type used to construct the litter bags, options are: stainless steel, wire, aluminum, window screening, net curtain, bolting cloth, plastic, fiberglass, nylon, polypropylene, polyester, polyethylene, polyamide
+          meshSize: # mesh size in mm referring to one side of the net-square
+          dimentions: # size of the full litter bag in cm
+            width: 20
+            length: 25
+            radius: # for round or cilindrical structures
+            height: # for 3-dimensional designs such as litter boxes in Austin2006NATURE
+          transmitance: # when reported, light transmitance of the mesh material as a percentage of full sunlight for each wavelength
+            total:
+            PAR:
+            UV:
+            UVA:
+            UVB:
+          position: under litter
+
+variables: # These describe the columns of your timeSeries.csv file
+        V1: # column 1
+          name: Time
+          units: days
+        V2:
+          name: T1M80
+          units: mass remaining
+          varDesc: Ulva sp. decomposed on the beach under Ulva sp. thalli with 0.08 mm mesh during the first trial
+          site: Paracas
+          meshSize: 0.08
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V3:
+          name: T1M5
+          units: mass remaining
+          varDesc: Ulva sp. decomposed on the beach under Ulva sp. thalli with 5 mm mesh during the first trial
+          site: Paracas
+          meshSize: 5
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V4:
+          name: T1M1
+          units: mass remaining
+          varDesc: Ulva sp. decomposed on the beach under Ulva sp. thalli with 1 mm mesh during the first trial
+          site: Paracas
+          meshSize: 1
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V5:
+          name: T2M80
+          units: mass remaining
+          varDesc: Ulva sp. decomposed on the beach under Ulva sp. thalli with 0.08 mm mesh during the second trial
+          site: Paracas
+          meshSize: 0.08
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V6:
+          name: T2M5
+          units: mass remaining
+          varDesc: Ulva sp. decomposed on the beach under Ulva sp. thalli with 5 mm mesh during the second trial
+          site: Paracas
+          meshSize: 5
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V7:
+          name: T2M1
+          units: mass remaining
+          varDesc: Ulva sp. decomposed on the beach under Ulva sp. thalli with 1 mm mesh during the second trial
+          site: Paracas
+          meshSize: 1
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:

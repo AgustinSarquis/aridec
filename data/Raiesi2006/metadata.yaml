@@ -1,0 +1,197 @@
+citationKey: Raiesi2006
+doi: 10.1007/s00374-005-0066-1
+entryAuthor: Agustin Sarquis
+entryCreationDate: 2021-07-05
+contactName: Agustin Sarquis
+contactEmail: agusarquis@agro.uba.ar
+entryNote: # Any notes or comments related to this entry.
+study: Aboveground litter decomposition of three dominant species (Agropyron intermedium, Hordeum bulbosum, and Juncus sp.) were studied using a litter bag experiment under field conditions in three range sites of Central Iran, a site with continuous grazing, a site ungrazed for 17 years with dominant woody species (80% cover), and a site ungrazed for 17 years with dominant pasture species (70% cover).
+
+siteInfo:
+        site: Chahartag
+              # These fields should be arrays of equal length to site array
+        coordinates:
+          latitude: 31.8166667
+          longitude: 50.85
+        country: Iran
+        MAT: 6.7
+        MAP: 860
+        rainySeason: # Period of the year during which most precipitation occurs, i.e.: whole year, spring, summer, autumn, winter (if more than one use array format)
+        elevation: 2500
+        landCover: grassland
+        vegNote: typical understory species including various grasses [such as A. intermedium, H. bulbosum, Juncus sp., B. tomentellus, B. tectorum, and B. danthonia] and canopy species such as desert ash (F. rotundifolia) and oak (Q. persica) trees.
+        cover:
+          plantCover: # Total plant cover percentage (if they report cover by specific plant types, fill the fields below)
+          bunchgrassCover:
+          shrubCover:
+          treeCover:
+          forbCover:
+          bareSoil:
+        soilTaxonomy:
+          soilOrder: # Soil order according to the classification system described below
+          soilFamily: # Soil family description (ex. 'Eutric' for a Eutric Cambisol)
+          soilSeries: # Soil series according to the classification system described below
+          classificationSystem: # Name of classification system used. Valid fields are: USDA, FAO, and WRB.
+
+experimentInfo:
+        incDesc: 3 sites x 3 species x 5 harvests x 3 replicates
+        # These fields should all be one dimensional arrays. Values for experimental variables with multiple treatment levels should be entered in the variables section and left blank here
+        replicates: 3
+        duration: 540
+        startingMonth: september
+        litter: # plant species used as litter material for the experiment. All details related to the species must be specified in the initConditions.csv file
+        litterbag:
+          material: nylon
+          meshSize: 1
+          dimentions: # size of the full litter bag in cm
+            width: 18
+            length: 20
+            radius: # for round or cilindrical structures
+            height: # for 3-dimensional designs such as litter boxes in Austin2006NATURE
+          transmitance: # when reported, light transmitance of the mesh material as a percentage of full sunlight for each wavelength
+            total:
+            PAR:
+            UV:
+            UVA:
+            UVB:
+          position: buried
+
+variables: # These describe the columns of your timeSeries.csv file
+        V1: # column 1
+          name: Time
+          units: days
+        V2:
+          name: UGPAI
+          units: mass remaining
+          varDesc: A. intermedium litter buried at the ungrazed site dominated by pastures
+          site: Chahartag
+          litter: Agropyron intermedium
+          compTreat: ungrazed
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V3:
+          name: UGPHB
+          units: mass remaining
+          varDesc: H. bulbosum litter buried at the ungrazed site dominated by pastures
+          site: Chahartag
+          litter: Hordeum bulbosum
+          compTreat: ungrazed
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V4:
+          name: UGPJU
+          units: mass remaining
+          varDesc: Juncus sp. litter buried at the ungrazed site dominated by pastures
+          site: Chahartag
+          litter: Juncus sp.
+          compTreat: ungrazed
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V5:
+          name: UGWAI
+          units: mass remaining
+          varDesc: A. intermedium litter buried at the ungrazed site dominated by woody vegetation
+          site: Chahartag
+          litter: Agropyron intermedium
+          compTreat: ungrazed
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V6:
+          name: UGWHB
+          units: mass remaining
+          varDesc: H. bulbosum litter buried at the ungrazed site dominated by woody vegetation
+          site: Chahartag
+          litter: Hordeum bulbosum
+          compTreat: ungrazed
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V7:
+          name: UGWJU
+          units: mass remaining
+          varDesc: Juncus sp. litter buried at the ungrazed site dominated by woody vegetation
+          site: Chahartag
+          litter: Juncus sp.
+          compTreat: ungrazed
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V8:
+          name: GRCAI
+          units: mass remaining
+          varDesc: A. intermedium litter buried at the grazed site
+          site: Chahartag
+          litter: Agropyron intermedium
+          compTreat: grazed
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V9:
+          name: GRCHB
+          units: mass remaining
+          varDesc: H. bulbosum litter buried at the grazed site
+          site: Chahartag
+          litter: Hordeum bulbosum
+          compTreat: grazed
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V10:
+          name: GRCJU
+          units: mass remaining
+          varDesc: Juncus sp. litter buried at the grazed site
+          site: Chahartag
+          litter: Juncus sp.
+          compTreat: grazed
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
