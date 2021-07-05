@@ -1,0 +1,4 @@
+species, type, N-fixer, material, amount, carbon, nitrogen, C:N, phosphorus, potassium, sodium, magnesium, manganese, copper, zinc, lead, calcium, sulfur, iron, lignin, cellulose, hemicellulose, cell solubles, SLA
+Pinus roxburghii, evergreen, no, leaves, 20, 48.96, 0.65, 75.32
+Cupressus sp., evergreen, no, leaves, 20, 59.52, 0.91, 65.41
+Quercus griffithii, deciduous, no, leaves, 20, 85.49, 1.83, 46.72
