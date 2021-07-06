@@ -4,7 +4,7 @@ entryAuthor: Agustin Sarquis
 entryCreationDate: 2021-07-05
 contactName: Agustin Sarquis
 contactEmail: agusarquis@agro.uba.ar
-entryNote: MAT and altitude missing
+entryNote: MAT from POWER and altitude from Google Earth. Coordinates on the paper fall on the water so I corrected them with the closest point on the beach
 study: They examined the effects of supratidal invertebrates on the decomposition of the green alga Ulva sp. in Paracas Bay, southern Peru.
 
 siteInfo:
@@ -14,10 +14,10 @@ siteInfo:
           latitude: -13.8666667
           longitude: -76.29999972222222
         country: Peru
-        MAT:
+        MAT: 19.69
         MAP: 2
         rainySeason: # Period of the year during which most precipitation occurs, i.e.: whole year, spring, summer, autumn, winter (if more than one use array format)
-        elevation:  # Elevation of study site in meters above sea level
+        elevation: 20
         landCover: beach
         vegNote: The desert is devoid of vegetation except for the halophyte Sesuvium portulacastrum that colonizes small supralittoral dunes
         cover:

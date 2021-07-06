@@ -1,25 +1,25 @@
-citationKey: Phuntsho2016
-doi: 10.17102/cnr.2016.08
-entryAuthor: Agustin Sarquis
-entryCreationDate: 2021-07-05
-contactName: Agustin Sarquis
-contactEmail: agusarquis@agro.uba.ar
-entryNote: approximated coordinates from Google Earth; MAT and MAP from POWER
-study: Litter decomposition study on Oak (Quercus griffithii), Cupressus (Cupressus sp.) and Chirpine (Pinus roxburghii) was carried out at Talo geog, Punakha Dzongkhag.
+citationKey: Elkins1982a # Unique identifier in the format: LastnameYear (lowercase letters must be added when there are two or more entries by the same author and year, i.e.: LastnameYearx)
+doi: https://doi.org/10.2307/1938973 # DOI of the publication where data is published
+entryAuthor: Ignacio Siebenhart # First and last name of the person who entered the data in this file
+entryCreationDate: 2019-05-24 # Date when the data was entered in this file. Format: YYYY-MM-DD
+contactName: Agustín Sarquis # First and last name of contact person (may be the principal investigator supervising the entryAuthor)
+contactEmail: agusarquis@agro.uba.ar # Email of the contact person
+entryNote: Quercus havardii and Bouteloua eriopoda names corrected. MAT obtained from power.larc.nasa.gov
+study: decomposition of three litter types in semi-arid ecosystems in southeastern New Mexico
 
 siteInfo:
-        site: Talo geog
+        site: Carlsbad
               # These fields should be arrays of equal length to site array
         coordinates:
-          latitude: 27.5616667
-          longitude: 89.83999999999999
-        country: Bhutan
-        MAT: 3.2
-        MAP: 692
+          latitude: 32.408 # Latitude in decimal units (check for negative that denotes southern hemisphere)
+          longitude: -104.230 # Longitude in decimal units (check for negative that denotes western hemisphere)
+        country: USA # Name of country where site was conducted
+        MAT: 17.25 # Mean annual temperature in degrees Celsius
+        MAP: 260 # Mean annual precipitation in mm
         rainySeason: summer
-        elevation: 2100
-        landCover: forest
-        vegNote: three different forest types, an Oak dominated forest (Quercus griffithii) associated with Castonopsis spp. and Myrica sp., a Cupressus plantation and a Chirpine (Pinus roxburghii) forest
+        elevation: 946 # Elevation of study site in meters above sea level
+        landCover: # Land cover of the site. Valid fields are: greenbelt, (abbandoned) farmland, mangrove forest, subalpine, shrubland, urban, sandland, forest, steppe, desert, grassland, savanna
+        vegNote: # Additional details about land cover such as species or functional type composition
         cover:
           plantCover: # Total plant cover percentage (if they report cover by specific plant types, fill the fields below)
           bunchgrassCover:
@@ -34,19 +34,18 @@ siteInfo:
           classificationSystem: # Name of classification system used. Valid fields are: USDA, FAO, and WRB.
 
 experimentInfo:
-        incDesc: 3 species x 8 harvests x 2 replicates
+        incDesc: 3 species x 4 harvests x 10 replicates
         # These fields should all be one dimensional arrays. Values for experimental variables with multiple treatment levels should be entered in the variables section and left blank here
-        replicates: 2
-        duration: 224
-        startingMonth: august
+        replicates: 10 # Number of replicates per treatment
+        duration: 365 # length of incubation in days
+        startingMonth: february # month during which the study started, all in lower case
         litter: # plant species used as litter material for the experiment. All details related to the species must be specified in the initConditions.csv file
         litterbag:
-          material: # mesh type used to construct the litter bags, options are: stainless steel, wire, aluminum, window screening, net curtain, bolting cloth, plastic, fiberglass, nylon, polypropylene, polyester, polyethylene, polyamide
-          meshSize: 2
+          material: fiberglass
+          meshSize: 1.5
           dimentions: # size of the full litter bag in cm
             width: 20
             length: 20
-            radius: # for round or cilindrical structures
             height: # for 3-dimensional designs such as litter boxes in Austin2006NATURE
           transmitance: # when reported, light transmitance of the mesh material as a percentage of full sunlight for each wavelength
             total:
@@ -54,18 +53,18 @@ experimentInfo:
             UV:
             UVA:
             UVB:
-          position: under tree
+          position: bare soil
 
 variables: # These describe the columns of your timeSeries.csv file
         V1: # column 1
           name: Time
-          units: weeks
+          units: months
         V2:
-          name: Chirpine
+          name: Gram
           units: mass remaining
-          varDesc: P. roxburghii needle litter decomposed at a forest dominated by the same species
-          site: Talo geog
-          litter: Pinus roxburghii
+          varDesc: Mixture of Bouteloua eriopoda and Scleropogon brevifolius litter decomposed
+          site: Carlsbad
+          litter: mixture
           compTreat: # combination of complementary treatments not included in the rest of the variables
           filter: # for photodegradation experiments only
            threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
@@ -76,11 +75,11 @@ variables: # These describe the columns of your timeSeries.csv file
              UVA:
              UVB:
         V3:
-          name: Cupressus
+          name: Creo
           units: mass remaining
-          varDesc: Cupressus sp. litter decomposed at a plantation of the same species
-          site: Talo geog
-          litter: Cupressus sp.
+          varDesc: Larrea tridentata litter decomposed
+          site: Carlsbad
+          litter: Larrea tridentata
           compTreat: # combination of complementary treatments not included in the rest of the variables
           filter: # for photodegradation experiments only
            threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
@@ -93,9 +92,9 @@ variables: # These describe the columns of your timeSeries.csv file
         V4:
           name: Oak
           units: mass remaining
-          varDesc: Q. griffithii litter decomposed at a forest dominated by the same species
-          site: Talo geog
-          litter: Quercus griffithii
+          varDesc: Quercus havardii litter decomposed
+          site: Carlsbad
+          litter: Quercus havardii
           compTreat: # combination of complementary treatments not included in the rest of the variables
           filter: # for photodegradation experiments only
            threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
