@@ -1,0 +1,77 @@
+citationKey: Fores1988
+doi: 10.1007/BF02197596
+entryAuthor: Agustin Sarquis
+entryCreationDate: 2021-07-08
+contactName: Agustin Sarquis
+contactEmail: agusarquis@agro.uba.ar
+entryNote: approximated coordinates and elevation from Google Earth; MAT and MAP from POWER
+study: Rice straw buried in a rice-field during the dry season
+
+siteInfo:
+        site: Ebro Delta
+              # These fields should be arrays of equal length to site array
+        coordinates:
+          latitude: 40.6916667
+          longitude: 0.6955555555555556
+        country: Spain
+        MAT: 16.43
+        MAP: 463
+        rainySeason: # Period of the year during which most precipitation occurs, i.e.: whole year, spring, summer, autumn, winter (if more than one use array format)
+        elevation: 1
+        landCover: farmland
+        vegNote: rice field after harvest 
+        cover:
+          plantCover: # Total plant cover percentage (if they report cover by specific plant types, fill the fields below)
+          bunchgrassCover:
+          shrubCover:
+          treeCover:
+          forbCover:
+          bareSoil:
+        soilTaxonomy:
+          soilOrder: # Soil order according to the classification system described below
+          soilFamily: # Soil family description (ex. 'Eutric' for a Eutric Cambisol)
+          soilSeries: # Soil series according to the classification system described below
+          classificationSystem: # Name of classification system used. Valid fields are: USDA, FAO, and WRB.
+
+experimentInfo:
+        incDesc: 7 harvests x 3 replicates
+        # These fields should all be one dimensional arrays. Values for experimental variables with multiple treatment levels should be entered in the variables section and left blank here
+        replicates: 3
+        duration: 139
+        startingMonth: # month during which the study started, all in lower case
+        litter: Oryza sativa
+        litterbag:
+          material: nylon
+          meshSize: 2
+          dimentions: # size of the full litter bag in cm
+            width:
+            length:
+            radius: # for round or cilindrical structures
+            height: # for 3-dimensional designs such as litter boxes in Austin2006NATURE
+          transmitance: # when reported, light transmitance of the mesh material as a percentage of full sunlight for each wavelength
+            total:
+            PAR:
+            UV:
+            UVA:
+            UVB:
+          position: buried
+
+variables: # These describe the columns of your timeSeries.csv file
+        V1: # column 1
+          name: Time
+          units: days
+        V2: # column 2
+          name: DW
+          units: mass remaining
+          varDesc: Fresh rice straw buried in the field during the dry season
+          site: Ebro Delta
+          experimentalTreatment: # 'experimentalTreatment' here is a place holder for treatments with multiple levels. Replace this word by any of the listed variables in incubationInfo above (startingMonth, duration, litter, litterbag, meshSize) and type treatment value (level) after colon. Note that units should be specified in the incubationInfo field above.
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
