@@ -1,0 +1,126 @@
+citationKey: Wasserman2020
+doi: 10.1080/20442041.2020.1802196
+entryAuthor: Agustin Sarquis
+entryCreationDate: 2021-07-12
+contactName: Agustin Sarquis
+contactEmail: agusarquis@agro.uba.ar
+entryNote: elevation from Google Earth; 0.5 mm mesh was made of nylon and 10 mm mesh was made of polyvinyl chloride
+study: they contrasted aquatic leaching and microbial and invertebrate litter breakdown contributions to the native Combretum imberbe and invasive Eucalyptus camaldulensis in the Lotsane River
+
+siteInfo:
+        site: Lotsane River
+              # These fields should be arrays of equal length to site array
+        coordinates:
+          latitude: -22.55
+          longitude: 27.133333333333333
+        country: Botswana
+        MAT: 22.7
+        MAP: 351
+        rainySeason: # Period of the year during which most precipitation occurs, i.e.: whole year, spring, summer, autumn, winter (if more than one use array format)
+        elevation: 928
+        landCover: savanna
+        vegNote: The land cover in the region is composed mainly of heavily grazed rangeland vegetation among canopies of varied densities
+        cover:
+          plantCover: # Total plant cover percentage (if they report cover by specific plant types, fill the fields below)
+          bunchgrassCover:
+          shrubCover:
+          treeCover:
+          forbCover:
+          bareSoil:
+        soilTaxonomy:
+          soilOrder: # Soil order according to the classification system described below
+          soilFamily: # Soil family description (ex. 'Eutric' for a Eutric Cambisol)
+          soilSeries: # Soil series according to the classification system described below
+          classificationSystem: # Name of classification system used. Valid fields are: USDA, FAO, and WRB.
+
+experimentInfo:
+        incDesc: 2 species x 2 mesh sizes x 4 harvests x 5 replicates
+        # These fields should all be one dimensional arrays. Values for experimental variables with multiple treatment levels should be entered in the variables section and left blank here
+        replicates: 5
+        duration: 42
+        startingMonth: january
+        litter: # plant species used as litter material for the experiment. All details related to the species must be specified in the initConditions.csv file
+        litterbag:
+          material:
+          meshSize: # mesh size in mm referring to one side of the net-square
+          dimentions: # size of the full litter bag in cm
+            width: 10
+            length: 15
+            radius: # for round or cilindrical structures
+            height: # for 3-dimensional designs such as litter boxes in Austin2006NATURE
+          transmitance: # when reported, light transmitance of the mesh material as a percentage of full sunlight for each wavelength
+            total:
+            PAR:
+            UV:
+            UVA:
+            UVB:
+          position: underwater
+
+variables: # These describe the columns of your timeSeries.csv file
+        V1: # column 1
+          name: Time
+          units: days
+        V2:
+          name: Nexc
+          units: mass remaining
+          varDesc: Native C. imberbe green leaves incubated underwater at a temporary river with invertebrate exclusion
+          site: Lotsane River
+          litter: Combretum imberbe
+          meshSize: 0.5
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V3:
+          name: Iexc
+          units: mass remaining
+          varDesc: Invasive E. camaldulensis green leaves incubated underwater at a temporary river with invertebrate exclusion
+          site: Lotsane River
+          litter: Eucalyptus camaldulensis
+          meshSize: 0.5
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V4:
+          name: Ninc
+          units: mass remaining
+          varDesc: Native C. imberbe green leaves incubated underwater at a temporary river with invertebrate inclusion
+          site: Lotsane River
+          litter: Combretum imberbe
+          meshSize: 10
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V5:
+          name: Iinc
+          units: mass remaining
+          varDesc: Invasive E. camaldulensis green leaves incubated underwater at a temporary river with invertebrate inclusion
+          site: Lotsane River
+          litter: Eucalyptus camaldulensis
+          meshSize: 10
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
