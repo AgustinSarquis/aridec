@@ -1,0 +1,122 @@
+citationKey: Weatherly2003
+doi: 10.1046/j.1365-2486.2003.00653.x
+entryAuthor: Ignacio Siebenhart
+entryCreationDate: 2021-07-07
+contactName: Agustin Sarquis
+contactEmail: agusarquis@agro.uba.ar
+entryNote: MAT from NASA POWER. CO2 addition using FACE. The litter production year refers to a dry or a wet year during which litter was produced.
+study: They evaluated the effect of elevated CO2 on decomposition
+
+siteInfo:
+        site: Mojave desert
+              # These fields should be arrays of equal length to site array
+        coordinates:
+          latitude: 36.8166667
+          longitude: -114.75
+        country: USA
+        MAT: 16.48
+        MAP: 140
+        rainySeason: # Period of the year during which most precipitation occurs, i.e.: whole year, spring, summer, autumn, winter (if more than one use array format)
+        elevation: 965
+        landCover: desert
+        vegNote: Shrub community co-dominated by the perennial evergreen shrub Larrea tridentata and three deciduous species, Ambrosia dumosa, Lycium pallidum, and Lycium andersonii; the herbaceous community is dominated by perennial C4 grasses (Pleuraphis rigida and Erioneuron pulchellum), a perennial C3 grass (Achnatherum hymenoides), annual C3 grasses (Bromus madritensis var. rubens and Vulpia octoflora), and annual forbs (Eriogonum trichopes and Lepidium lasiocarpum)
+        cover:
+          plantCover: # Total plant cover percentage (if they report cover by specific plant types, fill the fields below)
+          bunchgrassCover:
+          shrubCover:
+          treeCover:
+          forbCover:
+          bareSoil:
+        soilTaxonomy:
+          soilOrder: Aridisol
+          soilFamily: # Soil family description (ex. 'Eutric' for a Eutric Cambisol)
+          soilSeries: # Soil series according to the classification system described below
+          classificationSystem: WRB
+
+experimentInfo:
+        incDesc: 2 CO2 addition levels x 2 litter production years x 2 harvests x 4 replicates
+        # These fields should all be one dimensional arrays. Values for experimental variables with multiple treatment levels should be entered in the variables section and left blank here
+        replicates: 4
+        duration: 365
+        startingMonth: # month during which the study started, all in lower case
+        litter: # plant species used as litter material for the experiment. All details related to the species must be specified in the initConditions.csv file
+        litterbag:
+          material: fiberglass
+          meshSize: 1.5
+          dimentions: # size of the full litter bag in cm
+            width: 5
+            length: 5
+            radius: # for round or cilindrical structures
+            height: # for 3-dimensional designs such as litter boxes in Austin2006NATURE
+          transmitance: # when reported, light transmitance of the mesh material as a percentage of full sunlight for each wavelength
+            total:
+            PAR:
+            UV:
+            UVA:
+            UVB:
+          position: # position of litterbags in the field, valid options are: bare soil, decomposition bed, under litter, over litter, over lawn, next to grass, under tree/shrub/grass, buried X cm deep, underwater, under rainout shelter, under frame, suspended X cm, under shadecloth
+
+variables: # These describe the columns of your timeSeries.csv file
+        V1: # column 1
+          name: Time
+          units: months
+        V2:
+          name: CW
+          units: mass remaining
+          varDesc: Pooled litter produced in a wet year under an ambient with control CO2
+          site: Mojave desert
+          litter: mean1
+          compTreat: control
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V3:
+          name: EW
+          units: mass remaining
+          varDesc: Pooled litter produced in a wet year under an ambient with enriched CO2
+          site: Mojave desert
+          litter: mean2
+          compTreat: C02 enrichment
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V4:
+          name: CD
+          units: mass remaining
+          varDesc: Pooled litter produced in a dry year under an ambient with control CO2
+          site: Mojave desert
+          litter: mean3
+          compTreat: control
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V5:
+          name: ED
+          units: mass remaining
+          varDesc: Pooled litter produced in a dry year under an ambient with enriched CO2
+          site: Mojave desert
+          litter: mean4
+          compTreat: C02 enrichment
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
