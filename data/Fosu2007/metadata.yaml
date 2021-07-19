@@ -18,7 +18,7 @@ siteInfo:
         MAP: 493.5 # Mean annual precipitation in mm
         rainySeason: # Period of the year during which most precipitation occurs, i.e.: whole year, spring, summer, autumn, winter (if more than one use array format)
         elevation: 173 # Elevation of study site in meters above sea level
-        landCover: savannah  # Land cover of the site. Valid fields are: greenbelt, (abbandoned) farmland, mangrove forest, subalpine, shrubland, urban, sandland, forest, steppe, desert, grassland, savanna
+        landCover: savanna  # Land cover of the site. Valid fields are: greenbelt, (abbandoned) farmland, mangrove forest, subalpine, shrubland, urban, sandland, forest, steppe, desert, grassland, savanna
         vegNote: # Additional details about land cover such as species or functional type composition
         cover:
           plantCover: # Total plant cover percentage (if they report cover by specific plant types, fill the fields below)
