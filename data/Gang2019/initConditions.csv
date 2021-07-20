@@ -1,0 +1,5 @@
+species, type, N-fixer, material, amount, carbon, nitrogen, C:N, phosphorus, potassium, sodium, magnesium, manganese, copper, zinc, lead, calcium, sulfur, iron, lignin, cellulose, hemicellulose, cell solubles, SLA
+Pinus sylvestris1, evergreen, no, fine roots, 5, 42, 0.92, 45.6, 0.1063,,,,,,,,,,, 27.2
+Pinus sylvestris2, evergreen, no, fine roots, 5, 52.7, 0.75, 70, 0.1062,,,,,,,,,,, 30.3
+Pinus sylvestris3, evergreen, no, fine roots, 5, 41.7, 1.07, 39, 0.0792,,,,,,,,,,, 27.1
+Pinus sylvestris4, evergreen, no, fine roots, 5, 48.7, 0.86, 56.6, 0.0595,,,,,,,,,,, 26.7

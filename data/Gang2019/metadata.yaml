@@ -1,0 +1,182 @@
+citationKey: Gang2019
+doi: 10.1007/s11104-018-03910-0
+entryAuthor: Agustin Sarquis
+entryCreationDate: 2021-07-20
+contactName: Agustin Sarquis
+contactEmail: agusarquis@agro.uba.ar
+entryNote: # Any notes or comments related to this entry.
+study: A two-year reciprocal replant–transplant field experiment was conducted in a Mongolian pine (Pinus sylvestris var. mongolica) plantation to examine the relative effect of exogenous and endogenous N enrichment induced by N addition on decomposition
+
+siteInfo:
+        site: Daqinggou
+              # These fields should be arrays of equal length to site array
+        coordinates:
+          latitude: 42.9
+          longitude: 122.35
+        country: China
+        MAT: 6.4
+        MAP: 450
+        rainySeason: summer
+        elevation: 260
+        landCover: farmland
+        vegNote: 13-year old Mongolian pine plantation (Pinus sylvestris var. mongolica)
+        cover:
+          plantCover: # Total plant cover percentage (if they report cover by specific plant types, fill the fields below)
+          bunchgrassCover:
+          shrubCover:
+          treeCover:
+          forbCover:
+          bareSoil:
+        soilTaxonomy:
+          soilOrder: # Soil order according to the classification system described below
+          soilFamily: # Soil family description (ex. 'Eutric' for a Eutric Cambisol)
+          soilSeries: # Soil series according to the classification system described below
+          classificationSystem: # Name of classification system used. Valid fields are: USDA, FAO, and WRB.
+
+experimentInfo:
+        incDesc: 2 N addition levels during growth x 2 N addition levels during decomposition x 2 fine root diameter classes x 4 replicats x 3 harvests
+        # These fields should all be one dimensional arrays. Values for experimental variables with multiple treatment levels should be entered in the variables section and left blank here
+        replicates: 4
+        duration: 730
+        startingMonth: april
+        litter: # plant species used as litter material for the experiment. All details related to the species must be specified in the initConditions.csv file
+        litterbag:
+          material: nylon
+          meshSize: 0.1
+          dimentions: # size of the full litter bag in cm
+            width: 10
+            length: 10
+            radius: # for round or cilindrical structures
+            height: # for 3-dimensional designs such as litter boxes in Austin2006NATURE
+          transmitance: # when reported, light transmitance of the mesh material as a percentage of full sunlight for each wavelength
+            total:
+            PAR:
+            UV:
+            UVA:
+            UVB:
+          position: buried 15 cm deep
+
+variables: # These describe the columns of your timeSeries.csv file
+        V1: # column 1
+          name: Time
+          units: years
+        V2:
+          name: N0SFRN0
+          units: mass remaining
+          varDesc: P. sylvestris small diameter fine roots grown and decomposed in control plots
+          site: Daqinggou
+          litter: Pinus sylvestris1
+          compTreat: control
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V3:
+          name: N0SFR+N
+          units: mass remaining
+          varDesc: P. sylvestris small diameter fine roots grown in control plots and decomposed in plots with N addition
+          site: Daqinggou
+          litter: Pinus sylvestris1
+          compTreat: N addition
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V4:
+          name: N0LFRN0
+          units: mass remaining
+          varDesc: P. sylvestris large diameter fine roots grown and decomposed in control plots
+          site: Daqinggou
+          litter: Pinus sylvestris2
+          compTreat: control
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V5:
+          name: N0LFR+N
+          units: mass remaining
+          varDesc: P. sylvestris large diameter fine roots grown in control plots and decomposed in plots with N addition
+          site: Daqinggou
+          litter: Pinus sylvestris2
+          compTreat: N addition
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V6:
+          name: +NSFRN0
+          units: mass remaining
+          varDesc: P. sylvestris small diameter fine roots grown in plots with N addition and decomposed in control plots
+          site: Daqinggou
+          litter: Pinus sylvestris3
+          compTreat: control
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V7:
+          name: +NLFRN0
+          units: mass remaining
+          varDesc: P. sylvestris large diameter fine roots grown in plots with N addition and decomposed in control plots
+          site: Daqinggou
+          litter: Pinus sylvestris4
+          compTreat: control
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V8:
+          name: +NSFR+N
+          units: mass remaining
+          varDesc: P. sylvestris small diameter fine roots grown and decomposed in plots with N addition
+          site: Daqinggou
+          litter: Pinus sylvestris3
+          compTreat: N addition
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V9:
+          name: +NLFR+N
+          units: mass remaining
+          varDesc: P. sylvestris large diameter fine roots grown and decomposed in plots with N addition
+          site: Daqinggou
+          litter: Pinus sylvestris4
+          compTreat: N addition
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
