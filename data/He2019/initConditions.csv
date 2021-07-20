@@ -1,0 +1,13 @@
+species, type, N-fixer, material, amount, carbon, nitrogen, C:N, phosphorus, potassium, sodium, magnesium, manganese, copper, zinc, lead, calcium, sulfur, iron, lignin, cellulose, hemicellulose, cell solubles, SLA
+Salix cheilophila1, deciduous, no, fine roots, 2, 46.907, 0.655, 71.68, 0.181, 0.564
+Salix cheilophila2, deciduous, no, fine roots, 2, 46.184, 0.673, 68.72, 0.188, 0.575
+Salix cheilophila3, deciduous, no, fine roots, 2, 45.140, 0.973, 46.61, 0.203, 0.605
+Salix psammophila1, deciduous, no, fine roots, 2, 47.863, 0.842, 57, 0.206, 0.521
+Salix psammophila2, deciduous, no, fine roots, 2, 47.092, 0.877, 53.71, 0.211, 0.539
+Salix psammophila3, deciduous, no, fine roots, 2, 43.478, 1.094, 39.82, 0.227, 0.686
+Caragana intermedia1, deciduous, yes, fine roots, 2, 46.548, 4.047, 11.51, 0.091, 0.826
+Caragana intermedia2, deciduous, yes, fine roots, 2, 46.240, 4.026, 11.49, 0.096, 0.901
+Caragana intermedia3, deciduous, yes, fine roots, 2, 41.243, 3.356, 12.33, 0.104, 0.919
+Caragana korshinskii1, deciduous, yes, fine roots, 2, 46.542, 3.391, 13.73, 0.095, 0.626
+Caragana korshinskii2, deciduous, yes, fine roots, 2, 45.959, 3.371, 13.65, 0.096, 0.654
+Caragana korshinskii3, deciduous, yes, fine roots, 2, 39.123, 3.016, 12.97, 0.099, 0.685

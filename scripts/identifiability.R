@@ -6,7 +6,7 @@ library(dplyr)
 
 # load single entry
 db=loadEntries()
-entry=db[[48]]
+entry=db[[Bernaschini2019]]
 Ct=entry$timeSeries[,c(1,2)] 
 colnames(Ct)=c("time", "Ct")
 
