@@ -1,0 +1,232 @@
+citationKey: Levi2020 # Unique identifier in the format: LastnameYear (lowercase letters must be added when there are two or more entries by the same author and year, i.e.: LastnameYearx)
+doi: 10.1007/s11104-020-04508-1 # DOI of the publication where data is published
+entryAuthor: Ignacio Siebenhart # First and last name of the person who entered the data in this file
+entryCreationDate: 2021-07-15 # Date when the data was entered in this file. Format: YYYY-MM-DD
+contactName: Agustin Sarquis # First and last name of contact person (may be the principal investigator supervising the entryAuthor)
+contactEmail: agusarquis@agro.uba.ar # Email of the contact person
+entryNote: MAT from POWER
+study: They evaluate the effect of contrasting geomorphic surface on decomposition # Overall study description
+
+siteInfo:
+        site:
+          - Holocene
+          - Pleistocene # Names of individual sites, if one site, keep on this line, if multiple, use array format
+              # These fields should be arrays of equal length to site array
+        coordinates:
+          latitude:
+           - 31.803
+           - 31.783 # Latitude in decimal units (check for negative that denotes southern hemisphere)
+          longitude:
+           - -110.863
+           - -110.844 # Longitude in decimal units (check for negative that denotes western hemisphere)
+        country:
+         - USA
+         - USA # Name of country where site was conducted
+        MAT:
+          - 17.1
+          - 17.1
+        MAP:
+          - 370
+          - 370 # Mean annual precipitation in mm
+        rainySeason: # Period of the year during which most precipitation occurs, i.e.: whole year, spring, summer, autumn, winter (if more than one use array format)
+        elevation:
+         - 1150
+         - 1235  # Elevation of study site in meters above sea level
+        landCover:
+         - desert
+         - desert  # Land cover of the site. Valid fields are: greenbelt, (abbandoned) farmland, mangrove forest, subalpine, shrubland, urban, sandland, forest, steppe, desert, grassland, savanna
+        vegNote: # Additional details about land cover such as species or functional type composition
+        cover:
+          plantCover:
+           - 45.6
+           - 87.0 # Total plant cover percentage (if they report cover by specific plant types, fill the fields below)
+          bunchgrassCover:
+          shrubCover:
+           - 34.6
+           - 19.7
+          treeCover:
+          forbCover:
+           - 11.0
+           - 67.3
+          bareSoil:
+           - 54.4
+           - 13.0
+        soilTaxonomy:
+          soilOrder:
+           - Entisol
+           - Aridisol # Soil order according to the classification system described below
+          soilFamily:
+           - Ustic Torrifluvent
+           - Ustic Haplargid # Soil family description (ex. 'Eutric' for a Eutric Cambisol)
+          soilSeries:
+           - Combate
+           - Sasabe # Soil series according to the classification system described below
+          classificationSystem: USDA # Name of classification system used. Valid fields are: USDA, FAO, and WRB.
+
+experimentInfo:
+        incDesc: 2 sites x 5 patch types x 6 collection dates x 3 replicates # Short description of the incubation setup and main treatments
+        # These fields should all be one dimensional arrays. Values for experimental variables with multiple treatment levels should be entered in the variables section and left blank here
+        replicates: 3 # Number of replicates per treatment
+        duration: 730 # length of incubation in days
+        startingMonth: january # month during which the study started, all in lower case
+        litter: Prosopis juliflora # plant species used as litter material for the experiment. All details related to the species must be specified in the initConditions.csv file
+        litterbag:
+          material: fiberglass # mesh type used to construct the litter bags, options are: wire, aluminum, window screening, net curtain, bolting cloth, plastic, fiberglass, nylon, polypropylene, polyester, polyethylene, polyamide
+          meshSize: 0.9 # mesh size in mm referring to one side of the net-square
+          dimentions: # size of the full litter bag in cm
+            width: 10
+            length: 10
+            radius: # for round or cilindrical structures
+            height: # for 3-dimensional designs such as litter boxes in Austin2006NATURE
+          transmitance: # when reported, light transmitance of the mesh material as a percentage of full sunlight for each wavelength
+            total:
+            PAR: 50
+            UV:
+            UVA:
+            UVB: 51
+          position: # position of litterbags in the field, valid options are: bare soil, decomposition bed, under litter, over litter, over lawn, next to grass, under tree/shrub/grass, buried X cm deep, underwater, under rainout shelter, under frame, suspended X cm, under shadecloth
+
+variables: # These describe the columns of your timeSeries.csv file
+        V1: # column 1
+          name: Time
+          units: months # Time units used in accompanying file. Possible options are: days, weeks, months, years
+        V2: #
+          name: HSM #
+          units: mass remaining # units in which litter mass loss was reported. Valid options are: mass remaining, organic matter remaining, C remaining
+          varDesc: P. juliflora leaves in a small shrub patch at Holocene site # Description of the variable
+          site: Holocene # Site where the experiment was conducted
+          position: under shrub
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V3: #
+          name: HMM #
+          units: mass remaining # units in which litter mass loss was reported. Valid options are: mass remaining, organic matter remaining, C remaining
+          varDesc: P. juliflora leaves in a medium shrub patch at Holocene site # Description of the variable
+          site: Holocene # Site where the experiment was conducted
+          position: under shrub
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V4: #
+          name: HLM #
+          units: mass remaining # units in which litter mass loss was reported. Valid options are: mass remaining, organic matter remaining, C remaining
+          varDesc: P. juliflora leaves in a large shrub patch at Holocene site # Description of the variable
+          site: Holocene # Site where the experiment was conducted
+          position: under shrub
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V5: #
+          name: HBS #
+          units: mass remaining # units in which litter mass loss was reported. Valid options are: mass remaining, organic matter remaining, C remaining
+          varDesc: P. juliflora leaves in a bare soil patch at Holocene site # Description of the variable
+          site: Holocene # Site where the experiment was conducted
+          position: bare soil
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V6: #
+          name: HG #
+          units: mass remaining # units in which litter mass loss was reported. Valid options are: mass remaining, organic matter remaining, C remaining
+          varDesc: P. juliflora leaves in a grass patch at Holocene site # Description of the variable
+          site: Holocene # Site where the experiment was conducted
+          position: next to grass
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V7: #
+          name: PSM #
+          units: mass remaining # units in which litter mass loss was reported. Valid options are: mass remaining, organic matter remaining, C remaining
+          varDesc: P. juliflora leaves in a small shrub patch at Pleistocene site # Description of the variable
+          site: Pleistocene # Site where the experiment was conducted
+          position: under shrub
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V8: #
+          name: PMM #
+          units: mass remaining # units in which litter mass loss was reported. Valid options are: mass remaining, organic matter remaining, C remaining
+          varDesc: P. juliflora leaves in a medium shrub patch at Pleistocene site # Description of the variable
+          site: Pleistocene # Site where the experiment was conducted
+          position: under shrub
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V9: #
+          name: PLM #
+          units: mass remaining # units in which litter mass loss was reported. Valid options are: mass remaining, organic matter remaining, C remaining
+          varDesc: P. juliflora leaves in a large shrub patch at Pleistocene site # Description of the variable
+          site: Pleistocene # Site where the experiment was conducted
+          position: under shrub
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V10: #
+          name: PBS #
+          units: mass remaining # units in which litter mass loss was reported. Valid options are: mass remaining, organic matter remaining, C remaining
+          varDesc: P. juliflora leaves in a bare soil patchy at Pleistocene site # Description of the variable
+          site: Pleistocene # Site where the experiment was conducted
+          position: bare soil
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V11: #
+          name: PG #
+          units: mass remaining # units in which litter mass loss was reported. Valid options are: mass remaining, organic matter remaining, C remaining
+          varDesc: P. juliflora leaves in a grass patch at Pleistocene site # Description of the variable
+          site: Pleistocene # Site where the experiment was conducted
+          position: next to grass
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
