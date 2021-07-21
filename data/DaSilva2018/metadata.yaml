@@ -1,0 +1,107 @@
+citationKey: DaSilva2018
+doi: 10.1590/1983-21252018v31n201rc
+entryAuthor: Agustin Sarquis
+entryCreationDate: 2021-07-21
+contactName: Agustin Sarquis
+contactEmail: agusarquis@agro.uba.ar
+entryNote: approximate coordinates from Google Earth
+study: Three field decomposition trials were performed for the cover crops Urochloa ruziziensis (brachiaria), Pennisetum glaucum (pearl millet), and Cajanus cajan (pigeon pea)
+
+siteInfo:
+        site: Santa Helena
+              # These fields should be arrays of equal length to site array
+        coordinates:
+          latitude: -17.8183333
+          longitude: -50.60388888888889
+        country: Brazil
+        MAT: 25.1
+        MAP: 1488
+        rainySeason: summer
+        elevation: 560
+        landCover: farmland
+        vegNote: Each field trial consisted of one species of cover plant, namely Urochloa ruziziensis (brachiaria), Pennisetum glaucum (millet), or Cajanus cajan (pigeon pea), seeded after the harvest of soybeans, and preceding the cultivation of cotton
+        cover:
+          plantCover: # Total plant cover percentage (if they report cover by specific plant types, fill the fields below)
+          bunchgrassCover:
+          shrubCover:
+          treeCover:
+          forbCover:
+          bareSoil:
+        soilTaxonomy:
+          soilOrder: # Soil order according to the classification system described below
+          soilFamily: # Soil family description (ex. 'Eutric' for a Eutric Cambisol)
+          soilSeries: # Soil series according to the classification system described below
+          classificationSystem: # Name of classification system used. Valid fields are: USDA, FAO, and WRB.
+
+experimentInfo:
+        incDesc: 3 cover crops x 6 harvests x 4 replicates
+        # These fields should all be one dimensional arrays. Values for experimental variables with multiple treatment levels should be entered in the variables section and left blank here
+        replicates: 4
+        duration: 170
+        startingMonth: december
+        litter: # plant species used as litter material for the experiment. All details related to the species must be specified in the initConditions.csv file
+        litterbag:
+          material: polyethylene
+          meshSize: 4
+          dimentions: # size of the full litter bag in cm
+            width: 23
+            length : 25
+            radius: # for round or cilindrical structures
+            height: # for 3-dimensional designs such as litter boxes in Austin2006NATURE
+          transmitance: # when reported, light transmitance of the mesh material as a percentage of full sunlight for each wavelength
+            total:
+            PAR:
+            UV:
+            UVA:
+            UVB:
+          position: bare soil
+
+variables: # These describe the columns of your timeSeries.csv file
+        V1: # column 1
+          name: Time
+          units: days
+        V2:
+          name: PM
+          units: mass remaining
+          varDesc: P. glaucum residues decomposed after cotton sowing
+          site: Santa Helena
+          litter: Pennisetum glaucum
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V3:
+          name: Ru
+          units: mass remaining
+          varDesc: Urochloa ruziziensis residues decomposed after cotton sowing
+          site: Santa Helena
+          litter: Urochloa ruziziensis
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V4:
+          name: PP
+          units: mass remaining
+          varDesc: Cajanus cajan residues decomposed after cotton sowing
+          site: Santa Helena
+          litter: Cajanus cajan
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
