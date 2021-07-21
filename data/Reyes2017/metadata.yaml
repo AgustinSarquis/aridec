@@ -1,0 +1,137 @@
+citationKey: Reyes2017
+doi: 10.1111/aec.12503
+entryAuthor: Agustin Sarquis
+entryCreationDate: 2021-07-21
+contactName: Agustin Sarquis
+contactEmail: agusarquis@agro.uba.ar
+entryNote: elevation from Google Earth; MAT from Berenstecher et al. 2021
+study: decomposition of native graminoid roots after a year in Patagonia, Argentina
+
+siteInfo:
+        site: Chubut
+              # These fields should be arrays of equal length to site array
+        coordinates:
+          latitude: -45.4166667
+          longitude: -70.33333333333333
+        country: Argentina
+        MAT: 7.8
+        MAP: 131
+        rainySeason: # Period of the year during which most precipitation occurs, i.e.: whole year, spring, summer, autumn, winter (if more than one use array format)
+        elevation: 550
+        landCover: steppe
+        vegNote: The grass community includes eight perennial-graminoid species, dominated by Poa ligularis, Pappostipa speciosa, Pappostipa humilis, Bromus pictus and Carex sp.; and others with <3% frequency in the field, Bromus setifolius, Festuca argentina and Hordeum comosum
+        cover:
+          plantCover: 50
+          grassCover: 31.5
+          shrubCover: 18
+          treeCover:
+          forbCover: 0.5
+          bareSoil: 50
+        soilTaxonomy:
+          soilOrder: # Soil order according to the classification system described below
+          soilFamily: # Soil family description (ex. 'Eutric' for a Eutric Cambisol)
+          soilSeries: # Soil series according to the classification system described below
+          classificationSystem: # Name of classification system used. Valid fields are: USDA, FAO, and WRB.
+
+experimentInfo:
+        incDesc: 5 species x 2 harvests x 5 replicates
+        # These fields should all be one dimensional arrays. Values for experimental variables with multiple treatment levels should be entered in the variables section and left blank here
+        replicates: 5
+        duration: 365
+        startingMonth: december
+        litter: # plant species used as litter material for the experiment. All details related to the species must be specified in the initConditions.csv file
+        litterbag:
+          material: fiberglass
+          meshSize: 2
+          dimentions: # size of the full litter bag in cm
+            width: 12
+            length: 12
+            radius: # for round or cilindrical structures
+            height: # for 3-dimensional designs such as litter boxes in Austin2006NATURE
+          transmitance: # when reported, light transmitance of the mesh material as a percentage of full sunlight for each wavelength
+            total:
+            PAR:
+            UV:
+            UVA:
+            UVB:
+          position: buried 5 cm deep
+
+variables: # These describe the columns of your timeSeries.csv file
+        V1: # column 1
+          name: Time
+          units: months
+        V2:
+          name: Pl
+          units: mass remaining
+          varDesc: P. ligularis roots decomposed buried 5 cm deep
+          site: Chubut
+          litter: Poa ligularis
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V3:
+          name: Ps
+          units: mass remaining
+          varDesc: P. speciosa roots decomposed buried 5 cm deep
+          site: Chubut
+          litter: Pappostipa speciosa
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V4:
+          name: Ph
+          units: mass remaining
+          varDesc: P. humilis roots decomposed buried 5 cm deep
+          site: Chubut
+          litter: Pappostipa humilis
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V5:
+          name: Bp
+          units: mass remaining
+          varDesc: B. pictus roots decomposed buried 5 cm deep
+          site: Chubut
+          litter: Bromus pictus
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V6:
+          name: Csp
+          units: mass remaining
+          varDesc: Carex sp. roots decomposed buried 5 cm deep
+          site: Chubut
+          litter: Carex
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
