@@ -1,0 +1,122 @@
+citationKey: Chen2018
+doi: 10.17521/cjpe.2017.0298
+entryAuthor: Agustin Sarquis
+entryCreationDate: 2021-07-21
+contactName: Agustin Sarquis
+contactEmail: agusarquis@agro.uba.ar
+entryNote:
+study: leaf litter of P. schrenkiana decomposed on the forest floor along the gradient of snow cover depth from forest gap to full canopy
+
+siteInfo:
+        site: Tianshan
+              # These fields should be arrays of equal length to site array
+        coordinates:
+          latitude: 42
+          longitude: 83
+        country: China
+        MAT: 2.5
+        MAP: 500
+        rainySeason: summer
+        elevation: 2750
+        landCover: forest
+        vegNote: needle leaf forest dominated by Picea schrenkiana
+        cover:
+          plantCover: # Total plant cover percentage (if they report cover by specific plant types, fill the fields below)
+          bunchgrassCover:
+          shrubCover:
+          treeCover:
+          forbCover:
+          bareSoil:
+        soilTaxonomy:
+          soilOrder: # Soil order according to the classification system described below
+          soilFamily: # Soil family description (ex. 'Eutric' for a Eutric Cambisol)
+          soilSeries: # Soil series according to the classification system described below
+          classificationSystem: # Name of classification system used. Valid fields are: USDA, FAO, and WRB.
+
+experimentInfo:
+        incDesc: 4 snow depths x 5 harvests x 5 replicates
+        # These fields should all be one dimensional arrays. Values for experimental variables with multiple treatment levels should be entered in the variables section and left blank here
+        replicates: 5
+        duration: 365
+        startingMonth: october
+        litter: Picea schrenkiana
+        litterbag:
+          material: nylon
+          meshSize: 0.1
+          dimentions: # size of the full litter bag in cm
+            width: 20
+            length: 20
+            radius: # for round or cilindrical structures
+            height: # for 3-dimensional designs such as litter boxes in Austin2006NATURE
+          transmitance: # when reported, light transmitance of the mesh material as a percentage of full sunlight for each wavelength
+            total:
+            PAR:
+            UV:
+            UVA:
+            UVB:
+          position:
+
+variables: # These describe the columns of your timeSeries.csv file
+        V1:
+          name: Time
+          units: months
+        V2:
+          name: nsc
+          units: organic matter remaining
+          varDesc: P. schrenkiana needle litter decomposed under full forest canopy without snow cover
+          site: Tianshan
+          position: under tree
+          compTreat: control
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V3:
+          name: thinsc
+          units: organic matter remaining
+          varDesc: P. schrenkiana needle litter decomposed under mid forest canopy with a thin snow cover
+          site: Tianshan
+          position: under tree
+          compTreat: snow cover
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V4:
+          name: msc
+          units: organic matter remaining
+          varDesc: P. schrenkiana needle litter decomposed under mid forest canopy with a medium thick snow cover
+          site: Tianshan
+          position: under tree
+          compTreat: snow cover
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V5:
+          name: thicksc
+          units: organic matter remaining
+          varDesc: P. schrenkiana needle litter decomposed in a forest gap with a thick snow cover
+          site: Tianshan
+          position: bare soil
+          compTreat: snow cover
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
