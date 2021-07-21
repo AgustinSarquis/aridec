@@ -1,0 +1,3 @@
+species, type, N-fixer, material, amount, carbon, nitrogen, C:N, phosphorus, potassium, sodium, magnesium, manganese, copper, zinc, lead, calcium, sulfur, iron, lignin, cellulose, hemicellulose, cell solubles, SLA
+Populus simonii, deciduous, no, leaves, 3, 45.35, 0.60, 75.9, 0.04,,,,,,,,,,, 34.97
+Pinus sylvestris var. mongolica, evergreen, no, leaves, 3, 53.39, 0.3, 180.1, 0.02,,,,,,,,,,, 51.41

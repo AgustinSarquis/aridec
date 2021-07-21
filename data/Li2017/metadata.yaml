@@ -1,0 +1,152 @@
+citationKey: Li2017
+doi: 10.13287/j.1001-9332.201706.033
+entryAuthor: Agustin Sarquis
+entryCreationDate: 2021-07-21
+contactName: Agustin Sarquis
+contactEmail: agusarquis@agro.uba.ar
+entryNote: they used PVC cilinders filled with soil with litter on top of the soil surface
+study: they conducted an in-situ soil column incubation experiment for 180 days to investigate the effects of soil drying-rewetting on leaf litter decomposition of Populus simonii and Pinus sylvestris var． mongolica
+
+siteInfo:
+        site: Horqin
+              # These fields should be arrays of equal length to site array
+        coordinates:
+          latitude: 42.9666667
+          longitude: 122.35
+        country: China
+        MAT: 6.4
+        MAP: 450
+        rainySeason: # Period of the year during which most precipitation occurs, i.e.: whole year, spring, summer, autumn, winter (if more than one use array format)
+        elevation: 260
+        landCover: forest
+        vegNote: Populus simonii and Pinus sylvestris var. mongolica afforestations
+        cover:
+          plantCover: # Total plant cover percentage (if they report cover by specific plant types, fill the fields below)
+          bunchgrassCover:
+          shrubCover:
+          treeCover:
+          forbCover:
+          bareSoil:
+        soilTaxonomy:
+          soilOrder: # Soil order according to the classification system described below
+          soilFamily: # Soil family description (ex. 'Eutric' for a Eutric Cambisol)
+          soilSeries: # Soil series according to the classification system described below
+          classificationSystem: # Name of classification system used. Valid fields are: USDA, FAO, and WRB.
+
+experimentInfo:
+        incDesc: 2 species x 3 wetting-drying cycles x 5 replicates x 3 harvests
+        # These fields should all be one dimensional arrays. Values for experimental variables with multiple treatment levels should be entered in the variables section and left blank here
+        replicates: 5
+        duration: 180
+        startingMonth: september
+        litter: # plant species used as litter material for the experiment. All details related to the species must be specified in the initConditions.csv file
+        litterbag:
+          material: PVC
+          meshSize: # mesh size in mm referring to one side of the net-square
+          dimentions: # size of the full litter bag in cm
+            width:
+            length:
+            radius: 5.5
+            height: 15
+          transmitance: # when reported, light transmitance of the mesh material as a percentage of full sunlight for each wavelength
+            total:
+            PAR:
+            UV:
+            UVA:
+            UVB:
+          position: under tree
+
+variables: # These describe the columns of your timeSeries.csv file
+        V1: # column 1
+          name: Time
+          units: days
+        V2:
+          name: PopCM
+          units: mass remaining
+          varDesc: P. simonii litter under constant moisture treatment
+          site: Horqin
+          litter: Populus simonii
+          compTreat: control
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V3:
+          name: PopDW1
+          units: mass remaining
+          varDesc: P. simonii litter under mild soil drying treatment
+          site: Horqin
+          litter: Populus simonii
+          compTreat: soil drying
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V4:
+          name: PopDW2
+          units: mass remaining
+          varDesc: P. simonii litter under heavy soil drying treatment
+          site: Horqin
+          litter: Populus simonii
+          compTreat: soil drying
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V5:
+          name: PinCM
+          units: mass remaining
+          varDesc: P. sylvestris litter under constant moisture treatment
+          site: Horqin
+          litter: Pinus sylvestris var. mongolica
+          compTreat: control
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V6:
+          name: PinDW1
+          units: mass remaining
+          varDesc: P. sylvestris litter under mild drying treatment
+          site: Horqin
+          litter: Pinus sylvestris var. mongolica
+          compTreat: soil drying
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V7:
+          name: PinDW2
+          units: mass remaining
+          varDesc: P. sylvestris litter under heavy drying treatment
+          site: Horqin
+          litter: Pinus sylvestris var. mongolica
+          compTreat: soil drying
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
