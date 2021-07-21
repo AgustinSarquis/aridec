@@ -1,0 +1,92 @@
+citationKey: NavasRomero2018
+doi: 10.31055/1851.2372.v53.n4.21985
+entryAuthor: Agustin Sarquis
+entryCreationDate: 2021-07-21
+contactName: Agustin Sarquis
+contactEmail: agusarquis@agro.uba.ar
+entryNote: elevation from Google Earth; MAT from POWER
+study: Comparison of litter decomposition in sites with and without ant nests
+
+siteInfo:
+        site: Caucete
+              # These fields should be arrays of equal length to site array
+        coordinates:
+          latitude: -31.7166667
+          longitude: -68.13333333333334
+        country: Argentina
+        MAT: 18.46
+        MAP: 100
+        rainySeason: summer
+        elevation: 597
+        landCover: desert
+        vegNote: dominated by shrubs (Bulnesia retama, Larrea divaricata, L. cuneifolia, Prosopis flexuosa, Capparis atamisquea and Senna aphylla) in dense patches immersed in a bare soil matrix
+        cover:
+          plantCover: # Total plant cover percentage (if they report cover by specific plant types, fill the fields below)
+          bunchgrassCover:
+          shrubCover:
+          treeCover:
+          forbCover:
+          bareSoil:
+        soilTaxonomy:
+          soilOrder: # Soil order according to the classification system described below
+          soilFamily: # Soil family description (ex. 'Eutric' for a Eutric Cambisol)
+          soilSeries: # Soil series according to the classification system described below
+          classificationSystem: # Name of classification system used. Valid fields are: USDA, FAO, and WRB.
+
+experimentInfo:
+        incDesc: presence or absence of ant nests x 7 replicates x 3 harvests
+        # These fields should all be one dimensional arrays. Values for experimental variables with multiple treatment levels should be entered in the variables section and left blank here
+        replicates: 7
+        duration: 55
+        startingMonth: august
+        litter: Larrea cuneifolia
+        litterbag:
+          material: fiberglass
+          meshSize: 1
+          dimentions: # size of the full litter bag in cm
+            width: 10
+            length: 10
+            radius: # for round or cilindrical structures
+            height: # for 3-dimensional designs such as litter boxes in Austin2006NATURE
+          transmitance: # when reported, light transmitance of the mesh material as a percentage of full sunlight for each wavelength
+            total:
+            PAR:
+            UV:
+            UVA:
+            UVB:
+          position: buried 5 cm deep
+
+variables: # These describe the columns of your timeSeries.csv file
+        V1: # column 1
+          name: Time
+          units: days
+        V2:
+          name: CH
+          units: mass remaining
+          varDesc: L. cuneifolia green leaves decomposed insided ant nests
+          site: Caucete
+          experimentalTreatment: # 'experimentalTreatment' here is a place holder for treatments with multiple levels. Replace this word by any of the listed variables in incubationInfo above (startingMonth, duration, litter, litterbag, meshSize) and type treatment value (level) after colon. Note that units should be specified in the incubationInfo field above.
+          compTreat: ant nest presence
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V3:
+          name: SH
+          units: mass remaining
+          varDesc: L. cuneifolia green leaves decomposed buried in plots without ant nests
+          site: Caucete
+          experimentalTreatment: # 'experimentalTreatment' here is a place holder for treatments with multiple levels. Replace this word by any of the listed variables in incubationInfo above (startingMonth, duration, litter, litterbag, meshSize) and type treatment value (level) after colon. Note that units should be specified in the incubationInfo field above.
+          compTreat: control
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
