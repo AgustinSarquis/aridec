@@ -16,5 +16,6 @@ A data frame with the mean annual precipitation values (mm) from the database
 Creates a data frame with mean annual precipitation values of the sites
 }
 \examples{
+aridec<-loadEntries(path='~/Repos/aridec/data/')
 MAP=MAP(database=aridec)
 }
