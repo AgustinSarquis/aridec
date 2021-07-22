@@ -4,7 +4,7 @@
 \alias{readEntry}
 \title{Read single entry of the aridec database}
 \usage{
-readEntry(path = "~/Repos/aridec/data/", entryName)
+readEntry(path, entryName)
 }
 \arguments{
 \item{path}{character string with the path where aridec is stored}
@@ -18,5 +18,5 @@ R list with the entry
 Read single entry of the aridec database
 }
 \examples{
-Adair2017=readEntry(entryName="Adair2017")
+Adair2017=readEntry(path="~/aridec/data/", entryName="Adair2017")
 }

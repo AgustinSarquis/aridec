@@ -4,7 +4,7 @@
 \alias{loadEntries}
 \title{Load all entries of the aridec dataset}
 \usage{
-loadEntries(path = "~/Repos/aridec/data/")
+loadEntries(path = "~/aridec/data/")
 }
 \arguments{
 \item{path}{character string with the path where aridec data is stored}

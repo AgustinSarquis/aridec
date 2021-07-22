@@ -6,8 +6,8 @@
 #' @export
 #' @import yaml
 #' @examples
-#' Adair2017=readEntry(entryName="Adair2017")
-readEntry <- function(path="~/aridec/data/", entryName) {
+#' Adair2017=readEntry(path="~/aridec/data/", entryName="Adair2017")
+readEntry <- function(path, entryName) {
 
     entry=yaml::yaml.load_file(input=paste(path,entryName,"/metadata.yaml",sep=""))
     csv=read.csv(file=paste(path,entryName,"/timeSeries.csv",sep=""))
