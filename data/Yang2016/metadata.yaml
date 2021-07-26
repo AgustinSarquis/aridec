@@ -1,0 +1,125 @@
+citationKey: Yang2016
+doi: 10.13287/j.1001-9332.201609.033
+entryAuthor: Agustin Sarquis
+entryCreationDate: 2021-07-26
+contactName: Agustin Sarquis
+contactEmail: agusarquis@agro.uba.ar
+entryNote: # Any notes or comments related to this entry.
+study: decomposition of Stipa grandis litter in an ungrazed grassland，a grazed grassland and a sandy land of Inner Mongolia
+
+siteInfo:
+        site:
+          - grassland
+          - sandland
+              # These fields should be arrays of equal length to site array
+        coordinates:
+          latitude:
+            - 43.7333333
+            - 43.6333333
+          longitude:
+            - 116.28333333333333
+            - 116.63333333333334
+        country:
+          - China
+          - China
+        MAT:
+          - -0.45
+        MAP:
+          - 313
+        rainySeason:
+          - summer
+          - summer
+        elevation:
+          - 1520
+          - 1197
+        landCover:
+          - steppe
+          - sandland
+        vegNote:
+          - mongolian steppe grassland dominated by Stipa grandis, S. krylovii and Leymus chinensis
+          -
+        cover:
+          plantCover: # Total plant cover percentage (if they report cover by specific plant types, fill the fields below)
+          bunchgrassCover:
+          shrubCover:
+          treeCover:
+          forbCover:
+          bareSoil:
+        soilTaxonomy:
+          soilOrder: # Soil order according to the classification system described below
+          soilFamily: # Soil family description (ex. 'Eutric' for a Eutric Cambisol)
+          soilSeries: # Soil series according to the classification system described below
+          classificationSystem: # Name of classification system used. Valid fields are: USDA, FAO, and WRB.
+
+experimentInfo:
+        incDesc: 3 locations x 6 harvests x
+        # These fields should all be one dimensional arrays. Values for experimental variables with multiple treatment levels should be entered in the variables section and left blank here
+        replicates: 9
+        duration: 780
+        startingMonth: # month during which the study started, all in lower case
+        litter: Stipa grandis
+        litterbag:
+          material: nylon
+          meshSize: # mesh size in mm referring to one side of the net-square
+          dimentions: # size of the full litter bag in cm
+            width: 15
+            length: 25
+            radius: # for round or cilindrical structures
+            height: # for 3-dimensional designs such as litter boxes in Austin2006NATURE
+          transmitance: # when reported, light transmitance of the mesh material as a percentage of full sunlight for each wavelength
+            total:
+            PAR:
+            UV:
+            UVA:
+            UVB:
+          position: bare soil
+
+variables: # These describe the columns of your timeSeries.csv file
+        V1: # column 1
+          name: Time
+          units: days
+        V2:
+          name: UGG
+          units: mass remaining
+          varDesc: S. grandis litter at an ungrazed grassland
+          site: grassland
+          experimentalTreatment: # 'experimentalTreatment' here is a place holder for treatments with multiple levels. Replace this word by any of the listed variables in incubationInfo above (startingMonth, duration, litter, litterbag, meshSize) and type treatment value (level) after colon. Note that units should be specified in the incubationInfo field above.
+          compTreat: ungrazed
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V3:
+          name: GG
+          units: mass remaining
+          varDesc: S. grandis litter at a grazed grassland
+          site: grassland
+          experimentalTreatment: # 'experimentalTreatment' here is a place holder for treatments with multiple levels. Replace this word by any of the listed variables in incubationInfo above (startingMonth, duration, litter, litterbag, meshSize) and type treatment value (level) after colon. Note that units should be specified in the incubationInfo field above.
+          compTreat: grazed
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V4:
+          name: SL
+          units: mass remaining
+          varDesc: S. grandis litter at a sandland
+          site: sandland
+          experimentalTreatment: # 'experimentalTreatment' here is a place holder for treatments with multiple levels. Replace this word by any of the listed variables in incubationInfo above (startingMonth, duration, litter, litterbag, meshSize) and type treatment value (level) after colon. Note that units should be specified in the incubationInfo field above.
+          compTreat: ungrazed
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:

@@ -18,7 +18,7 @@ siteInfo:
         MAP: 450 # Mean annual precipitation in mm
         rainySeason: summer # Period of the year during which most precipitation occurs, i.e.: whole year, spring, summer, autumn, winter (if more than one use array format)
         elevation: 260 # Elevation of study site in meters above sea level
-        landCover: farmland # Land cover of the site. Valid fields are: greenbelt, (abbandoned) farmland, mangrove forest, subalpine, shrubland, urban, sandland, forest, steppe, desert, grassland, savanna
+        landCover: forest # Land cover of the site. Valid fields are: greenbelt, (abbandoned) farmland, mangrove forest, subalpine, shrubland, urban, sandland, forest, steppe, desert, grassland, savanna
         vegNote: Predominant afforestation of Mongolian pine (Pinus sylvestris var. mongolica) and Xiaozhuan poplar (Populus × xiaozhuanica) # Additional details about land cover such as species or functional type composition
         cover:
           plantCover: # Total plant cover percentage (if they report cover by specific plant types, fill the fields below)

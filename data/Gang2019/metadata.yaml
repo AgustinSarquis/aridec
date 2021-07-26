@@ -18,7 +18,7 @@ siteInfo:
         MAP: 450
         rainySeason: summer
         elevation: 260
-        landCover: farmland
+        landCover: forest
         vegNote: 13-year old Mongolian pine plantation (Pinus sylvestris var. mongolica)
         cover:
           plantCover: # Total plant cover percentage (if they report cover by specific plant types, fill the fields below)

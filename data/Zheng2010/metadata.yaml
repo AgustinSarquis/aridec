@@ -18,7 +18,7 @@ siteInfo:
         MAP: 101.7 # Mean annual precipitation in mm
         rainySeason: summer # Period of the year during which most precipitation occurs, i.e.: whole year, spring, summer, autumn, winter (if more than one use array format)
         elevation: 280 # Elevation of study site in meters above sea level
-        landCover: forest
+        landCover: greenbelt
         vegNote: protective greenbelt of P. alba, P. euphratica, A. fruticosa, E. oxycarpa and U. pumila
         cover:
           plantCover: # Total plant cover percentage (if they report cover by specific plant types, fill the fields below)
