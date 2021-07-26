@@ -1,0 +1,482 @@
+citationKey: Zhao2015
+doi: 10.1371/journal.pone.0142380
+entryAuthor: Agustin Sarquis
+entryCreationDate: 2021-07-26
+contactName: Agustin Sarquis
+contactEmail: agusarquis@agro.uba.ar
+entryNote: two experiments; elevation from Google Earth
+study: two experiments of decomposition of root litter with water and N-addition treatments in the Gurbantunggut Desert in China.
+
+siteInfo:
+        site: Fukang
+              # These fields should be arrays of equal length to site array
+        coordinates:
+          latitude: 44.2833333
+          longitude: 88.93333333333334
+        country: China
+        MAT: 6.6
+        MAP: 150
+        rainySeason: # Period of the year during which most precipitation occurs, i.e.: whole year, spring, summer, autumn, winter (if more than one use array format)
+        elevation: 462
+        landCover: desert
+        vegNote: desert shrubs (Haloxylon ammodendron and Tamarix ramosissima) and a herbaceous ground layer (Reaumuria soongorica, Nitraria sibirica, Karelinia caspia, Salsola subcrassa and Suaeda acuminate)
+        cover:
+          plantCover: # Total plant cover percentage (if they report cover by specific plant types, fill the fields below)
+          bunchgrassCover:
+          shrubCover:
+          treeCover:
+          forbCover:
+          bareSoil:
+        soilTaxonomy:
+          soilOrder: # Soil order according to the classification system described below
+          soilFamily: # Soil family description (ex. 'Eutric' for a Eutric Cambisol)
+          soilSeries: # Soil series according to the classification system described below
+          classificationSystem: # Name of classification system used. Valid fields are: USDA, FAO, and WRB.
+
+experimentInfo:
+        incDesc: experiment 1, 6 species x N addition x water addition x 5 harvests x 3 blocks; experiment 2, 2 species x 2 root diameter classes x 5 harvests x 3 blocks
+        # These fields should all be one dimensional arrays. Values for experimental variables with multiple treatment levels should be entered in the variables section and left blank here
+        replicates: 3
+        duration: 621
+        startingMonth: october
+        litter: # plant species used as litter material for the experiment. All details related to the species must be specified in the initConditions.csv file
+        litterbag:
+          material: nylon
+          meshSize: 0.1
+          dimentions: # size of the full litter bag in cm
+            width: 12
+            length: 15
+            radius: # for round or cilindrical structures
+            height: # for 3-dimensional designs such as litter boxes in Austin2006NATURE
+          transmitance: # when reported, light transmitance of the mesh material as a percentage of full sunlight for each wavelength
+            total:
+            PAR:
+            UV:
+            UVA:
+            UVB:
+          position: buried 20 cm deep
+
+variables: # These describe the columns of your timeSeries.csv file
+        V1: # column 1
+          name: Time
+          units: years
+        V2:
+          name: EoC
+          units: organic matter remaining
+          varDesc: E. oxyrrhynchum coarse roots buried in control plots
+          site: Fukang
+          litter: Erodium oxyrrhynchum1
+          compTreat: control
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V3:
+          name: EoW
+          units: organic matter remaining
+          varDesc: E. oxyrrhynchum coarse roots buried in plots with water addition
+          site: Fukang
+          litter: Erodium oxyrrhynchum1
+          compTreat: water addition
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V4:
+          name: EoN
+          units: organic matter remaining
+          varDesc: E. oxyrrhynchum coarse roots buried in plots with N addition
+          site: Fukang
+          litter: Erodium oxyrrhynchum1
+          compTreat: N addition
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V5:
+          name: EoWN
+          units: organic matter remaining
+          varDesc: E. oxyrrhynchum coarse roots buried in plots with water and N addition
+          site: Fukang
+          litter: Erodium oxyrrhynchum1
+          compTreat: water and N addition
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V6:
+          name: SsaC
+          units: organic matter remaining
+          varDesc: S. santolinum coarse roots buried in control plots
+          site: Fukang
+          litter: Seriphidium santolinum1
+          compTreat: control
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V7:
+          name: SsaW
+          units: organic matter remaining
+          varDesc: S. santolinum coarse roots buried in plots with water addition
+          site: Fukang
+          litter: Seriphidium santolinum1
+          compTreat: water addition
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V8:
+          name: SsaN
+          units: organic matter remaining
+          varDesc: S. santolinum coarse roots buried in plots with N addition
+          site: Fukang
+          litter: Seriphidium santolinum1
+          compTreat: N addition
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V9:
+          name: SsaWN
+          units: organic matter remaining
+          varDesc: S. santolinum coarse roots buried in plots with water and N addition
+          site: Fukang
+          litter: Seriphidium santolinum1
+          compTreat: water and N addition
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V10:
+          name: SsuC
+          units: organic matter remaining
+          varDesc: S. subcrassa coarse roots buried in control plots
+          site: Fukang
+          litter: Salsola subcrassa
+          compTreat: control
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V11:
+          name: SsuW
+          units: organic matter remaining
+          varDesc: S. subcrassa coarse roots buried in plots with water addition
+          site: Fukang
+          litter: Salsola subcrassa
+          compTreat: water addition
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V12:
+          name: SsuN
+          units: organic matter remaining
+          varDesc: S. subcrassa coarse roots buried in plots with N addition
+          site: Fukang
+          litter: Salsola subcrassa
+          compTreat: N addition
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V13:
+          name: SsuWN
+          units: organic matter remaining
+          varDesc: S. subcrassa coarse roots buried in plots with water and N addition
+          site: Fukang
+          litter: Salsola subcrassa
+          compTreat: water and N addition
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V14:
+          name: PcC
+          units: organic matter remaining
+          varDesc: P. communis coarse roots buried in control plots
+          site: Fukang
+          litter: Phragmites communis
+          compTreat: control
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V15:
+          name: PcW
+          units: organic matter remaining
+          varDesc: P. communis coarse roots buried in plots with water addition
+          site: Fukang
+          litter: Phragmites communis
+          compTreat: water addition
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V16:
+          name: PcN
+          units: organic matter remaining
+          varDesc: P. communis coarse roots buried in plots with N addition
+          site: Fukang
+          litter: Phragmites communis
+          compTreat: N addition
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V17:
+          name: PcWN
+          units: organic matter remaining
+          varDesc: P. communis coarse roots buried in plots with water and N addition
+          site: Fukang
+          litter: Phragmites communis
+          compTreat: water and N addition
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V18:
+          name: KcC
+          units: organic matter remaining
+          varDesc: K. caspia coarse roots buried in control plots
+          site: Fukang
+          litter: Karelinia caspia
+          compTreat: control
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V19:
+          name: KcW
+          units: organic matter remaining
+          varDesc: K. caspia coarse roots buried in plots with water addition
+          site: Fukang
+          litter: Karelinia caspia
+          compTreat: water addition
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V20:
+          name: KcN
+          units: organic matter remaining
+          varDesc: K. caspia coarse roots buried in plots with N addition
+          site: Fukang
+          litter: Karelinia caspia
+          compTreat: N addition
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V21:
+          name: KcWN
+          units: organic matter remaining
+          varDesc: K. caspia coarse roots buried in plots with water and N addition
+          site: Fukang
+          litter: Karelinia caspia
+          compTreat: water and N addition
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V22:
+          name: NsC
+          units: organic matter remaining
+          varDesc: N. sibirica coarse roots buried in control plots
+          site: Fukang
+          litter: Nitraria sibirica
+          compTreat: control
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V23:
+          name: NsW
+          units: organic matter remaining
+          varDesc: N. sibirica coarse roots buried in plots with water addition
+          site: Fukang
+          litter: Nitraria sibirica
+          compTreat: water addition
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V24:
+          name: NsN
+          units: organic matter remaining
+          varDesc: N. sibirica coarse roots buried in plots with N addition
+          site: Fukang
+          litter: Nitraria sibirica
+          compTreat: N addition
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V25:
+          name: NsWN
+          units: organic matter remaining
+          varDesc: N. sibirica coarse roots buried in plots with water and N addition
+          site: Fukang
+          litter: Nitraria sibirica
+          compTreat: water and N addition
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V26:
+          name: EoFi
+          units: organic matter remaining
+          varDesc: E. oxyrrhynchum fine roots buried in plots with water and N addition
+          site: Fukang
+          litter: Erodium oxyrrhynchum2
+          compTreat: water and N addition
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V27:
+          name: EoCo
+          units: organic matter remaining
+          varDesc: E. oxyrrhynchum coarse roots buried in plots with water and N addition
+          site: Fukang
+          litter: Erodium oxyrrhynchum1
+          compTreat: water and N addition
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V28:
+          name: SsaFi
+          units: organic matter remaining
+          varDesc: S. santolinum fine roots buried in plots with water and N addition
+          site: Fukang
+          litter: Seriphidium santolinum2
+          compTreat: water and N addition
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V29:
+          name: SsaCo
+          units: organic matter remaining
+          varDesc: S. santolinum coarse roots buried in plots with water and N addition
+          site: Fukang
+          litter: Seriphidium santolinum1
+          compTreat: water and N addition
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:

@@ -1,0 +1,9 @@
+species, type, N-fixer, material, amount, carbon, nitrogen, C:N, phosphorus, potassium, sodium, magnesium, manganese, copper, zinc, lead, calcium, sulfur, iron, lignin, cellulose, hemicellulose, cell solubles, SLA
+Erodium oxyrrhynchum1, herbaceous, no, coarse roots, 10, 44.24, 0.75, 59, 0.07,,,,,,,,,,,10.91
+Erodium oxyrrhynchum2, herbaceous, no, fine roots, 10,, 0.87,,,,,,,,,,,,,9.72
+Seriphidium santolinum1, herbaceous, no, coarse roots, 10, 46.84, 0.78, 60, 0.07,,,,,,,,,,,22.46
+Seriphidium santolinum2, herbaceous, no, fine roots, 10,, 0.88,,,,,,,,,,,,,25.24
+Salsola subcrassa, herbaceous, no, coarse roots, 10, 41.73, 0.66, 63, 0.08,,,,,,,,,,,3.94
+Phragmites communis, graminoid, no, coarse roots, 10, 45.74, 0.42, 110, 0.14,,,,,,,,,,,3.39
+Karelinia caspia, herbaceous, no, coarse roots, 10, 47.51, 0.64, 74, 0.08,,,,,,,,,,,9.6
+Nitraria sibirica, herbaceous, no, coarse roots, 10, 45.31, 1.15, 39, 0.09,,,,,,,,,,,19
