@@ -1,0 +1,340 @@
+citationKey: Abera2014
+doi: 10.1007/s13593-013-0172-7
+entryAuthor: Agustin Sarquis
+entryCreationDate: 2021-07-27
+contactName: Agustin Sarquis
+contactEmail: agusarquis@agro.uba.ar
+entryNote: # Any notes or comments related to this entry.
+study: they studied the decomposition of legume residues, haricot bean (Phaseolus vulgaris), and pigeon pea (Cajanus cajan) in two coffee and two crop land agroecosystems of southern Ethiopia
+
+siteInfo:
+        site:
+          - Yirgalem
+          - Awassa
+              # These fields should be arrays of equal length to site array
+        coordinates:
+          latitude:
+            - 6.75
+            - 6.05
+          longitude:
+            - 38.71666666666667
+            - 38.63333333333333
+        country:
+          - Ethiopia
+          - Ethiopia
+        MAT:
+          - 18.7
+          - 19.4
+        MAP:
+          - 1216
+          - 952
+        rainySeason: # Period of the year during which most precipitation occurs, i.e.: whole year, spring, summer, autumn, winter (if more than one use array format)
+        elevation:
+          - 1950
+          - 1950
+        landCover:
+          - farmland
+          - farmland
+        vegNote:
+          - shaded coffee agroforestry systems
+          - annual crops (fallowed)
+        cover:
+          plantCover: # Total plant cover percentage (if they report cover by specific plant types, fill the fields below)
+          bunchgrassCover:
+          shrubCover:
+          treeCover:
+          forbCover:
+          bareSoil:
+        soilTaxonomy:
+          soilOrder:
+            - Alfisol
+            - Andosol
+          soilFamily:
+            -
+            - Vitric
+          soilSeries: # Soil series according to the classification system described below
+          classificationSystem: FAO
+
+experimentInfo:
+        incDesc: 2 sites x 2 years x 2 species x 2 positions x 6 harvests x 5 replicates
+        # These fields should all be one dimensional arrays. Values for experimental variables with multiple treatment levels should be entered in the variables section and left blank here
+        replicates: 5
+        duration: 180
+        startingMonth: december
+        litter: # plant species used as litter material for the experiment. All details related to the species must be specified in the initConditions.csv file
+        litterbag:
+          material: polyvinyl
+          meshSize: 2
+          dimentions: # size of the full litter bag in cm
+            width: 10
+            length: 12
+            radius: # for round or cilindrical structures
+            height: # for 3-dimensional designs such as litter boxes in Austin2006NATURE
+          transmitance: # when reported, light transmitance of the mesh material as a percentage of full sunlight for each wavelength
+            total:
+            PAR:
+            UV:
+            UVA:
+            UVB:
+          position: # position of litterbags in the field, valid options are: bare soil, decomposition bed, under litter, over litter, over lawn, next to grass, under tree/shrub/grass, buried X cm deep, underwater, under rainout shelter, under frame, suspended X cm, under shadecloth
+
+variables: # These describe the columns of your timeSeries.csv file
+        V1: # column 1
+          name: Time
+          units: days
+        V2:
+          name: S1Y1pps
+          units: mass remaining
+          varDesc: C. cajan residues on the soil surface during 2010 at Yirgalem
+          site: Yirgalem
+          litter: Cajanus cajan
+          position: bare soil
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V3:
+          name: S1Y1ppss
+          units: mass remaining
+          varDesc: C. cajan residues buried 10 cm during 2010 at Yirgalem
+          site: Yirgalem
+          litter: Cajanus cajan
+          position: buried 10 cm deep
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V4:
+          name: S1Y1hbs
+          units: mass remaining
+          varDesc: P. vulgaris residues on the soil surface during 2010 at Yirgalem
+          site: Yirgalem
+          litter: Phaseolus vulgaris
+          position: bare soil
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V5:
+          name: S1Y1hbss
+          units: mass remaining
+          varDesc: P. vulgaris residues buried 10 cm during 2010 at Yirgalem
+          site: Yirgalem
+          litter: Phaseolus vulgaris
+          position: buried 10 cm deep
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V6:
+          name: S1Y2pps
+          units: mass remaining
+          varDesc: C. cajan residues on the soil surface during 2011 at Yirgalem
+          site: Yirgalem
+          litter: Cajanus cajan
+          position: bare soil
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V7:
+          name: S1Y2ppss
+          units: mass remaining
+          varDesc: C. cajan residues buried 10 cm during 2011 at Yirgalem
+          site: Yirgalem
+          litter: Cajanus cajan
+          position: buried 10 cm deep
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V8:
+          name: S1Y2hbs
+          units: mass remaining
+          varDesc: P. vulgaris residues on the soil surface during 2011 at Yirgalem
+          site: Yirgalem
+          litter: Phaseolus vulgaris
+          position: bare soil
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V9:
+          name: S1Y2hbss
+          units: mass remaining
+          varDesc: P. vulgaris residues buried 10 cm during 2011 at Yirgalem
+          site: Yirgalem
+          litter: Phaseolus vulgaris
+          position: buried 10 cm deep
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V10:
+          name: S3Y1pps
+          units: mass remaining
+          varDesc: C. cajan residues on the soil surface during 2010 at Awassa
+          site: Awassa
+          litter: Cajanus cajan
+          position: bare soil
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V11:
+          name: S3Y1ppss
+          units: mass remaining
+          varDesc: C. cajan residues buried 10 cm during 2010 at Awassa
+          site: Awassa
+          litter: Cajanus cajan
+          position: buried 10 cm deep
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V12:
+          name: S3Y1hbs
+          units: mass remaining
+          varDesc: P. vulgaris residues on the soil surface during 2010 at Awassa
+          site: Awassa
+          litter: Phaseolus vulgaris
+          position: bare soil
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V13:
+          name: S3Y1hbss
+          units: mass remaining
+          varDesc: P. vulgaris residues buried 10 cm during 2010 at Awassa
+          site: Awassa
+          litter: Phaseolus vulgaris
+          position: buried 10 cm deep
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V14:
+          name: S3Y2pps
+          units: mass remaining
+          varDesc: C. cajan residues on the soil surface during 2011 at Awassa
+          site: Awassa
+          litter: Cajanus cajan
+          position: bare soil
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V15:
+          name: S3Y2ppss
+          units: mass remaining
+          varDesc: C. cajan residues buried 10 cm during 2011 at Awassa
+          site: Awassa
+          litter: Cajanus cajan
+          position: buried 10 cm deep
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V16:
+          name: S3Y2hbs
+          units: mass remaining
+          varDesc: P. vulgaris residues on the soil surface during 2011 at Awassa
+          site: Awassa
+          litter: Phaseolus vulgaris
+          position: bare soil
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V17:
+          name: S3Y2hbss
+          units: mass remaining
+          varDesc: P. vulgaris residues buried 10 cm during 2011 at Awassa
+          site: Awassa
+          litter: Phaseolus vulgaris
+          position: buried 10 cm deep
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
