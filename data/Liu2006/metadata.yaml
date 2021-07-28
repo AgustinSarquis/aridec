@@ -1,0 +1,446 @@
+citationKey: Liu2006 # Unique identifier in the format: LastnameYear (lowercase letters must be added when there are two or more entries by the same author and year, i.e.: LastnameYearx)
+doi: 10.1016/j.apsoil.2005.12.009 # DOI of the publication where data is published
+entryAuthor: Ignacio Siebenhart # First and last name of the person who entered the data in this file
+entryCreationDate: 2021-07-28 # Date when the data was entered in this file. Format: YYYY-MM-DD
+contactName: Agustin Sarquis # First and last name of contact person (may be the principal investigator supervising the entryAuthor)
+contactEmail: agusarquis@agro.uba.ar # Email of the contact person
+entryNote: # Any notes or comments related to this entry.
+study: They evaluate the effects of increased soil nitrogen, phosphorus and water on decomposition # Overall study description
+
+siteInfo:
+        site: Inner Mongolia # Names of individual sites, if one site, keep on this line, if multiple, use array format
+              # These fields should be arrays of equal length to site array
+        coordinates:
+          latitude: 42.0333333 # Latitude in decimal units (check for negative that denotes southern hemisphere)
+          longitude: 116.26666666666667 # Longitude in decimal units (check for negative that denotes western hemisphere)
+        country: China # Name of country where site was conducted
+        MAT: 1.6 # Mean annual temperature in degrees Celsius
+        MAP: 385 # Mean annual precipitation in mm
+        rainySeason: summer # Period of the year during which most precipitation occurs, i.e.: whole year, spring, summer, autumn, winter (if more than one use array format)
+        elevation: 1344 # Elevation of study site in meters above sea level
+        landCover: steppe  # Land cover of the site. Valid fields are: greenbelt, (abbandoned) farmland, mangrove forest, subalpine, shrubland, urban, sandland, forest, steppe, desert, grassland, savanna
+        vegNote: Allium bidentatum and bunch grass species Stipa sareptana being among the dominant species of the plant community. # Additional details about land cover such as species or functional type composition
+        cover:
+          plantCover: # Total plant cover percentage (if they report cover by specific plant types, fill the fields below)
+          bunchgrassCover:
+          shrubCover:
+          treeCover:
+          forbCover:
+          bareSoil:
+        soilTaxonomy:
+          soilOrder: Aridisol # Soil order according to the classification system described below
+          soilFamily: Calcic-orthic # Soil family description (ex. 'Eutric' for a Eutric Cambisol)
+          soilSeries: # Soil series according to the classification system described below
+          classificationSystem: USDA # Name of classification system used. Valid fields are: USDA, FAO, and WRB.
+
+experimentInfo:
+        incDesc: 4 nutrient addition levels x 2 water treatment x 2 species x 3 replicates x 3 harvests # Short description of the incubation setup and main treatments
+        # These fields should all be one dimensional arrays. Values for experimental variables with multiple treatment levels should be entered in the variables section and left blank here
+        replicates: 3 # Number of replicates per treatment
+        duration: 100 # length of incubation in days
+        startingMonth: july
+        litter: # plant species used as litter material for the experiment. All details related to the species must be specified in the initConditions.csv file
+        litterbag:
+          material: polyethylene # mesh type used to construct the litter bags, options are: wire, aluminum, window screening, net curtain, bolting cloth, plastic, fiberglass, nylon, polypropylene, polyester, polyethylene, polyamide
+          meshSize: 1
+          dimentions: # size of the full litter bag in cm
+            width: 10
+            length: 15
+            radius: # for round or cilindrical structures
+            height: # for 3-dimensional designs such as litter boxes in Austin2006NATURE
+          transmitance: # when reported, light transmitance of the mesh material as a percentage of full sunlight for each wavelength
+            total:
+            PAR:
+            UV:
+            UVA:
+            UVB:
+          position: bare soil
+
+variables: # These describe the columns of your timeSeries.csv file
+        V1: # column 1
+          name: Time
+          units: days # Time units used in accompanying file. Possible options are: days, weeks, months, years
+        V2: #
+          name: AN0 #
+          units: mass remaining # units in which litter mass loss was reported. Valid options are: mass remaining, organic matter remaining, C remaining
+          varDesc: A. bidentatum leaf litter without N addition and without water addition. # Description of the variable
+          site: Inner Mongolia # Site where the experiment was conducted
+          litter: Allium bidentatum
+          compTreat: control
+           # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V3: #
+          name: AN8 #
+          units: mass remaining # units in which litter mass loss was reported. Valid options are: mass remaining, organic matter remaining, C remaining
+          varDesc: A. bidentatum leaf litter with low N addition and without water addition. # Description of the variable
+          site: Inner Mongolia # Site where the experiment was conducted
+          litter: Allium bidentatum
+          compTreat: N addition
+           # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V4: #
+          name: AN16 #
+          units: mass remaining # units in which litter mass loss was reported. Valid options are: mass remaining, organic matter remaining, C remaining
+          varDesc: A. bidentatum leaf litter with intermediate N addition and without water addition. # Description of the variable
+          site: Inner Mongolia # Site where the experiment was conducted
+          litter: Allium bidentatum
+          compTreat: N addition
+           # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V5: #
+          name: AN32 #
+          units: mass remaining # units in which litter mass loss was reported. Valid options are: mass remaining, organic matter remaining, C remaining
+          varDesc: A. bidentatum leaf litter with high N addition and without water addition. # Description of the variable
+          site: Inner Mongolia # Site where the experiment was conducted
+          litter: Allium bidentatum
+          compTreat: N addition
+           # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V6: #
+          name: SN0 #
+          units: mass remaining # units in which litter mass loss was reported. Valid options are: mass remaining, organic matter remaining, C remaining
+          varDesc: Stipa sareptana stem litter without N addition and without water addition. # Description of the variable
+          site: Inner Mongolia # Site where the experiment was conducted
+          litter: Stipa sareptana
+          compTreat: control
+           # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V7: #
+          name: SN8 #
+          units: mass remaining # units in which litter mass loss was reported. Valid options are: mass remaining, organic matter remaining, C remaining
+          varDesc: Stipa sareptana stem litter with low N addition and without water addition. # Description of the variable
+          site: Inner Mongolia # Site where the experiment was conducted
+          litter: Stipa sareptana
+          compTreat: N addition
+           # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V8: #
+          name: SN16 #
+          units: mass remaining # units in which litter mass loss was reported. Valid options are: mass remaining, organic matter remaining, C remaining
+          varDesc: Stipa sareptana stem litter with intermediate N addition and without water addition. # Description of the variable
+          site: Inner Mongolia # Site where the experiment was conducted
+          litter: Stipa sareptana
+          compTreat: N addition
+           # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V9: #
+          name: SN32 #
+          units: mass remaining # units in which litter mass loss was reported. Valid options are: mass remaining, organic matter remaining, C remaining
+          varDesc: Stipa sareptana stem litter with high N addition and without water addition. # Description of the variable
+          site: Inner Mongolia # Site where the experiment was conducted
+          litter: Stipa sareptana
+          compTreat: N addition
+           # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V10:
+         name: AWN0 #
+         units: mass remaining # units in which litter mass loss was reported. Valid options are: mass remaining, organic matter remaining, C remaining
+         varDesc: A. bidentatum leaf litter without N and P addition and without water addition. # Description of the variable
+         site: Inner Mongolia # Site where the experiment was conducted
+         litter: Allium bidentatum
+         compTreat: control
+          # combination of complementary treatments not included in the rest of the variables
+         filter: # for photodegradation experiments only
+          threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+          transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+            total:
+            PAR:
+            UV:
+            UVA:
+            UVB:
+        V11: #
+         name: AWN8 #
+         units: mass remaining # units in which litter mass loss was reported. Valid options are: mass remaining, organic matter remaining, C remaining
+         varDesc: A. bidentatum leaf litter with low N and P addition and without water addition. # Description of the variable
+         site: Inner Mongolia # Site where the experiment was conducted
+         litter: Allium bidentatum
+         compTreat: N and P addition
+          # combination of complementary treatments not included in the rest of the variables
+         filter: # for photodegradation experiments only
+          threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+          transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+            total:
+            PAR:
+            UV:
+            UVA:
+            UVB:
+        V12: #
+         name: AWN16 #
+         units: mass remaining # units in which litter mass loss was reported. Valid options are: mass remaining, organic matter remaining, C remaining
+         varDesc: A. bidentatum leaf litter with intermediate N and P addition and without water addition. # Description of the variable
+         site: Inner Mongolia # Site where the experiment was conducted
+         litter: Allium bidentatum
+         compTreat: N and P addition
+          # combination of complementary treatments not included in the rest of the variables
+         filter: # for photodegradation experiments only
+          threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+          transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+            total:
+            PAR:
+            UV:
+            UVA:
+            UVB:
+        V13:
+         name: AWN32 #
+         units: mass remaining # units in which litter mass loss was reported. Valid options are: mass remaining, organic matter remaining, C remaining
+         varDesc: A. bidentatum leaf litter with high N and P addition and without water addition. # Description of the variable
+         site: Inner Mongolia # Site where the experiment was conducted
+         litter: Allium bidentatum
+         compTreat: N and P addition
+          # combination of complementary treatments not included in the rest of the variables
+         filter: # for photodegradation experiments only
+          threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+          transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+            total:
+            PAR:
+            UV:
+            UVA:
+            UVB:
+        V14: #
+         name: SWN0 #
+         units: mass remaining # units in which litter mass loss was reported. Valid options are: mass remaining, organic matter remaining, C remaining
+         varDesc: Stipa sareptana stem litter without N and P addition and without water addition. # Description of the variable
+         site: Inner Mongolia # Site where the experiment was conducted
+         litter: Stipa sareptana
+         compTreat: control
+          # combination of complementary treatments not included in the rest of the variables
+         filter: # for photodegradation experiments only
+          threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+          transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+            total:
+            PAR:
+            UV:
+            UVA:
+            UVB:
+        V15: #
+         name: SWN8 #
+         units: mass remaining # units in which litter mass loss was reported. Valid options are: mass remaining, organic matter remaining, C remaining
+         varDesc: Stipa sareptana stem litter wit low N and P addition and without water addition. # Description of the variable
+         site: Inner Mongolia # Site where the experiment was conducted
+         litter: Stipa sareptana
+         compTreat: N and P addition
+          # combination of complementary treatments not included in the rest of the variables
+         filter: # for photodegradation experiments only
+          threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+          transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+            total:
+            PAR:
+            UV:
+            UVA:
+            UVB:
+        V16: #
+         name: SWN16 #
+         units: mass remaining # units in which litter mass loss was reported. Valid options are: mass remaining, organic matter remaining, C remaining
+         varDesc: Stipa sareptana stem litter wit intermediate N and P addition and without water addition. # Description of the variable
+         site: Inner Mongolia # Site where the experiment was conducted
+         litter: Stipa sareptana
+         compTreat: N and P addition
+          # combination of complementary treatments not included in the rest of the variables
+         filter: # for photodegradation experiments only
+          threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+          transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+            total:
+            PAR:
+            UV:
+            UVA:
+            UVB:
+        V17: #
+         name: SWN32 #
+         units: mass remaining # units in which litter mass loss was reported. Valid options are: mass remaining, organic matter remaining, C remaining
+         varDesc: Stipa sareptana stem litter wit high N and P addition and without water addition. # Description of the variable
+         site: Inner Mongolia # Site where the experiment was conducted
+         litter: Stipa sareptana
+         compTreat: N and P addition
+          # combination of complementary treatments not included in the rest of the variables
+         filter: # for photodegradation experiments only
+          threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+          transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+            total:
+            PAR:
+            UV:
+            UVA:
+            UVB:
+        V18:
+         name: AWAN0 #
+         units: mass remaining # units in which litter mass loss was reported. Valid options are: mass remaining, organic matter remaining, C remaining
+         varDesc: A. bidentatum leaf litter without N and P addition and with water addition. # Description of the variable
+         site: Inner Mongolia # Site where the experiment was conducted
+         litter: Allium bidentatum
+         compTreat: water addition
+          # combination of complementary treatments not included in the rest of the variables
+         filter: # for photodegradation experiments only
+          threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+          transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+            total:
+            PAR:
+            UV:
+            UVA:
+            UVB:
+        V19: #
+         name: AWAN8 #
+         units: mass remaining # units in which litter mass loss was reported. Valid options are: mass remaining, organic matter remaining, C remaining
+         varDesc: A. bidentatum leaf litter with low N and P addition and with water addition. # Description of the variable
+         site: Inner Mongolia # Site where the experiment was conducted
+         litter: Allium bidentatum
+         compTreat: N, P and water addition
+          # combination of complementary treatments not included in the rest of the variables
+         filter: # for photodegradation experiments only
+          threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+          transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+            total:
+            PAR:
+            UV:
+            UVA:
+            UVB:
+        V20: #
+         name: AWAN16 #
+         units: mass remaining # units in which litter mass loss was reported. Valid options are: mass remaining, organic matter remaining, C remaining
+         varDesc: A. bidentatum leaf litter with intermediate N and P addition and with water addition. # Description of the variable
+         site: Inner Mongolia # Site where the experiment was conducted
+         litter: Allium bidentatum
+         compTreat: N, P and water addition
+          # combination of complementary treatments not included in the rest of the variables
+         filter: # for photodegradation experiments only
+          threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+          transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+            total:
+            PAR:
+            UV:
+            UVA:
+            UVB:
+        V21:
+         name: AWAN32 #
+         units: mass remaining # units in which litter mass loss was reported. Valid options are: mass remaining, organic matter remaining, C remaining
+         varDesc: A. bidentatum leaf litter with high N and P addition and with water addition. # Description of the variable
+         site: Inner Mongolia # Site where the experiment was conducted
+         litter: Allium bidentatum
+         compTreat: N, P and water addition
+          # combination of complementary treatments not included in the rest of the variables
+         filter: # for photodegradation experiments only
+          threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+          transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+            total:
+            PAR:
+            UV:
+            UVA:
+            UVB:
+        V22: #
+         name: SWAN0 #
+         units: mass remaining # units in which litter mass loss was reported. Valid options are: mass remaining, organic matter remaining, C remaining
+         varDesc: Stipa sareptana stem litter without N and P addition and with water addition. # Description of the variable
+         site: Inner Mongolia # Site where the experiment was conducted
+         litter: Stipa sareptana
+         compTreat: water addition
+          # combination of complementary treatments not included in the rest of the variables
+         filter: # for photodegradation experiments only
+          threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+          transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+            total:
+            PAR:
+            UV:
+            UVA:
+            UVB:
+        V23: #
+         name: SWAN8 #
+         units: mass remaining # units in which litter mass loss was reported. Valid options are: mass remaining, organic matter remaining, C remaining
+         varDesc: Stipa sareptana stem litter wit low N and P addition and with water addition. # Description of the variable
+         site: Inner Mongolia # Site where the experiment was conducted
+         litter: Stipa sareptana
+         compTreat: N, P and water addition
+          # combination of complementary treatments not included in the rest of the variables
+         filter: # for photodegradation experiments only
+          threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+          transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+            total:
+            PAR:
+            UV:
+            UVA:
+            UVB:
+        V24: #
+         name: SWAN16 #
+         units: mass remaining # units in which litter mass loss was reported. Valid options are: mass remaining, organic matter remaining, C remaining
+         varDesc: Stipa sareptana stem litter wit intermediate N and P addition and with water addition. # Description of the variable
+         site: Inner Mongolia # Site where the experiment was conducted
+         litter: Stipa sareptana
+         compTreat: N, P and water addition
+          # combination of complementary treatments not included in the rest of the variables
+         filter: # for photodegradation experiments only
+          threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+          transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+            total:
+            PAR:
+            UV:
+            UVA:
+            UVB:
+        V25: #
+         name: SWAN32 #
+         units: mass remaining # units in which litter mass loss was reported. Valid options are: mass remaining, organic matter remaining, C remaining
+         varDesc: Stipa sareptana stem litter wit high N and P addition and with water addition. # Description of the variable
+         site: Inner Mongolia # Site where the experiment was conducted
+         litter: Stipa sareptana
+         compTreat: N, P and water addition
+          # combination of complementary treatments not included in the rest of the variables
+         filter: # for photodegradation experiments only
+          threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+          transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+            total:
+            PAR:
+            UV:
+            UVA:
+            UVB:
