@@ -1,0 +1,242 @@
+citationKey: Liu2010
+doi: 10.1007/s00442-009-1506-7
+entryAuthor: Agustin Sarquis
+entryCreationDate: 2021-07-28
+contactName: Agustin Sarquis
+contactEmail: agusarquis@agro.uba.ar
+entryNote: # Any notes or comments related to this entry.
+study: they studied the relative contributions of litter quality and soil N to litter decomposition of two dominant grassland species, Stipa krylovii and Artemisia frigida, in a semiarid typical steppe ecosystem in Inner Mongolia
+
+siteInfo:
+        site: Duolun
+              # These fields should be arrays of equal length to site array
+        coordinates:
+          latitude: 42.0333333
+          longitude: 116.26666666666667
+        country: China
+        MAT: 1.6
+        MAP: 385
+        rainySeason: summer
+        elevation: 1344
+        landCover: steppe
+        vegNote: the bunchgrass species Stipa and perennial semi-shrub Artemisia are among the dominant species
+        cover:
+          plantCover: # Total plant cover percentage (if they report cover by specific plant types, fill the fields below)
+          bunchgrassCover:
+          shrubCover:
+          treeCover:
+          forbCover:
+          bareSoil:
+        soilTaxonomy:
+          soilOrder: Kastanozems
+          soilFamily: Calcic
+          soilSeries: # Soil series according to the classification system described below
+          classificationSystem: FAO
+
+experimentInfo:
+        incDesc: 2 species + 1 species mixture x 4 N additions treatments x 3 harvests x 4 replicates
+        # These fields should all be one dimensional arrays. Values for experimental variables with multiple treatment levels should be entered in the variables section and left blank here
+        replicates: 4
+        duration: 180
+        startingMonth: may
+        litter: # plant species used as litter material for the experiment. All details related to the species must be specified in the initConditions.csv file
+        litterbag:
+          material: polyethylene
+          meshSize: 1
+          dimentions: # size of the full litter bag in cm
+            width: 10
+            length: 15
+            radius: # for round or cilindrical structures
+            height: # for 3-dimensional designs such as litter boxes in Austin2006NATURE
+          transmitance: # when reported, light transmitance of the mesh material as a percentage of full sunlight for each wavelength
+            total:
+            PAR:
+            UV:
+            UVA:
+            UVB:
+          position: bare soil
+
+variables: # These describe the columns of your timeSeries.csv file
+        V1: # column 1
+          name: Time
+          units: months
+        V2:
+          name: SkN0
+          units: mass remaining
+          varDesc: S. krylovii litter from control plots decomposed in situ
+          site: Duolun
+          litter: Stipa krylovii1
+          compTreat: control
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V3:
+          name: SkN8
+          units: mass remaining
+          varDesc: S. krylovii litter from low-N-addition plots decomposed in situ
+          site: Duolun
+          litter: Stipa krylovii2
+          compTreat: N addition
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V4:
+          name: SkN32
+          units: mass remaining
+          varDesc: S. krylovii litter from intermediate-N-addition plots decomposed in situ
+          site: Duolun
+          litter: Stipa krylovii3
+          compTreat: N addition
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V5:
+          name: SkN64
+          units: mass remaining
+          varDesc: S. krylovii litter from high-N-addition plots decomposed in situ
+          site: Duolun
+          litter: Stipa krylovii4
+          compTreat: N addition
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V6:
+          name: AfN0
+          units: mass remaining
+          varDesc: A. frigida litter from control plots decomposed in situ
+          site: Duolun
+          litter: Artemisia frigida1
+          compTreat: control
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V7:
+          name: AfN8
+          units: mass remaining
+          varDesc: A. frigida litter from low-N-addition plots decomposed in situ
+          site: Duolun
+          litter: Artemisia frigida2
+          compTreat: N addition
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V8:
+          name: AfN32
+          units: mass remaining
+          varDesc: A. frigida litter from intermediate-N-addition plots decomposed in situ
+          site: Duolun
+          litter: Artemisia frigida3
+          compTreat: N addition
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V9:
+          name: AfN64
+          units: mass remaining
+          varDesc: A. frigida litter from high-N-addition plots decomposed in situ
+          site: Duolun
+          litter: Artemisia frigida4
+          compTreat: N addition
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V10:
+          name: SAN0
+          units: mass remaining
+          varDesc: Artemisia and Stipa litter mixture from control plots decomposed in situ
+          site: Duolun
+          litter: mixture1
+          compTreat: control
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V11:
+          name: SAN8
+          units: mass remaining
+          varDesc: Artemisia and Stipa litter mixture from low-N-addition plots decomposed in situ
+          site: Duolun
+          litter: mixture2
+          compTreat: N addition
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V12:
+          name: SAN32
+          units: mass remaining
+          varDesc: Artemisia and Stipa litter mixture from intermediate-N-addition plots decomposed in situ
+          site: Duolun
+          litter: mixture3
+          compTreat: N addition
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V13:
+          name: SAN64
+          units: mass remaining
+          varDesc: Artemisia and Stipa litter mixture from high-N-addition plots decomposed in situ
+          site: Duolun
+          litter: mixture4
+          compTreat: N addition 
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:

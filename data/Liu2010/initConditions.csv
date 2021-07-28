@@ -1,0 +1,13 @@
+species, type, N-fixer, material, amount, carbon, nitrogen, C:N, phosphorus, potassium, sodium, magnesium, manganese, copper, zinc, lead, calcium, sulfur, iron, lignin, cellulose, hemicellulose, cell solubles, SLA
+Stipa krylovii1, graminoid, no, leaves, 2, , 0.205, , 0.044
+Stipa krylovii2, graminoid, no, leaves, 2, , 0.349, , 0.052
+Stipa krylovii3, graminoid, no, leaves, 2, , 0.561, , 0.063
+Stipa krylovii4, graminoid, no, leaves, 2, , 0.832, , 0.069
+Artemisia frigida1, evergreen, no, leaves, 2, , 0.422, , 0.093
+Artemisia frigida2, evergreen, no, leaves, 2, , 0.549, , 0.131
+Artemisia frigida3, evergreen, no, leaves, 2, , 0.783, , 0.161
+Artemisia frigida4, evergreen, no, leaves, 2, , 1.006, , 0.175
+mixture1,,no, leaves, 2
+mixture2,,no, leaves, 2
+mixture3,,no, leaves, 2
+mixture4,,no, leaves, 2
