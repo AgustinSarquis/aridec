@@ -1,0 +1,122 @@
+citationKey: Hewins2013
+doi: 10.1007/s10021-012-9604-5
+entryAuthor: Agustin Sarquis
+entryCreationDate: 2021-07-28
+contactName: Agustin Sarquis
+contactEmail: agusarquis@agro.uba.ar
+entryNote: elevation from Google Earth
+study: Vegetation structure was manipulated to simulate losses of grass cover from livestock grazing and shrub encroachment and assess their effects on decomposition
+
+siteInfo:
+        site: Jornada
+              # These fields should be arrays of equal length to site array
+        coordinates:
+          latitude: 32.5
+          longitude: -106.8
+        country: USA
+        MAT: 14.7
+        MAP: 245
+        rainySeason: summer
+        elevation: 1411
+        landCover: grassland
+        vegNote: dominated by native perennial Sporobolus spp., Aristida spp., and B. eriopoda with scattered shrubs primarily Prosopis glandulosa, Ephedra torreyana, and Yucca elata
+        cover:
+          plantCover: # Total plant cover percentage (if they report cover by specific plant types, fill the fields below)
+          bunchgrassCover:
+          shrubCover: 15
+          treeCover:
+          forbCover:
+          bareSoil:
+        soilTaxonomy:
+          soilOrder: # Soil order according to the classification system described below
+          soilFamily: # Soil family description (ex. 'Eutric' for a Eutric Cambisol)
+          soilSeries: # Soil series according to the classification system described below
+          classificationSystem: # Name of classification system used. Valid fields are: USDA, FAO, and WRB.
+
+experimentInfo:
+        incDesc: 4 vegetation removal levels x 4 harvests x 3 replicates
+        # These fields should all be one dimensional arrays. Values for experimental variables with multiple treatment levels should be entered in the variables section and left blank here
+        replicates: 3
+        duration: 365
+        startingMonth: april
+        litter: Prosopis glandulosa
+        litterbag:
+          material: fiberglass
+          meshSize: 1
+          dimentions: # size of the full litter bag in cm
+            width: 10
+            length: 10
+            radius: # for round or cilindrical structures
+            height: # for 3-dimensional designs such as litter boxes in Austin2006NATURE
+          transmitance: # when reported, light transmitance of the mesh material as a percentage of full sunlight for each wavelength
+            total:
+            PAR:
+            UV:
+            UVA:
+            UVB:
+          position: bare soil
+
+variables: # These describe the columns of your timeSeries.csv file
+        V1: # column 1
+          name: Time
+          units: months
+        V2:
+          name: GR0
+          units: organic matter remaining
+          varDesc: P. glandulosa leaflets in plots with intact grassland vegetation
+          site: Jornada
+          experimentalTreatment: # 'experimentalTreatment' here is a place holder for treatments with multiple levels. Replace this word by any of the listed variables in incubationInfo above (startingMonth, duration, litter, litterbag, meshSize) and type treatment value (level) after colon. Note that units should be specified in the incubationInfo field above.
+          compTreat: control
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V3:
+          name: GR50
+          units: organic matter remaining
+          varDesc: P. glandulosa leaflets in plots with 50% removal of grassland vegetation
+          site: Jornada
+          experimentalTreatment: # 'experimentalTreatment' here is a place holder for treatments with multiple levels. Replace this word by any of the listed variables in incubationInfo above (startingMonth, duration, litter, litterbag, meshSize) and type treatment value (level) after colon. Note that units should be specified in the incubationInfo field above.
+          compTreat: vegetation removal
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V4:
+          name: GR75
+          units: organic matter remaining
+          varDesc: P. glandulosa leaflets in plots with 75% removal of grassland vegetation
+          site: Jornada
+          experimentalTreatment: # 'experimentalTreatment' here is a place holder for treatments with multiple levels. Replace this word by any of the listed variables in incubationInfo above (startingMonth, duration, litter, litterbag, meshSize) and type treatment value (level) after colon. Note that units should be specified in the incubationInfo field above.
+          compTreat: vegetation removal
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V5:
+          name: GR100
+          units: organic matter remaining
+          varDesc: P. glandulosa leaflets in plots with 100% removal of grassland vegetation
+          site: Jornada
+          experimentalTreatment: # 'experimentalTreatment' here is a place holder for treatments with multiple levels. Replace this word by any of the listed variables in incubationInfo above (startingMonth, duration, litter, litterbag, meshSize) and type treatment value (level) after colon. Note that units should be specified in the incubationInfo field above.
+          compTreat: vegetation removal
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
