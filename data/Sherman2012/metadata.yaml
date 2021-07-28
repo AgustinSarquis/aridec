@@ -1,0 +1,162 @@
+citationKey: Sherman2012
+doi: 10.1007/s00248-012-0037-7
+entryAuthor: Agustin Sarquis
+entryCreationDate: 2021-07-28
+contactName: Agustin Sarquis
+contactEmail: agusarquis@agro.uba.ar
+entryNote: # Any notes or comments related to this entry.
+study: Wheat straw litter bags were placed in arid, semi-arid, Mediterranean, and humid Mediterranean sites
+
+siteInfo:
+        site:
+          - HM
+          - M
+          - SA
+          - A
+              # These fields should be arrays of equal length to site array
+        coordinates:
+          latitude:
+            - 33.0
+            - 31.7
+            - 31.3833333
+            - 30.8666667
+          longitude:
+            - 35.25
+            - 35.05
+            - 34.9
+            - 34.766666666666666
+        country:
+          - Israel
+          - Israel
+          - Israel
+          - Israel
+        MAT:
+          - 18.1
+          - 17
+          - 18.4
+          - 19.1
+        MAP:
+          - 780
+          - 540
+          - 300
+          - 90
+        rainySeason:
+          - winter
+          - winter
+          - winter
+          - winter
+        elevation:
+          - 500
+          - 620
+          - 590
+          - 470
+        landCover:
+          - shrubland
+          - shrubland
+          - shrubland
+          - desert
+        vegNote:
+          - varies from a denser oak maquis cover to more open garrigues dominated by shrubs
+          - dominated by shrubs and large numbers of herbaceous (mostly annual) plant species
+          - dominated by dwarf shrubs associated with herbaceous (chiefly annual) plants
+          - dominated by small shrubs and sparsely growing desert annuals and geophytes
+        cover:
+          plantCover: # Total plant cover percentage (if they report cover by specific plant types, fill the fields below)
+          bunchgrassCover:
+          shrubCover:
+          treeCover:
+          forbCover:
+          bareSoil:
+        soilTaxonomy:
+          soilOrder: # Soil order according to the classification system described below
+          soilFamily: # Soil family description (ex. 'Eutric' for a Eutric Cambisol)
+          soilSeries: # Soil series according to the classification system described below
+          classificationSystem: # Name of classification system used. Valid fields are: USDA, FAO, and WRB.
+
+experimentInfo:
+        incDesc: 4 sites x 6 harvests x 5 replicates
+        # These fields should all be one dimensional arrays. Values for experimental variables with multiple treatment levels should be entered in the variables section and left blank here
+        replicates: 5
+        duration: 750
+        startingMonth: september
+        litter: Tritricum aestivum
+        litterbag:
+          material: fiberglass
+          meshSize: 1.5
+          dimentions: # size of the full litter bag in cm
+            width: 20
+            length: 20
+            radius: # for round or cilindrical structures
+            height: # for 3-dimensional designs such as litter boxes in Austin2006NATURE
+          transmitance: # when reported, light transmitance of the mesh material as a percentage of full sunlight for each wavelength
+            total:
+            PAR:
+            UV:
+            UVA:
+            UVB:
+          position: bare soil
+
+variables: # These describe the columns of your timeSeries.csv file
+        V1: # column 1
+          name: Time
+          units: months
+        V2:
+          name: HM
+          units: organic matter remaining
+          varDesc: Wheat straw decomposed at a humid Mediterranean site
+          site: HM
+          experimentalTreatment: # 'experimentalTreatment' here is a place holder for treatments with multiple levels. Replace this word by any of the listed variables in incubationInfo above (startingMonth, duration, litter, litterbag, meshSize) and type treatment value (level) after colon. Note that units should be specified in the incubationInfo field above.
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V3:
+          name: M
+          units: organic matter remaining
+          varDesc: Wheat straw decomposed at a Mediterranean site
+          site: M
+          experimentalTreatment: # 'experimentalTreatment' here is a place holder for treatments with multiple levels. Replace this word by any of the listed variables in incubationInfo above (startingMonth, duration, litter, litterbag, meshSize) and type treatment value (level) after colon. Note that units should be specified in the incubationInfo field above.
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V4:
+          name: SA
+          units: organic matter remaining
+          varDesc: Wheat straw decomposed at a semi-arid site
+          site: SA
+          experimentalTreatment: # 'experimentalTreatment' here is a place holder for treatments with multiple levels. Replace this word by any of the listed variables in incubationInfo above (startingMonth, duration, litter, litterbag, meshSize) and type treatment value (level) after colon. Note that units should be specified in the incubationInfo field above.
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V5:
+          name: A
+          units: organic matter remaining
+          varDesc: Wheat straw decomposed at an arid site
+          site: A
+          experimentalTreatment: # 'experimentalTreatment' here is a place holder for treatments with multiple levels. Replace this word by any of the listed variables in incubationInfo above (startingMonth, duration, litter, litterbag, meshSize) and type treatment value (level) after colon. Note that units should be specified in the incubationInfo field above.
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
