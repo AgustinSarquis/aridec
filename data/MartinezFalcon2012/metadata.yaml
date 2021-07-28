@@ -1,0 +1,122 @@
+citationKey: MartinezFalcon2012
+doi: 10.1016/j.jaridenv.2011.10.010
+entryAuthor: Agustin Sarquis
+entryCreationDate: 2021-07-28
+contactName: Agustin Sarquis
+contactEmail: agusarquis@agro.uba.ar
+entryNote: uncovered cactus stems were left in the open and covered stems were insided cages with terylene netting
+study: assessment of the role of insects in the decomposition of Isolatocereus dumortieri (Cactaceae)
+
+siteInfo:
+        site: Hidalgo
+              # These fields should be arrays of equal length to site array
+        coordinates:
+          latitude: 20.2333333
+          longitude: -98.38333333333334
+        country: Mexico
+        MAT: 18
+        MAP: 600
+        rainySeason: # Period of the year during which most precipitation occurs, i.e.: whole year, spring, summer, autumn, winter (if more than one use array format)
+        elevation: 1500
+        landCover: shrubland
+        vegNote: Crasicaule scrubland with species of Yucca, Prosopis, Celtis, Bursera and Acacia in the upper layer; the understory has species of Leguminosae, Compositae, Labiatae and Poaceae; these scrublands are dominated by cactus species such as I. dumortieri and Myrtillocactus geometrizans although Opuntia ficus-indica, Cylindropuntia tunicate and Echinocereus cinerascens are also common
+        cover:
+          plantCover: # Total plant cover percentage (if they report cover by specific plant types, fill the fields below)
+          bunchgrassCover:
+          shrubCover:
+          treeCover:
+          forbCover:
+          bareSoil:
+        soilTaxonomy:
+          soilOrder: # Soil order according to the classification system described below
+          soilFamily: # Soil family description (ex. 'Eutric' for a Eutric Cambisol)
+          soilSeries: # Soil series according to the classification system described below
+          classificationSystem: # Name of classification system used. Valid fields are: USDA, FAO, and WRB.
+
+experimentInfo:
+        incDesc: 2 insect exclusion levels x 2 years x 10 and 16 harvests (year 1 and 2) x 5 replicates
+        # These fields should all be one dimensional arrays. Values for experimental variables with multiple treatment levels should be entered in the variables section and left blank here
+        replicates: 5
+        duration: 149
+        startingMonth: july
+        litter: Isolatocereus dumortieri
+        litterbag:
+          material:
+          meshSize: # mesh size in mm referring to one side of the net-square
+          dimentions: # size of the full litter bag in cm
+            width: 28
+            length: 28
+            radius: # for round or cilindrical structures
+            height: 28
+          transmitance: # when reported, light transmitance of the mesh material as a percentage of full sunlight for each wavelength
+            total:
+            PAR:
+            UV:
+            UVA:
+            UVB:
+          position: bare soil
+
+variables: # These describe the columns of your timeSeries.csv file
+        V1: # column 1
+          name: Time
+          units: days
+        V2:
+          name: C08
+          units: mass remaining
+          varDesc: Covered I. dumortieri fresh stems during 2008
+          site: Hidalgo
+          meshSize: 0.1
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V3:
+          name: UC08
+          units: mass remaining
+          varDesc: Uncovered I. dumortieri fresh stems during 2008
+          site: Hidalgo
+          meshSize:
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V4:
+          name: C09
+          units: mass remaining
+          varDesc: Covered I. dumortieri fresh stems during 2009
+          site: Hidalgo
+          meshSize: 0.1
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V5:
+          name: UC09
+          units: mass remaining
+          varDesc: Uncovered I. dumortieri fresh stems during 2009
+          site: Hidalgo
+          meshSize:
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
