@@ -1,0 +1,152 @@
+citationKey: Ma2015
+doi: # DOI of the publication where data is published
+entryAuthor: Agustin Sarquis
+entryCreationDate: 2021-07-29
+contactName: Agustin Sarquis
+contactEmail: agusarquis@agro.uba.ar
+entryNote: # Any notes or comments related to this entry.
+study: they studied the decomposition in different seasons of foliar litter of Pinus massoniana, Cunninghamia lanceolata, Cryptomeria fortunei, Cinnamomum camphora, Toona ciliata, and Quercus acutissima, six representative tree species in a subtropical evergreen broadleaved forest
+
+siteInfo:
+        site: Chongzhou
+              # These fields should be arrays of equal length to site array
+        coordinates:
+          latitude: 30.5544444
+          longitude: 103.64194444444445
+        country: China
+        MAT: 16
+        MAP: 1015.2
+        rainySeason: summer
+        elevation: 516
+        landCover: grassland
+        vegNote: dominant species are Artemisia annua, Alternanthera philoxeroides, Setaria viridis, Echinochloa crusgalli, Leptochloa panicea, Malachium aquaticum, Chenopodium album and Amaranthus viridis
+        cover:
+          plantCover: # Total plant cover percentage (if they report cover by specific plant types, fill the fields below)
+          bunchgrassCover:
+          shrubCover:
+          treeCover:
+          forbCover:
+          bareSoil:
+        soilTaxonomy:
+          soilOrder: # Soil order according to the classification system described below
+          soilFamily: # Soil family description (ex. 'Eutric' for a Eutric Cambisol)
+          soilSeries: # Soil series according to the classification system described below
+          classificationSystem: # Name of classification system used. Valid fields are: USDA, FAO, and WRB.
+
+experimentInfo:
+        incDesc: 6 species x 5 harvests x 3 replicates
+        # These fields should all be one dimensional arrays. Values for experimental variables with multiple treatment levels should be entered in the variables section and left blank here
+        replicates: 3
+        duration: 365
+        startingMonth: january
+        litter: # plant species used as litter material for the experiment. All details related to the species must be specified in the initConditions.csv file
+        litterbag:
+          material: # mesh type used to construct the litter bags, options are: stainless steel, wire, aluminum, window screening, net curtain, bolting cloth, plastic, fiberglass, nylon, polypropylene, polyester, polyethylene, polyamide
+          meshSize: 1
+          dimentions: # size of the full litter bag in cm
+            width: 20
+            length: 20
+            radius: # for round or cilindrical structures
+            height: # for 3-dimensional designs such as litter boxes in Austin2006NATURE
+          transmitance: # when reported, light transmitance of the mesh material as a percentage of full sunlight for each wavelength
+            total:
+            PAR:
+            UV:
+            UVA:
+            UVB:
+          position: bare soil
+
+variables: # These describe the columns of your timeSeries.csv file
+        V1: # column 1
+          name: Time
+          units: days
+        V2:
+          name: PM
+          units: mass remaining
+          varDesc: P. massoniana litter decomposed
+          site: Chongzhou
+          litter: Pinus massoniana
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V3:
+          name: CF
+          units: mass remaining
+          varDesc: Cryptomeria fortunei litter decomposed
+          site: Chongzhou
+          litter: Cryptomeria fortunei
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V4:
+          name: CL
+          units: mass remaining
+          varDesc: Cunninghamia lanceolata litter decomposed
+          site: Chongzhou
+          litter: Cunninghamia lanceolata
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V5:
+          name: CC
+          units: mass remaining
+          varDesc: Cinnamomum camphora litter decomposed
+          site: Chongzhou
+          litter: Cinnamomum camphora
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V6:
+          name: TC
+          units: mass remaining
+          varDesc: Toona ciliata litter decomposed
+          site: Chongzhou
+          litter: Toona ciliata
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V7:
+          name: QA
+          units: mass remaining
+          varDesc: Quercus acutissima litter decomposed
+          site: Chongzhou
+          litter: Quercus acutissima
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
