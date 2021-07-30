@@ -1,0 +1,4 @@
+species, type, N-fixer, material, amount, carbon, nitrogen, C:N, phosphorus, potassium, sodium, magnesium, manganese, copper, zinc, lead, calcium, sulfur, iron, lignin, cellulose, hemicellulose, cell solubles, SLA
+Haloxylon ammodendron, evergreen, no, shoots, 10, 29.07, 1.358, 21.4, 0.077,,,,,,,,,,, 2.4, 7.6, 10
+Tritricum aestivum, graminoid, no, aboveground parts, 10, 39.04, 0.439, 89.1, 0.08,,,,,,,,,,, 2.9, 40.8, 28.9
+Phragmites australis, graminoid, no, leaves, 10, 38.03, 1.21, 32.4, 0.102,,,,,,,,,,, 1.2, 26.3, 21.9

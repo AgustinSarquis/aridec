@@ -1,0 +1,374 @@
+citationKey: Huang2013
+doi: 1000-4890(2013)10-2574-09
+entryAuthor: Agustin Sarquis
+entryCreationDate: 2021-07-30
+contactName: Agustin Sarquis
+contactEmail: agusarquis@agro.uba.ar
+entryNote: # Any notes or comments related to this entry.
+study: An experiment with UV exclusion and natural light was conducted along a precipitation gradient using H. ammodendron, wheat and P. australis litter
+
+siteInfo:
+        site:
+          - BSW
+          - SF
+          - Turpan
+              # These fields should be arrays of equal length to site array
+        coordinates:
+          latitude:
+            - 44.3666667
+            - 45.25
+            - 40.85
+          longitude:
+            - 87.91666666666667
+            - 87.6
+            - 98.18333333333334
+        country:
+          - China
+          - China
+          - China
+        MAT:
+          - 6.6
+          - 7.1
+          - 13.9
+        MAP:
+          - 144
+          - 110
+          - 16
+        rainySeason: # Period of the year during which most precipitation occurs, i.e.: whole year, spring, summer, autumn, winter (if more than one use array format)
+        elevation:
+          - 460
+          - 507
+          - -86
+        landCover:
+          - desert
+          - desert
+          - desert
+        vegNote: # Additional details about land cover such as species or functional type composition
+        cover:
+          plantCover: # Total plant cover percentage (if they report cover by specific plant types, fill the fields below)
+          bunchgrassCover:
+          shrubCover:
+          treeCover:
+          forbCover:
+          bareSoil:
+        soilTaxonomy:
+          soilOrder: # Soil order according to the classification system described below
+          soilFamily: # Soil family description (ex. 'Eutric' for a Eutric Cambisol)
+          soilSeries: # Soil series according to the classification system described below
+          classificationSystem: # Name of classification system used. Valid fields are: USDA, FAO, and WRB.
+
+experimentInfo:
+        incDesc: 3 species x 3 sites x 2 radiation treatments x 5 replicates x 4 harvests
+        # These fields should all be one dimensional arrays. Values for experimental variables with multiple treatment levels should be entered in the variables section and left blank here
+        replicates: 5
+        duration: 365
+        startingMonth: october
+        litter: # plant species used as litter material for the experiment. All details related to the species must be specified in the initConditions.csv file
+        litterbag:
+          material: fiberglass
+          meshSize: 1.2
+          dimentions: # size of the full litter bag in cm
+            width: 10
+            length: 10
+            radius: # for round or cilindrical structures
+            height: # for 3-dimensional designs such as litter boxes in Austin2006NATURE
+          transmitance: # when reported, light transmitance of the mesh material as a percentage of full sunlight for each wavelength
+            total:
+            PAR:
+            UV:
+            UVA:
+            UVB:
+          position: # bare soil, decomposition bed, under litter, over litter, over lawn, next to grass, under tree/shrub/grass, buried X cm deep, underwater, under rainout shelter, under frame, suspended X cm, under shadecloth
+
+variables: # These describe the columns of your timeSeries.csv file
+        V1: # column 1
+          name: Time
+          units: months
+        V2:
+          name: HBT
+          units: organic matter remaining
+          varDesc: H. ammodendron litter with a natural radiation treatment at the least dry site
+          site: BSW
+          litter: Haloxylon ammodendron
+          position: bare soil
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold:
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V3:
+          name: HBB
+          units: organic matter remaining
+          varDesc: H. ammodendron litter with a UV-block treatment at the least dry site
+          site: BSW
+          litter: Haloxylon ammodendron
+          position: under frame
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: 400
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR: 85
+             UV: 10
+             UVA:
+             UVB:
+        V4:
+          name: TBT
+          units: organic matter remaining
+          varDesc: Wheat straw  with a natural radiation treatment at the least dry site
+          site: BSW
+          litter: Tritricum aestivum
+          position: bare soil
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold:
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V5:
+          name: TBB
+          units: organic matter remaining
+          varDesc: Wheat straw  with a UV-block treatment at the least dry site
+          site: BSW
+          litter:
+          position: under frame
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: 400
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR: 85
+             UV: 10
+             UVA:
+             UVB:
+        V6:
+          name: PBT
+          units: organic matter remaining
+          varDesc: P. australis litter with a natural radiation treatment at the least dry site
+          site: BSW
+          litter: Phragmites australis
+          position: bare soil
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold:
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V7:
+          name: PBB
+          units: organic matter remaining
+          varDesc: P. australis litter with a UV-block treatment at the least dry site
+          site: BSW
+          litter: Phragmites australis
+          position: under frame
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: 400
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR: 85
+             UV: 10
+             UVA:
+             UVB:
+        V8:
+          name: HST
+          units: organic matter remaining
+          varDesc: H. ammodendron litter with a natural radiation treatment at the intermediate dry site
+          site: SF
+          litter: Haloxylon ammodendron
+          position: bare soil
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold:
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V9:
+          name: HSB
+          units: organic matter remaining
+          varDesc: H. ammodendron litter with a UV-block treatment at the intermediate dry site
+          site: SF
+          litter: Haloxylon ammodendron
+          position: under frame
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: 400
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR: 85
+             UV: 10
+             UVA:
+             UVB:
+        V10:
+          name: TST
+          units: organic matter remaining
+          varDesc: Wheat straw with a natural radiation treatment at the intermediate dry site
+          site: SF
+          litter: Tritricum aestivum
+          position: bare soil
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold:
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V11:
+          name: TSB
+          units: organic matter remaining
+          varDesc: Wheat straw with a UV-block treatment at the intermediate dry site
+          site: SF
+          litter:
+          position: under frame
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: 400
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR: 85
+             UV: 10
+             UVA:
+             UVB:
+        V12:
+          name: PST
+          units: organic matter remaining
+          varDesc: P. australis litter with a natural radiation treatment at the intermediate dry site
+          site: SF
+          litter: Phragmites australis
+          position: bare soil
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold:
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V13:
+          name: HTT
+          units: organic matter remaining
+          varDesc: H. ammodendron litter with a natural radiation treatment at the driest site
+          site: Turpan
+          litter: Haloxylon ammodendron
+          position: bare soil
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold:
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V14:
+          name: HTB
+          units: organic matter remaining
+          varDesc: H. ammodendron litter with a UV-block treatment at the driest site
+          site: Turpan
+          litter: Haloxylon ammodendron
+          position: under frame
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: 400
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR: 85
+             UV: 10
+             UVA:
+             UVB:
+        V15:
+          name: TTT
+          units: organic matter remaining
+          varDesc: Wheat straw with a natural radiation treatment at the driest site
+          site: Turpan
+          litter: Tritricum aestivum
+          position: bare soil
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold:
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V16:
+          name: TTB
+          units: organic matter remaining
+          varDesc: Wheat straw with a UV-block treatment at the driest site
+          site: Turpan
+          litter: Tritricum aestivum
+          position: under frame
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: 400
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR: 85
+             UV: 10
+             UVA:
+             UVB:
+        V17:
+          name: PTT
+          units: organic matter remaining
+          varDesc: P. australis litter with a natural radiation treatment at the driest site
+          site: Turpan
+          litter: Phragmites australis
+          position: bare soil
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold:
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V18:
+          name: PTB
+          units: organic matter remaining
+          varDesc: P. australis litter with a UV-block treatment at the driest site
+          site: Turpan
+          litter: Phragmites australis
+          position: under frame
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: 400
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR: 85
+             UV: 10
+             UVA:
+             UVB:
+        V19:
+          name: HTT,HTB,TTT,TTB,PTT,PTB
+          units: organic matter remaining
+          varDesc:
+          site: Turpan
+          litter:
+          position: under frame / bare soil
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: 400 (UV)
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR: 85
+             UV: 10
+             UVA:
+             UVB:
