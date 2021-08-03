@@ -1,0 +1,242 @@
+citationKey: dosSantos2019
+doi: 10.18671/scifor.v47n124.08
+entryAuthor: Agustin Sarquis
+entryCreationDate: 2021-08-03
+contactName: Agustin Sarquis
+contactEmail: agusarquis@agro.uba.ar
+entryNote: coordinates correspond to the Muritiba site in the paper; elevation from Google Earth
+study: litter decomposition experiments were carried out every 3 months, both in areas under restoration process and in a reference ecosystem
+
+siteInfo:
+        site: Mata Atlantica
+              # These fields should be arrays of equal length to site array
+        coordinates:
+          latitude: -12.5908333
+          longitude: -39.015277777777776
+        country: Brazil
+        MAT: 24.5
+        MAP: 1150
+        rainySeason: # Period of the year during which most precipitation occurs, i.e.: whole year, spring, summer, autumn, winter (if more than one use array format)
+        elevation: 172
+        landCover: forest
+        vegNote: seasonnally semi deciduous Mata Atlantica forest
+        cover:
+          plantCover: # Total plant cover percentage (if they report cover by specific plant types, fill the fields below)
+          bunchgrassCover:
+          shrubCover:
+          treeCover:
+          forbCover:
+          bareSoil:
+        soilTaxonomy:
+          soilOrder: # Soil order according to the classification system described below
+          soilFamily: # Soil family description (ex. 'Eutric' for a Eutric Cambisol)
+          soilSeries: # Soil series according to the classification system described below
+          classificationSystem: # Name of classification system used. Valid fields are: USDA, FAO, and WRB.
+
+experimentInfo:
+        incDesc: 4 seasons x 3 restoration stata x 3 harvests x 3 replicates
+        # These fields should all be one dimensional arrays. Values for experimental variables with multiple treatment levels should be entered in the variables section and left blank here
+        replicates: 3
+        duration: 90
+        startingMonth: # month during which the study started, all in lower case
+        litter: Licania tomentosa
+        litterbag:
+          material: nylon
+          meshSize: 1
+          dimentions: # size of the full litter bag in cm
+            width: 20
+            length: 30
+            radius: # for round or cilindrical structures
+            height: # for 3-dimensional designs such as litter boxes in Austin2006NATURE
+          transmitance: # when reported, light transmitance of the mesh material as a percentage of full sunlight for each wavelength
+            total:
+            PAR:
+            UV:
+            UVA:
+            UVB:
+          position: under tree
+
+variables: # These describe the columns of your timeSeries.csv file
+        V1: # column 1
+          name: Time
+          units: days
+        V2:
+          name: fev6y
+          units: organic matter remaining
+          varDesc: L. tomentosa leaf litter decomposed at a site with 6 years of restoration starting in february
+          site: Mata Atlantica
+          startingMonth: february
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V3:
+          name: fev9y
+          units: organic matter remaining
+          varDesc: L. tomentosa leaf litter decomposed at a site with 9 years of restoration starting in february
+          site: Mata Atlantica
+          startingMonth: february
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V4:
+          name: fevRF
+          units: organic matter remaining
+          varDesc: L. tomentosa leaf litter decomposed at a reference ecosystem starting in february
+          site: Mata Atlantica
+          startingMonth: february
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V5:
+          name: mai6y
+          units: organic matter remaining
+          varDesc: L. tomentosa leaf litter decomposed at a site with 6 years of restoration starting in may
+          site: Mata Atlantica
+          startingMonth: may
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V6:
+          name: mai9y
+          units: organic matter remaining
+          varDesc: L. tomentosa leaf litter decomposed at a site with 9 years of restoration starting in may
+          site: Mata Atlantica
+          startingMonth: may
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V7:
+          name: maiRF
+          units: organic matter remaining
+          varDesc: L. tomentosa leaf litter decomposed at a reference ecosystem starting in may
+          site: Mata Atlantica
+          startingMonth: may
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V8:
+          name: ago6y
+          units: organic matter remaining
+          varDesc: L. tomentosa leaf litter decomposed at a site with 6 years of restoration starting in august
+          site: Mata Atlantica
+          startingMonth: august
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V9:
+          name: ago9y
+          units: organic matter remaining
+          varDesc: L. tomentosa leaf litter decomposed at a site with 9 years of restoration starting in august
+          site: Mata Atlantica
+          startingMonth: august
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V10:
+          name: agoRF
+          units: organic matter remaining
+          varDesc: L. tomentosa leaf litter decomposed at a reference ecosystem starting in august
+          site: Mata Atlantica
+          startingMonth: august
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V11:
+          name: nov6y
+          units: organic matter remaining
+          varDesc: L. tomentosa leaf litter decomposed at a site with 6 years of restoration starting in november
+          site: Mata Atlantica
+          startingMonth: november
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V12:
+          name: nov9y
+          units: organic matter remaining
+          varDesc: L. tomentosa leaf litter decomposed at a site with 9 years of restoration starting in november
+          site: Mata Atlantica
+          startingMonth: november
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V13:
+          name: novRF
+          units: organic matter remaining
+          varDesc: L. tomentosa leaf litter decomposed at a reference ecosystem starting in november
+          site: Mata Atlantica
+          startingMonth: november
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
