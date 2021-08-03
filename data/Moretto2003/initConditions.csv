@@ -1,0 +1,5 @@
+species, type, N-fixer, material, amount, carbon, nitrogen, C:N, phosphorus, potassium, sodium, magnesium, manganese, copper, zinc, lead, calcium, sulfur, iron, lignin, cellulose, hemicellulose, cell solubles, SLA
+Poa ligularis1, graminoid, no, leaves, 5, 40.6, 1.4, 29, 0.06,,,,,,,,,,, 4.4
+Jarava ichu1, graminoid, no, leaves, 5, 39.2, 0.7, 56, 0.03,,,,,,,,,,, 6.4
+Poa ligularis2, graminoid, no, roots, 5, 37.8, 0.9, 42, 0.06,,,,,,,,,,, 14
+Jarava ichu2, graminoid, no, roots, 5, 44.8, 0.7, 64, 0.04,,,,,,,,,,, 20

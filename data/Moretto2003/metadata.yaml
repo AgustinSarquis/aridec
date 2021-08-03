@@ -1,0 +1,190 @@
+citationKey: Moretto2003
+doi: 10.1016/S0140-1963(02)00271-9
+entryAuthor: Agustin Sarquis
+entryCreationDate: 2021-08-03
+contactName: Agustin Sarquis
+contactEmail: agusarquis@agro.uba.ar
+entryNote: elevation from Google Earth
+study: Leaf litter and roots of each species were incubated on sites dominated by P. ligularis and on sites dominated by J. ichu, to separate species from site effects.
+
+siteInfo:
+        site: La Pampa
+              # These fields should be arrays of equal length to site array
+        coordinates:
+          latitude: -38.75
+          longitude: -63.75
+        country: Argentina
+        MAT: 15
+        MAP: 344
+        rainySeason: # Period of the year during which most precipitation occurs, i.e.: whole year, spring, summer, autumn, winter (if more than one use array format)
+        elevation: 95
+        landCover: grassland
+        vegNote: The most abundant species in the herbaceous layer are perennial C3 cool-season bunchgrasses. P. ligularis is the dominant species, but patches dominated by J. ichu are common
+        cover:
+          plantCover: # Total plant cover percentage (if they report cover by specific plant types, fill the fields below)
+          bunchgrassCover:
+          shrubCover:
+          treeCover:
+          forbCover:
+          bareSoil:
+        soilTaxonomy:
+          soilOrder: # Soil order according to the classification system described below
+          soilFamily: # Soil family description (ex. 'Eutric' for a Eutric Cambisol)
+          soilSeries: # Soil series according to the classification system described below
+          classificationSystem: # Name of classification system used. Valid fields are: USDA, FAO, and WRB.
+
+experimentInfo:
+        incDesc: 2 species x 2 organs x 2 sites x 4 harvests x 10 replicates
+        # These fields should all be one dimensional arrays. Values for experimental variables with multiple treatment levels should be entered in the variables section and left blank here
+        replicates: 10
+        duration: 630
+        startingMonth: march
+        litter: # plant species used as litter material for the experiment. All details related to the species must be specified in the initConditions.csv file
+        litterbag:
+          material: polyethylene
+          meshSize: 0.35
+          dimentions: # size of the full litter bag in cm
+            width: 10
+            length: 15
+            radius: # for round or cilindrical structures
+            height: # for 3-dimensional designs such as litter boxes in Austin2006NATURE
+          transmitance: # when reported, light transmitance of the mesh material as a percentage of full sunlight for each wavelength
+            total:
+            PAR:
+            UV:
+            UVA:
+            UVB:
+          position: # position of litterbags in the field, valid options are: bare soil, decomposition bed, under litter, over litter, over lawn, next to grass, under tree/shrub/grass, buried X cm deep, underwater, under rainout shelter, under frame, suspended X cm, under shadecloth
+
+variables: # These describe the columns of your timeSeries.csv file
+        V1: # column 1
+          name: Time
+          units: months
+        V2:
+          name: LPP
+          units: organic matter remaining
+          varDesc: P. ligularis leaf litter decomposed on the soil surface of a site dominated by P. ligularis
+          site: La Pampa
+          litter: Poa ligularis1
+          position: bare soil
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V3:
+          name: LPS
+          units: organic matter remaining
+          varDesc: P. ligularis leaf litter decomposed on the soil surface of a site dominated by J. ichu
+          site: La Pampa
+          litter: Poa ligularis1
+          position: bare soil
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V4:
+          name: LSS
+          units: organic matter remaining
+          varDesc: J. ichu leaf litter decomposed on the soil surface of a site dominated by J. ichu
+          site: La Pampa
+          litter: Jarava ichu1
+          position: bare soil
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V5:
+          name: LSP
+          units: organic matter remaining
+          varDesc: J. ichu leaf litter decomposed on the soil surface of a site dominated by P. ligularis
+          site: La Pampa
+          litter: Jarava ichu1
+          position: bare soil
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V6:
+          name: RPP
+          units: organic matter remaining
+          varDesc: P. ligularis root litter decomposed buried in a site dominated by P. ligularis
+          site: La Pampa
+          litter: Poa ligularis2
+          position: buried 5 cm deep
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V7:
+          name: RPS
+          units: organic matter remaining
+          varDesc: P. ligularis root litter decomposed buried in a site dominated by J. ichu
+          site: La Pampa
+          litter: Poa ligularis2
+          position: buried 5 cm deep
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V8:
+          name: RSS
+          units: organic matter remaining
+          varDesc: J. ichu root litter decomposed buried in a site dominated by J. ichu
+          site: La Pampa
+          litter: Jarava ichu2
+          position: buried 5 cm deep
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V9:
+          name: RSP
+          units: organic matter remaining
+          varDesc: J. ichu root litter decomposed buried in a site dominated by P. ligularis
+          site: La Pampa
+          litter: Jarava ichu2
+          position: buried 5 cm deep
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
