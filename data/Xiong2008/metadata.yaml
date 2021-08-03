@@ -1,0 +1,92 @@
+citationKey: Xiong2008
+doi: 10.1007/s11104-007-9536-6
+entryAuthor: Agustin Sarquis
+entryCreationDate: 2021-08-03
+contactName: Agustin Sarquis
+contactEmail: agusarquis@agro.uba.ar
+entryNote: elevation from Google Earth
+study: a study in a pure Acacia mangium plantation in southern China by removing understory vegetation and then comparing this treatment with a control
+
+siteInfo:
+        site: Heshan
+              # These fields should be arrays of equal length to site array
+        coordinates:
+          latitude: 22.6833333
+          longitude: 112.9
+        country: China
+        MAT: 21.7
+        MAP: 1700
+        rainySeason: # Period of the year during which most precipitation occurs, i.e.: whole year, spring, summer, autumn, winter (if more than one use array format)
+        elevation: 49
+        landCover: forest
+        vegNote: Acacia magnum plantation; the understory species of the site were mainly Dicranopteris dichotoma, Miscanthus sinensis, Blechnum orientale, Ottochloa nodosa var. micrantha, Dianella ensifolia, Thysanolaena maxima, Litsea cubeba, Euodia lepta, Ilex asprella, Embelia laeta, Mussaenda pubescens and Clerodendron fortunatum
+        cover:
+          plantCover: # Total plant cover percentage (if they report cover by specific plant types, fill the fields below)
+          bunchgrassCover:
+          shrubCover:
+          treeCover:
+          forbCover:
+          bareSoil:
+        soilTaxonomy:
+          soilOrder: Acrisol
+          soilFamily: # Soil family description (ex. 'Eutric' for a Eutric Cambisol)
+          soilSeries: # Soil series according to the classification system described below
+          classificationSystem: FAO
+
+experimentInfo:
+        incDesc: 2 understory removal levels x 4 harvests x 3 replicates
+        # These fields should all be one dimensional arrays. Values for experimental variables with multiple treatment levels should be entered in the variables section and left blank here
+        replicates: 3
+        duration: 365
+        startingMonth: february
+        litter: Acacia mangium
+        litterbag:
+          material: nylon
+          meshSize: 1.5
+          dimentions: # size of the full litter bag in cm
+            width: 20
+            length: 20
+            radius: # for round or cilindrical structures
+            height: # for 3-dimensional designs such as litter boxes in Austin2006NATURE
+          transmitance: # when reported, light transmitance of the mesh material as a percentage of full sunlight for each wavelength
+            total:
+            PAR:
+            UV:
+            UVA:
+            UVB:
+          position: under tree
+
+variables: # These describe the columns of your timeSeries.csv file
+        V1: # column 1
+          name: Time
+          units: months
+        V2:
+          name: control
+          units: mass remaining
+          varDesc: A. mangium litter decomposed at a plantation with an intact understory vegetation
+          site: Heshan
+          experimentalTreatment: # 'experimentalTreatment' here is a place holder for treatments with multiple levels. Replace this word by any of the listed variables in incubationInfo above (startingMonth, duration, litter, litterbag, meshSize) and type treatment value (level) after colon. Note that units should be specified in the incubationInfo field above.
+          compTreat: control
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V3:
+          name: UR
+          units: mass remaining
+          varDesc: A. mangium litter decomposed at a plantation with understory vegetation removal
+          site: Heshan
+          experimentalTreatment: # 'experimentalTreatment' here is a place holder for treatments with multiple levels. Replace this word by any of the listed variables in incubationInfo above (startingMonth, duration, litter, litterbag, meshSize) and type treatment value (level) after colon. Note that units should be specified in the incubationInfo field above.
+          compTreat: vegetation removal
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
