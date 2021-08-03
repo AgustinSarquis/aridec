@@ -1,0 +1,6 @@
+species, type, N-fixer, material, amount, carbon, nitrogen, C:N, phosphorus, potassium, sodium, magnesium, manganese, copper, zinc, lead, calcium, sulfur, iron, lignin, cellulose, hemicellulose, cell solubles, SLA
+Cunninghamia lanceolata, evergreen, no, leaves, 10, 46.6, 0.6, 78, 0.027, 0.05,, 0.18,,,,, 1,,,,,, 9.6
+Kalopanax septemlobus, deciduous, no, leaves, 10, 44.8, 1.05, 43, 0.066, 0.27,, 0.17,,,,, 1.7,,,,,, 11.5
+Alnus cremastogyne, evergreen, yes, leaves, 10, 47.2, 1.44, 33, 0.034, 0.4,, 0.27,,,,, 0.8,,,,,, 12.4
+mixture1, evergreen, , leaves, 10
+mixture2, , no, leaves, 10
