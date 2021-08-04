@@ -1,0 +1,122 @@
+citationKey: Ngatia2014
+doi: 10.1016/j.agee.2014.02.004
+entryAuthor: Agustin Sarquis
+entryCreationDate: 2021-08-04
+contactName: Agustin Sarquis
+contactEmail: agusarquis@agro.uba.ar
+entryNote: coordinates were wrong in the paper; elevation, MAT and MAP from POWER
+study: They examined the influence of nitrogen and phosphorus additions on grass decomposition in an Acacia savanna ecosystem in central Kenya
+
+siteInfo:
+        site: Mpala
+              # These fields should be arrays of equal length to site array
+        coordinates:
+          latitude: 0.2833333
+          longitude: 36.88333333333333
+        country: Kenya
+        MAT: 18.99
+        MAP: 930.75
+        rainySeason: # Period of the year during which most precipitation occurs, i.e.: whole year, spring, summer, autumn, winter (if more than one use array format)
+        elevation: 1814
+        landCover: savanna
+        vegNote: The dominant woody vegetation includes Senegalia brevispica, Vachellia etbaica, S. mellifera, V. nilotica and V. gerrardii, Croton dichogamus, Grewia spp. and Rhus vulgaris. The herbaceous vegetation consists of a discontinuous layer of mostly perennial grasses, which include Pennisetum mezianum, Pennisetum stramineum, Digitaria milanjiana, and Cynodon dactylon
+        cover:
+          plantCover: # Total plant cover percentage (if they report cover by specific plant types, fill the fields below)
+          bunchgrassCover:
+          shrubCover:
+          treeCover:
+          forbCover:
+          bareSoil:
+        soilTaxonomy:
+          soilOrder: Haplustalfs
+          soilFamily: Typic
+          soilSeries: # Soil series according to the classification system described below
+          classificationSystem: USDA
+
+experimentInfo:
+        incDesc: 4 levels of fertilized litter x 5 harvests x 3 replicates
+        # These fields should all be one dimensional arrays. Values for experimental variables with multiple treatment levels should be entered in the variables section and left blank here
+        replicates: 3
+        duration: 140
+        startingMonth: december
+        litter: # plant species used as litter material for the experiment. All details related to the species must be specified in the initConditions.csv file
+        litterbag:
+          material: polyester
+          meshSize: 2
+          dimentions: # size of the full litter bag in cm
+            width: 15
+            length: 20
+            radius: # for round or cilindrical structures
+            height: # for 3-dimensional designs such as litter boxes in Austin2006NATURE
+          transmitance: # when reported, light transmitance of the mesh material as a percentage of full sunlight for each wavelength
+            total:
+            PAR:
+            UV:
+            UVA:
+            UVB:
+          position: under litter
+
+variables: # These describe the columns of your timeSeries.csv file
+        V1: # column 1
+          name: Time
+          units: weeks
+        V2:
+          name: control
+          units: C remaining
+          varDesc: Standing dead grass litter from unfertilized plots
+          site: Mpala
+          litter: mixture1
+          compTreat: control
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V3:
+          name: Nadd
+          units: C remaining
+          varDesc: Standing dead grass litter from plots fertilized with N
+          site: Mpala
+          litter: mixture2
+          compTreat: N addition
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V4:
+          name: Padd
+          units: C remaining
+          varDesc: Standing dead grass litter from plots fertilized with P
+          site: Mpala
+          litter: mixture3
+          compTreat: P addition
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V5:
+          name: NPadd
+          units: C remaining
+          varDesc: Standing dead grass litter from plots fertilized with N and P
+          site: Mpala
+          litter: mixture4
+          compTreat: N and P addition
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:

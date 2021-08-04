@@ -1,0 +1,5 @@
+species, type, N-fixer, material, amount, carbon, nitrogen, C:N, phosphorus, potassium, sodium, magnesium, manganese, copper, zinc, lead, calcium, sulfur, iron, lignin, cellulose, hemicellulose, cell solubles, SLA
+mixture1, graminoid, no, aboveground parts, 3, 40.4, 1.3, 32, 0.13,,,,,,,,,,, 25
+mixture2, graminoid, no, aboveground parts, 3, 41.5, 1.7, 25, 0.15,,,,,,,,,,, 21
+mixture3, graminoid, no, aboveground parts, 3, 41.4, 1.7, 25, 0.14,,,,,,,,,,, 25
+mixture4, graminoid, no, aboveground parts, 3, 40.4, 1.4, 30, 0.12,,,,,,,,,,, 23
