@@ -1,0 +1,92 @@
+citationKey: BernhardReversat1993
+doi:
+entryAuthor: Agustin Sarquis
+entryCreationDate: 2021-08-04
+contactName: Agustin Sarquis
+contactEmail: agusarquis@agro.uba.ar
+entryNote: they do not provide coordinates, we used the location of the city of Pointe-Noire; elevation and MAT from POWER; experimentInfo from Bernhard-Reversat 1987
+study: Litter decomposition was studied in plantations of two eucalyptus hybrids
+
+siteInfo:
+        site: Pointe-Noire
+              # These fields should be arrays of equal length to site array
+        coordinates:
+          latitude: -4.7797222
+          longitude: 11.866666666666667
+        country: Congo
+        MAT: 25.09
+        MAP: 1250
+        rainySeason: # Period of the year during which most precipitation occurs, i.e.: whole year, spring, summer, autumn, winter (if more than one use array format)
+        elevation: 26
+        landCover: savanna
+        vegNote: plantation of two eucalyptus hybrids (PF1 and HS2)
+        cover:
+          plantCover: # Total plant cover percentage (if they report cover by specific plant types, fill the fields below)
+          bunchgrassCover:
+          shrubCover:
+          treeCover:
+          forbCover:
+          bareSoil:
+        soilTaxonomy:
+          soilOrder: Arenosol
+          soilFamily: Ferralic
+          soilSeries: # Soil series according to the classification system described below
+          classificationSystem: FAO
+
+experimentInfo:
+        incDesc: 2 hybrids x 6 harvests
+        # These fields should all be one dimensional arrays. Values for experimental variables with multiple treatment levels should be entered in the variables section and left blank here
+        replicates: # Number of replicates per treatment
+        duration: 126
+        startingMonth: # month during which the study started, all in lower case
+        litter: Eucalyptus
+        litterbag:
+          material: plastic
+          meshSize: 1.5
+          dimentions: # size of the full litter bag in cm
+            width:
+            length:
+            radius: # for round or cilindrical structures
+            height: # for 3-dimensional designs such as litter boxes in Austin2006NATURE
+          transmitance: # when reported, light transmitance of the mesh material as a percentage of full sunlight for each wavelength
+            total:
+            PAR:
+            UV:
+            UVA:
+            UVB:
+          position: under tree
+
+variables: # These describe the columns of your timeSeries.csv file
+        V1: # column 1
+          name: Time
+          units: weeks
+        V2:
+          name: PF1
+          units: mass remaining
+          varDesc: PF1 Eucalyptus hybrid decomposed at a plantation
+          site: Pointe-Noire
+          experimentalTreatment: # 'experimentalTreatment' here is a place holder for treatments with multiple levels. Replace this word by any of the listed variables in incubationInfo above (startingMonth, duration, litter, litterbag, meshSize) and type treatment value (level) after colon. Note that units should be specified in the incubationInfo field above.
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
+        V3:
+          name: HS2
+          units: mass remaining
+          varDesc: HS2 Eucalyptus hybrid decomposed at a plantation 
+          site: Pointe-Noire
+          experimentalTreatment: # 'experimentalTreatment' here is a place holder for treatments with multiple levels. Replace this word by any of the listed variables in incubationInfo above (startingMonth, duration, litter, litterbag, meshSize) and type treatment value (level) after colon. Note that units should be specified in the incubationInfo field above.
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR:
+             UV:
+             UVA:
+             UVB:
