@@ -12,6 +12,16 @@ timePoints <- function(database) { # creates a function applied to the whole dat
   return(data.frame(timePoints=unlist(timePoints)))
 }
 
+# to Create a data frame with the number of variables per entry
+variables <- function(dataframe){ # creates a function applied to a single dataframe
+    ncol(dataframe)
+  }
+
+Variables <- function(database) { # creates a function applied to the whole database
+  Variables=lapply(database, FUN=function(x){variables(x$timeSeries)})
+  return(data.frame(Variables=unlist(Variables)))
+}
+
 # timePoints=timePoints(database)
 
 timePoints2=na.omit(timePoints) # omits entries with NAs
