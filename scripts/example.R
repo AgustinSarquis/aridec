@@ -8,6 +8,7 @@ library(gridExtra)
 
 db=loadEntries()
 entry=db[["Berenstecher2020"]]
+points=data.frame(cbind(entry$timeSeries$Time, entry$timeSeries$PFST))
 
 # Fit a single pool model (Fig 4a)
 onepFit=function(timeSeries, initialCarbon){
@@ -42,14 +43,15 @@ M1=onepFit(entry$timeSeries[,c(1,2)], initialCarbon = 100) # use columns 1 (Time
 years1=M1$SoilRmodel@times
 Ct1=getC(M1$SoilRmodel)
 df1=as.data.frame(cbind(years1,Ct1))
-graph1=ggplot(df, aes(years1,Ct1)) +
- geom_line(color="blue", show.legend = FALSE) +
- ggtitle("a") + theme_bw() + ylim(0, 100) +
+graph1=ggplot(df1, aes(years1,Ct1)) +
+ geom_line(color="#66C2A5", show.legend = FALSE) +
+ ggtitle("(a)") + theme_bw() + ylim(0, 100) +
  theme(axis.title.x=element_blank(),
        axis.text.x=element_blank(),
        plot.title = element_text(face = 'bold')) +
   ylab("Organic matter remaining (%)") +
- theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank()) 
+ theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank()) +
+ geom_point(data=points, shape=1, aes(x=X1, y=X2))
 graph1
 
 # Two pool parallel model using a known value for parameter 3 (lignin % of 9.34; Fig 4b)
@@ -90,15 +92,16 @@ Ct2=as.vector(cbind(Ct2$V1,Ct2$V2,total2))
 df2=as.data.frame(cbind(years2,Ct2,pool=rep(c("fast","slow", "total"), each = 500)))
 i <- c(1, 2) 
 df2[ , i] <- apply(df2[ , i], 2, function(x) as.numeric(as.character(x)))
-graph2=ggplot(df2, aes(years,Ct, color=pool)) +
+graph2=ggplot(df2, aes(years2,Ct2, color=pool)) +
   geom_line() +
-  ggtitle("b") + theme_bw() + ylim(0, 100) +
+  ggtitle("(b)") + theme_bw() + ylim(0, 100) +
   theme(axis.title.x=element_blank(),
         axis.text.x=element_blank(),
         plot.title = element_text(face = 'bold')) +
   theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(), legend.position = "none") +
   ylab("Organic matter remaining (%)") +
-  scale_color_manual(values=c("yellow", "red", "blue"))
+  scale_color_manual(values=c("#8DA0CB","#FC8D62","#66C2A5"))#+
+  geom_point(data=points, shape=1, aes(x=X1, y=X2))
 graph2
 
 # Fit a two pool series model with fixed value of initial proportion of C in pool 2 (Fig 4c)
@@ -140,11 +143,12 @@ i <- c(1, 2)
 df3[ , i] <- apply(df3[ , i], 2, function(x) as.numeric(as.character(x)))
 graph3=ggplot(df3, aes(years3,Ct3, color=pool)) +
   geom_line(position = position_dodge(0.1)) +
-  ggtitle("c") + theme_bw() + 
+  ggtitle("(c)") + theme_bw() + 
   theme(plot.title = element_text(face = 'bold')) +
   theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(), legend.position = "none") +
   xlab("Years") + ylab("Organic matter remaining (%)") +
-  scale_color_manual(values=c("yellow","red", "blue"))
+  scale_color_manual(values=c("#8DA0CB","#FC8D62","#66C2A5"))#+
+  geom_point(data=points, shape=1, aes(x=X1, y=X2))
 graph3
 
 windows()

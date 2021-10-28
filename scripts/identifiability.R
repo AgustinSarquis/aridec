@@ -203,7 +203,8 @@ pairs(MCMC, nsample = 1000)
 library(ggplot2)
 library(cowplot)
 library(gridExtra)
-df=read.csv("~/coldf.csv")
+library(RColorBrewer)
+df=read.csv("C:/Users/musi/OneDrive - Facultad de Agronomía - Universidad de Buenos Aires/aridec manuscript/coldf.csv")
 summary(df)
 df$X1=as.factor(df$X1)
 df$X2=as.factor(df$X2)
@@ -214,17 +215,18 @@ df$X6=as.factor(df$X6)
 df$X7=as.factor(df$X7)
 df$N=as.factor(df$N)
 df$length=as.factor(df$length)
+df$length.1=as.factor(df$length.1)
 
-arcoiris=c("red", "orange", "yellow", "green", "blue", "purple")
-names(arcoiris)=c("3", "4", "5", "6", "7", ">8")
-arcoiris
+myColors <- brewer.pal(6,"Set2")
+names(myColors) <- levels(df$length.1)
+colScale <- scale_colour_manual(name = "length.1",values = myColors)
 
 gtwopp=ggplot(subset(df, model %in% "twopp"), aes(N, log.col, color=length.1))
 plot1=gtwopp+geom_point(position="jitter", size=3, show.legend = FALSE) +
  geom_abline(intercept= log10(20), slope=0) + ylim(0,NA) + theme_bw() +
   labs(y="log ??", x=("Number of parameters in combination")) +
   ggtitle("Two Pool Parallel Model") +  geom_vline(xintercept = c("2", "3"), linetype=2) +
-  scale_colour_manual(name= "length.1", values=arcoiris)
+  scale_colour_manual(name= "length.1", values=myColors)
 
 gtwops=ggplot(subset(df, model %in% "twops"), aes(N, log.col, color=length.1))
 plot2=gtwops+geom_point(position="jitter", size=3, show.legend = FALSE) +
@@ -232,39 +234,39 @@ plot2=gtwops+geom_point(position="jitter", size=3, show.legend = FALSE) +
   theme_bw() +
   labs(y="log ??", x=("Number of parameters in combination")) + 
   ggtitle("Two Pool Series Model") +  geom_vline(xintercept = c("2", "3", "4"), linetype=2) +
-  scale_colour_manual(name= "length.1", values=arcoiris)
+  scale_colour_manual(name= "length.1", values=myColors)
 
 gtwopf=ggplot(subset(df, model %in% "twopf"), aes(N, log.col, color=length.1))
 plot3=gtwopf+geom_point(position="jitter", size=3, show.legend = FALSE) +
   geom_abline(intercept= log10(20), slope=0) + ylim(0,8) + 
   theme_bw() + labs(y="log ??", x=("Number of parameters in combination")) +
   ggtitle("Two Pool Model with Feedback") +  geom_vline(xintercept = c("2", "3", "4","5"), linetype=2) +
-  scale_colour_manual(name= "length.1", values=arcoiris)
+  scale_colour_manual(name= "length.1", values=myColors)
 
 gthreepp=ggplot(subset(df, model %in% "threepp"), aes(N, log.col, color=length.1))
 plot4=gthreepp+geom_point(position="jitter", size=3, show.legend = FALSE) +
   geom_abline(intercept= log10(20), slope=0) +# ylim(0,10) + 
   theme_bw() +  labs(y="log ??", x=("Number of parameters in combination")) + 
   ggtitle("Three Pool Parallel Model") +  geom_vline(xintercept = c("2", "3", "4","5"), linetype=2) +
-  scale_colour_manual(name= "length.1", values=arcoiris)
+  scale_colour_manual(name= "length.1", values=myColors)
 
 gthreeps=ggplot(subset(df, model %in% "threeps"), aes(N, log.col, color=length.1))
 plot5=gthreeps+geom_point(position="jitter", size=3, show.legend = FALSE) +
   geom_abline(intercept= log10(20), slope=0) +# ylim(0,10) + 
   theme_bw() +  labs(y="log ??", x=("Number of parameters in combination")) + 
   ggtitle("Three Pool Series Model") +  geom_vline(xintercept = c("2", "3", "4","5","6","7"), linetype=2) +
-  scale_colour_manual(name= "length.1", values=arcoiris)
+  scale_colour_manual(name= "length.1", values=myColors)
 
 # I only made this plot to extract the legend
 plotL=gtwopp+geom_point(position="jitter", size=3) +
   geom_abline(intercept= log10(20), slope=0) + ylim(0,NA) + theme_bw() +
   labs(y="log ??", x=("Number of parameters in combination")) +
   ggtitle("Two Pool Parallel Model") +  geom_vline(xintercept = c("2", "3"), linetype=2) +
-  scale_colour_manual(name= "Number of time points", values=arcoiris) +
-  theme(legend.position="bottom", legend.text(font="bold")) 
+  scale_colour_manual(name= "Number of time points", values=myColors) +
+  theme(legend.position="bottom") 
 
 legend <- cowplot::get_legend(plotL)
-
+windows()
 grid.arrange(plot1, plot2, plot3, plot4, plot5, legend, ncol=2)
 
 ###################################################################################################################

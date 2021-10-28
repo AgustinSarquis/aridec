@@ -173,6 +173,17 @@ threepsFit=function(Ct, time, C0=100, inipars=c(0.5, 0.25, 0.25, 0.25, 0.25, 0.2
 
 ##########################################################################################################################################################################################
 
+onePoutput= function(Ct, entry) {lapply(Ct, onepFit, time=entry$timeSeries$Time)
+}
+entry=db[[171]]
+Ct=entry$timeSeries[-1]
+write.csv(onePoutput(Ct, entry),"~/k171.csv")
+
+# for entries with NAs
+entrynoNA=entry$timeSeries[,c(1,5)]
+tSnoNA=entrynoNA[complete.cases(entrynoNA),]
+write.csv(onepFit(time=tSnoNA$Time, Ct=tSnoNA[,2]),"~/k171DR.csv")
+
 onePoutput=lapply(Ct, onepFit, time=entry$timeSeries[,1])
 twoPPoutput=lapply(Ct, twoppFit, time=entry$timeSeries[,1])
 twoPSoutput=lapply(Ct, twopsFit, time=entry$timeSeries[,1])
