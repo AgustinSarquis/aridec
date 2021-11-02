@@ -176,8 +176,9 @@ threepsFit=function(Ct, time, C0=100, inipars=c(0.5, 0.25, 0.25, 0.25, 0.25, 0.2
 
 onePloop= function(Ct, time) {lapply(Ct, onepFit, time)}
 
-entry=db[[107]]
+entry=db[[184]]
 df=entry$timeSeries
+print(entry$variables$V1$units)
 
 df=mutate(df, Time=Time*7) # transform weeks to days
 df=mutate(df, Time=Time*30) # transform months to days
@@ -185,7 +186,7 @@ df=mutate(df, Time=Time*365) # transform years to days
 
 Ct=df[-1]
 time=df[,1]
-write.csv(onePloop(Ct, time),"~/k x days/k107.csv")
+write.csv(onePloop(Ct, time),"~/k x days/k182.csv")
 
 # for entries with NAs
 entrynoNA=entry$timeSeries[,c(1,5)]
