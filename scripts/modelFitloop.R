@@ -2,6 +2,7 @@
 library(SoilR)
 library(FME)
 library(aridec)
+library(dplyr)
 
 # load single entry
 db=loadEntries()
@@ -173,11 +174,16 @@ threepsFit=function(Ct, time, C0=100, inipars=c(0.5, 0.25, 0.25, 0.25, 0.25, 0.2
 
 ##########################################################################################################################################################################################
 
-onePoutput= function(Ct, entry) {lapply(Ct, onepFit, time=entry$timeSeries$Time)
-}
-entry=db[[171]]
-Ct=entry$timeSeries[-1]
-write.csv(onePoutput(Ct, entry),"~/k171.csv")
+onePloop= function(Ct, time) {lapply(Ct, onepFit, time)}
+
+entry=db[[3]]
+df=entry$timeSeries
+df=mutate(df, Time=Time*7) # transform weeks to days
+df=mutate(df, Time=Time*30) # transform months to days
+df=mutate(df, Time=Time*365) # transform years to days
+Ct=df[-1]
+time=df[,1]
+write.csv(onePloop(Ct, time),"~/k x days/k3.csv")
 
 # for entries with NAs
 entrynoNA=entry$timeSeries[,c(1,5)]
