@@ -32,8 +32,8 @@ onepFit=function(Ct, time, C0=100){
   Fit=modFit(f=costFunc, p=inipars, method="Marq", lower= -Inf, upper=0)
   bestMod=Func(pars=Fit$par)
   SoilRmodel=SoilR::OnepModel(t=tt,k=Fit$par[1], C0=C0, In=0)
-  AIC=2-2*log(Fit$ms)
-  return(list(k=Fit$par, TransitTime=1/(Fit$par), AIC=AIC))
+  #AIC=2-2*log(Fit$ms)
+  return(list(k=Fit$par))#, TransitTime=1/(Fit$par), AIC=AIC))
 }
 
 # Two pool parallel function
@@ -176,14 +176,16 @@ threepsFit=function(Ct, time, C0=100, inipars=c(0.5, 0.25, 0.25, 0.25, 0.25, 0.2
 
 onePloop= function(Ct, time) {lapply(Ct, onepFit, time)}
 
-entry=db[[3]]
+entry=db[[107]]
 df=entry$timeSeries
+
 df=mutate(df, Time=Time*7) # transform weeks to days
 df=mutate(df, Time=Time*30) # transform months to days
 df=mutate(df, Time=Time*365) # transform years to days
+
 Ct=df[-1]
 time=df[,1]
-write.csv(onePloop(Ct, time),"~/k x days/k3.csv")
+write.csv(onePloop(Ct, time),"~/k x days/k107.csv")
 
 # for entries with NAs
 entrynoNA=entry$timeSeries[,c(1,5)]
