@@ -59,7 +59,7 @@ experimentInfo:
 variables: # These describe the columns of your timeSeries.csv file
         V1: # column 1
           name: Time
-          units: # Time units used in accompanying file. Possible options are: days, weeks, months, years
+          units: months
         V2:
           name: control
           units: organic matter remaining
