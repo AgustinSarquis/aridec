@@ -38,12 +38,26 @@ onePloop= function(Ct, time) {lapply(Ct, onepFit, time)}
 # load a single entry
 entry=db[[184]]
 df=entry$timeSeries
-print(entry$variables$V1$units) # check time units (if units=days, leave unchanged; if not...)
 
-df=mutate(df, Time=Time*7) # transform weeks to days
-df=mutate(df, Time=Time*30) # transform months to days
-df=mutate(df, Time=Time*365) # transform years to days
+if (entry$variables$V1$units == "years") { 
+  Ct=df[-1] 
+  time=df[,1] 
+  ks=onePloop(Ct, time) 
+} else if (entry$variables$V1$units == "months") { 
+  df=mutate(df, Time=Time/12) 
+  Ct=df[-1] 
+  time=df[,1] 
+  ks=onePloop(Ct, time)
+} else if (entry$variables$V1$units == "weeks") { 
+  df=mutate(df, Time=Time/48) 
+  Ct=df[-1] 
+  time=df[,1] 
+  ks=onePloop(Ct, time)
+} else { 
+  df=mutate(df, Time=Time/365) 
+  Ct=df[-1] 
+  time=df[,1] 
+  ks=onePloop(Ct, time) 
+}
 
-Ct=df[-1] # create data frame with mass loss data
-time=df[,1] # create time vector
-write.csv(onePloop(Ct, time),"~/k182.csv") # save k values for the entry as .csv file
+write.csv(ks,"~/kxyears/k184.csv") # save k values for the entry as .csv file
