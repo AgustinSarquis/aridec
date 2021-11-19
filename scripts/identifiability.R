@@ -5,14 +5,15 @@ library(aridec)
 library(dplyr)
 
 # load single entry
-db=loadEntries()
-entry=db$Henry2008
+db=loadEntries("/Users/agustin/Documents/GitHub/aridec/data/")
+entry=db$Almagro2015
 Ct=entry$timeSeries[,c(1,2)] 
 colnames(Ct)=c("time", "Ct")
 
 Ct=mutate(Ct, time=time*7) # transform weeks to days
 Ct=mutate(Ct, time=time*30) # transform months to days
 Ct=mutate(Ct, time=time*365) # transform years to days
+Ct=mutate(Ct, time=time/12) # transfrom months to years
 
 # 2 pool parallel model 
 inipars=c(1, 0.5, 0.5)
@@ -204,7 +205,7 @@ library(ggplot2)
 library(cowplot)
 library(gridExtra)
 library(RColorBrewer)
-df=read.csv("C:/Users/musi/OneDrive - Facultad de Agronomía - Universidad de Buenos Aires/aridec manuscript/coldf.csv")
+df=read.csv("C:/Users/musi/OneDrive - Facultad de Agronom?a - Universidad de Buenos Aires/aridec manuscript/coldf.csv")
 summary(df)
 df$X1=as.factor(df$X1)
 df$X2=as.factor(df$X2)

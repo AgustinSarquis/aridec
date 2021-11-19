@@ -36,9 +36,20 @@ onepFit=function(Ct, time, C0=100){
 onePloop= function(Ct, time) {lapply(Ct, onepFit, time)}
 
 # load a single entry
-entry=db[[184]]
+entry=db[["Strojan1987"]]
 df=entry$timeSeries
 
+# prueba con strojan para ver que pasa cuando cambio la escala temporal
+df=mutate(df, Time=Time*7) # weeks to days
+df=mutate(df, Time=Time/4) # weeks to months
+df=mutate(df, Time=Time/48) # weeks to years
+
+ksyears=onePloop(Ct=df[-1], time = df[,1])
+
+plot=data.frame(timeScale=c("days", "weeks", "months", "years"), k=c(ksdays$Larrea$k, ksweeks$Larrea$k, ksmonths$Larrea$k, ksyears$Larrea$k))
+perday=c(plot[1,2], plot[2,2]/7, plot[3,2]/30, plot[4,2]/365)
+plot=cbind(plot, perday)
+############################################################### eliminar luego
 if (entry$variables$V1$units == "years") { 
   Ct=df[-1] 
   time=df[,1] 
