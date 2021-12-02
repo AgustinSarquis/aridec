@@ -33,10 +33,11 @@ onepFit=function(timeSeries, initialCarbon){
   print(paste("Best fit parameter: ",Fit$par))
   plot(complete, ylim=c(0,1.2*max(complete[,2])))
   lines(bestMod)
-  AIC=2-2*log(Fit$ms)
+  AIC=(2*length(Fit$par))+2*log(Fit$ms) # formula from SIdb
+  AICc=log(Fit$ms)+((n+length(Fit$par))/(n-length(Fit$par)-2)) # for small sample size
   print(paste("AIC = ",AIC))
   SoilRmodel=SoilR::OnepModel(t=tt,k=Fit$par[1], C0=initialCarbon, In=0)
-  return(list(FMEmodel=Fit, SoilRmodel=SoilRmodel, AIC=AIC))
+  return(list(FMEmodel=Fit, SoilRmodel=SoilRmodel, AIC=AIC, AICc=AICc))
 }
 
 M1=onepFit(entry$timeSeries[,c(1,2)], initialCarbon = 100) # use columns 1 (Time) and 2 (first variable)
@@ -55,7 +56,7 @@ graph1=ggplot(df1, aes(years1,Ct1)) +
 graph1
 
 # Two pool parallel model using a known value for parameter 3 (lignin % of 9.34; Fig 4b)
-twoppFit=function(timeSeries, initialCarbon, inipars=c(1, 0.5)){
+twoppFit=function(timeSeries, initialCarbon, inipars=c(1, 0.7)){
   complete=data.frame(time=timeSeries[complete.cases(timeSeries),1],Ct=timeSeries[complete.cases(timeSeries),2])
   n=nrow(complete)
   if(n < 5) stop("Time series is too short. No degrees of freedom")
@@ -77,10 +78,11 @@ twoppFit=function(timeSeries, initialCarbon, inipars=c(1, 0.5)){
   print(paste(c("k1=", "k2="),Fit$par))
   plot(complete, ylim=c(0,1.2*max(complete[,2])))
   lines(bestMod)
-  AIC=(2*length(Fit$par))-2*log(Fit$ms)
+  AIC=(2*length(Fit$par))+2*log(Fit$ms) # formula from SIdb
+  AICc=log(Fit$ms)+((n+length(Fit$par))/(n-length(Fit$par)-2)) # for small sample size
   print(paste("AIC = ",AIC))
   SoilRmodel=SoilR::TwopParallelModel(t=tt,ks=Fit$par[1:2], C0=initialCarbon*c(1-0.0934, 0.0934), In=0, gam=0)
-  return(list(FMEmodel=Fit, SoilRmodel=SoilRmodel, AIC=AIC))
+  return(list(FMEmodel=Fit, SoilRmodel=SoilRmodel, AIC=AIC, AICc=AICc))
 }
 
 
@@ -105,7 +107,7 @@ graph2=ggplot(df2, aes(years2,Ct2, color=pool)) +
 graph2
 
 # Fit a two pool series model with fixed value of initial proportion of C in pool 2 (Fig 4c)
-twopsFit=function(timeSeries, initialCarbon, inipars=c(1, 0.5, 0.5)){
+twopsFit=function(timeSeries, initialCarbon, inipars=c(1, 0.6, 0.6)){
   complete=data.frame(time=timeSeries[complete.cases(timeSeries),1],Ct=timeSeries[complete.cases(timeSeries),2])
   n=nrow(complete)
   if(n < 5) stop("Time series is too short. No degrees of freedom")
@@ -127,10 +129,11 @@ twopsFit=function(timeSeries, initialCarbon, inipars=c(1, 0.5, 0.5)){
   print(paste(c("k1=", "k2=", "a21="),Fit$par))
   plot(complete, ylim=c(0,1.2*max(complete[,2])))
   lines(bestMod)
-  AIC=(2*length(Fit$par))-2*log(Fit$ms)
+  AIC=(2*length(Fit$par))+2*log(Fit$ms) # formula from SIdb
+  AICc=log(Fit$ms)+((n+length(Fit$par))/(n-length(Fit$par)-2)) # for small sample size
   print(paste("AIC = ",AIC))
   SoilRmodel=SoilR::TwopSeriesModel(t=tt,ks=Fit$par[1:2], a21=Fit$par[1]*Fit$par[3], C0=initialCarbon*c(1-0.0934, 0.0934), In=0)
-  return(list(FMEmodel=Fit, SoilRmodel=SoilRmodel, AIC=AIC))
+  return(list(FMEmodel=Fit, SoilRmodel=SoilRmodel, AIC=AIC, AICc=AICc))
 }
 
 M3=twopsFit(entry$timeSeries[,c(1,2)], initialCarbon = 100)
@@ -153,3 +156,13 @@ graph3
 
 windows()
 grid.arrange(graph1, graph2, graph3, ncol=1)
+
+# to get C release dynamics from the models
+berens1=OnepModel(t=seq(from=0, to=tail(points[,1],1), length.out = 500), k=-0.2, C0=100, In=0)
+getC(berens1)
+
+berens2=TwopParallelModel(t=seq(from=0, to=tail(points[,1],1), length.out = 500), ks=c(0.24, 1.47e-11), C0=100*c(1-0.0934, 0.0934), In=0, gam=0)
+getC(berens2)
+
+berens3=TwopSeriesModel(t=seq(from=0, to=tail(points[,1],1), length.out = 500), ks=c(3.649, 0.244), a21=3.649*1, C0=100*c(1-0.0934, 0.0934), In=0)
+getC(berens3)

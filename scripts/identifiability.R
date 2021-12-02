@@ -5,14 +5,14 @@ library(aridec)
 library(dplyr)
 
 # load single entry
-db=loadEntries("/Users/agustin/Documents/GitHub/aridec/data/")
-entry=db$Almagro2015
+db=loadEntries("~/aridec/data/")
+entry=db$Henry2008
 Ct=entry$timeSeries[,c(1,2)] 
 colnames(Ct)=c("time", "Ct")
 
-Ct=mutate(Ct, time=time*7) # transform weeks to days
-Ct=mutate(Ct, time=time*30) # transform months to days
-Ct=mutate(Ct, time=time*365) # transform years to days
+Ct=mutate(Ct, time=time/30) # transform days to months
+Ct=mutate(Ct, time=time*12) # transform years to months
+Ct=mutate(Ct, time=time/4) # transform weeks to months
 Ct=mutate(Ct, time=time/12) # transfrom months to years
 
 # 2 pool parallel model 

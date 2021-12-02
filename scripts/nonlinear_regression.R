@@ -1,9 +1,17 @@
 library(aridec)
 library(dplyr)
 
-db=loadEntries("/Users/agustin/Documents/GitHub/aridec/data/")
+db=loadEntries("~/aridec/data/")
 
-entry=db[[70]]
+# funcion para calcular k para una serie de tiempo
+nonlineark=function(Mt, t){
+  nls=nls(Mt ~ 100*exp(-k*t), start = list(k = 0.1), na.action=na.omit)
+  return(coef=summary(nls)$coefficients)
+}
+
+kxentry= function(Mt, t) {sapply(Mt, nonlineark, t)}
+
+entry=db[[184]]
 df=entry$timeSeries
 Mt=df[-1]
 if (entry$variables$V1$units == "years") { # transform all time units to months
@@ -19,15 +27,9 @@ if (entry$variables$V1$units == "years") { # transform all time units to months
   t=df[,1]
   }
 
-# funcion para calcular k para una serie de tiempo
-nonlineark=function(Mt, t){
-    nls=nls(Mt ~ 100*exp(-k*t), start = list(k = 0.1), na.action=na.omit)
-    return(coef=summary(nls)$coefficients)
-    }
+entry$citationKey
 
-kxentry= function(Mt, t) {sapply(Mt, nonlineark, t)}
-
-Hewins2017k=as.data.frame(kxentry(Mt, t))
-Hewins2017k=as.data.frame(t(Hewins2017k))
-colnames(Hewins2017k)= c("k", "SE", "t value", "p value")
-write.csv(Hewins2017k,"~/Documents/nonlineark/Hewins2017.csv")
+Zheng2010k=as.data.frame(kxentry(Mt, t))
+Zheng2010k=as.data.frame(t(Zheng2010k))
+colnames(Zheng2010k)= c("k", "SE", "t value", "p value")
+write.csv(Zheng2010k,"~/nonlineark/Zheng2010.csv")
