@@ -35,7 +35,7 @@ experimentInfo:
         incDesc: 3 replicates x 6 collection dates for one experiment, and 3 replicates x 10 collection dates x 5 positions for the other # Short description of the incubation setup and main treatments
         # These fields should all be one dimensional arrays. Values for experimental variables with multiple treatment levels should be entered in the variables section and left blank here
         replicates: 3 # Number of replicates per treatment
-        duration: # length of incubation in days
+        duration: 653
         startingMonth: october # month during which the study started, all in lower case
         litter: Populus deltoides # plant species used as litter material for the experiment. All details related to the species must be specified in the initConditions.csv file
         litterbag:

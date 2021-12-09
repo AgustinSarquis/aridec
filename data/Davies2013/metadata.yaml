@@ -77,7 +77,7 @@ experimentInfo:
         incDesc: 4 species x 4 sites x 2 seasons x 6 replicates x 3 or 4 harvests (depeding on the season)
         # These fields should all be one dimensional arrays. Values for experimental variables with multiple treatment levels should be entered in the variables section and left blank here
         replicates: 6 # Number of replicates per treatment
-        duration:
+        duration: 120
         startingMonth: # month during which the study started, all in lower case
         litter: # plant species used as litter material for the experiment. All details related to the species must be specified in the initConditions.csv file
         litterbag:
