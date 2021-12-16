@@ -1,6 +1,6 @@
 species, type, N-fixer, material, amount, carbon, nitrogen, C:N, phosphorus, potassium, sodium, magnesium, manganese, copper, zinc, lead, calcium, sulfur, iron, lignin, cellulose, hemicellulose, cell solubles, SLA
 Larrea tridentata1, evergreen, yes, green leaves, 3, 53.6, 2.7, 19
-Larrea tridentata2, evergreen, yes, leaves, 3, 54.4, 1.5, 36
+Larrea tridentata2, evergreen, yes, leaves, 3, 54.4, 1.5, 36,,,,,,,,,,,,6.37
 Sporobolus flexuosus1, graminoid, no, green leaves, 3, 47.7, 0.9, 53.1
 Sporobolus flexuosus2, graminoid, no, leaves, 3, 48.5, 0.6, 90
 Yucca elata1, evergreen, no, green leaves, 3, 49.9, 1.7, 28.9

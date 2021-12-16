@@ -1,9 +1,9 @@
 species, type, N-fixer, material, amount, carbon, nitrogen, C:N, phosphorus, potassium, sodium, magnesium, manganese, copper, zinc, lead, calcium, sulfur, iron, lignin, cellulose, hemicellulose, cell solubles, SLA
-Triticum aestivum1, graminoid, no, leaves, ,, 1.25,, 0.15, 2.01,, 0.29,,, 0.00003,,,, 0.0012
-Triticum aestivum2, graminoid, no, leaves, ,, 1.65,, 0.13, 2.08,, 0.31,,, 0.000036,,,, 0.0013
-Triticum aestivum3, graminoid, no, leaves, ,, 1.83,, 0.13, 2.14,, 0.32,,, 0.000039,,,, 0.0013
-Triticum aestivum4, graminoid, no, leaves,, , 2.31,, 0.12, 2.16,, 0.35,,, 0.000045,,,, 0.0015
-Triticum aestivum5, graminoid, no, stems,,, 0.82,, 0.08, 3.57,, 0.08,,, 0.0000125,,,, 0.00025
-Triticum aestivum6, graminoid, no, stems,,, 0.98,, 0.06, 3.71,, 0.09,,, 0.000012,,,, 0.00025
-Triticum aestivum7, graminoid, no, stems,,, 1.04,, 0.05, 3.89,, 0.09,,, 0.000018,,,, 0.00019
-Triticum aestivum8, graminoid, no, stems,,, 1.28,, 0.05, 4.01,, 0.11,,, 0.000012,,,, 0.00019
+Triticum aestivum1, graminoid, no, leaves, ,, 1.25,, 0.15, 2.01,, 0.29,,, 0.00003,,,, 0.0012, 11.105
+Triticum aestivum2, graminoid, no, leaves, ,, 1.65,, 0.13, 2.08,, 0.31,,, 0.000036,,,, 0.0013, 11.105
+Triticum aestivum3, graminoid, no, leaves, ,, 1.83,, 0.13, 2.14,, 0.32,,, 0.000039,,,, 0.0013, 11.105
+Triticum aestivum4, graminoid, no, leaves,, , 2.31,, 0.12, 2.16,, 0.35,,, 0.000045,,,, 0.0015, 11.105
+Triticum aestivum5, graminoid, no, stems,,, 0.82,, 0.08, 3.57,, 0.08,,, 0.0000125,,,, 0.00025, 6.9
+Triticum aestivum6, graminoid, no, stems,,, 0.98,, 0.06, 3.71,, 0.09,,, 0.000012,,,, 0.00025, 6.9
+Triticum aestivum7, graminoid, no, stems,,, 1.04,, 0.05, 3.89,, 0.09,,, 0.000018,,,, 0.00019, 6.9
+Triticum aestivum8, graminoid, no, stems,,, 1.28,, 0.05, 4.01,, 0.11,,, 0.000012,,,, 0.00019, 6.9

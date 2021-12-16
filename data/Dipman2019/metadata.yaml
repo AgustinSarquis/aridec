@@ -4,7 +4,7 @@ entryAuthor: Agustín Sarquis # First and last name of the person who entered th
 entryCreationDate: 2020-02-17 # Date when the data was entered in this file. Format: YYYY-MM-DD
 contactName: Agustín Sarquis # First and last name of contact person (may be the principal investigator supervising the entryAuthor)
 contactEmail: agusarquis@agro.uba.ar # Email of the contact person
-entryNote: # Any notes or comments related to this entry.
+entryNote: lignin from Lin2014
 study: They examined the importance of litter quality, UV radiation and macroinvertebrate access in driving early decomposition in native sage scrub and in adjacent non-native grassland
 
 siteInfo:
@@ -312,7 +312,7 @@ variables: # These describe the columns of your timeSeries.csv file
           litter: Bromus diandrus
           compTreat: macroinvertebrate inclusion
           filter: # for photodegradation experiments only
-           threshold: 
+           threshold:
            transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
              total:
              PAR:

@@ -1,10 +1,10 @@
 species, type, N-fixer, material, amount, carbon, nitrogen, C:N, phosphorus, potassium, sodium, magnesium, manganese, copper, zinc, lead, calcium, sulfur, iron, lignin, cellulose, hemicellulose, cell solubles, SLA
 Elaeagnus angustifolia1, deciduous, yes, prematurely senesced leaves, 10, 41.8, 1.84, 23, , , , , , , , , , , , , , , , 10.1
 Elaeagnus angustifolia2, deciduous, yes, green leaves, 10, 43.1, 2.29, 19, , , , , , , , , , , , , , , , 10.1
-Elaeagnus angustifolia3, deciduous, yes, fine roots, 10, 43.8, 2.53, 17, , , , , , , , , , , , , , , , ,
+Elaeagnus angustifolia3, deciduous, yes, fine roots, 10, 43.8, 2.53, 17, , , , , , , , , , , , , , , ,
 Populus euphratica1, deciduous, no, prematurely senesced leaves, 10, 41.4, 1.32, 31, , , , , , , , , , , , , , , , 7.7
 Populus euphratica2, deciduous, no, green leaves, 10, 42.2, 1.41, 30, , , , , , , , , , , , , , , , 7.7
-Populus euphratica3, deciduous, no, fine roots, 10, 40.4, 0.73, 55, , , , , , , , , , , , , , , ,
+Populus euphratica3, deciduous, no, fine roots, 10, 40.4, 0.73, 55, , , , , , , , , , , , , , ,
 Ulmus pumilia1, deciduous, no, prematurely senesced leaves, 10, 38.4, 0.80, 48, , , , , , , , , , , , , , , , 10.4
 Ulmus pumilia2, deciduous, no, green leaves, 10, 41.0, 1.18, 35, , , , , , , , , , , , , , , , 10.4
-Ulmus pumilia3, deciduous, no, fine roots, 10, 41.0, 0.8, 51, , , , , , , , , , , , , , , , ,
+Ulmus pumilia3, deciduous, no, fine roots, 10, 41.0, 0.8, 51, , , , , , , , , , , , , , , , 

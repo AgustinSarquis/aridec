@@ -4,7 +4,7 @@ entryAuthor: Agustin Sarquis # First and last name of the person who entered the
 entryCreationDate: 2019-01-17 # Date when the data was entered in this file. Format: YYYY-MM-DD
 contactName: Agustin Sarquis # First and last name of contact person (may be the principal investigator supervising the entryAuthor)
 contactEmail: agusarquis@agro.uba.ar  # Email of the contact person
-entryNote: autumn and winter are the rainy seasons
+entryNote: autumn and winter are the rainy seasons; lignin averaged from Berenstecher2020 and Araujo2015
 study: litter decomposition under four levels of precipitation input, control and three levels (30, 55 and 80%) of precipitation interception
 
 siteInfo:

@@ -4,7 +4,7 @@ entryAuthor: Ignacio Siebenhart # First and last name of the person who entered 
 entryCreationDate: 2020-02-10 # Date when the data was entered in this file. Format: YYYY-MM-DD
 contactName: Agustín Sarquis # First and last name of contact person (may be the principal investigator supervising the entryAuthor)
 contactEmail: agusarquis@agro.uba.ar # Email of the contact person
-entryNote: coordinates were wrong on the paper
+entryNote: coordinates were wrong on the paper. lignin from Gliksman2018a
 study: impact of canopy cover and seasonality on litter decay in Mediterranean pine forests that differ on precipitation
 
 siteInfo:

@@ -4,7 +4,7 @@ entryAuthor: Agustín Sarquis # First and last name of the person who entered th
 entryCreationDate: 2019-11-14 # Date when the data was entered in this file. Format: YYYY-MM-DD
 contactName: Agustín Sarquis # First and last name of contact person (may be the principal investigator supervising the entryAuthor)
 contactEmail: agusarquis@agro.uba.ar # Email of the contact person
-entryNote: rainy seasons are summer and winter
+entryNote: lignin from Day2018; rainy seasons are summer and winter
 study: litterbags deployed under mesquite canopies and in intercanopy zones
 
 siteInfo:
@@ -258,7 +258,7 @@ variables: # These describe the columns of your timeSeries.csv file
           varDesc: Eragrostis leaf litter incubated on bare ground
           site: Santa Rita
           litter: Eragrostis lehmanniana
-          position: bare soil 
+          position: bare soil
           compTreat: # combination of complementary treatments not included in the rest of the variables
           filter: # for photodegradation experiments only
            threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"

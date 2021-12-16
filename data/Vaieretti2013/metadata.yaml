@@ -4,7 +4,7 @@ entryAuthor: Agustin Sarquis # First and last name of the person who entered the
 entryCreationDate: 2019-01-09 # Date when the data was entered in this file. Format: YYYY-MM-DD
 contactName: Agustin Sarquis # First and last name of contact person (may be the principal investigator supervising the entryAuthor)
 contactEmail: agusarquis@agro.uba.ar # Email of the contact person
-entryNote: rainy seasons are spring and summer. Soils are molisols (classification system unspecified)
+entryNote: rainy seasons are spring and summer. Soils are molisols (classification system unspecified); lignin from Poca2014
 study: three experiments, litter mixtures from three patch types decomposed in a common garden; same mixtures incubated in situ; and litter from two species incubated in the three vegetation patches
 
 siteInfo:

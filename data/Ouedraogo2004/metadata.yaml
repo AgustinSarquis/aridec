@@ -4,7 +4,7 @@ entryAuthor: Agustin Sarquis # First and last name of the person who entered the
 entryCreationDate: 2021-04-12 # Date when the data was entered in this file. Format: YYYY-MM-DD
 contactName: Agustin Sarquis # First and last name of contact person (may be the principal investigator supervising the entryAuthor)
 contactEmail: agusarquis@agro.uba.ar # Email of the contact person
-entryNote: coordinates from Google Earth (wrong coordinates in the paper). Also altitude from Google Earth. They also provide data on dung decomposition
+entryNote: changed lignin content because it was suspiciously low; coordinates from Google Earth (wrong coordinates in the paper). Also altitude from Google Earth. They also provide data on dung decomposition
 study: evaluation of the role of fauna in decomposition of two species on the surface and buried with the use of pesticides
 
 siteInfo:
