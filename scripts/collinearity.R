@@ -10,8 +10,8 @@ library(dplyr)
 
 # load database and select a single entry
 db=loadEntries("~/aridec/data/") # specify aridec route in your computer
-entry=db$Henry2008 # replace Henry2008 with the specific CitationKey
-Ct=entry$timeSeries[,c(1,2)] # select variables Time and V2 
+entry=db$Abera2014 # replace Henry2008 with the specific CitationKey
+Ct=entry$timeSeries[,c(1,17)] # select variables Time and V2 (or any variable of your interest)
 colnames(Ct)=c("time", "Ct")
 
 # we recommend working with monthly time units
@@ -45,7 +45,7 @@ pairs(Sfun)
 # Get collinearity indexes for each combination of parameters
 # collinearity values under 20 are considered acceptable
 # you can fit model structures with this data set if collin<20
-collin(Sfun) 
+write.csv(collin(Sfun), '~/Documents/collinearity/Abera2014_2pp.csv') #save it in your computer as .csv file
 
 # What is the optimal set of parameters with the best fit?
 Fit=modFit(f=costFunc, p=inipars, method="Marq", lower=rep(0,3), upper=c(Inf, Inf, 1))
@@ -58,7 +58,7 @@ plot(MCMC, Full = TRUE)
 pairs(MCMC, nsample = 1000)
 
 ###########################################################################################
-# Can I fi a 2 pool series model?
+# Can I fit a 2 pool series model?
 inipars=c(0.5, 0.25, 0.25, 0.15)
 tt=seq(from=0, to=tail(Ct[,1],1), length.out = 500)
 Func=function(pars){
@@ -81,7 +81,7 @@ pairs(Sfun)
 # Get collinearity indexes for each combination of parameters
 # collinearity values under 20 are considered acceptable
 # you can fit model structures with this data set if collin<20
-collin(Sfun) 
+write.csv(collin(Sfun), '~/Documents/collinearity/Abera2014_2ps.csv')
 
 # which set of parameters has the best fit?
 Fit=modFit(f=costFunc, p=inipars, method="Marq", lower=rep(0,4), upper=c(Inf, Inf, 1,1))
