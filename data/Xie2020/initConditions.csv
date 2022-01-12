@@ -1,4 +1,4 @@
 species,type,N-fixer,material,amount,carbon,nitrogen,C:N,phosphorus,potassium,sodium,magnesium,manganese,copper,zinc,lead,calcium,sulfur,iron,lignin,cellulose,hemicellulose,cell solubles,SLA
-Zea mays,graminoid,no,aboveground parts,50,47.57,1.78,26.72,0.347,2.12
+Zea mays,graminoid,no,aboveground parts,50,47.57,1.78,26.72,0.347,2.12,,,,,,,,,, 5.3
 Populus gansuensis,evergreen,no,leaves,50,44.8,1.44,31.17,0.213,1.54
 mixture,,no,aboveground parts,50,

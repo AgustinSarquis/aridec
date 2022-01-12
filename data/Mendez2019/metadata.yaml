@@ -4,7 +4,7 @@ entryAuthor: Agustín Sarquis # First and last name of the person who entered th
 entryCreationDate: 2019-11-05 # Date when the data was entered in this file. Format: YYYY-MM-DD
 contactName: Agustín Sarquis # First and last name of contact person (may be the principal investigator supervising the entryAuthor)
 contactEmail: agusarquis@agro.uba.ar # Email of the contact person
-entryNote: soils are Mollisols but the classification system is not informed
+entryNote: soils are Mollisols but the classification system is not informed; lignin averaged from Araujo2015 and Berenstecher2020
 study: effect of solar radiation on P. nigra litter decomposition
 
 siteInfo:

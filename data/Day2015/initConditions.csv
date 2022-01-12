@@ -1,4 +1,4 @@
 species, type, N-fixer, material, amount, carbon, nitrogen, C:N, phosphorus, potassium, sodium, magnesium, manganese, copper, zinc, lead, calcium, sulfur, iron, lignin, cellulose, hemicellulose, cell solubles, SLA
 Cynodon dactylon, graminoid, no, aboveground parts, 2,
-Larrea tridentata1, evergreen, yes, leaves, 6,
+Larrea tridentata1, evergreen, yes, leaves, 6,,,,,,,,,,,,,,, 6.37
 Larrea tridentata2, evergreen, yes, shoots, 4,

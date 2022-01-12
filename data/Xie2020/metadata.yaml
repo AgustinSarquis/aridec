@@ -4,7 +4,7 @@ entryAuthor: Ignacio Siebenhart # First and last name of the person who entered 
 entryCreationDate: 2021-04-28 # Date when the data was entered in this file. Format: YYYY-MM-DD
 contactName: Agustin Sarquis # First and last name of contact person (may be the principal investigator supervising the entryAuthor)
 contactEmail: agusarquis@agro.uba.ar # Email of the contact person
-entryNote: Irrigation # Any notes or comments related to this entry.
+entryNote: Irrigation; lignin from Hu2018
 study: Evaluate how decomposition rates of different litter types (Maize and Poplar) respond to changes in water condition # Overall study description
 
 siteInfo:

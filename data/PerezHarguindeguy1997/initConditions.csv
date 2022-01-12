@@ -2,26 +2,26 @@ species, type, N-fixer, material, amount, carbon, nitrogen, C:N, phosphorus, pot
 Deinacanthon urbanianum, forb, no, leaves, 1
 Tillandsia duratii, forb, no, leaves, 1, 49, 0.52, 94.5, 0.03
 Tillandsia capillaris, forb, no, leaves, 1, 44.1, 1.23, 35.8, 0.05
-Lachemilla pinnata, forb, no, leaves, 1, 44.4, 2.08, 21.3, 0.27
+Lachemilla pinnata, forb, no, leaves, 1, 44.4, 2.08, 21.3, 0.27,,,,,,,,,,, 9.9
 Alternanthera pungens, forb, no, leaves, 1, 39.1, 3.9, 10, 0.4
 Carduus thoermeri, forb, no, leaves, 1, 41.6, 3.3, 12.6, 0.17
-Eryngium agavifolium, forb, no, leaves, 1, 43.7, 1.58, 27.6, 0.13
+Eryngium agavifolium, forb, no, leaves, 1, 43.7, 1.58, 27.6, 0.13,,,,,,,,,,, 9.2
 Gentianella parviflora, forb, no, leaves, 1,, 1.97,, 0.18
 Gomphrena pulchella, forb, no, leaves, 1, 40, 2.65, 15.1, 0.37
 Pithecoctenium cynanchoides, forb, no, leaves, 1, 45.8, 3.46, 13.2, 0.33
 Aristida achalensis, graminoid, no, leaves, 1, 47.9, 1.01, 47.4, 0.08
 Bouteloua aristidoides, graminoid, no, leaves, 1, 46.8, 1.59, 29.4, 0.16
-Carex fuscula, graminoid, no, leaves, 1, 47.4, 2.11, 22.5, 0.15
+Carex fuscula, graminoid, no, leaves, 1, 47.4, 2.11, 22.5, 0.15,,,,,,,,,,,9.8
 Cortaderia speciosa, graminoid, no, leaves, 1, 47.5, 1.12, 42.4, 0.16
 Festuca tucumanica, graminoid, no, leaves, 1, 47.2, 1.44, 32.8, 0.11
-Juncus uruguensis, graminoid, no, leaves, 1, 47.6, 1.49, 31.9, 0.13
+Juncus uruguensis, graminoid, no, leaves, 1, 47.6, 1.49, 31.9, 0.13,,,,,,,,,,, 6.7
 Monanthochloe littoralis, graminoid, no, leaves, 1, 44, 1.19, 36.9, 0.06
-Muhlenbergia peruviana, graminoid, no, leaves, 1, 44.3, 1.76, 25.2, 0.12
+Muhlenbergia peruviana, graminoid, no, leaves, 1, 44.3, 1.76, 25.2, 0.12,,,,,,,,,,, 4.7
 Neobouteloua lophostachya, graminoid, no, leaves, 1, 45.4, 1.37, 33.2, 0.1
 Nothoscordum inodorum, graminoid, no, leaves, 1, 42.2, 4.1, 10.3, 0.32
 Pappophorum caespitosum, graminoid, no, leaves, 1, 46.3, 2.07, 22.4, 0.19
 Paspalum quadrifarium, graminoid, no, leaves, 1, 47.3, 1, 48, 0.09
-Poa stuckertii, graminoid, no, leaves, 1, 47.9, 1.14, 42, 0.14
+Poa stuckertii, graminoid, no, leaves, 1, 47.9, 1.14, 42, 0.14,,,,,,,,,,, 7.7
 Schizachyrium microstachyum, graminoid, no, leaves, 1, 46.2, 1.22, 38, 0.13
 Setaria pampeana, graminoid, no, leaves, 1, , 2.47, , 0.28
 Sorghum halepense, graminoid, no, leaves, 1, 45.6, 2.22, 20.5, 0.2

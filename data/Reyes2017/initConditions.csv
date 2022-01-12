@@ -1,5 +1,5 @@
 species, type, N-fixer, material, amount, carbon, nitrogen, C:N, phosphorus, potassium, sodium, magnesium, manganese, copper, zinc, lead, calcium, sulfur, iron, lignin, cellulose, hemicellulose, cell solubles, SLA
-Poa ligularis, graminoid, no, roots, 0.75
+Poa ligularis, graminoid, no, roots, 0.75,,,,,,,,,,,,,,, 13.5
 Pappostipa speciosa, graminoid, no, roots, 0.75
 Pappostipa humilis, graminoid, no, roots, 0.75
 Bromus pictus, graminoid, no, roots, 0.75
