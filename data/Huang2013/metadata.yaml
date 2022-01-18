@@ -137,7 +137,7 @@ variables: # These describe the columns of your timeSeries.csv file
           units: organic matter remaining
           varDesc: Wheat straw  with a UV-block treatment at the least dry site
           site: BSW
-          litter:
+          litter: Tritricum aestivum
           position: under frame
           compTreat: # combination of complementary treatments not included in the rest of the variables
           filter: # for photodegradation experiments only
@@ -233,7 +233,7 @@ variables: # These describe the columns of your timeSeries.csv file
           units: organic matter remaining
           varDesc: Wheat straw with a UV-block treatment at the intermediate dry site
           site: SF
-          litter:
+          litter: Tritricum aestivum
           position: under frame
           compTreat: # combination of complementary treatments not included in the rest of the variables
           filter: # for photodegradation experiments only
@@ -261,6 +261,22 @@ variables: # These describe the columns of your timeSeries.csv file
              UVA:
              UVB:
         V13:
+          name: PSB
+          units: organic matter remaining
+          varDesc: P. australis litter with a UV-block treatment at the intermediate dry site
+          site: SF
+          litter: Phragmites australis
+          position: under frame
+          compTreat: # combination of complementary treatments not included in the rest of the variables
+          filter: # for photodegradation experiments only
+           threshold: 400
+           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
+             total:
+             PAR: 85
+             UV: 10
+             UVA:
+             UVB:
+        V14:
           name: HTT
           units: organic matter remaining
           varDesc: H. ammodendron litter with a natural radiation treatment at the driest site
@@ -276,7 +292,7 @@ variables: # These describe the columns of your timeSeries.csv file
              UV:
              UVA:
              UVB:
-        V14:
+        V15:
           name: HTB
           units: organic matter remaining
           varDesc: H. ammodendron litter with a UV-block treatment at the driest site
@@ -292,7 +308,7 @@ variables: # These describe the columns of your timeSeries.csv file
              UV: 10
              UVA:
              UVB:
-        V15:
+        V16:
           name: TTT
           units: organic matter remaining
           varDesc: Wheat straw with a natural radiation treatment at the driest site
@@ -308,7 +324,7 @@ variables: # These describe the columns of your timeSeries.csv file
              UV:
              UVA:
              UVB:
-        V16:
+        V17:
           name: TTB
           units: organic matter remaining
           varDesc: Wheat straw with a UV-block treatment at the driest site
@@ -324,7 +340,7 @@ variables: # These describe the columns of your timeSeries.csv file
              UV: 10
              UVA:
              UVB:
-        V17:
+        V18:
           name: PTT
           units: organic matter remaining
           varDesc: P. australis litter with a natural radiation treatment at the driest site
@@ -340,7 +356,7 @@ variables: # These describe the columns of your timeSeries.csv file
              UV:
              UVA:
              UVB:
-        V18:
+        V19:
           name: PTB
           units: organic matter remaining
           varDesc: P. australis litter with a UV-block treatment at the driest site
@@ -350,22 +366,6 @@ variables: # These describe the columns of your timeSeries.csv file
           compTreat: # combination of complementary treatments not included in the rest of the variables
           filter: # for photodegradation experiments only
            threshold: 400
-           transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
-             total:
-             PAR: 85
-             UV: 10
-             UVA:
-             UVB:
-        V19:
-          name: HTT,HTB,TTT,TTB,PTT,PTB
-          units: organic matter remaining
-          varDesc:
-          site: Turpan
-          litter:
-          position: under frame / bare soil
-          compTreat: # combination of complementary treatments not included in the rest of the variables
-          filter: # for photodegradation experiments only
-           threshold: 400 (UV)
            transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
              total:
              PAR: 85
