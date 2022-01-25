@@ -12,7 +12,7 @@ entry=db[["Day2018"]]
 points=data.frame(cbind(entry$timeSeries$Time, entry$timeSeries$Sc_fs))
 points=mutate(points, X1=X1/30)
 
-# Fit a single pool model (Fig 7a)
+# Fit a single pool model (Fig 4a)
 onepFit=function(timeSeries, initialCarbon){
   complete=data.frame(time=timeSeries[complete.cases(timeSeries),1],Ct=timeSeries[complete.cases(timeSeries),2])
   n=nrow(complete)
@@ -35,8 +35,8 @@ onepFit=function(timeSeries, initialCarbon){
   print(paste("Best fit parameter: ",Fit$par))
   plot(complete, ylim=c(0,1.2*max(complete[,2])))
   lines(bestMod)
-  AIC=(2*(length(Fit$par)+1))+2*log(Fit$ms) 
-  AICc=log(Fit$ms)+((n+length(Fit$par)+1)/(n-length(Fit$par)-3)) # for small sample size
+  AIC=(2*(length(Fit$par)+1))+2*log(Fit$ms) # formula from SIdb
+  AICc=log(Fit$ms)+((n+length(Fit$par)+1)/(n-length(Fit$par)-2)) # for small sample size
   print(paste("AICc = ",AICc))
   SoilRmodel=SoilR::OnepModel(t=tt,k=Fit$par[1], C0=initialCarbon, In=0)
   return(list(FMEmodel=Fit, SoilRmodel=SoilRmodel, AIC=AIC, AICc=AICc))
@@ -56,7 +56,7 @@ graph1=ggplot(df1, aes(months1,Ct1)) +
   geom_point(data=points, shape=1, aes(x=X1, y=X2))
 graph1
 
-# Two pool parallel model using a known value for parameter 3 (lignin % of 9; Fig 7b)
+# Two pool parallel model using a known value for parameter 3 (lignin % of 9.34; Fig 4b)
 twoppFit=function(timeSeries, initialCarbon, inipars=c(1, 0.7)){
   complete=data.frame(time=timeSeries[complete.cases(timeSeries),1],Ct=timeSeries[complete.cases(timeSeries),2])
   n=nrow(complete)
@@ -79,8 +79,8 @@ twoppFit=function(timeSeries, initialCarbon, inipars=c(1, 0.7)){
   print(paste(c("k1=", "k2="),Fit$par))
   plot(complete, ylim=c(0,1.2*max(complete[,2])))
   lines(bestMod)
-  AIC=(2*(length(Fit$par)+1))+2*log(Fit$ms) 
-  AICc=log(Fit$ms)+((n+length(Fit$par)+1)/(n-length(Fit$par)-3)) # for small sample size
+  AIC=(2*(length(Fit$par)+1))+2*log(Fit$ms) # formula from SIdb
+  AICc=log(Fit$ms)+((n+length(Fit$par)+1)/(n-length(Fit$par)-2)) # for small sample size
   print(paste("AICc = ",AICc))
   SoilRmodel=SoilR::TwopParallelModel(t=tt,ks=Fit$par[1:2], C0=initialCarbon*c(1-0.09, 0.09), In=0, gam=0)
   return(list(FMEmodel=Fit, SoilRmodel=SoilRmodel, AIC=AIC, AICc=AICc))
@@ -107,7 +107,7 @@ graph2=ggplot(df2, aes(months2,Ct2, color=pool)) +
   geom_point(data=points, shape=1, aes(x=X1, y=X2), inherit.aes = FALSE )
 graph2
 
-# Fit a two pool series model with fixed value of initial proportion of litter in pool 2 (Fig 7c)
+# Fit a two pool series model with fixed value of initial proportion of C in pool 2 (Fig 4c)
 twopsFit=function(timeSeries, initialCarbon, inipars=c(0.02, 0.015, 0.6)){
   complete=data.frame(time=timeSeries[complete.cases(timeSeries),1],Ct=timeSeries[complete.cases(timeSeries),2])
   n=nrow(complete)
@@ -130,8 +130,8 @@ twopsFit=function(timeSeries, initialCarbon, inipars=c(0.02, 0.015, 0.6)){
   print(paste(c("k1=", "k2=", "a21="),Fit$par))
   plot(complete, ylim=c(0,1.2*max(complete[,2])))
   lines(bestMod)
-  AIC=(2*(length(Fit$par)+1))+2*log(Fit$ms) 
-  AICc=log(Fit$ms)+((n+length(Fit$par)+1)/(n-length(Fit$par)-3)) # for small sample size
+  AIC=(2*(length(Fit$par)+1))+2*log(Fit$ms) # formula from SIdb
+  AICc=log(Fit$ms)+((n+length(Fit$par)+1)/(n-length(Fit$par)-2)) # for small sample size
   print(paste("AICc = ",AICc))
   SoilRmodel=SoilR::TwopSeriesModel(t=tt,ks=Fit$par[1:2], a21=Fit$par[1]*Fit$par[3], C0=initialCarbon*c(1-0.09, 0.09), In=0)
   return(list(FMEmodel=Fit, SoilRmodel=SoilRmodel, AIC=AIC, AICc=AICc))
