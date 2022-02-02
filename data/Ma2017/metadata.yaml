@@ -609,7 +609,7 @@ variables: # These describe the columns of your timeSeries.csv file
           units: mass remaining
           varDesc: Quercus acutissima litter was incubated under shadecloth with 45% relative light intensity
           site: Chongzhou
-          litter:
+          litter: Quercus acutissima
           position: under shadecloth
           compTreat: # combination of complementary treatments not included in the rest of the variables
           filter: # for photodegradation experiments only
