@@ -1,4 +1,4 @@
-citationKey: Gliksman2018C # Unique identifier in the format: LastnameYear (lowercase letters must be added when there are two or more entries by the same author and year, i.e.: LastnameYearx)
+citationKey: Gliksman2018c # Unique identifier in the format: LastnameYear (lowercase letters must be added when there are two or more entries by the same author and year, i.e.: LastnameYearx)
 doi: 10.1007/s11104-017-3366-y # DOI of the publication where data is published
 entryAuthor: Ignacio Siebenhart # First and last name of the person who entered the data in this file
 entryCreationDate: 2020-02-10 # Date when the data was entered in this file. Format: YYYY-MM-DD
