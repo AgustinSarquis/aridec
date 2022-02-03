@@ -31,15 +31,15 @@ costFunc=function(pars){
     return(modCost(model=output, obs=Ct, x="time")) 
   }
 
-costFunc(inipars)$model # suma de cuadrados residuales
+costFunc(inipars)$model # sum of squared residuals
 
-Sfun <- sensFun(costFunc, inipars)  # funciones de sensibilidad
+Sfun <- sensFun(costFunc, inipars)  # sensitibity functions
 summary(Sfun)
 plot(Sfun)
 pairs(Sfun)
 
-# cuales parametros pueden ser estimados simultaneamente?
-collin(Sfun) # colinearidad
+# which parameters can be simultaneously estimated?
+collin(Sfun) # collinearity
 
 ###########################################################################################
 # 2 pool series model
@@ -58,15 +58,14 @@ costFunc=function(pars){
   return(modCost(model=output, obs=Ct, x="time")) 
 }
 
-costFunc(inipars)$model # suma de cuadrados residuales
+costFunc(inipars)$model 
 
-Sfun <- sensFun(costFunc, inipars)  # funciones de sensibilidad
+Sfun <- sensFun(costFunc, inipars)  
 summary(Sfun)
 plot(Sfun)
 pairs(Sfun)
 
-# cuales parametros pueden ser estimados simultaneamente?
-collin(Sfun) # colinearidad
+collin(Sfun) 
 
 ###########################################################################################
 # 2 pool model with feedback
@@ -85,15 +84,14 @@ costFunc=function(pars){
   return(modCost(model=output, obs=Ct, x="time")) 
 }
 
-costFunc(inipars)$model # suma de cuadrados residuales
+costFunc(inipars)$model 
 
-Sfun <- sensFun(costFunc, inipars)  # funciones de sensibilidad
+Sfun <- sensFun(costFunc, inipars)  
 summary(Sfun)
 plot(Sfun)
 pairs(Sfun)
 
-# cuales parametros pueden ser estimados simultaneamente?
-collin(Sfun) # colinearidad
+collin(Sfun) 
 
 #############################################################################################
 # 3 pool parallel model 
@@ -112,15 +110,14 @@ costFunc=function(pars){
   return(modCost(model=output, obs=Ct, x="time")) 
 }
 
-costFunc(inipars)$model # suma de cuadrados residuales
+costFunc(inipars)$model 
 
-Sfun <- sensFun(costFunc, inipars)  # funciones de sensibilidad
+Sfun <- sensFun(costFunc, inipars)  
 summary(Sfun)
 plot(Sfun)
 pairs(Sfun)
 
-# cuales parametros pueden ser estimados simultaneamente?
-collin(Sfun) # colinearidad
+collin(Sfun) 
 
 #############################################################################################
 # 3 pool series model 
@@ -139,23 +136,22 @@ costFunc=function(pars){
   return(modCost(model=output, obs=Ct, x="time")) 
 }
 
-costFunc(inipars)$model # suma de cuadrados residuales
+costFunc(inipars)$model 
 
-Sfun <- sensFun(costFunc, inipars)  # funciones de sensibilidad
+Sfun <- sensFun(costFunc, inipars) 
 summary(Sfun)
 plot(Sfun)
 pairs(Sfun)
 
-# cuales parametros pueden ser estimados simultaneamente?
-collin(Sfun) # colinearidad
+collin(Sfun) 
 
 ###########################################################################################
-# graficos
+# graphs
 library(ggplot2)
 library(cowplot)
 library(gridExtra)
 library(RColorBrewer)
-df=read.csv("C:/Users/musi/OneDrive - Facultad de Agronom?a - Universidad de Buenos Aires/aridec manuscript/coldf.csv")
+df=read.csv("~/coldf.csv")
 summary(df)
 df$X1=as.factor(df$X1)
 df$X2=as.factor(df$X2)
@@ -221,7 +217,7 @@ windows()
 grid.arrange(plot1, plot2, plot3, plot4, plot5, legend, ncol=2)
 
 ###################################################################################################################
-# porcentaje de entradas identificables por modelo
+# percentage of identifiable entries per model
 twoppsub = subset(df, model == "twopp", select = c("X1", "X2", "X3", "N", "log.col")) 
 all_pars_2pp= filter(twoppsub, N %in% "3")
 identifiable=c(all_pars_2pp$log.col <= log10(20))

@@ -7,7 +7,7 @@ library(ggplot2)
 library(gridExtra)
 library(dplyr)
 
-db=loadEntries('~/Documents/GitHub/aridec/data/')
+db=loadEntries('~/aridec/data/')
 entry=db[["Day2018"]]
 points=data.frame(cbind(entry$timeSeries$Time, entry$timeSeries$Sc_fs))
 points=mutate(points, X1=X1/30)

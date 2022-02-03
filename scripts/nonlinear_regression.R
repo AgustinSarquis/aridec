@@ -3,7 +3,7 @@ library(dplyr)
 
 db=loadEntries("~/aridec/data/")
 
-# funcion para calcular k para una serie de tiempo
+# calculate k for a single time series
 nonlineark=function(Mt, t){
   nls=nls(Mt ~ 100*exp(-k*t), start = list(k = 0.1), na.action=na.omit)
   return(coef=summary(nls)$coefficients)
