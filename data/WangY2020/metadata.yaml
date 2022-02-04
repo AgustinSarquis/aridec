@@ -30,7 +30,7 @@ siteInfo:
           soilOrder: Aridisol # Soil order according to the classification system described below
           soilFamily: Calcic-orthic # Soil family description (ex. 'Eutric' for a Eutric Cambisol)
           soilSeries: # Soil series according to the classification system described below
-          classificationSystem: WRB 
+          classificationSystem: WRB
 
 experimentInfo:
         incDesc: 3 use types x 3 species x 7 harvests x 3 replicates  # Short description of the incubation setup and main treatments
