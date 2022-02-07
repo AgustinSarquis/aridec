@@ -1,5 +1,5 @@
 # Runing tests in aridec 
-This folder contains scripts to run tests in SIDb and check the integrity of the data and the R package.
+This folder contains scripts to run tests in aridec and check the integrity of the data and the R package.
 
 ## Testing the integrity of the data
 Data that lives outside the R package in the `data` folder can be tested using the file `data_test.R`. This is an R script that goes to the `testthat` folder and runs all tests that are there. They can be run from the command line as
