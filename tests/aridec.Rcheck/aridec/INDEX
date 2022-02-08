@@ -1,0 +1,38 @@
+MAP                     Creates a data frame with mean annual
+                        precipitation values of the sites
+MAT                     Creates a data frame with mean annual
+                        temperature values of the sites
+biome                   Creates a data frame with the ecosystem type of
+                        the sites
+carbon                  Creates a data frame with the carbon content in
+                        litter samples
+coordinates             Creates a data frame with the coordinates of
+                        the sites
+countries               Creates a data frame with the countries of the
+                        sites
+elevation               Creates a data frame with elevation values of
+                        the sites
+lignin                  Creates a data frame with the lignin content in
+                        litter samples
+loadEntries             Load all entries of the aridec dataset
+material                Creates a data frame with the list of litter
+                        samples' plant parts
+nitrogen                Creates a data frame with the nitrogen content
+                        of litter samples
+onepFit                 Fits a one pool model to a time-series
+plotEntry               Plot individual entries of the aridec dataset
+readEntry               Read single entry of the aridec database
+soilorder               Creates a data frame with soil orders of the
+                        sites
+species                 Creates a data frame with the species list of
+                        litter samples
+threeppFit              Fits a three pool model with parallel structure
+                        to a time series
+threepsFit              Fits a three pool model with series structure
+                        to a time series
+twopfFit                Fits a two pool model with feedback structure
+                        to a time series
+twoppFit                Fits a two pool model with parallel structure
+                        to a time series
+twopsFit                Fits a two pool model with series structure to
+                        a time series
