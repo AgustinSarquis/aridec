@@ -109,8 +109,8 @@ variables: # These describe the columns of your timeSeries.csv file
              UVA:
              UVB:
         V5: #
-          name: #
-          units: SG # units in which litter mass loss was reported. Valid options are: mass remaining, organic matter remaining, C remaining
+          name: SG
+          units: mass remaining # units in which litter mass loss was reported. Valid options are: mass remaining, organic matter remaining, C remaining
           varDesc: Grass mixed litter (Cenchrus ciliaris, Eragrostis ciliaris, Leptothrium senegalense) positioned suspended. # Description of the variable
           site: Afgoi # Site where the experiment was conducted
           litter: mixture2

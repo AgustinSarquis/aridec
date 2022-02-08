@@ -61,7 +61,7 @@ variables: # These describe the columns of your timeSeries.csv file
           name: Time
           units: days # Time units used in accompanying file. Possible options are: days, weeks, months, years
         V2: #
-          name: CM #
+          name: Cm #
           units: mass remaining # units in which litter mass loss was reported. Valid options are: mass remaining, organic matter remaining, C remaining
           varDesc: C. microphylla fine root litter # Description of the variable
           site: Mu Us # Site where the experiment was conducted

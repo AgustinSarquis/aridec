@@ -61,7 +61,7 @@ variables: # These describe the columns of your timeSeries.csv file
           name: Time
           units: months # Time units used in accompanying file. Possible options are: days, weeks, months, years
         V2: # column 2
-          name: YSF-PL # Name of second variable in accompanying file
+          name: YSFPL # Name of second variable in accompanying file
           units: mass remaining # units in which litter mass loss was reported. Valid options are: mass remaining, organic matter remaining, C remaining
           varDesc: P. piscipula leaf litter at young secondary forest # Description of the variable
           site: Calakmul Biosphere Reserve # Site where the experiment was conducted
@@ -76,7 +76,7 @@ variables: # These describe the columns of your timeSeries.csv file
              UVA:
              UVB:
         V3: # column 3
-          name: YSF-SL #
+          name: YSFSL #
           units: mass remaining # units in which litter mass loss was reported. Valid options are: mass remaining, organic matter remaining, C remaining
           varDesc: Mixed leaf litter at young secondary forest # Description of the variable
           site: Calakmul Biosphere Reserve # Site where the experiment was conducted
@@ -91,7 +91,7 @@ variables: # These describe the columns of your timeSeries.csv file
              UVA:
              UVB:
         V4: #
-          name: MSF-PL #
+          name: MSFPL #
           units: mass remaining # units in which litter mass loss was reported. Valid options are: mass remaining, organic matter remaining, C remaining
           varDesc: P. piscipula leaf litter at medium-aged secondary forest # Description of the variable
           site: Calakmul Biosphere Reserve # Site where the experiment was conducted
@@ -106,7 +106,7 @@ variables: # These describe the columns of your timeSeries.csv file
              UVA:
              UVB:
         V5: #
-          name: MSF-SL #
+          name: MSFSL #
           units: mass remaining # units in which litter mass loss was reported. Valid options are: mass remaining, organic matter remaining, C remaining
           varDesc: Mixed leaf litter at medium-aged secondary forest # Description of the variable
           site: Calakmul Biosphere Reserve # Site where the experiment was conducted
@@ -121,7 +121,7 @@ variables: # These describe the columns of your timeSeries.csv file
              UVA:
              UVB:
         V6: #
-          name: ASF-PL #
+          name: ASFPL #
           units: mass remaining # units in which litter mass loss was reported. Valid options are: mass remaining, organic matter remaining, C remaining
           varDesc: P. piscipula leaf litter at advanced-aged secondary forest  # Description of the variable
           site: Calakmul Biosphere Reserve # Site where the experiment was conducted
@@ -136,7 +136,7 @@ variables: # These describe the columns of your timeSeries.csv file
              UVA:
              UVB:
         V7: #
-          name: ASF-SL #
+          name: ASFSL #
           units: mass remaining # units in which litter mass loss was reported. Valid options are: mass remaining, organic matter remaining, C remaining
           varDesc: Mixed leaf litter at advanced-aged secondary forest # Description of the variable
           site: Calakmul Biosphere Reserve # Site where the experiment was conducted
@@ -151,7 +151,7 @@ variables: # These describe the columns of your timeSeries.csv file
              UVA:
              UVB:
         V8: #
-          name: MF-PL #
+          name: MFPL #
           units: mass remaining # units in which litter mass loss was reported. Valid options are: mass remaining, organic matter remaining, C remaining
           varDesc: P. piscipula leaf litter at mature forest # Description of the variable
           site: Calakmul Biosphere Reserve # Site where the experiment was conducted
@@ -166,7 +166,7 @@ variables: # These describe the columns of your timeSeries.csv file
              UVA:
              UVB:
         V9: #
-          name: MF-SL #
+          name: MFSL #
           units: mass remaining # units in which litter mass loss was reported. Valid options are: mass remaining, organic matter remaining, C remaining
           varDesc: Mixed leaf litter at mature forest # Description of the variable
           site: Calakmul Biosphere Reserve # Site where the experiment was conducted

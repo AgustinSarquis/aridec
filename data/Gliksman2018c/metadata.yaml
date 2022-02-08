@@ -577,7 +577,7 @@ variables: # These describe the columns of your timeSeries.csv file
              UVA:
              UVB:
         V33:
-          name: CPCA
+          name: CGCA
           units: mass remaining
           varDesc: Grass litter mixture from the other site under forest canopy at Kdoshim
           site: Kdoshim

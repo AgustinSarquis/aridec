@@ -277,7 +277,7 @@ variables: # These describe the columns of your timeSeries.csv file
              UVA:
              UVB:
         V14:
-          name: 2Cge
+          name: Cge2
           units: organic matter remaining
           varDesc: C. geitonophyllum roots 0-2 mm in diameter buried 15 cm deep
           site: Sare Yorobana
@@ -293,7 +293,7 @@ variables: # These describe the columns of your timeSeries.csv file
              UVA:
              UVB:
         V15:
-          name: 2Cgl
+          name: Cgl2
           units: organic matter remaining
           varDesc: C. glutinosum roots 0-2 mm in diameter buried 15 cm deep
           site: Sare Yorobana
@@ -309,7 +309,7 @@ variables: # These describe the columns of your timeSeries.csv file
              UVA:
              UVB:
         V16:
-          name: 2Dc
+          name: Dc2
           units: organic matter remaining
           varDesc: D. cinerea roots 0-2 mm in diameter buried 15 cm deep
           site: Sare Yorobana
@@ -325,7 +325,7 @@ variables: # These describe the columns of your timeSeries.csv file
              UVA:
              UVB:
         V17:
-          name: 2Tm
+          name: Tm2
           units: organic matter remaining
           varDesc: T. macroptera roots 0-2 mm in diameter buried 15 cm deep
           site: Sare Yorobana
@@ -341,7 +341,7 @@ variables: # These describe the columns of your timeSeries.csv file
              UVA:
              UVB:
         V18:
-          name: 5Cge
+          name: Cge5
           units: organic matter remaining
           varDesc: C. geitonophyllum roots 2-5 mm in diameter buried 15 cm deep
           site: Sare Yorobana
@@ -357,7 +357,7 @@ variables: # These describe the columns of your timeSeries.csv file
              UVA:
              UVB:
         V19:
-          name: 5Cgl
+          name: Cgl5
           units: organic matter remaining
           varDesc: C. glutinosum roots 2-5 mm in diameter buried 15 cm deep
           site: Sare Yorobana
@@ -373,7 +373,7 @@ variables: # These describe the columns of your timeSeries.csv file
              UVA:
              UVB:
         V20:
-          name: 5Dc
+          name: Dc5
           units: organic matter remaining
           varDesc: D. cinerea roots 2-5 mm in diameter buried 15 cm deep
           site: Sare Yorobana
@@ -389,7 +389,7 @@ variables: # These describe the columns of your timeSeries.csv file
              UVA:
              UVB:
         V21:
-          name: 5Tm
+          name: Tm5
           units: organic matter remaining
           varDesc: T. macroptera roots 2-5 mm in diameter buried 15 cm deep
           site: Sare Yorobana
@@ -405,7 +405,7 @@ variables: # These describe the columns of your timeSeries.csv file
              UVA:
              UVB:
         V22:
-          name: 10Cge
+          name: Cge10
           units: organic matter remaining
           varDesc: C. geitonophyllum roots 5-10 mm in diameter buried 15 cm deep
           site: Sare Yorobana
@@ -421,7 +421,7 @@ variables: # These describe the columns of your timeSeries.csv file
              UVA:
              UVB:
         V23:
-          name: 10Cgl
+          name: Cgl10
           units: organic matter remaining
           varDesc: C. glutinosum roots 5-10 mm in diameter buried 15 cm deep
           site: Sare Yorobana
@@ -437,7 +437,7 @@ variables: # These describe the columns of your timeSeries.csv file
              UVA:
              UVB:
         V24:
-          name: 10Dc
+          name: Dc10
           units: organic matter remaining
           varDesc: D. cinerea roots 5-10 mm in diameter buried 15 cm deep
           site: Sare Yorobana
@@ -453,7 +453,7 @@ variables: # These describe the columns of your timeSeries.csv file
              UVA:
              UVB:
         V25:
-          name: 10Tm
+          name: Tm10
           units: organic matter remaining
           varDesc: T. macroptera roots 5-10 mm in diameter buried 15 cm deep
           site: Sare Yorobana

@@ -103,7 +103,7 @@ variables: # These describe the columns of your timeSeries.csv file
              UVA:
              UVB:
         V5:
-          name: NBTs # Name of second variable in accompanying file
+          name: NBtS # Name of second variable in accompanying file
           units: mass remaining # units in which litter mass loss was reported. Valid options are: mass remaining, organic matter remaining, C remaining
           varDesc: Non-Bt maize stem litter # Description of the variable
           site: Eastern Cape # Site where the experiment was conducted

@@ -202,7 +202,7 @@ variables: # These describe the columns of your timeSeries.csv file
              UVA:
              UVB:
         V10:
-          name: NA
+          name: NAdd
           units: organic matter remaining
           varDesc: Pappostipa speciosa, Poa ligularis and Stipa humilis litter with inorganic N addition
           site: Río Mayo

@@ -97,7 +97,7 @@ variables: # These describe the columns of your timeSeries.csv file
           name: Time
           units: years
         V2:
-          name: 144HaS
+          name: A
           units: organic matter remaining
           varDesc: H. ammodendron leaf litter under full solar radiation at a site with 144 mm MAP
           site: Gurbantunggut (margin)
@@ -112,7 +112,7 @@ variables: # These describe the columns of your timeSeries.csv file
              UVA:
              UVB:
         V3:
-          name: 144HaUVf
+          name: B
           units: organic matter remaining
           varDesc: H. ammodendron leaf litter under UV filters at a site with 144 mm MAP
           site: Gurbantunggut (margin)
@@ -127,7 +127,7 @@ variables: # These describe the columns of your timeSeries.csv file
              UVA:
              UVB:
         V4:
-          name: 144PaS
+          name: C
           units: organic matter remaining
           varDesc: P. australis litter under full solar radiation at a site with 144 mm MAP
           site: Gurbantunggut (margin)
@@ -142,7 +142,7 @@ variables: # These describe the columns of your timeSeries.csv file
              UVA:
              UVB:
         V5:
-          name: 144PaUVf
+          name: D
           units: organic matter remaining
           varDesc: P. australis litter under UV filters at a site with 144 mm MAP
           site: Gurbantunggut (margin)
@@ -157,7 +157,7 @@ variables: # These describe the columns of your timeSeries.csv file
              UVA:
              UVB:
         V6:
-          name: 144TaS
+          name: E
           units: organic matter remaining
           varDesc: T. aestivum stem litter under full solar radiation at a site with 144 mm MAP
           site: Gurbantunggut (margin)
@@ -172,7 +172,7 @@ variables: # These describe the columns of your timeSeries.csv file
              UVA:
              UVB:
         V7:
-          name: 144TaUVf
+          name: F
           units: organic matter remaining
           varDesc: T. aestivum stem litter under UV filters at a site with 144 mm MAP
           site: Gurbantunggut (margin)
@@ -187,7 +187,7 @@ variables: # These describe the columns of your timeSeries.csv file
              UVA:
              UVB:
         V8:
-          name: 76HaS
+          name: G
           units: organic matter remaining
           varDesc: H. ammodendron leaf litter under full solar radiation at a site with 76 mm MAP
           site: Gurbantunggut (center)
@@ -202,7 +202,7 @@ variables: # These describe the columns of your timeSeries.csv file
              UVA:
              UVB:
         V9:
-          name: 76HaUVf
+          name: H
           units: organic matter remaining
           varDesc: H. ammodendron leaf litter under UV filters at a site with 76 mm MAP
           site: Gurbantunggut (center)
@@ -217,7 +217,7 @@ variables: # These describe the columns of your timeSeries.csv file
              UVA:
              UVB:
         V10:
-          name: 76PaS
+          name: I
           units: organic matter remaining
           varDesc: P. australis litter under full solar radiation at a site with 76 mm MAP
           site: Gurbantunggut (center)
@@ -232,7 +232,7 @@ variables: # These describe the columns of your timeSeries.csv file
              UVA:
              UVB:
         V11:
-          name: 76PaUVf
+          name: J
           units: organic matter remaining
           varDesc: P. australis leaf litter under UV filters at a site with 76 mm MAP
           site: Gurbantunggut (center)
@@ -247,7 +247,7 @@ variables: # These describe the columns of your timeSeries.csv file
              UVA:
              UVB:
         V12:
-          name: 76TaS
+          name: K
           units: organic matter remaining
           varDesc: T. aestivum stem litter under full solar radiation at a site with 76 mm MAP
           site: Gurbantunggut (center)
@@ -262,7 +262,7 @@ variables: # These describe the columns of your timeSeries.csv file
              UVA:
              UVB:
         V13:
-          name: 76TaUVf
+          name: L
           units: organic matter remaining
           varDesc: T. aestivum stem litter under UV filters at a site with 76 mm MAP
           site: Gurbantunggut (center)
@@ -277,7 +277,7 @@ variables: # These describe the columns of your timeSeries.csv file
              UVA:
              UVB:
         V14:
-          name: 16HaS
+          name: M
           units: organic matter remaining
           varDesc: H. ammodendron leaf litter under full solar radiation at a site with 16 mm MAP
           site: Turpan
@@ -292,7 +292,7 @@ variables: # These describe the columns of your timeSeries.csv file
              UVA:
              UVB:
         V15:
-          name: 16HaUVf
+          name: NN
           units: organic matter remaining
           varDesc: H. ammodendron leaf litter under UV filters at a site with 16 mm MAP
           site: Turpan
@@ -307,7 +307,7 @@ variables: # These describe the columns of your timeSeries.csv file
              UVA:
              UVB:
         V16:
-          name: 16PaS
+          name: O
           units: organic matter remaining
           varDesc: P. australis leaf litter under full solar radiation at a site with 16 mm MAP
           site: Turpan
@@ -322,7 +322,7 @@ variables: # These describe the columns of your timeSeries.csv file
              UVA:
              UVB:
         V17:
-          name: 16PaUVf
+          name: P
           units: organic matter remaining
           varDesc: P. australis leaf litter under UV filters at a site with 16 mm MAP
           site: Turpan
@@ -337,7 +337,7 @@ variables: # These describe the columns of your timeSeries.csv file
              UVA:
              UVB:
         V18:
-          name: 16TaS
+          name: Q
           units: organic matter remaining
           varDesc: T. aestivum stem litter under full solar radiation at a site with 16 mm MAP
           site: Turpan
@@ -352,7 +352,7 @@ variables: # These describe the columns of your timeSeries.csv file
              UVA:
              UVB:
         V19:
-          name: 16TaUVf
+          name: R
           units: organic matter remaining
           varDesc: T. aestivum stem litter under UV filters at a site with 16 mm MAP
           site: Turpan
