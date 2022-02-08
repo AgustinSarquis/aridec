@@ -4,8 +4,8 @@ This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format
  restricted \write18 enabled.
 entering extended mode
 
-(/private/var/folders/zj/x7myg6p120s9l6080t9vbhs40000gr/T/Rtmp2SvAE4/Rd2pdf2e5c
-762985aa/Rd2.tex
+(/private/var/folders/zj/x7myg6p120s9l6080t9vbhs40000gr/T/RtmpwQd6pe/Rd2pdf30d1
+33322687/Rd2.tex
 LaTeX2e <2017-04-15>
 Babel <3.10> and hyphenation patterns for 84 language(s) loaded.
 
@@ -113,7 +113,7 @@ e/2017/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2017/tex
 mf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2017/texmf-dist/fo
 nts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/
 urw/times/utmri8a.pfb>
-Output written on Rd2.pdf (12 pages, 90191 bytes).
+Output written on Rd2.pdf (12 pages, 90004 bytes).
 Transcript written on Rd2.log.
 This is makeindex, version 2.15 [TeX Live 2017] (kpathsea + Thai support).
 Scanning input file ./Rd2.idx....done (21 entries accepted, 0 rejected).
@@ -125,8 +125,8 @@ This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format
  restricted \write18 enabled.
 entering extended mode
 
-(/private/var/folders/zj/x7myg6p120s9l6080t9vbhs40000gr/T/Rtmp2SvAE4/Rd2pdf2e5c
-762985aa/Rd2.tex
+(/private/var/folders/zj/x7myg6p120s9l6080t9vbhs40000gr/T/RtmpwQd6pe/Rd2pdf30d1
+33322687/Rd2.tex
 LaTeX2e <2017-04-15>
 Babel <3.10> and hyphenation patterns for 84 language(s) loaded.
 
@@ -233,7 +233,7 @@ e/2017/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2017/tex
 mf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2017/texmf-dist/fo
 nts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/
 urw/times/utmri8a.pfb>
-Output written on Rd2.pdf (14 pages, 93456 bytes).
+Output written on Rd2.pdf (14 pages, 93267 bytes).
 Transcript written on Rd2.log.
 This is makeindex, version 2.15 [TeX Live 2017] (kpathsea + Thai support).
 Scanning input file ./Rd2.idx....done (21 entries accepted, 0 rejected).
@@ -245,8 +245,8 @@ This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format
  restricted \write18 enabled.
 entering extended mode
 
-(/private/var/folders/zj/x7myg6p120s9l6080t9vbhs40000gr/T/Rtmp2SvAE4/Rd2pdf2e5c
-762985aa/Rd2.tex
+(/private/var/folders/zj/x7myg6p120s9l6080t9vbhs40000gr/T/RtmpwQd6pe/Rd2pdf30d1
+33322687/Rd2.tex
 LaTeX2e <2017-04-15>
 Babel <3.10> and hyphenation patterns for 84 language(s) loaded.
 
@@ -347,8 +347,8 @@ pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/
 local/texlive/2017/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texl
 ive/2017/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2017/t
 exmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Rd2.pdf (14 pages, 94292 bytes).
+Output written on Rd2.pdf (14 pages, 94109 bytes).
 Transcript written on Rd2.log.
 Saving output to ‘aridec-manual.pdf’ ...
 Done
-You may want to clean up by 'rm -Rf /var/folders/zj/x7myg6p120s9l6080t9vbhs40000gr/T//Rtmp2SvAE4/Rd2pdf2e5c762985aa'
+You may want to clean up by 'rm -Rf /var/folders/zj/x7myg6p120s9l6080t9vbhs40000gr/T//RtmpwQd6pe/Rd2pdf30d133322687'

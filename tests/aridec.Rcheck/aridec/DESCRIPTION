@@ -4,13 +4,13 @@ Version: 0.0.0.1
 Authors@R: person("Carlos", "Sierra", email = "csierra@bgc-jena.mpg.de", role = c("aut", "cre"))
 Description: This package provides functions to load and analyse the arid decomposition database.
 Depends: R (>= 3.4.3)
-License: What license is it under?
+License: GPL-3
 Encoding: UTF-8
 LazyData: true
 Imports: yaml, FME, SoilR
 RoxygenNote: 7.1.1.9000
 NeedsCompilation: no
-Packaged: 2022-02-08 15:41:53 UTC; agustin
+Packaged: 2022-02-08 15:45:56 UTC; agustin
 Author: Carlos Sierra [aut, cre]
 Maintainer: Carlos Sierra <csierra@bgc-jena.mpg.de>
-Built: R 4.0.3; ; 2022-02-08 15:42:00 UTC; unix
+Built: R 4.0.3; ; 2022-02-08 15:46:05 UTC; unix
