@@ -4,7 +4,9 @@
 #' @return R list with all entries
 #' @export
 #' @examples
+#' \dontrun{
 #' aridec=loadEntries()
+#' }
 loadEntries <- function(path="~/aridec/data/") {
   entryNames=list.dirs(path, full.names=FALSE, recursive=FALSE)
 

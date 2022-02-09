@@ -16,5 +16,7 @@ R list with all entries
 Load all entries of the aridec dataset
 }
 \examples{
+\dontrun{
 aridec=loadEntries()
+}
 }
