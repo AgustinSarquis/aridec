@@ -16,6 +16,8 @@ A plot
 Plot individual entries of the aridec dataset
 }
 \examples{
-aridec<-loadEntries(path='~/Documents/GitHub/aridec/data/')
+\dontrun{
+aridec=loadEntries(path='/aridec/data/')
 plotEntry(entry=aridec[["Adair2017"]])
+}
 }

@@ -16,6 +16,8 @@ A data frame with the countries from the database
 Creates a data frame with the countries of the sites
 }
 \examples{
-aridec<-loadEntries(path='~/Repos/aridec/data/')
+\dontrun{
+aridec=loadEntries(path='/aridec/data/')
 countries=countries(database=aridec)
+}
 }

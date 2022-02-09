@@ -16,6 +16,8 @@ A data frame with the carbon content (%) of the litter samples from the database
 Creates a data frame with the carbon content in litter samples
 }
 \examples{
-aridec<-loadEntries(path='~/Repos/aridec/data/')
+\dontrun{
+aridec=loadEntries(path='/aridec/data/')
 C=carbon(database=aridec)
+}
 }

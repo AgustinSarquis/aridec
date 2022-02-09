@@ -10,7 +10,7 @@ LazyData: true
 Imports: yaml, FME, SoilR
 RoxygenNote: 7.1.1.9000
 NeedsCompilation: no
-Packaged: 2022-02-08 15:45:56 UTC; agustin
+Packaged: 2022-02-09 16:10:53 UTC; agustin
 Author: Carlos Sierra [aut, cre]
 Maintainer: Carlos Sierra <csierra@bgc-jena.mpg.de>
-Built: R 4.0.3; ; 2022-02-08 15:46:05 UTC; unix
+Built: R 4.0.3; ; 2022-02-09 16:11:00 UTC; unix

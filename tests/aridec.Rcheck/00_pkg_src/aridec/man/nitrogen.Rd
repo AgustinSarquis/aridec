@@ -16,6 +16,8 @@ A data frame with the nitrogen content (%) of the litter samples from the databa
 Creates a data frame with the nitrogen content of litter samples
 }
 \examples{
-aridec<-loadEntries(path='~/Repos/aridec/data/')
+\dontrun{
+aridec=loadEntries(path='/aridec/data/')
 N=nitrogen(database=aridec)
+}
 }

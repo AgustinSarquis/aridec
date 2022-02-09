@@ -4,8 +4,10 @@
 #' @return A data frame with the countries from the database
 #' @export
 #' @examples
-#' aridec<-loadEntries(path='~/Repos/aridec/data/')
+#' \dontrun{
+#' aridec=loadEntries(path='/aridec/data/')
 #' countries=countries(database=aridec)
+#' }
 countries <- function(database) {
   country=lapply(database, FUN=function(x){x$siteInfo$country})
   return(data.frame(country=unlist(country)))

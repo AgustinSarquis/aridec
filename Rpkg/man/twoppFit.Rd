@@ -7,7 +7,7 @@
 twoppFit(timeSeries, initialCarbon, inipars = c(1, 0.5, 0.5))
 }
 \arguments{
-\item{timeSeries}{A time series of decomposition values}
+\item{timeSeries}{A time series of entry values}
 
 \item{initialCarbon}{The initial amount of carbon in units that correspond to the time series data}
 
@@ -21,7 +21,7 @@ Fits a two pool model with parallel structure to a time series
 }
 \examples{
 \donttest{
-aridec<-loadEntries(path='~/Documents/GitHub/aridec/data/')
+aridec=loadEntries()
 entry=aridec[["20"]]
 a=twoppFit(timeSeries = entry$timeSeries[,c(1,2)],
 initialCarbon=100,

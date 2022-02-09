@@ -18,8 +18,10 @@ flush(stderr()); flush(stdout())
 
 ### ** Examples
 
-aridec<-loadEntries(path='~/Repos/aridec/data/')
-MAP=MAP(database=aridec)
+## Not run: 
+##D aridec=loadEntries(path='~/aridec/data/')
+##D MAP=MAP(database=aridec)
+## End(Not run)
 
 
 
@@ -36,8 +38,10 @@ flush(stderr()); flush(stdout())
 
 ### ** Examples
 
-aridec<-loadEntries(path='~/Repos/aridec/data/')
-MAT=MAT(database=aridec)
+## Not run: 
+##D aridec=loadEntries(path='/aridec/data/')
+##D MAT=MAT(database)
+## End(Not run)
 
 
 
@@ -53,8 +57,10 @@ flush(stderr()); flush(stdout())
 
 ### ** Examples
 
-aridec<-loadEntries(path='~/Repos/aridec/data/')
-biome=biome(database=aridec)
+## Not run: 
+##D #' aridec=loadEntries(path='/aridec/data/')
+##D biome=biome(database=aridec)
+## End(Not run)
 
 
 
@@ -70,8 +76,10 @@ flush(stderr()); flush(stdout())
 
 ### ** Examples
 
-aridec<-loadEntries(path='~/Repos/aridec/data/')
-C=carbon(database=aridec)
+## Not run: 
+##D aridec=loadEntries(path='/aridec/data/')
+##D C=carbon(database=aridec)
+## End(Not run)
 
 
 
@@ -87,8 +95,10 @@ flush(stderr()); flush(stdout())
 
 ### ** Examples
 
-aridec<-loadEntries(path='~/Repos/aridec/data/')
-coor=coordinates(database=aridec)
+## Not run: 
+##D aridec=loadEntries(path='/aridec/data/')
+##D coor=coordinates(database=aridec)
+## End(Not run)
 
 
 
@@ -104,8 +114,10 @@ flush(stderr()); flush(stdout())
 
 ### ** Examples
 
-aridec<-loadEntries(path='~/Repos/aridec/data/')
-countries=countries(database=aridec)
+## Not run: 
+##D aridec=loadEntries(path='/aridec/data/')
+##D countries=countries(database=aridec)
+## End(Not run)
 
 
 
@@ -121,8 +133,10 @@ flush(stderr()); flush(stdout())
 
 ### ** Examples
 
-aridec<-loadEntries(path='~/Repos/aridec/data/')
-elevation=elevation(database=aridec)
+## Not run: 
+##D aridec=loadEntries(path='/aridec/data/')
+##D elevation=elevation(database=aridec)
+## End(Not run)
 
 
 
@@ -138,8 +152,10 @@ flush(stderr()); flush(stdout())
 
 ### ** Examples
 
-aridec<-loadEntries(path='~/Repos/aridec/data/')
-lignin=lignin(database=aridec)
+## Not run: 
+##D aridec=loadEntries(path='/aridec/data/')
+##D lignin=lignin(database=aridec)
+## End(Not run)
 
 
 
@@ -155,7 +171,9 @@ flush(stderr()); flush(stdout())
 
 ### ** Examples
 
-aridec=loadEntries()
+## Not run: 
+##D aridec=loadEntries()
+## End(Not run)
 
 
 
@@ -172,8 +190,10 @@ flush(stderr()); flush(stdout())
 
 ### ** Examples
 
-aridec<-loadEntries(path='~/Repos/aridec/data/')
-material=material(database=aridec)
+## Not run: 
+##D aridec=loadEntries(path='/aridec/data/')
+##D material=material(database=aridec)
+## End(Not run)
 
 
 
@@ -189,8 +209,10 @@ flush(stderr()); flush(stdout())
 
 ### ** Examples
 
-aridec<-loadEntries(path='~/Repos/aridec/data/')
-N=nitrogen(database=aridec)
+## Not run: 
+##D aridec=loadEntries(path='/aridec/data/')
+##D N=nitrogen(database=aridec)
+## End(Not run)
 
 
 
@@ -206,10 +228,12 @@ flush(stderr()); flush(stdout())
 
 ### ** Examples
 
-aridec<-loadEntries(path='~/Documents/GitHub/aridec/data/')
-entry=aridec[[20]]
-a=onepFit(timeSeries = entry$timeSeries[,1:2],
-initialCarbon=100)
+## Not run: 
+##D aridec=loadEntries()
+##D entry=aridec[[20]]
+##D a=onepFit(timeSeries = entry$timeSeries[,1:2],
+##D initialCarbon=100)
+## End(Not run)
 
 
 
@@ -225,8 +249,10 @@ flush(stderr()); flush(stdout())
 
 ### ** Examples
 
-aridec<-loadEntries(path='~/Documents/GitHub/aridec/data/')
-plotEntry(entry=aridec[["Adair2017"]])
+## Not run: 
+##D aridec=loadEntries(path='/aridec/data/')
+##D plotEntry(entry=aridec[["Adair2017"]])
+## End(Not run)
 
 
 
@@ -242,7 +268,9 @@ flush(stderr()); flush(stdout())
 
 ### ** Examples
 
-Adair2017=readEntry(path="~/Documents/GitHub/aridec/data/", entryName="Adair2017")
+## Not run: 
+##D Adair2017=readEntry(path = '~/aridec/data/', entryName="Adair2017")
+## End(Not run)
 
 
 
@@ -258,8 +286,10 @@ flush(stderr()); flush(stdout())
 
 ### ** Examples
 
-aridec<-loadEntries(path='~/Repos/aridec/data/')
-soilorder=soilorder(database=aridec)
+## Not run: 
+##D aridec=loadEntries(path='/aridec/data/')
+##D soilorder=soilorder(database=aridec)
+## End(Not run)
 
 
 
@@ -275,8 +305,10 @@ flush(stderr()); flush(stdout())
 
 ### ** Examples
 
-aridec<-loadEntries(path='~/Repos/aridec/data/')
-species=species(database=aridec)
+## Not run: 
+##D aridec=loadEntries(path='/aridec/data/')
+##D species=species(database=aridec)
+## End(Not run)
 
 
 

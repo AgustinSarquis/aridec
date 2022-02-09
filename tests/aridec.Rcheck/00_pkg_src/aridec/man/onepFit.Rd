@@ -18,8 +18,10 @@ R list with an FME model object, a aridec model object, and the AIC value
 Fits a one pool model to a time-series
 }
 \examples{
-aridec<-loadEntries(path='~/Documents/GitHub/aridec/data/')
+\dontrun{
+aridec=loadEntries()
 entry=aridec[[20]]
 a=onepFit(timeSeries = entry$timeSeries[,1:2],
 initialCarbon=100)
+}
 }

@@ -4,8 +4,10 @@
 #' @return A plot
 #' @export
 #' @examples
-#' aridec<-loadEntries(path='~/Documents/GitHub/aridec/data/')
+#' \dontrun{
+#' aridec=loadEntries(path='/aridec/data/')
 #' plotEntry(entry=aridec[["Adair2017"]])
+#' }
 plotEntry=function(entry){
   x=entry$timeSeries$Time
   n=ncol(entry$timeSeries)

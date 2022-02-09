@@ -16,6 +16,8 @@ A data frame with the ecosystem types from the database
 Creates a data frame with the ecosystem type of the sites
 }
 \examples{
-aridec<-loadEntries(path='~/Repos/aridec/data/')
+\dontrun{
+#' aridec=loadEntries(path='/aridec/data/')
 biome=biome(database=aridec)
+}
 }

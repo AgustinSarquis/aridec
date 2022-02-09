@@ -5,14 +5,17 @@
 #' @return R list with the entry
 #' @export
 #' @import yaml
+#' @import utils
 #' @examples
-#' Adair2017=readEntry(path="~/Documents/GitHub/aridec/data/", entryName="Adair2017")
+#' \dontrun{
+#' Adair2017=readEntry(path = '~/aridec/data/', entryName="Adair2017")
+#' }
 readEntry <- function(path, entryName) {
 
     entry=yaml::yaml.load_file(input=paste(path,entryName,"/metadata.yaml",sep=""))
-    csv=read.csv(file=paste(path,entryName,"/timeSeries.csv",sep=""))
+    csv=utils::read.csv(file=paste(path,entryName,"/timeSeries.csv",sep=""))
     entry[["timeSeries"]]<-csv
-    init=read.csv(file=paste(path,entryName,"/initConditions.csv",sep=""))
+    init=utils::read.csv(file=paste(path,entryName,"/initConditions.csv",sep=""))
     entry[["initConditions"]]<-init
     assign(entryName, entry)
 

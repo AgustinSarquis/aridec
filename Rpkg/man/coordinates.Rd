@@ -16,6 +16,8 @@ A data frame with the longitude and latitude of sites from the database
 Creates a data frame with the coordinates of the sites
 }
 \examples{
-aridec<-loadEntries(path='~/Repos/aridec/data/')
+\dontrun{
+aridec=loadEntries(path='/aridec/data/')
 coor=coordinates(database=aridec)
+}
 }

@@ -37,8 +37,10 @@ Type 'q()' to quit R.
 > 
 > ### ** Examples
 > 
-> aridec<-loadEntries(path='~/Repos/aridec/data/')
-> MAP=MAP(database=aridec)
+> ## Not run: 
+> ##D aridec=loadEntries(path='~/aridec/data/')
+> ##D MAP=MAP(database=aridec)
+> ## End(Not run)
 > 
 > 
 > 
@@ -55,8 +57,10 @@ Type 'q()' to quit R.
 > 
 > ### ** Examples
 > 
-> aridec<-loadEntries(path='~/Repos/aridec/data/')
-> MAT=MAT(database=aridec)
+> ## Not run: 
+> ##D aridec=loadEntries(path='/aridec/data/')
+> ##D MAT=MAT(database)
+> ## End(Not run)
 > 
 > 
 > 
@@ -72,8 +76,10 @@ Type 'q()' to quit R.
 > 
 > ### ** Examples
 > 
-> aridec<-loadEntries(path='~/Repos/aridec/data/')
-> biome=biome(database=aridec)
+> ## Not run: 
+> ##D #' aridec=loadEntries(path='/aridec/data/')
+> ##D biome=biome(database=aridec)
+> ## End(Not run)
 > 
 > 
 > 
@@ -89,8 +95,10 @@ Type 'q()' to quit R.
 > 
 > ### ** Examples
 > 
-> aridec<-loadEntries(path='~/Repos/aridec/data/')
-> C=carbon(database=aridec)
+> ## Not run: 
+> ##D aridec=loadEntries(path='/aridec/data/')
+> ##D C=carbon(database=aridec)
+> ## End(Not run)
 > 
 > 
 > 
@@ -106,8 +114,10 @@ Type 'q()' to quit R.
 > 
 > ### ** Examples
 > 
-> aridec<-loadEntries(path='~/Repos/aridec/data/')
-> coor=coordinates(database=aridec)
+> ## Not run: 
+> ##D aridec=loadEntries(path='/aridec/data/')
+> ##D coor=coordinates(database=aridec)
+> ## End(Not run)
 > 
 > 
 > 
@@ -123,8 +133,10 @@ Type 'q()' to quit R.
 > 
 > ### ** Examples
 > 
-> aridec<-loadEntries(path='~/Repos/aridec/data/')
-> countries=countries(database=aridec)
+> ## Not run: 
+> ##D aridec=loadEntries(path='/aridec/data/')
+> ##D countries=countries(database=aridec)
+> ## End(Not run)
 > 
 > 
 > 
@@ -140,8 +152,10 @@ Type 'q()' to quit R.
 > 
 > ### ** Examples
 > 
-> aridec<-loadEntries(path='~/Repos/aridec/data/')
-> elevation=elevation(database=aridec)
+> ## Not run: 
+> ##D aridec=loadEntries(path='/aridec/data/')
+> ##D elevation=elevation(database=aridec)
+> ## End(Not run)
 > 
 > 
 > 
@@ -157,8 +171,10 @@ Type 'q()' to quit R.
 > 
 > ### ** Examples
 > 
-> aridec<-loadEntries(path='~/Repos/aridec/data/')
-> lignin=lignin(database=aridec)
+> ## Not run: 
+> ##D aridec=loadEntries(path='/aridec/data/')
+> ##D lignin=lignin(database=aridec)
+> ## End(Not run)
 > 
 > 
 > 
@@ -174,7 +190,9 @@ Type 'q()' to quit R.
 > 
 > ### ** Examples
 > 
-> aridec=loadEntries()
+> ## Not run: 
+> ##D aridec=loadEntries()
+> ## End(Not run)
 > 
 > 
 > 
@@ -191,8 +209,10 @@ Type 'q()' to quit R.
 > 
 > ### ** Examples
 > 
-> aridec<-loadEntries(path='~/Repos/aridec/data/')
-> material=material(database=aridec)
+> ## Not run: 
+> ##D aridec=loadEntries(path='/aridec/data/')
+> ##D material=material(database=aridec)
+> ## End(Not run)
 > 
 > 
 > 
@@ -208,8 +228,10 @@ Type 'q()' to quit R.
 > 
 > ### ** Examples
 > 
-> aridec<-loadEntries(path='~/Repos/aridec/data/')
-> N=nitrogen(database=aridec)
+> ## Not run: 
+> ##D aridec=loadEntries(path='/aridec/data/')
+> ##D N=nitrogen(database=aridec)
+> ## End(Not run)
 > 
 > 
 > 
@@ -225,12 +247,12 @@ Type 'q()' to quit R.
 > 
 > ### ** Examples
 > 
-> aridec<-loadEntries(path='~/Documents/GitHub/aridec/data/')
-> entry=aridec[[20]]
-> a=onepFit(timeSeries = entry$timeSeries[,1:2],
-+ initialCarbon=100)
-[1] "Best fit parameter:  -0.0258770144779741"
-[1] "AIC =  -5.11617634050441"
+> ## Not run: 
+> ##D aridec=loadEntries()
+> ##D entry=aridec[[20]]
+> ##D a=onepFit(timeSeries = entry$timeSeries[,1:2],
+> ##D initialCarbon=100)
+> ## End(Not run)
 > 
 > 
 > 
@@ -246,8 +268,10 @@ Type 'q()' to quit R.
 > 
 > ### ** Examples
 > 
-> aridec<-loadEntries(path='~/Documents/GitHub/aridec/data/')
-> plotEntry(entry=aridec[["Adair2017"]])
+> ## Not run: 
+> ##D aridec=loadEntries(path='/aridec/data/')
+> ##D plotEntry(entry=aridec[["Adair2017"]])
+> ## End(Not run)
 > 
 > 
 > 
@@ -263,7 +287,9 @@ Type 'q()' to quit R.
 > 
 > ### ** Examples
 > 
-> Adair2017=readEntry(path="~/Documents/GitHub/aridec/data/", entryName="Adair2017")
+> ## Not run: 
+> ##D Adair2017=readEntry(path = '~/aridec/data/', entryName="Adair2017")
+> ## End(Not run)
 > 
 > 
 > 
@@ -279,8 +305,10 @@ Type 'q()' to quit R.
 > 
 > ### ** Examples
 > 
-> aridec<-loadEntries(path='~/Repos/aridec/data/')
-> soilorder=soilorder(database=aridec)
+> ## Not run: 
+> ##D aridec=loadEntries(path='/aridec/data/')
+> ##D soilorder=soilorder(database=aridec)
+> ## End(Not run)
 > 
 > 
 > 
@@ -296,8 +324,10 @@ Type 'q()' to quit R.
 > 
 > ### ** Examples
 > 
-> aridec<-loadEntries(path='~/Repos/aridec/data/')
-> species=species(database=aridec)
+> ## Not run: 
+> ##D aridec=loadEntries(path='/aridec/data/')
+> ##D species=species(database=aridec)
+> ## End(Not run)
 > 
 > 
 > 
@@ -381,7 +411,7 @@ Type 'q()' to quit R.
 > cleanEx()
 > options(digits = 7L)
 > base::cat("Time elapsed: ", proc.time() - base::get("ptime", pos = 'CheckExEnv'),"\n")
-Time elapsed:  4.812 0.324 5.263 0 0 
+Time elapsed:  0.416 0.041 0.481 0 0 
 > grDevices::dev.off()
 null device 
           1 

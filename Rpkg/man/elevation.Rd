@@ -16,6 +16,8 @@ A data frame with the elevation values (mm) from the database
 Creates a data frame with elevation values of the sites
 }
 \examples{
-aridec<-loadEntries(path='~/Repos/aridec/data/')
+\dontrun{
+aridec=loadEntries(path='/aridec/data/')
 elevation=elevation(database=aridec)
+}
 }

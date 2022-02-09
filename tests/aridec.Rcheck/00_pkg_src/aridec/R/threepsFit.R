@@ -8,7 +8,7 @@
 #' @import FME
 #' @examples
 #' \donttest{
-#' aridec<-loadEntries(path='~/Documents/GitHub/aridec/data/')
+#' aridec=loadEntries()
 #' entry=aridec[["20"]]
 #' a=threepsFit(timeSeries = entry$timeSeries[,c(1,2)],
 #' initialCarbon=100,

@@ -16,6 +16,8 @@ A data frame with the mean annual temperature values (Celsius degrees) from the 
 Creates a data frame with mean annual temperature values of the sites
 }
 \examples{
-aridec<-loadEntries(path='~/Repos/aridec/data/')
-MAT=MAT(database=aridec)
+\dontrun{
+aridec=loadEntries(path='/aridec/data/')
+MAT=MAT(database)
+}
 }

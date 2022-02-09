@@ -9,10 +9,12 @@
 #' @importFrom utils tail
 #' @importFrom stats complete.cases
 #' @examples
-#' aridec<-loadEntries(path='~/Documents/GitHub/aridec/data/')
+#' \dontrun{
+#' aridec=loadEntries()
 #' entry=aridec[[20]]
 #' a=onepFit(timeSeries = entry$timeSeries[,1:2],
 #' initialCarbon=100)
+#' }
 onepFit=function(timeSeries, initialCarbon){
   complete=data.frame(time=timeSeries[complete.cases(timeSeries),1],Ct=timeSeries[complete.cases(timeSeries),2])
   n=nrow(complete)

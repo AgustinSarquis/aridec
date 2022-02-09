@@ -16,6 +16,8 @@ A data frame with the soil orders from the database
 Creates a data frame with soil orders of the sites
 }
 \examples{
-aridec<-loadEntries(path='~/Repos/aridec/data/')
+\dontrun{
+aridec=loadEntries(path='/aridec/data/')
 soilorder=soilorder(database=aridec)
+}
 }

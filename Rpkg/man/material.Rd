@@ -16,6 +16,8 @@ A data frame with the list of the litter samples' plant parts from the database
 Creates a data frame with the list of litter samples' plant parts
 }
 \examples{
-aridec<-loadEntries(path='~/Repos/aridec/data/')
+\dontrun{
+aridec=loadEntries(path='/aridec/data/')
 material=material(database=aridec)
+}
 }

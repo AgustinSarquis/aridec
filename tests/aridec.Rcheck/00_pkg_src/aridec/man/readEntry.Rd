@@ -18,5 +18,7 @@ R list with the entry
 Read single entry of the aridec database
 }
 \examples{
-Adair2017=readEntry(path="~/Documents/GitHub/aridec/data/", entryName="Adair2017")
+\dontrun{
+Adair2017=readEntry(path = '~/aridec/data/', entryName="Adair2017")
+}
 }
