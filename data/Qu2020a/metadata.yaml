@@ -66,6 +66,7 @@ variables: # These describe the columns of your timeSeries.csv file
           varDesc: S. klemenzii leaf litter without rainfall treatment (control) # Description of the variable
           site: Urat Houqi # Site where the experiment was conducted
           comptreat: control
+          position: bare soil
           filter: # for photodegradation experiments only
            threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
            transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
@@ -80,6 +81,7 @@ variables: # These describe the columns of your timeSeries.csv file
           varDesc: S. klemenzii leaf litter with decreased rainfall # Description of the variable
           site: Urat Houqi # Site where the experiment was conducted
           comptreat: decreased rainfall
+          position: under rainout shelter
           filter: # for photodegradation experiments only
            threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
            transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
