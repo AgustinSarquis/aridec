@@ -34,7 +34,7 @@ costFunc2ps=function(pars){
   return(modCost(model=output, obs=Ct, x="time")) 
 }
 
-sink(file='~/Documents/collinearity.csv')
+sink(file='~/collinearity.csv')
 
 for (i in 1:184) {
   

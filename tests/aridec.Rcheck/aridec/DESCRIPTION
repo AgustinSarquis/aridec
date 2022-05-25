@@ -1,0 +1,16 @@
+Package: aridec
+Title: Arid decomposition database
+Version: 0.0.0.1
+Authors@R: person("Carlos", "Sierra", email = "csierra@bgc-jena.mpg.de", role = c("aut", "cre"))
+Description: This package provides functions to load and analyse the arid decomposition database.
+Depends: R (>= 3.4.3)
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Imports: yaml, FME, SoilR
+RoxygenNote: 7.1.1.9000
+NeedsCompilation: no
+Packaged: 2022-02-09 16:10:53 UTC; agustin
+Author: Carlos Sierra [aut, cre]
+Maintainer: Carlos Sierra <csierra@bgc-jena.mpg.de>
+Built: R 4.0.3; ; 2022-02-09 16:11:00 UTC; unix

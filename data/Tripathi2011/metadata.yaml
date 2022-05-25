@@ -112,7 +112,6 @@ variables: # These describe the columns of your timeSeries.csv file
           site: Jodhpur # Site where the experiment was conducted
           litter: Tecomella undulata
           position: under tree
-          comptreat:
           filter: # for photodegradation experiments only
            threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
            transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
@@ -317,7 +316,7 @@ variables: # These describe the columns of your timeSeries.csv file
              UVA:
              UVB:
         V19: #
-          name: TL10B #
+          name: TLI10B #
           units: mass remaining # units in which litter mass loss was reported. Valid options are: mass remaining, organic matter remaining, C remaining
           varDesc: T. undulata and L. scindicus mixed leaf litter positioned buried and inside canopy  # Description of the variable
           site: Jodhpur # Site where the experiment was conducted

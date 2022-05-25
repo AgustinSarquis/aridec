@@ -93,7 +93,7 @@ variables: # These describe the columns of your timeSeries.csv file
              UVA:
              UVB:
         V4:
-          name: UL1
+          name: GL1
           units: mass remaining # units in which litter mass loss was reported. Valid options are: mass remaining, organic matter remaining, C remaining
           varDesc: U. pumilia recently senesced leaf litter (2006-2007 period) # Description of the variable
           site: Khorezm # Site where the experiment was conducted
@@ -221,7 +221,7 @@ variables: # These describe the columns of your timeSeries.csv file
              UVA:
              UVB:
         V12:
-          name:
+          name: PL2
           units: mass remaining # units in which litter mass loss was reported. Valid options are: mass remaining, organic matter remaining, C remaining
           varDesc: P. euphratica recently senesced leaf litter (2007-2008 period) # Description of the variable
           site: Khorezm # Site where the experiment was conducted

@@ -58,7 +58,7 @@ variables: # These describe the columns of your timeSeries.csv file
           name: Time
           units: months
         V2: # column 2
-          name: 10mm
+          name: A
           units: organic matter remaining
           varDesc: B. pictus litter decomposition without physical exclusion of soil fauna
           site: Río Mayo
@@ -73,7 +73,7 @@ variables: # These describe the columns of your timeSeries.csv file
              UVA:
              UVB:
         V3:
-          name: 2mm
+          name: B
           units: organic matter remaining
           varDesc: B. pictus litter decomposition with physical exclusion of soil macrofauna
           site: Río Mayo
@@ -88,7 +88,7 @@ variables: # These describe the columns of your timeSeries.csv file
              UVA:
              UVB:
         V4:
-          name: 001mm
+          name: C
           units: organic matter remaining
           varDesc: B. pictus litter decomposition with physical exclusion of soil mesofauna
           site: Río Mayo
@@ -103,7 +103,7 @@ variables: # These describe the columns of your timeSeries.csv file
              UVA:
              UVB:
         V5:
-          name: 001mmF
+          name: D
           units: organic matter remaining
           varDesc: B. pictus litter decomposition with fungi reduction
           site: Río Mayo

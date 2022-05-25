@@ -61,7 +61,7 @@ variables: # These describe the columns of your timeSeries.csv file
           name: Time
           units: days
         V2:
-          name: LCUV
+          name: LWUV
           units: organic matter remaining
           varDesc: decomposition of wheat leaf litter grown under ambient conditions
           site: Lanzhou
@@ -121,7 +121,7 @@ variables: # These describe the columns of your timeSeries.csv file
              UVA:
              UVB:
         V6:
-          name: SCUV
+          name: SWUV
           units: organic matter remaining
           varDesc: decomposition of wheat stem litter grown under ambient conditions
           site: Lanzhou

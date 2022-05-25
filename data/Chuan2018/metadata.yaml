@@ -300,7 +300,7 @@ variables: # These describe the columns of your timeSeries.csv file
              UVA:
              UVB:
         V16:
-          name: FN #
+          name: FG #
           units: mass remaining # units in which litter mass loss was reported. Valid options are: mass remaining, organic matter remaining, C remaining
           varDesc: Mean litter decomposition with grazing management at Foothills Fescue # Description of the variable
           site: Foothills fescue # Site where the experiment was conducted

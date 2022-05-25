@@ -335,9 +335,7 @@ variables: # These describe the columns of your timeSeries.csv file
           units: mass remaining # units in which litter mass loss was reported. Valid options are: mass remaining, organic matter remaining, C remaining
           varDesc: Mixed litter at P. reticulata site without inoculation # Description of the variable
           site: Jaiba # Site where the experiment was conducted
-          litter:
-           - Plathymenia reticulata
-           - Eucalyptus camaldulensis
+          litter: mixture
           compTreat: # combination of complementary treatments not included in the rest of the variables
            - P. reticulata site
            - no inoculation
@@ -354,9 +352,7 @@ variables: # These describe the columns of your timeSeries.csv file
           units: mass remaining # units in which litter mass loss was reported. Valid options are: mass remaining, organic matter remaining, C remaining
           varDesc: Mixed litter at P. reticulata site with Rhizobium inoculation # Description of the variable
           site: Jaiba # Site where the experiment was conducted
-          litter:
-           - Plathymenia reticulata
-           - Eucalyptus camaldulensis
+          litter: mixture
           compTreat: # combination of complementary treatments not included in the rest of the variables
            - P. reticulata site
            - Rhizobium inoculation
@@ -373,9 +369,7 @@ variables: # These describe the columns of your timeSeries.csv file
           units: mass remaining # units in which litter mass loss was reported. Valid options are: mass remaining, organic matter remaining, C remaining
           varDesc: Mixed litter at E. camaldulensis site without inoculation # Description of the variable
           site: Jaiba # Site where the experiment was conducted
-          litter:
-           - Plathymenia reticulata
-           - Eucalyptus camaldulensis
+          litter: mixture
           compTreat: # combination of complementary treatments not included in the rest of the variables
            - E. camaldulensis site
            - no inoculation
@@ -392,9 +386,7 @@ variables: # These describe the columns of your timeSeries.csv file
           units: mass remaining # units in which litter mass loss was reported. Valid options are: mass remaining, organic matter remaining, C remaining
           varDesc: Mixed litter at E. camaldulensis site with AMF inoculation # Description of the variable
           site: Jaiba # Site where the experiment was conducted
-          litter:
-           - Plathymenia reticulata
-           - Eucalyptus camaldulensis
+          litter: mixture
           compTreat: # combination of complementary treatments not included in the rest of the variables
            - E. camaldulensis site
            - AMF inoculation
@@ -411,9 +403,7 @@ variables: # These describe the columns of your timeSeries.csv file
           units: mass remaining # units in which litter mass loss was reported. Valid options are: mass remaining, organic matter remaining, C remaining
           varDesc: Mixed litter at mixed site without inoculation # Description of the variable
           site: Jaiba # Site where the experiment was conducted
-          litter:
-           - Plathymenia reticulata
-           - Eucalyptus camaldulensis
+          litter: mixture
           compTreat: # combination of complementary treatments not included in the rest of the variables
            - Mixed site
            - no inoculation
@@ -430,9 +420,7 @@ variables: # These describe the columns of your timeSeries.csv file
           units: mass remaining # units in which litter mass loss was reported. Valid options are: mass remaining, organic matter remaining, C remaining
           varDesc: Mixed litter at mixed site with AMF and Rhizobium inoculation # Description of the variable
           site: Jaiba # Site where the experiment was conducted
-          litter:
-           - Plathymenia reticulata
-           - Eucalyptus camaldulensis
+          litter: mixture
           compTreat: # combination of complementary treatments not included in the rest of the variables
            - Mixed site
            - AMF and Rhizobium inoculation
@@ -449,12 +437,10 @@ variables: # These describe the columns of your timeSeries.csv file
           units: mass remaining # units in which litter mass loss was reported. Valid options are: mass remaining, organic matter remaining, C remaining
           varDesc: Mixed litter at invaded site # Description of the variable
           site: Jaiba # Site where the experiment was conducted
-          litter:
-           - Plathymenia reticulata
-           - Eucalyptus camaldulensis
+          litter: mixture
           compTreat: # combination of complementary treatments not included in the rest of the variables
            - invaded site
-           - no inoculation           
+           - no inoculation
           filter: # for photodegradation experiments only
            threshold: # wavelength bellow which the filter blocks radiation (in nm). For full radiation treatments enter "0"
            transmitance: # when reported, light transmitance of the filter material as a percentage of full sunlight for each wavelength
@@ -468,9 +454,7 @@ variables: # These describe the columns of your timeSeries.csv file
           units: mass remaining # units in which litter mass loss was reported. Valid options are: mass remaining, organic matter remaining, C remaining
           varDesc: Mixed litter at Preserved site # Description of the variable
           site: Jaiba # Site where the experiment was conducted
-          litter:
-           - Plathymenia reticulata
-           - Eucalyptus camaldulensis
+          litter: mixture
           compTreat: # combination of complementary treatments not included in the rest of the variables
            - Preserved site
            - no inoculation

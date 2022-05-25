@@ -78,7 +78,7 @@ experimentInfo:
 
 variables:
         V1:
-          name: time
+          name: Time
           units: years
         V2:
           name: CPR

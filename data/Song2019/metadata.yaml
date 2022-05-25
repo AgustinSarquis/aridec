@@ -248,7 +248,7 @@ variables: # These describe the columns of your timeSeries.csv file
              UVA:
              UVB:
         V13: #
-          name: XMCG #
+          name: XMMG #
           units: mass remaining # units in which litter mass loss was reported. Valid options are: mass remaining, organic matter remaining, C remaining
           varDesc:  P. xiaozhuanica litter on mixture with mesh size of 0.5 mm at grassland stand # Description of the variable
           site: Keerqin # Site where the experiment was conducted
@@ -452,7 +452,7 @@ variables: # These describe the columns of your timeSeries.csv file
              UVA:
              UVB:
         V25: #
-          name: XSCG #
+          name: XSMG #
           units: mass remaining # units in which litter mass loss was reported. Valid options are: mass remaining, organic matter remaining, C remaining
           varDesc:  P. xiaozhuanica litter on mixture with meshsize of 2 mm at grassland stand # Description of the variable
           site: Keerqin # Site where the experiment was conducted

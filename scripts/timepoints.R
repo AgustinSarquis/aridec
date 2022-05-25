@@ -1,3 +1,6 @@
+# if you just want to know the number of time points in a specific mass loss variable
+timepoints=lapply(db, function(x){length(na.omit(x$timeSeries[,2]))})
+
 # to Create a data frame with the number of points in time per entry
 timepoints <- function(dataframe){ # creates a function applied to a single dataframe
   if (anyNA(dataframe) == TRUE) {

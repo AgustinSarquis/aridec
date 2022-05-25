@@ -3,7 +3,9 @@ library(FME)
 library(aridec)
 
 db=loadEntries()
-deco=db[["Arriaga2007"]]
+deco=db[[x]] # replace x with database entry
+
+# after testing for collinearity procede to fit suitable models
 
 # Run a One Pool Model
 M1=onepFit(deco$timeSeries[,c(1,2)], initialCarbon = 100) # use columns 1 (Time) and 2 (first variable)

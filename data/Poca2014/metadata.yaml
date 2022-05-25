@@ -61,7 +61,7 @@ variables: # These describe the columns of your timeSeries.csv file
           name: Time
           units: days
         V2:
-          name: Ban,
+          name: Ban
           units: mass remaining
           varDesc: B. andicola litter decomposed in a decomposition bed in Pampa de Achala
           site: Achala

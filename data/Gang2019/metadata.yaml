@@ -76,7 +76,7 @@ variables: # These describe the columns of your timeSeries.csv file
              UVA:
              UVB:
         V3:
-          name: N0SFR+N
+          name: N0SFRN
           units: mass remaining
           varDesc: P. sylvestris small diameter fine roots grown in control plots and decomposed in plots with N addition
           site: Daqinggou
@@ -106,7 +106,7 @@ variables: # These describe the columns of your timeSeries.csv file
              UVA:
              UVB:
         V5:
-          name: N0LFR+N
+          name: N0LFRN
           units: mass remaining
           varDesc: P. sylvestris large diameter fine roots grown in control plots and decomposed in plots with N addition
           site: Daqinggou
@@ -121,7 +121,7 @@ variables: # These describe the columns of your timeSeries.csv file
              UVA:
              UVB:
         V6:
-          name: +NSFRN0
+          name: NSFRN0
           units: mass remaining
           varDesc: P. sylvestris small diameter fine roots grown in plots with N addition and decomposed in control plots
           site: Daqinggou
@@ -136,7 +136,7 @@ variables: # These describe the columns of your timeSeries.csv file
              UVA:
              UVB:
         V7:
-          name: +NLFRN0
+          name: NLFRN0
           units: mass remaining
           varDesc: P. sylvestris large diameter fine roots grown in plots with N addition and decomposed in control plots
           site: Daqinggou
@@ -151,7 +151,7 @@ variables: # These describe the columns of your timeSeries.csv file
              UVA:
              UVB:
         V8:
-          name: +NSFR+N
+          name: NSFRN
           units: mass remaining
           varDesc: P. sylvestris small diameter fine roots grown and decomposed in plots with N addition
           site: Daqinggou
@@ -166,7 +166,7 @@ variables: # These describe the columns of your timeSeries.csv file
              UVA:
              UVB:
         V9:
-          name: +NLFR+N
+          name: NLFRN
           units: mass remaining
           varDesc: P. sylvestris large diameter fine roots grown and decomposed in plots with N addition
           site: Daqinggou

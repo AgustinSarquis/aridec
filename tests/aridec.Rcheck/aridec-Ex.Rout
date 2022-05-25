@@ -1,0 +1,423 @@
+
+R version 4.0.3 (2020-10-10) -- "Bunny-Wunnies Freak Out"
+Copyright (C) 2020 The R Foundation for Statistical Computing
+Platform: x86_64-apple-darwin17.7.0 (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> pkgname <- "aridec"
+> source(file.path(R.home("share"), "R", "examples-header.R"))
+> options(warn = 1)
+> library('aridec')
+> 
+> base::assign(".oldSearch", base::search(), pos = 'CheckExEnv')
+> base::assign(".old_wd", base::getwd(), pos = 'CheckExEnv')
+> cleanEx()
+> nameEx("MAP")
+> ### * MAP
+> 
+> flush(stderr()); flush(stdout())
+> 
+> ### Name: MAP
+> ### Title: Creates a data frame with mean annual precipitation values of
+> ###   the sites
+> ### Aliases: MAP
+> 
+> ### ** Examples
+> 
+> ## Not run: 
+> ##D aridec=loadEntries(path='~/aridec/data/')
+> ##D MAP=MAP(database=aridec)
+> ## End(Not run)
+> 
+> 
+> 
+> cleanEx()
+> nameEx("MAT")
+> ### * MAT
+> 
+> flush(stderr()); flush(stdout())
+> 
+> ### Name: MAT
+> ### Title: Creates a data frame with mean annual temperature values of the
+> ###   sites
+> ### Aliases: MAT
+> 
+> ### ** Examples
+> 
+> ## Not run: 
+> ##D aridec=loadEntries(path='/aridec/data/')
+> ##D MAT=MAT(database)
+> ## End(Not run)
+> 
+> 
+> 
+> cleanEx()
+> nameEx("biome")
+> ### * biome
+> 
+> flush(stderr()); flush(stdout())
+> 
+> ### Name: biome
+> ### Title: Creates a data frame with the ecosystem type of the sites
+> ### Aliases: biome
+> 
+> ### ** Examples
+> 
+> ## Not run: 
+> ##D #' aridec=loadEntries(path='/aridec/data/')
+> ##D biome=biome(database=aridec)
+> ## End(Not run)
+> 
+> 
+> 
+> cleanEx()
+> nameEx("carbon")
+> ### * carbon
+> 
+> flush(stderr()); flush(stdout())
+> 
+> ### Name: carbon
+> ### Title: Creates a data frame with the carbon content in litter samples
+> ### Aliases: carbon
+> 
+> ### ** Examples
+> 
+> ## Not run: 
+> ##D aridec=loadEntries(path='/aridec/data/')
+> ##D C=carbon(database=aridec)
+> ## End(Not run)
+> 
+> 
+> 
+> cleanEx()
+> nameEx("coordinates")
+> ### * coordinates
+> 
+> flush(stderr()); flush(stdout())
+> 
+> ### Name: coordinates
+> ### Title: Creates a data frame with the coordinates of the sites
+> ### Aliases: coordinates
+> 
+> ### ** Examples
+> 
+> ## Not run: 
+> ##D aridec=loadEntries(path='/aridec/data/')
+> ##D coor=coordinates(database=aridec)
+> ## End(Not run)
+> 
+> 
+> 
+> cleanEx()
+> nameEx("countries")
+> ### * countries
+> 
+> flush(stderr()); flush(stdout())
+> 
+> ### Name: countries
+> ### Title: Creates a data frame with the countries of the sites
+> ### Aliases: countries
+> 
+> ### ** Examples
+> 
+> ## Not run: 
+> ##D aridec=loadEntries(path='/aridec/data/')
+> ##D countries=countries(database=aridec)
+> ## End(Not run)
+> 
+> 
+> 
+> cleanEx()
+> nameEx("elevation")
+> ### * elevation
+> 
+> flush(stderr()); flush(stdout())
+> 
+> ### Name: elevation
+> ### Title: Creates a data frame with elevation values of the sites
+> ### Aliases: elevation
+> 
+> ### ** Examples
+> 
+> ## Not run: 
+> ##D aridec=loadEntries(path='/aridec/data/')
+> ##D elevation=elevation(database=aridec)
+> ## End(Not run)
+> 
+> 
+> 
+> cleanEx()
+> nameEx("lignin")
+> ### * lignin
+> 
+> flush(stderr()); flush(stdout())
+> 
+> ### Name: lignin
+> ### Title: Creates a data frame with the lignin content in litter samples
+> ### Aliases: lignin
+> 
+> ### ** Examples
+> 
+> ## Not run: 
+> ##D aridec=loadEntries(path='/aridec/data/')
+> ##D lignin=lignin(database=aridec)
+> ## End(Not run)
+> 
+> 
+> 
+> cleanEx()
+> nameEx("loadEntries")
+> ### * loadEntries
+> 
+> flush(stderr()); flush(stdout())
+> 
+> ### Name: loadEntries
+> ### Title: Load all entries of the aridec dataset
+> ### Aliases: loadEntries
+> 
+> ### ** Examples
+> 
+> ## Not run: 
+> ##D aridec=loadEntries()
+> ## End(Not run)
+> 
+> 
+> 
+> cleanEx()
+> nameEx("material")
+> ### * material
+> 
+> flush(stderr()); flush(stdout())
+> 
+> ### Name: material
+> ### Title: Creates a data frame with the list of litter samples' plant
+> ###   parts
+> ### Aliases: material
+> 
+> ### ** Examples
+> 
+> ## Not run: 
+> ##D aridec=loadEntries(path='/aridec/data/')
+> ##D material=material(database=aridec)
+> ## End(Not run)
+> 
+> 
+> 
+> cleanEx()
+> nameEx("nitrogen")
+> ### * nitrogen
+> 
+> flush(stderr()); flush(stdout())
+> 
+> ### Name: nitrogen
+> ### Title: Creates a data frame with the nitrogen content of litter samples
+> ### Aliases: nitrogen
+> 
+> ### ** Examples
+> 
+> ## Not run: 
+> ##D aridec=loadEntries(path='/aridec/data/')
+> ##D N=nitrogen(database=aridec)
+> ## End(Not run)
+> 
+> 
+> 
+> cleanEx()
+> nameEx("onepFit")
+> ### * onepFit
+> 
+> flush(stderr()); flush(stdout())
+> 
+> ### Name: onepFit
+> ### Title: Fits a one pool model to a time-series
+> ### Aliases: onepFit
+> 
+> ### ** Examples
+> 
+> ## Not run: 
+> ##D aridec=loadEntries()
+> ##D entry=aridec[[20]]
+> ##D a=onepFit(timeSeries = entry$timeSeries[,1:2],
+> ##D initialCarbon=100)
+> ## End(Not run)
+> 
+> 
+> 
+> cleanEx()
+> nameEx("plotEntry")
+> ### * plotEntry
+> 
+> flush(stderr()); flush(stdout())
+> 
+> ### Name: plotEntry
+> ### Title: Plot individual entries of the aridec dataset
+> ### Aliases: plotEntry
+> 
+> ### ** Examples
+> 
+> ## Not run: 
+> ##D aridec=loadEntries(path='/aridec/data/')
+> ##D plotEntry(entry=aridec[["Adair2017"]])
+> ## End(Not run)
+> 
+> 
+> 
+> cleanEx()
+> nameEx("readEntry")
+> ### * readEntry
+> 
+> flush(stderr()); flush(stdout())
+> 
+> ### Name: readEntry
+> ### Title: Read single entry of the aridec database
+> ### Aliases: readEntry
+> 
+> ### ** Examples
+> 
+> ## Not run: 
+> ##D Adair2017=readEntry(path = '~/aridec/data/', entryName="Adair2017")
+> ## End(Not run)
+> 
+> 
+> 
+> cleanEx()
+> nameEx("soilorder")
+> ### * soilorder
+> 
+> flush(stderr()); flush(stdout())
+> 
+> ### Name: soilorder
+> ### Title: Creates a data frame with soil orders of the sites
+> ### Aliases: soilorder
+> 
+> ### ** Examples
+> 
+> ## Not run: 
+> ##D aridec=loadEntries(path='/aridec/data/')
+> ##D soilorder=soilorder(database=aridec)
+> ## End(Not run)
+> 
+> 
+> 
+> cleanEx()
+> nameEx("species")
+> ### * species
+> 
+> flush(stderr()); flush(stdout())
+> 
+> ### Name: species
+> ### Title: Creates a data frame with the species list of litter samples
+> ### Aliases: species
+> 
+> ### ** Examples
+> 
+> ## Not run: 
+> ##D aridec=loadEntries(path='/aridec/data/')
+> ##D species=species(database=aridec)
+> ## End(Not run)
+> 
+> 
+> 
+> cleanEx()
+> nameEx("threeppFit")
+> ### * threeppFit
+> 
+> flush(stderr()); flush(stdout())
+> 
+> ### Name: threeppFit
+> ### Title: Fits a three pool model with parallel structure to a time series
+> ### Aliases: threeppFit
+> 
+> ### ** Examples
+> 
+> 
+> 
+> 
+> cleanEx()
+> nameEx("threepsFit")
+> ### * threepsFit
+> 
+> flush(stderr()); flush(stdout())
+> 
+> ### Name: threepsFit
+> ### Title: Fits a three pool model with series structure to a time series
+> ### Aliases: threepsFit
+> 
+> ### ** Examples
+> 
+> 
+> 
+> 
+> cleanEx()
+> nameEx("twopfFit")
+> ### * twopfFit
+> 
+> flush(stderr()); flush(stdout())
+> 
+> ### Name: twopfFit
+> ### Title: Fits a two pool model with feedback structure to a time series
+> ### Aliases: twopfFit
+> 
+> ### ** Examples
+> 
+> 
+> 
+> 
+> cleanEx()
+> nameEx("twoppFit")
+> ### * twoppFit
+> 
+> flush(stderr()); flush(stdout())
+> 
+> ### Name: twoppFit
+> ### Title: Fits a two pool model with parallel structure to a time series
+> ### Aliases: twoppFit
+> 
+> ### ** Examples
+> 
+> 
+> 
+> 
+> cleanEx()
+> nameEx("twopsFit")
+> ### * twopsFit
+> 
+> flush(stderr()); flush(stdout())
+> 
+> ### Name: twopsFit
+> ### Title: Fits a two pool model with series structure to a time series
+> ### Aliases: twopsFit
+> 
+> ### ** Examples
+> 
+> 
+> 
+> 
+> ### * <FOOTER>
+> ###
+> cleanEx()
+> options(digits = 7L)
+> base::cat("Time elapsed: ", proc.time() - base::get("ptime", pos = 'CheckExEnv'),"\n")
+Time elapsed:  0.416 0.041 0.481 0 0 
+> grDevices::dev.off()
+null device 
+          1 
+> ###
+> ### Local variables: ***
+> ### mode: outline-minor ***
+> ### outline-regexp: "\\(> \\)?### [*]+" ***
+> ### End: ***
+> quit('no')
