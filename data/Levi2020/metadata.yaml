@@ -68,7 +68,7 @@ experimentInfo:
         # These fields should all be one dimensional arrays. Values for experimental variables with multiple treatment levels should be entered in the variables section and left blank here
         replicates: 3 # Number of replicates per treatment
         duration: 730 # length of incubation in days
-        startingMonth: january # month during which the study started, all in lower case
+        startingMonth: july # month during which the study started, all in lower case
         litter: Prosopis juliflora # plant species used as litter material for the experiment. All details related to the species must be specified in the initConditions.csv file
         litterbag:
           material: fiberglass # mesh type used to construct the litter bags, options are: wire, aluminum, window screening, net curtain, bolting cloth, plastic, fiberglass, nylon, polypropylene, polyester, polyethylene, polyamide
