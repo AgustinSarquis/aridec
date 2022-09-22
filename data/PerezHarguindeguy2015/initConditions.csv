@@ -1,7 +1,7 @@
 species, type, N-fixer, material, amount, carbon, nitrogen, C:N, phosphorus, potassium, sodium, magnesium, manganese, copper, zinc, lead, calcium, sulfur, iron, lignin, cellulose, hemicellulose, cell solubles, SLA
-Agrimonia eupatoria, forb, no, leaves, 3.5
-Bromus erectus, graminoid, no, leaves, 3.5
-Brachypodium phoenicoides, graminoid, no, leaves, 3.5
-Dipsacus fullonum, forb, no, leaves, 3.5
-Inula conyza, forb, no, leaves, 3.5
-Picris hieracioides, forb, no, leaves, 3.5
+Agrimonia eupatoria, forb, no, leaves,3.5,49.3,1.02,48,,,,,,,,,,,,34.8,,,,13.1
+Bromus erectus, graminoid, no, leaves,3.5,44.7,0.41,109,,,,,,,,,,,,12.8,,,,13.1
+Brachypodium phoenicoides, graminoid, no, leaves,3.5,43.6,0.97,47,,,,,,,,,,,,15.1,,,,14.8
+Dipsacus fullonum, forb, no, leaves,3.5,42.6,0.97,44,,,,,,,,,,,,7,,,,19.2
+Inula conyza, forb, no, leaves,3.5,43.6,0.7,62,,,,,,,,,,,,,,,,21.2
+Picris hieracioides, forb, no, leaves,3.5,42.9,0.73,59,,,,,,,,,,,,10.6,,,,19.6
