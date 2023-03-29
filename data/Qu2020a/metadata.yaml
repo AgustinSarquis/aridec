@@ -13,7 +13,7 @@ siteInfo:
         coordinates:
           latitude: 41.4166667 # Latitude in decimal units (check for negative that denotes southern hemisphere)
           longitude: 106.96666666666667 # Longitude in decimal units (check for negative that denotes western hemisphere)
-        country: # Name of country where site was conducted
+        country: China # Name of country where site was conducted
         MAT: 4.15 # Mean annual temperature in degrees Celsius
         MAP: 125 # Mean annual precipitation in mm
         rainySeason: # Period of the year during which most precipitation occurs, i.e.: whole year, spring, summer, autumn, winter (if more than one use array format)
